@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260819-222659-AUTO",
-  "source_manifest_sha256": "15b1fe0663cc0f1a12b72d9c1c26a6142b5d257fa808fad6da822592ed1813fd",
-  "export_manifest_sha256": "edd6283cb95eb1977ef9124e4d1e1b4e6a7e7094aae1d46dd1116d8e1581fc61",
-  "generated_at": "2026-08-19T22:27:01+09:00",
+  "release_id": "LIA-20260820-084232-AUTO",
+  "source_manifest_sha256": "f8fa680376ae913abb47f9cc932bf2620d5b6cf560f0ce16ae71068ce6e2c1fa",
+  "export_manifest_sha256": "5383b34048e6de88c07d0cc40acb6292f95ac8fab0ed606b49700fdd4ae2d582",
+  "generated_at": "2026-08-20T08:42:35+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -7301,6 +7301,41 @@
         "url": "https://x.com/checheluna3/status/2089645931700662593"
       },
       "captured_at": "2026-08-19T08:17:48+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260820-0001",
+      "title": "govin.eth — Codex 5.6 config.toml 고급 설정: 모델·Reasoning Effort·작업 모드·프로젝트 규칙·자동화",
+      "types": [
+        "configuration",
+        "reference",
+        "workflow"
+      ],
+      "tags": [
+        "ai-coding",
+        "automation",
+        "codex",
+        "config-toml",
+        "gpt-5-6",
+        "model-configuration",
+        "project-rules",
+        "reasoning-effort"
+      ],
+      "summary": "Codex 5.6의 숙련 사용자는 단순 대화가 아니라 config.toml에 모델·작업 모드·프로젝트 규칙·자동화 흐름을 기록한다고 주장하는 설정 가이드형 포스트. 전문 설정 4개 중 공개 메타데이터에서 확인된 첫 항목은 고정 모델 + Reasoning Effort이며, 나머지 세부 항목은 게시물 본문이 잘려 미확인. 348💗, 답글 30건.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/304c76f938a0d357008fa15d2de0e8c10ee5781279497d072f68fa2944170ee7.svg",
+        "alt": "govin.eth — Codex 5.6 config.toml 고급 설정: 모델·Reasoning Effort·작업 모드·프로젝트 규칙·자동화"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/goan999999/status/2090076819815026918"
+      },
+      "captured_at": "2026-08-20T08:35:11+09:00"
     }
   ]
 }
