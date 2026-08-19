@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260819-DASHBOARD-MIGRATION",
-  "source_manifest_sha256": "9194414576f9c1b09bfcce11dd3415f273616d3dc3d66edb8ca4672055811870",
-  "export_manifest_sha256": "b70e8fbb86ac26c30a70bef567beece18a87cef1218866101e12790b475d389d",
-  "generated_at": "2026-08-19T21:35:12+09:00",
+  "release_id": "LIA-20260819-222659-AUTO",
+  "source_manifest_sha256": "15b1fe0663cc0f1a12b72d9c1c26a6142b5d257fa808fad6da822592ed1813fd",
+  "export_manifest_sha256": "edd6283cb95eb1977ef9124e4d1e1b4e6a7e7094aae1d46dd1116d8e1581fc61",
+  "generated_at": "2026-08-19T22:27:01+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -26,8 +26,8 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/86eb286196e842b967e2208b535706d831f13fe417ff6cbd8701c9cda2d5a2b1.svg",
-        "alt": "샘플: AI 영상 워크플로우 GitHub"
+        "src": "assets/74f3b5add54f7102230ed682fbf9d23b5b3a78e6229dbfd49719748e7b806988.png",
+        "alt": "샘플 AI 영상 워크플로우 GitHub"
       },
       "source": {
         "platform": "github",
@@ -93,7 +93,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/724caaaf34a9f2dac7d57d87f57cf3bf73a2439880e37db09f8ff115fbe22671.svg",
+        "src": "assets/540b7fc2cfe8001f10a13c6a1e3b4eeac1018d9fbd7cef6fb41e5dabfbd71aa3.png",
         "alt": "NousResearch/hermes-agent"
       },
       "source": {
@@ -129,7 +129,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/a702f4a1e50f068f9cae164916af6b307d950f105ec6aa7cc1927c248bef7537.svg",
+        "src": "assets/7f6769cea0c320a91c63fabc82f2615b7a8609c13cbff48ae3fabbd3a818b130.png",
         "alt": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF"
       },
       "source": {
@@ -254,7 +254,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/83a5e077e1b673027ac1e71fcb84cfadea978012f4db3a240fd942e42f0f77b8.svg",
+        "src": "assets/218a55ec97e11d03b78ec34f9dc0825a94042b50ce15ae84cb0b522f112fee92.jpg",
         "alt": "こやす69＠AIプロンプト屋 X post 2083856330494738841"
       },
       "source": {
@@ -285,7 +285,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0fb35ebb4d0d4f55b8f1f2cd771a9d99391697637dcec9c1f07753622f7f3f3c.svg",
+        "src": "assets/8b6d7ddba6ca89a02aae1a8a7db56b7e647995d0fa59d1193133b9be63548f12.jpg",
         "alt": "Prompt アトリエ｜AI画像プロンプト X post 2083688475283353608"
       },
       "source": {
@@ -446,7 +446,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/d4f33c77d53a524b6100830e8db622de2fa6fb0eadb03fa886bdf985ce94c7d6.svg",
+        "src": "assets/429a93c621f2bdbabb1042d9782c628ca61db74fb9c2ccf815bdac60a442ae68.jpg",
         "alt": "구글 무료 AI 툴 15개 정리 포스트"
       },
       "source": {
@@ -477,7 +477,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/c922a615a3eaa886ecb438a4ccc8f4be53961d585bc16e7c6f4647bfeac6e980.svg",
+        "src": "assets/601dffd397e02e9a34afc12af41d42abab65f7513ece21197d95c0024da5f997.jpg",
         "alt": "NVIDIA Build 무료 체험 안내 포스트"
       },
       "source": {
@@ -510,7 +510,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/55f4fad747cd5f58bcff5e1daf380ca2da1b5ce8054b8350da610d7d96046440.svg",
+        "src": "assets/e6e5422b2eb7fa9cbde5ca3a664c954ef5c71513db9e55fc77306c0900d14280.jpg",
         "alt": "Seedance 2.5 lineart rotoscoping test"
       },
       "source": {
@@ -540,7 +540,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/664580e4a6ba79c7974c6ba855429f69aa119f1ff04d3b4fd34738410902751e.svg",
+        "src": "assets/81994dd53b6a35a7b33d51f79a60b2cb5fb79c530e55a4514b7cadd98783e5d9.jpg",
         "alt": "takopatakopa Instagram profile lead"
       },
       "source": {
@@ -574,7 +574,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/9ba26c0a1839cc6694a938be06bcfe59a3690d0f922d1c2644a9c483ffb7a0ea.svg",
+        "src": "assets/41042ca7b75bb76fd06872e519e6ca2800aa53cc4781c073de87aa4363ab09f3.png",
         "alt": "MOMOKA♂ restricted private reference post"
       },
       "source": {
@@ -607,7 +607,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/146561422d6f1f30d177fcdab0516e6e5cf73cc215c9f6a36393f935c5164b7b.svg",
+        "src": "assets/a61490fc274dc8790abd1f463bbb040306849cea0f4c454e9ce1ef130480e189.jpg",
         "alt": "Cel Dance - Girl 005"
       },
       "source": {
@@ -640,7 +640,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/645a2349318fc6ddddd91057c4e828f312f1c8c84ea7123ab05c3197770f66a3.svg",
+        "src": "assets/9416cf456599086a268169dd2cf3df84374c3087a9a703c76fb20c1332a0cca8.jpg",
         "alt": "刀ガールのスーパーフラッグチャレンジ"
       },
       "source": {
@@ -734,7 +734,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/3251c1e8146eda63ef1786e5c168f6451fafc8e5c7244f4a5f6419ca530073b1.svg",
+        "src": "assets/9ef2d98ea127edc98e246aa533dac15c3b57a7848086d1c6f88a4a6a56f23297.png",
         "alt": "[PROMIS_9] 이나경 화보촬영중 아찔한 포즈에 지리는 기마자세[약후]"
       },
       "source": {
@@ -768,7 +768,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/eb3f17fb5fa8f792ee573dcfe84461f7fa12a34d849fe27728c92875114c7f5a.svg",
+        "src": "assets/be26fa245f02f5e3474197ae03f77b2c746ee7822ab716be35396c0bd7034f6e.jpg",
         "alt": "모리 히나코 (Hinako Mori)"
       },
       "source": {
@@ -802,7 +802,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fe9f9e6273491a2b1c354523d3d51b28ffc20e32ff8a31e93e66feefd46c2a45.svg",
+        "src": "assets/f05ca6200d0c6679bde75c6f92f187cdf418bc9ef1bb62967090b682c683ef1e.png",
         "alt": "reclip"
       },
       "source": {
@@ -1170,7 +1170,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0719913c4261293c49736f72cc9d805170e943aab207ec5589ddcf8eac83195f.svg",
+        "src": "assets/f0b91728aec18641a231c5d569d6c25ed35fd7a8c92518984c50a454b28e5044.jpg",
         "alt": "ComfyUI OpenPose Studio 2.1 - 포즈 에디터"
       },
       "source": {
@@ -1201,7 +1201,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/238c07a9db03963dacfb5f171a7439009afaf1cda8587da56380a417dfbd26a5.svg",
+        "src": "assets/74c483265e20f611dcb6cffe26df95ec463faef795ecdc897aa625b1fc2ffa02.jpg",
         "alt": "GPT Image2 - 숲의 빛 프롬프트 (森の光)"
       },
       "source": {
@@ -1231,7 +1231,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/227e176573e01b824269c818e529b32f29a27d20e436f9d0056428a8c5cacd53.svg",
+        "src": "assets/bba130de6c36ec7c0bf184fca1260a79c69bfc5872e6bc4d19273a736a1ed621.jpg",
         "alt": "DD.Cherry - 캐릭터 락 프롬프트 (人物锁定)"
       },
       "source": {
@@ -1260,7 +1260,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/e189d1804ae945a14c5c05883f64b539065fddea2dfc6488be0642ab997ea596.svg",
+        "src": "assets/a72b579b533a6a61f99769ca5ad49636f8562bf188a3b410bd988a9bb6fd2785.png",
         "alt": "ToroJushiAi - AI 아트 프롬프트 (3장)"
       },
       "source": {
@@ -1292,7 +1292,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fe2bdad8e67e961c3fbf45ffb7607e224effdfe307f67cbf96a2bfe8f27479c9.svg",
+        "src": "assets/e8905aaed3067cf6b99b5206fe5249dd41a43094ca6d03784a0dc00c2e81c22f.jpg",
         "alt": "AI 비디오용 카메라 움직임 42종 + 프롬프트"
       },
       "source": {
@@ -1326,7 +1326,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/44c407ddd2a63f49ad6aed22a46fea460444dc72278cfb38c04364aa46768659.svg",
+        "src": "assets/258d375afae807ff40424d3150a3f46a09824eafe2d5b38aa69300407da20b16.jpg",
         "alt": "Nghi AI - Y2K 스트릿웨어 패션 (Aaliyah 스타일)"
       },
       "source": {
@@ -1357,7 +1357,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/64e3493e65da16ddb2a5e4dc4e94102ca2503ec90153b17b3e057537dd103709.svg",
+        "src": "assets/ba66bce165d46e8498b67bbeb3ad313cec574652d3af76f6cfce523206db6b7e.jpg",
         "alt": "GPT Image2 - 폐허에 뻗은 흰 다리 (廃墟ポートレート)"
       },
       "source": {
@@ -1393,7 +1393,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/986fd92d695f68eaa997976b35a790cf5c787caaeae88640cd8127798deef346.svg",
+        "src": "assets/95cd793b5806a672228ebcc4ec8fec2646488aa4d27e2a3f77007336d7e74ca4.jpg",
         "alt": "겉보기엔 불법 같지만 완전 합법인 유용한 사이트 50선"
       },
       "source": {
@@ -1423,7 +1423,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0860926ebc375cc7967157e0b8b342bc43bd827b553501fe974ec3283f6fa0bd.svg",
+        "src": "assets/cd380c1f54c773f074e1989c32396e5976e9af93706fcfb831ce463b5e392d84.jpg",
         "alt": "underwood - AI 이미지 프롬프트 (promptsref.com)"
       },
       "source": {
@@ -1457,7 +1457,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/692ff322abdd288e7c69381e4a15264139d7026a48b492897ae924f14b3e9554.svg",
+        "src": "assets/a0678b4071b268c143573e79f5adcd3cc293d81e3bb59e036142998ac1d9bdf2.jpg",
         "alt": "유용한 무료 도구 디렉토리 (Directorio de cosas útiles)"
       },
       "source": {
@@ -1492,7 +1492,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/c04b18c50b70493683561fde518329bb3eb910ff3e93d887bc6d2d9f47148291.svg",
+        "src": "assets/fe904d0793f0b46c27bdbd9510583d2fa586cc8baca0be36a280294c3e03165e.jpg",
         "alt": "MiniMax H3 ComfyUI 속도 최적화 - 10분→3분"
       },
       "source": {
@@ -1521,7 +1521,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/02bb2df2dd9b0d7126c6699ca55913043fe38c7cb2ea5cafc89f1da38bfd06a2.svg",
+        "src": "assets/a72b579b533a6a61f99769ca5ad49636f8562bf188a3b410bd988a9bb6fd2785.png",
         "alt": "ToroJushiAi - AI 아트 프롬프트 (4장)"
       },
       "source": {
@@ -1552,7 +1552,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0d80addb1515e0c2088fd4ea215bc59b8e01ecbfb3989f5d5159f17049f8b5a3.svg",
+        "src": "assets/c51dc9e3160d396b571d432aa83ba5cdf5e9976ff1eedd2cf93b313a754e5428.jpg",
         "alt": "Hana 김하나 - 비치 프롬프트 (Beach Day)"
       },
       "source": {
@@ -1583,7 +1583,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/bbfbfec1c7c1b9dca52d9e45be680a524196c595f2a5aaedaa2dd6f46e8c2b10.svg",
+        "src": "assets/bb17c052b184b30a940330029ffd8d6a30848d39a8cc472b0b44ce44a0f6622a.jpg",
         "alt": "マリナ・アルブレヒト - AI 모델 더운 날 (溶けちゃいそう)"
       },
       "source": {
@@ -1617,7 +1617,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/7ce7fa13ae9ade508b1879d86f1c9448a28146117ad7fd5e92e4e509b3af9efc.svg",
+        "src": "assets/fa503720b8c827191863be21b6647f17e3e3ab027636c1ea683f7677d5a86cad.jpg",
         "alt": "MiniMax H3 리뷰 - Seedance 추격, GPU 서버 추천"
       },
       "source": {
@@ -1648,7 +1648,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/5c0c0a430972bf9c1d42afb1ccc2a2022d19d34dfc029b414783bfc4df652c25.svg",
+        "src": "assets/8d87b29299d7189e2f99d37439479d0744825a632832cbfddd13732db4d9b3a5.jpg",
         "alt": "DD.Cherry - 椰风沁夏 (코코넛 여름바람) 캐릭터 락"
       },
       "source": {
@@ -1681,7 +1681,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/adbe0e45b6ae0d7866d5f64d44761917e98fb0723e044e4f4995c1c1724e2f77.svg",
+        "src": "assets/4458e2dfc66237c0c9c9a8e11eb15fb3190847ebe3049449eb5ac66a7193f477.jpg",
         "alt": "MiniMax H3 프리뷰 디코더 (Kijai/MiniMax-H3-TAE)"
       },
       "source": {
@@ -1825,7 +1825,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/2233b4fa1ce01bb3a860e29b17613e6a68703f2802fda0b877e3f12ad23c980a.svg",
+        "src": "assets/e7d1ac04b0a6d59f29b81fa21974cfaaa9b91a873545859226c2380d98be402c.png",
         "alt": "ComfyUI MiniMax H3 Director 워크플로우 (5종)"
       },
       "source": {
@@ -1858,7 +1858,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fa96220ddb2b7c66273d1976146d30e1ec9704c7495d5ada69402097eb4d35d5.svg",
+        "src": "assets/aa011c5b612a5374375378ab2db4da59ea2388d70f1bff160bf946644de199e6.png",
         "alt": "SeeDance 2 Stitcher - Seedance 영상 스티칭 도구"
       },
       "source": {
@@ -1895,7 +1895,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/6051c12616a37944244da00a83c6d820315c519d0c3a2cea4a717026c400ecad.svg",
+        "src": "assets/e95b21b02c2266fd80e47dcbd2b198bc780b4c16eab13c505a80a47a98e2161c.png",
         "alt": "Awesome Seedance 2.0 Video Prompts - 2000+ 프롬프트 컬렉션"
       },
       "source": {
@@ -1928,7 +1928,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/ed99c56d0741a6b2df329b86758e940763f9986e9b0538c7012489192919af24.svg",
+        "src": "assets/35a9bb041832c50ed5e68b0445e03ba55de9a21860e5bcccfc6163cd49559e02.png",
         "alt": "Seedance 2.5 Prompt.skill - 아이디어→30초 영화 프롬프트 생성기"
       },
       "source": {
@@ -1961,7 +1961,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f3993817afbfe82247db42efc55d6197bb01c5570106a2a6c3d4fae11945fab4.svg",
+        "src": "assets/833c96e58690521c3382c44b823730e5489ce90cf2cae698ce5fa4bbe0a3e570.jpg",
         "alt": "유마인드(YouMind) - 3만개 프롬프트 모음 사이트 (무료)"
       },
       "source": {
@@ -1995,7 +1995,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/c8b9e5191907e594ceebb1262fac2ea98cd37e2a20e5f4ce66b2893c04f71211.svg",
+        "src": "assets/4cfc2dc832e4c4bd7f8478121a90ca5df7edf98b05811c89e0a217b0997e1de9.jpg",
         "alt": "디자인 레퍼런스 사이트 50선 (Nett0)"
       },
       "source": {
@@ -2027,7 +2027,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/c9e91e93419b779f3c2bdd0ab2d97cbaa2456b33c6958f598e0e92867e8264f6.svg",
+        "src": "assets/2363dc34f1d9a2d6c0184f348b0561c5b2b7ffa6483f35206f5b89d21c296e94.jpg",
         "alt": "GPT Image 2 - CCD 생활샷 프롬프트 (冷白清透)"
       },
       "source": {
@@ -2059,7 +2059,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b6286caadd6e6b13ac03524c9ac4a6687a1120145cdf630ee07690e4b8e5fe02.svg",
+        "src": "assets/d666e1d3251a58f82656167710609e80d01c234d9ae6ff625da9dcf6d13f1436.jpg",
         "alt": "DD.Cherry - 열대우림 비키니 여행 프롬프트"
       },
       "source": {
@@ -2091,7 +2091,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/03c63c5c52fab75ec5917217e1196a38e5ca029aea5aff8d1f6941ef9546e117.svg",
+        "src": "assets/d3b1537f9cdcfddb78dedcec56b9d872fe0584fe5fea416ae6b0337d4f3bd1f4.jpg",
         "alt": "Anima Simple Workflow v1.5 - ComfyUI 초보자용 워크플로우"
       },
       "source": {
@@ -2123,7 +2123,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/c57208fca89bcf7cfa763a7b34c8313b2fb99316b301a4b8453c43110ecb38b5.svg",
+        "src": "assets/26956d573111f3118247cc936f82aba69e326381bf4a828091047392d8723136.jpg",
         "alt": "Hana 김하나 - Bright Morning Sofa Selfie 프롬프트"
       },
       "source": {
@@ -2154,7 +2154,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/c03ae7c1ac1a85c5281ebbabc8bb8ad0bec892b53c963abee2baf706863350af.svg",
+        "src": "assets/9dab88b811a633fd7e64b6753a987a192916253a55e40ddf5e8df828912b0b5a.jpg",
         "alt": "MiniMax H3 w4a8 양자화 — 8GB VRAM에서 7분 생성"
       },
       "source": {
@@ -2190,7 +2190,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/bba27b8c07015fc1efd897e60f97bf5d35d9c7a9f74ea4635f567bcc3503f482.svg",
+        "src": "assets/7fe6484000fd5a2fce5e8ed8dc2a37613566a9c6bdc367a3238abe367c80bf51.jpg",
         "alt": "FMHY (Free Media Heck Yeah) - 인터넷 최대 무료 리소스 디렉토리"
       },
       "source": {
@@ -2223,7 +2223,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fec5b0d50a2811ed4d0aa05ae5a2c75c544f7a50ffa2beceddb0c1a624185bfd.svg",
+        "src": "assets/a9e1eba70793c3454baae01aea974b2f98503475fb25c9a8800caec20b7509b0.jpg",
         "alt": "AI 영상 샷 디자인 / 프롬프트 시각 가이드 사이트"
       },
       "source": {
@@ -2254,7 +2254,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/c6e6a57e90db9254b6b8d590cd3693c5114154d23dba6796262c186314fac0ef.svg",
+        "src": "assets/cdc6389cd39235c60d9ccc54de96bc8cadb8a434857bbcd3444ee01543dffda2.jpg",
         "alt": "GPT Image2 - 아침 셀피 프롬프트 (朝のセルフィー)"
       },
       "source": {
@@ -2285,7 +2285,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b29ec2397b4ffe191fa8ecaa480580514bfa35f73ca6d5ef8c64e3ac1c6c7dfb.svg",
+        "src": "assets/cdc6389cd39235c60d9ccc54de96bc8cadb8a434857bbcd3444ee01543dffda2.jpg",
         "alt": "GPT Image2 - 아침 셀피 프롬프트 (白布に伸ばす朝の手)"
       },
       "source": {
@@ -2318,7 +2318,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/4463b0749623448f37ef59f5d432dc6109f7ad5a0a5d2c5cdfa3e79c77ea1c8f.svg",
+        "src": "assets/24ed5d1b9dae71e90cea5773b5e43e6e23e81d82585b272214fdb173f3d7170d.jpg",
         "alt": "AI 패션 - 해상 요트 인물 프롬프트 (海边游艇)"
       },
       "source": {
@@ -2351,7 +2351,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/1557de944ff35a3e4b812fbdcf587a65eff8a3d677ced646633cb93e8ffe2607.svg",
+        "src": "assets/f4fc2188f12f63f3330ed68456a1e7ecb66ee0a41a2d743384af8fa5e1a40007.jpg",
         "alt": "MiniMax H3 GPU 호환성 가이드 - 실측 타이밍 맵"
       },
       "source": {
@@ -2388,7 +2388,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/c7fd6cc6be9730b7c1daafbafd38c300315c6f12bc6e56da692d7e59fb72d267.svg",
+        "src": "assets/74f3b5add54f7102230ed682fbf9d23b5b3a78e6229dbfd49719748e7b806988.png",
         "alt": "MiniMax H3 Hardware Map — GPU 벤치마크·양자화·가속 총정리"
       },
       "source": {
@@ -2421,7 +2421,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/2169945e4672241a634daf3d3545f144a8b4a2c97a04737d2721430dd0406ceb.svg",
+        "src": "assets/a4dedd9b9a6baed8783f28eb2498d1c54d587b736c791bc26d0fa93b8c2e65fd.jpg",
         "alt": "Seedance 2.5 Higgsfield 출시 + 관찰적 다큐 프롬프트 예시"
       },
       "source": {
@@ -2453,7 +2453,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/6030a41780b6b01ca9d90c2f77b7e949c0e1ea84640e784ff76e9dbb05e1d13e.svg",
+        "src": "assets/d0cbf598c729abbbbeffc0cb0b47087b715d0d0055668841a8ba87fb20441dc5.jpg",
         "alt": "DD.Cherry - 호수 리조트 비키니 프롬프트 (松林湖区)"
       },
       "source": {
@@ -2485,7 +2485,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/a7ac2f665a20c554983d87679a233a982fbb6b5911388a253002115e7d5bf00f.svg",
+        "src": "assets/d0cbf598c729abbbbeffc0cb0b47087b715d0d0055668841a8ba87fb20441dc5.jpg",
         "alt": "DD.Cherry - 호숫가 휴양 비키니 프롬프트"
       },
       "source": {
@@ -2513,7 +2513,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/32cac1cd66c7bcef4f0833f809cd97d11c944aa907b12fffc95995f481b065b8.svg",
+        "src": "assets/a72b579b533a6a61f99769ca5ad49636f8562bf188a3b410bd988a9bb6fd2785.png",
         "alt": "ToroJushiAi - AI 이미지 프롬프트"
       },
       "source": {
@@ -2542,7 +2542,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/a3de11bda5474c7c637c1851a8684166257059707ccec4c48fce9d04abe9d17f.svg",
+        "src": "assets/06dff2657957ec629022d15bb61d0528ad765df3bdf794e4d705790a578e69c2.jpg",
         "alt": "새로운 Distill LoRA (Machine Delusions)"
       },
       "source": {
@@ -2573,7 +2573,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fd2609e0365b5410b34583ed7f2b29ea549a4a0002e0844fc0898b57fdf7cb38.svg",
+        "src": "assets/7e6b818f4f3fd486db77005932c7180da3882b4dcddf294cbd15f0d6e44496b5.jpg",
         "alt": "Hana 김하나 - 캐릭터 프롬프트 (한국인 여성)"
       },
       "source": {
@@ -2605,7 +2605,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/c855025c607e5923cef8475babe3a2c265068487f4766333986517579a15762b.svg",
+        "src": "assets/0d164404f04134176e2011b53e347ea02a4a6651675723633e66087eb4e6fbbe.jpg",
         "alt": "Seedance 2.5 여행 브이로그 프롬프트 (@saniaspeaks_)"
       },
       "source": {
@@ -2639,7 +2639,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/d5b0e873df7c46845bf4b008574a5fe1feafdcf35ab65d974b737be6ffd9ca2a.svg",
+        "src": "assets/8bb66c56e533c126e6bc98e8d1055ac56edfad6c6edf7c141d484d4b08c8ccda.png",
         "alt": "ComfyUI-MiniMaxH3-Easy — 통합 단일 워크플로우"
       },
       "source": {
@@ -2670,7 +2670,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/5bb9de71dbfae1fd4c4a05085d6f80d2c822d1d5f712c14d46fa310d8e19c731.svg",
+        "src": "assets/e0c4c949a7d351c43ac9892438a46414135153a8097393fbd8ddd687790e1861.jpg",
         "alt": "GPT Image2 - 아침 거실 프롬프트 (朝光にほどく青灰)"
       },
       "source": {
@@ -2702,7 +2702,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/a119aad4a69b5a784db50e4ce5aecdefdacf4061e12e27b1d5a12da73b8f818c.svg",
+        "src": "assets/eee34c367f39f0b806cf7c444f4fb6016b69001f603c098bc648151448ad03bd.jpg",
         "alt": "ComfyUI MiniMax H3 FirstBlockCache — 새로운 가속 기법"
       },
       "source": {
@@ -2735,7 +2735,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/102fadee8a219538f05e86313f880ce6ea2b73aaffb76353b929531d8cedda32.svg",
+        "src": "assets/d12c6df68ed89ae3d0565303e30937b78632702d23fdd3b95c0dd1ce89103a90.jpg",
         "alt": "MiniMax H3 API + Codex 에이전트 자동 영상 제작 파이프라인"
       },
       "source": {
@@ -2767,7 +2767,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/49b838dcd2ffc1af3aa8ca659760f48739b05db8fcd3b14816f70239ed2a784e.svg",
+        "src": "assets/eb785a41c486d72533cc4712c1db6a2cf2066e0c3a54fd7d5e9e1f786108bc67.jpg",
         "alt": "MiniMax H3 32x32 극소 영상 → 음성 추출 꼼수"
       },
       "source": {
@@ -2798,7 +2798,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/41fca4c0779c149cec1ddfca94dc80a1cb329b3517261ba9e3a6da38b8313646.svg",
+        "src": "assets/284c4ec12da78e8caed48571e66a6bb84fffb07d2ff4b0923bc053ded69ce564.jpg",
         "alt": "AI 한여름 비치 포토 프롬프트 (@toshi630222)"
       },
       "source": {
@@ -2831,7 +2831,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/340a079db5e98546d69433a80e5bde4c94c8b8561e86a44d577f97628a2ee675.svg",
+        "src": "assets/7a59a31bed11e79c1929bc6e8d56eaf4d618dfe09a55dfb6e05bfa5298cc691e.png",
         "alt": "Cloudflare Kitesurf — AI Agent 전용 브라우저 (CPU/메모리 3~7배 절감)"
       },
       "source": {
@@ -2867,7 +2867,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b9fb44ac45a7223780fe2982740bc309de017309d6c03c4d93f7cdc94df2fcaf.svg",
+        "src": "assets/1f30c14035b19aff0b96df50c30222f9c794640322bd4a31d5e4809415ce2b12.jpg",
         "alt": "Cola Skill — Codex/Claude Code 스킬 검색 사이트"
       },
       "source": {
@@ -2899,7 +2899,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/8d22d3b230dc2d42a619fdaa96a666f82ecd351b6a06bc0d30b91ff686107342.svg",
+        "src": "assets/0090f99163c14b584252044e65e59578ce0173cddd886bc9ae0a0d13b295fc85.jpg",
         "alt": "MiniMax H3 — 스파게티 웨스턴 펄프 애니 타이틀 시퀀스"
       },
       "source": {
@@ -2968,7 +2968,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/6a3a2e29d87c752629a9a4c784ed307de418ed62ce7a88faf409486477463298.svg",
+        "src": "assets/4dbfe88c24d9aeacac3c99c052e40a0a811d3115573da0d46a0d0735e0776b03.jpg",
         "alt": "에트매거진 — AI 유튜브 채널 5선 (17선 중 검증완료)"
       },
       "source": {
@@ -2999,7 +2999,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fb11f794c667c7ee3b19b7fb9ed0de35930bdff3c5e7e35acfc1189837861787.svg",
+        "src": "assets/7550a450997057c09abbc63c4f3651f21a1563553d4b5263e067fa545755550b.jpg",
         "alt": "톰 홀랜드 Umbrella 퍼포먼스 비하인드 4가지"
       },
       "source": {
@@ -3030,7 +3030,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fdc8b72f8f61a6a599261a7c6ae887979d83415247db0c764d4dc8b937cf725d.svg",
+        "src": "assets/3751a6e466ead3601ebee76c452ee9f3793b9d8ae2cfda2a6288851302093691.jpg",
         "alt": "더크 젠틀리의 전체론적 탐정 사무소 — 시즌1 줄거리"
       },
       "source": {
@@ -3193,7 +3193,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/1d722495594b636daf735c907b8e3194d567deb698a4f9f29d7132ddf7caedf4.svg",
+        "src": "assets/3fad30c68e8991ce1eec0b36769e6ef0d618b11e2be7a4e8040364ae02c9408f.png",
         "alt": "Notion Prompt 페이지 — 접근 제한으로 내용 미확인"
       },
       "source": {
@@ -3227,7 +3227,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/c78e3494fbe33b21265c1d68a1a7bbfe75a4207d6c5a60773a8b26ed6605a916.svg",
+        "src": "assets/0a547f07f479d4a388871d91c41b69f845a8974d68d6d42d6dcf11aba5b277be.jpg",
         "alt": "MiniMax H3 4× RTX 3090 — Turbo LoRA 30초 FPV 생성 벤치마크"
       },
       "source": {
@@ -3262,7 +3262,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/d273cea2c845d98eb81edcd4b28fab5f90079c3e7ba6506de1dabe88583e19de.svg",
+        "src": "assets/f50cf22e574ac30b89e020b92758e28a94bf1577943958719727890d4083ba4d.png",
         "alt": "alesha-pro/tools — 4× RTX 3090 MiniMax H3 ComfyUI 워크플로우·벤치마크"
       },
       "source": {
@@ -3296,7 +3296,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/6794532caf4770a956bd384fb954dcbfa6cb8b8df91fd524dba55936de1ce910.svg",
+        "src": "assets/7789aa6341e3925d71b3fda8ef912f3041157fc031407063230dd2fb855188a5.jpg",
         "alt": "Sania — Seedance 2.0 한인 여성 모닝 베드룸 울트라 리얼리스틱 영상 프롬프트"
       },
       "source": {
@@ -3328,7 +3328,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/d91009c36dfc2681d2d17018d291509f54f19b935bcf2c8aee883e80c823a8df.svg",
+        "src": "assets/70f951c47ec0764ffee54fcc013ff8e32375e3859d8e0def66656d4ec5ef4571.jpg",
         "alt": "DD.Cherry — GPT Image2 樱潮晴光 (벚꽃·햇빛) 인물 프롬프트"
       },
       "source": {
@@ -3361,7 +3361,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/bc5d7e95cc6edd9367c20798a59d08a9aedbcd41acf14c58cf4d37dcfd6d6e75.svg",
+        "src": "assets/2d9ab4039001550685c56b0f7bd192d9b41a8b55eb61c25a40d455c764bda58a.jpg",
         "alt": "CyberTotal2026 — GPT Image2 熊柄とライムの海席 AI写真 프롬프트"
       },
       "source": {
@@ -3392,7 +3392,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/a568b822ed348b005efe64b1af6661d9fbce85f2a6c6bebc8cbef0794cf65226.svg",
+        "src": "assets/c60e64f26feb16ff1f8cec2f1d2326eb4dd2f9b994c8c92be20c6ca758930e54.jpg",
         "alt": "CyberTotal2026 — GPT Image2 フラッシュ撮影·暗室 AI写真 프롬프트"
       },
       "source": {
@@ -3430,7 +3430,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/5445a4b1aa96f35a21ee6c246bb5d45d6bc5d24edc22f7767e2337f50924df8a.svg",
+        "src": "assets/dbc7c1202c482d03152bd7b8d4ebf0b847f6f0a0098fca8dbcd487be8033bded.png",
         "alt": "OpenAI GPT-OSS 20B Abliterated Uncensored NEO Imatrix GGUF — 17종 양자화"
       },
       "source": {
@@ -3465,7 +3465,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/6d82a8d049bbc9be0870e3662148a50490b2df8d3385b92967731196c0063816.svg",
+        "src": "assets/a3c695ba79678d0fd8084d62ad0702651b912c93ba180955827d93142f411b84.jpg",
         "alt": "8GB VRAM 로컬 AI 단편극 워크플로우 — RTX 5060 8GB·32GB RAM 검증"
       },
       "source": {
@@ -3496,7 +3496,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/61a6411e63e903c99276d97f47279109c9f147326e79021cf1d90b539b5f83bd.svg",
+        "src": "assets/3ce9ec30b1adae9ae5948be3dd37fb96cde86159fab688b3d1d00deb7b342e8f.jpg",
         "alt": "Benny's Project — GPT Image2 숙제/도움말 AI写真 프롬프트"
       },
       "source": {
@@ -3529,7 +3529,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/58c999bf60c5dba2bab3d32a600176046601f2903af0bc4280f774447de907c4.svg",
+        "src": "assets/27feb88052be39d48de160105f8f64725390869e1c4753c962ff1dd785479848.jpg",
         "alt": "ComfyUI MiniMax H3 프롬프트 작성 지원 노드 공개"
       },
       "source": {
@@ -3561,7 +3561,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/14356bcabad2279853c72dfd5e8887235bd573b02d4bd8b088c32f7aea241a13.svg",
+        "src": "assets/bf20278653ef4ffb09af05eec0510284043cc626d6342cedda97e14bf68e0770.jpg",
         "alt": "GPT Image — 옛 디카 감성·하얗게 날린 빛 AI写真 프롬프트"
       },
       "source": {
@@ -3593,7 +3593,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/6d9f367c858d1e8d839729551f68a8bf306eb06e70263ddc9eb689ae2171fed1.svg",
+        "src": "assets/e701eb406b71f684f5843b00983b4d80704fd150112167f5b6e29337a99ff53b.jpg",
         "alt": "MiniMax H3 캐릭터 소개 프롬프트 — @[char ref] ID 유지 워크플로우"
       },
       "source": {
@@ -3623,7 +3623,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/e0701cce8fec309c77245cfa90fbe4baee413b2d5d2099d4c74981016a63299f.svg",
+        "src": "assets/aa16d10a40723bdf392848ae32cd87a5b855314a3bcde09ebdb8399a70343fe8.jpg",
         "alt": "DD.Cherry — GPT Image 위챗 공식 계정·AI 사진 프롬프트"
       },
       "source": {
@@ -3655,7 +3655,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/7baacce1c815de9dca66bcd386709e2d45434f971ef216450b4e5a409aa02e9d.svg",
+        "src": "assets/c53d89f5186a3f22f5d70ff8319e94ccc22ced70e683d4fd5d5cf16a5f56c278.png",
         "alt": "Jellyfish — 무료·오픈소스 AI 단편극 제작 도구"
       },
       "source": {
@@ -3688,7 +3688,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/a872b691561d3819afbdbb655ec3e561d4a68f8d4e6f9932c6c0c0df91db3278.svg",
+        "src": "assets/3ca4f8c33f6793ff75f6bff7f598482834367ab4552baddc4313df5077aa1c1e.jpg",
         "alt": "CyberTotal2026 — GPT Image2 桜越しの春の瞳·벚꽃 너머 봄의 눈동자"
       },
       "source": {
@@ -3721,7 +3721,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/3f0e4d01469350e4df13291af27a63c75c11144205a293cc4b44936251ac18ff.svg",
+        "src": "assets/f21964654241d6c77a263583157aa24621d40e06d22e23ba4391af84b537dec2.jpg",
         "alt": "Kstylelife — 제니 보이스×모던 한복 드라마틱 스타일링 레퍼런스"
       },
       "source": {
@@ -3787,7 +3787,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f36d472fa4745d5285f782e6a782c812e5c4265ae0a2efa18152835fb59d6e16.svg",
+        "src": "assets/f4fc2188f12f63f3330ed68456a1e7ecb66ee0a41a2d743384af8fa5e1a40007.jpg",
         "alt": "MiniMax H3 GPU 호환성 맵 — 8GB~128GB 전 구간 커뮤니티 벤치마크"
       },
       "source": {
@@ -3820,7 +3820,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/2bd286d03f2aa5595d77414ed918ebc4da714075a548f7f33f66517df1e1b1b2.svg",
+        "src": "assets/d26bc9717d0f8e6c711b8a85ef0657e2760aeadd37fe6d9e9bf6c1f0fc32690c.jpg",
         "alt": "MiniMax H3 32B→4B 텍스트 인코더 교체 — VRAM 16GB→5.2GB로 급감"
       },
       "source": {
@@ -3854,7 +3854,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/dd885637b9dc79814a4c4f0a71aa0e715a0fb01ad2cf7df46f4721acb0b71f1f.svg",
+        "src": "assets/c25a203ba1787fa3e8bcb23fccfff519530fdc233aadb9448602be7798028aef.jpg",
         "alt": "MiniMax H3 RTX 4070 Ti 12GB 최적화 벤치마크 — pruned INT8 ConvRot"
       },
       "source": {
@@ -3887,7 +3887,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/1a13a77878221883a85e2b97e8fb7565ed2579d7436ade9dc241e95891274c85.svg",
+        "src": "assets/5be2f1b429b0e3d157e0ee1a42e5f347b4bfca1516b8e1a9cd3d7ece5cf43ba9.jpg",
         "alt": "MiniMax H3 OpenCode 프롬프트 작성 지원 시스템 공개"
       },
       "source": {
@@ -3919,7 +3919,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/286bf70320ac91390f594fb4f21bfff71872795c2c218746b2f0a1e0dcd39532.svg",
+        "src": "assets/4fc3dde953a9db0c60dad97645c5da42631dad5536123a4b63861ce8dab9dadc.jpg",
         "alt": "Unsloth MiniMax H3 pruned GGUF — 8GB VRAM 완벽 지원"
       },
       "source": {
@@ -3952,7 +3952,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/22ee3a0679a94921a1f84edde2ac9b39ebdbb7ff946b098d8f25abbd4c3d458b.svg",
+        "src": "assets/1181fc863ee245232d8ea410e24d9770df91a50fe2125409151c98fb3179b155.jpg",
         "alt": "CyberTotal2026 — GPT Image2 逆光へ掲げる白花·역광 하얀 꽃"
       },
       "source": {
@@ -3985,7 +3985,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/8cac8687ce6fed0436837af875c86a3f78c33f355915df02898801027379f40c.svg",
+        "src": "assets/069db2c9acd5adcf796a5dd07f7bc29ccff03dd57be4ad11d27629ad1dbb9b6a.jpg",
         "alt": "CyberTotal2026 — GPT Image2 白い水着と夏光·하얀 수영복과 여름 햇살"
       },
       "source": {
@@ -4018,7 +4018,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/28543e0297f78dbca30f8fbee986345c6e03f8e828702041a5a14d2a419e2f05.svg",
+        "src": "assets/b027eb8fdaab16015dba4fcf7e64817e1ddf86b62cf149b3b7e24a32164d28c9.jpg",
         "alt": "CyberTotal2026 — GPT Image2 珊瑚色の花ドレス·산호색 꽃 드레스"
       },
       "source": {
@@ -4079,7 +4079,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/939a0e9bed4eae5291a31a84aee3ff48d020b747f6f47471dd1ff0f848287636.svg",
+        "src": "assets/619799838cbcc96f3e2149b473cc0ce0162cf75c0e8cad33beab5015e0654942.jpg",
         "alt": "toshi — GPT Image2 한여름 비치 포토·푸른 바다 하얀 모래사장"
       },
       "source": {
@@ -4112,7 +4112,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b4d1d5e248d1e7d8c88703bdaf2abfec67826fe6c16e5776d712c5bf365d5ad5.svg",
+        "src": "assets/d26bc9717d0f8e6c711b8a85ef0657e2760aeadd37fe6d9e9bf6c1f0fc32690c.jpg",
         "alt": "MiniMax H3 ClipProj — 32B→Qwen3-VL-4B로 VRAM 15.7GB→5.2GB 단축"
       },
       "source": {
@@ -4146,7 +4146,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/c4d3a9234a4d915e1235ce092258789f7b3271114ccd81c7ebb79f4b0e445d44.svg",
+        "src": "assets/089735d46d3698db439269c9d68e05bacadd8d6d8ac04f6433c8aa39c7d34a64.jpg",
         "alt": "CyberTotal2026 — GPT Image2 海風と山影の帽子·바닷바람과 산 그림자 모자"
       },
       "source": {
@@ -4178,7 +4178,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0cd2bafb4aa8acaadc4fc1bd0a89e9ed0c733430c3703f3a2614f4ad55131fed.svg",
+        "src": "assets/1a3e15d4595497047f011efe076a0f6045d6a9069110cb78c78d47c3370fff1a.jpg",
         "alt": "CyberTotal2026 — GPT Image2 真夏の自販機サイド·한여름 자판기 옆"
       },
       "source": {
@@ -4213,7 +4213,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/751a6ddb7ef3e399506bc9d36b7cc6ad64b05f2bc0fdfbd5f9c002effe3bb6c0.svg",
+        "src": "assets/ecae7f72744c84233b1509ce98a9ed691a6b4fa4227c628e5c56434065f85e48.png",
         "alt": "Promptsref.com — AI 프롬프트 라이브러리·GPT Image·Midjourney·AI Video 툴"
       },
       "source": {
@@ -4243,7 +4243,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/cc06004cd3053cdee10ecd1ac24f18db0d8f4847430e5383e37a1b4311326286.svg",
+        "src": "assets/1a824e7d6f31476d6de8bb7c01c3bba031646302e3b3c79b5841df302926c533.jpg",
         "alt": "오프레 — X 공유 링크 참조 (링크 전용 포스트)"
       },
       "source": {
@@ -4277,7 +4277,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/7c61a55e0f9a4ef79223bc9efe9997c62b6e0e4328a6a6ded7d93fd6b8c6b57f.svg",
+        "src": "assets/bd558bc6991bc04662d1ec1f1317bea0caac31d6b3888a7ee0f2bb3df71f91e4.jpg",
         "alt": "미드저니 무드보드로 상업용 퀄리티 이미지 만드는 법 — LOOPY 튜토리얼"
       },
       "source": {
@@ -4307,7 +4307,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/c298ab7690d4511299b87751eb2b407693597d89e82235e3e780dcd99d4f1f5a.svg",
+        "src": "assets/e083322185d11b19fc9974ccb9ada7027b6d7300aeb6f1447d543c61a625c97d.jpg",
         "alt": "오프레 — X 공유 링크 참조 2 (링크 전용 포스트)"
       },
       "source": {
@@ -4342,7 +4342,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/6e71abcbb986244d5ffc4b6821b27973a7307edd4e08bedf22e15765f65cf8f0.svg",
+        "src": "assets/f0657e1e0b0cfb06a7337f5ea90971d47c35b27ec857b388330f985322cd5072.jpg",
         "alt": "쿠쿠 — 5분 만에 유튜브 재사용 정책 우회·미드저니로 달러 조회수 빨아들이기"
       },
       "source": {
@@ -4376,7 +4376,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/e044e1ca32b7f79a18519e0462cc331cbb9b0a408285c9e847682e5952fedf2f.svg",
+        "src": "assets/f0657e1e0b0cfb06a7337f5ea90971d47c35b27ec857b388330f985322cd5072.jpg",
         "alt": "쿠쿠 — 5분 만에 4050 아재 감성 자극·미드저니로 광고비 쓸어 담기"
       },
       "source": {
@@ -4408,7 +4408,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/2f00dfad7475d87b66eaf99c31706a2ffbd17646f9b8021c9f62d3093d38b037.svg",
+        "src": "assets/a63021bc2cd718f0d6a896292251a1c8f16b2f5a78336a5dc5dc166fcd71781e.jpg",
         "alt": "시나브 — Claude로 Midjourney 프롬프트 작성·분석·개선 워크플로우"
       },
       "source": {
@@ -4440,7 +4440,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/d4d9453b6e7496b5f42192aed447b9ea8e819f48b1416712f7cf757df7c677ee.svg",
+        "src": "assets/6effb2dbf8893bce5f849c8fdc3b2c24b0d8681e823054c451ae956120340f35.jpg",
         "alt": "HYOSIN — Midjourney 비주얼 디렉팅·Jewel Cake 프롬프트 공유 (Notion)"
       },
       "source": {
@@ -4473,7 +4473,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b56bc40e992f718457934ba991a6a7592526ac34156fbe9fd91038d4bf0bd344.svg",
+        "src": "assets/2b056d5da94709e5d2cbf0b984ac77ca9fe261ef7f79b83378517d8481ff9ba5.jpg",
         "alt": "HYOSIN — Midjourney 인물 생성 회피 이유·분위기 특화 활용 팁"
       },
       "source": {
@@ -4504,7 +4504,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/5b5f860730f0a70984f584700e6ebcbaf3df9796039f797554684cb166800f22.svg",
+        "src": "assets/c79c9b43910f7e7dff38c88852037d16e5d3885024afd3448de61b8aa409acb7.jpg",
         "alt": "GPT Image 2 Character Sheet 프롬프트 — 레퍼런스 이미지 기반 캐릭터 시트 생성"
       },
       "source": {
@@ -4535,7 +4535,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/1e6e3f6a3a2d81301e9c579ba233e41e257fe957659bcda787ad51d5bdf0d812.svg",
+        "src": "assets/f32037ee7d70ca78a6e55f6003fcad484d199280a93eac061758692966dc6fd5.jpg",
         "alt": "GrokImagine 2.0 인상 분석 — 필름·스타일 프롬프트 강력, 피부질감 약함"
       },
       "source": {
@@ -4566,7 +4566,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/88f7dee35302fd075340884782763dab55ac73c19546c87f997df93762c80067.svg",
+        "src": "assets/3514126967363f07101f0983eca5e9d8104415ed136e7bbf1af1f7cfcc916c5d.jpg",
         "alt": "얼굴 일관성 생성 방안 — 캐릭터 레퍼런스 시트 템플릿·GPT Image2"
       },
       "source": {
@@ -4597,7 +4597,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0c50d269620798a570d76e513077130c1888e32a1d86d9e2e7fdd4d7a187a051.svg",
+        "src": "assets/f438af633809a5e86eead9e58f7f50717c86bb9f2df1f3aab069a8ce457cce7b.jpg",
         "alt": "ChatGPT 유료 결제 전 봐야 할 무료 AI 사이트 50선 (튀르키예어)"
       },
       "source": {
@@ -4629,7 +4629,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/9b311989bc224b2da107c40e06c50678aa985a7a708f404f93526d12e6550cbb.svg",
+        "src": "assets/a5011649cff6fce5e27339565f2650ac8984471f49c617e5a5df62be220cafad.jpg",
         "alt": "AI Muse — palm-print bedding·metal choker·ALL-STAR dress 패션 프롬프트"
       },
       "source": {
@@ -4663,7 +4663,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/eb421a5528a85121a329e1fe0e6fd0734f44e6e3cf293a443864377322da2d0c.svg",
+        "src": "assets/1dde68f79e15a628bdc281e8ad41519c0323cad2d0401cfc33cb2f6a35104620.jpg",
         "alt": "CyberTotal2026 — GPT Image2 夏空へ伸ばす手·여름 하늘 향한 손"
       },
       "source": {
@@ -4697,7 +4697,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/2252b366bc682bd4e0909a154c90ec1b42e2837a6377d044607d18cdda57e51d.svg",
+        "src": "assets/4088cf0ef76d302cf469a028fb54bf8313c68f4f6aba56f332f2de262b683a64.jpg",
         "alt": "CyberTotal2026 — GPT Image2 ネオンへ伸ばす手·네온 거리 향한 손"
       },
       "source": {
@@ -4731,7 +4731,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/4e74a389180068b546bf2a15f91654724ce08e7056e4d2f04b57e74450896ecb.svg",
+        "src": "assets/f49e482ce4e5cad8346f0e28faa10a4128a4202a0a1a80a18fedfb2d3956de73.jpg",
         "alt": "BubbleBrain — GPT Image 2 무디 인물 포트레이트·풀 프롬프트 공개"
       },
       "source": {
@@ -4764,7 +4764,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/d5c44cca100680e0f4af8353c5477ed086ed7206fce3d11f02c2d24e7a47900f.svg",
+        "src": "assets/77bcaf0ce3090d8ed30ba085fa76459f7c8d66817d8d64b15d92ab8b5f10e629.jpg",
         "alt": "Seedance 2.5 감정 제어 — 15초 시네마틱 체육관 이모셔널 씬·OpenArt"
       },
       "source": {
@@ -4799,7 +4799,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0229a4df9d13cf424553cef96a181b985475c8465d021eb4faa1c128d2a7a6a3.svg",
+        "src": "assets/93398c58cbf51af2f35fbc7e2b0bf8bfb15a29b27d629700e69a1501a96b0a14.jpg",
         "alt": "DD.Cherry — GPT Image2 晨雾江湖行旅写真·안개 낀 강가 여행 인물 프롬프트"
       },
       "source": {
@@ -4832,7 +4832,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/62060012c37bfcbd1fe6e5d983972ae73f3848fb0e876eae0e4b6ebac2ce838c.svg",
+        "src": "assets/7d2124d0781f694a5ff9e0aadf4c7c19b904644172295ad3f6f36813e24844b7.jpg",
         "alt": "瑠璃川彩葉 — AI 걸 무드 포트레이트·삼개국어 상호작용 포스트"
       },
       "source": {
@@ -4865,7 +4865,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/346ac27d22c0487118393ebe99309daa7252645fdb0eda0b943c63d8642b8a34.svg",
+        "src": "assets/d7f3562d58d0dcc94aa8226d9e06c4ce10a7b28ad3f23cc588cde94b665cde92.jpg",
         "alt": "Alienoid: Return to the Future — SF 판타지 액션 영화 레퍼런스 (최동훈 감독)"
       },
       "source": {
@@ -4898,7 +4898,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/d440a3704920adafcd2b728ae531d292e7e82af02437e2deed4a80f73e6fe9a2.svg",
+        "src": "assets/30ea66045742c4e15e065672b4d16094b9bdd7fa04e7cc04612f30c66926ce2c.jpg",
         "alt": "망나니토끼(망토) — 번아웃 애니메이션·캐릭터 코믹 릴스"
       },
       "source": {
@@ -4927,7 +4927,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/27661d31e852aff621143b6e74170548cb25167be24cace9331a1dd117160a9e.svg",
+        "src": "assets/494a91e1f7de8a8613e0e7a0896fecaf786eaf2e2fb0cab71509bd2145538bad.jpg",
         "alt": "이혜주 — 힘들 때 위로·저장 릴스"
       },
       "source": {
@@ -4961,7 +4961,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/9f24e7ab4a792c9dbfe2c6bb97b7c87d80bb4af7bc45d0c9acad64a0793e0df7.svg",
+        "src": "assets/58c72cf7afcd1beb42cdb2e636ca38404b25af312404abf5b1fb990c1abe2075.jpg",
         "alt": "지미니 스고이! 교열걸 코노 에츠코 (2016) — 사토미×스다 마사키 명장면"
       },
       "source": {
@@ -4993,7 +4993,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/ad0bfcfa3c94f02defc28b07a1dd7a526f9b4cfb9fce1f2729d525d7ccb7d635.svg",
+        "src": "assets/00d82ccca276083d987a9b8a641f73497eee692c14ae93c2fcde5ad16fa596b1.jpg",
         "alt": "JTBC 드라마 — 한 지붕 동거→부모님 찾기 패기 K-드라마 클립"
       },
       "source": {
@@ -5026,7 +5026,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/2ea962789f70448c225ed5e60e49c620df48355c544308013e51ece7b69c194b.svg",
+        "src": "assets/d395e67ba7d0aa3fb33ad3fedd1d306933d64b420bbd54f922cf1ac3348f0967.jpg",
         "alt": "볼빨간사춘기 — 나만, 봄 콘서트 팬-아티스트 티키타카 명장면"
       },
       "source": {
@@ -5061,7 +5061,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b753e2b865c8e4cced195ec9b3c2453bb7dff51e6363578535c8f6d3596bf17d.svg",
+        "src": "assets/7ce17839117c239b4ca3d53db1670e6797cdc45bdbe86d24b1cc000d41fda6b8.jpg",
         "alt": "우리들의 블루스 — 두 아버지의 자존심·화해 명장면 (박지환·최영준)"
       },
       "source": {
@@ -5094,7 +5094,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/efd89bd104e639df326e76e78211973e3885b91053ecb0e0f7b10b9bfe198b41.svg",
+        "src": "assets/a81e77fdf67598397a309f24f4b9750edc8e0ae4702aa20448a632fc21480d18.jpg",
         "alt": "CyberTotal2026 — GPT Image2 青空と白い編み地·푸른 하늘과 하얀 니트"
       },
       "source": {
@@ -5128,7 +5128,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/dccff57038988d80ac8290018dcc08a162e42b0e4029bc922041e07430c9c012.svg",
+        "src": "assets/cac4f418af740cf712a173c2b28817dd5dd0e315dd34a36ce3399a37c8f1b425.jpg",
         "alt": "Midjourney V8.2 포토리얼 에디토리얼 초상 — 하이앵글·일본 여성"
       },
       "source": {
@@ -5160,7 +5160,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/627a534cfcfe10ba6221ceb08688c2df1a73f69a1e889f9a6ee6d34e2e1c7424.svg",
+        "src": "assets/c4adb4b0b128bc31528c5a773f7a48aee0abad27ce6778215cbe360276455859.jpg",
         "alt": "GONZOO — AI 일러스트·순수 패션 바이브·여름 시즌"
       },
       "source": {
@@ -5193,7 +5193,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/50e40e1da8984f85f20da1c55730e7a5c6c238acbfa91e9fd114d5c55b8f6f5f.svg",
+        "src": "assets/bc8cbd681156ddd35d37428d3ecedb92904dfa3ccd5dd392349f9476503f622e.jpg",
         "alt": "CyberTotal2026 — GPT Image2 滝壺に広げる腕·폭포 아래 펼친 팔"
       },
       "source": {
@@ -5227,7 +5227,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/a23f141b773847519be08f903eda636f51381da91860b0b7727ddfa91de674cf.svg",
+        "src": "assets/4be96008cc21f28d6f4860a397e53a2bc1f3c958660ebc011bb7c1af03f25df8.jpg",
         "alt": "さぶろん — GPT Image2 新作水着·頁の向こう側 (책 너머의 한 페이지)"
       },
       "source": {
@@ -5260,7 +5260,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b419201cdf76244a5f92b6e4e969ef8f657ef989e4f7614aaa7c2144142e4c5a.svg",
+        "src": "assets/02e1ffd5fadc0afed7f129bcdb251175255ee6711880b9411df7ae52f07d298a.jpg",
         "alt": "CyberTotal2026 — GPT Image2 青壁の昼休み·푸른 벽의 점심휴식"
       },
       "source": {
@@ -5291,7 +5291,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fcca0af133f6c8d298ddb52d6fc1d21d53a192f12facf28315f6817746a465c0.svg",
+        "src": "assets/b7487e1c65a8e6adbe0d55b0dd0d1d7299128dc2f8b72706031b4ba83920200d.jpg",
         "alt": "DD.Cherry — X→위챗 공식 계정 플랫폼 이전 고려"
       },
       "source": {
@@ -5324,7 +5324,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/23b902513788f1224657b4f4f550e820763d5834d40b7ac74cb7cc3725c62c6f.svg",
+        "src": "assets/d664d090c9ca6306396ff611e1057f13f39a99850d47d8b8f8fc70f6d37e073a.jpg",
         "alt": "Hana 김하나 — GPT Image2 야식·취침 전 한 입 셀피 프롬프트"
       },
       "source": {
@@ -5357,7 +5357,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/1bbf8d34d340ef5a77951728a636c883f872dd4ca9dfbc06ea78a2912be65590.svg",
+        "src": "assets/0b6442d9ec7912fc0fd1bf608be55963a92890869b2881adb80fa96391210619.jpg",
         "alt": "マリっぴぃ — AI 그라비아·스마일×란제리 SFW 디지털 아트"
       },
       "source": {
@@ -5392,7 +5392,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/50805a5018df66b999fb4ffde7966db4244704ef313f9158b5ecc5f6815c1c55.svg",
+        "src": "assets/e5b0a4be45e1679db562e0ce82f7957507db237dddf4a6c4e71345ae971d4f32.png",
         "alt": "kimi-k3-in-c — 176KB 순수 C99 MoE 추론 엔진·디스크 스트리밍"
       },
       "source": {
@@ -5427,7 +5427,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b30e3b2fd2e28658106b44591f874a0974efe7452a6434995347270560f6240b.svg",
+        "src": "assets/87d607a0c95f61b5b3ca68002cea2f02d59c2f8571dfe1b445efcb90df392ad7.png",
         "alt": "kimi-k3-in-c — 2.78조 파라미터 Kimi K3 단일 CPU 8.24GB RAM 추론 (C99)"
       },
       "source": {
@@ -5460,7 +5460,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/25c3d502671c16b13f0efebdebf428dd63cefe71b211c84f83d16593347ae7c1.svg",
+        "src": "assets/d6cb80364559e57be6637d8892a6ea8c6367e0d944a266906e092a51b02068ea.jpg",
         "alt": "CyberTotal2026 — GPT Image2 入り江を望む読書·후미 바다 독서"
       },
       "source": {
@@ -5490,7 +5490,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/75c1b57799226ff9cdf4253e771ed98073e1bcb35d7f2b072a1cb450abdc1fa2.svg",
+        "src": "assets/8c70ac4e84a3ab683c5ec10ec9659bd7e74d084d6eafcfadc5f90691ab01ca3e.jpg",
         "alt": "DD.Cherry — X 크리에이터 수익화 문턱·데이터 부진 언급"
       },
       "source": {
@@ -5524,7 +5524,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/d0ce29aa5cfec32a3357a0dff15491464423aee7d6c08146d9bb6fe1435659ce.svg",
+        "src": "assets/761b377b4dcbe284454aa45ce93747c63134d4c5f06e58df93265336bcf98415.jpg",
         "alt": "LTX-2.5 출시 — Lightricks 22B 오픈웨이트 멀티샷 비디오 모델"
       },
       "source": {
@@ -5558,7 +5558,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0f8fdc955afcee294e56156d1f7b43685381bc3c8b125661ee8fbd49c483538a.svg",
+        "src": "assets/603f6e54fc021bdf0ef6b290ed20a69411886c183b9f77b5aeafec35684ba778.jpg",
         "alt": "Eris Create Lab — 캐릭터 레퍼런스 구축 에이전트 프롬프트 (전신 4방향·두부 6방향·6표정)"
       },
       "source": {
@@ -5591,7 +5591,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0fd4ba6543753ec99416f8af192a28680f9cc3aab84860d2e16c6dc5f3331ed2.svg",
+        "src": "assets/6e1ebd5b3099f2a3403ea6691aa23c741bc6968923ec98535e356a3c877e04bc.png",
         "alt": "MiniMax H3 연속 장편 영상 — ComfyUI 노드·끝 프레임+오디오 참조 연결"
       },
       "source": {
@@ -5624,7 +5624,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/c04203c167afd78e81905372d889f1141ab199cc4b292fc1848985e38bd75c2e.svg",
+        "src": "assets/739fb34401af80326386d2ab7456da86fd4c396e3279faa2a5ee2eafb7a2bbd3.jpg",
         "alt": "CyberTotal2026 — GPT Image2 海色ピースサイン·바다색 피스 사인"
       },
       "source": {
@@ -5653,7 +5653,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/4d78fd13bfac11474d5ddc54657eb05393a546301f23b4df14f9529cacfb833a.svg",
+        "src": "assets/a72b579b533a6a61f99769ca5ad49636f8562bf188a3b410bd988a9bb6fd2785.png",
         "alt": "ToroJushiAi — AI 아트 프롬프트 공유 (이미지 단독)"
       },
       "source": {
@@ -5686,7 +5686,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0707f1f6e615e6a33b1f823fca1557a8cfa1bf06a581456d6ef66bad2bd066c2.svg",
+        "src": "assets/83fbfb23a06945db97e0c2a186bf48a1988a9da128857d381fc49426bbed2210.jpg",
         "alt": "오픈소스 AI 영상 생태계 급변 — MiniMax H3·IndexTTS-2.5·LTX-2.5·Wan-Animate-2"
       },
       "source": {
@@ -5719,7 +5719,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/4b874fe3b81dd0749c6db545a8d87765eabf4ccc30d85f7c1ec8c41a530e41bf.svg",
+        "src": "assets/5eb299a7be419513e02f68d9188cf469c53696eae310ce72cf883edb557fb1eb.jpg",
         "alt": "MiniMax H3 신규 능력 3종 — 8V8A 안정 파라미터·Attention 백엔드·캐릭터 LoRA"
       },
       "source": {
@@ -5752,7 +5752,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/94d3327c5fac64e608cc41f0d84b1e1607f2b5813b9d02d61277a54c9f7cd868.svg",
+        "src": "assets/bdfac145da89c42ec2a90a3a07f93f19b4af0debf89174f2327b313f0ccf63ec.jpg",
         "alt": "Upscayl — 무료·오픈소스 AI 사진 업스케일링 (48K+ ⭐)"
       },
       "source": {
@@ -5787,7 +5787,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/8b694177aa8ac098b9425a970e9412e57a1192708627c1e7a94c6f60600a3b76.svg",
+        "src": "assets/50c31d24d61cbba721e4486388410c81602f6ba7968d336ca8f0fcd851b42b7c.png",
         "alt": "Upscayl — #1 무료·오픈소스 AI 이미지 업스케일러 (Linux/macOS/Win)"
       },
       "source": {
@@ -5820,7 +5820,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f5e81590757abd374ad6f8977b12f06ace0dd4c593b968c847e1bb08779e24ee.svg",
+        "src": "assets/cefaf72369a2e5547c64f1037674620b0ef8fbdaf21c2a7bcf951f81816ec72d.jpg",
         "alt": "Int8 Attention 최적화 — MiniMax H3 생성시간 52% 단축 (850초→520초)"
       },
       "source": {
@@ -5855,7 +5855,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/41755c1e335d8028587b21505e7cc17cf2e8053c92b557541e41d4eaa33a59b2.svg",
+        "src": "assets/6d946ac34f87bddd92f372b88bb0393273139c2ea80c2d8512becbf930c616b6.jpg",
         "alt": "LOOPY — 유튜브·인스타·틱톡·트위터 원본 영상 다운로드 무료 툴"
       },
       "source": {
@@ -5887,7 +5887,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/afe0dc5c0bec1e99dbe46af00cf1de9b3fa303d57cef02e8f86b5fbf44625ebc.svg",
+        "src": "assets/dd2f008ff5e918ef71a70a07123da8dab2c2484b084f9e8754676c5505c8b94c.jpg",
         "alt": "DD.Cherry — OpenCode Go 구매·DeepSeek V4 Pro 시도 언급"
       },
       "source": {
@@ -5920,7 +5920,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/1f0bb0fb1632f378fa8fadf474ff31ac832f238a3ea25a25edce429ba22a5dff.svg",
+        "src": "assets/7195a4f666f72e1b95cf6ea242c55349dac35b8e40524aca6f1e32df99d0c3c4.jpg",
         "alt": "underwood — GPT Image2 레퍼런스 이미지 생성 힌트·9:16 비키니 코스프레 포스터"
       },
       "source": {
@@ -5983,7 +5983,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/811e18ea3b666b611d9d8b929f72fe839f27a993b8e4d97fde36f4ce08e7aa74.svg",
+        "src": "assets/66c6371cbe492ce668a37377aca66c8dc5fb46d96cde19045405f84c93fcaffd.jpg",
         "alt": "新清士 — MiniMax H3 사전확인 3Step·본생성 워크플로우 (4090 실측)"
       },
       "source": {
@@ -6016,7 +6016,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/52c73fdbc3a2c26ca0858a19522b9e4664057a1d70b37a4fe51d2994a9994ffc.svg",
+        "src": "assets/30083d17d3c7475570bf33b8baf1de7ce677247b9fb52f539cd7bd63fbd3aaf8.jpg",
         "alt": "To Your Eternity 3 (불멸의 그대에게) — 애니메이션 스토리텔링 레퍼런스"
       },
       "source": {
@@ -6050,7 +6050,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fbe438c9663f5cde0c3ac193e970ce13ad40574c854935b6e0f71ad61a7d3346.svg",
+        "src": "assets/482db2ee18de2618a70e0488278c08cb65e4bcd70042adbe99f01410cbf09de8.jpg",
         "alt": "Michael Simpson — 액션 파이트 시퀀스·안무·VFX 레퍼런스"
       },
       "source": {
@@ -6115,7 +6115,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/8751c7d1706a1c61791ddb25b79aebaf903fcf8482c622649d0af1dd0bc80a4c.svg",
+        "src": "assets/35bc62b481a0fce49f633e3362f10b4af68eb5f6de0ede901fc6a55bba9c4596.jpg",
         "alt": "CyberTotal2026 — GPT Image2 窓辺の白い朝·창가의 하얀 아침"
       },
       "source": {
@@ -6148,7 +6148,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0320a56d61d7dd2aa13d565acf5209fa9e3d55d492684d6019c67a605802d68d.svg",
+        "src": "assets/6276ccb82ae8e1975e29235934fe663afcae5d1adc3e57dc14711edf9473e99b.jpg",
         "alt": "CyberTotal2026 — GPT Image2 花柄水着の夏休み·꽃무늬 수영복 여름휴가"
       },
       "source": {
@@ -6181,7 +6181,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f8053a3d78a66b18c7e203fb22e2c41e3745da615dd72ce82ca66ff2db6c2569.svg",
+        "src": "assets/5d45f06899c9d9d3a881b1556e5a5d3660f8119a4f03855dd6ce61edc15904b6.jpg",
         "alt": "DD.Cherry — GPT Image2 上行时的回眸·계단을 오르며 뒤돌아본 순간"
       },
       "source": {
@@ -6215,7 +6215,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/5bdccd476dc43adfda880efdfde24e04c7bb6169aa934fd51508fefb14c845ce.svg",
+        "src": "assets/cf6197f33786da6d31310a636eab7c8a651a148220fde429602bbc97c5d4d504.png",
         "alt": "Google Code Wiki — Gemini 생성·자동 갱신형 코드베이스 문서화"
       },
       "source": {
@@ -6249,7 +6249,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/5b7c2e4feb7a116ce73aae87295406a5ec0d7b812c1714178a87332e143e4846.svg",
+        "src": "assets/dc6ab068a47210f9f3b0272b8391bcd3604db27c0c0fa66752f64e21bb5302e7.jpg",
         "alt": "크롱 — X 추천(For You) 타임라인 알고리즘 GitHub 공개 언급"
       },
       "source": {
@@ -6281,7 +6281,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/6bd8bde64d32dba37021587f0f2d5e73c83d9138fb3e0fdbdc184bf60303ba20.svg",
+        "src": "assets/2e3ffa6561f6ffd80b304a653ea533c7ea5b7efa14cd2c3f5b9e3afabc392553.jpg",
         "alt": "DD.Cherry — AI 이미지 모닝 포스트 (早安·좋은 아침)"
       },
       "source": {
@@ -6314,7 +6314,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/af7f3d8d41d1015e29ba3c724bc77ce840c33edb44dae1f86ee0478c6de326fa.svg",
+        "src": "assets/aa51daed697604dd8afd902b67170c53d91f87a22667bca276b4fc7fdae5f421.jpg",
         "alt": "DD.Cherry — Skill 지속 테스트·花漾暑假(꽃처럼 물든 여름방학) 인물 고정 프롬프트"
       },
       "source": {
@@ -6348,7 +6348,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/aecd77c6304e4edb11ec8a961dc343f4c684b96435e04b80f6bc8b61476079dd.svg",
+        "src": "assets/fed14e2d6eb48db6728ded40d508c7f31a3b84933dd0b13083299323fc123061.jpg",
         "alt": "周防義経 — KIRAVA 차분한 밤·지뢰계 돌리 스타일 성인 포트레이트 프롬프트"
       },
       "source": {
@@ -6386,7 +6386,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/9a195edc64bfe41d131da1b248301bd363450a820a99c68d322bfbc3e353d54d.svg",
+        "src": "assets/e50a94388c5629abd8c612377747790f0f129c618662cb07d6c8963f739a2dbe.png",
         "alt": "WanGP (Wan2GP) — 저VRAM용 로컬 AI 영상·이미지·오디오 생성 슈퍼앱"
       },
       "source": {
@@ -6419,7 +6419,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/8469dfdb9de366db7f42e1ef7ba17b2376f3514dc91351c4b4c138a40e85fdfb.svg",
+        "src": "assets/9036ecbbf7d1321c6377e3d7b6e6bb5d007e126c4481483f7e7c1e16ddcb58d8.jpg",
         "alt": "こやす69 — GPT Image2 난도 높은 카메라 앵글 프롬프트·과제 모집"
       },
       "source": {
@@ -6452,7 +6452,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f16b5a2ad98e4ddc9ee992ea31581d32404dcffa745bd05bf2774bd5f3e440fb.svg",
+        "src": "assets/e9e5d2b741fb39d94fed64156e59bb21c561c9b744c32a957d66a0e13f4253eb.jpg",
         "alt": "DD.Cherry — Opus 5와 GPT Sol 비교 체감·프롬프트 공유"
       },
       "source": {
@@ -6486,7 +6486,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/bce4e697631ae21aaac6688b8cbe38919fc0162507ac3cacd266d7bb73d90ba6.svg",
+        "src": "assets/bd126cf8a4ee08c541704214c46ea8cb222b3c0605d5e6fc93a73d1d14058d05.jpg",
         "alt": "LOOPY — AI 영상용 영화·애니 고화질 스틸컷 아카이브 소개"
       },
       "source": {
@@ -6520,7 +6520,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f452531888108b96f8b88b7a01e002b049b9b40621b3b0390725d6fe9afcf4fb.svg",
+        "src": "assets/2701a9d582627a6e2c62e2f9b85b0ef06bfa0ee30db6c70e70c9f1fbbf0063a9.jpg",
         "alt": "DD.Cherry — 도시 야경 시네마틱·냉난방 조명·루프탑 인물 프롬프트"
       },
       "source": {
@@ -6555,7 +6555,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/e5c2375c4d7262428d27ebc563ddebb54dab30ee4a04349853bd82dccc8c5eb9.svg",
+        "src": "assets/0e8e6ba2df8e0271dca67a87c18695b312c7cddf95493751863fc68fa49bbfbb.jpg",
         "alt": "DD.Cherry — 风越栈桥·바람 부는 해변 목조 잔교 3:4 프롬프트"
       },
       "source": {
@@ -6589,7 +6589,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/d502d4c7590b9c98b17acae9f780459db2be64f95d11c75eb6912f9b325153ec.svg",
+        "src": "assets/5c35f4fa6a9d5837b8c9c99ff20346051b764ee7e1ffb5fe6000d5e2c196c85b.jpg",
         "alt": "Clair Edit — 빛이 남긴 흑백·ChatGPT 인물 정체성 유지 에디토리얼 프롬프트"
       },
       "source": {
@@ -6620,7 +6620,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/be549309ad8f152e78a50f1deab7132fe54bb53e298cb10dc257a8abf9c19270.svg",
+        "src": "assets/edaa7e08385709d5ef613cec51acbc6a5763fc373cafb083bb2168b2d7026dc5.jpg",
         "alt": "Instagram 게시물 DbzT4CGk_E0 — 공개 본문 수집 일시 차단"
       },
       "source": {
@@ -6650,7 +6650,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fc354ad21af3e6403679743ffb8a5164ec33d1c17a0ebb5cff583880cf023c79.svg",
+        "src": "assets/a72b579b533a6a61f99769ca5ad49636f8562bf188a3b410bd988a9bb6fd2785.png",
         "alt": "ToroJushiAi — AI 아트 프롬프트 공유 (답글 안내)"
       },
       "source": {
@@ -6684,7 +6684,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f218483b50686721815d2fe307cd311edf821d6b399fb033a36c716b25454506.svg",
+        "src": "assets/80ac0474b0b9a9e589ae4d73f5d208293a11e8c13288a08b8f45ca6127322404.jpg",
         "alt": "DD.Cherry — 열대 오후 해먹 휴식·야자수 아래 라이프스타일 프롬프트"
       },
       "source": {
@@ -6715,7 +6715,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fa81c6355e2f8cb70c845200288ce1ba9bda2ca4326d08fba8271f36d439f876.svg",
+        "src": "assets/e9ae1df7807efb858ab39001acd9ca4f2cdc7d88c8e74ddbc8256e8ce6087797.jpg",
         "alt": "AI Dance Paradise — X Article 링크 공유 (본문 수집 제한)"
       },
       "source": {
@@ -6748,7 +6748,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/21474389c3362263bfa56e13e0cf3f739a2584e6587ad3586f2cfb9ac1c5bb62.svg",
+        "src": "assets/7cba0a76fcd0c47d456522e4dd55c8182d3e9a7b6fd20aec2b0a19e9c51763c0.png",
         "alt": "Aside — 로그인 웹사이트에서 실제 작업을 수행하는 로컬 AI 브라우저 에이전트"
       },
       "source": {
@@ -6778,7 +6778,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/4fcb07b4f329c42a54e9c5a7ac36b95b1e38a195930afceebcd9642f9350a929.svg",
+        "src": "assets/a72b579b533a6a61f99769ca5ad49636f8562bf188a3b410bd988a9bb6fd2785.png",
         "alt": "ToroJushiAi — AI 아트 프롬프트 공유 (답글 안내)"
       },
       "source": {
@@ -6812,7 +6812,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/790bb320f3534f85b37ccc18f4f120ca03a0624bd86d62593879b8907d71c693.svg",
+        "src": "assets/e482f6641ebe1732adec3c0f189bbedc4d720be803749ed4401f5149104c5fb6.jpg",
         "alt": "DD.Cherry — 고급 스위트 비키니·호텔 창문광·여유로운 시네마틱 프롬프트"
       },
       "source": {
@@ -6846,7 +6846,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/3f9e89311a35f8954eb0df6daf4310f584b0b02dd613b3a49d0ae84ac7e5723b.svg",
+        "src": "assets/dfb591775f49560093b64f57b589572710e3693a0c883f1f3171f843619280c2.jpg",
         "alt": "CyberTotal2026 — GPT Image2 真珠貝に座る白い夢·진주조개에 앉은 하얀 꿈"
       },
       "source": {
@@ -7019,7 +7019,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/44e265cc88135459a068f8779734992f39ba712e5e5fa4d6ec1073f911c93a90.svg",
+        "src": "assets/7584afbb1adb602f7d4114721360bfcff34cfe9f12b4bceaa0ccba5b180fbffd.png",
         "alt": "awesome-gpt-image-2 — GPT-Image2 Prompt as Code 산업형 프롬프트 엔진·템플릿 라이브러리"
       },
       "source": {
@@ -7053,7 +7053,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f782418a721ce729ecf33e12e2ba746f3bdc08950ad18a73f3610d8a55418ea1.svg",
+        "src": "assets/6376439dd9033a03024b805e59e00b1a09bd28681fdec6ac42180fa025278636.png",
         "alt": "Best Seedance Prompts — 출처 연결형 Seedance 2.5 프로덕션 프롬프트 카드 아카이브"
       },
       "source": {
@@ -7088,7 +7088,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/917c8f64248cf64372c2c65d540307d3ecc71019107dfd9e7260a48a4efac507.svg",
+        "src": "assets/7314665a7080a7c0bedeca6b6266d6ff69eabf34a7d7750ef6d8e82fb3b347bf.jpg",
         "alt": "Aykut ÜÇEŞ — SkyReels-V2 오픈소스 로컬 AI 영상 생성 모델 소개"
       },
       "source": {
@@ -7120,7 +7120,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b98b0449b1634dc0da757d4d32744367153e4ffcb7837d0af9f61a5fd4513619.svg",
+        "src": "assets/d396fb743b4420c2fff1b9ac3501457bc568ac5170da0b6c07964372bbc44f43.png",
         "alt": "public-apis — 분야별 무료 공개 API 커뮤니티 큐레이션 목록"
       },
       "source": {
@@ -7154,7 +7154,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/4eaada181d3898afd73bbb0d34815a269a4c612dbe0c5a091b807e056c1c5b79.svg",
+        "src": "assets/ded739e05a22b96d40949c8cbd1508b056f44b878342c125cc5e3c26fed34147.jpg",
         "alt": "CyberTotal2026 — GPT Image2 다다미 위 아침 스트레칭"
       },
       "source": {
@@ -7190,7 +7190,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/903dafa95dc4bc19f0544f8c2a3e85d9bbbc0f079a0a958447b98448e9bbec6b.svg",
+        "src": "assets/76a47b8bd4e3cb05ac43ad8b02334b045a081abe383b1f276c76d3da86284113.jpg",
         "alt": "jee chen — Swimsuit+Sandals 2: GPT2·Krea·Seedream·Grok 이미지 모델 비교"
       },
       "source": {
@@ -7224,7 +7224,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/6d338b32c38b451227987f43f4d5afc949209a56179e31d87f8b3ca3e9fdb69e.svg",
+        "src": "assets/cb0e691e28e851ea88ad85449e7474cb64f1ce11287edf7f12edae0b0d6762d9.jpg",
         "alt": "SDD Founder — Hermes·Claude·GPT Image 2 기반 일일 TikTok AI 콘텐츠 자동화 워크플로우"
       },
       "source": {
@@ -7259,7 +7259,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/ecc5ef2442b4f6a05b82295e7ad8b6726b45c02bb38fe7ff509e3854e79892a6.svg",
+        "src": "assets/d6263273d06a30e0fb1203974bfd0db4a3b9459c740ec8ec4573359e1e3e1d0d.png",
         "alt": "Pake — 웹페이지를 macOS·Windows·Linux 데스크톱 앱으로 패키징하는 Rust·Tauri 도구"
       },
       "source": {
@@ -7293,7 +7293,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0d55c803dbd652430cebe31035c6a8311e80bb082716f7655d37eaee26b29aa2.svg",
+        "src": "assets/ef7bda842186c49c9b845af7d971562aee140d6c62c0576d603ccee91aceadf4.jpg",
         "alt": "LunaKim — Seedance 프롬프트 아카이브 비교: Best Seedance Prompts 실사용 검증 관점"
       },
       "source": {
