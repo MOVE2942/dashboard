@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260820-084232-AUTO",
-  "source_manifest_sha256": "f8fa680376ae913abb47f9cc932bf2620d5b6cf560f0ce16ae71068ce6e2c1fa",
-  "export_manifest_sha256": "5383b34048e6de88c07d0cc40acb6292f95ac8fab0ed606b49700fdd4ae2d582",
-  "generated_at": "2026-08-20T08:42:35+09:00",
+  "release_id": "LIA-20260821-040037-AUTO",
+  "source_manifest_sha256": "d8cba1ab61b74698d97a0a6533e9062caa6f5bc217ebfa2b0be4a8991341b645",
+  "export_manifest_sha256": "f6e32439e37f552c81302b89f3cffdbc10e9c0735a9880e23d6d0f7aa42c8898",
+  "generated_at": "2026-08-21T04:00:45+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -7336,6 +7336,254 @@
         "url": "https://x.com/goan999999/status/2090076819815026918"
       },
       "captured_at": "2026-08-20T08:35:11+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260820-0002",
+      "title": "Snapr — macOS·Windows 화면 캡처·녹화·주석·시네마틱 편집 도구",
+      "types": [
+        "ai_tool_model",
+        "reference",
+        "workflow"
+      ],
+      "tags": [
+        "4k",
+        "annotation",
+        "macos",
+        "screen-capture",
+        "screen-recording",
+        "scroll-capture",
+        "snapr",
+        "tutorials",
+        "video-editing",
+        "windows"
+      ],
+      "summary": "macOS·Windows용 스크린샷·화면 녹화·iOS USB 기기 캡처 도구. 단일 단축키로 영역·창·전체 화면을 잡고, 자동 스크롤 스티칭 이미지/PDF, 40+ 월페이퍼·30+ 그라디언트 꾸미기, 이미지/비디오 프레임 주석, 커서 추적 시네마틱 줌·클릭 효과·속도 램프, 카메라 오버레이를 제공. 최대 4K 60fps, H.264·AV1·GIF 내보내기와 Dropbox 공유·로컬 후처리 플러그인 지원을 표기.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/4e45c3d82744610878e57e0105fe14fcd1829d1c8f6cfd8b65b9c197c002600d.svg",
+        "alt": "Snapr — macOS·Windows 화면 캡처·녹화·주석·시네마틱 편집 도구"
+      },
+      "source": {
+        "platform": "personal_site",
+        "url": "https://snapr.pineple.com/"
+      },
+      "captured_at": "2026-08-20T09:47:59+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260820-0003",
+      "title": "CozyClay — 브라우저 기반 3D 프리비주얼·카메라 연출·AI 영상 모션 스튜디오",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "3d",
+        "ai-video",
+        "ardy",
+        "camera-control",
+        "cozyclay",
+        "mcp",
+        "previs",
+        "previsualization",
+        "react-three-fiber",
+        "storyboard",
+        "threejs"
+      ],
+      "summary": "브라우저에서 장면 블로킹·캐릭터 포즈·카메라 이동/컷·모션 프롬프트 타임라인을 구성하는 3D 프리비주얼 스튜디오. Three.js·React Three Fiber 기반이며, MCP 서버를 통해 Claude 등 AI 클라이언트가 자연어로 배치·샷 구도·다단계 모션을 제어할 수 있음. 기본 스테이징·카메라·재생은 로컬 실행, 신규 모션 생성은 SSH 접근 가능한 NVIDIA ARDY 머신이 선택적으로 필요. Node 22+·Chromium 요구. GPL-3.0, 165⭐, 19 포크.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/3916b4bf9f48aff88cdfed9c67f03b55fd9aabc38b4a861e798140baac65505e.svg",
+        "alt": "CozyClay — 브라우저 기반 3D 프리비주얼·카메라 연출·AI 영상 모션 스튜디오"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/HaD0Yun/CozyClay"
+      },
+      "captured_at": "2026-08-20T16:03:07+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260820-0004",
+      "title": "한장(Page One) — 해외 디자인·AI 스타트업·랜딩페이지용 폰트 5선",
+      "types": [
+        "image_style",
+        "reference"
+      ],
+      "tags": [
+        "design",
+        "figma",
+        "font",
+        "general-sans",
+        "instrument-serif",
+        "inter",
+        "landing-page",
+        "satoshi",
+        "space-grotesk",
+        "typography"
+      ],
+      "summary": "해외 디자인/AI 스타트업/랜딩페이지에서 자주 쓰이는 폰트 5개 소개: Inter(피그마·노션·GitHub 등), Space Grotesk(AI 스타트업), Satoshi(랜딩페이지), Instrument Serif(제목용), General Sans(Pretendard 대안). 원본 share URL 보존.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/fc6b1c1ef5a6dd16e6003769b378a904ed4b66cbeb80d6de5f5956bfe57cef30.svg",
+        "alt": "한장(Page One) — 해외 디자인·AI 스타트업·랜딩페이지용 폰트 5선"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/share/BAZbiyVGze/"
+      },
+      "captured_at": "2026-08-20T16:05:50+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260820-0005",
+      "title": "Threads 공유 게시물 _yXx__b7W — 공개 접근 차단으로 본문 미확인",
+      "types": [
+        "reference"
+      ],
+      "tags": [
+        "access-blocked",
+        "link-intake",
+        "review-needed",
+        "threads"
+      ],
+      "summary": "원본 Threads 공유 URL 보존. Jina Reader의 HTTP·HTTPS 경로가 ERR_BLOCKED_BY_CLIENT로 차단되었고, 비로그인 페이지 메타데이터도 반환되지 않아 작성자·본문·미디어를 확인할 수 없음. 접근 제한 상태로 등록.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/1c66e930e13546166b167a967043bc727f29aaf04567ae0193d095564bdb7c5c.svg",
+        "alt": "Threads 공유 게시물 _yXx__b7W — 공개 접근 차단으로 본문 미확인"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/share/_yXx__b7W/"
+      },
+      "captured_at": "2026-08-20T16:07:28+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260820-0006",
+      "title": "Jeanny — 회사 팀원에 비유한 AI 8종의 업무 성향: ChatGPT·Claude·Gemini·Grok·Perplexity·Genspark·Manus·Midjourney",
+      "types": [
+        "comparison",
+        "reference"
+      ],
+      "tags": [
+        "ai-models",
+        "chatgpt",
+        "claude",
+        "gemini",
+        "genspark",
+        "grok",
+        "manus",
+        "midjourney",
+        "perplexity",
+        "teamwork"
+      ],
+      "summary": "13년 마케팅 경험을 바탕으로 AI 8종을 회사 팀원에 비유한 실사용 인상. ChatGPT는 친절하지만 컨펌을 못 맡길 신입, Claude는 기획의 우려를 지적하며 방향을 재구성하는 실무자, Gemini는 조사 강점, Grok은 직설적 선배, Perplexity는 출처가 명확한 문서 담당으로 묘사. Genspark·Manus·Midjourney는 각각 영상 프리랜서·끝까지 완수하지만 진행이 불투명한 외주·감각적이나 브리프 이탈하는 디자이너로 정리. 개인적 체감 비유임. 원본 share URL 보존.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/61c4d7d3539965c0b93c6641fbc635f666a434dc88549911a0e82ad7ab884c8f.svg",
+        "alt": "Jeanny — 회사 팀원에 비유한 AI 8종의 업무 성향: ChatGPT·Claude·Gemini·Grok·Perplexity·Genspark·Manus·Midjourney"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/share/BANnFU-rhq/"
+      },
+      "captured_at": "2026-08-20T16:14:50+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260821-0001",
+      "title": "Toonkit — 중국 AI 숏드라마 대량 제작팀 프롬프트·일관성·후반공정 최소화 분석",
+      "types": [
+        "reference",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "ai-short-drama",
+        "ai-video",
+        "bilibili",
+        "character-consistency",
+        "china",
+        "douyin",
+        "lighting",
+        "materials",
+        "prompt-structure",
+        "toonkit"
+      ],
+      "summary": "Toonkit이 서비스 대규모 어뷰징 대응 후, 중국 AI 숏드라마 제작 집단이 남긴 생성 결과와 프롬프트 구조를 분석한 사례라고 소개. 공개 스레드에서 요약한 핵심은 ① 100%보다 단일 생성으로 약 90% 일관성을 확보해 리롤·후반 편집 비용을 최소화, ② 짧은 행동·원작 대사·시작/끝 상태를 간결히 기입, ③ 참조 이미지의 얼굴·아이덴티티 요소를 분리·변형해 클로즈업 제어, ④ 조명·재질 하이라이트의 상대 비율로 룩 일관성을 지시하는 방식. 게시자의 분석·주장으로 기록하며, 원본 share가 가리킨 첫 게시물의 canonical URL 사용.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/f06fdea305e0ea539d21347605eb7584845e7a7282352560d589461536f3d7b5.svg",
+        "alt": "Toonkit — 중국 AI 숏드라마 대량 제작팀 프롬프트·일관성·후반공정 최소화 분석"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@toonkit_official/post/DcQfyn_gaKd"
+      },
+      "captured_at": "2026-08-21T02:02:50+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260821-0002",
+      "title": "DeepSeek Harness (dsh) — 모든 것을 플러그인으로 구성하는 오픈소스 에이전트 하니스",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "agent-harness",
+        "ai-agents",
+        "cordis",
+        "deepseek",
+        "dsh",
+        "plugins",
+        "typescript",
+        "web-ui"
+      ],
+      "summary": "DeepSeek AI의 오픈소스 에이전트 하니스 dsh. 모든 것을 플러그인으로 구성하는 아키텍처이며 Cordis 기반. npm으로 로컬 Web UI를 실행할 수 있고 기본 포트는 127.0.0.1:3080. 현재 developer preview로 호환성 파괴 변경이 발생할 수 있다고 명시. MIT. 172,766⭐, 18,677 포크.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/b4abf3c3777eb1a7817cfa0bae6b5c3be04be0c51dcea6072f8fbe41522788e6.svg",
+        "alt": "DeepSeek Harness (dsh) — 모든 것을 플러그인으로 구성하는 오픈소스 에이전트 하니스"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/deepseek-ai/deepseek-harness"
+      },
+      "captured_at": "2026-08-21T02:08:49+09:00"
     }
   ]
 }
