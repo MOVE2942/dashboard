@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260821-040037-AUTO",
-  "source_manifest_sha256": "d8cba1ab61b74698d97a0a6533e9062caa6f5bc217ebfa2b0be4a8991341b645",
-  "export_manifest_sha256": "f6e32439e37f552c81302b89f3cffdbc10e9c0735a9880e23d6d0f7aa42c8898",
-  "generated_at": "2026-08-21T04:00:45+09:00",
+  "release_id": "LIA-20260822-040019-AUTO",
+  "source_manifest_sha256": "2fa0254ec453aa40569155042d29e4849507ad9540dd024215264bed8aee1e53",
+  "export_manifest_sha256": "44a57a3139363f877ce31664d2da2e25ab103c58349666206f50a64cdef9d857",
+  "generated_at": "2026-08-22T04:00:30+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -7584,6 +7584,77 @@
         "url": "https://github.com/deepseek-ai/deepseek-harness"
       },
       "captured_at": "2026-08-21T02:08:49+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260821-0003",
+      "title": "Toonkit — 15초 I2V 쇼츠 연속성: 1920×1088 규격·첫 프레임 보존·모델 편향 제어 분석",
+      "types": [
+        "reference",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "1920x1088",
+        "continuity",
+        "first-frame",
+        "i2v",
+        "negative-prompt",
+        "seedance",
+        "short-form-video",
+        "toonkit",
+        "video-codec"
+      ],
+      "summary": "중국 15초 무성 다큐형 쇼츠 제작팀 사례를 분석한 Toonkit 스레드. I2V에서 첫 프레임 레퍼런스의 미세 변형으로 연속성이 깨지는 문제에 대해 16:9와 1920×1088 규격을 명시하는 방식을 핵심 사례로 제시. 작성자는 1920·1088이 모두 16으로 나뉘며 인코딩·AI 생성·크롭 단계의 누적 차이를 줄여 첫 프레임 반영 정확도를 높인다고 설명. 또한 모델이 주제어에서 학습된 전투 장면으로 치우지 않도록 반복적 네거티브 지시를 쌓는 운영 경험을 소개. 게시자 분석·주장으로 기록.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/65915f8c0e5207ab732d7a8da6f472a59d1d2c06721a29a222ec6488e6a9f73b.svg",
+        "alt": "Toonkit — 15초 I2V 쇼츠 연속성: 1920×1088 규격·첫 프레임 보존·모델 편향 제어 분석"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@toonkit_official/post/DcTO_-hCJT3"
+      },
+      "captured_at": "2026-08-21T21:23:04+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260821-0004",
+      "title": "유얼퓨쳐 — DeepSeek-V4-Flash-Vision-Exp 멀티모달 API·Files API 출시와 활용 사례",
+      "types": [
+        "ai_tool_model",
+        "reference",
+        "workflow"
+      ],
+      "tags": [
+        "agents",
+        "deepseek",
+        "deepseek-harness",
+        "files-api",
+        "image-understanding",
+        "multimodal-api",
+        "v4-flash-vision-exp",
+        "vision"
+      ],
+      "summary": "DeepSeek API의 DeepSeek-V4-Flash-Vision-Exp 출시를 정리한 6개 스레드. 공식 문서 기준 이미지+텍스트 입력을 Chat Completions·Messages·Responses에서 지원하며, 이미지당 최대 384 토큰·V4-Flash 가격, base64·외부 URL·Files API 입력을 제공. Files API는 무료이고 file_id 재사용 가능. 공식 발표는 멀티모달 에이전트 벤치마크에서 V4-Flash 대비 큰 향상 및 Opus-4.8에 근접한다고 주장하며, DeepSeek Harness 0.1.1의 즉시 지원을 명시. 스레드의 여행 제안서·웹 재구성 등 사례와 구분해 공식 출처로 교차 확인.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/68b246899163be9b4afd0e4814c3f3adbaf5372541e2bfc5107560c00d1cbb0a.svg",
+        "alt": "유얼퓨쳐 — DeepSeek-V4-Flash-Vision-Exp 멀티모달 API·Files API 출시와 활용 사례"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@ur.future.ai/post/DcTU4QtDFVU"
+      },
+      "captured_at": "2026-08-21T21:41:53+09:00"
     }
   ]
 }

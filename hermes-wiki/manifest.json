@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260821-040037-AUTO",
-  "card_count": 229,
+  "release_id": "LIA-20260822-040019-AUTO",
+  "card_count": 231,
   "source_manifest": [
     {
       "id": "CR-20260801-0001",
@@ -918,10 +918,18 @@
     {
       "id": "CR-20260821-0002",
       "hash": "ef14383fb97ff185feb8da3e52618f1c4f66f6fedf4fa34b735cf3727a01a9e5"
+    },
+    {
+      "id": "CR-20260821-0003",
+      "hash": "f5a2c0c98f962bd7548f9f68372bccda8b791d6c1ffd6cdc9b48cf905a80b9da"
+    },
+    {
+      "id": "CR-20260821-0004",
+      "hash": "b582c573df0e2d05f7a1c421f411d22a1ca4bcf547ea2342cb5cab5a4de45bd9"
     }
   ],
-  "source_manifest_sha256": "d8cba1ab61b74698d97a0a6533e9062caa6f5bc217ebfa2b0be4a8991341b645",
-  "export_manifest_sha256": "f6e32439e37f552c81302b89f3cffdbc10e9c0735a9880e23d6d0f7aa42c8898",
+  "source_manifest_sha256": "2fa0254ec453aa40569155042d29e4849507ad9540dd024215264bed8aee1e53",
+  "export_manifest_sha256": "44a57a3139363f877ce31664d2da2e25ab103c58349666206f50a64cdef9d857",
   "files": [
     {
       "path": "assets/0090f99163c14b584252044e65e59578ce0173cddd886bc9ae0a0d13b295fc85.jpg",
@@ -1279,9 +1287,19 @@
       "size": 48817
     },
     {
+      "path": "assets/65915f8c0e5207ab732d7a8da6f472a59d1d2c06721a29a222ec6488e6a9f73b.svg",
+      "sha256": "65915f8c0e5207ab732d7a8da6f472a59d1d2c06721a29a222ec6488e6a9f73b",
+      "size": 635
+    },
+    {
       "path": "assets/66c6371cbe492ce668a37377aca66c8dc5fb46d96cde19045405f84c93fcaffd.jpg",
       "sha256": "66c6371cbe492ce668a37377aca66c8dc5fb46d96cde19045405f84c93fcaffd",
       "size": 146799
+    },
+    {
+      "path": "assets/68b246899163be9b4afd0e4814c3f3adbaf5372541e2bfc5107560c00d1cbb0a.svg",
+      "sha256": "68b246899163be9b4afd0e4814c3f3adbaf5372541e2bfc5107560c00d1cbb0a",
+      "size": 630
     },
     {
       "path": "assets/6d5ec73aec4e4d384d6ab26206746582c9e517fd96bc550064adc995e65aa3d0.svg",
@@ -2015,8 +2033,8 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "045b7db59ed27d1bd12c5a354c7ae5712bc09f06dcc0b5269d7b02d1b1a45bd6",
-      "size": 269735
+      "sha256": "0fc98b0985af0be4ef831354eaf27d9aac287623dadce30f99895ba69ab28555",
+      "size": 273111
     },
     {
       "path": "index.html",
@@ -2024,5 +2042,5 @@
       "size": 2357
     }
   ],
-  "bundle_sha256": "8d6a2b4f8269f6958f2902297d483b0037cd57290791bc3a772ec319c6e18d33"
+  "bundle_sha256": "ddeb6270ce00bc8410fa9b9ea3b2036e418e03be08a637005406787e2f640f19"
 }
