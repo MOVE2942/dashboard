@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260823-040040-AUTO",
-  "source_manifest_sha256": "a217b2022c808e9937b81eeb0bc5b7d0083c02c294f7db1ba1421c27151aada7",
-  "export_manifest_sha256": "11b86d2ddc687a4f7afe399a25881909f63a114060ca6787c05c244d1ddf59d8",
-  "generated_at": "2026-08-23T04:00:49+09:00",
+  "release_id": "LIA-20260824-040023-AUTO",
+  "source_manifest_sha256": "7383bf844e5a7ce703209fdc21343ff5cf21b4f4af77c7836d2aa4750258b45b",
+  "export_manifest_sha256": "339bcde0af7f0ea25ca3aef38d79002bf0aeaa41195879cebc776d43871b80e9",
+  "generated_at": "2026-08-24T04:00:34+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -7825,6 +7825,398 @@
         "url": "https://www.threads.com/@choi.openai/post/DcTjm-QkeQl"
       },
       "captured_at": "2026-08-23T00:26:24+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260823-0004",
+      "title": "MissAI_Show X 게시물 2090828196698567033 — 공개 메타데이터 미확인",
+      "types": [
+        "reference"
+      ],
+      "tags": [
+        "access-limited",
+        "link-intake",
+        "review-needed",
+        "x"
+      ],
+      "summary": "공개 X syndication 응답에서 작성자·본문·반응 메타데이터가 반환되지 않음. 삭제·비공개·접근 제한 가능성을 포함해 원본 URL과 제한 상태를 보존.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/b69e4a0e2cf9709b8397c1bd52655706ed0adc26c05707518864aec61a26d2f2.svg",
+        "alt": "MissAI_Show X 게시물 2090828196698567033 — 공개 메타데이터 미확인"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/MissAI_Show/status/2090828196698567033"
+      },
+      "captured_at": "2026-08-23T15:14:32+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260823-0005",
+      "title": "CyberTotal2026 — GPT Image2: 바다 거품을 걷는 흰 드레스 판타지",
+      "types": [
+        "image_prompt",
+        "image_style"
+      ],
+      "tags": [
+        "ai-art",
+        "fantasy",
+        "fish",
+        "gpt-image2",
+        "jellyfish",
+        "sea-foam",
+        "summer",
+        "white-dress"
+      ],
+      "summary": "GPT Image2 프롬프트. 바다 위를 걷을 때 물고기와 해파리를 품은 거품이 하늘로 떠오르는 여름 판타지. 주제는 바다 거품을 걷는 흰 드레스. 66💗, 답글 2건.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/db2ff760356affc981cf3e0f694ac9666909deb36e780322b12f4ce5866b02fb.svg",
+        "alt": "CyberTotal2026 — GPT Image2: 바다 거품을 걷는 흰 드레스 판타지"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/CyberTotal2026/status/2091001412444668113"
+      },
+      "captured_at": "2026-08-23T15:14:32+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260823-0006",
+      "title": "CyberTotal2026 — GPT Image2: 배 위 데크의 흰 비키니·여름 수평선",
+      "types": [
+        "image_prompt",
+        "image_style"
+      ],
+      "tags": [
+        "ai-art",
+        "boat-deck",
+        "gpt-image2",
+        "horizon",
+        "ocean",
+        "summer",
+        "white-bikini"
+      ],
+      "summary": "GPT Image2 프롬프트. 푸른 바다를 곁에 둔 선상 데크에서 바람에 머리를 맡기고 여름 수평선을 바라보는 장면. 주제는 배 위 데크의 흰 비키니. 54💗, 답글 3건.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/f6f7f429534cc7837d8099694c1d0d491286d0d80685c97ff8fb303090719260.svg",
+        "alt": "CyberTotal2026 — GPT Image2: 배 위 데크의 흰 비키니·여름 수평선"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/CyberTotal2026/status/2090974736956141693"
+      },
+      "captured_at": "2026-08-23T15:14:32+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260823-0007",
+      "title": "ToroJushiAi X 게시물 2090740701441020244 — 공개 메타데이터 미확인",
+      "types": [
+        "reference"
+      ],
+      "tags": [
+        "access-limited",
+        "link-intake",
+        "review-needed",
+        "x"
+      ],
+      "summary": "공개 X syndication 응답에서 작성자·본문·반응 메타데이터가 반환되지 않음. 삭제·비공개·접근 제한 가능성을 포함해 원본 URL과 제한 상태를 보존.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/6376bf9331493a07092254971f1a2adb2f348831a0577ce92bef9bfbea7e01b0.svg",
+        "alt": "ToroJushiAi X 게시물 2090740701441020244 — 공개 메타데이터 미확인"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/ToroJushiAi/status/2090740701441020244"
+      },
+      "captured_at": "2026-08-23T15:14:32+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260823-0008",
+      "title": "火山哥 — Jellyfish: 스크립트에서 세로형 AI 숏드라마까지 자동화하는 제작 파이프라인 소개",
+      "types": [
+        "ai_tool_model",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "ai-short-drama",
+        "automation",
+        "character",
+        "jellyfish",
+        "scene",
+        "script-to-video",
+        "storyboard",
+        "vertical-video"
+      ],
+      "summary": "Jellyfish를 스크립트 입력 후 샷 분해·캐릭터·장면·소품 설정부터 이미지·비디오 생성까지 연결하는 AI 숏드라마 제작 도구로 소개. 장기 작업의 일시정지·재개·취소와 세로형 숏드라마 내보내기를 언급. 직접 프로젝트 URL은 공개 메타데이터에서 식별되지 않음. 110💗, 답글 28건.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/5eef71b44cd7ee7da991c135d6482297a42c77d869f41b5511663603604881e6.svg",
+        "alt": "火山哥 — Jellyfish: 스크립트에서 세로형 AI 숏드라마까지 자동화하는 제작 파이프라인 소개"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/huoshan007/status/2090962001514406325"
+      },
+      "captured_at": "2026-08-23T15:14:32+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260823-0009",
+      "title": "CyberTotal2026 X 게시물 2091093771219800388 — 공개 메타데이터 미확인",
+      "types": [
+        "reference"
+      ],
+      "tags": [
+        "access-limited",
+        "link-intake",
+        "review-needed",
+        "x"
+      ],
+      "summary": "공개 X syndication 응답에서 작성자·본문·반응 메타데이터가 반환되지 않음. 삭제·비공개·접근 제한 가능성을 포함해 원본 URL과 제한 상태를 보존.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/fa27e03f252c5a378124f450e36f57b7efd077518643d27c7cddf051761afbd6.svg",
+        "alt": "CyberTotal2026 X 게시물 2091093771219800388 — 공개 메타데이터 미확인"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/CyberTotal2026/status/2091093771219800388"
+      },
+      "captured_at": "2026-08-23T15:14:32+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260823-0010",
+      "title": "Nailai7981 — Imagine 2.0 프리미엄 패션 광고용 카우보이 샷 프롬프트",
+      "types": [
+        "image_prompt",
+        "image_style"
+      ],
+      "tags": [
+        "cowboy-shot",
+        "fashion-advertising",
+        "imagine-2-0",
+        "photography",
+        "prompt",
+        "three-quarter-view"
+      ],
+      "summary": "Imagine 2.0용 프리미엄 패션 광고 이미지 프롬프트. 무릎 위까지의 카우보이 샷, 허리 높이 시점, 여성의 전면 좌측 3/4 구도와 어깨·힙의 렌즈 거리 관계를 구체적으로 지시. 공개 메타데이터가 전문 중간에서 잘려 나머지 프롬프트는 미확인. 1,116💗, 답글 12건.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/3c8b3ca9eb491c4f706644330b46a7773c25e749a9286d1ad72935c59ccccd3b.svg",
+        "alt": "Nailai7981 — Imagine 2.0 프리미엄 패션 광고용 카우보이 샷 프롬프트"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/VIBEQUIRKLABS/status/2091035581304463636"
+      },
+      "captured_at": "2026-08-23T15:14:32+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260823-0011",
+      "title": "CyberTotal2026 — GPT Image2: 옥상 더블피스·여름 포트레이트",
+      "types": [
+        "image_prompt",
+        "image_style"
+      ],
+      "tags": [
+        "ai-art",
+        "blue-sky",
+        "double-peace",
+        "gpt-image2",
+        "portrait",
+        "rooftop",
+        "summer"
+      ],
+      "summary": "GPT Image2 프롬프트. 푸른 하늘의 옥상에서 양손 더블피스를 하고 한쪽 발까지 튀어 오르는 여름 포트레이트. 주제는 옥상의 더블피스. 52💗, 답글 1건.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/eee157ed08166b5715750c6c1644c1fe1d8402a196039a375cc0a2b96301345e.svg",
+        "alt": "CyberTotal2026 — GPT Image2: 옥상 더블피스·여름 포트레이트"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/CyberTotal2026/status/2091286289731747857"
+      },
+      "captured_at": "2026-08-23T15:14:32+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260823-0012",
+      "title": "MapleJ.AI — Grok Imagine 성인 NSFW 패션·소파 라이프스타일 프롬프트",
+      "types": [
+        "image_prompt",
+        "image_style"
+      ],
+      "tags": [
+        "adult",
+        "grok-imagine",
+        "lifestyle-photo",
+        "lingerie",
+        "nsfw",
+        "prompt",
+        "sofa"
+      ],
+      "summary": "Grok Imagine용 성인 NSFW 이미지를 명시한 프롬프트 게시물. 레이스 상의·소파·가벼운 초점 이탈의 라이프스타일 사진 콘셉트로 소개됨. 미성년 관련 정보는 없으며, 민감 성인 콘텐츠로 명확히 라벨링하여 원본 URL 보존. 436💗, 답글 41건.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/b86e52d18fa58ee6096e693ee5017858d1418c98329e5a7f28f7673b491f6573.svg",
+        "alt": "MapleJ.AI — Grok Imagine 성인 NSFW 패션·소파 라이프스타일 프롬프트"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/maplejohn01/status/2090997566863466599"
+      },
+      "captured_at": "2026-08-23T15:14:32+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260823-0013",
+      "title": "AI Muse — 호텔 욕실 거울 셀피·세면용품 라이프스타일 프롬프트",
+      "types": [
+        "image_prompt",
+        "image_style"
+      ],
+      "tags": [
+        "ai-muse",
+        "bathroom-mirror",
+        "hotel",
+        "hotel-toiletries",
+        "lifestyle-photo",
+        "prompt",
+        "selfie"
+      ],
+      "summary": "호텔 욕실 거울 앞에서 한 손에 휴대폰을 든 셀피와 뒤편에 정돈된 세면용품을 연출한 라이프스타일 이미지 프롬프트 소개. 프롬프트 전문은 답글에 있다고 안내하나, 공개 syndication으로 답글 본문은 확인되지 않음. 160💗, 답글 2건.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/eae05e8081f0bd6ecf897f4dd45ba45de5e089844781053d3e31461bdc0f5849.svg",
+        "alt": "AI Muse — 호텔 욕실 거울 셀피·세면용품 라이프스타일 프롬프트"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Kunda623270/status/2090992646693191968"
+      },
+      "captured_at": "2026-08-23T15:17:11+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260824-0001",
+      "title": "桃色ボールの振り向き — GPT Image2 prompt",
+      "types": [
+        "image_prompt",
+        "image_style"
+      ],
+      "tags": [
+        "aiart",
+        "exercise-ball",
+        "fitness",
+        "full-body",
+        "gpt-image2",
+        "indoor",
+        "morning-light",
+        "over-shoulder",
+        "photorealistic",
+        "pink-lavender"
+      ],
+      "summary": "핑크 운동공 위에 앉아 어깨너머로 시선을 보내는 인물의 포토리얼 AI 이미지 프롬프트. 밝은 목재 바닥·요가 매트·실내 아침 직사광과 핑크·라벤더 팔레트를 구조적으로 지정한다.",
+      "prompt": {
+        "status": "captured",
+        "text": "主題：桃色ボールの振り向き。画面中央の大きなピンクのエクササイズボールに横向きで座り、肩越しに振り返る女性一人。明るい室内の木床とヨガマット。淡いラベンダー色のフィットネスウェア。縦2:3、腰の高さに近い水平カメラ、柔らかな朝光のフォトリアル写真。"
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/0cd1d8d93d70d99fd4b84cdd4278254b02542bd2ac4e9c3918a4081ff6da0cc0.jpg",
+        "alt": "桃色ボールの振り向き — GPT Image2 prompt"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/CyberTotal2026/status/2091122460259410113"
+      },
+      "captured_at": "2026-08-24T00:04:15+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260824-0002",
+      "title": "욕실 문가 인물 포토리얼 프롬프트",
+      "types": [
+        "image_prompt",
+        "image_style"
+      ],
+      "tags": [
+        "ai-portrait",
+        "bathroom",
+        "detail-skin-texture",
+        "doorway",
+        "fashion",
+        "full-body",
+        "indoor",
+        "photorealistic",
+        "pose",
+        "soft-light"
+      ],
+      "summary": "욕실 문가에 선 인물의 의상·포즈·배경·실내 자연광·피부 질감을 구체화한 포토리얼 AI 이미지 프롬프트. 색상·헤어·장면·표정 변형의 기준점으로 활용 가능.",
+      "prompt": {
+        "status": "captured",
+        "text": "绝美23岁东亚美女，气质时尚、自信、温柔；身材匀称丰满，及肩微卷黑发，自然刘海，开心明亮的笑容，站在公寓浴室门口。她穿着浅灰色露背挂脖短上衣与同色系系带比基尼内裤，外搭半透明浅灰色宽松开衫，赤脚。一只手轻扶门框，身体微微侧倾。背景是简洁浴室、白色瓷砖墙、毛巾架。柔和的室内自然光，真实摄影风格，高细节皮肤纹理。"
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/ee2e7661db0c101803a10fc5a0ea417413bd81fd56a41e3578a2defc0f5ac9e0.jpg",
+        "alt": "욕실 문가 인물 포토리얼 프롬프트"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/sdjn_wgc/status/2091325843276452271"
+      },
+      "captured_at": "2026-08-24T00:04:33+09:00"
     }
   ]
 }
