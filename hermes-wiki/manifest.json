@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260824-040023-AUTO",
-  "card_count": 248,
+  "release_id": "LIA-20260825-040102-AUTO",
+  "card_count": 249,
   "source_manifest": [
     {
       "id": "CR-20260801-0001",
@@ -994,10 +994,14 @@
     {
       "id": "CR-20260824-0002",
       "hash": "37e7656e092f4712da8befdfef6d2c25077a57d5fcd3c8fc1ab9e038c0c9ab90"
+    },
+    {
+      "id": "CR-20260824-0003",
+      "hash": "b27693d3814b0c711454c57a428a9a55667c38fbd8004282716fecc327c6ecd6"
     }
   ],
-  "source_manifest_sha256": "7383bf844e5a7ce703209fdc21343ff5cf21b4f4af77c7836d2aa4750258b45b",
-  "export_manifest_sha256": "339bcde0af7f0ea25ca3aef38d79002bf0aeaa41195879cebc776d43871b80e9",
+  "source_manifest_sha256": "5ce424b1c4ddd21f675da7efc7d24bad419ef51dc3a74b79d6f855e1c8a82d2e",
+  "export_manifest_sha256": "dbc24e16d4f128a240192c17990b5bbc6db8d611ef154b24b6671146ae3f5f2d",
   "files": [
     {
       "path": "assets/0090f99163c14b584252044e65e59578ce0173cddd886bc9ae0a0d13b295fc85.jpg",
@@ -2005,6 +2009,11 @@
       "size": 65941
     },
     {
+      "path": "assets/e6cb0118d2c70fc8e69ea5afb49abc457b1237d293438f6b72b24d926cc16338.jpg",
+      "sha256": "e6cb0118d2c70fc8e69ea5afb49abc457b1237d293438f6b72b24d926cc16338",
+      "size": 252394
+    },
+    {
       "path": "assets/e6e5422b2eb7fa9cbde5ca3a664c954ef5c71513db9e55fc77306c0900d14280.jpg",
       "sha256": "e6e5422b2eb7fa9cbde5ca3a664c954ef5c71513db9e55fc77306c0900d14280",
       "size": 15401
@@ -2186,8 +2195,8 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "d36e7f9e7cd4968db63db157c653773a2e89b27851127e8a1663af39b60cc743",
-      "size": 295456
+      "sha256": "8b1a72293c9d17fd8a7c321c1addb8547c666a3dc5ff71c50de7f8773affec1d",
+      "size": 296750
     },
     {
       "path": "index.html",
@@ -2195,5 +2204,5 @@
       "size": 2357
     }
   ],
-  "bundle_sha256": "88de8dfafc81a2d01f9c31cf2a156d1d8154746216ce61c4d82e0bc8e6c48144"
+  "bundle_sha256": "a7cf5d1e1dc456a84a0ccebbb505b7b4af5d3eda1ed707ac679fa2021e0dfbe1"
 }

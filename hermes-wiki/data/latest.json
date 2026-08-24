@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260824-040023-AUTO",
-  "source_manifest_sha256": "7383bf844e5a7ce703209fdc21343ff5cf21b4f4af77c7836d2aa4750258b45b",
-  "export_manifest_sha256": "339bcde0af7f0ea25ca3aef38d79002bf0aeaa41195879cebc776d43871b80e9",
-  "generated_at": "2026-08-24T04:00:34+09:00",
+  "release_id": "LIA-20260825-040102-AUTO",
+  "source_manifest_sha256": "5ce424b1c4ddd21f675da7efc7d24bad419ef51dc3a74b79d6f855e1c8a82d2e",
+  "export_manifest_sha256": "dbc24e16d4f128a240192c17990b5bbc6db8d611ef154b24b6671146ae3f5f2d",
+  "generated_at": "2026-08-25T04:01:11+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -8217,6 +8217,42 @@
         "url": "https://x.com/sdjn_wgc/status/2091325843276452271"
       },
       "captured_at": "2026-08-24T00:04:33+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260824-0003",
+      "title": "Frame Wire — AI 영상 제작 로컬 캔버스 툴",
+      "types": [
+        "ai_tool_model",
+        "video_style",
+        "workflow"
+      ],
+      "tags": [
+        "ai-video",
+        "asset-management",
+        "canvas",
+        "frame-wire",
+        "local-tool",
+        "node-graph",
+        "prompt-metadata",
+        "scene-planning",
+        "video-production"
+      ],
+      "summary": "로컬 폴더의 이미지·영상 에셋을 불러와 노드 기반 캔버스에 배치·연결하고, 장면 및 구성 관계를 정리하는 무료 AI 영상 제작 보조 도구. 에셋별 프롬프트·생성 모델·해상도·영상 길이 메타데이터를 함께 기록하고 이미지를 내보낼 수 있다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/e6cb0118d2c70fc8e69ea5afb49abc457b1237d293438f6b72b24d926cc16338.jpg",
+        "alt": "Frame Wire — AI 영상 제작 로컬 캔버스 툴"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/EEJ_OOXO/status/2091726145142374549"
+      },
+      "captured_at": "2026-08-24T15:07:39+09:00"
     }
   ]
 }
