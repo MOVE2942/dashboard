@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260825-040102-AUTO",
-  "source_manifest_sha256": "5ce424b1c4ddd21f675da7efc7d24bad419ef51dc3a74b79d6f855e1c8a82d2e",
-  "export_manifest_sha256": "dbc24e16d4f128a240192c17990b5bbc6db8d611ef154b24b6671146ae3f5f2d",
-  "generated_at": "2026-08-25T04:01:11+09:00",
+  "release_id": "LIA-20260826-040105-AUTO",
+  "source_manifest_sha256": "b52baf0c72885ae1af407a70c767f5b838ca560b3a40590676b9c1ac4fac7a5d",
+  "export_manifest_sha256": "ac4234772296cf5876f0db49d46201bb5b8e5cdd347d357a25f45da7efe9d9a2",
+  "generated_at": "2026-08-26T04:01:21+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -8253,6 +8253,78 @@
         "url": "https://x.com/EEJ_OOXO/status/2091726145142374549"
       },
       "captured_at": "2026-08-24T15:07:39+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260825-0001",
+      "title": "EBS 다큐 스타일 Omni Text-to-Video 프롬프트 3종",
+      "types": [
+        "video_prompt",
+        "video_style",
+        "workflow"
+      ],
+      "tags": [
+        "16-9",
+        "3d-render",
+        "ai-video",
+        "documentary",
+        "nature-documentary",
+        "omni",
+        "scene-planning",
+        "sound-design",
+        "text-to-video"
+      ],
+      "summary": "Google Omni Text-to-Video용 10초·16:9 다큐멘터리풍 3D 렌더 프롬프트 3종: 잎꾼개미 군집, 지진 피해 현장, 빙하기 매머드 무리. 컷별 시간·카메라·조명·팔레트·사운드·음악을 세분화한다.",
+      "prompt": {
+        "status": "captured",
+        "text": "Prompt 1: leaf-cutter ant macro documentary; Prompt 2: earthquake aftermath archival documentary; Prompt 3: Ice Age mammoth natural-history documentary. Complete verbatim prompts: 05_summaries/2026-08-24-omni-text-to-video-prompts.md."
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/8f1a86a955be3ea29b973d7801ca58f0767adb97fa7fc9d409e30510d96cd513.jpg",
+        "alt": "EBS 다큐 스타일 Omni Text-to-Video 프롬프트 3종"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@ai_visual101/post/DcbMdHREw8M"
+      },
+      "captured_at": "2026-08-25T09:03:54+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260825-0002",
+      "title": "Wbrowser — 이미 로그인한 Chrome을 AI/터미널에서 제어",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "ai-agent",
+        "browser-automation",
+        "chrome",
+        "computer-use",
+        "cross-platform",
+        "github",
+        "mcp",
+        "terminal",
+        "wbrowser"
+      ],
+      "summary": "이미 로그인한 기존 Chrome 창을 새 브라우저·재로그인 없이 터미널 또는 AI 어시스턴트가 제어하도록 하는 크로스플랫폼 프로젝트. 작업 과정을 화면에서 확인하고 필요 시 마우스로 개입할 수 있으며 MCP 사용을 표방한다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/6927b8b3c865a9f8812b3b8ae34e8fe50cbac87db09c5b35744f670ca1d2b36c.png",
+        "alt": "Wbrowser — 이미 로그인한 Chrome을 AI/터미널에서 제어"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@whitegun.suh/post/DcZKjFMkzr6"
+      },
+      "captured_at": "2026-08-25T09:05:25+09:00"
     }
   ]
 }
