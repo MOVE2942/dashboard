@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260827-040034-AUTO",
-  "source_manifest_sha256": "72c6e29592a5efd1bfc35e4472e8bd03a60a7cd8f0a14ff7ccf4000cf4648387",
-  "export_manifest_sha256": "f07749ff5708c5a59799801c9bcac99fde94aad73e0cf4611be00a9935c2a346",
-  "generated_at": "2026-08-27T04:00:38+09:00",
+  "release_id": "LIA-20260828-040039-AUTO",
+  "source_manifest_sha256": "cd42d890c5994dbc26b8118a1041213187789d0607b140b95dd58180ea1f19d9",
+  "export_manifest_sha256": "798161996bd3c37765a18c39f2b0071ce2dfb1f208454f6174e41e652eb2f1fa",
+  "generated_at": "2026-08-28T04:00:48+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -8399,6 +8399,114 @@
         "url": "https://www.threads.com/@prompt_what/post/DcdpqzgEmmW"
       },
       "captured_at": "2026-08-27T02:47:42+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260827-0002",
+      "title": "プールサイドの白 — GPT Image2 prompt",
+      "types": [
+        "image_prompt",
+        "image_style"
+      ],
+      "tags": [
+        "aiart",
+        "blue-white",
+        "gpt-image2",
+        "hard-sunlight",
+        "outdoor",
+        "photorealistic",
+        "pool-reflection",
+        "poolside",
+        "portrait",
+        "swimwear"
+      ],
+      "summary": "바다가 보이는 야외 수영장 라운지체어의 인물을 대상으로, 백색 수영복과 청색 수면의 대비·정오 직사광·강한 반사·라탄 질감을 구체적으로 지정한 GPT Image2 포토리얼 프롬프트.",
+      "prompt": {
+        "status": "captured",
+        "text": "主題：プールサイドの白。海が見える屋外プール脇のラウンジチェアで、白いビキニ水着の女性が仰向けに深く寝そべる。白い水着とプールの青を強い日差しで対比。2:3縦位置、斜め上のカメラ視点、真昼の実写写真。硬い直射日光、水面反射、白・青・ベージュを明快に保つ。"
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/ec307989ff09b70e07189c673f74f7504e98d995a51cfbf1751806dd549d07ea.jpg",
+        "alt": "プールサイドの白 — GPT Image2 prompt"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/CyberTotal2026/status/2092587111073624285"
+      },
+      "captured_at": "2026-08-27T09:32:13+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260827-0003",
+      "title": "미국 코인 주차장 영웅담 — 시나리오 레퍼런스",
+      "types": [
+        "inspiration",
+        "workflow"
+      ],
+      "tags": [
+        "american-magazine",
+        "anecdote",
+        "hero-story",
+        "parking",
+        "scenario",
+        "storytelling",
+        "twist",
+        "urban-legend"
+      ],
+      "summary": "미국 길거리 코인 주차장의 과태료 제도와 억울한 딱지 문제를 소재로 한 영웅담 서사. 도입부의 제도적 압박과 뒤이은 반전·해결 구조를 시나리오 소재로 분류한다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/cafd9e38bcc54c92001c516fd47ee3573df3090d672a5d62fecf3f9fddf1aaaa.svg",
+        "alt": "미국 코인 주차장 영웅담 — 시나리오 레퍼런스"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Hellomeow0/status/2092593107799773440"
+      },
+      "captured_at": "2026-08-27T11:27:08+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260828-0001",
+      "title": "shuohao-skills — AI 단편극 제작 문서 파이프라인",
+      "types": [
+        "github_project",
+        "video_style",
+        "workflow"
+      ],
+      "tags": [
+        "adaptation-outline",
+        "ai-video",
+        "art-bible",
+        "character-bible",
+        "claude",
+        "codex",
+        "screenplay",
+        "short-drama",
+        "shuohao-skills",
+        "storyboard",
+        "storytelling"
+      ],
+      "summary": "소설을 캐릭터 설정·각색 대강·장면/소품 설정·각본·콘티의 다섯 제작 문서로 분해하는 AI 단편극 제작 스킬 모음. 각색 대강이 구조를 먼저 고정하고 이후 문서가 이를 따르며, 콘티는 출력 단계에서 새 결정을 만들지 않는 순차 파이프라인이다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/61461b99c79212e512c98b7675e77f4ff150559e143794d18e2354fa1c1398ae.jpg",
+        "alt": "shuohao-skills — AI 단편극 제작 문서 파이프라인"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@nangman_muk/post/DcivZs_GPud"
+      },
+      "captured_at": "2026-08-28T01:49:45+09:00"
     }
   ]
 }
