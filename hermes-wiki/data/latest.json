@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260829-040039-AUTO",
-  "source_manifest_sha256": "cd42d890c5994dbc26b8118a1041213187789d0607b140b95dd58180ea1f19d9",
-  "export_manifest_sha256": "798161996bd3c37765a18c39f2b0071ce2dfb1f208454f6174e41e652eb2f1fa",
-  "generated_at": "2026-08-29T04:00:49+09:00",
+  "release_id": "LIA-20260830-040043-AUTO",
+  "source_manifest_sha256": "110ba355551b8234a626ec7c944cac150c7623f311c28ace1984b5e1b5542b00",
+  "export_manifest_sha256": "dc8fbc96511245765fa2bfb21bd50bf6decb0630a0174087b974740edd9216f4",
+  "generated_at": "2026-08-30T04:00:53+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -8507,6 +8507,115 @@
         "url": "https://www.threads.com/@nangman_muk/post/DcivZs_GPud"
       },
       "captured_at": "2026-08-28T01:49:45+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260829-0001",
+      "title": "MOCAP Motion Index — 1,456개 모션캡처 루프 카탈로그",
+      "types": [
+        "inspiration",
+        "video_style",
+        "workflow"
+      ],
+      "tags": [
+        "animation",
+        "bvh",
+        "character-animation",
+        "cmu-mocap",
+        "loop-index",
+        "motion-capture",
+        "motion-reference",
+        "video-production"
+      ],
+      "summary": "CMU 모션캡처 데이터를 20fps 직교 투영·종이 모드 루프로 정리한 1,456개 클립 카탈로그. 14개 카테고리와 영문 키워드·한글 설명·입력용 문장을 제공한다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/4762dcb516a862a613aa708c7f897bf9bb464ef7b976cc8ca0404de36555dab9.svg",
+        "alt": "MOCAP Motion Index — 1,456개 모션캡처 루프 카탈로그"
+      },
+      "source": {
+        "platform": "other",
+        "url": "https://motion-index-phi.vercel.app/"
+      },
+      "captured_at": "2026-08-29T10:52:05+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260829-0002",
+      "title": "Helios — 단일 H100 기반 실시간 장편 AI 영상 생성",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "video_style"
+      ],
+      "tags": [
+        "ai-video",
+        "diffusers",
+        "gpu",
+        "h100",
+        "helios",
+        "image-to-video",
+        "long-video",
+        "real-time",
+        "text-to-video",
+        "video-generation",
+        "video-to-video"
+      ],
+      "summary": "PKU-YuanGroup의 Helios 오픈소스 장편 AI 영상 생성 모델. 공개 글은 단일 H100에서 종단간 19.5 FPS, Text/Image/Video-to-Video와 인터랙티브 생성, Diffusers 통합을 언급한다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/20ba8c136427ce37c66d66463884faa74da5250f89ae2025c20a24888026cd54.jpg",
+        "alt": "Helios — 단일 H100 기반 실시간 장편 AI 영상 생성"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@h2smusic/post/DcksZe5E4e-"
+      },
+      "captured_at": "2026-08-29T10:52:32+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260829-0003",
+      "title": "DepthSkeleton — 이미지·영상 Depth 변환기",
+      "types": [
+        "ai_tool_model",
+        "video_style",
+        "workflow"
+      ],
+      "tags": [
+        "comfyui-alternative",
+        "depth",
+        "depth-map",
+        "depth-video",
+        "depthskeleton",
+        "image-to-video",
+        "local-tool",
+        "video-to-video",
+        "windows"
+      ],
+      "summary": "ComfyUI 없이 이미지와 영상을 depth 영상으로 변환하는 Windows 휴대용 도구. 게시자는 드래그앤드롭과 처리 버튼 중심의 사용법, 큰 모델/런타임 용량 및 초기 로딩 시간을 안내한다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/1595c692703c242b0748765b172cb347de4b84d12c0810c257ead67d77858fe7.jpg",
+        "alt": "DepthSkeleton — 이미지·영상 Depth 변환기"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@r2voltz/post/Dck5wm2Guc1"
+      },
+      "captured_at": "2026-08-29T10:52:32+09:00"
     }
   ]
 }
