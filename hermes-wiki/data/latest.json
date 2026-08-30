@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260830-040043-AUTO",
-  "source_manifest_sha256": "110ba355551b8234a626ec7c944cac150c7623f311c28ace1984b5e1b5542b00",
-  "export_manifest_sha256": "dc8fbc96511245765fa2bfb21bd50bf6decb0630a0174087b974740edd9216f4",
-  "generated_at": "2026-08-30T04:00:53+09:00",
+  "release_id": "LIA-20260831-040056-AUTO",
+  "source_manifest_sha256": "ee06a3ec4dd34be3b5404364e7fea8b4def94918e0d83c8f738dd0ba2bbeaa70",
+  "export_manifest_sha256": "01bec22ff97bc73bdf52f179a0412ec2344b9d775468b204c64db62f3e2fed0a",
+  "generated_at": "2026-08-31T04:00:59+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -8616,6 +8616,111 @@
         "url": "https://www.threads.com/@r2voltz/post/Dck5wm2Guc1"
       },
       "captured_at": "2026-08-29T10:52:32+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260830-0001",
+      "title": "GPT Image2 프롬프트 사이트 10선 모음",
+      "types": [
+        "community_post",
+        "image_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "ai-image",
+        "creative-reference",
+        "gpt-image2",
+        "prompt-engineering",
+        "prompt-library",
+        "reference-sites",
+        "resource-list"
+      ],
+      "summary": "GPT Image2 프롬프트를 이미지 예시와 함께 복사해 활용할 수 있는 사이트 10개를 정리한 리소스 모음 게시물. 공개 syndication 메타데이터로 제목·원본 미디어·게시물 본문을 확보했다.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/e4a95c593dbe969b1a55ab6741ffaeac572dd5c02d5bc50bf76253980d93e6b4.jpg",
+        "alt": "GPT Image2 프롬프트 사이트 10선 모음"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/MMMusol/status/2093925145270206673"
+      },
+      "captured_at": "2026-08-30T19:40:47+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260830-0002",
+      "title": "promptwhat Soul 2 스킬 — Claude Code·Codex 설치/명령 가이드",
+      "types": [
+        "github_project",
+        "image_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "ai-image",
+        "claude-code",
+        "codex",
+        "github",
+        "higgsfield",
+        "prompt-engineering",
+        "promptwhat",
+        "skill",
+        "soul-2"
+      ],
+      "summary": "한 줄의 무드 문장을 장소·의상·조명·색감까지 포함한 Higgsfield Soul 2.0 이미지 프롬프트로 확장하는 promptwhat 스킬의 Claude Code·Codex 설치 및 명령 가이드 게시물.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/40449637ce1970aee56cde661ed45eac82dd175228eafce28eed617f01554604.jpg",
+        "alt": "promptwhat Soul 2 스킬 — Claude Code·Codex 설치/명령 가이드"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/VibeEverything/status/2093922109076750701"
+      },
+      "captured_at": "2026-08-30T19:41:30+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260830-0003",
+      "title": "이미지 역추론 프롬프트 템플릿 모음",
+      "types": [
+        "community_post",
+        "image_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "ai-image",
+        "color",
+        "composition",
+        "image-reverse-prompt",
+        "lighting",
+        "prompt-engineering",
+        "style-analysis",
+        "visual-analysis"
+      ],
+      "summary": "이미지에서 주제·스타일·색채·광영·구도·질감·해상도·세부 요소를 분석해 재사용 가능한 프롬프트로 역추론하는 템플릿 모음. 공개 메타데이터에는 범용 이미지 역추론용 기본 문장이 포함된다.",
+      "prompt": {
+        "status": "captured",
+        "text": "详细反推这张图片的完整提示词，包含主体、风格、色彩、光影、构图、质感、分辨率和细节描述。分析这张图片的视觉元素、色调、氛围、技法和关键词，生成可直接用于…"
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/521d57dc5a1b0157e848042f3e123ddc77c3290a3822e61727761b1923b3169a.jpg",
+        "alt": "이미지 역추론 프롬프트 템플릿 모음"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/MMMusol/status/2093584457412517905"
+      },
+      "captured_at": "2026-08-30T21:50:18+09:00"
     }
   ]
 }
