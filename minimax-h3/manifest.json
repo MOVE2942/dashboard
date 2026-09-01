@@ -1,0 +1,35 @@
+{
+  "schema_version": "public-staging-pilot-v1",
+  "release_id": "R20260901T174540+0900",
+  "state": "review_ready",
+  "generated_at": "2026-09-01T17:45:40.740015+09:00",
+  "target": {
+    "repository": "MOVE2942/dashboard",
+    "branch": "release/r20260901t174540+0900",
+    "public_paths": [
+      "index.html",
+      "minimax-h3/**"
+    ],
+    "hub_change": "index.html adds relative link to minimax-h3/"
+  },
+  "candidate_count": 49,
+  "public_contract": "public_staging_pilot_contract_v1",
+  "bundle_hash": "938be49ad6bcf79120b8b164a40efe536147fe8aeb95594d8bbd23b0ac192efa",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "f5236be9d2ae3908774e48c78545379a0ebbd7041b6f248ec3bf22dfa5526a63",
+      "size": 1237
+    },
+    {
+      "path": "minimax-h3/data.json",
+      "sha256": "4ef617e461f84e074de75edca3a5b9acc443ca340196b03913cc55a7a77c9d2f",
+      "size": 31233
+    },
+    {
+      "path": "minimax-h3/index.html",
+      "sha256": "52bafe516b217e17b418ee75bb85af6ba0cd23fe07b19133d905f1b99153062e",
+      "size": 29468
+    }
+  ]
+}
