@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260901-040102-AUTO",
-  "source_manifest_sha256": "72c39b875abc5358a819bc7243b79c5804e325c90c672a6e3f9724e233e7aa50",
-  "export_manifest_sha256": "5496453d41e0fc9cbd452f77acca143071eb5692c755bef53eecb5df1f661371",
-  "generated_at": "2026-09-01T04:01:05+09:00",
+  "release_id": "LIA-20260902-040015-AUTO",
+  "source_manifest_sha256": "5961acd5094e96a1d63d306eb76044668e26e04f7a4443221a1622a1d1dc4e65",
+  "export_manifest_sha256": "eded1d64437f9994e5d60f25c33236724b8689fe3f13b49c4618835eebeeda6a",
+  "generated_at": "2026-09-02T04:00:31+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -8833,6 +8833,226 @@
         "url": "https://x.com/gmpnavi/status/2094253400687034730"
       },
       "captured_at": "2026-09-01T01:14:04+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260901-0002",
+      "title": "AI-VIDEO-PRODUCTION-GUIDE-KO — GPT·LLM·Codex용 AI 영상 연출 마스터 가이드",
+      "types": [
+        "github_project",
+        "video_prompt",
+        "video_style",
+        "workflow"
+      ],
+      "tags": [
+        "ai-video",
+        "cinematography",
+        "codex",
+        "continuity",
+        "direction",
+        "editing",
+        "gpt",
+        "llm",
+        "prompt-engineering",
+        "shot-design",
+        "transitions",
+        "vfx"
+      ],
+      "summary": "이미지·영상·아이디어를 연출 의도, 연속성, 카메라, 컷 리듬, 물리 개연성, VFX, 모델용 프롬프트로 변환하는 한국어 AI 영상 제작 가이드. 프롬프트보다 의도 해석을 먼저 두고 MUST/SHOULD/OPTIONAL 계층, 짧게 생성한 뒤 길게 편집하는 제작 원칙, 전환·멀티컷·BPM 기반 타이밍을 구조화한다.",
+      "prompt": {
+        "status": "captured",
+        "text": "Read AI_VIDEO_BLACK_BOOK.md first. Treat it as the primary directing and prompt-design reference for this task. Do not dump the guide back to me. Analyze my actual source image/video/request, select only the techniques that serve the scene, and return the final production-ready result."
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/da876d3103ec108c118f08d7ecdbf49bdef9de2487e46586e9eab8134197eb85.png",
+        "alt": "AI-VIDEO-PRODUCTION-GUIDE-KO — GPT·LLM·Codex용 AI 영상 연출 마스터 가이드"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/GUNMIN-KIM/AI-VIDEO-PRODUCTION-GUIDE-KO"
+      },
+      "captured_at": "2026-09-01T08:24:51+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260901-0003",
+      "title": "Higgsfield 팀 인사이트 — 프롬프트 설계 변화로 단편 제작 인력·기간 축소",
+      "types": [
+        "community_post",
+        "video_style",
+        "workflow"
+      ],
+      "tags": [
+        "ai-video",
+        "clip-production",
+        "creative-team",
+        "higgsfield",
+        "production-workflow",
+        "prompt-design",
+        "source-release",
+        "worldbuilding"
+      ],
+      "summary": "게시물은 Higgsfield가 두 번째 편의 소스를 포함해 197개 클립을 공개했다고 소개하며, 동일 팀·세계관·모델 조건에서 프롬프트 작성 방식의 변화만으로 13명이 14일 걸린 제작을 4개월 뒤 1명이 3일에 수행했다는 제작 인사이트를 제시한다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/004e98310520cd38e6ed7bbfc015b930168dff7fdf43cbf3445d58d562599778.svg",
+        "alt": "Higgsfield 팀 인사이트 — 프롬프트 설계 변화로 단편 제작 인력·기간 축소"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@icenovel.ai/post/Dctt1Pdj1QS"
+      },
+      "captured_at": "2026-09-01T08:27:26+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260901-0004",
+      "title": "AI 영상 속도감 연출 — 지면 20~30cm 로우 앵글과 광각",
+      "types": [
+        "video_prompt",
+        "video_style",
+        "workflow"
+      ],
+      "tags": [
+        "action-scene",
+        "ai-video",
+        "camera-height",
+        "cinematography",
+        "ground-level",
+        "low-angle",
+        "parallax",
+        "sense-of-speed",
+        "tracking-shot",
+        "wide-angle"
+      ],
+      "summary": "빠른 액션·이동 장면에서 피사체 속도 표현을 반복하기보다 카메라를 지면에서 약 20~30cm까지 낮추는 연출 팁. 가까운 도로 질감과 차선이 빠르게 스치고 원경은 상대적으로 느리게 움직이며 강한 시차가 생겨 체감 속도를 높인다. 작성자는 광각 렌즈 병행 시 효과가 커진다고 덧붙였다.",
+      "prompt": {
+        "status": "captured",
+        "text": "카메라를 지면에서 20~30cm 높이로 낮게 유지하며 빠르게 이동한다."
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/dc7351df3b454be911606a701fbbb08cd6aea30c8888065c7aca0f4c277e36c8.jpg",
+        "alt": "AI 영상 속도감 연출 — 지면 20~30cm 로우 앵글과 광각"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@byulmiso/post/Dcr-AV_ETIp"
+      },
+      "captured_at": "2026-09-01T08:38:53+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260901-0005",
+      "title": "GPT 이미지 — 사진 인물·포즈 보존 한국 전통 진채화 스타일 변환",
+      "types": [
+        "community_post",
+        "image_prompt",
+        "image_style"
+      ],
+      "tags": [
+        "gpt-image",
+        "hanji",
+        "hanok",
+        "identity-preservation",
+        "jinchaehwa",
+        "korean-painting",
+        "minhwa",
+        "portrait-style-transfer",
+        "pose-preservation",
+        "sebpil-chaesaek"
+      ],
+      "summary": "원본 사진의 이목구비·표정·포즈를 최대한 유지하면서 민화·진채화·세필채색 계열의 한국 전통 회화 스타일을 입히는 GPT 이미지 변환 레퍼런스. 한지 질감, 섬세한 붓선, 광물 안료, 한옥 창호·소나무·들국화·붉은 인장을 한국적 시각 요소로 제시한다.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/c070c14578462459411caf1d1765d8b8da2120906729beefc5304e80da6c4079.jpg",
+        "alt": "GPT 이미지 — 사진 인물·포즈 보존 한국 전통 진채화 스타일 변환"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@neotypeska/post/Dcs5PtjEoiq"
+      },
+      "captured_at": "2026-09-01T08:40:23+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260902-0001",
+      "title": "말로 하기 어려운 감정 7가지 — The Dictionary of Obscure Sorrows 신조어",
+      "types": [
+        "community_post",
+        "inspiration"
+      ],
+      "tags": [
+        "afterglow",
+        "anemoia",
+        "chrysalism",
+        "emotion",
+        "enouement",
+        "john-koenig",
+        "kenopsia",
+        "monachopsis",
+        "neologism",
+        "obscure-sorrows",
+        "sonder",
+        "words"
+      ],
+      "summary": "이름 붙이기 어려운 감정 7가지를 소개한 콘텐츠. 군중 속 소외감(모나콥시스), 비 올 때 실내 편안함(크리살리즘), 살아보지 못한 과거의 향수(아네모이아), 낯선 이의 삶을 깨닫는 순간(산더), 빈 공간의 적막감(케놉시아), 과거를 바꿀 수 없는 씁쓸함(에누망), 모임 다음 날의 외로움(애프터글룸)을 다룬다. 존 케닉의 신조어 사전 출처를 밝힌다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/0fe75afc7b06862d4d4781f4dc23e69114bf07d279b1d80fe5a8534e854bc739.jpg",
+        "alt": "말로 하기 어려운 감정 7가지 — The Dictionary of Obscure Sorrows 신조어"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/p/Dcu2eZNIHT0/"
+      },
+      "captured_at": "2026-09-02T01:00:07+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260902-0002",
+      "title": "Claude Code 무료 무제한 사용 — 영상 편집 사례 릴",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "ai-tools",
+        "claude-code",
+        "free-tier",
+        "reel",
+        "unlimited",
+        "video-editing"
+      ],
+      "summary": "클로드 코드를 무료로 무제한 사용하며 이 릴을 편집했다고 소개한 콘텐츠. 댓글 다수가 클로드 관련 반응이며, 일부는 페이블5/코덱스 비교 언급도 있다. 게시물 제목 외에는 구체 설정·절차·검증 근거가 공개 본문에 없다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/4751e4a46d0b6e522151ca53f34709d0dc0d46744b59d5d7d160ad4177abad8b.jpg",
+        "alt": "Claude Code 무료 무제한 사용 — 영상 편집 사례 릴"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/reel/DcapnJpgapu/"
+      },
+      "captured_at": "2026-09-02T01:30:40+09:00"
     }
   ]
 }
