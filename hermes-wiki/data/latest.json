@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260902-040015-AUTO",
-  "source_manifest_sha256": "5961acd5094e96a1d63d306eb76044668e26e04f7a4443221a1622a1d1dc4e65",
-  "export_manifest_sha256": "eded1d64437f9994e5d60f25c33236724b8689fe3f13b49c4618835eebeeda6a",
-  "generated_at": "2026-09-02T04:00:31+09:00",
+  "release_id": "LIA-20260903-040023-AUTO",
+  "source_manifest_sha256": "6906684bb3523d71b32ee5b3583cfa8d5d6cb080420ec8dbc9493e5e27ad6bb3",
+  "export_manifest_sha256": "a193bb5b5a8de946d18c7a3a6de13020edbd53c530dec0d638ba6a6af69d4729",
+  "generated_at": "2026-09-03T04:00:35+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -9053,6 +9053,73 @@
         "url": "https://www.instagram.com/reel/DcapnJpgapu/"
       },
       "captured_at": "2026-09-02T01:30:40+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260902-0003",
+      "title": "Camera Movement AI Prompts — AI 영상 카메라 무브먼트 프롬프트 라이브러리",
+      "types": [
+        "video_prompt",
+        "video_style",
+        "workflow"
+      ],
+      "tags": [
+        "ai-video",
+        "camera-movement",
+        "cinematography",
+        "dolly",
+        "drone",
+        "handheld",
+        "orbit",
+        "pan",
+        "prompt-library",
+        "tilt",
+        "tracking",
+        "transition"
+      ],
+      "summary": "카메라 무브먼트를 검색·분류하고 루프 프리뷰로 방향·속도·프레이밍을 비교할 수 있는 AI 영상 프롬프트 라이브러리. static, pan/tilt, zoom, dolly/track, physical moves, human camera, drone/crane, special 카테고리의 동작별 문장 템플릿을 제공한다.",
+      "prompt": {
+        "status": "captured",
+        "text": "low tracking shot. Movement: move at ground or below-waist height alongside the subject’s movement path. Speed: match the subject, footsteps or wheels. Framing: keep the low detail readable while the ground plane moves through frame. End: finish with the low perspective clearly maintained."
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/20f67086a3eef36b4d4125a49dfa3e723f0f1699b31145a6d9118468f2910cb2.svg",
+        "alt": "Camera Movement AI Prompts — AI 영상 카메라 무브먼트 프롬프트 라이브러리"
+      },
+      "source": {
+        "platform": "personal_site",
+        "url": "https://aicameramovements.com/"
+      },
+      "captured_at": "2026-09-02T14:21:03+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260903-0001",
+      "title": "Threads 공유 링크 BAP3Xj7y2w — 원문 미확인 보존",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "reference-intake",
+        "threads",
+        "unresolved-link"
+      ],
+      "summary": "사용자가 제공한 Threads 공유 링크. 공개 접근에서 share URL이 invalid_post로 해석되어 대상 게시물 원문·작성자·미디어를 확정할 수 없었다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/29a4e42eb7466cbb8234ab4ef02070936ccfad1fa4bb3a18e28aef7153e9c843.svg",
+        "alt": "Threads 공유 링크 BAP3Xj7y2w — 원문 미확인 보존"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/share/BAP3Xj7y2w/"
+      },
+      "captured_at": "2026-09-03T01:24:55+09:00"
     }
   ]
 }
