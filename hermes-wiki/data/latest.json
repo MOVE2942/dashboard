@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260903-040023-AUTO",
-  "source_manifest_sha256": "6906684bb3523d71b32ee5b3583cfa8d5d6cb080420ec8dbc9493e5e27ad6bb3",
-  "export_manifest_sha256": "a193bb5b5a8de946d18c7a3a6de13020edbd53c530dec0d638ba6a6af69d4729",
-  "generated_at": "2026-09-03T04:00:35+09:00",
+  "release_id": "LIA-20260904-040035-AUTO",
+  "source_manifest_sha256": "0e30b48f5d2690bb2edf11167e70d9e99238ec60fad502ea417893a1dfb4777f",
+  "export_manifest_sha256": "b6e085fa44bba5e9f8dd6bb5a454db0d4d38c9ffe2a5c4176e07810d413e5ca5",
+  "generated_at": "2026-09-04T04:00:49+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -9120,6 +9120,187 @@
         "url": "https://www.threads.com/share/BAP3Xj7y2w/"
       },
       "captured_at": "2026-09-03T01:24:55+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260903-0002",
+      "title": "90년대 고양이 시트콤 — 30초 AI 영상 프롬프트 구조 분석",
+      "types": [
+        "community_post",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "90s-sitcom",
+        "ai-video",
+        "cat-character",
+        "continuity",
+        "laugh-track",
+        "prompt-analysis",
+        "reference-images",
+        "shot-timing",
+        "storyboard",
+        "vertical-video"
+      ],
+      "summary": "90년대 미국 멀티카메라 시트콤 톤의 30초 세로 AI 영상을 위한 장문 프롬프트. 인물·고양이·세트의 참조 이미지 역할을 분리하고, 0:00~0:30 타임코드별 숏·대사·조명 변화·효과음·웃음 타이밍을 고정한다. 프롬프트 분석 핵심은 레퍼런스 제외 조건, 실사 고양이 해부학 제약, 세트 좌우 고정, 조명 변화 시점, 오디오 순서, 연속성 제약, 네거티브 프롬프트를 계층화한 점이다.",
+      "prompt": {
+        "status": "captured",
+        "text": "[90s American multi-camera sitcom scene, 30 seconds, 9:16 vertical. Shot on 35mm film, warm cosy apartment, high-key warm tungsten sitcom lighting, soft fill from every side, no harsh shadows, flat theatrical staging, characters face camera, subtle film grain. EVENING: deep blue dusk outside the windows. Every object in frame is period-correct for 1996 or earlier — set dressing, furniture and devices all pre-1996. All dialogue in English. REFERENCES — @Image 1 defines the WOMAN's face, hair and complete outfit. Do not use its white studio background, standing poses, or flat lookbook lighting. @Image 2 defines the CAT's appearance and full wardrobe. Do not use its white studio background or formal sitting pose. @Image 3 defines the SET — room geometry, furniture, props, window dusk and warm palette. The reference is empty; in this scene it is occupied by the two characters. Do not add, remove or upgrade furniture beyond what the reference shows. CHARACTERS — WOMAN: @Image 1. Long platinum-blonde crimped waves with visible dark regrowth at the crown, wispy curly bangs, two small silver butterfly clips at one temple. Burgundy bias-cut satin slip dress with lace trim worn over a white ribbed baby tee, open slouchy heather-grey knit cardigan, black velvet choker layered with a thin silver locket chain, small silver hoop earrings, thin silver bangles on her left wrist, black chunky penny loafers with white crew socks, matte brown-mauve 90s lipstick. Speaks natural, conversational American English — tired at first, then exasperated. CAT: @Image 2. One real chubby orange ginger tabby cat with a white chest bib, wearing a tiny burgundy fez with a gold tassel tilted between its upright ears, oversized round tortoiseshell glasses slipped halfway down its muzzle, a puffed burgundy-and-gold paisley silk cravat, an open quilted burgundy smoking jacket, and a grey 90s digital calculator watch on its left front leg. Real cat anatomy and proportions, four legs, lounges and sits like a real cat, NOT anthropomorphic, no human arms, no human shoulders. CAT VOICE (use exactly this voice for every cat line): a smooth, theatrical adult male American voice — deep, unhurried, self-satisfied, with the round, over-enunciated comedic delivery of a 90s sitcom butler-villain, a faint dry amusement under every line. SET — @Image 3. A large overstuffed forest-green sofa faces the camera in the center; a boxy wood-cabinet CRT television stands on screen-LEFT; two windows with venetian blinds on the back wall show deep blue dusk and the lit windows across the street; the heavy wooden front door with brass locks is on screen-RIGHT, with a coat rack and a small key table beside it; a low wooden coffee table sits in front of the sofa with a small homemade electronics hub blinking green underneath, thin cables zip-tied along the baseboards; a chunky grey universal remote lies on the sofa cushion. The camera keeps this arrangement across every cut and never flips it. LIGHTING PLAN — the story is told with lights, so lamps change ONLY at the exact written moments, never otherwise. At 0:00 the ceiling light and floor lamp are OFF; the room is still clearly readable and warm: one small table lamp beside the sofa is on, plus the blue dusk from the windows and soft even fill. No moody shadows at any point. 0:00–0:04 — WIDE SHOT, static, main camera position. The front door on the RIGHT opens; the WOMAN walks in carrying a canvas tote bag, drops her keys on the key table, and claps twice at the dark floor lamp — the clap-controlled lights. Nothing happens. She claps again, harder. Nothing. WOMAN (tired): {Hello? Come on!} [LAUGH TRACK: small ripple] 0:04–0:08 — She stops mid-step: on the sofa, the CAT is lounging against the back cushion like a tiny mogul. The cat flicks its tail once — the floor lamp clicks ON by itself. She flinches. A second tail flick — the CRT television pops on with a soft static glow. [LAUGH TRACK: big burst] 0:08–0:12 — MEDIUM TWO-SHOT, the woman standing beside the sofa, arms crossed, bangles catching the lamp light. The cat slowly turns its head and peers at her over the top rims of its oversized glasses. WOMAN (suspicious): {Did you mess with the lights?} CAT: {They answer only to me now.} [LAUGH TRACK] 0:12–0:16 — She leans right over the floor lamp and claps furiously — twice, three times. Nothing. The cat's tail gives one lazy flick — the lamp turns ON; a second flick — OFF again, taunting her. Her jaw drops. [LAUGH TRACK: burst + scattered applause] 0:16–0:21 — CLOSE-UP on the cat, the fez tassel swaying once, utterly relaxed. WOMAN (off-screen, firm): {Fix it. Right now.} CAT (savoring every word): {Say please.} CUT to her offended face. WOMAN: {Absolutely not.} The cat slow-blinks once — every light in the room shuts off except the small table lamp, which now shines on the cat alone like a tiny spotlight. [LAUGH TRACK: long \"ooooh\"] 0:21–0:26 — MEDIUM SHOT. She stands in the dim warm glow, grits her teeth, forces a sugary smile. WOMAN (through her teeth): {...Please.} Instantly the ceiling light, the floor lamp and the table lamp all bloom warm at once and the TV settles into a steady glow — full bright sitcom lighting, the room cosier than ever. [LAUGH TRACK: burst + applause] 0:26–0:30 — The cat gives the chunky grey remote beside it one slow, proprietary pat with its front paw. CAT (quietly satisfied): {Good human.} She flops onto the sofa beside the cat, tote bag still on her shoulder, and stares flatly into the camera. FREEZE FRAME. [LAUGH TRACK + applause + upbeat 90s sitcom outro sting] AUDIO: 90s sitcom laugh track at the marked beats only. No background music except the final outro sting. Room tone; door opening; keys clattering on the key table; sharp double hand-claps; lamp switch clicks; CRT static pop; a soft fabric flump as she drops onto the sofa. Spoken audio is only the quoted lines above, in that order and timing, one voice at a time — the WOMAN in her natural voice, the CAT in the exact voice described in CHARACTERS. Only the speaking character's mouth moves; the woman's lips stay closed while the cat talks. CONSISTENCY: exactly ONE woman and ONE cat in the whole video — no other people, no other animals. Keep the woman's outfit, hair and accessories and the cat's fez, glasses, cravat, jacket and watch identical in every shot. The remote stays on the sofa cushion the whole time and only the cat's paw ever touches it. No object appears, disappears, floats, or morphs into another object. NEGATIVE: dark cinematic grading, moody shadows, underexposed, handheld camera, shaky, shallow depth of field bokeh, fisheye, neon, modern minimalist interior, smartphones, flat-screen TV, daylight outside, cartoon cat, 3d render, pixar, anime, illustration, anthropomorphic cat, bipedal cat, human arms on cat, extra limbs, distorted anatomy, floating objects, on-screen text, subtitles, captions, watermark, logo, non-English dialogue."
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/f55b70f64ac6861f516ad6ff46aeb0d65bf51e80d1337570cf083cfad8eb14ac.jpg",
+        "alt": "90년대 고양이 시트콤 — 30초 AI 영상 프롬프트 구조 분석"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@prompt_what/post/Dcx-F-ykmjS"
+      },
+      "captured_at": "2026-09-03T08:09:10+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260903-0003",
+      "title": "awesome-seedance-2.5-prompts — Seedance 2.5 프롬프트 163개 목차 라이브러리",
+      "types": [
+        "github_project",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "action",
+        "ai-video",
+        "cinematic",
+        "commercial",
+        "pov",
+        "prompt-library",
+        "reference-driven",
+        "seedance",
+        "seedance-2.5",
+        "templates",
+        "vfx"
+      ],
+      "summary": "Seedance 2.5용 공개 프롬프트 사례 163개를 8개 영상 제작 카테고리로 분류한 GitHub 라이브러리. Action/Fantasy 30, Cinematic Realism 3, POV/FPV 18, Commercial/Product 29, Reference-Driven 16, Surreal/VFX 11, Templates/Structured Formats 19, General Cinematic 37개로 구성된다.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/6120a1c692130e91e603a6390caeacb9ad1d774ca37af915517f55f038d624e6.jpg",
+        "alt": "awesome-seedance-2.5-prompts — Seedance 2.5 프롬프트 163개 목차 라이브러리"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/EvoLinkAI/awesome-seedance-2.5-prompts"
+      },
+      "captured_at": "2026-09-03T08:16:54+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260903-0004",
+      "title": "awesome-gpt-image-2 — GPT Image 2 프롬프트 대형 라이브러리",
+      "types": [
+        "github_project",
+        "image_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "character-consistency",
+        "gpt-image-2",
+        "image-prompt",
+        "infographic",
+        "openai",
+        "product-marketing",
+        "prompt-library",
+        "raycast",
+        "text-rendering",
+        "youtube-thumbnail"
+      ],
+      "summary": "GPT Image 2용 대형 공개 프롬프트 라이브러리. README 통계는 16,708개 프롬프트와 6개 featured 사례를 표시하며, 프로필·SNS·인포그래픽·YouTube 썸네일·스토리보드·상품 마케팅 등 Use Case, 사진·애니·일러스트·3D·픽셀아트 등 Style, 인물·제품·음식·건축·텍스트 등 Subject 분류를 제공한다.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/9478586a5238db31859fe54f9ab9f83c8b9cdecf8fae34277fb80d6aa6bff23a.png",
+        "alt": "awesome-gpt-image-2 — GPT Image 2 프롬프트 대형 라이브러리"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2"
+      },
+      "captured_at": "2026-09-03T08:19:16+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260903-0005",
+      "title": "Threads 공유 링크 BAXeEsyfPG — 댓글 프롬프트 미확인 보존",
+      "types": [
+        "community_post",
+        "video_prompt"
+      ],
+      "tags": [
+        "comment-prompts",
+        "reference-intake",
+        "threads",
+        "unresolved-link"
+      ],
+      "summary": "사용자가 댓글의 프롬프트 수집을 요청한 Threads 공유 링크. 공개 share URL이 대상 게시물 대신 로그인 피드로 전환되어 원문·댓글·프롬프트를 식별할 수 없었다.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/1754982fd6c728b36a7d9db95d3b09e8e15c8408e08e662c70e5c11433cc53e9.svg",
+        "alt": "Threads 공유 링크 BAXeEsyfPG — 댓글 프롬프트 미확인 보존"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/share/BAXeEsyfPG/"
+      },
+      "captured_at": "2026-09-03T09:38:05+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260903-0006",
+      "title": "Passport Rush 제작 인사이트 — 본인댓글·프롬프트 수집",
+      "types": [
+        "community_post",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "ai-animation",
+        "blender",
+        "camera-planning",
+        "higgsfield",
+        "passport-rush",
+        "previz",
+        "prompt-collection",
+        "reflection",
+        "storyboard",
+        "style-transfer",
+        "visibility-design",
+        "wide-shot"
+      ],
+      "summary": "공개 스레드에서 확인된 작성자 본문·연속 댓글 5건을 수집. 핵심은 AI 생성 전 스토리보드·Blender 프리비즈로 카메라/배치를 확정하고, 캐릭터 스타일을 배경에 전이하며, 와이드샷은 클로즈업/미디엄에서 전환해 안정화하고, 어려운 정지 인물은 반사 유리와 실루엣으로 가리는 연출이다. 공개 프롬프트 2개를 별도 구조화 파일에 보존했다.",
+      "prompt": {
+        "status": "captured",
+        "text": "take the style of the character and apply it to the background\n\nGLASS: all the taxi's windows are semi-transparent and heavily reflective, sky, road and passing scenery slide across them, and the interior sits in shadow. The two passengers are almost invisible, present only as soft dark silhouettes veiled by the reflections and the tint, their poses and gestures readable purely by shape."
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/d755d6edc29d0911a232a3367eeace8e62a4afe8cf7470f74237e30e31e06ead.jpg",
+        "alt": "Passport Rush 제작 인사이트 — 본인댓글·프롬프트 수집"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@prompt_what/post/Dc0GPNBClQl"
+      },
+      "captured_at": "2026-09-03T16:39:21+09:00"
     }
   ]
 }
