@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260904-040035-AUTO",
+  "release_id": "LIA-20260905-040047-AUTO",
   "source_manifest_sha256": "0e30b48f5d2690bb2edf11167e70d9e99238ec60fad502ea417893a1dfb4777f",
   "export_manifest_sha256": "b6e085fa44bba5e9f8dd6bb5a454db0d4d38c9ffe2a5c4176e07810d413e5ca5",
-  "generated_at": "2026-09-04T04:00:49+09:00",
+  "generated_at": "2026-09-05T04:01:01+09:00",
   "cards": [
     {
       "schema_version": 2,
