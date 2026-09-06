@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260906-040011-AUTO",
+  "release_id": "LIA-20260907-040007-AUTO",
   "card_count": 278,
   "source_manifest": [
     {
@@ -2456,7 +2456,7 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "1c6bad75f24ed8767bbcda0d3521e464de1c65da2eef9e247b41c1ca3666342b",
+      "sha256": "f9e37bc71f18a9b6c640ab86f71eab39ab28c29a8e856ae0077939905fd2cc27",
       "size": 344072
     },
     {
@@ -2465,5 +2465,5 @@
       "size": 2357
     }
   ],
-  "bundle_sha256": "d5dbc6729fe4f3245f327adc196a6fe21c7fbac456e83232760a63cd8e93151b"
+  "bundle_sha256": "a008a017eb09a96d80b9d3c8c8fe29c332da36bcba7e9bad16a2cf2993581b4c"
 }
