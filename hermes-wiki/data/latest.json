@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260907-040007-AUTO",
-  "source_manifest_sha256": "0e30b48f5d2690bb2edf11167e70d9e99238ec60fad502ea417893a1dfb4777f",
-  "export_manifest_sha256": "b6e085fa44bba5e9f8dd6bb5a454db0d4d38c9ffe2a5c4176e07810d413e5ca5",
-  "generated_at": "2026-09-07T04:00:11+09:00",
+  "release_id": "LIA-20260908-040104-AUTO",
+  "source_manifest_sha256": "1e33604253e24e235539fc7f088c43a809a6c521e2486b028edec9dc0409bc31",
+  "export_manifest_sha256": "440dd68e9c50dc6593e0b073e9f39cf6efe4dfe4cb2fb69df2c0d41dfe0254d8",
+  "generated_at": "2026-09-08T04:01:19+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -9301,6 +9301,215 @@
         "url": "https://www.threads.com/@prompt_what/post/Dc0GPNBClQl"
       },
       "captured_at": "2026-09-03T16:39:21+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260907-0001",
+      "title": "GPT 이미지 비밀 코드 12개 — 이미지 변환 기능 모음",
+      "types": [
+        "community_post",
+        "image_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "360view",
+        "droneview",
+        "gpt-image",
+        "hdreal",
+        "image-editing",
+        "multiview",
+        "photo-enhancement",
+        "product-visual",
+        "secret-codes",
+        "xray"
+      ],
+      "summary": "GPT 이미지에 사진과 /코드를 넣어 화질 개선, 제품 광고·프리미엄 쇼케이스, 360도·탑뷰·분해도, 드론샷 확장, 인물 합성, 원단 디테일·X-ray 등을 처리한다고 소개한다. 공개 캡션에서 /HDREAL, /360VIEW, /DRONEVIEW, /XRAY 예시를 확인했다.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/2298267c1905e25a248dbb3a63c3facdbf58347e609eaa6d04fbe0742b184349.jpg",
+        "alt": "GPT 이미지 비밀 코드 12개 — 이미지 변환 기능 모음"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/p/Dc3MoY4kzbU/"
+      },
+      "captured_at": "2026-09-07T21:25:32+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260907-0002",
+      "title": "Sergio Duce — 단순 선과 그림자로 만드는 이중 의미 일러스트",
+      "types": [
+        "community_post",
+        "image_style",
+        "inspiration"
+      ],
+      "tags": [
+        "editorial-art",
+        "illustration",
+        "minimalism",
+        "philosophical-satire",
+        "sergio-duce",
+        "shadow-art",
+        "visual-metaphor",
+        "yo-runner"
+      ],
+      "summary": "스페인 일러스트레이터 Sergio Duce의 작품을 소개한 콘텐츠. 평범한 일상 장면의 그림자에 다른 본질·상상 세계를 숨기고, 최소한의 선으로 교육·가족·관계·디지털 중독 등을 성찰하게 만드는 시각적 은유를 다룬다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/70a07b1b3db5ec0b10e31f244ee80b9221f98b992d8196bf66d19c1feb6b10f2.jpg",
+        "alt": "Sergio Duce — 단순 선과 그림자로 만드는 이중 의미 일러스트"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/p/Dc3E4RNlBOO/"
+      },
+      "captured_at": "2026-09-07T21:25:32+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260907-0003",
+      "title": "Seedance Emotion Direction — 25개 감정 연기 프롬프트 라이브러리",
+      "types": [
+        "community_post",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "acting",
+        "anxiety",
+        "emotion",
+        "facial-expression",
+        "joy",
+        "performance-direction",
+        "prompt-library",
+        "seedance",
+        "seedance-2.5",
+        "shock"
+      ],
+      "summary": "AI 영상 캐릭터 연기를 위한 Emotion Direction 사이트 소개. 25개 감정을 강도·감정군별로 정리하고, 카메라·의상·배경 없이 눈·입·호흡·머리·어깨 등 보이는 연기 행동만 적은 performance prompt를 제공한다.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/2a7146a58385635a733459d2e1fdfb14d3da24eef3b9a4f1c708e5d6ba40016a.svg",
+        "alt": "Seedance Emotion Direction — 25개 감정 연기 프롬프트 라이브러리"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@tab.was.here/post/Dc5Q9KTD_gk"
+      },
+      "captured_at": "2026-09-07T21:26:09+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260907-0004",
+      "title": "Seedance Emotion Direction — 작성자 답글의 감정연기 프롬프트 사이트 링크",
+      "types": [
+        "community_post",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "acting-prompt",
+        "author-reply",
+        "emotion-direction",
+        "performance",
+        "seedance"
+      ],
+      "summary": "작성자가 원 게시물 답글에 Seedance Emotion Direction 사이트 링크를 남긴 기록. 사이트에는 25개 감정별 가시적 연기 행동 프롬프트가 있다.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/113b5a7853d15a4be26e1426a5143fb33027244f448fcfb635ca414c35af9f7b.svg",
+        "alt": "Seedance Emotion Direction — 작성자 답글의 감정연기 프롬프트 사이트 링크"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@tab.was.here/post/Dc5Rixuj8Oh"
+      },
+      "captured_at": "2026-09-07T21:26:09+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260907-0005",
+      "title": "2D 이미지→실사 패션 에디토리얼 변환 범용 프롬프트",
+      "types": [
+        "community_post",
+        "image_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "85mm",
+        "fashion-editorial",
+        "gpt-image",
+        "magazine-layout",
+        "photorealism",
+        "portrait-retouching",
+        "reference-fidelity",
+        "sony-a7-iv",
+        "style-transfer"
+      ],
+      "summary": "2D 이미지를 실사 패션 에디토리얼 사진으로 변환하고, HDR·강한 얼굴 대비·손 오류를 보정한 뒤 카메라/렌즈/조명 조건을 추가하는 워크플로. 작성자는 작업 대화를 바탕으로 매거진 페이지도 만들었다고 설명하며, 범용 프롬프트를 본인댓글에 제공했다.",
+      "prompt": {
+        "status": "captured",
+        "text": "[Transform the attached image into a convincing live-action fashion editorial photograph. Use the reference as the source of the subject, styling, pose, composition, and atmosphere. Output one finished photograph. REFERENCE FIDELITY Preserve the original hairstyle, hair color, outfit design, accessories, expression, gesture, framing, and aspect ratio. Translate stylized proportions into believable human anatomy without losing the character’s distinctive appeal. Reconstruct the existing setting as a real physical location, preserving its visual identity and color relationships. Do not automatically replace every background with a garden. FACE & PRESENCE For a young adult female character, portray a clearly. Create distinctive, memorable beauty: softly rounded cheeks, a natural jawline, expressive eyes, subtle facial asymmetry, and an understated, emotionally engaging expression. Preserve the reference’s eye direction and mood. When looking at the camera, create an intimate, magnetic gaze through expression and precise focus, not oversized eyes or artificial iris effects. Avoid generic doll-like perfection. For other subjects, preserve their apparent age group, gender presentation, and defining features. CAMERA & OPTICS Photographic aesthetic of a Sony A7 IV with an 85mm F1.4 prime lens. Choose a believable camera distance for the reference framing. Focus precisely on the nearer eye, with realistic depth of field consistent with an 85mm lens at f/1.4 and the actual scene geometry. Let sharpness fall away gradually with distance from the focal plane. Do not blur everything outside the face uniformly. Separate the subject from the background through plausible physical distance. Render smooth optical bokeh only where distant highlights exist: varied soft discs, restrained brightness, gentle cat-eye shapes toward frame edges, and natural overlap. Keep bokeh away from important facial details. No decorative circles pasted over the image, no artificial portrait-mode cutout edges. LIGHTING Translate the reference lighting into a coherent real-world lighting setup. Use soft directional light, subtle reflected fill, and physically consistent shadows. Where appropriate, allow gentle backlight to reveal hair strands. Preserve highlight detail in pale clothing and natural depth in shadows. Match the subject and background exposure. No excessive bloom, HDR halos, or flat beauty-filter lighting. PHYSICAL TEXTURE Render authentic skin with fine pores, peach fuzz, subtle tonal variation, and restrained editorial retouching. Give eyes realistic moisture and coherent catchlights. Hair must have believable roots, individual strands, weight, and translucency, including naturally dyed fantasy colors. Clothing must show real fabric weave, seams, thickness, folds, and gravity. Jewelry must reflect the actual surroundings. ANATOMY Correct any source-image anatomy errors while preserving the intended pose. Hands must have five anatomically correct digits, natural joints, plausible finger lengths, and clear overlaps. No duplicated fingers, fused limbs, or distorted accessories. FINISH A refined, camera-captured fashion photograph with natural skin tones, nuanced color grading, and realistic detail. Remove drawn outlines, cel shading, painted gradients, plastic skin, CGI surfaces, and synthetic over-sharpening. No text, typography, magazine layout, borders, logos, or watermarks. Output only the photograph.Read more](http://www.threads.com/@gomdanceo/post/Dc9Kka1H6Y3/media)\n\n2\n\n[![Image 8: gomdanceo's profile picture](https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/517796853_17914106265113482_5812821239377272649_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43ODAuYzIifQ&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gHpV4rbOykmzWTjRa8hly4F4-JLTowD_swgQNN_Tt62JThIADO-KVJb4B1XmkCpoDQ&_nc_ohc=joSDYz28ARYQ7kNvwFasIPF&_nc_gid=v7pZ07fasS4e9TgAi9l2AA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AQLla8NazNu-cJvPkr8MnQUgs9TZg3T_OZ4nog_bRFrwcA&oe=6AA48068&_nc_sid=10d13b)](http://www.threads.com/@gomdanceo)\n\n[gomdanceo](http://www.threads.com/@gomdanceo)\n\n[AI Threads](http://www.threads.com/search?q=AI%20Threads&serp_type=tags&tag_id=18406834975056806)\n\n[17h](http://www.threads.com/@gomdanceo/post/Dc9LbLSH6KQ)\n\n·Author\n\n잘 되는지 검증 해보니 자연스럽고 괜찮네요~!\n\nTranslate\n\n![Image 9](https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/798215101_17983270128113482_3016331235473832172_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzk4MDM4NzIyOTk1ODgyMzM3Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTAyNC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Jj0GHQqo4b0Q7kNvwFLbQcO&_nc_oc=Ado_AtEum9S_oUSZdVeZ4VPL_7vfAJSzX38x3iyxHteogt54ny60hdq0fqbYwakydi4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=v7pZ07fasS4e9TgAi9l2AA&_nc_ss=7a22e&oh=00_AQImURXWpve-x6PGM7I7gfgU7zyHDJMbN9l_H54fF2Mkyg&oe=6AA49315)\n\n![Image 10](https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/798017663_17983270212113482_7917949735565662803_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzk4MDM4Nzg3NzkxMDQ2MDYzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=saAExw1lAtcQ7kNvwHCsZQj&_nc_oc=AdpnlG7P4jcwhiZQMO3LycgP1EUjXEBUoOBOXDVPOMDJEmoBOt94cfhARF8SaHjgDBA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=v7pZ07fasS4e9TgAi9l2AA&_nc_ss=7a22e&oh=00_AQIntJ3s2NcHtuPeVptusnasZGZvTwJhU2zutITsSCPSKQ&oe=6AA4874B)\n\n![Image 11](https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/798784740_17983270248113482_804454363360922318_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk4MDM4Nzg3ODgwODAzMzkyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTAyNC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=n7ichNsNdRoQ7kNvwEcUl4l&_nc_oc=AdoSDfSlyVNB21fgqa3gyn7OlHKPYXTO_bgzT6i0XX9N7FaeT3sA31my17Gs2D4khAk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=v7pZ07fasS4e9TgAi9l2AA&_nc_ss=7a22e&oh=00_AQKQQhw3X3jo5x6Jc9t0EDO0MKdvgf1P4Fy-20Nt20j6hw&oe=6AA483FC)\n\n![Image 12](https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/798537736_17983270272113482_8426280631139710151_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzk4MDM4Nzg3NzkwMjA0MDEyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ORCjcOvoyQ4Q7kNvwFFCAYV&_nc_oc=AdpnQmAFeMQypn-FCSUNctPd5Znzgr9gXY3NtTvJ5n4mSI9r8YBjw9XZ207O9G8sxLY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=v7pZ07fasS4e9TgAi9l2AA&_nc_ss=7a22e&oh=00_AQLUnqloP5qqI9mqPGOQwUHdsJNUfb5wmcohSdxEx2cOUQ&oe=6AA46EB9)"
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/f697d3a01f43992e7f8e9851edbd7e39e0fdecd9d5a904dc035299ebf6cdd337.svg",
+        "alt": "2D 이미지→실사 패션 에디토리얼 변환 범용 프롬프트"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@gomdanceo/post/Dc9KjkCn2Tv"
+      },
+      "captured_at": "2026-09-07T21:26:09+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260907-0006",
+      "title": "AI 모델을 위한 10개 프롬프트 스레드 — 본인댓글 미수집 보존",
+      "types": [
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "ai-prompts",
+        "chatgpt",
+        "claude",
+        "gemini",
+        "unresolved-comments",
+        "x"
+      ],
+      "summary": "Gemini·ChatGPT·Claude를 위한 10개 프롬프트를 댓글 스레드에 공유한다고 예고한 X 게시물. 공개 syndication 메타데이터로 원문만 확인됐고, 댓글 4개 내용은 노출되지 않았다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/4b7e9333e6aa2fb844d519915fcdca6c3fcbcbe0fa7a71e965fd802b241e475d.svg",
+        "alt": "AI 모델을 위한 10개 프롬프트 스레드 — 본인댓글 미수집 보존"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/josesilesdata/status/2095965653639348515"
+      },
+      "captured_at": "2026-09-07T21:26:09+09:00"
     }
   ]
 }
