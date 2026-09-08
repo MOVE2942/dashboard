@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260908-040104-AUTO",
-  "source_manifest_sha256": "1e33604253e24e235539fc7f088c43a809a6c521e2486b028edec9dc0409bc31",
-  "export_manifest_sha256": "440dd68e9c50dc6593e0b073e9f39cf6efe4dfe4cb2fb69df2c0d41dfe0254d8",
-  "generated_at": "2026-09-08T04:01:19+09:00",
+  "release_id": "LIA-20260909-040011-AUTO",
+  "source_manifest_sha256": "aa9b6272dec0f7e886da3d778169d89cc791d6d6841709200e512e533c41c093",
+  "export_manifest_sha256": "295c08716e27d13746ca57a6aac634c336c95badecf84856c11c56725ddd0147",
+  "generated_at": "2026-09-09T04:00:15+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -9510,6 +9510,44 @@
         "url": "https://x.com/josesilesdata/status/2095965653639348515"
       },
       "captured_at": "2026-09-07T21:26:09+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260908-0001",
+      "title": "Cinematique — AI 영상 연출 기법 150개 프롬프트 라이브러리",
+      "types": [
+        "community_post",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "ai-filmmaking",
+        "camera-work",
+        "cinematique",
+        "composition",
+        "editing",
+        "genre",
+        "grok-imagine",
+        "lighting",
+        "storytelling",
+        "vfx",
+        "vvsvs"
+      ],
+      "summary": "VVSVS의 Cinematique는 150개 영상 연출 기법을 복사 가능한 프롬프트로 정리한 무료 라이브러리. 카메라 워크 41, 조명 30, 구도 21, 장르·스타일 21, 편집 17, 이야기 구성 12, 특수효과 8개로 구성되며 예시 이미지·영상, 난이도 3단계, 분위기 8종 필터를 제공한다고 소개된다.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/9074f84894f019952259d313aacd81b89cb79b52f22a30557cdd748ef13f400c.jpg",
+        "alt": "Cinematique — AI 영상 연출 기법 150개 프롬프트 라이브러리"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@prompt_what/post/DdBaiWqihwW"
+      },
+      "captured_at": "2026-09-08T19:18:17+09:00"
     }
   ]
 }
