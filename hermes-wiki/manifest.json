@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260908-040104-AUTO",
-  "card_count": 284,
+  "release_id": "LIA-20260909-040011-AUTO",
+  "card_count": 285,
   "source_manifest": [
     {
       "id": "CR-20260801-0001",
@@ -1138,10 +1138,14 @@
     {
       "id": "CR-20260907-0006",
       "hash": "2530021acd8b1863f37146c8d7df06b281dfae8d3a2d63b628f072faf4878553"
+    },
+    {
+      "id": "CR-20260908-0001",
+      "hash": "086e21b91dac726993dfda792146681973c9f17837ebe108489ab101c5ad4d78"
     }
   ],
-  "source_manifest_sha256": "1e33604253e24e235539fc7f088c43a809a6c521e2486b028edec9dc0409bc31",
-  "export_manifest_sha256": "440dd68e9c50dc6593e0b073e9f39cf6efe4dfe4cb2fb69df2c0d41dfe0254d8",
+  "source_manifest_sha256": "aa9b6272dec0f7e886da3d778169d89cc791d6d6841709200e512e533c41c093",
+  "export_manifest_sha256": "295c08716e27d13746ca57a6aac634c336c95badecf84856c11c56725ddd0147",
   "files": [
     {
       "path": "assets/004e98310520cd38e6ed7bbfc015b930168dff7fdf43cbf3445d58d562599778.svg",
@@ -1854,6 +1858,11 @@
       "size": 238871
     },
     {
+      "path": "assets/9074f84894f019952259d313aacd81b89cb79b52f22a30557cdd748ef13f400c.jpg",
+      "sha256": "9074f84894f019952259d313aacd81b89cb79b52f22a30557cdd748ef13f400c",
+      "size": 48351
+    },
+    {
       "path": "assets/91240b4d7ef38faf2c193c05ecd0852b848464c5f40a0da3a0a2dfb37d74c5ac.svg",
       "sha256": "91240b4d7ef38faf2c193c05ecd0852b848464c5f40a0da3a0a2dfb37d74c5ac",
       "size": 653
@@ -2510,8 +2519,8 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "587b8649711dad3c02ac4f3792a47e1a236af5f02bdcf3eb9454a69547aa2c95",
-      "size": 358497
+      "sha256": "4bffdd6cfa7ea4380212ed24e620683de6b4599697377b900dc6c873dfb84364",
+      "size": 359894
     },
     {
       "path": "index.html",
@@ -2519,5 +2528,5 @@
       "size": 2357
     }
   ],
-  "bundle_sha256": "d1f20d25d56ce4fcab1015089de5f54edbffdc4d3d84d88d7ec28a31a20efc8e"
+  "bundle_sha256": "143cfc5cecb4a6c3d8e5a8c8ecb1de476291a010329d0beefce6ba681f4ff8ea"
 }
