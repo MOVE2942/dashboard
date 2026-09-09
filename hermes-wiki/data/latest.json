@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260909-040011-AUTO",
-  "source_manifest_sha256": "aa9b6272dec0f7e886da3d778169d89cc791d6d6841709200e512e533c41c093",
-  "export_manifest_sha256": "295c08716e27d13746ca57a6aac634c336c95badecf84856c11c56725ddd0147",
-  "generated_at": "2026-09-09T04:00:15+09:00",
+  "release_id": "LIA-20260910-040010-AUTO",
+  "source_manifest_sha256": "c7c95b804e35ca6a6f100b24c51cdd589e7e4285e4da1a8dde8d44ee516f0bc5",
+  "export_manifest_sha256": "78e0d494a673931b9448c1dab2ef17d0ea9347bb3abde42327189386ebfaedbd",
+  "generated_at": "2026-09-10T04:00:24+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -9548,6 +9548,42 @@
         "url": "https://www.threads.com/@prompt_what/post/DdBaiWqihwW"
       },
       "captured_at": "2026-09-08T19:18:17+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260910-0001",
+      "title": "GPT Image 2.5 프롬프트 가이드 — 텍스트 이미지 size·quality 설정 인사이트",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "image_prompt"
+      ],
+      "tags": [
+        "gpt-image-2.5",
+        "high-resolution",
+        "image-generation",
+        "openai",
+        "parameters",
+        "prompt-guide",
+        "quality",
+        "size",
+        "text-rendering"
+      ],
+      "summary": "OpenAI 공식 GPT Image 2.5 프롬프트 가이드를 추천하며, 프롬프트 묘사뿐 아니라 이미지 size·quality 설정이 중요하다고 설명한 게시물. 텍스트가 많은 이미지는 size와 품질 등급을 높여 선명도를 확보하고, 고해상도 결과에는 GPT Image 2.5을 우선 시도하라는 관찰을 제시한다.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/7f6f80cbbe53b661c4eab17d4e4d8b6bf9fe9af995b18c7d8296073d6b8ca5dc.jpg",
+        "alt": "GPT Image 2.5 프롬프트 가이드 — 텍스트 이미지 size·quality 설정 인사이트"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/LinearUncle/status/2097574023358279755"
+      },
+      "captured_at": "2026-09-10T00:43:19+09:00"
     }
   ]
 }
