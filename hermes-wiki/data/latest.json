@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260910-040010-AUTO",
-  "source_manifest_sha256": "c7c95b804e35ca6a6f100b24c51cdd589e7e4285e4da1a8dde8d44ee516f0bc5",
-  "export_manifest_sha256": "78e0d494a673931b9448c1dab2ef17d0ea9347bb3abde42327189386ebfaedbd",
-  "generated_at": "2026-09-10T04:00:24+09:00",
+  "release_id": "LIA-20260911-040016-AUTO",
+  "source_manifest_sha256": "6dae42c16126b34ba399d662604da36235f8c2adb2b292833326573652c86bc3",
+  "export_manifest_sha256": "d979cf52399fc72ff82e8af7678f186002de8e4e37ab475e99700a5a830348a5",
+  "generated_at": "2026-09-11T04:00:19+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -9584,6 +9584,166 @@
         "url": "https://x.com/LinearUncle/status/2097574023358279755"
       },
       "captured_at": "2026-09-10T00:43:19+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260910-0002",
+      "title": "Midjourney v8.2 Edit 합체 워크플로 — 본인댓글 전체 공개 수집",
+      "types": [
+        "community_post",
+        "image_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "character-sheet",
+        "edit",
+        "image-reference",
+        "midjourney",
+        "papercraft",
+        "prompt-collection",
+        "quick-edit",
+        "sref",
+        "style-mixing",
+        "v8.2"
+      ],
+      "summary": "Midjourney v8.2 Edit의 이미지 참조·Quick Edit·Sref 혼합을 이용한 “합체” 워크플로. 공개 캡처에 포함된 작성자 원글과 연속 답글을 구조화했으며, papercraft 인물/고양이 생성 예시, 원본 Sref 재사용·혼합, 자연어 편집, 다양한 프롬프트 실험, Sref 혼합 결과, 캐릭터 시트 활용을 다룬다.",
+      "prompt": {
+        "status": "captured",
+        "text": "papercraft style, school boy, fullbody, 15 years old, handsome, simple white background --ar 3:4 --sref 2656148540 384978651 --profile s6i7a97 aeslqag --v 8.2\n\npapercraft style, cat, simple white background --ar 3:4 --sref 2656148540 384978651 --profile s6i7a97 aeslqag --v 8.2"
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/71c72cb5d2e354cc4f6e4ab067cf85064c8d9069b664b4ebbd5d96a8f8c74cfc.jpg",
+        "alt": "Midjourney v8.2 Edit 합체 워크플로 — 본인댓글 전체 공개 수집"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@imhealingmachine/post/DdET8yBjxdg"
+      },
+      "captured_at": "2026-09-10T08:45:11+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260910-0003",
+      "title": "Threads 공유 링크 BAZ2u9i8Er — 원문 미확인 보존",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "reference-intake",
+        "threads",
+        "unresolved-link"
+      ],
+      "summary": "사용자가 제공한 Threads 공유 링크. 공개 접근에서 invalid_post로 해석되어 대상 게시물의 원문·작성자·미디어를 확정할 수 없었다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/3618233da9671cad14a7e5899cbafd662383df9a5810597209e656a5ac6cdadd.svg",
+        "alt": "Threads 공유 링크 BAZ2u9i8Er — 원문 미확인 보존"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/share/BAZ2u9i8Er/"
+      },
+      "captured_at": "2026-09-10T08:45:11+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260910-0004",
+      "title": "긴 프롬프트 예고 X 게시물 — 댓글 프롬프트 미확인 보존",
+      "types": [
+        "community_post",
+        "image_prompt"
+      ],
+      "tags": [
+        "image-prompt",
+        "prompt",
+        "unresolved-comments",
+        "x"
+      ],
+      "summary": "작성자가 “긴 프롬프트는 2층에 둔다”고 예고한 이미지 게시물. 공개 syndication으로 원문과 원본 미디어는 보존했으나 댓글 프롬프트는 확인하지 못했다.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/00a8f7c223332a9f2c06e6cb18d758171331a18dc713f25da43f5df7451dd22c.jpg",
+        "alt": "긴 프롬프트 예고 X 게시물 — 댓글 프롬프트 미확인 보존"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/hxhxhx0916/status/2097628426115088642"
+      },
+      "captured_at": "2026-09-10T15:03:09+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260910-0005",
+      "title": "무료 PDF 도서 다운로드 사이트 예고 X 스레드 — 본인댓글 비수집 보존",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "books",
+        "copyright-risk",
+        "pdf",
+        "unresolved-comments",
+        "x"
+      ],
+      "summary": "작성자가 무료 PDF 도서 다운로드 사이트 9개를 본인댓글 스레드에 제시한다고 예고한 게시물. 본인댓글은 공개 경로에서 확인되지 않았으며, 저작권 침해 가능성이 있는 불법 배포 출처를 수집·정리하지 않는다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/315d750ebef8ec5b8dad4e4a2d6f909beed6a836ab3fbe49051000f9d374165c.svg",
+        "alt": "무료 PDF 도서 다운로드 사이트 예고 X 스레드 — 본인댓글 비수집 보존"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/ValeriA_Tech/status/2097625309281751125"
+      },
+      "captured_at": "2026-09-10T15:03:10+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260910-0006",
+      "title": "스타일 짝맞춤 액션 클립 프롬프트 — 범용성 한계 메모",
+      "types": [
+        "community_post",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "action-clip",
+        "ai-video",
+        "camera-motion",
+        "character-reference",
+        "paint-style",
+        "prompt-stability",
+        "style-consistency",
+        "visual-style"
+      ],
+      "summary": "작성자가 액션 클립을 만든 프롬프트를 공유하면서도 전체 프롬프트의 그대로 재사용은 생성마다 결과가 달라 불안정하므로 권하지 않는다고 밝힌 사례. 캐릭터 레퍼런스·카메라 모션은 다른 작업에 응용 가능하며, 첫 visual style과 끝 paint style은 서로 짝이 맞아야 스타일 흔들림을 줄일 수 있다고 설명한다.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/d453385e5790360b4abe64df9024ed11fc6e38bf584e06e14ee4cab6399cb927.jpg",
+        "alt": "스타일 짝맞춤 액션 클립 프롬프트 — 범용성 한계 메모"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@rilto1619/post/DdGXQcoCkf7"
+      },
+      "captured_at": "2026-09-10T19:23:17+09:00"
     }
   ]
 }
