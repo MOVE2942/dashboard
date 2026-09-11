@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260911-040016-AUTO",
-  "source_manifest_sha256": "6dae42c16126b34ba399d662604da36235f8c2adb2b292833326573652c86bc3",
-  "export_manifest_sha256": "d979cf52399fc72ff82e8af7678f186002de8e4e37ab475e99700a5a830348a5",
-  "generated_at": "2026-09-11T04:00:19+09:00",
+  "release_id": "LIA-20260912-040025-AUTO",
+  "source_manifest_sha256": "c9b9025c58ffac45950fcc0d9e9560c22716835c98e553c9cfb2b89156e9ec8b",
+  "export_manifest_sha256": "9dbdb56cb122fd4a0c3271fbf1205f6be5aee186edc2de25efef287294267963",
+  "generated_at": "2026-09-12T04:00:38+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -9744,6 +9744,80 @@
         "url": "https://www.threads.com/@rilto1619/post/DdGXQcoCkf7"
       },
       "captured_at": "2026-09-10T19:23:17+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260911-0001",
+      "title": "GameFactory-3A — AI 코딩 에이전트 기반 3A 게임 제작 파이프라인",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "3d-assets",
+        "ai-agents",
+        "blender",
+        "claude-code",
+        "codex",
+        "game-development",
+        "game-ui",
+        "godot",
+        "threejs",
+        "ue5",
+        "unity"
+      ],
+      "summary": "캐릭터·3D 오브젝트, 애니메이션, 음성·효과음, CG 영상, 게임 UI·로직까지의 게임 제작 파이프라인을 AI 코딩 에이전트와 연결하는 공개 프레임워크. UE5·Unity·Godot·Blender·Three.js 지원을 표방한다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/104127f0ee7c35a35e0f59091cbe0f425d9c75768887179e48073ef450021737.jpg",
+        "alt": "GameFactory-3A — AI 코딩 에이전트 기반 3A 게임 제작 파이프라인"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/OpenDCAI/GameFactory-3A"
+      },
+      "captured_at": "2026-09-11T22:38:37+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260911-0002",
+      "title": "AI 영상 무료 자료실 3곳 — Cinematique·Emotion Direction·YouMind",
+      "types": [
+        "community_post",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "acting",
+        "ai-video",
+        "camera-work",
+        "cinematique",
+        "emotion-direction",
+        "free-resources",
+        "lighting",
+        "prompt-library",
+        "youmind"
+      ],
+      "summary": "AI 영상 제작용 무료 자료실 3곳을 묶은 안내. Cinematique는 카메라 워크 41개와 조명 30개를 포함한 150개 연출 프롬프트, Emotion Direction은 25개 감정별 가시적 연기 행동 프롬프트, YouMind는 한국어 UI/프롬프트 본문을 포함한 대형 프롬프트 라이브러리로 소개한다.",
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/8ef160bb32ff03889d73e81f4f9cb5db8a473102792fbcdaa3e0654438c5fb78.jpg",
+        "alt": "AI 영상 무료 자료실 3곳 — Cinematique·Emotion Direction·YouMind"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/p/DdJDCr_FEzd/"
+      },
+      "captured_at": "2026-09-11T22:42:14+09:00"
     }
   ]
 }
