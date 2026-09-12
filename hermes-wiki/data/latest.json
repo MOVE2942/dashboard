@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260912-040025-AUTO",
-  "source_manifest_sha256": "c9b9025c58ffac45950fcc0d9e9560c22716835c98e553c9cfb2b89156e9ec8b",
-  "export_manifest_sha256": "9dbdb56cb122fd4a0c3271fbf1205f6be5aee186edc2de25efef287294267963",
-  "generated_at": "2026-09-12T04:00:38+09:00",
+  "release_id": "LIA-20260913-040043-AUTO",
+  "source_manifest_sha256": "1b7c8280a646f06aad2c26b9cde729c2096e39afed0502b902374294d08c41cb",
+  "export_manifest_sha256": "c10f7a9ba7ea51ec83d3d10d3cc60c4515163979aef2796027860d49465ec32a",
+  "generated_at": "2026-09-13T04:00:56+09:00",
   "cards": [
     {
       "schema_version": 2,
@@ -9818,6 +9818,70 @@
         "url": "https://www.instagram.com/p/DdJDCr_FEzd/"
       },
       "captured_at": "2026-09-11T22:42:14+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260912-0001",
+      "title": "MarkItDown — 다양한 파일을 Markdown으로 변환하는 Microsoft Python 도구",
+      "types": [
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "content-extraction",
+        "document-conversion",
+        "markdown",
+        "markitdown",
+        "microsoft",
+        "pdf",
+        "python"
+      ],
+      "summary": "Microsoft의 MarkItDown은 PDF 등 다양한 파일을 LLM/텍스트 처리 친화적인 Markdown으로 변환하는 Python 도구. 원 X 게시물은 대량 GitHub 관심과 문서 변환 용도를 소개했다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/8cbb166e7578b823f49a8d7debd9b446135f3d87bb01ccfce983b5a8ca3c2740.png",
+        "alt": "MarkItDown — 다양한 파일을 Markdown으로 변환하는 Microsoft Python 도구"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/microsoft/markitdown"
+      },
+      "captured_at": "2026-09-12T21:42:49+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260912-0002",
+      "title": "douyin-downloader — 짧은 영상 다운로드 자동화 프로젝트 언급",
+      "types": [
+        "community_post",
+        "github_project"
+      ],
+      "tags": [
+        "copyright-risk",
+        "douyin",
+        "reference-only",
+        "short-video",
+        "video-downloader"
+      ],
+      "summary": "X 게시물이 언급한 Douyin 계열 영상 다운로드 프로젝트. 공개 게시물은 대량 영상 다운로드 효율을 주장하지만, 타인의 영상 다운로드·재배포는 저작권·플랫폼 약관 문제를 일으킬 수 있다.",
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/2d31c6c0b90f940f6536aca74cd8f8453a3d4bfb9191ae3ffcb7d5fe69c6dc86.png",
+        "alt": "douyin-downloader — 짧은 영상 다운로드 자동화 프로젝트 언급"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/jiji262/douyin-downloader"
+      },
+      "captured_at": "2026-09-12T21:42:50+09:00"
     }
   ]
 }
