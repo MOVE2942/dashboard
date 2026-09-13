@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260913-230820-AUTO",
+  "release_id": "LIA-20260914-THUMBNAIL-FIX2",
   "source_manifest_sha256": "ce802157950eed7e67bf82c3757287277965bdcb6451bcef1ef748f3adbdf0d1",
   "export_manifest_sha256": "9e139f22e9fbceb61ac0761f641a1dd6f3c4c2fe261627f6033a35ca29539e80",
   "generated_at": "2026-09-13T23:08:40+09:00",
