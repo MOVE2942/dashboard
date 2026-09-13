@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260914-THUMBNAIL-FIX2",
-  "card_count": 298,
+  "release_id": "LIA-20260914-040025-AUTO",
+  "card_count": 304,
   "facet_counts": {
-    "general": 108,
-    "prompts": 148,
-    "video_generation": 92
+    "general": 112,
+    "prompts": 150,
+    "video_generation": 93
   },
   "source_manifest": [
     {
@@ -1199,10 +1199,34 @@
     {
       "id": "CR-20260913-0003",
       "hash": "626de7a0ea60eddc5176abc95c3b04cee7a985ec4c00c510e6f4412e02c6244f"
+    },
+    {
+      "id": "CR-20260914-0001",
+      "hash": "de7e7d0eb51f25d9480f5ce0cd85a8d4d0e384fcd3c2c0b9e1afad1b17512b47"
+    },
+    {
+      "id": "CR-20260914-0002",
+      "hash": "0278ba912217fe3d8ef9937e9f8fe91e974180b817642f7db0f8a7b0e3e44ca6"
+    },
+    {
+      "id": "CR-20260914-0003",
+      "hash": "5918b05aba68eabca1c2b7b6dcd4ed3d73f0104ce4e5c764f1264241c6a17a03"
+    },
+    {
+      "id": "CR-20260914-0004",
+      "hash": "0d6c16a7a152e956649df8adb138b11cb8392ef01fcc1d0217b12d505355bbae"
+    },
+    {
+      "id": "CR-20260914-0005",
+      "hash": "7df34b1086337c3ffc001537f2ff1656429eb236126e22d011b27295ccb131f2"
+    },
+    {
+      "id": "CR-20260914-0006",
+      "hash": "8a2737d6b30081c5b66617565e572f59572bd7ce0473a4de62aba020349c1194"
     }
   ],
-  "source_manifest_sha256": "ce802157950eed7e67bf82c3757287277965bdcb6451bcef1ef748f3adbdf0d1",
-  "export_manifest_sha256": "9e139f22e9fbceb61ac0761f641a1dd6f3c4c2fe261627f6033a35ca29539e80",
+  "source_manifest_sha256": "580caf40f1e72772b19a1ddece80715bb902db957b5946963b3bb71fffe0ecaa",
+  "export_manifest_sha256": "4687375d5c193dc861266ffba72ab5547221c37778f3da5a442fa884c0731a70",
   "files": [
     {
       "path": "assets/004e98310520cd38e6ed7bbfc015b930168dff7fdf43cbf3445d58d562599778.svg",
@@ -1228,6 +1252,11 @@
       "path": "assets/02e1ffd5fadc0afed7f129bcdb251175255ee6711880b9411df7ae52f07d298a.jpg",
       "sha256": "02e1ffd5fadc0afed7f129bcdb251175255ee6711880b9411df7ae52f07d298a",
       "size": 246878
+    },
+    {
+      "path": "assets/03606dbde2895825c03ba675206af7a7fa5221b6a601f1b185a1a7eafe38a4e8.svg",
+      "sha256": "03606dbde2895825c03ba675206af7a7fa5221b6a601f1b185a1a7eafe38a4e8",
+      "size": 642
     },
     {
       "path": "assets/069db2c9acd5adcf796a5dd07f7bc29ccff03dd57be4ad11d27629ad1dbb9b6a.jpg",
@@ -1875,6 +1904,11 @@
       "size": 22586
     },
     {
+      "path": "assets/7ebe5015a387a2abc0998254e51ff3b574173350961c9bb6fbeafff2c396f19c.png",
+      "sha256": "7ebe5015a387a2abc0998254e51ff3b574173350961c9bb6fbeafff2c396f19c",
+      "size": 48347
+    },
+    {
       "path": "assets/7f6769cea0c320a91c63fabc82f2615b7a8609c13cbff48ae3fabbd3a818b130.png",
       "sha256": "7f6769cea0c320a91c63fabc82f2615b7a8609c13cbff48ae3fabbd3a818b130",
       "size": 432525
@@ -2100,6 +2134,11 @@
       "size": 636
     },
     {
+      "path": "assets/b1e280033c4c4b6ee8f6290259fb7188b5a6e62df57b7d390796c0a7bce859d1.jpg",
+      "sha256": "b1e280033c4c4b6ee8f6290259fb7188b5a6e62df57b7d390796c0a7bce859d1",
+      "size": 133583
+    },
+    {
       "path": "assets/b4abf3c3777eb1a7817cfa0bae6b5c3be04be0c51dcea6072f8fbe41522788e6.svg",
       "sha256": "b4abf3c3777eb1a7817cfa0bae6b5c3be04be0c51dcea6072f8fbe41522788e6",
       "size": 631
@@ -2225,6 +2264,11 @@
       "size": 658
     },
     {
+      "path": "assets/c7356b02cb3ac6a6bd391e08d2c5d96e575be25e0c3fb1d0dd1ca5187e4a1f4b.jpg",
+      "sha256": "c7356b02cb3ac6a6bd391e08d2c5d96e575be25e0c3fb1d0dd1ca5187e4a1f4b",
+      "size": 30632
+    },
+    {
       "path": "assets/c79c9b43910f7e7dff38c88852037d16e5d3885024afd3448de61b8aa409acb7.jpg",
       "sha256": "c79c9b43910f7e7dff38c88852037d16e5d3885024afd3448de61b8aa409acb7",
       "size": 220778
@@ -2283,6 +2327,11 @@
       "path": "assets/d12c6df68ed89ae3d0565303e30937b78632702d23fdd3b95c0dd1ce89103a90.jpg",
       "sha256": "d12c6df68ed89ae3d0565303e30937b78632702d23fdd3b95c0dd1ce89103a90",
       "size": 240530
+    },
+    {
+      "path": "assets/d1da28e6be5c6aa4ad97320f8882abdf17475b8f02f9ae83aa28a1eb317738d4.gif",
+      "sha256": "d1da28e6be5c6aa4ad97320f8882abdf17475b8f02f9ae83aa28a1eb317738d4",
+      "size": 5771071
     },
     {
       "path": "assets/d26bc9717d0f8e6c711b8a85ef0657e2760aeadd37fe6d9e9bf6c1f0fc32690c.jpg",
@@ -2353,6 +2402,11 @@
       "path": "assets/da05609fe979f7d8f159bf38c8cf565fb0e60ec0db31e1d74be2cf7967ffc44a.svg",
       "sha256": "da05609fe979f7d8f159bf38c8cf565fb0e60ec0db31e1d74be2cf7967ffc44a",
       "size": 662
+    },
+    {
+      "path": "assets/da33d5de84b1e9f4a38c02695653994d815bfd8324774137ba0d0a26dbe0d2a9.jpg",
+      "sha256": "da33d5de84b1e9f4a38c02695653994d815bfd8324774137ba0d0a26dbe0d2a9",
+      "size": 172752
     },
     {
       "path": "assets/da876d3103ec108c118f08d7ecdbf49bdef9de2487e46586e9eab8134197eb85.png",
@@ -2641,13 +2695,13 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "4533297c3ce96f61cfbadf834245ed12899829e4b91cbb745355af64c4d20cb6",
-      "size": 402032
+      "sha256": "7ddd0cdcf6ed4d897fba044979e8f79b105489ca34e4179fa12809256ac27b09",
+      "size": 410417
     },
     {
       "path": "index.html",
-      "sha256": "c1560531d91ad74b6c45ef085a9c356e5fac7c3d58d216230af12249a95f9d17",
-      "size": 2735
+      "sha256": "38b8557a63d806c945696778d32cfa1edf1e13f2a7696e09122113012d4a8c26",
+      "size": 2764
     },
     {
       "path": "prompts/index.html",
@@ -2660,5 +2714,5 @@
       "size": 2765
     }
   ],
-  "bundle_sha256": "2de486f8eb29b6cb25544c6e1eb9f1efcf5a4835f38a6a4079281c00aa63d167"
+  "bundle_sha256": "d196f0cd64cbeb3cef61e02184e2022f0cce12d80b8d673c348337766ea45637"
 }

@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260914-THUMBNAIL-FIX2",
-  "source_manifest_sha256": "ce802157950eed7e67bf82c3757287277965bdcb6451bcef1ef748f3adbdf0d1",
-  "export_manifest_sha256": "9e139f22e9fbceb61ac0761f641a1dd6f3c4c2fe261627f6033a35ca29539e80",
-  "generated_at": "2026-09-13T23:08:40+09:00",
+  "release_id": "LIA-20260914-040025-AUTO",
+  "source_manifest_sha256": "580caf40f1e72772b19a1ddece80715bb902db957b5946963b3bb71fffe0ecaa",
+  "export_manifest_sha256": "4687375d5c193dc861266ffba72ab5547221c37778f3da5a442fa884c0731a70",
+  "generated_at": "2026-09-14T04:00:39+09:00",
   "facet_counts": {
-    "general": 108,
-    "prompts": 148,
-    "video_generation": 92
+    "general": 112,
+    "prompts": 150,
+    "video_generation": 93
   },
   "cards": [
     {
@@ -11186,6 +11186,238 @@
         "url": "https://www.threads.com/@zero__gray/post/DdIq4iBiTRA"
       },
       "captured_at": "2026-09-13T13:07:14+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260914-0001",
+      "title": "GitHub 무료 도구 10선 예고 — yt-dlp·Stirling-PDF 등",
+      "types": [
+        "community_post",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "document-tools",
+        "file-sharing",
+        "github-tools",
+        "immich",
+        "localsend",
+        "open-source",
+        "photo-management",
+        "stirling-pdf",
+        "yt-dlp"
+      ],
+      "summary": "GitHub 무료 도구 10개를 소개한다고 예고한 X 게시물. 공개 원문에서는 yt-dlp와 Stirling-PDF를 언급했고, 공개 첨부 이미지에서는 yt-dlp, LocalSend(근거리 기기 간 로컬 네트워크 파일·메시지 공유), Immich(고성능 셀프호스팅 사진·영상 관리)를 확인했다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/7ebe5015a387a2abc0998254e51ff3b574173350961c9bb6fbeafff2c396f19c.png",
+        "alt": "GitHub 무료 도구 10선 예고 — yt-dlp·Stirling-PDF 등"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/shanyanggm/status/2099073712826069099"
+      },
+      "captured_at": "2026-09-14T00:30:32+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260914-0002",
+      "title": "RuView — WiFi CSI 기반 공간·활력징후·존재 감지 프로젝트",
+      "types": [
+        "github_project",
+        "privacy_risk",
+        "smart_home"
+      ],
+      "tags": [
+        "consent",
+        "esp32",
+        "home-assistant",
+        "homekit",
+        "matter",
+        "presence-detection",
+        "privacy",
+        "spatial-sensing",
+        "vital-signs",
+        "wifi-csi"
+      ],
+      "summary": "WiFi Channel State Information(CSI)을 이용해 카메라 없이 존재·점유·움직임·호흡·심박·자세 등을 추정한다고 주장하는 Rust 기반 공간 감지 프로젝트. ESP32 센서와 Home Assistant·Apple Home·Google Home·Alexa·Matter 연동을 표방한다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/d1da28e6be5c6aa4ad97320f8882abdf17475b8f02f9ae83aa28a1eb317738d4.gif",
+        "alt": "RuView — WiFi CSI 기반 공간·활력징후·존재 감지 프로젝트"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/ruvnet/RuView#see-through-walls-with-wifi"
+      },
+      "captured_at": "2026-09-14T01:09:30+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260914-0003",
+      "title": "웹페이지를 AI용 구조화 데이터로 바꾸는 GitHub 도구 10선 예고",
+      "types": [
+        "community_post",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "ai-data",
+        "crawl4ai",
+        "firecrawl",
+        "javascript-rendering",
+        "rate-limits",
+        "robots",
+        "structured-data",
+        "web-crawling",
+        "web-scraping"
+      ],
+      "summary": "웹사이트를 JavaScript 렌더링까지 처리해 AI용 구조화 데이터로 변환하는 GitHub 도구 10개를 소개한다고 예고한 게시물. 공개 원문에서 Firecrawl과 Crawl4AI를 언급한다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/b1e280033c4c4b6ee8f6290259fb7188b5a6e62df57b7d390796c0a7bce859d1.jpg",
+        "alt": "웹페이지를 AI용 구조화 데이터로 바꾸는 GitHub 도구 10선 예고"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/shanyanggm/status/2099129811096776931"
+      },
+      "captured_at": "2026-09-14T01:11:08+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260914-0004",
+      "title": "GPT-6 Astra “불법 프롬프트” 10개 예고 게시물 — 내용 미확인 보존",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "gpt-6-astra",
+        "prompt",
+        "safety-review",
+        "unresolved-content",
+        "x"
+      ],
+      "summary": "“GPT-6 Astra 불법 프롬프트 10개”를 예고하고 첫 항목으로 삶의 방향을 바꾸는 프롬프트를 언급한 게시물. 공개 syndication에는 상세 프롬프트가 노출되지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/03606dbde2895825c03ba675206af7a7fa5221b6a601f1b185a1a7eafe38a4e8.svg",
+        "alt": "GPT-6 Astra “불법 프롬프트” 10개 예고 게시물 — 내용 미확인 보존"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/meijiangAI/status/2099034599645217101"
+      },
+      "captured_at": "2026-09-14T01:12:03+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260914-0005",
+      "title": "ComfyUI-MiniMaxH3-TimelineDirector — H3 장시간 영상 타임라인 분할·연결 워크플로",
+      "types": [
+        "github_project",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "4090",
+        "audio-video-merge",
+        "comfyui",
+        "latent-continuity",
+        "long-video",
+        "minimax-h3",
+        "overlap-frames",
+        "timeline-director"
+      ],
+      "summary": "목표 길이를 여러 구간으로 나눠 한 실행 안에서 순차 생성·연결하는 ComfyUI용 타임라인 디렉터 프로젝트. 같은 seed와 이전 구간 AV latent의 끝을 다음 구간 시작에 연결하고, 중첩 프레임 제거 및 오디오·비디오 병합을 수행한다고 소개된다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/c7356b02cb3ac6a6bd391e08d2c5d96e575be25e0c3fb1d0dd1ca5187e4a1f4b.jpg",
+        "alt": "ComfyUI-MiniMaxH3-TimelineDirector — H3 장시간 영상 타임라인 분할·연결 워크플로"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/Songssx/ComfyUI-MiniMaxH3-TimelineDirector"
+      },
+      "captured_at": "2026-09-14T01:16:27+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260914-0006",
+      "title": "GPT Image 2 프롬프트 — 아침빛 검은 새틴 인물 사진",
+      "types": [
+        "community_post",
+        "image_prompt"
+      ],
+      "tags": [
+        "bedroom",
+        "black-satin",
+        "composition",
+        "editorial-photography",
+        "gpt-image-2",
+        "morning-light",
+        "portrait",
+        "vertical-photo"
+      ],
+      "summary": "아침 햇살이 들어오는 흰 침대 위에서 검은 새틴 미니 슬립을 입은 성인 여성이 등을 보이고 앉아 있는 세로 인물 사진을 주제로 한 GPT Image 2 프롬프트. 인물을 화면 중앙 기준으로 배치하는 조건이 공개 원문에 포함된다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "captured",
+        "text": "Subject: black satin in morning light. Subject: A vertical photo of an adult woman sitting with her back to the camera on a white bed with morning sunlight, wearing a black satin mini slip. Position the person based on the center of the frame."
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/da33d5de84b1e9f4a38c02695653994d815bfd8324774137ba0d0a26dbe0d2a9.jpg",
+        "alt": "GPT Image 2 프롬프트 — 아침빛 검은 새틴 인물 사진"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/CyberTotal2026/status/2098945760817479956"
+      },
+      "captured_at": "2026-09-14T01:17:45+09:00"
     }
   ]
 }
