@@ -1,9 +1,14 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260913-040043-AUTO",
-  "source_manifest_sha256": "1b7c8280a646f06aad2c26b9cde729c2096e39afed0502b902374294d08c41cb",
-  "export_manifest_sha256": "c10f7a9ba7ea51ec83d3d10d3cc60c4515163979aef2796027860d49465ec32a",
-  "generated_at": "2026-09-13T04:00:56+09:00",
+  "release_id": "LIA-20260913-230820-AUTO",
+  "source_manifest_sha256": "ce802157950eed7e67bf82c3757287277965bdcb6451bcef1ef748f3adbdf0d1",
+  "export_manifest_sha256": "9e139f22e9fbceb61ac0761f641a1dd6f3c4c2fe261627f6033a35ca29539e80",
+  "generated_at": "2026-09-13T23:08:40+09:00",
+  "facet_counts": {
+    "general": 108,
+    "prompts": 148,
+    "video_generation": 92
+  },
   "cards": [
     {
       "schema_version": 2,
@@ -20,6 +25,10 @@
         "workflow"
       ],
       "summary": "AI 영상 제작 자동화 워크플로우를 수집하는 샘플 카드입니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -51,6 +60,10 @@
         "video-prompt"
       ],
       "summary": "카메라 무빙과 조명 표현이 좋은 영상 프롬프트 샘플 카드입니다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -87,6 +100,10 @@
         "workflow"
       ],
       "summary": "The agent that grows with you",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -123,6 +140,10 @@
         "tool-use"
       ],
       "summary": "Hugging Face model candidate from public API metadata.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -154,6 +175,10 @@
         "trend"
       ],
       "summary": "Civitai public hot image candidate by weekly reaction signals.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -186,6 +211,10 @@
         "x"
       ],
       "summary": "X 프롬프트/비주얼 레퍼런스 포스트. 공개 syndication 기준으로 시각 메타데이터는 확인됐지만 전체 프롬프트 전문은 확보되지 않았다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -218,6 +247,10 @@
         "x"
       ],
       "summary": "X 프롬프트 레퍼런스 포스트. 공개 메타데이터에서 비교적 긴 설명/alt-text 계열 프롬프트 흔적이 확보되어 재사용 가치가 높다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -248,6 +281,10 @@
         "x"
       ],
       "summary": "AI 프롬프트 운영 계정의 X 포스트. 저자와 공개 메타데이터는 확인됐지만 카드화 가능한 본문 전문은 제한적이다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -279,6 +316,10 @@
         "x"
       ],
       "summary": "정원빛, 아침, 스트레칭, 부드러운 공기감을 강조하는 GPT Image2 계열 이미지 프롬프트 포스트. 공개 메타데이터 기준 일부 프롬프트 구조를 파악할 수 있다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -311,6 +352,10 @@
         "workflow"
       ],
       "summary": "Seedance 2.5 사용법과 프롬프트 구조를 설명하는 Threads 포스트. 자율성보다 정교한 디렉팅이 중요하며 subject/action, scene, style, camera, audio 구조를 강조한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "Subject + Action/Event + Scene/Environment + Visual Style + Camera Movement/Cut + Audio"
@@ -343,6 +388,10 @@
         "seedance"
       ],
       "summary": "Dreamina Seedance 2.5 공식 프롬프트 가이드. subject, action, scene, visual style, camera, audio의 구조와 reference material 최대 50개 지원 규칙을 제시한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "<Subject> performs <primary action or event> in <scene and environment>. The visuals feature <visual style>. Use <shot size, camera angle, camera movement, or cuts>. Audio includes <dialogue, ambience, sound effects, or music>."
@@ -375,6 +424,10 @@
         "threads"
       ],
       "summary": "Seedance 2.5의 카메라 제어 가능성을 다룬 Threads 포스트와 댓글 논의. handheld/steadicam, dolly in/out, camera gaze 기술, 배경 일관성 문제 등이 실무 포인트로 드러난다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -408,6 +461,10 @@
         "wiki"
       ],
       "summary": "Vector DB 없이 Markdown과 schema부터 시작하고, 실제 질문 후보를 먼저 뽑아 지식 구조를 설계하자는 RAG/위키 초기 설계 포스트.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -440,6 +497,10 @@
         "trend"
       ],
       "summary": "구글이 제공하는 무료 AI 툴 15개를 홍보형으로 요약한 인스타그램 포스트. 포멜리, 스티치, 오팔 등 도구가 언급되지만 검증 가능한 전문은 제한적이다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -471,6 +532,10 @@
         "nvidia-build"
       ],
       "summary": "NVIDIA Build에서 최신 AI 모델을 브라우저로 무료 체험하는 흐름을 소개하는 인스타그램 포스트. 입문 lead로는 유용하지만 검증된 문서 카드는 아니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -504,6 +569,10 @@
         "video-to-video"
       ],
       "summary": "Seedance 2.5로 실사 영상을 clean lineart로 바꾸는 rotoscoping-style 실험. 댓글에서는 canny 기반에 가깝다는 검토와 ComfyUI 기반 추정이 함께 드러난다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -534,6 +603,10 @@
         "profile-lead"
       ],
       "summary": "인스타그램 프로필 링크이지만 공개 추출 경로에서는 로그인 벽만 노출되어 bio와 대표 포스트를 확보하지 못했다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -568,6 +641,10 @@
         "restricted_private"
       ],
       "summary": "민감/성인 경계의 내부 참고용 인스타그램 포스트. 스타일, 패션, 캐릭터성은 참고 가치가 있으나 공개 배포 대상은 아니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -601,6 +678,10 @@
         "seedance"
       ],
       "summary": "90년대 셀 애니 감성의 캐릭터 댄스 릴. Midjourney와 Dreamina/Seedance 계열 애니메이션화 showcase로 읽힌다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "Cel Dance - Girl 005"
@@ -634,6 +715,10 @@
         "sword-girl"
       ],
       "summary": "Seedance 2.5 30초 액션 시퀀스 실험 릴. 게임 트레일러 같은 모션과 칼 든 소녀의 시네마틱 움직임이 핵심이다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "Seedance2.5 30s"
@@ -664,6 +749,10 @@
         "profile-lead"
       ],
       "summary": "프로필 링크가 로그인 벽으로 가려져 있어 bio·대표 포스트·계정 성격을 공개 경로로 확인하지 못했다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -694,6 +783,10 @@
         "restricted_unavailable"
       ],
       "summary": "연령 제한 또는 계정 가시성 제한 때문에 공개 추출 경로에서 본문과 작성자 정보를 회수하지 못한 릴스다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -728,6 +821,10 @@
         "star02"
       ],
       "summary": "Etoland 연예 게시판의 약후 성격 화보 재공유 글. 포즈와 촬영 무드 레퍼런스로는 의미가 있으나 내부 비공개 취급이 적절하다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -762,6 +859,10 @@
         "star_asia"
       ],
       "summary": "Etoland 동양연예인 게시판의 모리 히나코 이미지 모음 글. 6장의 이미지를 포함한 포토셋 성격으로, 내부 스타일/포즈 참고 용도가 적합하다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -796,6 +897,10 @@
         "yt-dlp"
       ],
       "summary": "거의 모든 웹사이트에서 영상을 다운로드할 수 있는 self-hosted 미디어 다운로더. 깔끔한 웹 UI를 제공하며 yt-dlp와 ffmpeg 기반으로 동작한다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -828,6 +933,10 @@
         "x"
       ],
       "summary": "여름 하늘을 향해 손을 뻗는 순간을 묘사한 GPT Image2 계열 프롬프트 레퍼런스 포스트. 공개 메타데이터 기준으로 장면 톤과 핵심 주제가 확인된다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "captured",
         "text": "まぶしい空に触れたくて、手を伸ばした夏の一瞬。☀️💧\n光まで指先に近づいた気がした。\n\n【GPT Image2プロンプト】\n主題：青空へ伸ばす手"
@@ -861,6 +970,10 @@
         "x"
       ],
       "summary": "Seedance 2.5 기반의 현실적인 핸드헬드 여행 브이로그 케이스를 보여주는 X 포스트. 공개 메타데이터에서 레퍼런스 이미지 기반 동일 인물 유지와 브이로그 무드가 핵심임을 확인할 수 있다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "Seedance 2.5 vlog case. This is so real. ---prompt--- A realistic handheld travel vlog filmed by a friend following the main character throughout the day. Use the woman from the reference image as the main subject. Maintain her exact facial identity, hairstyle, facial..."
@@ -900,6 +1013,10 @@
         "x"
       ],
       "summary": "여름 옥상 인물사진 무드의 GPT Image 2 프롬프트 레퍼런스. 흰 상의, 데님 쇼츠, 바람에 흩날리는 머리, 맑은 하늘과 도시 배경, 밝은 한낮 자연광이 핵심 요소로 보인다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "captured",
         "text": "夏の屋上、風にほどける髪と白いトップス。空の青さまで、少し近く感じた。 #AIart #AI写真 #夏の屋上 【GPT Image2プロンプト】 主題: 夏風の屋上ポートレート"
@@ -938,6 +1055,10 @@
         "video-prompt"
       ],
       "summary": "Midjourney v8.2와 Seedance 2.0를 함께 언급한 리본/마법소녀 변신 계열 Threads 레퍼런스. 공개 본문과 관련 프롬프트 조각에서 붉은 리본, 강한 적색 팔레트, 애니메이션 변신 연출이 핵심 워크플로우로 드러난다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "Ribbon Reborn🎀 @midjourney @dreamina_ai Midjourney v8.2 & Seedance 2.0 Prompt below👇"
@@ -978,6 +1099,10 @@
         "x"
       ],
       "summary": "Minimax-H3로 만든 15초 세로형 캠퍼스 댄스 영상 제작 레퍼런스. 3초 단위로 쪼갠 구조화 프롬프트, 밝은 오후 캠퍼스 광장, K-pop 일렉트로팝 무드, 청량한 대학생 스타일이 핵심이다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "AI영상 15초짜리 상큼한 여대생 댄스영상 (만드는 방법). 만드는 방법은 AI에게 원하는 영상을 말하고 프롬프트를 3초단위로 쪼개서 만들어 달라고 한 뒤 Minimax-H3로 생성. 20대 성인 여대생이 캠퍼스 야외 광장에서 신나는 댄스를 추는 15초 세로형 릴스 영상, 9:16, 30fps, 밝고 상큼한 K-pop 일렉트로팝 분위기."
@@ -1017,6 +1142,10 @@
         "x"
       ],
       "summary": "어두운 실내에서 정면 플래시를 사용한 GPT Image 2 포트레이트 레퍼런스. 검정·생성리·샌드 톤의 저채도 팔레트, 검은 가죽 의자, 음향기기 배경, 강한 직광 플래시와 깊은 그림자가 핵심이다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "captured",
         "text": "暗い部屋にフラッシュが走って、生成りの輪郭だけが残る。革張りの影へ預けた、少し気だるい夜。 【GPT Image2プロンプト】 主題: 暗室に浮かぶ生成り"
@@ -1056,6 +1185,10 @@
         "x"
       ],
       "summary": "마네킹 기반 의상 프롬프트 레퍼런스. 흰 크롭 오버사이즈 후디, 화이트 메리제인 플랫, 미니멀 화이트 팔레트, 정면/후면 의상 확인용 스튜디오 구성이 핵심이다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "captured",
         "text": "A white, cropped, oversize hoodie, shirt hem ends above the underbust, relaxed fit, paired with ultra-low-rise white micro hotpants worn extremely low on the hips, smooth stretch jersey fabric, clean seamless design, white Mary Jane flats, delicate silver pendant necklace, small stud earrings, modern casual café fashion, coordinated white color palette, realistic fabric texture, natural folds, high-quality fashion photography."
@@ -1094,6 +1227,10 @@
         "x"
       ],
       "summary": "여름 공원의 나무 그늘 아래 점프 순간을 포착한 GPT Image 2 포트레이트 레퍼런스. 아이보리 미니드레스, 초록 공원 배경, 역광 림라이트와 목가적 여름 무드가 핵심이다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "captured",
         "text": "木漏れ日の下、白いドレスがふわり。跳ねた一瞬まで、夏の風にほどけていく。 【GPT Image2プロンプト】 主題: 緑陰に跳ねる白"
@@ -1132,6 +1269,10 @@
         "vision-encoder"
       ],
       "summary": "Qwen3-VL-32B 기반 MiniMax-H3용 ComfyUI INT8 ConvRot 텍스트/비전 인코더 패키지 레퍼런스. 0-49 레이어 conditioning encoder와 선택형 50-63 generation tail을 분리 제공하며, 32GB RTX 5090 기준 런타임 검증 정보와 설치 경로가 포함된다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "Repository contains two ComfyUI safetensors files: a MiniMax-H3 conditioning encoder using Qwen3-VL embedding, language layers 0-49, and the full vision tower; plus an optional generation-only tail containing layers 50-63, final norm, and LM head for prompt enhancement."
@@ -1164,6 +1305,10 @@
         "workflow"
       ],
       "summary": "ComfyUI용 초강력 포즈 에디터 OpenPose Studio 2.1 소개. AI 일러스트에서 원하는 포즈를 자유자재로 조정할 수 있는 노드 기반 도구. 540 likes.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -1195,6 +1340,10 @@
         "prompt"
       ],
       "summary": "GPT Image2 생성 예시. 숲의 높은 곳에서 떨어진 빛이 머리카락과 흰 천을 금빛으로 물들인다는 콘셉트. 29 likes.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1225,6 +1374,10 @@
         "prompt"
       ],
       "summary": "AI 이미지 생성용 캐릭터 일관성 유지(人物锁定) 프롬프트 예시. 중국어 프롬프트. 143 likes.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1254,6 +1407,10 @@
         "prompt"
       ],
       "summary": "AI 이미지 생성 프롬프트 공유. 3장의 결과 이미지 포함. 31 likes.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1286,6 +1443,10 @@
         "video-generation"
       ],
       "summary": "AI 비디오 생성을 위한 42가지 카메라 움직임과 각각의 예시 영상 + 프롬프트 모음. 카테고리별 필터 제공. 크레딧 절약에 도움. 276 likes.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1320,6 +1481,10 @@
         "y2k"
       ],
       "summary": "AI 패션 포토그래피. Crop top + 찢어진 데님 + 오프숄더 자켓으로 Aaliyah의 Y2K R&B 스트릿웨어 무드를 재현. 3장. 197 likes.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -1351,6 +1516,10 @@
         "ruins"
       ],
       "summary": "GPT Image2 프롬프트 예시. \"朽ちた柱のあいだへ、白い線がまっすぐ空を指す\" - 폐허의 기둥 사이로 흰 선이 하늘을 가리키는 콘셉트. 35 likes.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1387,6 +1556,10 @@
         "website"
       ],
       "summary": "cobalt.tools(소셜미디어 비디오 다운로드), photopea.com(무료 Photoshop), temp-mail.org(임시 이메일), tinywow.com(100+ 무료 도구), archive.org(웹 아카이브), libgen.li 등 50가지 무료 유틸리티 사이트 정리. 7802 likes.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -1417,6 +1590,10 @@
         "reference"
       ],
       "summary": "promptsref.com에서 공유된 AI 이미지 생성 프롬프트. 피트니스 미러 셀피 스타일 이미지 프롬프트 포함. 55 likes.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1451,6 +1628,10 @@
         "utility"
       ],
       "summary": "프라이버시 검색엔진 DuckDuckGo, Windows/Office 정품인증 massgrave.dev, 학술논문 무료열람 sci-hub, 소셜미디어 비디오 다운 cobalt.tools 등 유용한 무료 도구 모음. 5545 likes.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -1486,6 +1667,10 @@
         "video-generation"
       ],
       "summary": "ComfyUI에서 MiniMax H3 렌더링 시간을 10분에서 3분으로 단축하는 3가지 속도 노드: Sol-Attn(동적 컴퓨팅 포커스), SageAttention(GPU 최적화 어텐션), EasyCache(시간적 특징 재사용). T2V/I2V/Ref2Video 모두 지원. 동영상 튜토리얼 포함. 47 likes.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1515,6 +1700,10 @@
         "prompt"
       ],
       "summary": "AI 이미지 생성 프롬프트 공유. 4장의 결과 이미지 포함. 26 likes.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1546,6 +1735,10 @@
         "summer"
       ],
       "summary": "\"If I asked you to spend the day at the beach with me... Would you say yes?\" 비치 콘셉트 AI 이미지 프롬프트. 프롬프트 2/2 스레드에 공개. 3장. 21 likes.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1577,6 +1770,10 @@
         "summer"
       ],
       "summary": "AI 모델 マリナ・アルブレヒト. \"今日も暑いねー。溶けちゃいそう🫠\" 더운 여름날 콘셉트의 AI 이미지. 277 likes.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -1611,6 +1808,10 @@
         "seedance"
       ],
       "summary": "MiniMax H3 리뷰. Seedance를 빠르게 추격 중. 로컬 사양 부족 시 5090+32G GPU 서버 대여 추천 (시간당 몇 위안). ComfyUI 미러에 H3 모델 기본 탑재. 인용 트윗에 MiniMax H3 로컬 배포 튜토리얼 아티클 링크 포함. 499 likes.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1642,6 +1843,10 @@
         "summer"
       ],
       "summary": "DD.Cherry의 캐릭터 일관성 유지(人物锁定) 프롬프트. \"椰风沁夏\" - 코코넛 바람이 스미는 여름 콘셉트. 77 likes.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1675,6 +1880,10 @@
         "video-generation"
       ],
       "summary": "MiniMax H3용 고속 프리뷰 디코더. 비디오 생성 중 숨겨진 이미지 데이터를 러프 프리뷰로 변환하여 최종 결과를 기다리지 않고 진행 상황 확인 가능. huggingface.co/Kijai/MiniMax-H3-TAE. 427 likes.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1712,6 +1921,10 @@
         "zephyr"
       ],
       "summary": "AI 영화 제작 3팀(HELL GRIND·KOK BORU·ZEPHYR)의 제작 브리프 분석. 4단계 파이프라인: 에셋 고정→스타일 프리픽스→샷 프롬프트→포스트. 일관성은 프롬프트가 아닌 에셋 시트에서 나옴. 원샷 성공률 0%, 실패 폴더 공개. 결론: \"AI와 함께 전통 영화 기본기를 계속 공부하라\". 765 views. 댓글에 AI 영화 제작 시장 논의 포함.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -1749,6 +1962,10 @@
         "vlog"
       ],
       "summary": "AI 영상 리얼리즘 공식: 초점 반박자 늦게, 카메라 살짝 지나쳤다 되돌아오기, 첫 프레임은 이미 하는 중, 동작 한 번 실패 후 재시도, 대사는 혼잣말+픽 웃는 반응, 음악 빼고 화면 밖 소리 하나. 고양이+통화(7샷) & 세탁소(7샷) 풀 프롬프트 공개. promwat-archive.onrender.com에 아카이브. 4.6K views, 91💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1783,6 +2000,10 @@
         "seedance"
       ],
       "summary": "Seedance 2.5에 약 70만원 투입 후기. 롱테이크 컷 극강, 한국어 딕션·뉘앙스·보이스 성능 압도적 향상. 섬세한 표정 연기 우수하나 디렉션이 관건. 스토리보드 오류 잔존, 일반 액션은 2.0이 나음. AI 드라마 제작 최강 툴 + AI 인플루언서 양산용. Notion에 이미지/프롬프트 자료 공개. 30💗, 1.3K views.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -1819,6 +2040,10 @@
         "workflow"
       ],
       "summary": "MiniMax H3 Director ComfyUI 워크플로우 5종: T2V(문자→영상), FL2V/I2V(첫/끝프레임→영상), R2V(참조→영상), V2V(비디오편집), RV2V(참조+비디오). RTX 4090 48GB 검증됨. ⭐350, 포크41. 2026-08-04 생성.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -1852,6 +2077,10 @@
         "video-stitching"
       ],
       "summary": "Seedance 2 비디오 생성물 스티칭 로컬 브라우저 도구. 두 클립 간 오버랩 프레임 감지, 프레임 트리밍 추천, 밝기/대비 보정, 오디오 보존, 비교 콜라주 내보내기. Node.js 18+ / FFmpeg 필요. ⭐54. 2026-05 생성.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -1889,6 +2118,10 @@
         "video-prompts"
       ],
       "summary": "Seedance 2.0 비디오 생성 프롬프트 2000+ 엄선 컬렉션. 시네마틱·애니메이션·UGC·광고·밈 스타일. Seedance API 가이드, 캐릭터 일관성 팁, 고급 비디오 워크플로우 포함. 다국어 README(한국어 포함). 웹 갤러리(youmind.com)에서 비디오 재생/검색/AI 추천 가능. CC BY 4.0. ⭐1,799, 포크211.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1922,6 +2155,10 @@
         "video-generation"
       ],
       "summary": "Seedance 2.5 전용 프롬프트 Skill. 아이디어/주제/소설 단편을 30초 영화로 변환. 주제·장면·음악·샷 명시, BGM 없이 효과음만 생성 권장. 중영 이중언어. MIT 라이선스. ⭐29. 2026-07-31 생성.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -1955,6 +2192,10 @@
         "youmind"
       ],
       "summary": "알리바바·바이트댄스 출신 팀이 만든 유마인드(YouMind) 소개. 30,000개 이상의 사진·영상·웹사이트 프롬프트 무료 제공. 초보자 친화적, 한국어 지원. 2,133💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -1989,6 +2230,10 @@
         "website"
       ],
       "summary": "디자인 아이디어를 얻을 수 있는 50개 사이트 모음. 실제 앱 화면 갤러리, 디자인 디렉션 웹사이트 등. \"창의성 부족이 아니라 레퍼런스 빈곤이 문제\". 847💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2021,6 +2266,10 @@
         "prompt"
       ],
       "summary": "GPT Image 2용 CCD 감성 생활샷 프롬프트. 실내 수영장+화이트 선베드, 수청색 니트+펄화이트 숏팬츠. 냉백청투(冷白清透) CCD 룩. 132💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2053,6 +2302,10 @@
         "tropical"
       ],
       "summary": "DD.Cherry의 캐릭터 프롬프트. 열대우림 여름 여행 컨셉, 코랄오렌지 비키니. 체형·의상·분위기 상세 지정. 86💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2085,6 +2338,10 @@
         "workflow"
       ],
       "summary": "Anima 이미지 생성 모델 기반 ComfyUI 워크플로우 v1.5. 복잡한 노드 연결 없이 최소 구성으로 고품질 이미지 생성 가능한 초보자용 설계. Impact 노드 필요. 88💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2117,6 +2374,10 @@
         "selfie"
       ],
       "summary": "김하나(@jiwooteasing)의 굿모닝 소파 셀카 AI 이미지 프롬프트. 9:16 세로, 한국인 20대 초반 여성, 자연광 소파 셀카 컨셉. 3장 이미지. 작성자 댓글에 full prompt 공개. 15💗, 363 views.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2148,6 +2409,10 @@
         "w4a8"
       ],
       "summary": "MiniMax H3 w4a8 양자화 포맷. 8GB VRAM에서 기존 INT8 35분→7분으로 단축. 품질·일관성 유지. HuggingFace 모델 링크 포함. 460💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2184,6 +2449,10 @@
         "wiki"
       ],
       "summary": "Reddit 유저가 만든 FMHY(Free Media Heck Yeah) 소개. 영화·음악·소프트웨어·강의·책·AI 대체 도구·브라우저 확장 등 무료 리소스 총망라. Google 검색결과서 삭제됐으나 다중 백업 도메인으로 운영 중. 안전성 평가 포함. fmhy.net. 2,162💗, 212K views.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2217,6 +2486,10 @@
         "shot-design"
       ],
       "summary": "AI 영상 제작용 샷 디자인 가이드 웹사이트. 카메라 무브먼트·시네마틱 룩·조명·앵글·초점거리·조리개값 등 시각 가이드와 프롬프트 제공. 예시 영상 확인 가능. 64💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2248,6 +2521,10 @@
         "selfie"
       ],
       "summary": "GPT Image2 아침 셀피 프롬프트. \"やわらかな白い布の上で、朝いちばんの一枚を\" 부드러운 흰 천 위 아침 첫 한 장 컨셉. 86💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2279,6 +2556,10 @@
         "soft-light"
       ],
       "summary": "GPT Image2 프롬프트. \"やわらかな白い布の上で、朝いちばんの一枚を\" — 부드러운 흰 천 위 아침 셀피 컨셉. 86💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2312,6 +2593,10 @@
         "yacht"
       ],
       "summary": "AI 패션 포토그래피. 9:16 세로, 해상 요트 갑판 인물샷. 청량한 블루톤·흰색 요트·금속 디테일. 청량하고 차분한 럭셔리 해양 무드. 153💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2345,6 +2630,10 @@
         "vram"
       ],
       "summary": "MiniMax H3(33B 비디오 모델) 구동 가능한 모든 GPU 실측 타이밍 맵. 최소 8GB VRAM부터 RTX 5060까지. 실제 실행 결과 기반. 103💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2382,6 +2671,10 @@
         "vllm"
       ],
       "summary": "MiniMax H3 하드웨어 종합 레퍼런스. GPU 실측 벤치(RTX3060~5090, DGX Spark), 양자화 팩(INT8/W4A8/NVFP4/GGUF/MLX), 가속 도구(SageAttention/EasyCache/Sol-Attn/Spectrum), Turbo LoRA 4-step, 서버 레인(SGLang/vLLM), Apple Silicon 지원. 모든 수치 출처 추적. 2026-08-08 기준.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2415,6 +2708,10 @@
         "seedance2.5"
       ],
       "summary": "Seedance 2.5 Higgsfield 출시 소식. 관찰적 다큐멘터리 스타일 프롬프트 예시 포함 — 멀티샷·핸드헬드·불완전 구도·자연스러운 캡처 느낌. 207💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2447,6 +2744,10 @@
         "summer"
       ],
       "summary": "DD.Cherry의 캐릭터 프롬프트. 소나무 숲 호수 경비키니 리조트 컨셉. 레몬 옐로우 깅엄 비키니, 여름 무드. 47💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2479,6 +2780,10 @@
         "summer"
       ],
       "summary": "DD.Cherry 캐릭터 프롬프트. 소나무 호숫가 경량 아웃도어 휴양 컨셉, 레몬옐로 비키니. 여름 감성. 47💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2507,6 +2812,10 @@
         "prompt"
       ],
       "summary": "AI 이미지 생성 프롬프트 공유. 20💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2536,6 +2845,10 @@
         "model"
       ],
       "summary": "새로운/개선된 distill LoRA 모델 발표. 304💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2567,6 +2880,10 @@
         "prompt"
       ],
       "summary": "김하나(@jiwooteasing)의 상세 캐릭터 프롬프트. 20대 초반 한국인 여성 — 블랙 숏밥·모래시계 체형·자연 메이크업 등 신체 특징 상세 지정.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2599,6 +2916,10 @@
         "vlog"
       ],
       "summary": "Seedance 2.5 + SJinn Agent로 만든 30초 여행 브이로그. 얼굴·헤어·피부톤·체형 유지(character lock) + 자연스러운 핸드헬드 스마트폰 촬영 느낌. 357💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2633,6 +2954,10 @@
         "workflow"
       ],
       "summary": "MiniMax H3용 통합 단일 ComfyUI 워크플로우. T2V/I2V/첫-끝프레임/참조비디오까지 하나의 컴팩트 노드로. Media 통합 입력, @레퍼런스, 대사 블록 인라인 지원. ⭐185, 포크20.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2664,6 +2989,10 @@
         "prompt"
       ],
       "summary": "GPT Image2 프롬프트. 창문으로 들어온 아침 빛이 청회색 커튼을 비추는 따뜻한 휴일 아침 거실. 186💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2696,6 +3025,10 @@
         "speed"
       ],
       "summary": "MiniMax H3 새로운 가속 기법 FirstBlockCache 발표. ComfyUI에서 MiniMax H3 생성 속도 향상. 438💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2729,6 +3062,10 @@
         "video-production"
       ],
       "summary": "MiniMax H3 공식 API + Codex 에이전트 연계. 스토리와 길이만 지정하면 Codex가 여러 컷 병렬 생성 후 자동 편집까지 완성. 에이전트 기반 영상 제작 파이프라인 시연. 26💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2761,6 +3098,10 @@
         "tiny-resolution"
       ],
       "summary": "MiniMax H3 활용 꼼수: 32x32 극소 해상도 영상 생성 후 오디오(대사)만 추출. Sora2에서도 같은 기법 사용됨. 184💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2792,6 +3133,10 @@
         "summer"
       ],
       "summary": "한여름 비치 포토 AI 이미지. 푸른 바다+여름 하늘 배경, 인스타그램 스타일 해변샷. 프롬프트는 리플라이에 공개. 76💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2825,6 +3170,10 @@
         "optimization"
       ],
       "summary": "Cloudflare Kitesurf: AI Agent 전용으로 12주 만에 Chromium을 완전 재작성한 브라우저. 탭·테마·확장·60fps 스크롤 등 인간용 기능 전부 제거. CPU/메모리 3~7배 절감. Agent 작업에 최적화.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2861,6 +3210,10 @@
         "vibe-coding"
       ],
       "summary": "Codex·Claude Code용 Skill 검색 사이트 \"Cola Skill\" 소개. 바이브코딩·개발·디자인·마케팅·리서치 등 카테고리별 스킬 검색 가능. 135💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2893,6 +3246,10 @@
         "title-sequence"
       ],
       "summary": "MiniMax H3 + OpenArt AI. 스파게티 웨스턴 펄프 애니메이션 타이틀 시퀀스. 오디오 트랙을 타이밍 가이드로, 플랫 블랙 실루엣 스타일. 185💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2928,6 +3285,10 @@
         "tokyo"
       ],
       "summary": "도쿄 아키하바라 거리 포토 프롬프트. 긴 직모+리본·흰셔츠+체크 미니스커트·후지필름 카메라·네온사인 배경. 시네마틱 컬러 그레이딩, 8K 포토리얼. 작성자 댓글에 full English prompt 공개. 36💗, 989 views.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -2962,6 +3323,10 @@
         "youtube"
       ],
       "summary": "해외 2만 좋아요 AI 유튜브 채널 17선을 직접 검증 후 한국인에게 유용한 5개 추천: The AI Advantage(입문), Jeff Su(직장인), Ben AI(노코드 자동화), Nate Herk(Claude Code AI 직원), DeepLearning.AI(Andrew Ng). 한영 이중언어.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -2993,6 +3358,10 @@
         "zendaya"
       ],
       "summary": "톰 홀랜드의 Lip Sync Battle Umbrella 무대 비하인드: 젠데이아가 반한 결정적 계기, 리허설도 비밀로 한 서프라이즈 퍼포먼스, 아버지의 만류, 망사스타킹은 할머니 것. 6주 전 게시.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3024,6 +3393,10 @@
         "supernatural"
       ],
       "summary": "드라마 추천: 더크 젠틀리의 전체론적 탐정 사무소 시즌1(2016). 우주의 모든 사건이 연결되어 있다는 철학의 괴짜 탐정과 호텔 직원의 미스터리 추적. 영혼 교체·시간 초월 장치·초능력자 등 SF 요소.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3058,6 +3431,10 @@
         "seedance2.5"
       ],
       "summary": "Seedance 2.5에서 9인 K-pop 군무·립싱크·오디오 바인딩을 동시 테스트한 사례. 30초 대신 정확히 29초 오디오를 쓰고 소수점 길이는 피하면 레퍼런스가 출력에 섞이는 문제를 줄일 수 있다는 팁. 작성자 댓글에 이미지 4개+비디오 1개 바인딩, 원본 오디오 보존, 9인 군무·중앙 3인 ID 고정용 full prompt 공개.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -3090,6 +3467,10 @@
         "regeneration"
       ],
       "summary": "Grok 이미지 자동 세그먼팅 기능 업데이트 사례. 이미지를 넣으면 요소를 자동 분해하고, 결과를 내려받거나 부위별로 재생성·수정할 수 있음. 3.4K views.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3122,6 +3503,10 @@
         "video-generation"
       ],
       "summary": "MiniMax H3 사용 경험 후 Seedance 2.5를 비교한 영상 생성 품질 체감 사례. 게시물은 Seedance 2.5 결과와 하단 프롬프트를 예고하지만, 비로그인 공개 추출에서는 댓글 프롬프트를 확인할 수 없었음. 13.7K views.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3157,6 +3542,10 @@
         "speaker-lock"
       ],
       "summary": "작성자 댓글의 30초 실사형 한국어 대화 영상 full prompt. 카페 입구에서 3인이 주문 담당을 떠넘기는 4단계 상황극을 설계하며, 이미지별 캐릭터 ID·얼굴별 화자/음성 고정·대사 귀속·립싱크·핸드헬드 폰카·일관성 제약을 명시. 공개 경로에서 작성자 프롬프트와 이미지 댓글 3건, 반응 댓글 1건 확인.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -3187,6 +3576,10 @@
         "prompt"
       ],
       "summary": "공유된 Notion Prompt 페이지. 공개 HTTP 접근은 가능했지만, 본문은 로그인/권한 또는 동적 로딩 제한으로 추출되지 않아 제목·내용·작성자를 확인하지 못함.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3221,6 +3614,10 @@
         "video-generation"
       ],
       "summary": "4× RTX 3090 로컬 환경에서 MiniMax H3로 1344×768 1인칭 액션 30초 영상을 처음부터 끝까지 44분에 생성한 사례. 4-step turbo LoRA는 베이스보다 약 3배 빠르지만 빠른 움직임에서 스미어가 생기는 트레이드오프를 제시. 원본 영상 30.125초.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3256,6 +3653,10 @@
         "video-generation"
       ],
       "summary": "4× RTX 3090 로컬 추론 장비에서 검증한 도구·ComfyUI 워크플로우·벤치마크 저장소(MIT). MiniMax H3용 11개 워크플로우, 단일 24GB GPU용과 멀티 GPU용 구성, Turbo LoRA 로드 패치 및 설치 스크립트를 제공. 4 GPU 구성은 15초 샷을 19분에서 6분 41초로 단축(3.12×)했다고 설명.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3290,6 +3691,10 @@
         "vertical-video"
       ],
       "summary": "Seedance 2.0으로 제작. 아늑한 침실에서 크림 화이트 오버사이즈 티셔츠를 입은 젊은 한국 여성이 평화로운 아침을 보내는 10초 초현실 시네마틱 수직 영상. 부드러운 아침 햇살, 시어 커튼, 프레시한 분위기의 세로 영상(834×1112). 좋아요 104, 리플 22건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -3322,6 +3727,10 @@
         "sunlight"
       ],
       "summary": "DD.Cherry GPT Image2 인물 프롬프트. 주제 樱潮晴光(벚꽃과 맑은 햇빛). 중국어 인물 프롬프트.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -3355,6 +3764,10 @@
         "vacation"
       ],
       "summary": "GPT Image2 프롬프트. 바다를 배경으로 한 리조트 자리, 곰무늬 수영복에 라임 음료를 든 여름 분위기. 좋아요 59.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -3386,6 +3799,10 @@
         "moody"
       ],
       "summary": "GPT Image2 프롬프트. 어두운 방에 플래시가 터지는 순간 — 생성리(生成り) 윤곽만 남는 느낌. 가죽 의자 아래 드리운 약간 나른한 밤. 좋아요 244, 리플 4건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -3424,6 +3841,10 @@
         "uncensored"
       ],
       "summary": "huihui-ai/Huihui-gpt-oss-20b-BF16-abliterated 기반의 검열 제거·MoE 24 Experts GGUF 양자화 모델. NEO Imatrix(DI-Matrix, Tri-Matrix 포함) 기법으로 최적화. 128K 컨텍스트, GPT-OSS 아키텍처, Apache 2.0 라이선스. IQ4_NL, Q5_1, Q8_0 등 17종 양자화 파일 제공. 총 1,437 다운로드. HRR/CODE/Uncensored 7종 모드별 구성.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3459,6 +3880,10 @@
         "workflow"
       ],
       "summary": "Alienware 노트북 RTX 5060 8GB VRAM + 32GB RAM 환경에서 로컬 AI 단편극 워크플로우 검증. 중국어 프롬프트 한 줄로 여경 캐릭터 카드 4장 추출 + 첫 프레임 2초 영상 생성 성공. 일반적인 24GB 이상 요구와 달리 8GB로도 가능함을 실제 시연. 1728×1080, 31.7초 영상 포함. 좋아요 65, 리플 51. 댓글 스캔: Jina/X syndication 제한으로 공개 경로 댓글 확인 불가 — 전체 51건 리플 중 작성자 답글 추출 실패.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3490,6 +3915,10 @@
         "homework"
       ],
       "summary": "GPT Image2 이미지 프롬프트. 영어·일본어 이중언어 게시. \"Need help with your homework?📝🖤 / 宿題、手伝ってほしい？📝🖤\" — 댓글 섹션에 프롬프트를 공개한다고 명시. 좋아요 51, 리플 5. 댓글 스캔: Jina/X syndication 제한으로 댓글 접근 불가 — 댓글 내 프롬프트 전문 미확보.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -3523,6 +3952,10 @@
         "workflow-node"
       ],
       "summary": "ComfyUI용 MiniMax H3 프롬프트 작성 지원 커스텀 노드 공개. 영상 기획안 → 모델 권장 프롬프트 구조로 변환, 참조 파일 정리, 컷별 대사·동작을 시각적 플로우로 구성. Qwen3-VL 등 기반 이미지 분석과 프롬프트 강화 지원. 좋아요 84, 리플 1(URL은 리플 참조).",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3555,6 +3988,10 @@
         "retro"
       ],
       "summary": "GPT Image 프롬프트. 일부러 하얗게 오버된 빛과 옛날 디지털카메라 풍의 파스텔·연한 느낌을 연출. \"ちょっとふざけた一瞬\" (약간 장난스러운 순간). 프롬프트 전문은 게시물에 JSON direction 형식으로 일부 공개. 좋아요 53.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -3587,6 +4024,10 @@
         "prompt-structure"
       ],
       "summary": "MiniMax H3 전용 캐릭터 소개 프롬프트 템플릿. @[char ref]를 단독 캐릭터 레퍼런스로 사용하여 얼굴·체형·헤어스타일·의상·색상·재질·실루엣을 영상 전체에서 정확히 유지. 재디자인/단순화/변경 금지. 좋아요 159, 리플 18.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3617,6 +4058,10 @@
         "wechat"
       ],
       "summary": "DD.Cherry GPT Image 프롬프트. 위챗 공식 계정 창작용 AI 사진 — 아직 요령을 못 찾았다고 언급. 좋아요 93, 리플 4.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -3649,6 +4094,10 @@
         "short-drama"
       ],
       "summary": "AI 단편극(短剧) 창작계에서 주목받는 무료 오픈소스 도구 Jellyfish 소개. 초보자에게 매우 친화적이라고 설명. 좋아요 67, 리플 3.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3682,6 +4131,10 @@
         "wind"
       ],
       "summary": "GPT Image2 프롬프트. 벚꽃 너머로 시선을 풀면 봄빛이 눈동자에 남고, 바람에 노니는 머리카락까지 부드러운 오후의 색. 좋아요 49, 리플 1.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -3715,6 +4168,10 @@
         "styling"
       ],
       "summary": "전통 한복의 단아한 선에 현대적 리듬을 입힌 모던 한복 스타일링. 제니의 감각적 보이스와 어우러진 드라마틱 실루엣으로 과거-현재 교차 연출. 패션·스타일링 참고.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3748,6 +4205,10 @@
         "mood"
       ],
       "summary": "#DarkFeminine #モード系女子 #분위기여신 #고급스러운무드. 인스타그램 로그인 월로 인해 본문 콘텐츠 추출 실패 — 태그 기반 분류. 패션·분위기 레퍼런스.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3781,6 +4242,10 @@
         "vram"
       ],
       "summary": "8GB부터 128GB까지 모든 GPU에서 MiniMax H3 실행 가능 여부를 정리한 커뮤니티 벤치마크. 직접 검증(RTX 4090: 5초 1152×640 2분47초, 10초 12분, 2×). 그 외 구간은 커뮤니티 데이터 기반. 좋아요 78, 리플 66 — 댓글창이 실질적 GPU 성능 데이터베이스.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3814,6 +4279,10 @@
         "text-encoder"
       ],
       "summary": "MiniMax H3의 거대한 32B 텍스트 인코더를 Qwen3-VL-4B로 교체하는 프로젝트. VRAM 사용량이 16GB에서 단 5.2GB로 감소하며 품질은 동일 수준 유지. 저사양 GPU에서 MiniMax H3 접근성을 획기적으로 개선. 좋아요 951, 리플 26 — 폭발적 관심.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3848,6 +4317,10 @@
         "rtx-4070-ti"
       ],
       "summary": "RTX 4070 Ti 12GB + 96GB RAM에서 MiniMax H3 로컬 고속화 구성 실측 비교. 0.8M 픽셀 고정, ComfyUI 0.30.1·PyTorch 2.13.0+CUDA 13.0, H3 pruned INT8 ConvRot 적용. 좋아요 207 — 중간급 GPU 최적화 벤치마크 가치 높음.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3881,6 +4354,10 @@
         "workflow"
       ],
       "summary": "MiniMax H3 영상 생성용 프롬프트 작성을 지원하는 OpenCode 시스템 공개. 공식 사양 준수, 영상 연출·멀티컷 기획·일관성 유지·키프레임 제어를 연결한 워크플로우. 좋아요 88.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3913,6 +4390,10 @@
         "unsloth"
       ],
       "summary": "Unsloth가 MiniMax H3용 pruned GGUF 배포. 8GB VRAM 카드에서도 문제없이 구동된다고 설명. 352💗 — 저사양 GPU 접근성 획기적 개선.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -3946,6 +4427,10 @@
         "white-flower"
       ],
       "summary": "GPT Image2 프롬프트. 역광 속 하얀 꽃을 들어 올리면 먼지까지 별처럼 춤추고, 고요한 빛을 바라보는 오후. 좋아요 64.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -3979,6 +4464,10 @@
         "white-swimsuit"
       ],
       "summary": "GPT Image2 프롬프트. 밝은 사빈 위 여성이 이마에 손을 얹고 여름 햇살을 가리는 구도. 하얀 수영복·데님 숏팬츠·푸른 바다. 좋아요 20.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -4012,6 +4501,10 @@
         "portrait"
       ],
       "summary": "GPT Image2 프롬프트. 산호색 드레이프에 싸여 꽃잎 같은 여운을 남기는 드레스 포트레이트. 좋아요 55.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -4040,6 +4533,10 @@
         "unavailable"
       ],
       "summary": "신디케이션 엔드포인트가 TweetTombstone을 반환. 게시물이 삭제되었거나 비공개 상태. 원본 내용·작성자·좋아요 등 모든 메타데이터 미확보.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4073,6 +4570,10 @@
         "white-sand"
       ],
       "summary": "GPT Image2 프롬프트. 푸른 바다·하얀 모래사장, 여름의 개방감을 담은 평범한 순간을 의도한 비치 포토. 좋아요 332, 리플 10.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -4106,6 +4607,10 @@
         "text-encoder"
       ],
       "summary": "MiniMax H3 text encoder를 32B에서 Qwen3-VL-4B로 교체하는 ClipProj 접근법. VRAM 15.7GB→5.2GB로 감소, 모델·VAE·샘플러 변경 없음, 일부 품질 저하 있으나 저VRAM 사용자에게 실용적. 294💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4140,6 +4645,10 @@
         "translucent"
       ],
       "summary": "GPT Image2 프롬프트. 파도 가장자리에서 모자를 누르면 산 그림자까지 여름빛으로 녹아들고, 투명한 천과 물결 반짝임이 같은 바람을 입는다. 좋아요 164.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -4172,6 +4681,10 @@
         "white-dress"
       ],
       "summary": "GPT Image2 프롬프트. 한여름 푸른 하늘·흰 원피스, 자판기 옆에서 문득 뒤돌아보는 여름 순간. 좋아요 30.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -4207,6 +4720,10 @@
         "sref"
       ],
       "summary": "AI 프롬프트 라이브러리 사이트. GPT Image, Midjourney, AI Video 등 다양한 생성도구의 프롬프트와 생성 결과를 공유·탐색 가능. SREF 코드 상세 페이지, AI 이미지 생성기·비디오 생성기 내장. 2026-08-10 기준 활발히 업데이트 중. 기존 CR-20260807-0009에서 underwood X 게시물로 일부 수집된 바 있음.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4237,6 +4754,10 @@
         "shared-link"
       ],
       "summary": "한국 X 사용자 오프레의 링크 공유 포스트. 트윗 본문은 URL만 포함 (t.co 단축). 좋아요 551, 리플 8. 링크 목적지는 t.co로 단축되어 있어 신디케이션에서 확인 불가 — 추후 필요 시 로그인 환경에서 재확인.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4271,6 +4792,10 @@
         "tutorial"
       ],
       "summary": "한국어 Midjourney 무드보드 튜토리얼. 핀터레스트·29cm 룩북 등에서 고해상도 레퍼런스 이미지 확보 후 분위기·색감 기반 무드보드 구성, 상업용 프롬프트로 발전시키는 방법. 타인 창작물 저작권 주의사항 포함. 589💗, 20리플.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4301,6 +4826,10 @@
         "shared-link"
       ],
       "summary": "오프레의 또 다른 링크 공유 포스트. 트윗 본문은 t.co URL만 포함. 좋아요 376, 리플 6.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4336,6 +4865,10 @@
         "youtube"
       ],
       "summary": "한국어 AI 수익화 튜토리얼. 유튜브 쇼츠·틱톡 영어권 타겟 + 미드저니로 비 오는 날 아늑한 서재 이미지 생성 → 재사용 정책 우회하며 달러 조회수 확보 전략. 520💗, 9리플.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4370,6 +4903,10 @@
         "youtube"
       ],
       "summary": "한국어 AI 수익화 튜토리얼. 유튜브 추억·레트로 컨셉 + 미드저니로 1980년대 한국 골목길 생성 → 구매력 높은 40-50대 남성 타겟 광고 수익. 361💗, 10리플.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4402,6 +4939,10 @@
         "prompt-engineering"
       ],
       "summary": "한국어 Midjourney 프롬프트 작성 튜토리얼. ①단어 나열→②키워드 추출→③Claude에 프롬프트 작성 지시(청사진·궤도 등 단어 살리기)→④Midjourney 프롬프트 특성 불러오기→⑤프롬프트 분석·정리·장단점·개선방안 제시. 661💗, 4리플.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4434,6 +4975,10 @@
         "visual-directing"
       ],
       "summary": "한국 디자이너 HYOSIN의 Midjourney 비주얼 디렉팅 연습. Jewel Cake 프롬프트를 Notion 페이지에 복사 가능하게 정리 공유. 1,104💗 — 폭발적 인기.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4467,6 +5012,10 @@
         "style"
       ],
       "summary": "HYOSIN의 Midjourney 인물 생성 회피 이유. 분위기·스타일·무드 잡기는 좋지만 인물 생성 시 게슴츠레한 눈·위로 쳐다보는 각도 등 반복적 특징이 선명하게 나타난다고 지적. 882💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4498,6 +5047,10 @@
         "reference-image"
       ],
       "summary": "레퍼런스 이미지 기반으로 GPT Image 2 캐릭터 시트를 생성하는 프롬프트 참고자료입니다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -4529,6 +5082,10 @@
         "prompt-analysis"
       ],
       "summary": "GrokImagine 2.0의 실사용 인상 분석입니다. 필름·스타일·네거티브 프롬프트의 영향이 강하고, 피부 질감 표현은 상대적으로 약하다고 정리합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4560,6 +5117,10 @@
         "gpt-image-2"
       ],
       "summary": "정면 레퍼런스 사진을 바탕으로 캐릭터 시트를 만들고, 프롬프트로 표정과 상태를 제어하는 GPT Image 2 기반 얼굴 일관성 워크플로우입니다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -4591,6 +5152,10 @@
         "turkish"
       ],
       "summary": "ChatGPT 유료 결제 전 참고할 수 있는 무료 AI 사이트 50선을 소개하는 튀르키예어 큐레이션 게시물입니다. 개별 사이트 링크는 원문 환경에서 확인이 필요합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4623,6 +5188,10 @@
         "palm-print"
       ],
       "summary": "야자수 프린트 침구, 메탈 초커, ALL-STAR 문구 드레스를 조합한 GPT Image 2 패션 에디토리얼 프롬프트 참고자료입니다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -4657,6 +5226,10 @@
         "summer"
       ],
       "summary": "GPT Image2 프롬프트. 여름 하늘 아래 다음 한 걸음을 살며시 맡기는 손 — 공원에서 자연스러운 연결감과 부드러운 햇살. 좋아요 97.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -4691,6 +5264,10 @@
         "reaching"
       ],
       "summary": "GPT Image2 프롬프트. 네온 거리 모퉁이에서 내민 손, 밤의 소란까지 가까워지는 분위기. 좋아요 55.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -4725,6 +5302,10 @@
         "smoky-eye"
       ],
       "summary": "GPT Image 2 무디 실내 인물 포트레이트. 20대 초반 동아시아 여성, 헝클어진 웨이브 흑발, 창백한 피부, 부드러운 블러셔, 스모키 아이 메이크업, 딥 뮤트 레드 립. 풀 프롬프트가 트윗에 포함됨. 56💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -4758,6 +5339,10 @@
         "seedance2.5"
       ],
       "summary": "Seedance 2.5 감정 제어 기능 데모. OpenArt AI 사용. 15초 시네마틱 감정 체육관 씬(16:9), 이미지를 얼굴·신원 레퍼런스로 고정. 긴 웨이브 흑발·피부톤 유지. 189💗, 35리플.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -4793,6 +5378,10 @@
         "travel"
       ],
       "summary": "GPT Image2 중국어 인물 프롬프트. 23세 동아시아 미녀, 아침 안개 강가 여행 콘셉트. 청록색 얇은 비단 크롭탑·연기 회색 랩 스커트·습기로 밀착되는 소재 표현. D-E컵 시각 효과, 슬림 허리, 자연스러운 곡선. 98💗, 15리플.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -4826,6 +5415,10 @@
         "virtual-model"
       ],
       "summary": "일·중·영 삼개국어 AI 가상 모델 포트레이트. \"이 분위기라면 경어로 시작할까, 자연스럽게 말할까?\"라는 참여 유도 질문과 함께 무드 중심의 이미지 게시. #AIgirl #VirtualModel #DigitalCreator. 265💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4859,6 +5452,10 @@
         "visual-reference"
       ],
       "summary": "한국 SF 판타지 액션 영화 Alienoid: Return to the Future (2024, 최동훈 감독). 122분. 외계인 탈옥·시간여행·신검 소재. 전작 Alienoid(2022)의 후속. K-드라마 계정 추천. SF 비주얼 레퍼런스.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4892,6 +5489,10 @@
         "reels"
       ],
       "summary": "한국 캐릭터·만화 크리에이터 망나니토끼의 번아웃 주제 애니메이션 릴스. @nancymiaow @ybkonair 영상에서 영감을 받아 제작. 유머러스한 캐릭터 애니메이션 스타일 레퍼런스. 로그인 월로 본문 제한됨.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4921,6 +5522,10 @@
         "motivation"
       ],
       "summary": "한국 인스타그램 릴스. \"저장✍🏻힘들 때 위로 받으세요^^\" — 위로·힐링 콘텐츠. 로그인 월로 본문 제한됨.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4955,6 +5560,10 @@
         "suda-masaki"
       ],
       "summary": "日テレ 드라마 <수수하지만 굉장해! 교열걸 코노 에츠코> (2016). 이시하라 사토미 주연 오피스 로코. 화려하지 않은 교열부의 가치를 깨닫는 이야기. \"얼굴도 중요하다\"는 명대사 장면 소개. 캐릭터·대사·스토리텔링 레퍼런스.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -4987,6 +5596,10 @@
         "parent-search"
       ],
       "summary": "JTBC 드라마 공식 인스타그램 K-드라마 릴스 (2026-04-23). \"한 지붕 아래에서 같이 살다가 냅다 부모님 찾아가는 패기🔥\" — 동거·가족 소재. 로그인 월로 비디오 본문 제한. 드라마 연출·장면 레퍼런스.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5020,6 +5633,10 @@
         "spring"
       ],
       "summary": "볼빨간사춘기 안지영 콘서트 명장면. 팬 환호성에 \"안 돼, 그만둬, 거기까지야\"라는 <나만, 봄>(2019) 가사가 절묘하게 타이밍 맞아떨어지며 웃음바다가 된 순간. 이후 팬들이 실제로 조용해지는 티키타카. 공연·관객 상호작용·분위기 레퍼런스.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5055,6 +5672,10 @@
         "sacrifice"
       ],
       "summary": "영화·OTT 매거진 <프레임 너머>의 우리들의 블루스(2022) 명장면 분석. 전직 조폭·자존심 강한 두 아버지가 자식을 위해 모든 것을 내려놓고 화해하는 순간. 박지환·최영준 열연. 부성애·갈등 해소·캐릭터 아크 레퍼런스.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5088,6 +5709,10 @@
         "wind"
       ],
       "summary": "GPT Image2 프롬프트. 바람에 흩날리는 짧은 머리, 푸른 하늘을 똑바로 응시하는 시선, 하얀 니트 소재 대비. 좋아요 22.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -5122,6 +5747,10 @@
         "v8.2"
       ],
       "summary": "Midjourney V8.2 포토리얼리즘 편집 초상. 하이앵글·좌측 프로필, 상체, 20대 관능적 일본 여성, 풀버스트·좁은 허리·플랫 복부, 세미 웻 밀크티 브라운 헤어. 풀 프롬프트 포함. 47💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -5154,6 +5783,10 @@
         "vibe"
       ],
       "summary": "AI 생성 일러스트레이션. 순수 패션 바이브 — 성인 콘텐츠 의도 없음 명시. 2026 여름 시즌 분위기. 4장 이미지, 97💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5187,6 +5820,10 @@
         "waterfall"
       ],
       "summary": "GPT Image2 프롬프트. 폭포 물보라와 나뭇잎 사이 햇살 속에서 두 팔을 벌려 시원한 바람을 맞는 순간. 좋아요 72.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -5221,6 +5858,10 @@
         "swimsuit"
       ],
       "summary": "일본 AI 프롬프트 사진가의 GPT Image2 수영복 시리즈. 橘まどか 전속 가상 모델, 책을 읽다 잠든 콘셉트. GPT 기준으로는 공격적인 결과물이라고 언급, 도달 과정을 스레드에 설명. 33💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -5254,6 +5895,10 @@
         "summer"
       ],
       "summary": "GPT Image2 프롬프트. 푸른 벽에 등을 기대고 차가운 음료와 한낮의 햇살을 즐기는 휴식. 좋아요 55.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -5285,6 +5930,10 @@
         "x"
       ],
       "summary": "DD.Cherry 크리에이터 sdjn_wgc의 플랫폼 이전 고려 포스트. X 노출이 어려워져 위챗 공식 계정(公众号)으로의 이전을 검토. 25💗. 향후 DD.Cherry 프롬프트 공유 경로 변경 가능성 참고.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5318,6 +5967,10 @@
         "snack"
       ],
       "summary": "GPT Image2 프롬프트. \"자기 전 가벼운 간식\" 콘셉트 셀피. 프롬프트는 2/2 답글에 공개 — Jina/X 차단으로 댓글 스캔 불가. 26💗, 1리플.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -5351,6 +6004,10 @@
         "smile"
       ],
       "summary": "일본 AI 미소녀 그라비아. \"귀여운 미소와 성숙한 란제리의 조합\" — SFW 가상 디지털 아트임을 명시. 2,564💗, 51리플 — 폭발적 인기.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5386,6 +6043,10 @@
         "no-gpu"
       ],
       "summary": "스페인어 소개. kimi-k3-in-c는 176KB의 순수 C99 엔진으로 Kimi K3 MoE 전문가를 디스크에서 직접 스트리밍 — 메모리에 로드하지 않음. GPU·CUDA·프레임워크 불필요. 2.78B급 모델 실행. 저사양 환경 추론 혁신. 29💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5421,6 +6082,10 @@
         "portable"
       ],
       "summary": "2.78조 파라미터 Kimi K3를 단일 CPU에서 8.24GB RAM으로 추론. 휴대용 C99 — BLAS·프레임워크·GPU 불필요. MoE 전문가를 디스크에서 직접 스트리밍. Apache-2.0. 5,094⭐, 817 포크. 2026-08-01 생성.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5454,6 +6119,10 @@
         "seaside"
       ],
       "summary": "GPT Image2 프롬프트. 페이지 넘기던 손을 멈추고 후미의 빛에 문득 뒤돌아보는 바닷가 독서 장면. 좋아요 41.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -5484,6 +6153,10 @@
         "x"
       ],
       "summary": "DD.Cherry 크리에이터의 크리에이터 수익화 고충. 최근 데이터 부진 + 데이터 좋아도 90일 내 수익 기준 미달. 플랫폼 이전 고려(위챗)와 연계된 맥락. 7💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5518,6 +6191,10 @@
         "video"
       ],
       "summary": "Lightricks LTX-2.5 공개. 22B 오픈웨이트 비디오 모델. 네이티브 멀티샷, 영상+오디오 동기 생성, Text/Image/Video→Video, 인물·동작·카메라·프롬프트 일관성 강화. 로컬 배포 가능. 61💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5552,6 +6229,10 @@
         "multi-reference"
       ],
       "summary": "일본어 공개. 캐릭터 참조 이미지 1장으로 ①전신 4방향 ②두부 6방향 ③6표정 ④영어 태그 사전을 연속 생성하는 에이전트 프롬프트. AI 인식성과 멀티 레퍼런스 운용을 중시한 캐릭터 레퍼런스 구축 워크플로우. 117💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5585,6 +6266,10 @@
         "node"
       ],
       "summary": "중국어 튜토리얼. MiniMax H3로 진짜 일관성 있는 장편 영상 생성법. ComfyUI 노드 설치 후 첫 세그먼트 생성→끝 프레임·오디오를 다음 세그먼트 참조로 주입. 노드가 동작 연속성·오디오 연결 자동 처리. 90💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5618,6 +6303,10 @@
         "wave"
       ],
       "summary": "GPT Image2 프롬프트. 바다색 수영복을 입고 피스 사인 — 파도 소리에 지지 않을 만큼 여름을 가까이 느끼는 순간. 좋아요 79.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -5647,6 +6336,10 @@
         "toro-ju-shi-ai"
       ],
       "summary": "ToroJushiAi의 AI 아트 이미지 프롬프트 공유. 트윗 본문은 Prompt 안내만 포함, 프롬프트는 답글 위치. 13 likes.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -5680,6 +6373,10 @@
         "wan-animate-2"
       ],
       "summary": "중국어 인사이트. MiniMax H3가 오픈소스 영상을 주도한 지 48시간 내 IndexTTS-2.5·LTX-2.5 연속 오픈소스화. Wan-Animate-2까지 더해져 더빙·캐릭터 드라이브·멀티샷·후반까지 연결. 5초 단편 생성에서 실제 콘텐츠 생산 파이프라인으로 전환. 213💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5713,6 +6410,10 @@
         "turbo-lora"
       ],
       "summary": "huangserva의 MiniMax H3 실측 후속. 공식 Skills·Turbo LoRA·장편영상·T8 워크플로우에 이어 ①더 안정적인 8V8A 성편 파라미터 ②새 Attention 백엔드 ③인물 LoRA·저VRAM 방안 추가. 162💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5746,6 +6447,10 @@
         "upscayl"
       ],
       "summary": "스페인어 소개. 무료 오픈소스 AI 이미지 업스케일러 Upscayl. 웹 업로드·구독 불필요, 로컬 PC에서 작동. 48,000+ 스타. 사진·디자인·콘텐츠 작업자에게 추천. 300💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5781,6 +6486,10 @@
         "upscayl"
       ],
       "summary": "Upscayl 공식 GitHub. Linux·macOS·Windows용 #1 무료 오픈소스 AI 이미지 업스케일러. ESRGAN·Real-ESRGAN 기반, Electron GUI. 48,029⭐, 2,403 포크. AGPL-3.0. Topaz Gigapixel의 무료 대안. 2022-07 생성, 2026-08 활발 업데이트.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5814,6 +6523,10 @@
         "speedup"
       ],
       "summary": "일본어 소개. Int8 Attention 최적화로 MiniMax H3 이미지 생성 시간 52% 단축. RTX 3090 환경에서 850초→520초. ComfyUI 사용자 대상. 8💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5849,6 +6562,10 @@
         "youtube"
       ],
       "summary": "한국어 소개. 링크만 넣으면 대부분 사이트 원본 영상·오디오 다운로드. 앱 설치 또는 Claude/Codex에 링크를 주고 다운로드 가능(에이전트 호환). 광고·가입 없이 완전 무료. 100💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5881,6 +6598,10 @@
         "v4-pro"
       ],
       "summary": "DD.Cherry 크리에이터의 도구 사용 언급. OpenCode Go 구매 후 DeepSeek V4 Pro 테스트, 초대코드 $5 할인 문의. 커뮤니티 게시 성격. 29💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5914,6 +6635,10 @@
         "studio-backdrop"
       ],
       "summary": "영문 프롬프트 공유. 레퍼런스 이미지 생성법 — 캐릭터 이름만 바꾸면 되는 템플릿 힌트. 9:16 세로 비키니 코스프레 포스터, 심리스 라이트 쿨그레이 스튜디오 배경. 56💗.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -5944,6 +6669,10 @@
         "removed"
       ],
       "summary": "Instagram 릴스 접근 불가. \"Post isnt available — link may be broken, or profile removed\" 메시지 반환. 캡챠 또는 권한 제한 가능성. 원본 링크 보존용 카드.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -5977,6 +6706,10 @@
         "workflow"
       ],
       "summary": "일본 AI 콘텐츠 개발자의 실전 워크플로우. 4090에서 1184×896 15초 본생성 9분45초 + 먼저 3Step 프리뷰 3분30초로 프롬프트·구도 사전 검증 후 본생성 진입. 긴 생성 후 실수 발견의 손실을 방지. 369💗.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6010,6 +6743,10 @@
         "to-your-eternity"
       ],
       "summary": "애니 <To Your Eternity 3>(불멸의 그대에게) 소개. 액션·어드벤처·초자연·드라마, 평점 8.2, 방영 완료. 구체→바위→늑대→소년으로 변하며 성장하는 후시(Fushi)의 서사. 스토리텔링·캐릭터 성장 레퍼런스.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6044,6 +6781,10 @@
         "vfx"
       ],
       "summary": "액션 파이트 시퀀스 영상. 퍼포머 3인(mig.buenacruz, jesse.vlahovic, naokistunt1412), 카메라·편집·SFX·VFX(keanulam), 안무(rykelcrzo/keanulam). 격투 액션 연출·안무·VFX 레퍼런스.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6076,6 +6817,10 @@
         "unavailable"
       ],
       "summary": "Instagram 릴스 접근 불가. Jina Reader가 \"Post isnt available\" 및 CAPTCHA/권한 제한 경고 반환. 링크 손상, 게시물·프로필 삭제 또는 비공개 가능성. 원본 URL 보존용 카드.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6109,6 +6854,10 @@
         "window"
       ],
       "summary": "GPT Image2 프롬프트. 창가에서 팔을 올리면 아침 햇살이 머리끝까지 천천히 차오르는 장면. 주제: 창가의 하얀 아침. 234💗, 답글 3건. 공개 syndication 메타데이터로 수집.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6142,6 +6891,10 @@
         "water-splash"
       ],
       "summary": "GPT Image2 프롬프트. 물보라와 미소로 반짝이는 여름, 다음 건배 전까지 수영하러 가는 순간. 주제: 꽃무늬 수영복의 여름휴가. 103💗, 답글 0건. 공개 syndication 메타데이터로 수집.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6175,6 +6928,10 @@
         "staircase"
       ],
       "summary": "DD.Cherry의 GPT Image2 프롬프트. 주제: 계단을 오르며 뒤돌아본 순간. 샤오홍슈 게시용으로 만들었으나 짧게 생성된 반바지 때문에 X에만 게시했다고 설명. 포즈·구도·패션 레퍼런스. 422💗, 답글 2건. 공개 syndication 메타데이터로 수집.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6209,6 +6966,10 @@
         "google"
       ],
       "summary": "Google Code Wiki. Gemini가 코드베이스에서 대화형 지식베이스·아키텍처 다이어그램·섹션별 설명을 자동 생성하고 PR 병합마다 관련 문서를 갱신하는 개발자 도구. 코드 정의로 즉시 이동 및 자연어 코드베이스 질의 지원. 개인 비공개 저장소 연결은 Coming Soon.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6243,6 +7004,10 @@
         "x"
       ],
       "summary": "X의 추천(For You) 타임라인 핵심 알고리즘 코드가 GitHub에 완전 공개되었다는 한국어 안내. 게시물 자체에는 GitHub 직접 URL이 아닌 첨부 이미지 링크만 확인됨. 193💗, 답글 16건. 공개 syndication 메타데이터로 수집.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6275,6 +7040,10 @@
         "visual-reference"
       ],
       "summary": "DD.Cherry의 간단한 아침 인사(早安·좋은 아침)와 첨부 AI 이미지 게시. 본문 프롬프트·외부 링크는 확인되지 않음. 61💗, 답글 1건. 공개 syndication 메타데이터로 수집.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6308,6 +7077,10 @@
         "testing"
       ],
       "summary": "DD.Cherry의 Skill 지속 테스트 게시. 프롬프트 주제: 花漾暑假(꽃처럼 물든 여름방학), 인물 고정(Character Lock) 조건 포함. 8💗, 답글 0건. 공개 syndication 메타데이터로 수집.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6342,6 +7115,10 @@
         "portrait"
       ],
       "summary": "KIRAVA 생성 AI 그라비아·사진. 차분한 밤 시간 콘셉트의 완전한 가상 성인 일본 여성: 부드러운 지뢰계 성인 룩, 섬세한 돌리 스타일, 편안한 눈빛과 꿈결 같은 표정. 영문 프롬프트 제공. 136💗, 답글 3건. 공개 syndication 메타데이터로 수집.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6380,6 +7157,10 @@
         "wangp"
       ],
       "summary": "GPU 사양이 낮은 사용자를 위한 로컬 생성형 AI 슈퍼앱. Wan 2.1/2.2·MiniMax H3·LTX-2·Hunyuan Video·Qwen Image·Flux·TTS를 단일 웹 UI·헤드리스·API로 지원. 선택 모델은 VRAM 6GB부터, LoRA·양자화(INT8/FP8/GGUF/NVFP4)·작업 큐·업스케일·미디어 후처리 제공. v12.51은 LTX 2.5·LTX 업스케일러·Wan2.2 Animate 캐시 추가. 8,487⭐, 1,305 포크.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6413,6 +7194,10 @@
         "prompt-challenge"
       ],
       "summary": "일본 AI 프롬프트 크리에이터. 최근에는 어려운 카메라 앵글도 생성 가능해졌다고 언급하며, 다음으로 마스터할 난도 높은 연출 과제를 공개 모집. 완전한 가상 20세 성인 일본 여성의 영문 프롬프트 제공. 26💗, 답글 0건. 공개 syndication 메타데이터로 수집.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6446,6 +7231,10 @@
         "prompt"
       ],
       "summary": "DD.Cherry의 모델 비교 체감 포스트. \"Opus 5가 GPT Sol보다 더 낫다고 느끼지 못했다\"고 언급하며 프롬프트를 첨부. 세부 비교 기준·프롬프트 전문은 공개 syndication 본문에서 확인되지 않음. 233💗, 답글 1건.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6480,6 +7269,10 @@
         "storyboard"
       ],
       "summary": "AI 영상 제작용 스틸컷 아카이브 사이트 소개. 세계 영화·애니메이션의 고화질 스틸을 감독·장르·연도·국가별로 탐색하며 첫/마지막 프레임, 무드보드, 스토리보드 구상에 활용하는 용도. 게시물에서 실제 아카이브 URL은 공개 syndication 메타데이터로 확인되지 않고 첨부 영상만 식별됨. 26💗, 답글 10건.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6514,6 +7307,10 @@
         "vertical"
       ],
       "summary": "DD.Cherry 프롬프트. 도시 야경의 영화적 무드, 냉난방 환경광, 자연스럽고 풍만한 인물 곡선. 세로 구도·반신~허벅지·프레임 65%·루프탑 난간에 옆으로 기대는 인물 구성. 36💗, 답글 0건. 공개 syndication 메타데이터로 수집.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6549,6 +7346,10 @@
         "wind"
       ],
       "summary": "DD.Cherry 프롬프트. 주제: 风越栈桥(바람이 지나는 잔교). 세로 3:4, 여름 해변 목조 잔교 끝에서 바다 바람을 맞고 멈춘 인물. 오른손으로 안경다리를 잡고, 왼손은 햇볕 데워진 난간에 둠. 중앙 약간 좌측 인물과 잔교·시선의 유도선이 오른쪽 원경으로 향하는 구도. 32💗, 답글 0건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6583,6 +7384,10 @@
         "portrait"
       ],
       "summary": "Clair Edit 프롬프트: 과하지 않은 빛, 자연스러운 돌아보기 시선, 부드럽게 번지는 은은한 역광으로 인물 정체성을 유지하면서 고요한 흑백 에디토리얼 무드 추가. 남녀 공용, ChatGPT 전용 이미지·Grok 영상 표기. 사용 시 출처 표기 요청. 52💗, 답글 38건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6614,6 +7419,10 @@
         "source-preserved"
       ],
       "summary": "사용자 제공 Instagram 캐러셀 게시물(원본 img_index 쿼리 제거). Jina Reader가 Instagram 도메인의 익명 접근을 DDoS 완화 조치로 일시 차단하여 작성자·본문·이미지 메타데이터를 확인하지 못함. 원본 URL과 수집 제한 상태를 보존.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6644,6 +7453,10 @@
         "toro-ju-shi-ai"
       ],
       "summary": "ToroJushiAi의 AI 아트 프롬프트 공유. 게시물 본문은 Prompt 안내만 포함하며 답글·첨부 경로에 프롬프트가 있는 형식. 공개 syndication 메타데이터로 프롬프트 전문은 확인되지 않음. 14 likes, replies 0.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6678,6 +7491,10 @@
         "vertical"
       ],
       "summary": "DD.Cherry 프롬프트. 열대 오후의 생활감, 야자수 아래 해먹의 낮잠, 자연스럽고 풍만한 곡선의 부드러움. 세로 구도·반신~허벅지·프레임 65~70%·해먹 위 옆으로 누운 자연스러운 휴식 포즈. 59💗, 답글 0건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6709,6 +7526,10 @@
         "x-article"
       ],
       "summary": "AI Dance Paradise의 X 게시물. 본문 없이 X Article 링크(2088504597979791360)만 공유. X Article 본문은 Jina Reader X 도메인 DDoS 완화 차단으로 확인 불가. 원 게시물과 연결된 Article URL을 보존. 209💗, 답글 3건.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6742,6 +7563,10 @@
         "web-automation"
       ],
       "summary": "Aside 소개 페이지. 로그인된 웹사이트에서 메시지·결제·내부 도구 등 복잡한 작업을 웹 UI로 직접 수행하는 브라우저 에이전트를 표방. 브라우징 이력을 기기 내 로컬 메모리로 활용하고, Secure Enclave 기반 하드웨어 E2E 암호화·권한 범위 제한·감사 로그를 갖춘 에이전트용 비밀번호 관리자를 제시. 자사 주장으로 Online-Mind2Web·BU-Bench-V1·Odysseys 3개 벤치마크 1위 및 99.0% 수치를 게시.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6772,6 +7597,10 @@
         "toro-ju-shi-ai"
       ],
       "summary": "ToroJushiAi의 AI 아트 프롬프트 공유. 게시물 본문은 Prompt 안내만 포함하며 답글·첨부 경로에 프롬프트가 있는 형식. 공개 syndication 메타데이터로 프롬프트 전문은 확인되지 않음. 105 likes, replies 0.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6806,6 +7635,10 @@
         "window-light"
       ],
       "summary": "DD.Cherry 프롬프트. 고급 스위트 비키니, 호텔 창문광, 여유로운 시네마틱 무드. 세로 구도·중근경~반신·프레임 중앙 약간 우측·정면에서 살짝 비튼 인물 구성. 38💗, 답글 1건. 공개 syndication 메타데이터로 수집.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6840,6 +7673,10 @@
         "white"
       ],
       "summary": "GPT Image2 프롬프트. 빛나는 조개 속에서 바다의 꿈이 깨어나는 진주 같은 고요한 아침. 주제: 진주조개에 앉은 하얀 꿈. 48💗, 답글 1건. 공개 syndication 메타데이터로 수집.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6878,6 +7715,10 @@
         "upscale"
       ],
       "summary": "MiniMax H3용 작업을 하나의 ComfyUI 노드에서 처리하는 통합 비디오 파이프라인 소개. T2V·I2V·R2V·Audio Drive(립싱크)·Keyframes·Chain·Upscale·Turbo Set을 포함하며, 노드 그래프 구성·배선·다수 노드팩 탐색 없이 모드와 프롬프트/참고자료 입력 후 생성하는 흐름을 제시. GitHub 표기 링크는 공개 본문에서 직접 식별되지 않음.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6912,6 +7753,10 @@
         "sketch2motion"
       ],
       "summary": "너드보드가 GitHub의 leeyeel/Sketch2Motion을 소개. 사진 또는 스케치를 모션 비디오로 변환하는 드로잉 애니메이션 도구. 공개 본문에서 GitHub 대상 저장소(leeyeel/Sketch2Motion)와 프로젝트 설명을 확인. Threads 게시물 조회 3.4K로 표기.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -6945,6 +7790,10 @@
         "wan-animate-2"
       ],
       "summary": "WAN Animate 2 워크플로우. 레퍼런스 이미지 1장과 드라이빙 영상만으로 캐릭터 디자인은 유지하면서 영상의 움직임·포즈를 전이. 복잡한 설정은 숨기고 실제 필요한 항목을 MAIN CONTROL 하나로 정리한 구성. 공유 URL이 개별 canonical post URL을 노출하지 않아 원본 share URL을 보존.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -6979,6 +7828,10 @@
         "youtube"
       ],
       "summary": "Aside 사용기. DeepSeek를 연결해 빅데이터닥터 YouTube 채널에서 투자 관점을 제외한 온톨로지 본질 관련 내용을 요청하자 49개 영상을 찾아 정리했다고 보고. Comet보다 빠르고 작업 완료성이 높아 브라우저보다 브라우저 전문 에이전트에 가깝다고 평가. 원본 share URL 보존.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7013,6 +7866,10 @@
         "workflow-automation"
       ],
       "summary": "GPT-Image2 Prompt as Code 프로젝트. 520개 역공학 사례와 20개 이상 산업형 템플릿을 구조화해 에이전트·스크립트·자동화에서 재사용하도록 설계. 피사체·조명·소재·레이아웃·시각 세부를 조합 가능한 원자 스키마로 분리하며, 갤러리·프롬프트 템플릿·GPT-Image2 스타일 라이브러리 Skill 제공. MIT. 10,615⭐, 1,251 포크.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -7047,6 +7904,10 @@
         "workflow"
       ],
       "summary": "Seedance 2.5 출처 연결형 프로덕션 카드 아카이브. 촬영·워크플로·언어·화면비로 검색 가능한 1,517개 큐레이션 카드 제공. 액션·시네마틱·음악/댄스·상업·로맨스·애니·SF 등 범주별로 결과와 프롬프트를 연결. 사이트는 커뮤니티 제공 결과이며 독립 벤치마크가 아니라고 명시. Dreamina의 30초 4K·최대 50개 멀티모달 레퍼런스·R2V·로컬 편집 주장은 상태 페이지로 구분.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -7082,6 +7943,10 @@
         "veo"
       ],
       "summary": "SkyReels-V2를 Runway·Kling·Veo 구독 대신 로컬 PC에서 AI 영상을 만드는 공개 모델로 소개. 게시물은 Skywork의 오픈소스 모델이며 코드·모델 가중치가 공개되고 상업 이용을 허용한다고 주장. 원 게시물에는 검증 가능한 프로젝트 직접 링크 대신 첨부 영상만 확인됨. 114💗, 답글 7건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -7114,6 +7979,10 @@
         "public-api"
       ],
       "summary": "무료 공개 API의 커뮤니티 큐레이션 목록. 동물·예술·인증·비즈니스·지리·금융·ML·뉴스·생산성 등 다수 도메인별 API를 정리한 개발 리소스. MIT 라이선스. README에 APILayer 홍보·연동 API도 포함되어 있어 개별 API 사용 조건은 원 출처에서 별도 확인 필요. 463,183⭐, 51,172 포크.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7148,6 +8017,10 @@
         "wellness"
       ],
       "summary": "GPT Image2 프롬프트. 다다미에 앉아 몸을 쭉 펴며 깊게 숨 쉬는 아침 스트레칭. 아침 햇살 속에서 몸과 기분이 풀려가는 일본식 실내 웰니스 장면. 1,071💗, 답글 9건. 공개 syndication 메타데이터로 수집.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -7184,6 +8057,10 @@
         "swimsuit"
       ],
       "summary": "Swimsuit+Sandals 2 이미지 모델 비교. 1) GPT2, 2) Krea 2 + LoRA, 3) Seedream 5.0 Lite + 레퍼런스 이미지, 4) Grok Imagine 2 결과를 제시. SFW 레퍼런스 프롬프트는 답글에 있다고 안내하나 공개 syndication으로 전문은 확인되지 않음. 239💗, 답글 4건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -7218,6 +8095,10 @@
         "tiktok"
       ],
       "summary": "Hermes·Claude·GPT Image 2 조합으로 매일 TikTok에 AI 콘텐츠를 생성·게시하는 자동화 워크플로우 소개. 틈새시장에 맞는 콘텐츠 유형을 정하고 Claude가 이미지 생성용 프롬프트를 만든다고 설명. 게시물이 일부에서 잘려 전체 후속 단계·자동 게시 구현 세부는 공개 syndication 메타데이터에서 미확인. 222💗, 답글 17건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -7253,6 +8134,10 @@
         "windows"
       ],
       "summary": "웹페이지를 명령 하나로 macOS·Windows·Linux 데스크톱 앱으로 패키징하는 Rust·Tauri 기반 도구. Electron 패키지보다 설치 파일이 약 20배 작고 보통 10MB 미만이라고 설명하며, CLI·온라인 빌드·단축키·몰입형 창·드래그앤드롭·스타일 커스터마이징·광고 제거를 지원. GPL-3.0. 60,808⭐, 12,460 포크.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7287,6 +8172,10 @@
         "workflow"
       ],
       "summary": "Seedance 프롬프트를 저장만 하고 실제 사용 가능성을 판단하기 어렵다는 문제에서 출발해, 직접 사용한 두 사이트를 비교하겠다고 예고한 포스트. 첫 대상은 Best Seedance Prompts이며 숫자보다 프롬프트가 실제로 되는지에 초점을 둔다고 설명. 공개 syndication 메타데이터가 영상 소개 초반에서 잘려 두 번째 사이트와 비교 결론은 미확인. 109💗, 답글 16건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -7322,6 +8211,10 @@
         "reasoning-effort"
       ],
       "summary": "Codex 5.6의 숙련 사용자는 단순 대화가 아니라 config.toml에 모델·작업 모드·프로젝트 규칙·자동화 흐름을 기록한다고 주장하는 설정 가이드형 포스트. 전문 설정 4개 중 공개 메타데이터에서 확인된 첫 항목은 고정 모델 + Reasoning Effort이며, 나머지 세부 항목은 게시물 본문이 잘려 미확인. 348💗, 답글 30건.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7359,6 +8252,10 @@
         "windows"
       ],
       "summary": "macOS·Windows용 스크린샷·화면 녹화·iOS USB 기기 캡처 도구. 단일 단축키로 영역·창·전체 화면을 잡고, 자동 스크롤 스티칭 이미지/PDF, 40+ 월페이퍼·30+ 그라디언트 꾸미기, 이미지/비디오 프레임 주석, 커서 추적 시네마틱 줌·클릭 효과·속도 램프, 카메라 오버레이를 제공. 최대 4K 60fps, H.264·AV1·GIF 내보내기와 Dropbox 공유·로컬 후처리 플러그인 지원을 표기.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7397,6 +8294,10 @@
         "threejs"
       ],
       "summary": "브라우저에서 장면 블로킹·캐릭터 포즈·카메라 이동/컷·모션 프롬프트 타임라인을 구성하는 3D 프리비주얼 스튜디오. Three.js·React Three Fiber 기반이며, MCP 서버를 통해 Claude 등 AI 클라이언트가 자연어로 배치·샷 구도·다단계 모션을 제어할 수 있음. 기본 스테이징·카메라·재생은 로컬 실행, 신규 모션 생성은 SSH 접근 가능한 NVIDIA ARDY 머신이 선택적으로 필요. Node 22+·Chromium 요구. GPL-3.0, 165⭐, 19 포크.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7433,6 +8334,10 @@
         "typography"
       ],
       "summary": "해외 디자인/AI 스타트업/랜딩페이지에서 자주 쓰이는 폰트 5개 소개: Inter(피그마·노션·GitHub 등), Space Grotesk(AI 스타트업), Satoshi(랜딩페이지), Instrument Serif(제목용), General Sans(Pretendard 대안). 원본 share URL 보존.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7462,6 +8367,10 @@
         "threads"
       ],
       "summary": "원본 Threads 공유 URL 보존. Jina Reader의 HTTP·HTTPS 경로가 ERR_BLOCKED_BY_CLIENT로 차단되었고, 비로그인 페이지 메타데이터도 반환되지 않아 작성자·본문·미디어를 확인할 수 없음. 접근 제한 상태로 등록.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7498,6 +8407,10 @@
         "teamwork"
       ],
       "summary": "13년 마케팅 경험을 바탕으로 AI 8종을 회사 팀원에 비유한 실사용 인상. ChatGPT는 친절하지만 컨펌을 못 맡길 신입, Claude는 기획의 우려를 지적하며 방향을 재구성하는 실무자, Gemini는 조사 강점, Grok은 직설적 선배, Perplexity는 출처가 명확한 문서 담당으로 묘사. Genspark·Manus·Midjourney는 각각 영상 프리랜서·끝까지 완수하지만 진행이 불투명한 외주·감각적이나 브리프 이탈하는 디자이너로 정리. 개인적 체감 비유임. 원본 share URL 보존.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7535,6 +8448,10 @@
         "toonkit"
       ],
       "summary": "Toonkit이 서비스 대규모 어뷰징 대응 후, 중국 AI 숏드라마 제작 집단이 남긴 생성 결과와 프롬프트 구조를 분석한 사례라고 소개. 공개 스레드에서 요약한 핵심은 ① 100%보다 단일 생성으로 약 90% 일관성을 확보해 리롤·후반 편집 비용을 최소화, ② 짧은 행동·원작 대사·시작/끝 상태를 간결히 기입, ③ 참조 이미지의 얼굴·아이덴티티 요소를 분리·변형해 클로즈업 제어, ④ 조명·재질 하이라이트의 상대 비율로 룩 일관성을 지시하는 방식. 게시자의 분석·주장으로 기록하며, 원본 share가 가리킨 첫 게시물의 canonical URL 사용.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -7570,6 +8487,10 @@
         "web-ui"
       ],
       "summary": "DeepSeek AI의 오픈소스 에이전트 하니스 dsh. 모든 것을 플러그인으로 구성하는 아키텍처이며 Cordis 기반. npm으로 로컬 Web UI를 실행할 수 있고 기본 포트는 127.0.0.1:3080. 현재 developer preview로 호환성 파괴 변경이 발생할 수 있다고 명시. MIT. 172,766⭐, 18,677 포크.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7606,6 +8527,10 @@
         "video-codec"
       ],
       "summary": "중국 15초 무성 다큐형 쇼츠 제작팀 사례를 분석한 Toonkit 스레드. I2V에서 첫 프레임 레퍼런스의 미세 변형으로 연속성이 깨지는 문제에 대해 16:9와 1920×1088 규격을 명시하는 방식을 핵심 사례로 제시. 작성자는 1920·1088이 모두 16으로 나뉘며 인코딩·AI 생성·크롭 단계의 누적 차이를 줄여 첫 프레임 반영 정확도를 높인다고 설명. 또한 모델이 주제어에서 학습된 전투 장면으로 치우지 않도록 반복적 네거티브 지시를 쌓는 운영 경험을 소개. 게시자 분석·주장으로 기록.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -7641,6 +8566,10 @@
         "vision"
       ],
       "summary": "DeepSeek API의 DeepSeek-V4-Flash-Vision-Exp 출시를 정리한 6개 스레드. 공식 문서 기준 이미지+텍스트 입력을 Chat Completions·Messages·Responses에서 지원하며, 이미지당 최대 384 토큰·V4-Flash 가격, base64·외부 URL·Files API 입력을 제공. Files API는 무료이고 file_id 재사용 가능. 공식 발표는 멀티모달 에이전트 벤치마크에서 V4-Flash 대비 큰 향상 및 Opus-4.8에 근접한다고 주장하며, DeepSeek Harness 0.1.1의 즉시 지원을 명시. 스레드의 여행 제안서·웹 재구성 등 사례와 구분해 공식 출처로 교차 확인.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7674,6 +8603,10 @@
         "source-citations"
       ],
       "summary": "AI 답변이 짧고 출처가 적으며 부정확하거나 불완전할 수 있다는 문제 제기. AnySearch는 여러 신뢰 가능한 출처의 실시간 데이터를 하나의 보기로 통합해 검증 가능한 답변을 제공한다고 주장. 공개 메타데이터에 제품 URL·기능 데모·출처 선택 기준은 포함되지 않아 서비스 주장으로 보존. 551💗, 답글 27건.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7707,6 +8640,10 @@
         "morning"
       ],
       "summary": "세크갸루(seqgyaru)의 AI 생성 애니메이션 아트 캐러셀. 화요일 아침 인사와 함께 AI로 만든 일러스트를 공유하며 아트·일러스트 관심자와 연결되고 싶다는 게시물. 원문 해시태그: #aiイラスト #animeartwork #aiartist. 익명 Reader로 작성자·본문·이미지 접근 확인; img_index 추적 쿼리 제거한 canonical URL로 보존.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7739,6 +8676,10 @@
         "prompt-library"
       ],
       "summary": "freestylefly/awesome-gpt-image-2 GitHub 저장소를 AI 이미지 생성 사용자에게 바로 사용해 보고 저장해 둘 리소스로 추천한 짧은 Threads 포스트. 대상 저장소는 이미 Vault 카드 CR-20260817-0001로 수집됨. 이 카드는 추천 맥락과 원본 share URL을 별도로 보존.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7775,6 +8716,10 @@
         "prompt-engineering"
       ],
       "summary": "심해를 헤엄치는 갈치 I2V 프롬프트의 생성 원리를 기술 분해와 서사형 프롬프트로 공개. 공간 앵커·파티클 패럴랙스, 비정형 파동 추진·감속 후 tail overshoot, 중립 부력·유체 저항·압력파, 측면 트래킹·3분할·생물발광 동기 틸트를 시간 구간별로 지시. 추상 표현 대신 관찰 가능한 운동·광학·파티클 증거를 적어 모핑·기계적 움직임·무중력 오독 같은 실패 패턴을 줄이는 접근. 댓글 전문 접근 확인 후 canonical URL로 보존.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -7811,6 +8756,10 @@
         "webtoon"
       ],
       "summary": "NovelAI Diffusion V5 출시를 소개한 Threads 포스트. 자연어 장면 묘사, 다언어 프롬프트, 다인물 배치, 다중 패널 만화 생성을 핵심 변화로 정리. NovelAI 공식 릴리스로 교차 확인: V5 Curated·V5 Full 제공, V4.5 대비 2배 이상 규모, 32채널 VAE, 향상된 자연어 이해·다언어 프롬프팅·캐릭터 위치 제어·이미지 충실도를 발표. 최대 22명 장면 배치·만화 생성은 공식/보도 자료의 기능 주장으로 기록.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -7840,6 +8789,10 @@
         "x"
       ],
       "summary": "공개 X syndication 응답에서 작성자·본문·반응 메타데이터가 반환되지 않음. 삭제·비공개·접근 제한 가능성을 포함해 원본 URL과 제한 상태를 보존.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7874,6 +8827,10 @@
         "white-dress"
       ],
       "summary": "GPT Image2 프롬프트. 바다 위를 걷을 때 물고기와 해파리를 품은 거품이 하늘로 떠오르는 여름 판타지. 주제는 바다 거품을 걷는 흰 드레스. 66💗, 답글 2건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -7907,6 +8864,10 @@
         "white-bikini"
       ],
       "summary": "GPT Image2 프롬프트. 푸른 바다를 곁에 둔 선상 데크에서 바람에 머리를 맡기고 여름 수평선을 바라보는 장면. 주제는 배 위 데크의 흰 비키니. 54💗, 답글 3건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -7936,6 +8897,10 @@
         "x"
       ],
       "summary": "공개 X syndication 응답에서 작성자·본문·반응 메타데이터가 반환되지 않음. 삭제·비공개·접근 제한 가능성을 포함해 원본 URL과 제한 상태를 보존.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -7971,6 +8936,10 @@
         "vertical-video"
       ],
       "summary": "Jellyfish를 스크립트 입력 후 샷 분해·캐릭터·장면·소품 설정부터 이미지·비디오 생성까지 연결하는 AI 숏드라마 제작 도구로 소개. 장기 작업의 일시정지·재개·취소와 세로형 숏드라마 내보내기를 언급. 직접 프로젝트 URL은 공개 메타데이터에서 식별되지 않음. 110💗, 답글 28건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -8000,6 +8969,10 @@
         "x"
       ],
       "summary": "공개 X syndication 응답에서 작성자·본문·반응 메타데이터가 반환되지 않음. 삭제·비공개·접근 제한 가능성을 포함해 원본 URL과 제한 상태를 보존.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -8032,6 +9005,10 @@
         "three-quarter-view"
       ],
       "summary": "Imagine 2.0용 프리미엄 패션 광고 이미지 프롬프트. 무릎 위까지의 카우보이 샷, 허리 높이 시점, 여성의 전면 좌측 3/4 구도와 어깨·힙의 렌즈 거리 관계를 구체적으로 지시. 공개 메타데이터가 전문 중간에서 잘려 나머지 프롬프트는 미확인. 1,116💗, 답글 12건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -8065,6 +9042,10 @@
         "summer"
       ],
       "summary": "GPT Image2 프롬프트. 푸른 하늘의 옥상에서 양손 더블피스를 하고 한쪽 발까지 튀어 오르는 여름 포트레이트. 주제는 옥상의 더블피스. 52💗, 답글 1건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -8098,6 +9079,10 @@
         "sofa"
       ],
       "summary": "Grok Imagine용 성인 NSFW 이미지를 명시한 프롬프트 게시물. 레이스 상의·소파·가벼운 초점 이탈의 라이프스타일 사진 콘셉트로 소개됨. 미성년 관련 정보는 없으며, 민감 성인 콘텐츠로 명확히 라벨링하여 원본 URL 보존. 436💗, 답글 41건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -8131,6 +9116,10 @@
         "selfie"
       ],
       "summary": "호텔 욕실 거울 앞에서 한 손에 휴대폰을 든 셀피와 뒤편에 정돈된 세면용품을 연출한 라이프스타일 이미지 프롬프트 소개. 프롬프트 전문은 답글에 있다고 안내하나, 공개 syndication으로 답글 본문은 확인되지 않음. 160💗, 답글 2건.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -8167,6 +9156,10 @@
         "pink-lavender"
       ],
       "summary": "핑크 운동공 위에 앉아 어깨너머로 시선을 보내는 인물의 포토리얼 AI 이미지 프롬프트. 밝은 목재 바닥·요가 매트·실내 아침 직사광과 핑크·라벤더 팔레트를 구조적으로 지정한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "captured",
         "text": "主題：桃色ボールの振り向き。画面中央の大きなピンクのエクササイズボールに横向きで座り、肩越しに振り返る女性一人。明るい室内の木床とヨガマット。淡いラベンダー色のフィットネスウェア。縦2:3、腰の高さに近い水平カメラ、柔らかな朝光のフォトリアル写真。"
@@ -8203,6 +9196,10 @@
         "soft-light"
       ],
       "summary": "욕실 문가에 선 인물의 의상·포즈·배경·실내 자연광·피부 질감을 구체화한 포토리얼 AI 이미지 프롬프트. 색상·헤어·장면·표정 변형의 기준점으로 활용 가능.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "captured",
         "text": "绝美23岁东亚美女，气质时尚、自信、温柔；身材匀称丰满，及肩微卷黑发，自然刘海，开心明亮的笑容，站在公寓浴室门口。她穿着浅灰色露背挂脖短上衣与同色系系带比基尼内裤，外搭半透明浅灰色宽松开衫，赤脚。一只手轻扶门框，身体微微侧倾。背景是简洁浴室、白色瓷砖墙、毛巾架。柔和的室内自然光，真实摄影风格，高细节皮肤纹理。"
@@ -8239,6 +9236,10 @@
         "video-production"
       ],
       "summary": "로컬 폴더의 이미지·영상 에셋을 불러와 노드 기반 캔버스에 배치·연결하고, 장면 및 구성 관계를 정리하는 무료 AI 영상 제작 보조 도구. 에셋별 프롬프트·생성 모델·해상도·영상 길이 메타데이터를 함께 기록하고 이미지를 내보낼 수 있다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -8275,6 +9276,10 @@
         "text-to-video"
       ],
       "summary": "Google Omni Text-to-Video용 10초·16:9 다큐멘터리풍 3D 렌더 프롬프트 3종: 잎꾼개미 군집, 지진 피해 현장, 빙하기 매머드 무리. 컷별 시간·카메라·조명·팔레트·사운드·음악을 세분화한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "Prompt 1: leaf-cutter ant macro documentary; Prompt 2: earthquake aftermath archival documentary; Prompt 3: Ice Age mammoth natural-history documentary. Complete verbatim prompts: 05_summaries/2026-08-24-omni-text-to-video-prompts.md."
@@ -8311,6 +9316,10 @@
         "wbrowser"
       ],
       "summary": "이미 로그인한 기존 Chrome 창을 새 브라우저·재로그인 없이 터미널 또는 AI 어시스턴트가 제어하도록 하는 크로스플랫폼 프로젝트. 작업 과정을 화면에서 확인하고 필요 시 마우스로 개입할 수 있으며 MCP 사용을 표방한다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -8348,6 +9357,10 @@
         "video-automation"
       ],
       "summary": "CMU BVH 모션캡처를 19관절 스트림으로 변환해 2D 캔버스 인물로 렌더링하고, 클립·경로·방향·블렌딩으로 끊김 없는 임의 길이 동작을 만드는 Claude 구현 프롬프트. 리타기팅·루프·제자리화·발 미끄럼·결정성 검수 조건까지 지정한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "Complete verbatim Korean implementation prompt retained at 05_summaries/2026-08-25-claude-mocap-canvas-prompt.md. Scope: CMU BVH parsing, 19-joint kinematics, post-processing, Path2D rendering, clip/path sequencing, deterministic rendering, and verification."
@@ -8385,6 +9398,10 @@
         "visual-style"
       ],
       "summary": "Higgsfield 공개 프롬프트를 분석해 이미지 결과에 반복되는 7개 요소·표현 구조를 추출한 Claude·Codex 겸용 Soul 2.0 프롬프팅 스킬 소개. 색상을 세 지점에 반복하고 광택·반사 요소 및 얼굴·메이크업을 구체화하는 패턴을 제시한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -8421,6 +9438,10 @@
         "swimwear"
       ],
       "summary": "바다가 보이는 야외 수영장 라운지체어의 인물을 대상으로, 백색 수영복과 청색 수면의 대비·정오 직사광·강한 반사·라탄 질감을 구체적으로 지정한 GPT Image2 포토리얼 프롬프트.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "captured",
         "text": "主題：プールサイドの白。海が見える屋外プール脇のラウンジチェアで、白いビキニ水着の女性が仰向けに深く寝そべる。白い水着とプールの青を強い日差しで対比。2:3縦位置、斜め上のカメラ視点、真昼の実写写真。硬い直射日光、水面反射、白・青・ベージュを明快に保つ。"
@@ -8455,6 +9476,10 @@
         "urban-legend"
       ],
       "summary": "미국 길거리 코인 주차장의 과태료 제도와 억울한 딱지 문제를 소재로 한 영웅담 서사. 도입부의 제도적 압박과 뒤이은 반전·해결 구조를 시나리오 소재로 분류한다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -8493,6 +9518,10 @@
         "storytelling"
       ],
       "summary": "소설을 캐릭터 설정·각색 대강·장면/소품 설정·각본·콘티의 다섯 제작 문서로 분해하는 AI 단편극 제작 스킬 모음. 각색 대강이 구조를 먼저 고정하고 이후 문서가 이를 따르며, 콘티는 출력 단계에서 새 결정을 만들지 않는 순차 파이프라인이다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -8528,6 +9557,10 @@
         "video-production"
       ],
       "summary": "CMU 모션캡처 데이터를 20fps 직교 투영·종이 모드 루프로 정리한 1,456개 클립 카탈로그. 14개 카테고리와 영문 키워드·한글 설명·입력용 문장을 제공한다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -8566,6 +9599,10 @@
         "video-to-video"
       ],
       "summary": "PKU-YuanGroup의 Helios 오픈소스 장편 AI 영상 생성 모델. 공개 글은 단일 H100에서 종단간 19.5 FPS, Text/Image/Video-to-Video와 인터랙티브 생성, Diffusers 통합을 언급한다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -8602,6 +9639,10 @@
         "windows"
       ],
       "summary": "ComfyUI 없이 이미지와 영상을 depth 영상으로 변환하는 Windows 휴대용 도구. 게시자는 드래그앤드롭과 처리 버튼 중심의 사용법, 큰 모델/런타임 용량 및 초기 로딩 시간을 안내한다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -8636,6 +9677,10 @@
         "resource-list"
       ],
       "summary": "GPT Image2 프롬프트를 이미지 예시와 함께 복사해 활용할 수 있는 사이트 10개를 정리한 리소스 모음 게시물. 공개 syndication 메타데이터로 제목·원본 미디어·게시물 본문을 확보했다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -8672,6 +9717,10 @@
         "soul-2"
       ],
       "summary": "한 줄의 무드 문장을 장소·의상·조명·색감까지 포함한 Higgsfield Soul 2.0 이미지 프롬프트로 확장하는 promptwhat 스킬의 Claude Code·Codex 설치 및 명령 가이드 게시물.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -8707,6 +9756,10 @@
         "visual-analysis"
       ],
       "summary": "이미지에서 주제·스타일·색채·광영·구도·질감·해상도·세부 요소를 분석해 재사용 가능한 프롬프트로 역추론하는 템플릿 모음. 공개 메타데이터에는 범용 이미지 역추론용 기본 문장이 포함된다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "captured",
         "text": "详细反推这张图片的完整提示词，包含主体、风格、色彩、光影、构图、质感、分辨率和细节描述。分析这张图片的视觉元素、色调、氛围、技法和关键词，生成可直接用于…"
@@ -8744,6 +9797,10 @@
         "video-extension"
       ],
       "summary": "로컬 H3로 생성한 25초 영상의 마지막 프레임을 다음 25초 생성의 첫 프레임으로 사용해 약 50초 길이로 이어 붙이는 방법. 게시자는 후반 구간을 Doubao가 이어 쓰고 CapCut으로 결합했다고 설명한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "主角：20岁年轻酷飒东亚少女，黑色齐刘海长直发，墨绿色短皮衣、黑色露脐背心、百褶短裙，大腿绑带配饰，高筒厚底皮靴，单手扛一把巨型残破巨剑，暗黑朋克战斗风，灰色纯色背景，精细布料皮革纹理，电影级渲染，超高清；"
@@ -8780,6 +9837,10 @@
         "unofficial"
       ],
       "summary": "Codex의 작업 UI·문맥·도구 수명주기는 유지한 채, 선택된 모델 요청을 내장 브라우저의 ChatGPT Temporary Chat으로 전달하는 비공식 브리지. 브라우저 전용 모드와 MCP 기반 full-harness 모드를 제공한다고 설명한다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -8819,6 +9880,10 @@
         "vram"
       ],
       "summary": "RTX 5080 16GB VRAM 환경에서 FreeToken 기반 MoE 구동 방식을 탐색한 실사용 관찰. 글쓴이는 Linux에서 Qwen3.6-35B-A3B NVFP4를 구동하며 약 60 tok/s decode와 1,500 tok/s 이상 prefill을 언급하고, VRAM·시스템 RAM·CPU·PCIe·전문가 캐시를 함께 활용하는 병목 완화 구조가 메모리/대역폭 수요를 높일 수 있다고 해석한다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -8859,6 +9924,10 @@
         "vfx"
       ],
       "summary": "이미지·영상·아이디어를 연출 의도, 연속성, 카메라, 컷 리듬, 물리 개연성, VFX, 모델용 프롬프트로 변환하는 한국어 AI 영상 제작 가이드. 프롬프트보다 의도 해석을 먼저 두고 MUST/SHOULD/OPTIONAL 계층, 짧게 생성한 뒤 길게 편집하는 제작 원칙, 전환·멀티컷·BPM 기반 타이밍을 구조화한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "Read AI_VIDEO_BLACK_BOOK.md first. Treat it as the primary directing and prompt-design reference for this task. Do not dump the guide back to me. Analyze my actual source image/video/request, select only the techniques that serve the scene, and return the final production-ready result."
@@ -8894,6 +9963,10 @@
         "worldbuilding"
       ],
       "summary": "게시물은 Higgsfield가 두 번째 편의 소스를 포함해 197개 클립을 공개했다고 소개하며, 동일 팀·세계관·모델 조건에서 프롬프트 작성 방식의 변화만으로 13명이 14일 걸린 제작을 4개월 뒤 1명이 3일에 수행했다는 제작 인사이트를 제시한다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -8931,6 +10004,10 @@
         "wide-angle"
       ],
       "summary": "빠른 액션·이동 장면에서 피사체 속도 표현을 반복하기보다 카메라를 지면에서 약 20~30cm까지 낮추는 연출 팁. 가까운 도로 질감과 차선이 빠르게 스치고 원경은 상대적으로 느리게 움직이며 강한 시차가 생겨 체감 속도를 높인다. 작성자는 광각 렌즈 병행 시 효과가 커진다고 덧붙였다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "카메라를 지면에서 20~30cm 높이로 낮게 유지하며 빠르게 이동한다."
@@ -8968,6 +10045,10 @@
         "sebpil-chaesaek"
       ],
       "summary": "원본 사진의 이목구비·표정·포즈를 최대한 유지하면서 민화·진채화·세필채색 계열의 한국 전통 회화 스타일을 입히는 GPT 이미지 변환 레퍼런스. 한지 질감, 섬세한 붓선, 광물 안료, 한옥 창호·소나무·들국화·붉은 인장을 한국적 시각 요소로 제시한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -9006,6 +10087,10 @@
         "words"
       ],
       "summary": "이름 붙이기 어려운 감정 7가지를 소개한 콘텐츠. 군중 속 소외감(모나콥시스), 비 올 때 실내 편안함(크리살리즘), 살아보지 못한 과거의 향수(아네모이아), 낯선 이의 삶을 깨닫는 순간(산더), 빈 공간의 적막감(케놉시아), 과거를 바꿀 수 없는 씁쓸함(에누망), 모임 다음 날의 외로움(애프터글룸)을 다룬다. 존 케닉의 신조어 사전 출처를 밝힌다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -9039,6 +10124,10 @@
         "video-editing"
       ],
       "summary": "클로드 코드를 무료로 무제한 사용하며 이 릴을 편집했다고 소개한 콘텐츠. 댓글 다수가 클로드 관련 반응이며, 일부는 페이블5/코덱스 비교 언급도 있다. 게시물 제목 외에는 구체 설정·절차·검증 근거가 공개 본문에 없다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -9078,6 +10167,10 @@
         "transition"
       ],
       "summary": "카메라 무브먼트를 검색·분류하고 루프 프리뷰로 방향·속도·프레이밍을 비교할 수 있는 AI 영상 프롬프트 라이브러리. static, pan/tilt, zoom, dolly/track, physical moves, human camera, drone/crane, special 카테고리의 동작별 문장 템플릿을 제공한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "low tracking shot. Movement: move at ground or below-waist height alongside the subject’s movement path. Speed: match the subject, footsteps or wheels. Framing: keep the low detail readable while the ground plane moves through frame. End: finish with the low perspective clearly maintained."
@@ -9106,6 +10199,10 @@
         "unresolved-link"
       ],
       "summary": "사용자가 제공한 Threads 공유 링크. 공개 접근에서 share URL이 invalid_post로 해석되어 대상 게시물 원문·작성자·미디어를 확정할 수 없었다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -9143,6 +10240,10 @@
         "vertical-video"
       ],
       "summary": "90년대 미국 멀티카메라 시트콤 톤의 30초 세로 AI 영상을 위한 장문 프롬프트. 인물·고양이·세트의 참조 이미지 역할을 분리하고, 0:00~0:30 타임코드별 숏·대사·조명 변화·효과음·웃음 타이밍을 고정한다. 프롬프트 분석 핵심은 레퍼런스 제외 조건, 실사 고양이 해부학 제약, 세트 좌우 고정, 조명 변화 시점, 오디오 순서, 연속성 제약, 네거티브 프롬프트를 계층화한 점이다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "[90s American multi-camera sitcom scene, 30 seconds, 9:16 vertical. Shot on 35mm film, warm cosy apartment, high-key warm tungsten sitcom lighting, soft fill from every side, no harsh shadows, flat theatrical staging, characters face camera, subtle film grain. EVENING: deep blue dusk outside the windows. Every object in frame is period-correct for 1996 or earlier — set dressing, furniture and devices all pre-1996. All dialogue in English. REFERENCES — @Image 1 defines the WOMAN's face, hair and complete outfit. Do not use its white studio background, standing poses, or flat lookbook lighting. @Image 2 defines the CAT's appearance and full wardrobe. Do not use its white studio background or formal sitting pose. @Image 3 defines the SET — room geometry, furniture, props, window dusk and warm palette. The reference is empty; in this scene it is occupied by the two characters. Do not add, remove or upgrade furniture beyond what the reference shows. CHARACTERS — WOMAN: @Image 1. Long platinum-blonde crimped waves with visible dark regrowth at the crown, wispy curly bangs, two small silver butterfly clips at one temple. Burgundy bias-cut satin slip dress with lace trim worn over a white ribbed baby tee, open slouchy heather-grey knit cardigan, black velvet choker layered with a thin silver locket chain, small silver hoop earrings, thin silver bangles on her left wrist, black chunky penny loafers with white crew socks, matte brown-mauve 90s lipstick. Speaks natural, conversational American English — tired at first, then exasperated. CAT: @Image 2. One real chubby orange ginger tabby cat with a white chest bib, wearing a tiny burgundy fez with a gold tassel tilted between its upright ears, oversized round tortoiseshell glasses slipped halfway down its muzzle, a puffed burgundy-and-gold paisley silk cravat, an open quilted burgundy smoking jacket, and a grey 90s digital calculator watch on its left front leg. Real cat anatomy and proportions, four legs, lounges and sits like a real cat, NOT anthropomorphic, no human arms, no human shoulders. CAT VOICE (use exactly this voice for every cat line): a smooth, theatrical adult male American voice — deep, unhurried, self-satisfied, with the round, over-enunciated comedic delivery of a 90s sitcom butler-villain, a faint dry amusement under every line. SET — @Image 3. A large overstuffed forest-green sofa faces the camera in the center; a boxy wood-cabinet CRT television stands on screen-LEFT; two windows with venetian blinds on the back wall show deep blue dusk and the lit windows across the street; the heavy wooden front door with brass locks is on screen-RIGHT, with a coat rack and a small key table beside it; a low wooden coffee table sits in front of the sofa with a small homemade electronics hub blinking green underneath, thin cables zip-tied along the baseboards; a chunky grey universal remote lies on the sofa cushion. The camera keeps this arrangement across every cut and never flips it. LIGHTING PLAN — the story is told with lights, so lamps change ONLY at the exact written moments, never otherwise. At 0:00 the ceiling light and floor lamp are OFF; the room is still clearly readable and warm: one small table lamp beside the sofa is on, plus the blue dusk from the windows and soft even fill. No moody shadows at any point. 0:00–0:04 — WIDE SHOT, static, main camera position. The front door on the RIGHT opens; the WOMAN walks in carrying a canvas tote bag, drops her keys on the key table, and claps twice at the dark floor lamp — the clap-controlled lights. Nothing happens. She claps again, harder. Nothing. WOMAN (tired): {Hello? Come on!} [LAUGH TRACK: small ripple] 0:04–0:08 — She stops mid-step: on the sofa, the CAT is lounging against the back cushion like a tiny mogul. The cat flicks its tail once — the floor lamp clicks ON by itself. She flinches. A second tail flick — the CRT television pops on with a soft static glow. [LAUGH TRACK: big burst] 0:08–0:12 — MEDIUM TWO-SHOT, the woman standing beside the sofa, arms crossed, bangles catching the lamp light. The cat slowly turns its head and peers at her over the top rims of its oversized glasses. WOMAN (suspicious): {Did you mess with the lights?} CAT: {They answer only to me now.} [LAUGH TRACK] 0:12–0:16 — She leans right over the floor lamp and claps furiously — twice, three times. Nothing. The cat's tail gives one lazy flick — the lamp turns ON; a second flick — OFF again, taunting her. Her jaw drops. [LAUGH TRACK: burst + scattered applause] 0:16–0:21 — CLOSE-UP on the cat, the fez tassel swaying once, utterly relaxed. WOMAN (off-screen, firm): {Fix it. Right now.} CAT (savoring every word): {Say please.} CUT to her offended face. WOMAN: {Absolutely not.} The cat slow-blinks once — every light in the room shuts off except the small table lamp, which now shines on the cat alone like a tiny spotlight. [LAUGH TRACK: long \"ooooh\"] 0:21–0:26 — MEDIUM SHOT. She stands in the dim warm glow, grits her teeth, forces a sugary smile. WOMAN (through her teeth): {...Please.} Instantly the ceiling light, the floor lamp and the table lamp all bloom warm at once and the TV settles into a steady glow — full bright sitcom lighting, the room cosier than ever. [LAUGH TRACK: burst + applause] 0:26–0:30 — The cat gives the chunky grey remote beside it one slow, proprietary pat with its front paw. CAT (quietly satisfied): {Good human.} She flops onto the sofa beside the cat, tote bag still on her shoulder, and stares flatly into the camera. FREEZE FRAME. [LAUGH TRACK + applause + upbeat 90s sitcom outro sting] AUDIO: 90s sitcom laugh track at the marked beats only. No background music except the final outro sting. Room tone; door opening; keys clattering on the key table; sharp double hand-claps; lamp switch clicks; CRT static pop; a soft fabric flump as she drops onto the sofa. Spoken audio is only the quoted lines above, in that order and timing, one voice at a time — the WOMAN in her natural voice, the CAT in the exact voice described in CHARACTERS. Only the speaking character's mouth moves; the woman's lips stay closed while the cat talks. CONSISTENCY: exactly ONE woman and ONE cat in the whole video — no other people, no other animals. Keep the woman's outfit, hair and accessories and the cat's fez, glasses, cravat, jacket and watch identical in every shot. The remote stays on the sofa cushion the whole time and only the cat's paw ever touches it. No object appears, disappears, floats, or morphs into another object. NEGATIVE: dark cinematic grading, moody shadows, underexposed, handheld camera, shaky, shallow depth of field bokeh, fisheye, neon, modern minimalist interior, smartphones, flat-screen TV, daylight outside, cartoon cat, 3d render, pixar, anime, illustration, anthropomorphic cat, bipedal cat, human arms on cat, extra limbs, distorted anatomy, floating objects, on-screen text, subtitles, captions, watermark, logo, non-English dialogue."
@@ -9181,6 +10282,10 @@
         "vfx"
       ],
       "summary": "Seedance 2.5용 공개 프롬프트 사례 163개를 8개 영상 제작 카테고리로 분류한 GitHub 라이브러리. Action/Fantasy 30, Cinematic Realism 3, POV/FPV 18, Commercial/Product 29, Reference-Driven 16, Surreal/VFX 11, Templates/Structured Formats 19, General Cinematic 37개로 구성된다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -9218,6 +10323,10 @@
         "youtube-thumbnail"
       ],
       "summary": "GPT Image 2용 대형 공개 프롬프트 라이브러리. README 통계는 16,708개 프롬프트와 6개 featured 사례를 표시하며, 프로필·SNS·인포그래픽·YouTube 썸네일·스토리보드·상품 마케팅 등 Use Case, 사진·애니·일러스트·3D·픽셀아트 등 Style, 인물·제품·음식·건축·텍스트 등 Subject 분류를 제공한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -9248,6 +10357,10 @@
         "unresolved-link"
       ],
       "summary": "사용자가 댓글의 프롬프트 수집을 요청한 Threads 공유 링크. 공개 share URL이 대상 게시물 대신 로그인 피드로 전환되어 원문·댓글·프롬프트를 식별할 수 없었다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -9287,6 +10400,10 @@
         "wide-shot"
       ],
       "summary": "공개 스레드에서 확인된 작성자 본문·연속 댓글 5건을 수집. 핵심은 AI 생성 전 스토리보드·Blender 프리비즈로 카메라/배치를 확정하고, 캐릭터 스타일을 배경에 전이하며, 와이드샷은 클로즈업/미디엄에서 전환해 안정화하고, 어려운 정지 인물은 반사 유리와 실루엣으로 가리는 연출이다. 공개 프롬프트 2개를 별도 구조화 파일에 보존했다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "captured",
         "text": "take the style of the character and apply it to the background\n\nGLASS: all the taxi's windows are semi-transparent and heavily reflective, sky, road and passing scenery slide across them, and the interior sits in shadow. The two passengers are almost invisible, present only as soft dark silhouettes veiled by the reflections and the tint, their poses and gestures readable purely by shape."
@@ -9324,6 +10441,10 @@
         "xray"
       ],
       "summary": "GPT 이미지에 사진과 /코드를 넣어 화질 개선, 제품 광고·프리미엄 쇼케이스, 360도·탑뷰·분해도, 드론샷 확장, 인물 합성, 원단 디테일·X-ray 등을 처리한다고 소개한다. 공개 캡션에서 /HDREAL, /360VIEW, /DRONEVIEW, /XRAY 예시를 확인했다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -9359,6 +10480,10 @@
         "yo-runner"
       ],
       "summary": "스페인 일러스트레이터 Sergio Duce의 작품을 소개한 콘텐츠. 평범한 일상 장면의 그림자에 다른 본질·상상 세계를 숨기고, 최소한의 선으로 교육·가족·관계·디지털 중독 등을 성찰하게 만드는 시각적 은유를 다룬다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -9396,6 +10521,10 @@
         "shock"
       ],
       "summary": "AI 영상 캐릭터 연기를 위한 Emotion Direction 사이트 소개. 25개 감정을 강도·감정군별로 정리하고, 카메라·의상·배경 없이 눈·입·호흡·머리·어깨 등 보이는 연기 행동만 적은 performance prompt를 제공한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -9428,6 +10557,10 @@
         "seedance"
       ],
       "summary": "작성자가 원 게시물 답글에 Seedance Emotion Direction 사이트 링크를 남긴 기록. 사이트에는 25개 감정별 가시적 연기 행동 프롬프트가 있다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -9464,6 +10597,10 @@
         "style-transfer"
       ],
       "summary": "2D 이미지를 실사 패션 에디토리얼 사진으로 변환하고, HDR·강한 얼굴 대비·손 오류를 보정한 뒤 카메라/렌즈/조명 조건을 추가하는 워크플로. 작성자는 작업 대화를 바탕으로 매거진 페이지도 만들었다고 설명하며, 범용 프롬프트를 본인댓글에 제공했다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "captured",
         "text": "[Transform the attached image into a convincing live-action fashion editorial photograph. Use the reference as the source of the subject, styling, pose, composition, and atmosphere. Output one finished photograph. REFERENCE FIDELITY Preserve the original hairstyle, hair color, outfit design, accessories, expression, gesture, framing, and aspect ratio. Translate stylized proportions into believable human anatomy without losing the character’s distinctive appeal. Reconstruct the existing setting as a real physical location, preserving its visual identity and color relationships. Do not automatically replace every background with a garden. FACE & PRESENCE For a young adult female character, portray a clearly. Create distinctive, memorable beauty: softly rounded cheeks, a natural jawline, expressive eyes, subtle facial asymmetry, and an understated, emotionally engaging expression. Preserve the reference’s eye direction and mood. When looking at the camera, create an intimate, magnetic gaze through expression and precise focus, not oversized eyes or artificial iris effects. Avoid generic doll-like perfection. For other subjects, preserve their apparent age group, gender presentation, and defining features. CAMERA & OPTICS Photographic aesthetic of a Sony A7 IV with an 85mm F1.4 prime lens. Choose a believable camera distance for the reference framing. Focus precisely on the nearer eye, with realistic depth of field consistent with an 85mm lens at f/1.4 and the actual scene geometry. Let sharpness fall away gradually with distance from the focal plane. Do not blur everything outside the face uniformly. Separate the subject from the background through plausible physical distance. Render smooth optical bokeh only where distant highlights exist: varied soft discs, restrained brightness, gentle cat-eye shapes toward frame edges, and natural overlap. Keep bokeh away from important facial details. No decorative circles pasted over the image, no artificial portrait-mode cutout edges. LIGHTING Translate the reference lighting into a coherent real-world lighting setup. Use soft directional light, subtle reflected fill, and physically consistent shadows. Where appropriate, allow gentle backlight to reveal hair strands. Preserve highlight detail in pale clothing and natural depth in shadows. Match the subject and background exposure. No excessive bloom, HDR halos, or flat beauty-filter lighting. PHYSICAL TEXTURE Render authentic skin with fine pores, peach fuzz, subtle tonal variation, and restrained editorial retouching. Give eyes realistic moisture and coherent catchlights. Hair must have believable roots, individual strands, weight, and translucency, including naturally dyed fantasy colors. Clothing must show real fabric weave, seams, thickness, folds, and gravity. Jewelry must reflect the actual surroundings. ANATOMY Correct any source-image anatomy errors while preserving the intended pose. Hands must have five anatomically correct digits, natural joints, plausible finger lengths, and clear overlaps. No duplicated fingers, fused limbs, or distorted accessories. FINISH A refined, camera-captured fashion photograph with natural skin tones, nuanced color grading, and realistic detail. Remove drawn outlines, cel shading, painted gradients, plastic skin, CGI surfaces, and synthetic over-sharpening. No text, typography, magazine layout, borders, logos, or watermarks. Output only the photograph.Read more](http://www.threads.com/@gomdanceo/post/Dc9Kka1H6Y3/media)\n\n2\n\n[![Image 8: gomdanceo's profile picture](https://scontent-sea5-1.cdninstagram.com/v/t51.82787-19/517796853_17914106265113482_5812821239377272649_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby43ODAuYzIifQ&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_cat=110&_nc_oc=Q6cZ2gHpV4rbOykmzWTjRa8hly4F4-JLTowD_swgQNN_Tt62JThIADO-KVJb4B1XmkCpoDQ&_nc_ohc=joSDYz28ARYQ7kNvwFasIPF&_nc_gid=v7pZ07fasS4e9TgAi9l2AA&edm=APs17CUBAAAA&ccb=7-5&oh=00_AQLla8NazNu-cJvPkr8MnQUgs9TZg3T_OZ4nog_bRFrwcA&oe=6AA48068&_nc_sid=10d13b)](http://www.threads.com/@gomdanceo)\n\n[gomdanceo](http://www.threads.com/@gomdanceo)\n\n[AI Threads](http://www.threads.com/search?q=AI%20Threads&serp_type=tags&tag_id=18406834975056806)\n\n[17h](http://www.threads.com/@gomdanceo/post/Dc9LbLSH6KQ)\n\n·Author\n\n잘 되는지 검증 해보니 자연스럽고 괜찮네요~!\n\nTranslate\n\n![Image 9](https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/798215101_17983270128113482_3016331235473832172_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzk4MDM4NzIyOTk1ODgyMzM3Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTAyNC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Jj0GHQqo4b0Q7kNvwFLbQcO&_nc_oc=Ado_AtEum9S_oUSZdVeZ4VPL_7vfAJSzX38x3iyxHteogt54ny60hdq0fqbYwakydi4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=v7pZ07fasS4e9TgAi9l2AA&_nc_ss=7a22e&oh=00_AQImURXWpve-x6PGM7I7gfgU7zyHDJMbN9l_H54fF2Mkyg&oe=6AA49315)\n\n![Image 10](https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/798017663_17983270212113482_7917949735565662803_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ig_cache_key=Mzk4MDM4Nzg3NzkxMDQ2MDYzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=saAExw1lAtcQ7kNvwHCsZQj&_nc_oc=AdpnlG7P4jcwhiZQMO3LycgP1EUjXEBUoOBOXDVPOMDJEmoBOt94cfhARF8SaHjgDBA&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=v7pZ07fasS4e9TgAi9l2AA&_nc_ss=7a22e&oh=00_AQIntJ3s2NcHtuPeVptusnasZGZvTwJhU2zutITsSCPSKQ&oe=6AA4874B)\n\n![Image 11](https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/798784740_17983270248113482_804454363360922318_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ig_cache_key=Mzk4MDM4Nzg3ODgwODAzMzkyNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTAyNC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=n7ichNsNdRoQ7kNvwEcUl4l&_nc_oc=AdoSDfSlyVNB21fgqa3gyn7OlHKPYXTO_bgzT6i0XX9N7FaeT3sA31my17Gs2D4khAk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=v7pZ07fasS4e9TgAi9l2AA&_nc_ss=7a22e&oh=00_AQKQQhw3X3jo5x6Jc9t0EDO0MKdvgf1P4Fy-20Nt20j6hw&oe=6AA483FC)\n\n![Image 12](https://scontent-sea5-1.cdninstagram.com/v/t51.82787-15/798537736_17983270272113482_8426280631139710151_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=Mzk4MDM4Nzg3NzkwMjA0MDEyOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTI1NC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=ORCjcOvoyQ4Q7kNvwFFCAYV&_nc_oc=AdpnQmAFeMQypn-FCSUNctPd5Znzgr9gXY3NtTvJ5n4mSI9r8YBjw9XZ207O9G8sxLY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sea5-1.cdninstagram.com&_nc_gid=v7pZ07fasS4e9TgAi9l2AA&_nc_ss=7a22e&oh=00_AQLUnqloP5qqI9mqPGOQwUHdsJNUfb5wmcohSdxEx2cOUQ&oe=6AA46EB9)"
@@ -9496,6 +10633,10 @@
         "x"
       ],
       "summary": "Gemini·ChatGPT·Claude를 위한 10개 프롬프트를 댓글 스레드에 공유한다고 예고한 X 게시물. 공개 syndication 메타데이터로 원문만 확인됐고, 댓글 4개 내용은 노출되지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -9534,6 +10675,10 @@
         "vvsvs"
       ],
       "summary": "VVSVS의 Cinematique는 150개 영상 연출 기법을 복사 가능한 프롬프트로 정리한 무료 라이브러리. 카메라 워크 41, 조명 30, 구도 21, 장르·스타일 21, 편집 17, 이야기 구성 12, 특수효과 8개로 구성되며 예시 이미지·영상, 난이도 3단계, 분위기 8종 필터를 제공한다고 소개된다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -9570,6 +10715,10 @@
         "text-rendering"
       ],
       "summary": "OpenAI 공식 GPT Image 2.5 프롬프트 가이드를 추천하며, 프롬프트 묘사뿐 아니라 이미지 size·quality 설정이 중요하다고 설명한 게시물. 텍스트가 많은 이미지는 size와 품질 등급을 높여 선명도를 확보하고, 고해상도 결과에는 GPT Image 2.5을 우선 시도하라는 관찰을 제시한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -9607,6 +10756,10 @@
         "v8.2"
       ],
       "summary": "Midjourney v8.2 Edit의 이미지 참조·Quick Edit·Sref 혼합을 이용한 “합체” 워크플로. 공개 캡처에 포함된 작성자 원글과 연속 답글을 구조화했으며, papercraft 인물/고양이 생성 예시, 원본 Sref 재사용·혼합, 자연어 편집, 다양한 프롬프트 실험, Sref 혼합 결과, 캐릭터 시트 활용을 다룬다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "captured",
         "text": "papercraft style, school boy, fullbody, 15 years old, handsome, simple white background --ar 3:4 --sref 2656148540 384978651 --profile s6i7a97 aeslqag --v 8.2\n\npapercraft style, cat, simple white background --ar 3:4 --sref 2656148540 384978651 --profile s6i7a97 aeslqag --v 8.2"
@@ -9635,6 +10788,10 @@
         "unresolved-link"
       ],
       "summary": "사용자가 제공한 Threads 공유 링크. 공개 접근에서 invalid_post로 해석되어 대상 게시물의 원문·작성자·미디어를 확정할 수 없었다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -9665,6 +10822,10 @@
         "x"
       ],
       "summary": "작성자가 “긴 프롬프트는 2층에 둔다”고 예고한 이미지 게시물. 공개 syndication으로 원문과 원본 미디어는 보존했으나 댓글 프롬프트는 확인하지 못했다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -9695,6 +10856,10 @@
         "x"
       ],
       "summary": "작성자가 무료 PDF 도서 다운로드 사이트 9개를 본인댓글 스레드에 제시한다고 예고한 게시물. 본인댓글은 공개 경로에서 확인되지 않았으며, 저작권 침해 가능성이 있는 불법 배포 출처를 수집·정리하지 않는다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -9730,6 +10895,10 @@
         "visual-style"
       ],
       "summary": "작성자가 액션 클립을 만든 프롬프트를 공유하면서도 전체 프롬프트의 그대로 재사용은 생성마다 결과가 달라 불안정하므로 권하지 않는다고 밝힌 사례. 캐릭터 레퍼런스·카메라 모션은 다른 작업에 응용 가능하며, 첫 visual style과 끝 paint style은 서로 짝이 맞아야 스타일 흔들림을 줄일 수 있다고 설명한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -9768,6 +10937,10 @@
         "unity"
       ],
       "summary": "캐릭터·3D 오브젝트, 애니메이션, 음성·효과음, CG 영상, 게임 UI·로직까지의 게임 제작 파이프라인을 AI 코딩 에이전트와 연결하는 공개 프레임워크. UE5·Unity·Godot·Blender·Three.js 지원을 표방한다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -9804,6 +10977,10 @@
         "youmind"
       ],
       "summary": "AI 영상 제작용 무료 자료실 3곳을 묶은 안내. Cinematique는 카메라 워크 41개와 조명 30개를 포함한 150개 연출 프롬프트, Emotion Direction은 25개 감정별 가시적 연기 행동 프롬프트, YouMind는 한국어 UI/프롬프트 본문을 포함한 대형 프롬프트 라이브러리로 소개한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
       "prompt": {
         "status": "unavailable",
         "text": null
@@ -9837,6 +11014,10 @@
         "python"
       ],
       "summary": "Microsoft의 MarkItDown은 PDF 등 다양한 파일을 LLM/텍스트 처리 친화적인 Markdown으로 변환하는 Python 도구. 원 X 게시물은 대량 GitHub 관심과 문서 변환 용도를 소개했다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -9868,6 +11049,10 @@
         "video-downloader"
       ],
       "summary": "X 게시물이 언급한 Douyin 계열 영상 다운로드 프로젝트. 공개 게시물은 대량 영상 다운로드 효율을 주장하지만, 타인의 영상 다운로드·재배포는 저작권·플랫폼 약관 문제를 일으킬 수 있다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
       "prompt": {
         "status": "not_applicable",
         "text": null
@@ -9882,6 +11067,125 @@
         "url": "https://github.com/jiji262/douyin-downloader"
       },
       "captured_at": "2026-09-12T21:42:50+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260913-0001",
+      "title": "X 디자인 수집 사이트 6곳 — UI·웹 레퍼런스 큐레이션",
+      "types": [
+        "community_post",
+        "design_reference",
+        "workflow"
+      ],
+      "tags": [
+        "design-inspiration",
+        "design-on-x",
+        "inspora",
+        "recent-design",
+        "ref-theseeker",
+        "ui-reference",
+        "uiinspoo",
+        "web-design",
+        "webinspoo",
+        "x-design"
+      ],
+      "summary": "X에서 올라온 디자인을 모아 보는 사이트 6곳을 소개한 목록: ref.theseeker.io, uiinspoo.com, recent.design, design-on-x.com, inspora.design, webinspoo.com. 작성자 본인댓글에서 후반 3개를 추가했다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/ccadea9497f66d14a6635aad7f2c5393f0ed5b2419208e2448c234041532337f.jpg",
+        "alt": "X 디자인 수집 사이트 6곳 — UI·웹 레퍼런스 큐레이션"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@0xnimdal/post/DdLt_l8FOvy"
+      },
+      "captured_at": "2026-09-13T13:01:25+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260913-0002",
+      "title": "anything2explainer — 주제에서 5분 설명 영상을 만드는 Claude Code·Codex 스킬",
+      "types": [
+        "github_project",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "claude-code",
+        "codex",
+        "explainer-video",
+        "motion-graphics",
+        "mp4",
+        "quality-control",
+        "remotion",
+        "storyboard",
+        "subtitles",
+        "tts"
+      ],
+      "summary": "주제를 입력하면 자료 조사·대본·스토리보드·TTS·모션그래픽·자막·품질검사·MP4까지 이어지는 설명 영상 제작 스킬. 모든 장면을 Remotion 코드로 그려 스톡 영상 조합이 아닌 코드 기반 모션그래픽을 지향하며, Claude Code·Codex 흐름을 표방한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/2b2966ef7756aef8e26f9648866926bfba25ac7a189221fcdb53687cd25630a2.jpg",
+        "alt": "anything2explainer — 주제에서 5분 설명 영상을 만드는 Claude Code·Codex 스킬"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/Vincentwei1021/anything2explainer"
+      },
+      "captured_at": "2026-09-13T13:02:31+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260913-0003",
+      "title": "AI 1인 사업자 5명 공통 시작 순서 — 수익 주장 분석 예고",
+      "types": [
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "ai-business",
+        "analysis",
+        "case-study",
+        "monetization",
+        "revenue-claim",
+        "solo-founder",
+        "workflow"
+      ],
+      "summary": "AI로 수익을 내는 1인 사업자 5명의 시작 순서가 공통적이었다고 주장하며 후속 정리를 예고한 게시물. 월 2,700만 원부터 연 28억 원까지라는 수치가 언급되지만, 공개 캡처에는 다섯 사례의 실제 분석이나 방법론이 노출되지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/390bf3a7e120d67381231063ecc95af09b368ca4493a5b50960d658fea98b26b.jpg",
+        "alt": "AI 1인 사업자 5명 공통 시작 순서 — 수익 주장 분석 예고"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@zero__gray/post/DdIq4iBiTRA"
+      },
+      "captured_at": "2026-09-13T13:07:14+09:00"
     }
   ]
 }
