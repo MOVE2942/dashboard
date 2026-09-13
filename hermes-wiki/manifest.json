@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260913-230820-AUTO",
+  "release_id": "LIA-20260914-THUMBNAIL-FIX2",
   "card_count": 298,
   "facet_counts": {
     "general": 108,
@@ -2641,8 +2641,8 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "8f0ccaba232701672dde400b9bf742262f956fdbc16e1d0072766c8983fb5ca8",
-      "size": 402029
+      "sha256": "4533297c3ce96f61cfbadf834245ed12899829e4b91cbb745355af64c4d20cb6",
+      "size": 402032
     },
     {
       "path": "index.html",
@@ -2651,14 +2651,14 @@
     },
     {
       "path": "prompts/index.html",
-      "sha256": "a69523fe0a0f4d0d3aa20b2de7d76ebf57c355e2931c7105a536b862cddb098e",
-      "size": 2718
+      "sha256": "d39c54a5b95851f5ad987dafa8890a3817a1b9edb5844454899052a5c6f17ea7",
+      "size": 2750
     },
     {
       "path": "video-generation/index.html",
-      "sha256": "7ce71662cf05f9a5cc6e12eb02057552e1c6a72153c40e3a819b9d6e7180e74e",
-      "size": 2733
+      "sha256": "9f4a0f661fac4f8b811e85dc98579d7e271a6d158ac85a202a6d6b3b37913e95",
+      "size": 2765
     }
   ],
-  "bundle_sha256": "cd4a669291130753a7dfedf01e016491528063465f4d6e757499492480a43d23"
+  "bundle_sha256": "2de486f8eb29b6cb25544c6e1eb9f1efcf5a4835f38a6a4079281c00aa63d167"
 }
