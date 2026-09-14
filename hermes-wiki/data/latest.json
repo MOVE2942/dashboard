@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260914-040025-AUTO",
-  "source_manifest_sha256": "580caf40f1e72772b19a1ddece80715bb902db957b5946963b3bb71fffe0ecaa",
-  "export_manifest_sha256": "4687375d5c193dc861266ffba72ab5547221c37778f3da5a442fa884c0731a70",
-  "generated_at": "2026-09-14T04:00:39+09:00",
+  "release_id": "LIA-20260915-040027-AUTO",
+  "source_manifest_sha256": "7e10f22e89982dcc2f3d7525cfdcb4cfc8e3c216c8bf532725fc834c3ed7208c",
+  "export_manifest_sha256": "8db42324f25d6e56ea9335713a0084c7f4835cf2f3444d58e1a9ee476ec79f34",
+  "generated_at": "2026-09-15T04:00:43+09:00",
   "facet_counts": {
-    "general": 112,
-    "prompts": 150,
-    "video_generation": 93
+    "general": 113,
+    "prompts": 151,
+    "video_generation": 94
   },
   "cards": [
     {
@@ -11418,6 +11418,88 @@
         "url": "https://x.com/CyberTotal2026/status/2098945760817479956"
       },
       "captured_at": "2026-09-14T01:17:45+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260914-0007",
+      "title": "Krea2/H3 All-in-one Workflow v2.0 — MiniMax H3·Krea2·ComfyUI 통합 워크플로",
+      "types": [
+        "community_post",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "48fps",
+        "all-in-one-workflow",
+        "audio-generation",
+        "comfyui",
+        "image-generation",
+        "interpolation",
+        "krea2",
+        "minimax-h3",
+        "upscale",
+        "video-generation"
+      ],
+      "summary": "MiniMax H3와 Krea2를 연동하는 “Krea2/H3 All-in-one Workflow” v2.0 공개 안내. 프롬프트에서 정지 이미지·영상·오디오 생성, 2배 업스케일, 48fps 보간을 일괄 처리하고 저해상도 생성 후 업스케일로 효율화한다고 소개한다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/98cfb971a471a6e514ccf27218e599fe79a6b8a2b7136897b7da8caa46c016af.jpg",
+        "alt": "Krea2/H3 All-in-one Workflow v2.0 — MiniMax H3·Krea2·ComfyUI 통합 워크플로"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/aiaicreate/status/2099137900600557879"
+      },
+      "captured_at": "2026-09-14T12:28:35+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260914-0008",
+      "title": "Claude용 무료 Skills·플러그인·에이전트 디렉터리 예고 — 공급망 검토 필요",
+      "types": [
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "agents",
+        "automation",
+        "claude",
+        "content",
+        "marketing",
+        "plugins",
+        "programming",
+        "sales",
+        "security-review",
+        "skills",
+        "supply-chain"
+      ],
+      "summary": "Claude용 무료 Skills·플러그인·에이전트가 대량으로 모인 웹사이트를 소개하며 판매·마케팅·콘텐츠·프로그래밍·데이터베이스·자동화·분석 도구를 언급한 게시물. 인용 게시물은 Claude·ChatGPT·Gemini용 생산성 스킬 25개를 다룬다고 소개된다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/ad2df2442f6b49974783020a0c19bffb47120797f04fe203e8e3f556748f8d31.jpg",
+        "alt": "Claude용 무료 Skills·플러그인·에이전트 디렉터리 예고 — 공급망 검토 필요"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Nozelcode/status/2099113862205202677"
+      },
+      "captured_at": "2026-09-14T12:29:16+09:00"
     }
   ]
 }
