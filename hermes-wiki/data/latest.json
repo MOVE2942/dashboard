@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260915-040027-AUTO",
-  "source_manifest_sha256": "7e10f22e89982dcc2f3d7525cfdcb4cfc8e3c216c8bf532725fc834c3ed7208c",
-  "export_manifest_sha256": "8db42324f25d6e56ea9335713a0084c7f4835cf2f3444d58e1a9ee476ec79f34",
-  "generated_at": "2026-09-15T04:00:43+09:00",
+  "release_id": "LIA-20260916-040029-AUTO",
+  "source_manifest_sha256": "1579926c0295aa9c2b54514721c328befedfc893fa3751b659d9b065dc7d0267",
+  "export_manifest_sha256": "ae1db619362fb00abd1054e025e2bcc61ebd4289c731d878956a2d6524c093fc",
+  "generated_at": "2026-09-16T04:00:33+09:00",
   "facet_counts": {
-    "general": 113,
-    "prompts": 151,
-    "video_generation": 94
+    "general": 116,
+    "prompts": 156,
+    "video_generation": 98
   },
   "cards": [
     {
@@ -11500,6 +11500,307 @@
         "url": "https://x.com/Nozelcode/status/2099113862205202677"
       },
       "captured_at": "2026-09-14T12:29:16+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260915-0001",
+      "title": "Threads share link — post unavailable (invalid_post)",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "invalid-post",
+        "link-intake",
+        "review-required",
+        "threads"
+      ],
+      "summary": "The supplied Threads share link redirected to Threads invalid_post. A reader route exposed mixed feed content, which is not treated as evidence for this source.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/1809d59ae4128f6a797773ebe72eec90c40e27252c21b08c7c87d2d3fcd74ecf.svg",
+        "alt": "Threads share link — post unavailable (invalid_post)"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/share/_n1pCsE2f/"
+      },
+      "captured_at": "2026-09-15T09:55:38+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260915-0002",
+      "title": "AI short-form video reference sites: Civitai video gallery and three more",
+      "types": [
+        "community_post",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "ai-video",
+        "camera-movement",
+        "civitai",
+        "prompt-reference",
+        "short-form",
+        "video-reference",
+        "x"
+      ],
+      "summary": "Korean X post recommends four reference sites for AI short-form video planning. The visible source specifically identifies Civitai video gallery as a place to inspect other creators’ prompt metadata, camera movement, and detailed visual descriptions.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/f81051b946090aa2d74f9be720a50a8b55946a04a16f97a55ba9b77059fc6e02.webp",
+        "alt": "AI short-form video reference sites: Civitai video gallery and three more"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/BBBang9900/status/2099513501832331735"
+      },
+      "captured_at": "2026-09-15T14:02:48+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260915-0003",
+      "title": "Hypit: code-first AI video language and compiler system",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "ai-video",
+        "code-first-video",
+        "coding-agent",
+        "github",
+        "hypit",
+        "video-workflow",
+        "x"
+      ],
+      "summary": "X post introduces the open-source Hypit project as a code-first video language and compiler system for coding agents. It links the project repository at github.com/hypit-ai/hypit.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/c4f1065a84fad070b219d64cfd568971fb081dc94237408dff853cb6cc8a491d.webp",
+        "alt": "Hypit: code-first AI video language and compiler system"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/gkxspace/status/2099808769043841452"
+      },
+      "captured_at": "2026-09-15T22:10:33+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0001",
+      "title": "Viral AI-video prompt library with videos and prompts",
+      "types": [
+        "community_post",
+        "video_prompt"
+      ],
+      "tags": [
+        "ai-video",
+        "content-analysis",
+        "prompt-library",
+        "video-reference",
+        "viral-format",
+        "x"
+      ],
+      "summary": "Korean X post introduces an AI-video prompt library that pairs example videos with their prompts, intended for analyzing and adapting viral formats such as game-style, BL, and zombie-themed clips.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/f12d9aa87ef8789d00c8a7aa9b016bd5a69256aa6d3014fe11f6f0383e9b9270.webp",
+        "alt": "Viral AI-video prompt library with videos and prompts"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/VibeEverything/status/2099848829306798514"
+      },
+      "captured_at": "2026-09-16T00:45:26+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0002",
+      "title": "Hypit: agent-driven video workflow cloning and variants",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "ai-video",
+        "clone-variants",
+        "coding-agent",
+        "github",
+        "hypit",
+        "video-workflow",
+        "x"
+      ],
+      "summary": "Chinese X post describes the open-source Hypit project as a video-building system for coding agents, covering video-workflow cloning, variants, word-level alignment, B-roll, effects, and subtitle workflows.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/0cf471985f6409624e77e75236d338dbbbd2af7859e2f9e5c3b5bac02a058559.webp",
+        "alt": "Hypit: agent-driven video workflow cloning and variants"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/AISuperDomain/status/2099688942844993834"
+      },
+      "captured_at": "2026-09-16T00:45:38+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0003",
+      "title": "Clypra: local-first open-source video editor",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "clypra",
+        "ffmpeg",
+        "github",
+        "local-first",
+        "react",
+        "tauri",
+        "typescript",
+        "video-editor",
+        "x"
+      ],
+      "summary": "Chinese X post introduces Clypra, an MIT-licensed, local-first video editor built with Tauri, React, TypeScript, and FFmpeg. The public post links to github.com/AIEraDev/Clypra.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/6b14d7a476013a77abd0ea4bfa35d203d68d2121fc346581bbbcdba1e71ace4c.webp",
+        "alt": "Clypra: local-first open-source video editor"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/bkdgiffug/status/2099713067101655121"
+      },
+      "captured_at": "2026-09-16T00:46:23+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0004",
+      "title": "10 GitHub projects for free AI workflows and agents",
+      "types": [
+        "community_post",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "agent-skills",
+        "ai-tools",
+        "github",
+        "librechat",
+        "tradingagents",
+        "workflow",
+        "x"
+      ],
+      "summary": "French X post curates ten GitHub projects for AI workflows, including TradingAgents, LibreChat, Hyperframes, FinceptTerminal, MoneyPrinterTurbo, agentic-inbox, VoxCPM, flowsint, agent-skills, and Nango.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/e2a72b86628af01c00e61ba9157d794446eb993df57a5e50c15e6ed383b63dd4.webp",
+        "alt": "10 GitHub projects for free AI workflows and agents"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/sat0oshi/status/2099452256311550100"
+      },
+      "captured_at": "2026-09-16T00:49:30+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0005",
+      "title": "Close-up first-person portrait prompt: water droplets and intimate framing",
+      "types": [
+        "image_prompt",
+        "image_style"
+      ],
+      "tags": [
+        "close-up",
+        "composition",
+        "expression",
+        "first-person",
+        "image-prompt",
+        "low-light",
+        "portrait",
+        "x"
+      ],
+      "summary": "Chinese X post shares a detailed vertical first-person portrait prompt: an overhead close camera, subject looking up, a hand holding clear water droplets, dim indoor background, soft facial styling, and a gentle expression.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "captured",
+        "text": "从上方以极近距离捕捉的20多岁女性纵向照片。人物占据画面中央的大部分，上身向前倾斜，抬头看着镜头。一只手在嘴边下方轻轻摊开，手掌上承载着少量透明水滴。室内昏暗的背景，以及近距离特有的亲密氛围。"
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/2e2d74bef1a04e26ce7d24bf65057fe7ad53123ad7710133705a338133574311.webp",
+        "alt": "Close-up first-person portrait prompt: water droplets and intimate framing"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/boniusex/status/2099798916707594654"
+      },
+      "captured_at": "2026-09-16T00:59:20+09:00"
     }
   ]
 }
