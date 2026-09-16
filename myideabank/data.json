@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "release_id": "MIB-20260917-0001",
+  "generated_at": "2026-09-16T15:51:37Z",
+  "collection": {
+    "title": "MyIdeaBank",
+    "description": "A public-facing, owner-curated idea archive.",
+    "visibility_notice": "Entries appear only after a separately reviewed release. Source chat records and private operational metadata are never published."
+  },
+  "ideas": [
+    {
+      "title": "인천상륙작전 숏폼 시리즈 구상",
+      "text": "인천상륙작전의 안 알려진 이야기들.\n맥아더장군의 인물상\n상륙작전의 난점\n당시 국제정세\n하이라이트\n시리즈나누어서 숏폼",
+      "published_at": "2026-09-15T09:50:21+09:00"
+    },
+    {
+      "title": "평화롭고 순탄한 일상 구상",
+      "text": "모든 것이 너무나 평화롭고 자연스러우며 순탄하고 기분 좋은 일상\n기분 좋은 기상,\n상쾌한 샤워\n스트레스 없는 출근\n맛있는 식사\n만족스러운 업무 학업 성과\n선 넘지 않고 자연스러우며 스트레스 없는 인간관계\n편안한 퇴근과 포근한 잠자리",
+      "published_at": "2026-09-15T09:54:21+09:00"
+    },
+    {
+      "title": "추리·범죄 캐릭터가 탄 기차/엘리베이터 장면 구상",
+      "text": "기차?엘베?  뭐 그런걸 탔는데\n자꾸 타는 애들이\n김전일, 코난, 덱스터?\n뭐 그런 애들...\n뭔 일이 생길라고...ㄷㄷㄷ",
+      "published_at": "2026-09-16T00:55:51+09:00"
+    },
+    {
+      "title": "셔츠 단추를 푸는 긴장감 연출 구상",
+      "text": "글래머 여성이 셔츠 단추를 하나하나 푼다.\n그 사이로 골짜기가 보인다.\n단추를 다 풀기 전까지는 딴데 못간다.\n이런 류",
+      "published_at": "2026-09-16T01:54:34+09:00"
+    },
+    {
+      "title": "휠체어의 초고속 버기카 변신 구상",
+      "text": "휠체어가 초고속 버기카로 변신",
+      "published_at": "2026-09-16T01:59:59+09:00"
+    },
+    {
+      "title": "호주의 괴물급 야생동물 구상",
+      "text": "호주의 괴물급 야생동물",
+      "published_at": "2026-09-16T02:03:18+09:00"
+    }
+  ]
+}

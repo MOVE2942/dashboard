@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MyIdeaBank public idea archive">
+  <title>MyIdeaBank</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0d1117; --card:#161b22; --text:#e6edf3; --muted:#8b949e; --line:#30363d; --accent:#58a6ff; }
+    * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { width:min(900px,calc(100% - 32px)); margin:64px auto; } h1 { font-size:clamp(2.3rem,7vw,4.5rem); letter-spacing:-.06em; margin:0; }
+    .lede { color:var(--muted); max-width:60ch; } .notice, article { border:1px solid var(--line); background:var(--card); border-radius:14px; padding:20px; margin:24px 0; }
+    .notice { border-left:4px solid var(--accent); } #count { color:var(--muted); font-size:.9rem; } article h2 { margin-top:0; } time { color:var(--muted); font-size:.9rem; }
+    a { color:var(--accent); } footer { color:var(--muted); font-size:.85rem; margin-top:40px; }
+    p.idea-text { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+<main>
+  <header><h1>MyIdeaBank</h1><p class="lede">생각을 보존하는 공개 열람용 아카이브</p></header>
+  <section class="notice">이 페이지는 공개 열람용 복제본입니다. 원문 Telegram 기록, 개인 운영 메타데이터, 내부 경로 및 비공개 메모는 게시하지 않습니다.</section>
+  <p id="count" aria-live="polite">Loading ideas…</p><section id="ideas"></section>
+  <footer>MyIdeaBank · public dashboard view</footer>
+</main>
+<script>
+(async () => {
+  const target = document.getElementById('ideas'), count = document.getElementById('count');
+  try {
+    const response = await fetch('./data.json', {cache:'no-store'}); if (!response.ok) throw new Error('data unavailable');
+    const data = await response.json(); const ideas = Array.isArray(data.ideas) ? data.ideas : [];
+    count.textContent = `${ideas.length} idea${ideas.length === 1 ? '' : 's'} published`;
+    if (!ideas.length) { target.innerHTML = '<article><h2>아직 공개된 아이디어가 없습니다.</h2><p>첫 검토 완료 항목이 이곳에 표시됩니다.</p></article>'; return; }
+    for (const idea of ideas) { const a=document.createElement('article'), h=document.createElement('h2'), p=document.createElement('p'), t=document.createElement('time'); h.textContent=idea.title||'Untitled'; p.className='idea-text'; p.textContent=idea.text||''; t.textContent=idea.published_at||''; a.append(h,p,t); target.append(a); }
+  } catch (_) { count.textContent='Archive data is temporarily unavailable.'; }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "release_id": "MIB-20260917-0001",
+  "generated_at": "2026-09-16T15:51:37Z",
+  "repository": "MOVE2942/dashboard",
+  "public_path": "/dashboard/myideabank/",
+  "files": [
+    {
+      "path": "myideabank/data.json",
+      "sha256": "23ecda37f4d3c1d9a65c56dcc10e0a3967f9285feaf4678594323b848d14b461",
+      "size": 2161
+    },
+    {
+      "path": "myideabank/index.html",
+      "sha256": "21979b487fd0640e147f62b0a1e656132ffb23073a9c89e89838eae26711d509",
+      "size": 2745
+    }
+  ],
+  "bundle_sha256": "4c548c186148181db9da082a9a6418c1c8d62c0a7ef64f1c06a8ce55c7ef613f"
+}
