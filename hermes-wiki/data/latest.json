@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260916-040029-AUTO",
-  "source_manifest_sha256": "1579926c0295aa9c2b54514721c328befedfc893fa3751b659d9b065dc7d0267",
-  "export_manifest_sha256": "ae1db619362fb00abd1054e025e2bcc61ebd4289c731d878956a2d6524c093fc",
-  "generated_at": "2026-09-16T04:00:33+09:00",
+  "release_id": "LIA-20260918-094834-AUTO",
+  "source_manifest_sha256": "b52f6d16d56d1d874b8c5f245902ba10e040fb5fc3146b058ce28f6b9c285daf",
+  "export_manifest_sha256": "703f88d93244414c4d6c74efe8dd02f358f74908fc0d1fe9b907c0a408b5cb38",
+  "generated_at": "2026-09-18T09:48:34+09:00",
   "facet_counts": {
-    "general": 116,
-    "prompts": 156,
-    "video_generation": 98
+    "general": 102,
+    "prompts": 152,
+    "video_generation": 96
   },
   "cards": [
     {
@@ -3488,42 +3488,6 @@
     },
     {
       "schema_version": 2,
-      "public_id": "CR-20260809-0003",
-      "title": "Seedance 2.5 vs MiniMax H3 — 생성 품질 비교 사례",
-      "types": [
-        "ai_tool_model",
-        "video_style"
-      ],
-      "tags": [
-        "korean",
-        "minimax-h3",
-        "model-comparison",
-        "seedance",
-        "seedance2.5",
-        "video-generation"
-      ],
-      "summary": "MiniMax H3 사용 경험 후 Seedance 2.5를 비교한 영상 생성 품질 체감 사례. 게시물은 Seedance 2.5 결과와 하단 프롬프트를 예고하지만, 비로그인 공개 추출에서는 댓글 프롬프트를 확인할 수 없었음. 13.7K views.",
-      "facets": {
-        "prompt": false,
-        "video_generation": true
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/a977354fb1cdee0072449474b2a7cb49a867cd35cd360ed8fc94174eec8c1255.svg",
-        "alt": "Seedance 2.5 vs MiniMax H3 — 생성 품질 비교 사례"
-      },
-      "source": {
-        "platform": "threads",
-        "url": "https://www.threads.com/@afterskin_korea/post/Dbx5UXAGap9"
-      },
-      "captured_at": "2026-08-09T20:17:33+09:00"
-    },
-    {
-      "schema_version": 2,
       "public_id": "CR-20260809-0004",
       "title": "Seedance 2.5 — 카페 앞 3인 한국어 대화·화자 고정 30초 영상 프롬프트",
       "types": [
@@ -3560,40 +3524,6 @@
         "url": "https://www.threads.com/@afterskin_korea/post/Dbz6MAugEk3"
       },
       "captured_at": "2026-08-09T20:21:54+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260809-0005",
-      "title": "Notion Prompt 페이지 — 접근 제한으로 내용 미확인",
-      "types": [
-        "prompt_library",
-        "reference"
-      ],
-      "tags": [
-        "access-restricted",
-        "needs-review",
-        "notion",
-        "prompt"
-      ],
-      "summary": "공유된 Notion Prompt 페이지. 공개 HTTP 접근은 가능했지만, 본문은 로그인/권한 또는 동적 로딩 제한으로 추출되지 않아 제목·내용·작성자를 확인하지 못함.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/3fad30c68e8991ce1eec0b36769e6ef0d618b11e2be7a4e8040364ae02c9408f.png",
-        "alt": "Notion Prompt 페이지 — 접근 제한으로 내용 미확인"
-      },
-      "source": {
-        "platform": "notion",
-        "url": "https://app.notion.com/p/Prompt-3b7fd99f0e5f80b89f83df3784ecc54b?source=copy_link"
-      },
-      "captured_at": "2026-08-09T20:25:58+09:00"
     },
     {
       "schema_version": 2,
@@ -6656,40 +6586,6 @@
     },
     {
       "schema_version": 2,
-      "public_id": "CR-20260813-0018",
-      "title": "Instagram 릴스 — 접근 불가 (게시물 삭제/비공개)",
-      "types": [
-        "blocked",
-        "reference"
-      ],
-      "tags": [
-        "blocked",
-        "instagram",
-        "private",
-        "removed"
-      ],
-      "summary": "Instagram 릴스 접근 불가. \"Post isnt available — link may be broken, or profile removed\" 메시지 반환. 캡챠 또는 권한 제한 가능성. 원본 링크 보존용 카드.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/d526676d23826df3cc6c2f145055b25d831d9a18d48e7349cea16283015a2030.svg",
-        "alt": "Instagram 릴스 — 접근 불가 (게시물 삭제/비공개)"
-      },
-      "source": {
-        "platform": "instagram",
-        "url": "https://www.instagram.com/reel/DbJys9VJgYj/"
-      },
-      "captured_at": "2026-08-13T21:15:23+09:00"
-    },
-    {
-      "schema_version": 2,
       "public_id": "CR-20260813-0019",
       "title": "新清士 — MiniMax H3 사전확인 3Step·본생성 워크플로우 (4090 실측)",
       "types": [
@@ -6799,42 +6695,6 @@
         "url": "https://www.instagram.com/reel/DbJ_nnTMNxE/"
       },
       "captured_at": "2026-08-13T21:21:33+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260814-0001",
-      "title": "Instagram 릴스 — 접근 불가 (게시물 삭제·비공개·CAPTCHA 가능)",
-      "types": [
-        "blocked",
-        "reference"
-      ],
-      "tags": [
-        "blocked",
-        "captcha",
-        "instagram",
-        "private",
-        "removed",
-        "unavailable"
-      ],
-      "summary": "Instagram 릴스 접근 불가. Jina Reader가 \"Post isnt available\" 및 CAPTCHA/권한 제한 경고 반환. 링크 손상, 게시물·프로필 삭제 또는 비공개 가능성. 원본 URL 보존용 카드.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/91240b4d7ef38faf2c193c05ecd0852b848464c5f40a0da3a0a2dfb37d74c5ac.svg",
-        "alt": "Instagram 릴스 — 접근 불가 (게시물 삭제·비공개·CAPTCHA 가능)"
-      },
-      "source": {
-        "platform": "instagram",
-        "url": "https://www.instagram.com/reel/DYrrcj6TVTE/"
-      },
-      "captured_at": "2026-08-14T00:49:38+09:00"
     },
     {
       "schema_version": 2,
@@ -7405,41 +7265,6 @@
     },
     {
       "schema_version": 2,
-      "public_id": "CR-20260815-0015",
-      "title": "Instagram 게시물 DbzT4CGk_E0 — 공개 본문 수집 일시 차단",
-      "types": [
-        "blocked",
-        "reference"
-      ],
-      "tags": [
-        "blocked",
-        "carousel",
-        "instagram",
-        "jina-reader",
-        "source-preserved"
-      ],
-      "summary": "사용자 제공 Instagram 캐러셀 게시물(원본 img_index 쿼리 제거). Jina Reader가 Instagram 도메인의 익명 접근을 DDoS 완화 조치로 일시 차단하여 작성자·본문·이미지 메타데이터를 확인하지 못함. 원본 URL과 수집 제한 상태를 보존.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/edaa7e08385709d5ef613cec51acbc6a5763fc373cafb083bb2168b2d7026dc5.jpg",
-        "alt": "Instagram 게시물 DbzT4CGk_E0 — 공개 본문 수집 일시 차단"
-      },
-      "source": {
-        "platform": "instagram",
-        "url": "https://www.instagram.com/p/DbzT4CGk_E0/"
-      },
-      "captured_at": "2026-08-15T17:56:04+09:00"
-    },
-    {
-      "schema_version": 2,
       "public_id": "CR-20260815-0016",
       "title": "ToroJushiAi — AI 아트 프롬프트 공유 (답글 안내)",
       "types": [
@@ -7509,41 +7334,6 @@
         "url": "https://x.com/sdjn_wgc/status/2088563753407135853"
       },
       "captured_at": "2026-08-15T23:58:27+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260816-0001",
-      "title": "AI Dance Paradise — X Article 링크 공유 (본문 수집 제한)",
-      "types": [
-        "blocked",
-        "community_post"
-      ],
-      "tags": [
-        "ai-dance",
-        "ai-dance-paradise",
-        "blocked",
-        "source-preserved",
-        "x-article"
-      ],
-      "summary": "AI Dance Paradise의 X 게시물. 본문 없이 X Article 링크(2088504597979791360)만 공유. X Article 본문은 Jina Reader X 도메인 DDoS 완화 차단으로 확인 불가. 원 게시물과 연결된 Article URL을 보존. 209💗, 답글 3건.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/e9ae1df7807efb858ab39001acd9ca4f2cdc7d88c8e74ddbc8256e8ce6087797.jpg",
-        "alt": "AI Dance Paradise — X Article 링크 공유 (본문 수집 제한)"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/LoveUolanda/status/2088505520059826542"
-      },
-      "captured_at": "2026-08-16T02:47:31+09:00"
     },
     {
       "schema_version": 2,
@@ -8352,39 +8142,6 @@
         "url": "https://www.threads.com/share/BAZbiyVGze/"
       },
       "captured_at": "2026-08-20T16:05:50+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260820-0005",
-      "title": "Threads 공유 게시물 _yXx__b7W — 공개 접근 차단으로 본문 미확인",
-      "types": [
-        "reference"
-      ],
-      "tags": [
-        "access-blocked",
-        "link-intake",
-        "review-needed",
-        "threads"
-      ],
-      "summary": "원본 Threads 공유 URL 보존. Jina Reader의 HTTP·HTTPS 경로가 ERR_BLOCKED_BY_CLIENT로 차단되었고, 비로그인 페이지 메타데이터도 반환되지 않아 작성자·본문·미디어를 확인할 수 없음. 접근 제한 상태로 등록.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/1c66e930e13546166b167a967043bc727f29aaf04567ae0193d095564bdb7c5c.svg",
-        "alt": "Threads 공유 게시물 _yXx__b7W — 공개 접근 차단으로 본문 미확인"
-      },
-      "source": {
-        "platform": "threads",
-        "url": "https://www.threads.com/share/_yXx__b7W/"
-      },
-      "captured_at": "2026-08-20T16:07:28+09:00"
     },
     {
       "schema_version": 2,
@@ -9459,44 +9216,6 @@
     },
     {
       "schema_version": 2,
-      "public_id": "CR-20260827-0003",
-      "title": "미국 코인 주차장 영웅담 — 시나리오 레퍼런스",
-      "types": [
-        "inspiration",
-        "workflow"
-      ],
-      "tags": [
-        "american-magazine",
-        "anecdote",
-        "hero-story",
-        "parking",
-        "scenario",
-        "storytelling",
-        "twist",
-        "urban-legend"
-      ],
-      "summary": "미국 길거리 코인 주차장의 과태료 제도와 억울한 딱지 문제를 소재로 한 영웅담 서사. 도입부의 제도적 압박과 뒤이은 반전·해결 구조를 시나리오 소재로 분류한다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/cafd9e38bcc54c92001c516fd47ee3573df3090d672a5d62fecf3f9fddf1aaaa.svg",
-        "alt": "미국 코인 주차장 영웅담 — 시나리오 레퍼런스"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/Hellomeow0/status/2092593107799773440"
-      },
-      "captured_at": "2026-08-27T11:27:08+09:00"
-    },
-    {
-      "schema_version": 2,
       "public_id": "CR-20260828-0001",
       "title": "shuohao-skills — AI 단편극 제작 문서 파이프라인",
       "types": [
@@ -9660,44 +9379,6 @@
     },
     {
       "schema_version": 2,
-      "public_id": "CR-20260830-0001",
-      "title": "GPT Image2 프롬프트 사이트 10선 모음",
-      "types": [
-        "community_post",
-        "image_prompt",
-        "workflow"
-      ],
-      "tags": [
-        "ai-image",
-        "creative-reference",
-        "gpt-image2",
-        "prompt-engineering",
-        "prompt-library",
-        "reference-sites",
-        "resource-list"
-      ],
-      "summary": "GPT Image2 프롬프트를 이미지 예시와 함께 복사해 활용할 수 있는 사이트 10개를 정리한 리소스 모음 게시물. 공개 syndication 메타데이터로 제목·원본 미디어·게시물 본문을 확보했다.",
-      "facets": {
-        "prompt": true,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "unavailable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/e4a95c593dbe969b1a55ab6741ffaeac572dd5c02d5bc50bf76253980d93e6b4.jpg",
-        "alt": "GPT Image2 프롬프트 사이트 10선 모음"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/MMMusol/status/2093925145270206673"
-      },
-      "captured_at": "2026-08-30T19:40:47+09:00"
-    },
-    {
-      "schema_version": 2,
       "public_id": "CR-20260830-0002",
       "title": "promptwhat Soul 2 스킬 — Claude Code·Codex 설치/명령 가이드",
       "types": [
@@ -9735,169 +9416,6 @@
         "url": "https://x.com/VibeEverything/status/2093922109076750701"
       },
       "captured_at": "2026-08-30T19:41:30+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260830-0003",
-      "title": "이미지 역추론 프롬프트 템플릿 모음",
-      "types": [
-        "community_post",
-        "image_prompt",
-        "workflow"
-      ],
-      "tags": [
-        "ai-image",
-        "color",
-        "composition",
-        "image-reverse-prompt",
-        "lighting",
-        "prompt-engineering",
-        "style-analysis",
-        "visual-analysis"
-      ],
-      "summary": "이미지에서 주제·스타일·색채·광영·구도·질감·해상도·세부 요소를 분석해 재사용 가능한 프롬프트로 역추론하는 템플릿 모음. 공개 메타데이터에는 범용 이미지 역추론용 기본 문장이 포함된다.",
-      "facets": {
-        "prompt": true,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "captured",
-        "text": "详细反推这张图片的完整提示词，包含主体、风格、色彩、光影、构图、质感、分辨率和细节描述。分析这张图片的视觉元素、色调、氛围、技法和关键词，生成可直接用于…"
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/521d57dc5a1b0157e848042f3e123ddc77c3290a3822e61727761b1923b3169a.jpg",
-        "alt": "이미지 역추론 프롬프트 템플릿 모음"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/MMMusol/status/2093584457412517905"
-      },
-      "captured_at": "2026-08-30T21:50:18+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260831-0001",
-      "title": "H3 로컬 50초 영상 — 마지막 프레임 연장법과 후반 프롬프트",
-      "types": [
-        "community_post",
-        "video_prompt",
-        "workflow"
-      ],
-      "tags": [
-        "ai-video",
-        "comfyui",
-        "frame-continuation",
-        "h3",
-        "last-frame",
-        "local-generation",
-        "long-video",
-        "minimax-h3",
-        "video-editing",
-        "video-extension"
-      ],
-      "summary": "로컬 H3로 생성한 25초 영상의 마지막 프레임을 다음 25초 생성의 첫 프레임으로 사용해 약 50초 길이로 이어 붙이는 방법. 게시자는 후반 구간을 Doubao가 이어 쓰고 CapCut으로 결합했다고 설명한다.",
-      "facets": {
-        "prompt": true,
-        "video_generation": true
-      },
-      "prompt": {
-        "status": "captured",
-        "text": "主角：20岁年轻酷飒东亚少女，黑色齐刘海长直发，墨绿色短皮衣、黑色露脐背心、百褶短裙，大腿绑带配饰，高筒厚底皮靴，单手扛一把巨型残破巨剑，暗黑朋克战斗风，灰色纯色背景，精细布料皮革纹理，电影级渲染，超高清；"
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/3b289e77bbf58efaf263f51d0b88d0b8dff059da1df961ba5212a1b3092912e2.jpg",
-        "alt": "H3 로컬 50초 영상 — 마지막 프레임 연장법과 후반 프롬프트"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/PixelAigc/status/2093605050551767349"
-      },
-      "captured_at": "2026-08-31T15:43:07+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260831-0002",
-      "title": "codex-chatgpt-web — ChatGPT Web을 Codex 네이티브 모델로 연결",
-      "types": [
-        "ai_tool_model",
-        "github_project",
-        "workflow"
-      ],
-      "tags": [
-        "agent-tools",
-        "browser-automation",
-        "chatgpt-web",
-        "codex",
-        "mcp",
-        "model-bridge",
-        "openai-tunnel",
-        "security-review",
-        "unofficial"
-      ],
-      "summary": "Codex의 작업 UI·문맥·도구 수명주기는 유지한 채, 선택된 모델 요청을 내장 브라우저의 ChatGPT Temporary Chat으로 전달하는 비공식 브리지. 브라우저 전용 모드와 MCP 기반 full-harness 모드를 제공한다고 설명한다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/555491cf5b95dc6966c3e2991e11a3cdcc90e14de800989f9f12838077c81ce2.png",
-        "alt": "codex-chatgpt-web — ChatGPT Web을 Codex 네이티브 모델로 연결"
-      },
-      "source": {
-        "platform": "github",
-        "url": "https://github.com/miuuyy/codex-chatgpt-web"
-      },
-      "captured_at": "2026-08-31T15:44:52+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260901-0001",
-      "title": "16GB VRAM에서 MoE 로컬 LLM — FreeToken·시스템 메모리 병목 관찰",
-      "types": [
-        "ai_tool_model",
-        "community_post",
-        "workflow"
-      ],
-      "tags": [
-        "ai-infrastructure",
-        "decode",
-        "freetoken",
-        "local-llm",
-        "memory-bandwidth",
-        "moe",
-        "nvfp4",
-        "prefill",
-        "qwen",
-        "rtx-5080",
-        "system-ram",
-        "vram"
-      ],
-      "summary": "RTX 5080 16GB VRAM 환경에서 FreeToken 기반 MoE 구동 방식을 탐색한 실사용 관찰. 글쓴이는 Linux에서 Qwen3.6-35B-A3B NVFP4를 구동하며 약 60 tok/s decode와 1,500 tok/s 이상 prefill을 언급하고, VRAM·시스템 RAM·CPU·PCIe·전문가 캐시를 함께 활용하는 병목 완화 구조가 메모리/대역폭 수요를 높일 수 있다고 해석한다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/0d18cab5efb4146274ee25aa51afce67d84d3b1fe3946c4ae236228d1bc9b074.svg",
-        "alt": "16GB VRAM에서 MoE 로컬 LLM — FreeToken·시스템 메모리 병목 관찰"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/gmpnavi/status/2094253400687034730"
-      },
-      "captured_at": "2026-09-01T01:14:04+09:00"
     },
     {
       "schema_version": 2,
@@ -9945,45 +9463,6 @@
     },
     {
       "schema_version": 2,
-      "public_id": "CR-20260901-0003",
-      "title": "Higgsfield 팀 인사이트 — 프롬프트 설계 변화로 단편 제작 인력·기간 축소",
-      "types": [
-        "community_post",
-        "video_style",
-        "workflow"
-      ],
-      "tags": [
-        "ai-video",
-        "clip-production",
-        "creative-team",
-        "higgsfield",
-        "production-workflow",
-        "prompt-design",
-        "source-release",
-        "worldbuilding"
-      ],
-      "summary": "게시물은 Higgsfield가 두 번째 편의 소스를 포함해 197개 클립을 공개했다고 소개하며, 동일 팀·세계관·모델 조건에서 프롬프트 작성 방식의 변화만으로 13명이 14일 걸린 제작을 4개월 뒤 1명이 3일에 수행했다는 제작 인사이트를 제시한다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": true
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/004e98310520cd38e6ed7bbfc015b930168dff7fdf43cbf3445d58d562599778.svg",
-        "alt": "Higgsfield 팀 인사이트 — 프롬프트 설계 변화로 단편 제작 인력·기간 축소"
-      },
-      "source": {
-        "platform": "threads",
-        "url": "https://www.threads.com/@icenovel.ai/post/Dctt1Pdj1QS"
-      },
-      "captured_at": "2026-09-01T08:27:26+09:00"
-    },
-    {
-      "schema_version": 2,
       "public_id": "CR-20260901-0004",
       "title": "AI 영상 속도감 연출 — 지면 20~30cm 로우 앵글과 광각",
       "types": [
@@ -10022,47 +9501,6 @@
         "url": "https://www.threads.com/@byulmiso/post/Dcr-AV_ETIp"
       },
       "captured_at": "2026-09-01T08:38:53+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260901-0005",
-      "title": "GPT 이미지 — 사진 인물·포즈 보존 한국 전통 진채화 스타일 변환",
-      "types": [
-        "community_post",
-        "image_prompt",
-        "image_style"
-      ],
-      "tags": [
-        "gpt-image",
-        "hanji",
-        "hanok",
-        "identity-preservation",
-        "jinchaehwa",
-        "korean-painting",
-        "minhwa",
-        "portrait-style-transfer",
-        "pose-preservation",
-        "sebpil-chaesaek"
-      ],
-      "summary": "원본 사진의 이목구비·표정·포즈를 최대한 유지하면서 민화·진채화·세필채색 계열의 한국 전통 회화 스타일을 입히는 GPT 이미지 변환 레퍼런스. 한지 질감, 섬세한 붓선, 광물 안료, 한옥 창호·소나무·들국화·붉은 인장을 한국적 시각 요소로 제시한다.",
-      "facets": {
-        "prompt": true,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "unavailable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/c070c14578462459411caf1d1765d8b8da2120906729beefc5304e80da6c4079.jpg",
-        "alt": "GPT 이미지 — 사진 인물·포즈 보존 한국 전통 진채화 스타일 변환"
-      },
-      "source": {
-        "platform": "threads",
-        "url": "https://www.threads.com/@neotypeska/post/Dcs5PtjEoiq"
-      },
-      "captured_at": "2026-09-01T08:40:23+09:00"
     },
     {
       "schema_version": 2,
@@ -10108,43 +9546,6 @@
     },
     {
       "schema_version": 2,
-      "public_id": "CR-20260902-0002",
-      "title": "Claude Code 무료 무제한 사용 — 영상 편집 사례 릴",
-      "types": [
-        "ai_tool_model",
-        "community_post",
-        "workflow"
-      ],
-      "tags": [
-        "ai-tools",
-        "claude-code",
-        "free-tier",
-        "reel",
-        "unlimited",
-        "video-editing"
-      ],
-      "summary": "클로드 코드를 무료로 무제한 사용하며 이 릴을 편집했다고 소개한 콘텐츠. 댓글 다수가 클로드 관련 반응이며, 일부는 페이블5/코덱스 비교 언급도 있다. 게시물 제목 외에는 구체 설정·절차·검증 근거가 공개 본문에 없다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/4751e4a46d0b6e522151ca53f34709d0dc0d46744b59d5d7d160ad4177abad8b.jpg",
-        "alt": "Claude Code 무료 무제한 사용 — 영상 편집 사례 릴"
-      },
-      "source": {
-        "platform": "instagram",
-        "url": "https://www.instagram.com/reel/DcapnJpgapu/"
-      },
-      "captured_at": "2026-09-02T01:30:40+09:00"
-    },
-    {
-      "schema_version": 2,
       "public_id": "CR-20260902-0003",
       "title": "Camera Movement AI Prompts — AI 영상 카메라 무브먼트 프롬프트 라이브러리",
       "types": [
@@ -10185,38 +9586,6 @@
         "url": "https://aicameramovements.com/"
       },
       "captured_at": "2026-09-02T14:21:03+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260903-0001",
-      "title": "Threads 공유 링크 BAP3Xj7y2w — 원문 미확인 보존",
-      "types": [
-        "community_post"
-      ],
-      "tags": [
-        "reference-intake",
-        "threads",
-        "unresolved-link"
-      ],
-      "summary": "사용자가 제공한 Threads 공유 링크. 공개 접근에서 share URL이 invalid_post로 해석되어 대상 게시물 원문·작성자·미디어를 확정할 수 없었다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/29a4e42eb7466cbb8234ab4ef02070936ccfad1fa4bb3a18e28aef7153e9c843.svg",
-        "alt": "Threads 공유 링크 BAP3Xj7y2w — 원문 미확인 보존"
-      },
-      "source": {
-        "platform": "threads",
-        "url": "https://www.threads.com/share/BAP3Xj7y2w/"
-      },
-      "captured_at": "2026-09-03T01:24:55+09:00"
     },
     {
       "schema_version": 2,
@@ -10344,40 +9713,6 @@
     },
     {
       "schema_version": 2,
-      "public_id": "CR-20260903-0005",
-      "title": "Threads 공유 링크 BAXeEsyfPG — 댓글 프롬프트 미확인 보존",
-      "types": [
-        "community_post",
-        "video_prompt"
-      ],
-      "tags": [
-        "comment-prompts",
-        "reference-intake",
-        "threads",
-        "unresolved-link"
-      ],
-      "summary": "사용자가 댓글의 프롬프트 수집을 요청한 Threads 공유 링크. 공개 share URL이 대상 게시물 대신 로그인 피드로 전환되어 원문·댓글·프롬프트를 식별할 수 없었다.",
-      "facets": {
-        "prompt": true,
-        "video_generation": true
-      },
-      "prompt": {
-        "status": "unavailable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/1754982fd6c728b36a7d9db95d3b09e8e15c8408e08e662c70e5c11433cc53e9.svg",
-        "alt": "Threads 공유 링크 BAXeEsyfPG — 댓글 프롬프트 미확인 보존"
-      },
-      "source": {
-        "platform": "threads",
-        "url": "https://www.threads.com/share/BAXeEsyfPG/"
-      },
-      "captured_at": "2026-09-03T09:38:05+09:00"
-    },
-    {
-      "schema_version": 2,
       "public_id": "CR-20260903-0006",
       "title": "Passport Rush 제작 인사이트 — 본인댓글·프롬프트 수집",
       "types": [
@@ -10418,86 +9753,6 @@
         "url": "https://www.threads.com/@prompt_what/post/Dc0GPNBClQl"
       },
       "captured_at": "2026-09-03T16:39:21+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260907-0001",
-      "title": "GPT 이미지 비밀 코드 12개 — 이미지 변환 기능 모음",
-      "types": [
-        "community_post",
-        "image_prompt",
-        "workflow"
-      ],
-      "tags": [
-        "360view",
-        "droneview",
-        "gpt-image",
-        "hdreal",
-        "image-editing",
-        "multiview",
-        "photo-enhancement",
-        "product-visual",
-        "secret-codes",
-        "xray"
-      ],
-      "summary": "GPT 이미지에 사진과 /코드를 넣어 화질 개선, 제품 광고·프리미엄 쇼케이스, 360도·탑뷰·분해도, 드론샷 확장, 인물 합성, 원단 디테일·X-ray 등을 처리한다고 소개한다. 공개 캡션에서 /HDREAL, /360VIEW, /DRONEVIEW, /XRAY 예시를 확인했다.",
-      "facets": {
-        "prompt": true,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "unavailable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/2298267c1905e25a248dbb3a63c3facdbf58347e609eaa6d04fbe0742b184349.jpg",
-        "alt": "GPT 이미지 비밀 코드 12개 — 이미지 변환 기능 모음"
-      },
-      "source": {
-        "platform": "instagram",
-        "url": "https://www.instagram.com/p/Dc3MoY4kzbU/"
-      },
-      "captured_at": "2026-09-07T21:25:32+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260907-0002",
-      "title": "Sergio Duce — 단순 선과 그림자로 만드는 이중 의미 일러스트",
-      "types": [
-        "community_post",
-        "image_style",
-        "inspiration"
-      ],
-      "tags": [
-        "editorial-art",
-        "illustration",
-        "minimalism",
-        "philosophical-satire",
-        "sergio-duce",
-        "shadow-art",
-        "visual-metaphor",
-        "yo-runner"
-      ],
-      "summary": "스페인 일러스트레이터 Sergio Duce의 작품을 소개한 콘텐츠. 평범한 일상 장면의 그림자에 다른 본질·상상 세계를 숨기고, 최소한의 선으로 교육·가족·관계·디지털 중독 등을 성찰하게 만드는 시각적 은유를 다룬다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/70a07b1b3db5ec0b10e31f244ee80b9221f98b992d8196bf66d19c1feb6b10f2.jpg",
-        "alt": "Sergio Duce — 단순 선과 그림자로 만드는 이중 의미 일러스트"
-      },
-      "source": {
-        "platform": "instagram",
-        "url": "https://www.instagram.com/p/Dc3E4RNlBOO/"
-      },
-      "captured_at": "2026-09-07T21:25:32+09:00"
     },
     {
       "schema_version": 2,
@@ -10618,42 +9873,6 @@
     },
     {
       "schema_version": 2,
-      "public_id": "CR-20260907-0006",
-      "title": "AI 모델을 위한 10개 프롬프트 스레드 — 본인댓글 미수집 보존",
-      "types": [
-        "community_post",
-        "workflow"
-      ],
-      "tags": [
-        "ai-prompts",
-        "chatgpt",
-        "claude",
-        "gemini",
-        "unresolved-comments",
-        "x"
-      ],
-      "summary": "Gemini·ChatGPT·Claude를 위한 10개 프롬프트를 댓글 스레드에 공유한다고 예고한 X 게시물. 공개 syndication 메타데이터로 원문만 확인됐고, 댓글 4개 내용은 노출되지 않았다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/4b7e9333e6aa2fb844d519915fcdca6c3fcbcbe0fa7a71e965fd802b241e475d.svg",
-        "alt": "AI 모델을 위한 10개 프롬프트 스레드 — 본인댓글 미수집 보존"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/josesilesdata/status/2095965653639348515"
-      },
-      "captured_at": "2026-09-07T21:26:09+09:00"
-    },
-    {
-      "schema_version": 2,
       "public_id": "CR-20260908-0001",
       "title": "Cinematique — AI 영상 연출 기법 150개 프롬프트 라이브러리",
       "types": [
@@ -10696,46 +9915,6 @@
     },
     {
       "schema_version": 2,
-      "public_id": "CR-20260910-0001",
-      "title": "GPT Image 2.5 프롬프트 가이드 — 텍스트 이미지 size·quality 설정 인사이트",
-      "types": [
-        "ai_tool_model",
-        "community_post",
-        "image_prompt"
-      ],
-      "tags": [
-        "gpt-image-2.5",
-        "high-resolution",
-        "image-generation",
-        "openai",
-        "parameters",
-        "prompt-guide",
-        "quality",
-        "size",
-        "text-rendering"
-      ],
-      "summary": "OpenAI 공식 GPT Image 2.5 프롬프트 가이드를 추천하며, 프롬프트 묘사뿐 아니라 이미지 size·quality 설정이 중요하다고 설명한 게시물. 텍스트가 많은 이미지는 size와 품질 등급을 높여 선명도를 확보하고, 고해상도 결과에는 GPT Image 2.5을 우선 시도하라는 관찰을 제시한다.",
-      "facets": {
-        "prompt": true,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "unavailable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/7f6f80cbbe53b661c4eab17d4e4d8b6bf9fe9af995b18c7d8296073d6b8ca5dc.jpg",
-        "alt": "GPT Image 2.5 프롬프트 가이드 — 텍스트 이미지 size·quality 설정 인사이트"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/LinearUncle/status/2097574023358279755"
-      },
-      "captured_at": "2026-09-10T00:43:19+09:00"
-    },
-    {
-      "schema_version": 2,
       "public_id": "CR-20260910-0002",
       "title": "Midjourney v8.2 Edit 합체 워크플로 — 본인댓글 전체 공개 수집",
       "types": [
@@ -10774,145 +9953,6 @@
         "url": "https://www.threads.com/@imhealingmachine/post/DdET8yBjxdg"
       },
       "captured_at": "2026-09-10T08:45:11+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260910-0003",
-      "title": "Threads 공유 링크 BAZ2u9i8Er — 원문 미확인 보존",
-      "types": [
-        "community_post"
-      ],
-      "tags": [
-        "reference-intake",
-        "threads",
-        "unresolved-link"
-      ],
-      "summary": "사용자가 제공한 Threads 공유 링크. 공개 접근에서 invalid_post로 해석되어 대상 게시물의 원문·작성자·미디어를 확정할 수 없었다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/3618233da9671cad14a7e5899cbafd662383df9a5810597209e656a5ac6cdadd.svg",
-        "alt": "Threads 공유 링크 BAZ2u9i8Er — 원문 미확인 보존"
-      },
-      "source": {
-        "platform": "threads",
-        "url": "https://www.threads.com/share/BAZ2u9i8Er/"
-      },
-      "captured_at": "2026-09-10T08:45:11+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260910-0004",
-      "title": "긴 프롬프트 예고 X 게시물 — 댓글 프롬프트 미확인 보존",
-      "types": [
-        "community_post",
-        "image_prompt"
-      ],
-      "tags": [
-        "image-prompt",
-        "prompt",
-        "unresolved-comments",
-        "x"
-      ],
-      "summary": "작성자가 “긴 프롬프트는 2층에 둔다”고 예고한 이미지 게시물. 공개 syndication으로 원문과 원본 미디어는 보존했으나 댓글 프롬프트는 확인하지 못했다.",
-      "facets": {
-        "prompt": true,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "unavailable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/00a8f7c223332a9f2c06e6cb18d758171331a18dc713f25da43f5df7451dd22c.jpg",
-        "alt": "긴 프롬프트 예고 X 게시물 — 댓글 프롬프트 미확인 보존"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/hxhxhx0916/status/2097628426115088642"
-      },
-      "captured_at": "2026-09-10T15:03:09+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260910-0005",
-      "title": "무료 PDF 도서 다운로드 사이트 예고 X 스레드 — 본인댓글 비수집 보존",
-      "types": [
-        "community_post"
-      ],
-      "tags": [
-        "books",
-        "copyright-risk",
-        "pdf",
-        "unresolved-comments",
-        "x"
-      ],
-      "summary": "작성자가 무료 PDF 도서 다운로드 사이트 9개를 본인댓글 스레드에 제시한다고 예고한 게시물. 본인댓글은 공개 경로에서 확인되지 않았으며, 저작권 침해 가능성이 있는 불법 배포 출처를 수집·정리하지 않는다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/315d750ebef8ec5b8dad4e4a2d6f909beed6a836ab3fbe49051000f9d374165c.svg",
-        "alt": "무료 PDF 도서 다운로드 사이트 예고 X 스레드 — 본인댓글 비수집 보존"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/ValeriA_Tech/status/2097625309281751125"
-      },
-      "captured_at": "2026-09-10T15:03:10+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260910-0006",
-      "title": "스타일 짝맞춤 액션 클립 프롬프트 — 범용성 한계 메모",
-      "types": [
-        "community_post",
-        "video_prompt",
-        "workflow"
-      ],
-      "tags": [
-        "action-clip",
-        "ai-video",
-        "camera-motion",
-        "character-reference",
-        "paint-style",
-        "prompt-stability",
-        "style-consistency",
-        "visual-style"
-      ],
-      "summary": "작성자가 액션 클립을 만든 프롬프트를 공유하면서도 전체 프롬프트의 그대로 재사용은 생성마다 결과가 달라 불안정하므로 권하지 않는다고 밝힌 사례. 캐릭터 레퍼런스·카메라 모션은 다른 작업에 응용 가능하며, 첫 visual style과 끝 paint style은 서로 짝이 맞아야 스타일 흔들림을 줄일 수 있다고 설명한다.",
-      "facets": {
-        "prompt": true,
-        "video_generation": true
-      },
-      "prompt": {
-        "status": "unavailable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/d453385e5790360b4abe64df9024ed11fc6e38bf584e06e14ee4cab6399cb927.jpg",
-        "alt": "스타일 짝맞춤 액션 클립 프롬프트 — 범용성 한계 메모"
-      },
-      "source": {
-        "platform": "threads",
-        "url": "https://www.threads.com/@rilto1619/post/DdGXQcoCkf7"
-      },
-      "captured_at": "2026-09-10T19:23:17+09:00"
     },
     {
       "schema_version": 2,
@@ -11035,41 +10075,6 @@
     },
     {
       "schema_version": 2,
-      "public_id": "CR-20260912-0002",
-      "title": "douyin-downloader — 짧은 영상 다운로드 자동화 프로젝트 언급",
-      "types": [
-        "community_post",
-        "github_project"
-      ],
-      "tags": [
-        "copyright-risk",
-        "douyin",
-        "reference-only",
-        "short-video",
-        "video-downloader"
-      ],
-      "summary": "X 게시물이 언급한 Douyin 계열 영상 다운로드 프로젝트. 공개 게시물은 대량 영상 다운로드 효율을 주장하지만, 타인의 영상 다운로드·재배포는 저작권·플랫폼 약관 문제를 일으킬 수 있다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/2d31c6c0b90f940f6536aca74cd8f8453a3d4bfb9191ae3ffcb7d5fe69c6dc86.png",
-        "alt": "douyin-downloader — 짧은 영상 다운로드 자동화 프로젝트 언급"
-      },
-      "source": {
-        "platform": "github",
-        "url": "https://github.com/jiji262/douyin-downloader"
-      },
-      "captured_at": "2026-09-12T21:42:50+09:00"
-    },
-    {
-      "schema_version": 2,
       "public_id": "CR-20260913-0001",
       "title": "X 디자인 수집 사이트 6곳 — UI·웹 레퍼런스 큐레이션",
       "types": [
@@ -11152,198 +10157,6 @@
     },
     {
       "schema_version": 2,
-      "public_id": "CR-20260913-0003",
-      "title": "AI 1인 사업자 5명 공통 시작 순서 — 수익 주장 분석 예고",
-      "types": [
-        "community_post",
-        "workflow"
-      ],
-      "tags": [
-        "ai-business",
-        "analysis",
-        "case-study",
-        "monetization",
-        "revenue-claim",
-        "solo-founder",
-        "workflow"
-      ],
-      "summary": "AI로 수익을 내는 1인 사업자 5명의 시작 순서가 공통적이었다고 주장하며 후속 정리를 예고한 게시물. 월 2,700만 원부터 연 28억 원까지라는 수치가 언급되지만, 공개 캡처에는 다섯 사례의 실제 분석이나 방법론이 노출되지 않았다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/390bf3a7e120d67381231063ecc95af09b368ca4493a5b50960d658fea98b26b.jpg",
-        "alt": "AI 1인 사업자 5명 공통 시작 순서 — 수익 주장 분석 예고"
-      },
-      "source": {
-        "platform": "threads",
-        "url": "https://www.threads.com/@zero__gray/post/DdIq4iBiTRA"
-      },
-      "captured_at": "2026-09-13T13:07:14+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260914-0001",
-      "title": "GitHub 무료 도구 10선 예고 — yt-dlp·Stirling-PDF 등",
-      "types": [
-        "community_post",
-        "github_project",
-        "workflow"
-      ],
-      "tags": [
-        "document-tools",
-        "file-sharing",
-        "github-tools",
-        "immich",
-        "localsend",
-        "open-source",
-        "photo-management",
-        "stirling-pdf",
-        "yt-dlp"
-      ],
-      "summary": "GitHub 무료 도구 10개를 소개한다고 예고한 X 게시물. 공개 원문에서는 yt-dlp와 Stirling-PDF를 언급했고, 공개 첨부 이미지에서는 yt-dlp, LocalSend(근거리 기기 간 로컬 네트워크 파일·메시지 공유), Immich(고성능 셀프호스팅 사진·영상 관리)를 확인했다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/7ebe5015a387a2abc0998254e51ff3b574173350961c9bb6fbeafff2c396f19c.png",
-        "alt": "GitHub 무료 도구 10선 예고 — yt-dlp·Stirling-PDF 등"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/shanyanggm/status/2099073712826069099"
-      },
-      "captured_at": "2026-09-14T00:30:32+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260914-0002",
-      "title": "RuView — WiFi CSI 기반 공간·활력징후·존재 감지 프로젝트",
-      "types": [
-        "github_project",
-        "privacy_risk",
-        "smart_home"
-      ],
-      "tags": [
-        "consent",
-        "esp32",
-        "home-assistant",
-        "homekit",
-        "matter",
-        "presence-detection",
-        "privacy",
-        "spatial-sensing",
-        "vital-signs",
-        "wifi-csi"
-      ],
-      "summary": "WiFi Channel State Information(CSI)을 이용해 카메라 없이 존재·점유·움직임·호흡·심박·자세 등을 추정한다고 주장하는 Rust 기반 공간 감지 프로젝트. ESP32 센서와 Home Assistant·Apple Home·Google Home·Alexa·Matter 연동을 표방한다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/d1da28e6be5c6aa4ad97320f8882abdf17475b8f02f9ae83aa28a1eb317738d4.gif",
-        "alt": "RuView — WiFi CSI 기반 공간·활력징후·존재 감지 프로젝트"
-      },
-      "source": {
-        "platform": "github",
-        "url": "https://github.com/ruvnet/RuView#see-through-walls-with-wifi"
-      },
-      "captured_at": "2026-09-14T01:09:30+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260914-0003",
-      "title": "웹페이지를 AI용 구조화 데이터로 바꾸는 GitHub 도구 10선 예고",
-      "types": [
-        "community_post",
-        "github_project",
-        "workflow"
-      ],
-      "tags": [
-        "ai-data",
-        "crawl4ai",
-        "firecrawl",
-        "javascript-rendering",
-        "rate-limits",
-        "robots",
-        "structured-data",
-        "web-crawling",
-        "web-scraping"
-      ],
-      "summary": "웹사이트를 JavaScript 렌더링까지 처리해 AI용 구조화 데이터로 변환하는 GitHub 도구 10개를 소개한다고 예고한 게시물. 공개 원문에서 Firecrawl과 Crawl4AI를 언급한다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/b1e280033c4c4b6ee8f6290259fb7188b5a6e62df57b7d390796c0a7bce859d1.jpg",
-        "alt": "웹페이지를 AI용 구조화 데이터로 바꾸는 GitHub 도구 10선 예고"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/shanyanggm/status/2099129811096776931"
-      },
-      "captured_at": "2026-09-14T01:11:08+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260914-0004",
-      "title": "GPT-6 Astra “불법 프롬프트” 10개 예고 게시물 — 내용 미확인 보존",
-      "types": [
-        "community_post"
-      ],
-      "tags": [
-        "gpt-6-astra",
-        "prompt",
-        "safety-review",
-        "unresolved-content",
-        "x"
-      ],
-      "summary": "“GPT-6 Astra 불법 프롬프트 10개”를 예고하고 첫 항목으로 삶의 방향을 바꾸는 프롬프트를 언급한 게시물. 공개 syndication에는 상세 프롬프트가 노출되지 않았다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/03606dbde2895825c03ba675206af7a7fa5221b6a601f1b185a1a7eafe38a4e8.svg",
-        "alt": "GPT-6 Astra “불법 프롬프트” 10개 예고 게시물 — 내용 미확인 보존"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/meijiangAI/status/2099034599645217101"
-      },
-      "captured_at": "2026-09-14T01:12:03+09:00"
-    },
-    {
-      "schema_version": 2,
       "public_id": "CR-20260914-0005",
       "title": "ComfyUI-MiniMaxH3-TimelineDirector — H3 장시간 영상 타임라인 분할·연결 워크플로",
       "types": [
@@ -11380,159 +10193,6 @@
         "url": "https://github.com/Songssx/ComfyUI-MiniMaxH3-TimelineDirector"
       },
       "captured_at": "2026-09-14T01:16:27+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260914-0006",
-      "title": "GPT Image 2 프롬프트 — 아침빛 검은 새틴 인물 사진",
-      "types": [
-        "community_post",
-        "image_prompt"
-      ],
-      "tags": [
-        "bedroom",
-        "black-satin",
-        "composition",
-        "editorial-photography",
-        "gpt-image-2",
-        "morning-light",
-        "portrait",
-        "vertical-photo"
-      ],
-      "summary": "아침 햇살이 들어오는 흰 침대 위에서 검은 새틴 미니 슬립을 입은 성인 여성이 등을 보이고 앉아 있는 세로 인물 사진을 주제로 한 GPT Image 2 프롬프트. 인물을 화면 중앙 기준으로 배치하는 조건이 공개 원문에 포함된다.",
-      "facets": {
-        "prompt": true,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "captured",
-        "text": "Subject: black satin in morning light. Subject: A vertical photo of an adult woman sitting with her back to the camera on a white bed with morning sunlight, wearing a black satin mini slip. Position the person based on the center of the frame."
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/da33d5de84b1e9f4a38c02695653994d815bfd8324774137ba0d0a26dbe0d2a9.jpg",
-        "alt": "GPT Image 2 프롬프트 — 아침빛 검은 새틴 인물 사진"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/CyberTotal2026/status/2098945760817479956"
-      },
-      "captured_at": "2026-09-14T01:17:45+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260914-0007",
-      "title": "Krea2/H3 All-in-one Workflow v2.0 — MiniMax H3·Krea2·ComfyUI 통합 워크플로",
-      "types": [
-        "community_post",
-        "video_prompt",
-        "workflow"
-      ],
-      "tags": [
-        "48fps",
-        "all-in-one-workflow",
-        "audio-generation",
-        "comfyui",
-        "image-generation",
-        "interpolation",
-        "krea2",
-        "minimax-h3",
-        "upscale",
-        "video-generation"
-      ],
-      "summary": "MiniMax H3와 Krea2를 연동하는 “Krea2/H3 All-in-one Workflow” v2.0 공개 안내. 프롬프트에서 정지 이미지·영상·오디오 생성, 2배 업스케일, 48fps 보간을 일괄 처리하고 저해상도 생성 후 업스케일로 효율화한다고 소개한다.",
-      "facets": {
-        "prompt": true,
-        "video_generation": true
-      },
-      "prompt": {
-        "status": "unavailable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/98cfb971a471a6e514ccf27218e599fe79a6b8a2b7136897b7da8caa46c016af.jpg",
-        "alt": "Krea2/H3 All-in-one Workflow v2.0 — MiniMax H3·Krea2·ComfyUI 통합 워크플로"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/aiaicreate/status/2099137900600557879"
-      },
-      "captured_at": "2026-09-14T12:28:35+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260914-0008",
-      "title": "Claude용 무료 Skills·플러그인·에이전트 디렉터리 예고 — 공급망 검토 필요",
-      "types": [
-        "community_post",
-        "workflow"
-      ],
-      "tags": [
-        "agents",
-        "automation",
-        "claude",
-        "content",
-        "marketing",
-        "plugins",
-        "programming",
-        "sales",
-        "security-review",
-        "skills",
-        "supply-chain"
-      ],
-      "summary": "Claude용 무료 Skills·플러그인·에이전트가 대량으로 모인 웹사이트를 소개하며 판매·마케팅·콘텐츠·프로그래밍·데이터베이스·자동화·분석 도구를 언급한 게시물. 인용 게시물은 Claude·ChatGPT·Gemini용 생산성 스킬 25개를 다룬다고 소개된다.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/ad2df2442f6b49974783020a0c19bffb47120797f04fe203e8e3f556748f8d31.jpg",
-        "alt": "Claude용 무료 Skills·플러그인·에이전트 디렉터리 예고 — 공급망 검토 필요"
-      },
-      "source": {
-        "platform": "x",
-        "url": "https://x.com/Nozelcode/status/2099113862205202677"
-      },
-      "captured_at": "2026-09-14T12:29:16+09:00"
-    },
-    {
-      "schema_version": 2,
-      "public_id": "CR-20260915-0001",
-      "title": "Threads share link — post unavailable (invalid_post)",
-      "types": [
-        "community_post"
-      ],
-      "tags": [
-        "invalid-post",
-        "link-intake",
-        "review-required",
-        "threads"
-      ],
-      "summary": "The supplied Threads share link redirected to Threads invalid_post. A reader route exposed mixed feed content, which is not treated as evidence for this source.",
-      "facets": {
-        "prompt": false,
-        "video_generation": false
-      },
-      "prompt": {
-        "status": "not_applicable",
-        "text": null
-      },
-      "visual": {
-        "kind": "thumbnail",
-        "src": "assets/1809d59ae4128f6a797773ebe72eec90c40e27252c21b08c7c87d2d3fcd74ecf.svg",
-        "alt": "Threads share link — post unavailable (invalid_post)"
-      },
-      "source": {
-        "platform": "threads",
-        "url": "https://www.threads.com/share/_n1pCsE2f/"
-      },
-      "captured_at": "2026-09-15T09:55:38+09:00"
     },
     {
       "schema_version": 2,
@@ -11801,6 +10461,576 @@
         "url": "https://x.com/boniusex/status/2099798916707594654"
       },
       "captured_at": "2026-09-16T00:59:20+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0006",
+      "title": "OpenDisplay: open-source Apple-device second monitor",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "github",
+        "ios",
+        "ipad",
+        "iphone",
+        "macos",
+        "opendisplay",
+        "second-monitor",
+        "sidecar-alternative",
+        "swift"
+      ],
+      "summary": "OpenDisplay is a GPL-3.0 open-source Mac companion/receiver project that presents an iPhone, iPad, or spare Mac as a true extended display over USB or Wi-Fi, with HiDPI and touch input stated in its README.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/5ba917f0048aecbba204545b6bfb1a98e4c4591e44ac0d27a84bffe3c789c280.png",
+        "alt": "OpenDisplay: open-source Apple-device second monitor"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/peetzweg/opendisplay"
+      },
+      "captured_at": "2026-09-16T13:36:36+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0007",
+      "title": "Atlas Cloud Seedance 2.5 Prompt Library",
+      "types": [
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "ai-video",
+        "cinematography",
+        "multimodal-reference",
+        "prompt-library",
+        "seedance-2.5",
+        "video-editing"
+      ],
+      "summary": "Atlas Cloud prompt library lists 217 Seedance 2.5 examples across filmmaking, match cuts, one-take shots, multimodal references, video editing, advertising, and tutorials; the visible view shows 24 entries.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/b1303eb8e57c82892c2defd235755720048f90a06f7bf767c43d7a41cb0be992.png",
+        "alt": "Atlas Cloud Seedance 2.5 Prompt Library"
+      },
+      "source": {
+        "platform": "personal_site",
+        "url": "https://www.atlascloud.ai/prompts-hub/seedance-2-5-prompt"
+      },
+      "captured_at": "2026-09-16T13:39:19+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0009",
+      "title": "女菩萨 — curated X creator gallery (empty public archive)",
+      "types": [
+        "community_post",
+        "inspiration"
+      ],
+      "tags": [
+        "curated-discovery",
+        "public-gallery",
+        "reference-directory",
+        "x-creator-gallery"
+      ],
+      "summary": "Public gallery landing page describes a curated X creator discovery vault with deduplication, exploration, and recommendations, but its visible archive showed zero creators at capture.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/d52757b6263883d19eb9d2b8e405978f6772e720fa0bd3a1acfea4547c3b6bb5.png",
+        "alt": "女菩萨 — curated X creator gallery (empty public archive)"
+      },
+      "source": {
+        "platform": "personal_site",
+        "url": "https://nv-pu-sa.pages.dev/"
+      },
+      "captured_at": "2026-09-16T13:39:43+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0010",
+      "title": "Awesome Mac: curated macOS software directory",
+      "types": [
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "awesome-list",
+        "creative-tools",
+        "github",
+        "mac-apps",
+        "macos",
+        "software-directory",
+        "utilities"
+      ],
+      "summary": "Awesome Mac is a large CC0-licensed curated directory of macOS software organized by categories for search and discovery. Public GitHub metadata showed 113,902 stars and 8,848 forks at capture.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/0069be87fd0f74b6c97c3179cfa25654d20950f962b2aafd6767cc28f851d88e.png",
+        "alt": "Awesome Mac: curated macOS software directory"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/jaywcjlove/awesome-mac"
+      },
+      "captured_at": "2026-09-16T15:02:55+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0012",
+      "title": "Visual Bible: 424 cinematic techniques with examples and prompts",
+      "types": [
+        "community_post",
+        "video_prompt",
+        "video_style"
+      ],
+      "tags": [
+        "camera-movement",
+        "cinematography",
+        "composition",
+        "framing",
+        "lighting",
+        "video-prompt",
+        "visual-bible",
+        "x"
+      ],
+      "summary": "X post promotes a free visual bible described by its author as covering 424 cinematic techniques—camera movement, framing, shot size, angles, lighting, and composition—with video examples and prompts for most entries.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/d4f5839bf7118ae70c223b8e6ab65944ab199f09537e7726843029a7c6756fb9.webp",
+        "alt": "Visual Bible: 424 cinematic techniques with examples and prompts"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/romainsimon/status/2099846444903805034"
+      },
+      "captured_at": "2026-09-16T15:05:24+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0013",
+      "title": "Codex, Blender, and Seedance 2.5 white-model previs workflow",
+      "types": [
+        "ai_tool_model",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "ai-video",
+        "blender",
+        "codex",
+        "previs",
+        "seedance-2.5",
+        "storyboard",
+        "white-model",
+        "x"
+      ],
+      "summary": "Chinese X post outlines a controllable AI-video workflow: use Codex to decompose a story into shot specifications, use Codex with Blender for white-model previs, render a full previs video, then use the planned sequence for downstream AI-video creation.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/6e936096993bd24dc3b5a47be98a486032374667feae9f3393666054e0c45a91.webp",
+        "alt": "Codex, Blender, and Seedance 2.5 white-model previs workflow"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/aehyok/status/2099849221293985878"
+      },
+      "captured_at": "2026-09-16T15:06:09+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0014",
+      "title": "RustDesk: self-hostable open-source remote desktop",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "github",
+        "macos",
+        "remote-control",
+        "remote-desktop",
+        "rust",
+        "rustdesk",
+        "self-hosted"
+      ],
+      "summary": "RustDesk is an AGPL-3.0 open-source remote-desktop project positioned as a self-hostable alternative to TeamViewer, with macOS among its public repository topics.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/45bdd1554ac2a10f0dc11730ad06fffd13e378c415aa146edb6fdbb174308b46.png",
+        "alt": "RustDesk: self-hostable open-source remote desktop"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/rustdesk/rustdesk"
+      },
+      "captured_at": "2026-09-16T15:06:44+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0015",
+      "title": "Photon Studio: local-first offline desktop image editor",
+      "types": [
+        "ai_tool_model",
+        "image_style",
+        "workflow"
+      ],
+      "tags": [
+        "image-editor",
+        "layers",
+        "local-first",
+        "macos",
+        "offline",
+        "photon-studio",
+        "psd",
+        "retouching"
+      ],
+      "summary": "Photon Studio is presented as a free desktop image editor for macOS, Windows 11, and Linux with layers, retouching, design tools, native PSD support, and offline local processing.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/d49bb3c106257c1f75995fa793737113dc87418be5bec19388e6a523ffaafc18.png",
+        "alt": "Photon Studio: local-first offline desktop image editor"
+      },
+      "source": {
+        "platform": "personal_site",
+        "url": "https://tenzen.studio/photon/"
+      },
+      "captured_at": "2026-09-16T15:07:48+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0016",
+      "title": "ChatGPT photo-editing prompts: 9 professional photography modes",
+      "types": [
+        "image_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "chatgpt",
+        "image-prompt",
+        "photo-editing",
+        "portrait",
+        "prompt-library",
+        "threads"
+      ],
+      "summary": "A Korean Threads thread by @geumverse_ai presents nine copy-paste ChatGPT prompts for turning a photo into professional-looking edits while preserving identity, face, and skin tone: DSLR portrait, cinematic, luxury Instagram, travel influencer, magazine cover, old-photo restoration, background change, professional headshot, and golden-hour modes.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "captured",
+        "text": "1. DSLR \\uc0ac\\uc9c4\\uc791\\uac00 \\ubaa8\\ub4dc\n\n\\uc5c5\\ub85c\\ub4dc\\ud55c \\uc0ac\\uc9c4\\uc744 \\ud504\\ub85c DSLR \\ud3ec\\ud2b8\\ub808\\uc774\\ud2b8\\ub85c \\ubcc0\\ud658\\ud574\\uc918. \\ub0b4 \\uc5bc\\uad74, \\uc5bc\\uad74\\ud615, \\ud53c\\ubd80\\ud1a4, \\ud5e4\\uc5b4\\uc2a4\\ud0c0\\uc77c, \\uc815\\uccb4\\uc131\\uc744 \\uc778\\uc2dd \\uac00\\ub2a5\\ud558\\uace0 \\uc790\\uc5f0\\uc2a4\\ub7fd\\uac8c \\uc720\\uc9c0\\ud574. \\ub098\\ub97c [\\uc704\\uce58]\\uc5d0 \\ubc30\\uce58\\ud558\\uace0, \\ud604\\uc2e4\\uc801\\uc778 \\uc870\\uba85, \\uc790\\uc5f0\\uc2a4\\ub7ec\\uc6b4 \\ud53c\\ubd80 \\ud14d\\uc2a4\\ucc98, \\uc58f\\uc740 \\uc2ec\\ub3c4, \\ubbf8\\uc138\\ud55c \\ubc30\\uacbd \\ubd84\\ub9ac, \\uc2e4\\uc81c \\ub80c\\uc988 \\uc6d0\\uadfc\\uac10, \\ud504\\ub85c \\uad6c\\ub3c4, \\uc9c4\\uc9dc \\uc0ac\\uc9c4 \\ub514\\ud14c\\uc77c\\ub85c. \\uc2e4\\uc81c \\uc0ac\\uc9c4\\uc791\\uac00\\uac00 \\ucc0d\\uc740 \\uac83\\ucc98\\ub7fc \\ubcf4\\uc774\\uac8c \\ud558\\uace0, AI \\uc0dd\\uc131 \\uc774\\ubbf8\\uc9c0\\ucc98\\ub7fc \\ubcf4\\uc774\\uc9c0 \\uc54a\\uac8c \\ud574\\uc918.\n\n2. \\uc2dc\\ub124\\ub9c8\\ud2f1 \\uc0ac\\uc9c4 \\ucd2c\\uc601\n\n\\uc5c5\\ub85c\\ub4dc\\ud55c \\uc0ac\\uc9c4\\uc744 \\uc2dc\\ub124\\ub9c8\\ud2f1 \\ud504\\ub85c \\uc0ac\\uc9c4\\uc73c\\ub85c \\ubcc0\\ud658\\ud574\\uc918. \\ub098\\ub97c [\\uc7a5\\uba74]\\uc5d0 \\ubc30\\uce58\\ud558\\uace0, \\ub4dc\\ub77c\\ub9c8\\ud2f1\\ud558\\uc9c0\\ub9cc \\ud604\\uc2e4\\uc801\\uc778 \\uc870\\uba85, \\uc790\\uc5f0\\uc2a4\\ub7ec\\uc6b4 \\uadf8\\ub9bc\\uc790, \\uc58f\\uc740 \\uc2ec\\ub3c4, \\uac00\\ubcbc\\uc6b4 \\ubc30\\uacbd \\ube14\\ub7ec, \\uc2dc\\ub124\\ub9c8\\ud2f1 \\uad6c\\ub3c4, \\ud604\\uc2e4\\uc801\\uc778 \\ud53c\\ubd80 \\ud14d\\uc2a4\\ucc98, \\ub514\\ud14c\\uc77c\\ud55c \\uc758\\uc0c1, \\ud504\\ub85c \\uceec\\ub7ec \\uadf8\\ub808\\uc774\\ub529\\uc73c\\ub85c. \\ub0b4 \\uc815\\uccb4\\uc131\\uacfc \\uc5bc\\uad74 \\ud2b9\\uc9d5\\uc744 \\uc77c\\uad00\\ub418\\uac8c \\uc720\\uc9c0\\ud574. \\ucd5c\\uc885 \\uc774\\ubbf8\\uc9c0\\ub294 \\uace0\\ud488\\uc9c8 \\uc2dc\\ub124\\ub9c8\\ud2f1 \\ucd2c\\uc601\\uc5d0\\uc11c \\ub098\\uc628 \\uc2e4\\uc81c \\uc0ac\\uc9c4\\ucc98\\ub7fc \\ubcf4\\uc774\\uac8c \\ud574\\uc918.\n\n3. \\ub7ed\\uc154\\ub9ac \\uc778\\uc2a4\\ud0c0 \\ud3ec\\ud1a0\n\n\\uc5c5\\ub85c\\ub4dc\\ud55c \\uc0ac\\uc9c4\\uc744 \\ud504\\ub9ac\\ubbf8\\uc5c4 \\ub77c\\uc774\\ud504\\uc2a4\\ud0c0\\uc77c \\uc778\\uc2a4\\ud0c0\\uadf8\\ub7a8 \\ud504\\ub85c\\ud544\\uc6a9\\uc73c\\ub85c \\ubcc0\\ud658\\ud574\\uc918. \\ub098\\ub97c [\\ub7ed\\uc154\\ub9ac \\uc7a5\\uc18c]\\uc5d0\\uc11c [\\uc637]\\uc744 \\uc785\\uc740 \\ubaa8\\uc2b5\\uc73c\\ub85c \\ubc30\\uce58\\ud558\\uace0, \\uc138\\ub828\\ub41c \\uc870\\uba85, \\ud604\\uc2e4\\uc801\\uc778 \\ud658\\uacbd \\ub514\\ud14c\\uc77c, \\uc790\\uc5f0\\uc2a4\\ub7ec\\uc6b4 \\ud3ec\\uc988, \\ud504\\ub85c \\uad6c\\ub3c4, \\uc58f\\uc740 \\uc2ec\\ub3c4, \\uc9c4\\uc9dc \\ud53c\\ubd80 \\ud14d\\uc2a4\\ucc98\\ub85c. \\ube44\\uc2f8\\uace0 \\uc5d0\\ub514\\ud1a0\\ub9ac\\uc5bc\\ud558\\uac8c \\ubcf4\\uc774\\uac8c \\ud558\\ub418, \\uc778\\uc704\\uc801\\uc774\\uac70\\ub098 \\uacfc\\ub3c4\\ud558\\uac8c \\ubcf4\\uc815\\ub41c \\ub290\\ub08c\\uc740 \\uc5c6\\uac8c \\ud574\\uc918.\n\n4. \\uc5ec\\ud589 \\uc778\\ud50c\\ub8e8\\uc5b8\\uc11c \\ub8e9\n\n\\uc5c5\\ub85c\\ub4dc\\ud55c \\uc0ac\\uc9c4\\uc744 [\\ubaa9\\uc801\\uc9c0]\\uc5d0\\uc11c \\ucc0d\\uc740 \\uc9c4\\uc9dc \\ud504\\ub85c \\uc5ec\\ud589 \\uc0ac\\uc9c4\\uc73c\\ub85c \\ubcc0\\ud658\\ud574\\uc918. \\ub0b4 \\uc5bc\\uad74\\uacfc \\uc815\\uccb4\\uc131\\uc744 \\uc720\\uc9c0\\ud558\\uba74\\uc11c \\uc790\\uc5f0\\uc2a4\\ub7fd\\uac8c \\uadf8 \\uc7a5\\uc18c\\uc5d0 \\ub179\\uc5ec\\uc918. \\ube5b, \\uadf8\\ub9bc\\uc790, \\uc6d0\\uadfc\\uac10, \\uacf5\\uae30\\uac10, \\uc758\\uc0c1, \\ud658\\uacbd\\uc744 \\ud604\\uc2e4\\uc801\\uc73c\\ub85c \\ub9de\\ucdb0. \\ud604\\uc2e4\\uc801\\uc778 \\uae4a\\uc774, \\uc790\\uc5f0\\uc2a4\\ub7ec\\uc6b4 \\uc0c9\\uac10, \\ub514\\ud14c\\uc77c\\ud55c \\ud658\\uacbd, \\ubbf8\\uc138\\ud55c \\ubc30\\uacbd \\ubd84\\ub9ac\\ub85c \\ud504\\ub85c \\uc5ec\\ud589 \\uc0ac\\uc9c4 \\uad6c\\ub3c4\\ub97c \\uc0ac\\uc6a9\\ud574.\n\n5. \\uc7a1\\uc9c0 \\ucee4\\ubc84 \\ub8e9\n\n\\uc5c5\\ub85c\\ub4dc\\ud55c \\uc0ac\\uc9c4\\uc744 \\uace0\\ud488\\uc9c8 \\ud328\\uc158 \\uc5d0\\ub514\\ud1a0\\ub9ac\\uc5bc \\uc0ac\\uc9c4\\uc73c\\ub85c \\ubcc0\\ud658\\ud574\\uc918. \\ub0b4 \\uc815\\uccb4\\uc131\\uc744 \\uc778\\uc2dd \\uac00\\ub2a5\\ud558\\uace0 \\uc790\\uc5f0\\uc2a4\\ub7fd\\uac8c \\uc720\\uc9c0\\ud574. \\uc138\\ub828\\ub41c \\ud3ec\\uc988, [\\uc637/\\uc2a4\\ud0c0\\uc77c], \\ud504\\ub85c \\uc2a4\\ud29c\\ub514\\uc624 \\ub610\\ub294 \\uc5d0\\ub514\\ud1a0\\ub9ac\\uc5bc \\uc870\\uba85, \\ud604\\uc2e4\\uc801\\uc778 \\ud53c\\ubd80 \\ud14d\\uc2a4\\ucc98, \\uc138\\uc2ec\\ud558\\uac8c \\uc870\\uc808\\ub41c \\uadf8\\ub9bc\\uc790, \\ud504\\ub9ac\\ubbf8\\uc5c4 \\uad6c\\ub3c4, \\ubbf8\\uc138\\ud55c \\uc2ec\\ub3c4, \\uc138\\ub828\\ub418\\uc9c0\\ub9cc \\uc9c4\\uc9dc \\uac19\\uc740 \\uceec\\ub7ec \\uadf8\\ub808\\uc774\\ub529\\uc73c\\ub85c. \\ub300\\ud615 \\uc7a1\\uc9c0\\uc6a9\\uc73c\\ub85c \\uc2e4\\uc81c \\ud328\\uc158 \\uc0ac\\uc9c4\\uc791\\uac00\\uac00 \\ucc0d\\uc740 \\uac83\\ucc98\\ub7fc \\ubcf4\\uc774\\uac8c \\ud574\\uc918.\n\n6. \\uc624\\ub798\\ub41c \\uc0ac\\uc9c4 \\ubcf5\\uc6d0\n\n\\uc5c5\\ub85c\\ub4dc\\ud55c \\uc0ac\\uc9c4\\uc744 \\ud604\\ub300\\uc801\\uc778 \\ud504\\ub85c \\ud3ec\\ud2b8\\ub808\\uc774\\ud2b8\\ub85c \\ubcf5\\uc6d0\\ud574\\uc918. \\ub0b4 \\uc2e4\\uc81c \\uc5bc\\uad74 \\uc815\\uccb4\\uc131\\uacfc \\uc790\\uc5f0\\uc2a4\\ub7ec\\uc6b4 \\ud2b9\\uc9d5\\uc744 \\uc720\\uc9c0\\ud558\\uba74\\uc11c \\uc870\\uba85, \\uad6c\\ub3c4, \\uc120\\uba85\\ub3c4, \\ud53c\\ubd80 \\ub514\\ud14c\\uc77c, \\ub178\\ucd9c, \\ubc30\\uacbd, \\uc804\\uccb4 \\uc0ac\\uc9c4 \\ud488\\uc9c8\\uc744 \\uac1c\\uc120\\ud574. \\uc624\\ub298 \\ud504\\ub85c \\uce74\\uba54\\ub77c\\uc640 \\uace0\\ud488\\uc9c8 \\ud3ec\\ud2b8\\ub808\\uc774\\ud2b8 \\ub80c\\uc988\\ub85c \\ucc0d\\uc740 \\uac83\\ucc98\\ub7fc \\ubcf4\\uc774\\uac8c \\ud574\\uc918.\n\n7. \\ubc30\\uacbd \\uc644\\uc804 \\ubcc0\\uacbd\n\n\\uc5c5\\ub85c\\ub4dc\\ud55c \\uc0ac\\uc9c4\\uc5d0\\uc11c \\ub098\\ub97c \\uc644\\uc804\\ud788 \\uc778\\uc2dd \\uac00\\ub2a5\\ud558\\uac8c \\uc720\\uc9c0\\ud558\\ub418, \\ubc30\\uacbd\\uc744 \\ud1b5\\uc9f8\\ub85c [\\uc704\\uce58]\\ub85c \\ubc14\\uafd4\\uc918. \\uc870\\uba85, \\uadf8\\ub9bc\\uc790, \\uc6d0\\uadfc\\uac10, \\ubc18\\uc0ac, \\ubd84\\uc704\\uae30, \\uc637\\uacfc\\uc758 \\uc0c1\\ud638\\uc791\\uc6a9, \\ubc30\\uacbd\\uc744 \\uc0c8 \\uc704\\uce58\\uc5d0 \\uc790\\uc5f0\\uc2a4\\ub7fd\\uac8c \\ub9de\\ucdb0. \\ub098\\ub97c \\ud504\\ub85c DSLR\\ub85c \\uc2e4\\uc81c\\ub85c \\uadf8 \\uc7a5\\uc18c\\uc5d0 \\uc788\\ub294 \\uac83\\ucc98\\ub7fc \\ucc0d\\uc5b4\\uc918. \\ud604\\uc2e4\\uc801\\uc778 \\ud53c\\ubd80 \\ud14d\\uc2a4\\ucc98\\uc640 \\uc790\\uc5f0\\uc2a4\\ub7ec\\uc6b4 \\uc5bc\\uad74 \\ub514\\ud14c\\uc77c\\uc744 \\uc720\\uc9c0\\ud574.\n\n8. \\ud504\\ub85c \\ud504\\ub85c\\ud544 \\uc0ac\\uc9c4\n\n\\uc5c5\\ub85c\\ub4dc\\ud55c \\uc0ac\\uc9c4\\uc744 LinkedIn, \\ud68c\\uc0ac \\uc6f9\\uc0ac\\uc774\\ud2b8, \\uac1c\\uc778 \\ube0c\\ub79c\\ub529\\uc6a9 \\ud504\\ub85c \\ud5e4\\ub4dc\\uc0f7\\uc73c\\ub85c \\ubcc0\\ud658\\ud574\\uc918. \\ub0b4 \\uc5bc\\uad74, \\uc5bc\\uad74\\ud615, \\ud53c\\ubd80\\ud1a4, \\ud5e4\\uc5b4\\uc2a4\\ud0c0\\uc77c, \\uc815\\uccb4\\uc131\\uc744 \\uc778\\uc2dd \\uac00\\ub2a5\\ud558\\uace0 \\uc790\\uc5f0\\uc2a4\\ub7fd\\uac8c \\uc720\\uc9c0\\ud574. \\uae4c\\ub057\\ud55c \\ud504\\ub85c \\uc870\\uba85, \\ud604\\uc2e4\\uc801\\uc778 \\ud53c\\ubd80 \\ud14d\\uc2a4\\ucc98, \\uc790\\uc5f0\\uc2a4\\ub7ec\\uc6b4 \\ud45c\\uc815, \\ubbf8\\uc138\\ud55c \\ubc30\\uacbd \\ubd84\\ub9ac, \\uc120\\uba85\\ud55c \\uc5bc\\uad74 \\ub514\\ud14c\\uc77c, \\uc138\\ub828\\ub41c \\uad6c\\ub3c4\\ub85c. \\uace0\\ud488\\uc9c8 \\uce74\\uba54\\ub77c\\ub97c \\uc4f0 \\ud504\\ub85c \\uc0ac\\uc9c4\\uc791\\uac00\\uac00 \\ucc0d\\uc740 \\uc2e4\\uc81c \\ud3ec\\ud2b8\\ub808\\uc774\\ud2b8\\ucc98\\ub7fc \\ubcf4\\uc774\\uac8c \\ud574\\uc918.\n\n9. \\uace8\\ub4e0\\uc544\\uc6cc \\ucd2c\\uc601\n\n\\uc5c5\\ub85c\\ub4dc\\ud55c \\uc0ac\\uc9c4\\uc744 \\ud504\\ub85c \\uace8\\ub4e0\\uc544\\uc6cc \\uc0ac\\uc9c4\\uc73c\\ub85c \\ubcc0\\ud658\\ud574\\uc918. \\ub0b4 \\uc5bc\\uad74, \\uc5bc\\uad74\\ud615, \\ud53c\\ubd80\\ud1a4, \\ud5e4\\uc5b4\\uc2a4\\ud0c0\\uc77c, \\uc815\\uccb4\\uc131\\uc744 \\uc778\\uc2dd \\uac00\\ub2a5\\ud558\\uace0 \\uc790\\uc5f0\\uc2a4\\ub7fd\\uac8c \\uc720\\uc9c0\\ud574. \\ub098\\ub97c [LOCATION]\\uc5d0 \\ubc30\\uce58\\ud558\\uace0, \\ub530\\ub73b\\ud55c \\uc790\\uc5f0\\uad11, \\ud604\\uc2e4\\uc801\\uc778 \\uadf8\\ub9bc\\uc790, \\ubd80\\ub4dc\\ub7ec\\uc6b4 \\ud558\\uc774\\ub77c\\uc774\\ud2b8, \\uc790\\uc5f0\\uc2a4\\ub7ec\\uc6b4 \\uc0c9\\uac10, \\ubbf8\\uc138\\ud55c \\ubc30\\uacbd \\ubd84\\ub9ac, \\uc9c4\\uc9dc \\ud658\\uacbd \\ub514\\ud14c\\uc77c\\ub85c. \\uc870\\uba85\\uacfc \\uc6d0\\uadfc\\uac10\\uc744 \\uc7a5\\uc18c\\uc5d0 \\ud604\\uc2e4\\uc801\\uc73c\\ub85c \\ub9de\\ucdb0. \\ud504\\ub85c \\uc0ac\\uc9c4\\uc791\\uac00\\uac00 \\uace8\\ub4e0\\uc544\\uc6cc\\uc5d0 \\ucc0d\\uc740 \\uc2e4\\uc81c \\uc0ac\\uc9c4\\ucc98\\ub7fc \\ubcf4\\uc774\\uac8c \\ud558\\uace0, AI \\uc0dd\\uc131\\ucc98\\ub7fc \\ubcf4\\uc774\\uc9c0 \\uc54a\\uac8c \\ud574\\uc918."
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/d25244f6674d486a07112e99c6f7357bec49845dc855d228d5eef7521176f99f.svg",
+        "alt": "ChatGPT photo-editing prompts: 9 professional photography modes"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@geumverse_ai/post/DdUH_S4k46Y"
+      },
+      "captured_at": "2026-09-16T16:50:53+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0017",
+      "title": "FastVideo FastH3 8-Step V2: MiniMax H3 few-step video acceleration",
+      "types": [
+        "huggingface_model",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "acceleration",
+        "distillation",
+        "dmd2",
+        "fastvideo",
+        "few-step",
+        "huggingface",
+        "minimax-h3",
+        "text-to-video"
+      ],
+      "summary": "FastVideo-FastH3-8-Step-V2 is a Hugging Face text-to-video model positioned as an accelerated MiniMax H3 distillation; public metadata lists DMD2 few-step and MiniMax-H3 base-model tags.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/a9c708aede5348fb54b50b73c65af8a89e3c5bb77eac0f7de547903e342b5ad6.png",
+        "alt": "FastVideo FastH3 8-Step V2: MiniMax H3 few-step video acceleration"
+      },
+      "source": {
+        "platform": "huggingface",
+        "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-8-Step-V2"
+      },
+      "captured_at": "2026-09-16T18:37:05+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0018",
+      "title": "ChatGPT Photo Editing Prompts",
+      "types": [],
+      "tags": [
+        "AI",
+        "ChatGPT",
+        "DSLR Portrait Mode",
+        "Photo Editing",
+        "Prompts"
+      ],
+      "summary": "ChatGPT가 전문 사진작가처럼 사진을 편집할 수 있다는 소식과 함께 프롬프트를 공유한 X 포스트입니다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "captured",
+        "text": "내가 업로드한 사진을 전문적인 DSLR 인물 사진으로 변환하세요. 제 얼굴, 메이크업, 피부 톤, 헤어스타일과 정체성을 명확하고 자연스럽게 유지하세요. 저를 [위치]에 배치하여 사실적인 조명, 자연스러운 피부 질감, 얕은 피사계 심도, 세밀한 배경 분리..."
+      },
+      "visual": {
+        "kind": "placeholder",
+        "src": "assets/0494181bf62522f3d4983797d0ef24e9b02ec5c68e36f6f628485682465ebdb9.svg",
+        "alt": "ChatGPT Photo Editing Prompts"
+      },
+      "source": {
+        "platform": "unknown",
+        "url": "https://x.com/xiaoying_eth/status/2100023616821957034"
+      },
+      "captured_at": ""
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0019",
+      "title": "Seedance 2.0 Subway Pillar Action Prompt",
+      "types": [],
+      "tags": [
+        "AI Video",
+        "Action",
+        "Prompt",
+        "Seedance 2.0"
+      ],
+      "summary": "Seedance 2.0를 사용해 지하철 기둥을 부수고 나오는 여성 액션 씬 프롬프트와 결과물.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "captured",
+        "text": "a girl bursts out of a subway pillar and takes a guy apart. Tiled walls, ad panels, a train pulling out behind her. She comes through the pillar with the debris still falling, squares up, knocks him back across the platform, then turns and"
+      },
+      "visual": {
+        "kind": "placeholder",
+        "src": "assets/61c7a235e871f8183e204ef5c4734048759b8ea846d7871ef1a92c51bb9d5fa5.svg",
+        "alt": "Seedance 2.0 Subway Pillar Action Prompt"
+      },
+      "source": {
+        "platform": "unknown",
+        "url": "https://www.threads.com/share/BAZpMtL6yL/"
+      },
+      "captured_at": ""
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0020",
+      "title": "Fox Combo Animation - rotem.ninyo",
+      "types": [],
+      "tags": [
+        "Action",
+        "Animation",
+        "Combo",
+        "Fox"
+      ],
+      "summary": "rotem.ninyo의 개인 프로젝트인 'Fox Combo' 액션 애니메이션 클립.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "placeholder",
+        "src": "assets/c9f27ad1e6aaa28a164ba2255356c0fd072555c8eff60593549c25978429618d.svg",
+        "alt": "Fox Combo Animation - rotem.ninyo"
+      },
+      "source": {
+        "platform": "unknown",
+        "url": "https://www.instagram.com/reel/DdUWJ-yKIzD/?stkn=enJycmY1MjNnMGlm"
+      },
+      "captured_at": ""
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260916-0021",
+      "title": "Etoland Humor Video Captures",
+      "types": [],
+      "tags": [
+        "Etoland",
+        "Humor",
+        "Video"
+      ],
+      "summary": "이토랜드 유머 게시판에서 추출한 3개의 MP4 영상 클립.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "placeholder",
+        "src": "assets/a94041416d516e8b9cdf95a30dcce2e1c0e619edfb0aba9c5df7923563d55de4.svg",
+        "alt": "Etoland Humor Video Captures"
+      },
+      "source": {
+        "platform": "unknown",
+        "url": "https://etoland.co.kr/b/etohumor07/article/9431721"
+      },
+      "captured_at": ""
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260917-0001",
+      "title": "Hermes self-evolving plugin ecosystem (Cranot/super-hermes)",
+      "types": [
+        "social_post"
+      ],
+      "tags": [
+        "agent",
+        "evolution",
+        "hermes",
+        "plugin",
+        "super-hermes"
+      ],
+      "summary": "Hermes 자체 진화 플러그인 생태계를 다룬 중국어 포스트. 사용자들이 에이전트를 단순 사용을 넘어 스스로 강해지도록 밀어붙이는 5가지 방향을 소개. 1번째: Cranot/super-hermes — 에이전트가 분석 프롬프트를 직접 작성하고 스스로 빠진 점을 성찰해 사고 방식을 진화시킴.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/a3a8c8d9da4d2af4ec8454160b49ea5ff4a3743d258a3375b52e4e692886d8d0.jpg",
+        "alt": "Hermes self-evolving plugin ecosystem (Cranot/super-hermes)"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/bkdgiffug/status/2100195494995939454"
+      },
+      "captured_at": "2026-09-17T09:26:20+09:00"
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260917-0002",
+      "title": "free-for-dev — free SaaS/PaaS/IaaS tiers for devops & infradev",
+      "types": [
+        "resource_list"
+      ],
+      "tags": [
+        "awesome-list",
+        "devops",
+        "free-for-developers",
+        "free-tier",
+        "infra",
+        "saas"
+      ],
+      "summary": "devops/infradev 개발자를 위한 무료 티어 SaaS·PaaS·IaaS 서비스 목록(awesome-list). 무료 제공 서비스를 카테고리별로 정리한 저장소. 홈페이지 free-for.dev. 스타 13.7만.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/eaf9386a41b1be32962c360c1bfbf60333ea1815f6a55d4f1e47d76e80b890db.png",
+        "alt": "free-for-dev — free SaaS/PaaS/IaaS tiers for devops & infradev"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/ripienaar/free-for-dev"
+      },
+      "captured_at": "2026-09-17T10:02:00+09:00"
     }
   ]
 }
