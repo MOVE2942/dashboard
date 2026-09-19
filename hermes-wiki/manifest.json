@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260919-154623-AUTO",
-  "card_count": 294,
+  "release_id": "LIA-20260920-040101-AUTO",
+  "card_count": 296,
   "facet_counts": {
-    "general": 102,
+    "general": 103,
     "prompts": 152,
-    "video_generation": 96
+    "video_generation": 97
   },
   "source_manifest": [
     {
@@ -1183,10 +1183,18 @@
     {
       "id": "CR-20260917-0002",
       "hash": "98470e13442db07ad4549017ce1fb7d8af3871f6577f041039adb3df96178b47"
+    },
+    {
+      "id": "CR-20260919-0001",
+      "hash": "b65689dc37ee5d1a1e6730f558b1805f5214e315fbae770003b9efda146c4458"
+    },
+    {
+      "id": "CR-20260919-0002",
+      "hash": "077c25dd1795dea1519f4d6f5c7a3d3a548c97a969813598b4e2b3684f6bb536"
     }
   ],
-  "source_manifest_sha256": "e9cc6d7ab15d9b9a5e69d8b72a476e70dd666fa6ceae2a3848b67df054c6afec",
-  "export_manifest_sha256": "c2ecbda35585499bb32a19a126a05c26f98abe6b223472517dae7e266dba2e70",
+  "source_manifest_sha256": "67191f677a7e7c344ace9f4a7f11a4ba9d9cf8fa1252cb4fede20e2ecce83b75",
+  "export_manifest_sha256": "df18b10af78fab1f4bc401a79e048572acebbe3353bd8ce569c7bdb4731b2236",
   "files": [
     {
       "path": "assets/0069be87fd0f74b6c97c3179cfa25654d20950f962b2aafd6767cc28f851d88e.png",
@@ -1579,6 +1587,11 @@
       "size": 62729
     },
     {
+      "path": "assets/592f0494a32ac87b5d691c546915264389667968d2f76496ea56f4ab2af11f06.svg",
+      "sha256": "592f0494a32ac87b5d691c546915264389667968d2f76496ea56f4ab2af11f06",
+      "size": 610
+    },
+    {
       "path": "assets/5ba917f0048aecbba204545b6bfb1a98e4c4591e44ac0d27a84bffe3c789c280.png",
       "sha256": "5ba917f0048aecbba204545b6bfb1a98e4c4591e44ac0d27a84bffe3c789c280",
       "size": 53960
@@ -1657,6 +1670,11 @@
       "path": "assets/6376bf9331493a07092254971f1a2adb2f348831a0577ce92bef9bfbea7e01b0.svg",
       "sha256": "6376bf9331493a07092254971f1a2adb2f348831a0577ce92bef9bfbea7e01b0",
       "size": 620
+    },
+    {
+      "path": "assets/639c2aa6fcf3f40832f2c8f116d0363bdeacfe64ead8428911009595d625227f.svg",
+      "sha256": "639c2aa6fcf3f40832f2c8f116d0363bdeacfe64ead8428911009595d625227f",
+      "size": 626
     },
     {
       "path": "assets/65915f8c0e5207ab732d7a8da6f472a59d1d2c06721a29a222ec6488e6a9f73b.svg",
@@ -2605,8 +2623,8 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "092d72741cc672cc2dce5946ef343ef8ceb95d1e2bae172411635b47d11adf7d",
-      "size": 424732
+      "sha256": "fe3369c7be7a309d3a05eac6cb162ac09ce67b5788e047ed004d38d884bfc126",
+      "size": 426558
     },
     {
       "path": "index.html",
@@ -2624,5 +2642,5 @@
       "size": 2765
     }
   ],
-  "bundle_sha256": "3d1716f1074df9239719abc9b2f227cd6c2e095a1578d4773fe8e784238f4e80"
+  "bundle_sha256": "f9ea28c4d86dca153d33a5c5273e4d1cc597f98cef40f7e4c6ea5a61284df4b5"
 }
