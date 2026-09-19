@@ -1,22 +1,22 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260919-154623-AUTO",
-  "source_manifest_sha256": "e9cc6d7ab15d9b9a5e69d8b72a476e70dd666fa6ceae2a3848b67df054c6afec",
-  "export_manifest_sha256": "c2ecbda35585499bb32a19a126a05c26f98abe6b223472517dae7e266dba2e70",
-  "generated_at": "2026-09-19T15:46:24+09:00",
+  "release_id": "LIA-20260920-040101-AUTO",
+  "source_manifest_sha256": "67191f677a7e7c344ace9f4a7f11a4ba9d9cf8fa1252cb4fede20e2ecce83b75",
+  "export_manifest_sha256": "df18b10af78fab1f4bc401a79e048572acebbe3353bd8ce569c7bdb4731b2236",
+  "generated_at": "2026-09-20T04:01:02+09:00",
   "facet_counts": {
-    "general": 102,
+    "general": 103,
     "prompts": 152,
-    "video_generation": 96
+    "video_generation": 97
   },
   "category_counts": {
-    "video_technique": 91,
+    "video_technique": 92,
     "image_technique": 90,
     "agent_technique": 9,
     "prompt_reference": 27,
     "contest_info": 0,
     "platform_info": 1,
-    "visual_reference": 67,
+    "visual_reference": 68,
     "ideas": 0,
     "ai_research": 9
   },
@@ -32,6 +32,71 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260919-0002",
+      "title": "Instagram Reel (대사가 찰지다)",
+      "types": [
+        "video_style"
+      ],
+      "tags": [
+        "dialogue",
+        "instagram"
+      ],
+      "summary": "대사가 찰지다",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/639c2aa6fcf3f40832f2c8f116d0363bdeacfe64ead8428911009595d625227f.svg",
+        "alt": "Instagram Reel (대사가 찰지다)"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/reel/DaTnv8LjZNC/"
+      },
+      "captured_at": "2026-09-19T17:41:03+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260919-0001",
+      "title": "X Post - 2100935376827527463",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "inbox"
+      ],
+      "summary": "수집된 링크입니다. 상세 요약은 후속 정리 단계에서 보강합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/592f0494a32ac87b5d691c546915264389667968d2f76496ea56f4ab2af11f06.svg",
+        "alt": "X Post - 2100935376827527463"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/HuggingModels/status/2100935376827527463"
+      },
+      "captured_at": "2026-09-19T17:41:00+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20260917-0002",
