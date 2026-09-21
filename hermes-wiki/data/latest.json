@@ -1,19 +1,19 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260921-040044-AUTO",
-  "source_manifest_sha256": "c323b45e85d6f5456bad48a76422e00dcbc562a71cf35c4a19c7163718d32b83",
-  "export_manifest_sha256": "68bb8d0533f0da8d9f367aedf516a2f4f899ada3488aad09fced9f78de3f7611",
-  "generated_at": "2026-09-21T04:00:45+09:00",
+  "release_id": "LIA-20260922-040048-AUTO",
+  "source_manifest_sha256": "86ade67a6b5bd491e3699af74c2ec9c44dd0525c65cb492a8f0c4a8993b97524",
+  "export_manifest_sha256": "06df4ac4a4b98c32edabe6ee9993ee790331673f6f3bd22619ced2c5c3ca63ed",
+  "generated_at": "2026-09-22T04:00:49+09:00",
   "facet_counts": {
-    "general": 116,
-    "prompts": 155,
-    "video_generation": 98
+    "general": 117,
+    "prompts": 156,
+    "video_generation": 100
   },
   "category_counts": {
-    "video_technique": 93,
+    "video_technique": 95,
     "image_technique": 90,
-    "agent_technique": 14,
-    "prompt_reference": 30,
+    "agent_technique": 15,
+    "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
     "visual_reference": 76,
@@ -32,6 +32,162 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260921-0009",
+      "title": "ChatGPT AI 사진: \"빛의 여백\" (앙뉘하고 부드러운 빛) 프롬프트",
+      "types": [
+        "community_post",
+        "image_prompt"
+      ],
+      "tags": [
+        "ai-art",
+        "chatgpt",
+        "image-prompt",
+        "lighting",
+        "portrait",
+        "x"
+      ],
+      "summary": "작성자는 ChatGPT를 이용해 생성한 \"빛의 여백(앙뉘하고 부드러운 빛)\" 테마의 감성적인 AI 사진과 해당 프롬프트를 공유했다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/e11a79326d59bce3867e350f1e3bbf33c8be9c9c89c9b29389d92731bf8c4a4e.jpg",
+        "alt": "ChatGPT AI 사진: \"빛의 여백\" (앙뉘하고 부드러운 빛) 프롬프트"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/y_suou/status/2101207957216407823"
+      },
+      "captured_at": "2026-09-21T21:49:38+09:00",
+      "category": "prompt_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260921-0008",
+      "title": "Claude Code / Codex 환경의 Gemini 3.8 Flash 제어 플러그인 소개",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "agy-staff-plugin",
+        "claude-code",
+        "codex",
+        "cost-effective",
+        "gemini",
+        "x"
+      ],
+      "summary": "작성자는 Claude Code나 Codex 환경에서 Astra 또는 Fable을 활용해 Gemini 3.8 Flash를 지휘하는 것이 비용 효율적(가성비)이라고 언급하며, 이를 지원하는 agy staff plugin을 소개했다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/24908b7ad486b7881a2fcb8a6d9e20f11a9e47b720797ddd9c87d9640db813c0.jpg",
+        "alt": "Claude Code / Codex 환경의 Gemini 3.8 Flash 제어 플러그인 소개"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/interjc/status/2101918912837468215"
+      },
+      "captured_at": "2026-09-21T21:46:56+09:00",
+      "category": "agent_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260921-0007",
+      "title": "해외에서 잘나가는 AI 역사 채널, 만드는 법 전부 공개 (구글 옴니 1.1)",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "google-omni",
+        "history-channel",
+        "midjourney",
+        "video-generation",
+        "workflow",
+        "x",
+        "youtube"
+      ],
+      "summary": "원카AI 채널에서 구글 옴니 1.1(Google Omni 1.1 Flash)과 미드저니를 활용하여 AI 역사 채널(예: 칭기즈칸 스토리)을 제작하는 A to Z 워크플로우와 실제 프롬프트를 원본 그대로 정리한 자료입니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/460996b8a6a2593abe8e179297456e6715077785ff270e5dc6e71002c4704ea3.svg",
+        "alt": "해외에서 잘나가는 AI 역사 채널, 만드는 법 전부 공개 (구글 옴니 1.1)"
+      },
+      "source": {
+        "platform": "youtube",
+        "url": "https://youtu.be/wLKg1t5UMxE"
+      },
+      "captured_at": "2026-09-21T20:43:39+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260921-0006",
+      "title": "공학 쇼츠 제작 워크플로우 (Codex + Google Flow)",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "codex",
+        "google-flow",
+        "motion-graphics",
+        "video-generation",
+        "workflow",
+        "youtube"
+      ],
+      "summary": "코덱스(Codex)와 구글 플로우(Google Flow)를 활용하여 대본부터 이미지, 모션 그래픽 영상 클립, TTS 및 최종 편집까지 이어지는 \"공학 쇼츠\" 자동화 워크플로우를 분석한 영상입니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/34c9d10a3c16dde92111f2a045169d6dfb803a7b8940468f343c34cd9adbcb03.jpg",
+        "alt": "공학 쇼츠 제작 워크플로우 (Codex + Google Flow)"
+      },
+      "source": {
+        "platform": "other",
+        "url": "https://youtu.be/xRed28mz4-s"
+      },
+      "captured_at": "2026-09-21T18:57:47+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20260921-0005",
