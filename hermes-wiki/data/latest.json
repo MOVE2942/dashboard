@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260922-040048-AUTO",
-  "source_manifest_sha256": "86ade67a6b5bd491e3699af74c2ec9c44dd0525c65cb492a8f0c4a8993b97524",
-  "export_manifest_sha256": "06df4ac4a4b98c32edabe6ee9993ee790331673f6f3bd22619ced2c5c3ca63ed",
-  "generated_at": "2026-09-22T04:00:49+09:00",
+  "release_id": "LIA-20260923-040017-AUTO",
+  "source_manifest_sha256": "57300444f643978b9e05363bd1a41f5cf30f1001ed1aef008a0bc951ecd1799a",
+  "export_manifest_sha256": "5d70e2f057b009525f93e7cf45593209af505a0809ce11dec542356003deeea2",
+  "generated_at": "2026-09-23T04:00:19+09:00",
   "facet_counts": {
-    "general": 117,
+    "general": 118,
     "prompts": 156,
     "video_generation": 100
   },
@@ -16,7 +16,7 @@
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
-    "visual_reference": 76,
+    "visual_reference": 77,
     "ideas": 0,
     "ai_research": 9
   },
@@ -32,6 +32,45 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260922-0001",
+      "title": "Qwen-Image-2.1 로컬 무검열(Uncensored) 버전 및 권장 사양 안내",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "huggingface_model"
+      ],
+      "tags": [
+        "gguf",
+        "local-inference",
+        "qwen",
+        "qwen-image-2-1",
+        "uncensored",
+        "x"
+      ],
+      "summary": "작성자는 Qwen-Image-2.1의 로컬 무검열(Uncensored GGUF) 버전과 하드웨어(VRAM) 권장 사양을 정리하여 공유했다. (8GB VRAM용 Q4_0 등)",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/b3d8160251b9b27a50e0a3c99f5ae3c8ed03e10fc6b57760fe4aa36ee94c0be7.jpg",
+        "alt": "Qwen-Image-2.1 로컬 무검열(Uncensored) 버전 및 권장 사양 안내"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/xiangxiang103/status/2101902711243542657"
+      },
+      "captured_at": "2026-09-22T07:15:44+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20260921-0009",
