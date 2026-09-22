@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260922-040048-AUTO",
-  "card_count": 317,
+  "release_id": "LIA-20260923-040017-AUTO",
+  "card_count": 318,
   "facet_counts": {
-    "general": 117,
+    "general": 118,
     "prompts": 156,
     "video_generation": 100
   },
@@ -1275,10 +1275,14 @@
     {
       "id": "CR-20260921-0009",
       "hash": "54369eff810861de60fbd84fb63f0a24e1a8a4a2fcc7a899a54a900e880b7a4a"
+    },
+    {
+      "id": "CR-20260922-0001",
+      "hash": "bca8f11ec0a1826ca4a3a54546b95d9a7b8edce33d6232f39aebe941110caafc"
     }
   ],
-  "source_manifest_sha256": "86ade67a6b5bd491e3699af74c2ec9c44dd0525c65cb492a8f0c4a8993b97524",
-  "export_manifest_sha256": "06df4ac4a4b98c32edabe6ee9993ee790331673f6f3bd22619ced2c5c3ca63ed",
+  "source_manifest_sha256": "57300444f643978b9e05363bd1a41f5cf30f1001ed1aef008a0bc951ecd1799a",
+  "export_manifest_sha256": "5d70e2f057b009525f93e7cf45593209af505a0809ce11dec542356003deeea2",
   "files": [
     {
       "path": "assets/0069be87fd0f74b6c97c3179cfa25654d20950f962b2aafd6767cc28f851d88e.png",
@@ -2216,6 +2220,11 @@
       "size": 1431990
     },
     {
+      "path": "assets/b3d8160251b9b27a50e0a3c99f5ae3c8ed03e10fc6b57760fe4aa36ee94c0be7.jpg",
+      "sha256": "b3d8160251b9b27a50e0a3c99f5ae3c8ed03e10fc6b57760fe4aa36ee94c0be7",
+      "size": 24928
+    },
+    {
       "path": "assets/b4abf3c3777eb1a7817cfa0bae6b5c3be04be0c51dcea6072f8fbe41522788e6.svg",
       "sha256": "b4abf3c3777eb1a7817cfa0bae6b5c3be04be0c51dcea6072f8fbe41522788e6",
       "size": 631
@@ -2807,8 +2816,8 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "7ff6c021ef44fb166485c49d508d75328b1128c0f6ceb853dd04b5e9834f8103",
-      "size": 452726
+      "sha256": "4057a63ebbb72002c55bacaa395e5c4c97efe0e7fe2a3ae8140be70c780e7a68",
+      "size": 453981
     },
     {
       "path": "index.html",
@@ -2826,5 +2835,5 @@
       "size": 2765
     }
   ],
-  "bundle_sha256": "1d9d958354857fc6bf669953870fca2623b844320462798dbf3aac89c0b550e4"
+  "bundle_sha256": "dfb095547b9ba701436185e8a3153a3ad253b1f1694569c1fc3c2b5f60246d3a"
 }
