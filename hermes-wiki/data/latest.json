@@ -1,22 +1,22 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260923-040017-AUTO",
-  "source_manifest_sha256": "57300444f643978b9e05363bd1a41f5cf30f1001ed1aef008a0bc951ecd1799a",
-  "export_manifest_sha256": "5d70e2f057b009525f93e7cf45593209af505a0809ce11dec542356003deeea2",
-  "generated_at": "2026-09-23T04:00:19+09:00",
+  "release_id": "LIA-20260924-040107-AUTO",
+  "source_manifest_sha256": "6bbeee2cd2eb41e899a37b0ca1807aec6d2ce8f308ad0024b3c9dc3318c92ff0",
+  "export_manifest_sha256": "9b5aa98fd1770d434831acbfda7b4e45f55de01240388f3ddd83cb83c4f742a8",
+  "generated_at": "2026-09-24T04:01:09+09:00",
   "facet_counts": {
-    "general": 118,
+    "general": 122,
     "prompts": 156,
     "video_generation": 100
   },
   "category_counts": {
     "video_technique": 95,
-    "image_technique": 90,
-    "agent_technique": 15,
+    "image_technique": 91,
+    "agent_technique": 17,
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
-    "visual_reference": 77,
+    "visual_reference": 78,
     "ideas": 0,
     "ai_research": 9
   },
@@ -32,6 +32,162 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260923-0004",
+      "title": "Google Antigravity 다중 계정 병렬 처리 툴 (paragravity + Gemini 3.8 Flash)",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "github_project"
+      ],
+      "tags": [
+        "gemini-3-8-flash",
+        "google-antigravity",
+        "multi-account",
+        "open-source",
+        "paragravity",
+        "x"
+      ],
+      "summary": "작성자는 Google Antigravity 환경에서 다중 계정 병렬 처리 및 격리 문제를 해결하는 오픈소스 도구 paragravity와 Gemini 3.8 Flash의 조합 후기를 공유하며, 빠른 응답성과 높은 컨텍스트 처리량을 강조했다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/1784772fbb5d180bcae4834bfbac3086861228aa3ba3524c625330d74bc89d5a.jpg",
+        "alt": "Google Antigravity 다중 계정 병렬 처리 툴 (paragravity + Gemini 3.8 Flash)"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/king1818888/status/2102588479364534312"
+      },
+      "captured_at": "2026-09-23T20:46:01+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260923-0003",
+      "title": "Qwen-Image 로컬 구동 품질 향상을 위한 프롬프트 스킬 (qwen-image-gen)",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "local-inference",
+        "prompt-engineering",
+        "qwen",
+        "qwen-image",
+        "skill",
+        "x"
+      ],
+      "summary": "작성자는 Qwen-Image 모델 로컬 구동 시 이미지 생성 및 편집 품질이 떨어지는 문제를 해결하기 위해, 공식 \"지능형 프롬프트 재작성\" 로직을 분석 및 테스트하여 오픈소스 스킬(qwen-image-gen)로 공개했다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/28387fb2b9991be38b1959ddf57eae381f032e472c59cdb3b80f5d2d69db4d11.jpg",
+        "alt": "Qwen-Image 로컬 구동 품질 향상을 위한 프롬프트 스킬 (qwen-image-gen)"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/FiniYang/status/2102589325502460405"
+      },
+      "captured_at": "2026-09-23T20:42:50+09:00",
+      "category": "agent_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260923-0002",
+      "title": "Rust 기반 AI 에이전트 전용 헤드리스 브라우저 Moli 소개",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "ai-agent",
+        "automation",
+        "headless-browser",
+        "moli",
+        "rust",
+        "x"
+      ],
+      "summary": "작성자는 크롬(Chromium)을 대체할 수 있도록 Rust로 밑바닥부터 개발된 AI 에이전트 전용 헤드리스 브라우저 Moli를 소개했다. 메모리 사용량을 1/10 수준(73MB)으로 줄이고 CPU 점유율을 낮춘 경량화 특징을 강조했다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/18badbba6507fa012ac302683bc6ba708b9b54e7e55a04b309c092222d09b0e6.jpg",
+        "alt": "Rust 기반 AI 에이전트 전용 헤드리스 브라우저 Moli 소개"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Dontgiveup_26/status/2102667639839510928"
+      },
+      "captured_at": "2026-09-23T20:30:20+09:00",
+      "category": "agent_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260923-0001",
+      "title": "Qwen-Image-2.1 무검열 버전 로컬 구동 및 ComfyUI 호환성 후기",
+      "types": [
+        "ai_tool_model",
+        "community_post"
+      ],
+      "tags": [
+        "comfyui",
+        "gguf",
+        "local-inference",
+        "qwen",
+        "qwen-image-2-1",
+        "uncensored",
+        "x"
+      ],
+      "summary": "작성자는 Qwen-Image-2.1 무검열(Uncensored) 버전의 로컬 구동 후기를 공유했다. Q4_K_M(4.68GB) 사양에서의 거절률 하락, 10장 참조 이미지 편집 지원, 네이티브 투명도 지원 및 ComfyUI(city96 GGUF) 호환성 등을 강조했다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/62ee7c7e1b9654fbc2b9b811b31b4bbd03e678801541bb60952720f364be09de.jpg",
+        "alt": "Qwen-Image-2.1 무검열 버전 로컬 구동 및 ComfyUI 호환성 후기"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/3three_AI/status/2102673824546201722"
+      },
+      "captured_at": "2026-09-23T20:29:23+09:00",
+      "category": "image_technique",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20260922-0001",
