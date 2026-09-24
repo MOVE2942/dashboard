@@ -1,22 +1,22 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260924-040107-AUTO",
-  "source_manifest_sha256": "6bbeee2cd2eb41e899a37b0ca1807aec6d2ce8f308ad0024b3c9dc3318c92ff0",
-  "export_manifest_sha256": "9b5aa98fd1770d434831acbfda7b4e45f55de01240388f3ddd83cb83c4f742a8",
-  "generated_at": "2026-09-24T04:01:09+09:00",
+  "release_id": "LIA-20260925-040016-AUTO",
+  "source_manifest_sha256": "7e1c898cbd197daa53eb0e8bb674d3021a452b3204169d407c3f476632830b3f",
+  "export_manifest_sha256": "ec336f823f6c936f978729cbfe6a30331f13d29172b8e1f56b597c72c17cd16d",
+  "generated_at": "2026-09-25T04:00:17+09:00",
   "facet_counts": {
-    "general": 122,
+    "general": 126,
     "prompts": 156,
-    "video_generation": 100
+    "video_generation": 101
   },
   "category_counts": {
-    "video_technique": 95,
+    "video_technique": 96,
     "image_technique": 91,
-    "agent_technique": 17,
+    "agent_technique": 18,
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
-    "visual_reference": 78,
+    "visual_reference": 81,
     "ideas": 0,
     "ai_research": 9
   },
@@ -32,6 +32,185 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260924-0005",
+      "title": "Instagram Reel: DdodrjRO4PO",
+      "types": [
+        "video"
+      ],
+      "tags": [
+        "instagram",
+        "reel",
+        "review-required"
+      ],
+      "summary": "Instagram Reel 링크 수집. 자동 메타데이터 추출(curl)이 보안 스캔 승인 대기 초과로 인해 중단되어 기본 URL 정보만 캡처됨.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/ad7c8c65b8b7c0041089feff376785243ad241677c3522f4b09cbb23175e1109.svg",
+        "alt": "Instagram Reel: DdodrjRO4PO"
+      },
+      "source": {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/reel/DdodrjRO4PO/?stkn=ZndlYzFhajVjMjV4"
+      },
+      "captured_at": "2026-09-24T22:39:56+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260924-0004",
+      "title": "Optimizing Seedance 2.5 Fighting Skill with Doubao",
+      "types": [
+        "video"
+      ],
+      "tags": [
+        "ai",
+        "doubao",
+        "prompt-optimization",
+        "seedance-2.5",
+        "video-generation"
+      ],
+      "summary": "Doubao(豆包) 워크플로우를 활용해 Seedance 2.5의 액션/격투 씬 생성 프롬프트를 최적화한 사례 및 AI 생성 결과 영상.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "placeholder",
+        "src": "assets/b30fe6f2b291a8b7a240cde9312261d97cc98496c9f70369b3342f54e29997f8.svg",
+        "alt": "Optimizing Seedance 2.5 Fighting Skill with Doubao"
+      },
+      "source": {
+        "platform": "X",
+        "url": "https://x.com/liyue_ai/status/2102600338297823520"
+      },
+      "captured_at": "2026-09-24T21:12:16+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260924-0003",
+      "title": "Maximizing Claude Code Value: Custom Agents & MCP",
+      "types": [
+        "tip"
+      ],
+      "tags": [
+        "agents",
+        "ai",
+        "claude",
+        "claude-code",
+        "mcp",
+        "opus-5.5"
+      ],
+      "summary": "Claude Code를 순정 상태로 쓰지 않고, 명령어 한 줄로 전문가 에이전트, 커스텀 슬래시 커맨드, 필수 MCP 등을 세팅하여 100% 활용하는 방법에 대한 팁.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "placeholder",
+        "src": "assets/2f2e8b2783e4ffa736956d958a209d112dd6dd0079b171d480a6f8d6cee3d610.svg",
+        "alt": "Maximizing Claude Code Value: Custom Agents & MCP"
+      },
+      "source": {
+        "platform": "X",
+        "url": "https://x.com/dontgiveup_26/status/2102903338899550610"
+      },
+      "captured_at": "2026-09-24T13:37:29+09:00",
+      "category": "agent_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260924-0002",
+      "title": "Bypass Registration Limits for Muse using Gemini Spark",
+      "types": [
+        "tip"
+      ],
+      "tags": [
+        "ai",
+        "bypass",
+        "gemini-spark",
+        "muse",
+        "registration"
+      ],
+      "summary": "Gemini Pro의 Spark 기능을 활용해 원격 브라우저에서 muse.ai를 열어 지역 제한(Geo-block)을 우회하고 Meta의 Muse 계정을 1분 안에 등록하는 팁.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "placeholder",
+        "src": "assets/d635bc90ce5afc0e169b7763766fdb821000d23fdbfd234f25eedb004a79ca9f.svg",
+        "alt": "Bypass Registration Limits for Muse using Gemini Spark"
+      },
+      "source": {
+        "platform": "X",
+        "url": "https://x.com/suoha_ai/status/2102780408458863076"
+      },
+      "captured_at": "2026-09-24T13:37:12+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260924-0001",
+      "title": "Local Deployment: Qwen-Image-2.1 & Anima on Mac",
+      "types": [
+        "ai"
+      ],
+      "tags": [
+        "ai",
+        "anima",
+        "local-deployment",
+        "mac",
+        "qwen-image-2.1"
+      ],
+      "summary": "Mac/GPU 환경에서 오프라인으로 구동 가능한 이미지 생성 로컬 모델(Qwen-Image-2.1, Anima) 추천. 무검열, 적은 VRAM 환경에서도 구동 가능.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "placeholder",
+        "src": "assets/5a96d36058896df758f1aece0fbe10cd7de59df7295f844dc73ef5a5442ed2e7.svg",
+        "alt": "Local Deployment: Qwen-Image-2.1 & Anima on Mac"
+      },
+      "source": {
+        "platform": "X",
+        "url": "https://x.com/wquguru/status/2102769448398782894"
+      },
+      "captured_at": "2026-09-24T13:36:03+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20260923-0004",
