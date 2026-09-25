@@ -1,16 +1,16 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260925-040016-AUTO",
-  "source_manifest_sha256": "7e1c898cbd197daa53eb0e8bb674d3021a452b3204169d407c3f476632830b3f",
-  "export_manifest_sha256": "ec336f823f6c936f978729cbfe6a30331f13d29172b8e1f56b597c72c17cd16d",
-  "generated_at": "2026-09-25T04:00:17+09:00",
+  "release_id": "LIA-20260926-040034-AUTO",
+  "source_manifest_sha256": "0b90ba7b4ff540317d9fde2c114ac61f92cfa1d4ad0f027412dcc8d1f563cc94",
+  "export_manifest_sha256": "740dc94e0bd8bfd963fee0b19c5b4e54d9e0edb607c99a8e2c2d469360d76921",
+  "generated_at": "2026-09-26T04:00:35+09:00",
   "facet_counts": {
     "general": 126,
     "prompts": 156,
-    "video_generation": 101
+    "video_generation": 102
   },
   "category_counts": {
-    "video_technique": 96,
+    "video_technique": 97,
     "image_technique": 91,
     "agent_technique": 18,
     "prompt_reference": 31,
@@ -32,6 +32,41 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260926-0001",
+      "title": "Seedance 2.5 Prompt Sequencing and Optimization",
+      "types": [
+        "tip"
+      ],
+      "tags": [
+        "ai",
+        "prompt-engineering",
+        "seedance-2.5",
+        "video-generation"
+      ],
+      "summary": "Seedance(씨댄스) 2.5를 위한 프롬프트 최적화 및 순서 작성 노하우. 단순히 프롬프트 길이를 줄이는 것이 아니라, 작성 순서가 결과물에 중요한 영향을 미친다는 내용의 팁.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "placeholder",
+        "src": "assets/6704c1fc293fec2a280dfb79d9b2628977ac91150e331856b9724cb37da61f28.svg",
+        "alt": "Seedance 2.5 Prompt Sequencing and Optimization"
+      },
+      "source": {
+        "platform": "X",
+        "url": "https://x.com/HERANAM381471/status/2103469526088118739"
+      },
+      "captured_at": "2026-09-26T02:28:08+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20260924-0005",
