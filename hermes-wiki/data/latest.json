@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260927-040006-AUTO",
-  "source_manifest_sha256": "274ae20ab0fc3846e76f412a655e9f12f72802558b0ea9d768d233f41c62c724",
-  "export_manifest_sha256": "540629f5d11f986fabd97c559abc7992a461204f13140db0852fa7f9bcbc6fd7",
-  "generated_at": "2026-09-27T04:00:07+09:00",
+  "release_id": "LIA-20260928-040005-AUTO",
+  "source_manifest_sha256": "889fb545c72b7cfa6f655464b57068aff92d557b63f037cf29ced1f8cc76686a",
+  "export_manifest_sha256": "489804352ad400e84f05779c25491629e12b0732eb2b2ea91b513646fd3270b6",
+  "generated_at": "2026-09-28T04:00:07+09:00",
   "facet_counts": {
-    "general": 127,
+    "general": 136,
     "prompts": 156,
     "video_generation": 102
   },
@@ -16,7 +16,7 @@
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
-    "visual_reference": 82,
+    "visual_reference": 91,
     "ideas": 0,
     "ai_research": 9
   },
@@ -32,6 +32,315 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260927-0009",
+      "title": "Instagram reel — DdslmKIOQx5",
+      "types": [
+        "inspiration"
+      ],
+      "tags": [
+        "instagram",
+        "unrendered-reel",
+        "user-intake"
+      ],
+      "summary": "사용자 제공 Instagram 릴스 링크. 현재 공개 HTML에서 본문·작성자·미디어 메타데이터가 노출되지 않아 재개 대기 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/9455073a3c806518a3f6024879ef3c8204b350c337a8cb26c528b546cfa42ff5.svg",
+        "alt": "Instagram reel — DdslmKIOQx5"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/reel/DdslmKIOQx5/?stkn=YXdnZ3M2d3ptejEy"
+      },
+      "captured_at": "2026-09-27T23:13:44+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260927-0008",
+      "title": "Mika Sora — soft-blue outfit with white bow",
+      "types": [
+        "inspiration"
+      ],
+      "tags": [
+        "fashion",
+        "ootd",
+        "soft-blue",
+        "streetstyle",
+        "summerstyle",
+        "white-bow"
+      ],
+      "summary": "Mika Sora의 소프트 블루 톤 의상과 작은 흰 리본을 중심으로 한 OOTD 릴스. 캡션은 리본이 과한지 또는 룩의 핵심인지에 대한 질문과 함께 soft blues aesthetic을 제시합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/603f34dae796e661f2f1fc4698b163ab496a95c1b31084186e4586a9b34b8591.jpg",
+        "alt": "Mika Sora — soft-blue outfit with white bow"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/reel/DdhqclwEpcy/?stkn=MTVpZjExam40Ymk3ag=="
+      },
+      "captured_at": "2026-09-27T23:10:47+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260927-0007",
+      "title": "X post — @VibeEverything",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "unrendered-post",
+        "user-intake",
+        "x"
+      ],
+      "summary": "사용자 제공 X 링크. 공개 메타데이터와 본문/미디어를 현재 수집 경로에서 확인하지 못해 재개 대기 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/3106541da1ebdf7dfc58fe3d80f689ca4f56d820db03cce26642a0183ba8169f.svg",
+        "alt": "X post — @VibeEverything"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/VibeEverything/status/2104160871589220365"
+      },
+      "captured_at": "2026-09-27T22:45:58+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260927-0006",
+      "title": "X post — @imhealmachine",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "unrendered-post",
+        "user-intake",
+        "x"
+      ],
+      "summary": "사용자 제공 X 링크. 공개 메타데이터와 본문/미디어를 현재 수집 경로에서 확인하지 못해 재개 대기 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/a3349e5dc6a1388c4d24c2e46ceca7c41d9399598eef61f13a9d2ad8d4837118.svg",
+        "alt": "X post — @imhealmachine"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/imhealmachine/status/2103809780737540325"
+      },
+      "captured_at": "2026-09-27T17:38:59+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260927-0005",
+      "title": "X post — @FiniYang",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "unrendered-post",
+        "user-intake",
+        "x"
+      ],
+      "summary": "사용자 제공 X 링크. 공개 메타데이터와 본문/미디어를 현재 수집 경로에서 확인하지 못해 재개 대기 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/00dc4eb642051843bf2aedd3040a33ccd8b1df942f9dad7ca0fc9310cb75f78b.svg",
+        "alt": "X post — @FiniYang"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/FiniYang/status/2103850232048132178"
+      },
+      "captured_at": "2026-09-27T17:38:52+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260927-0004",
+      "title": "X post — @paperwiz0",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "unrendered-post",
+        "user-intake",
+        "x"
+      ],
+      "summary": "사용자 제공 X 링크. 공개 메타데이터와 본문/미디어를 현재 수집 경로에서 확인하지 못해 재개 대기 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/ff1331dfd2fa598afc041a0d826a01ff3f27e62f421490278684438caa1f3a18.svg",
+        "alt": "X post — @paperwiz0"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/paperwiz0/status/2103695716078276848"
+      },
+      "captured_at": "2026-09-27T17:37:38+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260927-0003",
+      "title": "X post — @mylifcc",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "unrendered-post",
+        "user-intake",
+        "x"
+      ],
+      "summary": "사용자 제공 X 링크. 공개 메타데이터와 본문/미디어를 현재 수집 경로에서 확인하지 못해 재개 대기 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/b41eabadb2b1278bfcaade55d8eb4106954c63ab23b968f3e28c57112470fe4c.svg",
+        "alt": "X post — @mylifcc"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/mylifcc/status/2104060209882710051"
+      },
+      "captured_at": "2026-09-27T17:37:32+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260927-0002",
+      "title": "X post — @Dontgiveup_26",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "unrendered-post",
+        "user-intake",
+        "x"
+      ],
+      "summary": "사용자 제공 X 링크. 공개 메타데이터와 본문/미디어를 현재 수집 경로에서 확인하지 못해 재개 대기 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/961d3331e645b1dd15074cd704d439d0f6aa2bb5f10a7b9363930bdb60770c50.svg",
+        "alt": "X post — @Dontgiveup_26"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Dontgiveup_26/status/2103972951121125505"
+      },
+      "captured_at": "2026-09-27T17:37:16+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260927-0001",
+      "title": "X post — @Lonely__MH",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "unrendered-post",
+        "user-intake",
+        "x"
+      ],
+      "summary": "사용자 제공 X 링크. 공개 메타데이터와 본문/미디어를 현재 수집 경로에서 확인하지 못해 재개 대기 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/ed80cc93c355e0da66cc91f0cbd3d8abdb5b476a4a15d845264707a28f5e7191.svg",
+        "alt": "X post — @Lonely__MH"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Lonely__MH/status/2103874755816456634"
+      },
+      "captured_at": "2026-09-27T17:37:08+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20260926-0002",
