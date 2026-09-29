@@ -1,22 +1,22 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260929-040101-AUTO",
-  "source_manifest_sha256": "889fb545c72b7cfa6f655464b57068aff92d557b63f037cf29ced1f8cc76686a",
-  "export_manifest_sha256": "489804352ad400e84f05779c25491629e12b0732eb2b2ea91b513646fd3270b6",
-  "generated_at": "2026-09-29T04:01:02+09:00",
+  "release_id": "LIA-20260930-040100-AUTO",
+  "source_manifest_sha256": "5fad0c0c1eb83e21a90dd1c90247dfa398423c637e4d87c2bce173a818855cb8",
+  "export_manifest_sha256": "2c1a0d14258304be79088c908c191f8fa05264cfd7ff82c2a79004286b5e3730",
+  "generated_at": "2026-09-30T04:01:01+09:00",
   "facet_counts": {
-    "general": 136,
+    "general": 144,
     "prompts": 156,
     "video_generation": 102
   },
   "category_counts": {
     "video_technique": 97,
-    "image_technique": 91,
+    "image_technique": 92,
     "agent_technique": 18,
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
-    "visual_reference": 91,
+    "visual_reference": 98,
     "ideas": 0,
     "ai_research": 9
   },
@@ -32,6 +32,296 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260929-0008",
+      "title": "schift-ocr-1-beta — Korean-document OCR model announcement",
+      "types": [
+        "document_processing",
+        "korean_document_ai",
+        "ocr_model"
+      ],
+      "tags": [
+        "bank-forms",
+        "document-ai",
+        "hugging-face",
+        "korean",
+        "ocr",
+        "schift-ocr-1-beta"
+      ],
+      "summary": "한국어 문서 전용 OCR 모델 schift-ocr-1-beta 출시를 알린 Threads 게시물입니다. 게시자는 내부 은행 양식 60장 기준 오류율 0.067과 MinerU·Gemini·Meta Muse Spark 대비 우위를 주장합니다. 성능 수치는 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/20f816b7ec2671ac096f4eec4e1caf3668e2169d6d663c8798ea38409a580920.svg",
+        "alt": "schift-ocr-1-beta — Korean-document OCR model announcement"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@catlovessubakba/post/Dd3of12EraE"
+      },
+      "captured_at": "2026-09-29T23:53:52+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260929-0007",
+      "title": "Qwen Image 2.1 Anime — uncensored model reference",
+      "types": [
+        "ai_image_model",
+        "anime",
+        "creative_reference"
+      ],
+      "tags": [
+        "anime",
+        "hugging-face",
+        "image-generation",
+        "nsfw",
+        "qwen-image-2.1",
+        "uncensored"
+      ],
+      "summary": "Stable Diffusion Tutorials가 Qwen Image 2.1 기반 애니메이션 이미지 모델을 소개한 게시물입니다. 작성자는 인물 클로즈업부터 와이드 페인팅, 부드러운 조명·깨끗한 색상, 긴 프롬프트 준수를 주장합니다. 원문은 uncensored/NSFW 표기를 포함합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/0f8131a87e7191a386f81367cb4efcd93bafe352d99474b5ee5ec3b247a3f6b4.webp",
+        "alt": "Qwen Image 2.1 Anime — uncensored model reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/SD_Tutorial/status/2104902418291155334"
+      },
+      "captured_at": "2026-09-29T21:56:35+09:00",
+      "category": "image_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260929-0006",
+      "title": "X post by @MissCat_AI (translation source unavailable)",
+      "types": [
+        "social_post",
+        "translation_request"
+      ],
+      "tags": [
+        "comments",
+        "korean",
+        "source-unavailable",
+        "translation",
+        "x"
+      ],
+      "summary": "사용자가 게시물과 댓글의 한국어 번역을 요청했습니다. 허용된 공개 메타데이터 경로는 빈 응답을 반환했고, 브라우저 추출 경로는 사용할 수 없어 원문·댓글을 확인하지 못했습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/f86f62128017986325e93175e0343276cfee86ec5108e224dbe69a9225f2c9e3.svg",
+        "alt": "X post by @MissCat_AI (translation source unavailable)"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/MissCat_AI/status/2104473940014117210"
+      },
+      "captured_at": "2026-09-29T21:09:37+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260929-0005",
+      "title": "llmfit — local AI model recommendations from hardware",
+      "types": [
+        "ai_tool_model"
+      ],
+      "tags": [
+        "cpu",
+        "gpu",
+        "hardware",
+        "llmfit",
+        "local-ai",
+        "local-inference",
+        "memory",
+        "model-selection"
+      ],
+      "summary": "llmfit은 PC의 CPU·GPU·가용 메모리를 분석해 로컬 실행에 적합한 AI 모델을 비교·추천한다고 소개된 도구입니다. 도구의 기능 설명은 작성자 주장 기준입니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/ce99b70bb08a2111c6a9212d853051eb2e66b859616b4939b2d2b6f5daebc905.webp",
+        "alt": "llmfit — local AI model recommendations from hardware"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/_guillecasaus/status/2104539593966063913"
+      },
+      "captured_at": "2026-09-29T10:13:02+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260929-0004",
+      "title": "X post — Fred-New (@Fred834567)",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "unrendered-post",
+        "user-intake",
+        "x"
+      ],
+      "summary": "사용자 제공 X 링크. 공개 검색에서 작성자와 날짜만 확인되었으며 본문·미디어는 현재 수집 경로에서 확인하지 못해 재개 대기 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/e276fe547341c21a1c773aebf7054e5019d8dc4a48a4288aafca17e3463353b0.svg",
+        "alt": "X post — Fred-New (@Fred834567)"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Fred834567/status/2103983958048514144"
+      },
+      "captured_at": "2026-09-29T08:53:36+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260929-0003",
+      "title": "X post — @Fred834567",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "unrendered-post",
+        "user-intake",
+        "x"
+      ],
+      "summary": "사용자 제공 X 링크. 공개 메타데이터와 본문/미디어를 현재 수집 경로에서 확인하지 못해 재개 대기 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/ae6ce1846adb074b27317bfd89f505aa17983c0d0442932c1c7cc080cb4211ea.svg",
+        "alt": "X post — @Fred834567"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Fred834567/status/2104541639586787673"
+      },
+      "captured_at": "2026-09-29T08:52:39+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260929-0002",
+      "title": "X post — @VibeEverything",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "unrendered-post",
+        "user-intake",
+        "x"
+      ],
+      "summary": "사용자 제공 X 링크. 공개 메타데이터와 본문/미디어를 현재 수집 경로에서 확인하지 못해 재개 대기 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/762c458a6eac36cde9f5af2798fec1391dff51fc15d9ec56c859f71c17b51674.svg",
+        "alt": "X post — @VibeEverything"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/VibeEverything/status/2104539752016076956"
+      },
+      "captured_at": "2026-09-29T08:28:42+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260929-0001",
+      "title": "X post — @huoshan007",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "unrendered-post",
+        "user-intake",
+        "x"
+      ],
+      "summary": "사용자 제공 X 링크. 공개 메타데이터와 본문/미디어를 현재 수집 경로에서 확인하지 못해 재개 대기 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/86201ef1b09d9a93a7f7baa9d553a3e0a4bd69b36d41f33d63f72fa360979869.svg",
+        "alt": "X post — @huoshan007"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/huoshan007/status/2104452796980298135"
+      },
+      "captured_at": "2026-09-29T08:27:06+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20260927-0009",
