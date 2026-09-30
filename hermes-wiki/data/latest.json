@@ -1,18 +1,18 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20260930-040100-AUTO",
-  "source_manifest_sha256": "5fad0c0c1eb83e21a90dd1c90247dfa398423c637e4d87c2bce173a818855cb8",
-  "export_manifest_sha256": "2c1a0d14258304be79088c908c191f8fa05264cfd7ff82c2a79004286b5e3730",
-  "generated_at": "2026-09-30T04:01:01+09:00",
+  "release_id": "LIA-20261001-040100-AUTO",
+  "source_manifest_sha256": "32d0b0a6beb2e1b58bf46d674de0c9cb19b22879cf900e09f1c809b12077f363",
+  "export_manifest_sha256": "0ac55233bd50a9118eae4e901a2a009fe123b2289238ca9a4ef9393d7e3e0df0",
+  "generated_at": "2026-10-01T04:01:02+09:00",
   "facet_counts": {
-    "general": 144,
+    "general": 145,
     "prompts": 156,
     "video_generation": 102
   },
   "category_counts": {
     "video_technique": 97,
     "image_technique": 92,
-    "agent_technique": 18,
+    "agent_technique": 19,
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
@@ -32,6 +32,46 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20260930-0001",
+      "title": "Pi wrapper approach for Antigravity and Gemini harnessing",
+      "types": [
+        "ai_agent_harness",
+        "plugin_configuration",
+        "technical_reference"
+      ],
+      "tags": [
+        "antigravity",
+        "configuration-policy",
+        "gemini",
+        "harness",
+        "pi",
+        "plugin",
+        "skill-routing"
+      ],
+      "summary": "작성자가 Pi를 통해 도구를 축소한 Antigravity 구성을 감싸 Gemini 3.8 Flash 사용 경험을 개선하려는 접근을 소개한 게시물입니다. 플러그인·스킬 호출 제한·하단 설정을 다루며, 허용·비위반이라는 판단은 작성자 주장입니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/abd449a720db5f0b4c47e52d6fb74ebdeb6415f1550d1fc2246ffe3cab2dec11.webp",
+        "alt": "Pi wrapper approach for Antigravity and Gemini harnessing"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/tangchuan_CN/status/2104925431678017775"
+      },
+      "captured_at": "2026-09-30T08:46:27+09:00",
+      "category": "agent_technique",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20260929-0008",
