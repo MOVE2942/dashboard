@@ -1,22 +1,22 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261001-040100-AUTO",
-  "source_manifest_sha256": "32d0b0a6beb2e1b58bf46d674de0c9cb19b22879cf900e09f1c809b12077f363",
-  "export_manifest_sha256": "0ac55233bd50a9118eae4e901a2a009fe123b2289238ca9a4ef9393d7e3e0df0",
-  "generated_at": "2026-10-01T04:01:02+09:00",
+  "release_id": "LIA-20261002-040100-AUTO",
+  "source_manifest_sha256": "a0f6cd77c1ae68775863553297e29de6bc05e6c9360da320c844bd1d69b43476",
+  "export_manifest_sha256": "08f4b3546293fbaa616e513be2c5e9b25affd75ebf696709e8bc3b0f3a042889",
+  "generated_at": "2026-10-02T04:01:02+09:00",
   "facet_counts": {
-    "general": 145,
+    "general": 152,
     "prompts": 156,
-    "video_generation": 102
+    "video_generation": 105
   },
   "category_counts": {
-    "video_technique": 97,
-    "image_technique": 92,
+    "video_technique": 100,
+    "image_technique": 98,
     "agent_technique": 19,
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
-    "visual_reference": 98,
+    "visual_reference": 99,
     "ideas": 0,
     "ai_research": 9
   },
@@ -32,6 +32,397 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261002-0001",
+      "title": "MiniMax H3 2-step and 4-step acceleration LoRA reference",
+      "types": [
+        "inference_optimization",
+        "lora",
+        "video_generation_model"
+      ],
+      "tags": [
+        "2-step",
+        "4-step",
+        "comfyui",
+        "h3",
+        "lora",
+        "low-vram",
+        "minimax",
+        "video-generation"
+      ],
+      "summary": "Kijai의 MiniMax H3 2-step·4-step 가속 LoRA를 소개한 게시물입니다. 작성자는 300–500MB 규모와 저VRAM 환경 활용 가능성을 언급하며 RTX 5070 12GB ComfyUI 테스트를 예고했습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/ab0626014811b6555ae5eda1f8f4af20db246326b1301a4fc6932306e0c0e741.webp",
+        "alt": "MiniMax H3 2-step and 4-step acceleration LoRA reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Tomw852/status/2105600477866185091"
+      },
+      "captured_at": "2026-10-02T01:45:29+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261001-0009",
+      "title": "Nintendo 64 ROM and modified emulator APK distribution post",
+      "types": [
+        "risk_reference",
+        "unverified_software_distribution"
+      ],
+      "tags": [
+        "apk",
+        "copyright-risk",
+        "emulator",
+        "malware-risk",
+        "nintendo-64",
+        "review-required",
+        "rom"
+      ],
+      "summary": "Nintendo 64 ROM 묶음과 수정 APK 에뮬레이터를 배포한다고 알리는 게시물입니다. 저작권 침해 및 수정 APK 보안 위험 가능성이 있어 식별·위험 기록으로만 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/ab829add97af294b3c6fb34e3422f20aa2c47089bf080ee2d06a4f989315e254.svg",
+        "alt": "Nintendo 64 ROM and modified emulator APK distribution post"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/AcervoAPK/status/2105401044847218830"
+      },
+      "captured_at": "2026-10-01T19:38:23+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261001-0008",
+      "title": "Qwen Image 2.1 local-use tutorial and hardware observations",
+      "types": [
+        "ai_image_workflow",
+        "local_inference_tutorial"
+      ],
+      "tags": [
+        "comfyui",
+        "gpu",
+        "image-generation",
+        "local-inference",
+        "qwen-image-2.1",
+        "seed",
+        "vrm"
+      ],
+      "summary": "Qwen Image 2.1의 로컬·ComfyUI 사용과 GPU 요구사항을 소개한 게시물입니다. 작성자는 8GB 이상 VRAM을 권장하고, 단일 인물 이미지가 다중 인물보다 안정적이며 seed가 중요하다고 설명합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/c4d473433ff134d8926eebd5907e619c62bd3cda882c7d29f0e0309c0f6f3907.webp",
+        "alt": "Qwen Image 2.1 local-use tutorial and hardware observations"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/luojiuyue/status/2103421186063642822"
+      },
+      "captured_at": "2026-10-01T18:35:49+09:00",
+      "category": "image_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261001-0007",
+      "title": "WAI-Illustrious SDXL v17.0 — sensitive Mac Metal reference",
+      "types": [
+        "local_inference_reference",
+        "sensitive_ai_image_model"
+      ],
+      "tags": [
+        "comfyui",
+        "illustrious",
+        "local-inference",
+        "mac",
+        "metal",
+        "nsfw",
+        "sdxl",
+        "sensitive-reference"
+      ],
+      "summary": "WAI-Illustrious SDXL v17.0의 NSFW 이미지 생성 및 Mac Metal/ComfyUI 실행을 소개한 게시물입니다. 모델 크기, 생성 시간, Qwen Image 2.1 대비 속도는 작성자 주장입니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/dde94a04910cb42ef79e7692de9eff7e4bd7c3e0a24e4e7bf8978df7902d7deb.svg",
+        "alt": "WAI-Illustrious SDXL v17.0 — sensitive Mac Metal reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/wquguru/status/2102717889585586493"
+      },
+      "captured_at": "2026-10-01T18:34:53+09:00",
+      "category": "image_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261001-0006",
+      "title": "Staged AI-video production workflow: previs to compositing",
+      "types": [
+        "ai_video_workflow",
+        "creative_production_pipeline"
+      ],
+      "tags": [
+        "ai-video",
+        "character-reference",
+        "compositing",
+        "graphics",
+        "motion-reference",
+        "previsualization",
+        "subtitles"
+      ],
+      "summary": "카메라 프리비즈 → 동작 레퍼런스 → 캐릭터 레퍼런스 → AI 영상 생성 → 자막·그래픽 합성 순서의 단계적 AI 영상 제작 워크플로를 소개한 게시물입니다. 한 번에 끝내지 않고 공을 들여 단계적으로 진행해야 한다는 점을 강조합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/82360386790260fd3f1d50eab5b9f27f93f613e1761ea233ffa3a91ebcf4d800.svg",
+        "alt": "Staged AI-video production workflow: previs to compositing"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@woong.nya_ha/post/Dd3_lTHk2fC"
+      },
+      "captured_at": "2026-10-01T14:00:27+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261001-0005",
+      "title": "TAEQwenImage21_AcademiaSD — Qwen Image 2.1 preview decoder",
+      "types": [
+        "ai_image_model",
+        "autoencoder",
+        "comfyui_optimization"
+      ],
+      "tags": [
+        "comfyui",
+        "decoder",
+        "latent2rgb",
+        "preview",
+        "qwen-image-2.1",
+        "tiny-autoencoder"
+      ],
+      "summary": "Qwen-Image 2.1용 Tiny AutoEncoder TAEQwenImage21_AcademiaSD를 소개한 게시물입니다. 작성자는 기본 Latent2RGB보다 ComfyUI 샘플링 미리보기를 개선하고 PSNR 30.1 dB를 달성한다고 주장합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/072288d98b48c835a5704ff62653accf8ccdd0e6bec24cfd11cb98b7fce5950f.webp",
+        "alt": "TAEQwenImage21_AcademiaSD — Qwen Image 2.1 preview decoder"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/aiaicreate/status/2105254640988180619"
+      },
+      "captured_at": "2026-10-01T08:47:34+09:00",
+      "category": "image_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261001-0004",
+      "title": "Minimax H3 4-step video-generation LoRA reference",
+      "types": [
+        "inference_optimization",
+        "lora",
+        "video_generation_model"
+      ],
+      "tags": [
+        "4-step",
+        "h3",
+        "inference-optimization",
+        "kijai",
+        "lora",
+        "minimax",
+        "video-generation"
+      ],
+      "summary": "Kijai의 Minimax H3_ELM_longlive_plug_4step_lora(bf16)를 소개한 게시물입니다. 작성자는 영상 생성 추론 단계를 4단계까지 줄이면서 품질 손실을 최소화할 수 있다고 주장합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/b7dcbc733857404b2cc2008bc2bf585a175e6d71bcbf1d29c9e1ffbcb3946668.svg",
+        "alt": "Minimax H3 4-step video-generation LoRA reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/SD_Tutorial/status/2105380193716285778"
+      },
+      "captured_at": "2026-10-01T08:15:53+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261001-0003",
+      "title": "Adult image-generation options — sensitive reference",
+      "types": [
+        "sensitive_ai_image_reference"
+      ],
+      "tags": [
+        "18-plus",
+        "adult-content",
+        "civitai",
+        "comfyui",
+        "image-generation",
+        "sensitive-reference"
+      ],
+      "summary": "성인 이미지 생성 수단을 나열한 X 게시물입니다. 공개 미리보기에는 로컬 ComfyUI, Civitai 및 일부 모델·생성기 이름이 보이지만 전체 목록은 확인하지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/93e1886a972fa1740f216b24cf3a302c671fe200a6b93cb5dcc2dfaeef2d8b65.svg",
+        "alt": "Adult image-generation options — sensitive reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/rexsooo/status/2105386147157516587"
+      },
+      "captured_at": "2026-10-01T08:08:12+09:00",
+      "category": "image_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261001-0002",
+      "title": "Action-image reference conditioning for chatgpt-image2.5",
+      "types": [
+        "image_generation_technique",
+        "reference_conditioning"
+      ],
+      "tags": [
+        "action-reference",
+        "chatgpt-image2.5",
+        "conditioning",
+        "image-generation",
+        "prompt-constraints"
+      ],
+      "summary": "작성자는 chatgpt-image2.5 이미지 생성에서 좌측의 동작 이미지를 함께 넣고 제한어를 추가하는 방식을 소개합니다. 상세 프롬프트와 설정값은 공개 본문에서 확인되지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/7d42f7f115622c4688522771603f5d6a7f693013306d46d36d511a9df5c55f02.webp",
+        "alt": "Action-image reference conditioning for chatgpt-image2.5"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/sereinworld/status/2105320262900355104"
+      },
+      "captured_at": "2026-10-01T08:06:40+09:00",
+      "category": "image_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261001-0001",
+      "title": "Qwen-Image-2.1-Fix — stability-focused LoRA reference",
+      "types": [
+        "ai_image_model",
+        "lora",
+        "workflow_reference"
+      ],
+      "tags": [
+        "diffusers",
+        "diffusionbee",
+        "draw-things",
+        "image-generation",
+        "lora",
+        "qwen-image-2.1",
+        "stability"
+      ],
+      "summary": "Qwen Image 2.1 생성 실패를 줄이고 출력 안정성을 높이기 위한 경량 LoRA Qwen-Image-2.1-Fix를 소개한 게시물입니다. Diffusers·Draw Things·DiffusionBee 지원 및 권장 워크플로 제공은 작성자 주장입니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/6f03a9a66131434a0297fe24204a26aa6809ddf374b3f71cfab4386b321f3ce3.webp",
+        "alt": "Qwen-Image-2.1-Fix — stability-focused LoRA reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Lonely__MH/status/2105086472566997227"
+      },
+      "captured_at": "2026-10-01T08:06:39+09:00",
+      "category": "image_technique",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20260930-0001",
