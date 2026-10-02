@@ -1,22 +1,22 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261002-040100-AUTO",
-  "source_manifest_sha256": "a0f6cd77c1ae68775863553297e29de6bc05e6c9360da320c844bd1d69b43476",
-  "export_manifest_sha256": "08f4b3546293fbaa616e513be2c5e9b25affd75ebf696709e8bc3b0f3a042889",
-  "generated_at": "2026-10-02T04:01:02+09:00",
+  "release_id": "LIA-20261003-040058-AUTO",
+  "source_manifest_sha256": "efd764fda7a70b5d57d633a84cf299cec2d11d9d95c72c016381311a7c381107",
+  "export_manifest_sha256": "f424157e5cd1a27a9cc2904f3a9e6bae7dbed23348c45871beffb3c2c48e97d3",
+  "generated_at": "2026-10-03T04:00:59+09:00",
   "facet_counts": {
-    "general": 152,
+    "general": 154,
     "prompts": 156,
-    "video_generation": 105
+    "video_generation": 106
   },
   "category_counts": {
-    "video_technique": 100,
+    "video_technique": 101,
     "image_technique": 98,
     "agent_technique": 19,
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
-    "visual_reference": 99,
+    "visual_reference": 101,
     "ideas": 0,
     "ai_research": 9
   },
@@ -32,6 +32,122 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261003-0001",
+      "title": "ComfyUI H3 Motion Context for multi-segment video continuity",
+      "types": [
+        "ai_video_workflow",
+        "comfyui",
+        "temporal_consistency"
+      ],
+      "tags": [
+        "comfyui",
+        "latent",
+        "minimax-h3",
+        "motion-context",
+        "temporal-consistency",
+        "video-continuity"
+      ],
+      "summary": "MiniMax H3 영상 구간을 연결할 때 이전 구간의 마지막 22프레임(0.92초)을 다음 구간 시작에 고정해 실제 동작 문맥을 유지하는 Motion Context 워크플로를 소개한 게시물입니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/479c5b2027e36deeb23685809ef970dd818e7d8a5e2261f2d90224d2eab7f223.webp",
+        "alt": "ComfyUI H3 Motion Context for multi-segment video continuity"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/eternityspring/status/2106011333775032522"
+      },
+      "captured_at": "2026-10-03T00:27:53+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261002-0003",
+      "title": "Windows activation-script promotion — license-circumvention risk",
+      "types": [
+        "risk_reference",
+        "software_license_circumvention"
+      ],
+      "tags": [
+        "activation",
+        "license-circumvention",
+        "review-required",
+        "security-risk",
+        "software-piracy",
+        "windows"
+      ],
+      "summary": "Windows 활성화를 무료로 할 수 있다고 주장하는 스크립트 저장소를 홍보한 게시물입니다. 소프트웨어 라이선스 우회 가능성이 있어 식별·위험 기록으로만 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/cdf5df1175601ad787fc3fbfddc3d958dd4262cba478557f3c382431e698e2eb.svg",
+        "alt": "Windows activation-script promotion — license-circumvention risk"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/liambraus/status/2105650623974621300"
+      },
+      "captured_at": "2026-10-02T13:56:28+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261002-0002",
+      "title": "OpenMuse — local AI agent workbench reference",
+      "types": [
+        "ai_agent_platform",
+        "local_first_agent",
+        "technical_reference"
+      ],
+      "tags": [
+        "copilotkit",
+        "headless-browser",
+        "human-takeover",
+        "local-ai-agent",
+        "local-first",
+        "openmuse"
+      ],
+      "summary": "OpenMuse를 Meta Muse 능력을 재현한 로컬 AI 에이전트 워크벤치로 소개한 게시물입니다. 작성자는 브라우저 자동 검색·인간 개입·로컬 파일 읽기·장기 작업 보존 기능을 주장합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/ab46ac1ff1df0973953628b79321c56cbca6f39194b1aa37c56e49e714f3841e.webp",
+        "alt": "OpenMuse — local AI agent workbench reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/denziideng/status/2105766936105964013"
+      },
+      "captured_at": "2026-10-02T13:52:04+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261002-0001",
