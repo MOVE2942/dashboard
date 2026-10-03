@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261003-040058-AUTO",
-  "card_count": 360,
+  "release_id": "LIA-20261004-040051-AUTO",
+  "card_count": 364,
   "facet_counts": {
-    "general": 154,
+    "general": 156,
     "prompts": 156,
-    "video_generation": 106
+    "video_generation": 108
   },
   "source_manifest": [
     {
@@ -1447,10 +1447,26 @@
     {
       "id": "CR-20261003-0001",
       "hash": "33696edfef5df117d05be080489c5dee6d26a0c477470161217e0993fcdbcb8e"
+    },
+    {
+      "id": "CR-20261003-0002",
+      "hash": "fffe38fb926370dea19e99f03869b5141072c3095f0f05ed516bd088460ea2b2"
+    },
+    {
+      "id": "CR-20261003-0003",
+      "hash": "54fafc57bf3dd6a8fd149f3c87989cd84d1cc8d4c6bfa8c5006d70dbaba50e1c"
+    },
+    {
+      "id": "CR-20261003-0004",
+      "hash": "ef8dcb156fb230e8f08445e1b60484e3464d229c617afed930f86e6442e693eb"
+    },
+    {
+      "id": "CR-20261004-0001",
+      "hash": "c49cd2ab3cf63c0fcb182f8b9fb7c4f37f833fbc5960c5d7b584078375735899"
     }
   ],
-  "source_manifest_sha256": "efd764fda7a70b5d57d633a84cf299cec2d11d9d95c72c016381311a7c381107",
-  "export_manifest_sha256": "f424157e5cd1a27a9cc2904f3a9e6bae7dbed23348c45871beffb3c2c48e97d3",
+  "source_manifest_sha256": "6e8cc1f88bb0e547e5f82adf7fa96bcbc6449260ac427af905d7de8d00ca6f2b",
+  "export_manifest_sha256": "0b7fbc0a85d54d9495e11cc82e629816b4beaa9e195424e17a7424a25c6b2e79",
   "files": [
     {
       "path": "assets/0069be87fd0f74b6c97c3179cfa25654d20950f962b2aafd6767cc28f851d88e.png",
@@ -1673,6 +1689,11 @@
       "size": 168443
     },
     {
+      "path": "assets/27fcb1e7c78f6b8918131ddaf609e3502b9f5220493a75cd06bd29ca5c245a02.webp",
+      "sha256": "27fcb1e7c78f6b8918131ddaf609e3502b9f5220493a75cd06bd29ca5c245a02",
+      "size": 180030
+    },
+    {
       "path": "assets/27feb88052be39d48de160105f8f64725390869e1c4753c962ff1dd785479848.jpg",
       "sha256": "27feb88052be39d48de160105f8f64725390869e1c4753c962ff1dd785479848",
       "size": 44895
@@ -1826,6 +1847,11 @@
       "path": "assets/4088cf0ef76d302cf469a028fb54bf8313c68f4f6aba56f332f2de262b683a64.jpg",
       "sha256": "4088cf0ef76d302cf469a028fb54bf8313c68f4f6aba56f332f2de262b683a64",
       "size": 233742
+    },
+    {
+      "path": "assets/40ec66430997e3f0599a35940eb1f7ea33cd918094f5379cd4215e05c7f319ed.webp",
+      "sha256": "40ec66430997e3f0599a35940eb1f7ea33cd918094f5379cd4215e05c7f319ed",
+      "size": 53138
     },
     {
       "path": "assets/41042ca7b75bb76fd06872e519e6ca2800aa53cc4781c073de87aa4363ab09f3.png",
@@ -2753,6 +2779,11 @@
       "size": 156979
     },
     {
+      "path": "assets/cf62264a223102925c4bffba301deb19f425476115ecdc22baf904474f2fe417.webp",
+      "sha256": "cf62264a223102925c4bffba301deb19f425476115ecdc22baf904474f2fe417",
+      "size": 66248
+    },
+    {
       "path": "assets/d0cbf598c729abbbbeffc0cb0b47087b715d0d0055668841a8ba87fb20441dc5.jpg",
       "sha256": "d0cbf598c729abbbbeffc0cb0b47087b715d0d0055668841a8ba87fb20441dc5",
       "size": 192284
@@ -2906,6 +2937,11 @@
       "path": "assets/e0c4c949a7d351c43ac9892438a46414135153a8097393fbd8ddd687790e1861.jpg",
       "sha256": "e0c4c949a7d351c43ac9892438a46414135153a8097393fbd8ddd687790e1861",
       "size": 226984
+    },
+    {
+      "path": "assets/e0cfdecb739b09e52dd35f5c140f28a09aabff114f8b348d6a33888d8c25d1ee.webp",
+      "sha256": "e0cfdecb739b09e52dd35f5c140f28a09aabff114f8b348d6a33888d8c25d1ee",
+      "size": 66644
     },
     {
       "path": "assets/e11a79326d59bce3867e350f1e3bbf33c8be9c9c89c9b29389d92731bf8c4a4e.jpg",
@@ -3194,8 +3230,8 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "32ec279ff3a04aaaca7772429f549973208e28733f72c5ef8e5599ada836483a",
-      "size": 504773
+      "sha256": "f89dddb988ee1995c9cbb213744871af9f00fec6ee332c8483cee1fee7a2e63a",
+      "size": 509917
     },
     {
       "path": "index.html",
@@ -3213,5 +3249,5 @@
       "size": 2765
     }
   ],
-  "bundle_sha256": "6a47beb0d36d59e0b539a6839a839860b13589ed1b9399d750ff9b0c6d669e63"
+  "bundle_sha256": "a40e4eeb82240bcb88434660a64c1eb76924eebeb6ce25a11921b59d4d9203d5"
 }
