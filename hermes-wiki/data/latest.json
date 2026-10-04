@@ -1,22 +1,22 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261004-040051-AUTO",
-  "source_manifest_sha256": "6e8cc1f88bb0e547e5f82adf7fa96bcbc6449260ac427af905d7de8d00ca6f2b",
-  "export_manifest_sha256": "0b7fbc0a85d54d9495e11cc82e629816b4beaa9e195424e17a7424a25c6b2e79",
-  "generated_at": "2026-10-04T04:00:52+09:00",
+  "release_id": "LIA-20261005-040045-AUTO",
+  "source_manifest_sha256": "054d786fde74f39e916aaeee465ae2c14acc0d774da51607859a33d1128f3bef",
+  "export_manifest_sha256": "2eb6f8b653a7c43642ecda2c8d55735538a9010b098f19e58ae5c87f3b29059a",
+  "generated_at": "2026-10-05T04:00:46+09:00",
   "facet_counts": {
-    "general": 156,
+    "general": 162,
     "prompts": 156,
-    "video_generation": 108
+    "video_generation": 110
   },
   "category_counts": {
-    "video_technique": 103,
+    "video_technique": 105,
     "image_technique": 100,
     "agent_technique": 19,
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
-    "visual_reference": 101,
+    "visual_reference": 107,
     "ideas": 0,
     "ai_research": 9
   },
@@ -32,6 +32,318 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261004-0009",
+      "title": "MiniMax H3 RTX 4070 local video-generation optimization reference",
+      "types": [
+        "ai_video_generation",
+        "performance_optimization_reference"
+      ],
+      "tags": [
+        "ffn",
+        "int8",
+        "local-inference",
+        "minimax-h3",
+        "nvenc",
+        "rtx-4070",
+        "vae",
+        "video-generation"
+      ],
+      "summary": "RTX 4070 12GB 환경에서 MiniMax H3의 약 5초 영상을 평균 약 60초에 생성했다는 작성자 성능 보고입니다. X2 VAE 부분 INT8화, 디코드/NVENC 병렬화, FFN 파라미터 조정은 모두 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/fbff0e84a1dba283e09f9fd7fe955a12870a95fb5b58e666d8fac4d6f6c443d2.svg",
+        "alt": "MiniMax H3 RTX 4070 local video-generation optimization reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/sep_is_heim/status/2106531484836495544"
+      },
+      "captured_at": "2026-10-04T13:52:06+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261004-0008",
+      "title": "opendots open-source project reference",
+      "types": [
+        "ai_tool_reference",
+        "open_source_project_reference"
+      ],
+      "tags": [
+        "ai-tools",
+        "deepseek-harness",
+        "desktop-client",
+        "open-source",
+        "openai-dots",
+        "opendots"
+      ],
+      "summary": "OpenAI Dots 공개 직후 등장했다고 소개된 opendots 오픈소스 프로젝트 참고자료입니다. 프로젝트 관계·공개 시점·기능·소스는 작성자 주장으로만 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/fb8183677a19e43f11d88e0eb7cb8b59c3063274dc1616eb2bb23b357662700d.svg",
+        "alt": "opendots open-source project reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/fly3nn/status/2106246887364075749"
+      },
+      "captured_at": "2026-10-04T13:44:40+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261004-0007",
+      "title": "LongCat-Video open video-generation model reference",
+      "types": [
+        "ai_video_generation",
+        "open_model_reference"
+      ],
+      "tags": [
+        "13.6b",
+        "long-take",
+        "longcat-video",
+        "meituan",
+        "mit-license",
+        "open-source",
+        "video-generation"
+      ],
+      "summary": "LongCat-Video를 소개하는 공개 X 게시물입니다. 13.6B 모델, 장시간 롱테이크, MIT 라이선스, 상업 이용 가능성 및 Veo 3급 품질에 관한 내용은 모두 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/f57eb5938337c923ad48f0d0353ae4c2a2b2f0a2a1cf76867449afc759b01076.svg",
+        "alt": "LongCat-Video open video-generation model reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Dontgiveup_26/status/2106524412715667782"
+      },
+      "captured_at": "2026-10-04T11:15:16+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261004-0006",
+      "title": "Browser session-cookie export and agent injection — auth risk reference",
+      "types": [
+        "credential_handling_risk",
+        "security_risk_reference"
+      ],
+      "tags": [
+        "authentication",
+        "browser-automation",
+        "chrome-extension",
+        "credential-risk",
+        "devtools",
+        "review-required",
+        "session-cookies"
+      ],
+      "summary": "로컬 브라우저의 로그인 쿠키를 추출·동기화한 뒤 에이전트 브라우저에 주입하는 방식을 설명한 게시물입니다. 로그인 경계를 우회할 수 있는 인증·보안 위험 출처로 식별 기록만 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/224ca419de5f100b50bde8a7aa76caa9ab14c6d1f4051cc2e969f82f9a3d17dd.svg",
+        "alt": "Browser session-cookie export and agent injection — auth risk reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/wlzh/status/2106268274350870642"
+      },
+      "captured_at": "2026-10-04T08:50:08+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261004-0005",
+      "title": "Sensitive adult-content reverse-search site promotion",
+      "types": [
+        "risk_reference",
+        "sensitive_content_reference"
+      ],
+      "tags": [
+        "adult-content",
+        "nsfw",
+        "reverse-image-search",
+        "review-required",
+        "sensitive-reference",
+        "unverified-service"
+      ],
+      "summary": "스크린샷으로 성인 콘텐츠를 검색하고 재생 시점을 찾을 수 있다고 주장하는 사이트를 홍보한 게시물입니다. 민감 콘텐츠·미검증 서비스 위험 출처로만 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/a3ad38a2afac50a1337cae970fc9ac6d34da60ebf6bf5cb73d0effe5ba82011a.svg",
+        "alt": "Sensitive adult-content reverse-search site promotion"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Fred834567/status/2106395901514469878"
+      },
+      "captured_at": "2026-10-04T08:34:34+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261004-0004",
+      "title": "Sensitive adult-content identifier listing",
+      "types": [
+        "sensitive_content_reference"
+      ],
+      "tags": [
+        "adult-content",
+        "identifier-listing",
+        "review-required",
+        "sensitive-reference"
+      ],
+      "summary": "성인 콘텐츠로 보이는 식별자 목록을 홍보한 게시물입니다. 민감 콘텐츠 식별·검토 경계를 위한 기록으로만 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/bf58ffb5324b3d5c473864d87c327e3d234f310bcef1b0ed9d0f0017f69fb957.svg",
+        "alt": "Sensitive adult-content identifier listing"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/chuge857/status/2106345339070615736"
+      },
+      "captured_at": "2026-10-04T08:33:21+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261004-0003",
+      "title": "Cloudflare + Gmail + Resend custom-domain email stack",
+      "types": [
+        "domain_email",
+        "email_configuration",
+        "technical_reference"
+      ],
+      "tags": [
+        "catch-all",
+        "cloudflare",
+        "custom-domain",
+        "dns",
+        "email-forwarding",
+        "gmail",
+        "resend",
+        "review-required",
+        "smtp"
+      ],
+      "summary": "Cloudflare 수신 전달·Catch-all, Resend SMTP 발신, Gmail 통합 사용을 결합한 개인 도메인 이메일 구성을 소개한 게시물입니다. 기능·일일 발신 한도·설정 난이도는 작성자 주장입니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/8e8f020be3700609306872c59c623ffe2f1c5712233c39f1d377241052dc18ad.svg",
+        "alt": "Cloudflare + Gmail + Resend custom-domain email stack"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Lonely__MH/status/2106200059704689061"
+      },
+      "captured_at": "2026-10-04T08:31:38+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261004-0002",
+      "title": "Game-console emulator download list — unverified software reference",
+      "types": [
+        "risk_reference",
+        "software_distribution_reference"
+      ],
+      "tags": [
+        "duckstation",
+        "emulators",
+        "pcsx2",
+        "ppsspp",
+        "review-required",
+        "rpcs3",
+        "shadps4",
+        "software-security",
+        "vita3k"
+      ],
+      "summary": "여러 게임 콘솔 에뮬레이터와 t.co 다운로드 링크를 나열한 게시물입니다. 링크 대상·배포자·라이선스·보안·합법적 사용 여부가 확인되지 않아 위험 인식 참고자료로만 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/1d04b57e6f023204712b0577e53c59d3fa38b9bc7a8ba04e627b7dc35b0daf25.webp",
+        "alt": "Game-console emulator download list — unverified software reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/aldostools/status/2106442569202745695"
+      },
+      "captured_at": "2026-10-04T08:30:18+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261004-0001",
