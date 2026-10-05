@@ -1,18 +1,18 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261005-040045-AUTO",
-  "source_manifest_sha256": "054d786fde74f39e916aaeee465ae2c14acc0d774da51607859a33d1128f3bef",
-  "export_manifest_sha256": "2eb6f8b653a7c43642ecda2c8d55735538a9010b098f19e58ae5c87f3b29059a",
-  "generated_at": "2026-10-05T04:00:46+09:00",
+  "release_id": "LIA-20261006-040102-AUTO",
+  "source_manifest_sha256": "4452c19d143cbb38d9a93f263fd7dd86538a2b52a07c43dbfce4b562a66c592a",
+  "export_manifest_sha256": "2418790a87c3e194e746f293c9c824578210e2bd29dc1fb8d0b0e41356044a2e",
+  "generated_at": "2026-10-06T04:01:04+09:00",
   "facet_counts": {
-    "general": 162,
+    "general": 163,
     "prompts": 156,
-    "video_generation": 110
+    "video_generation": 111
   },
   "category_counts": {
-    "video_technique": 105,
+    "video_technique": 106,
     "image_technique": 100,
-    "agent_technique": 19,
+    "agent_technique": 20,
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
@@ -32,6 +32,87 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261006-0002",
+      "title": "Muse museum diorama-to-video historical education workflow reference",
+      "types": [
+        "creative_video_workflow",
+        "historical_education_reference"
+      ],
+      "tags": [
+        "camera-path",
+        "diorama",
+        "historical-education",
+        "muse",
+        "museum",
+        "shot-segmentation",
+        "video-generation",
+        "video-to-video"
+      ],
+      "summary": "박물관의 역사적 어촌 미니어처를 촬영한 영상을 Muse에 넣어 원래 카메라 동선을 따라 실사풍 장면으로 재구성한 사례입니다. 26초 소스를 6개 샷으로 분할하고 60초 영상으로 조합했다는 내용은 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/47a06dd80f37d98dd960cbf79fcf4a9afdf168bbeb971aef6139d841542e6ba9.svg",
+        "alt": "Muse museum diorama-to-video historical education workflow reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/MinLiBuilds/status/2106678128559222803"
+      },
+      "captured_at": "2026-10-06T01:27:24+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261006-0001",
+      "title": "MUSE with Gemini subscription through Antigravity CLI — configuration risk reference",
+      "types": [
+        "ai_tool_reference",
+        "external_provider_configuration_risk"
+      ],
+      "tags": [
+        "antigravity",
+        "cli",
+        "codex",
+        "gemini",
+        "muse",
+        "oauth",
+        "provider-access",
+        "review-required",
+        "subscription"
+      ],
+      "summary": "Meta MUSE에 Codex CLI와 Antigravity CLI를 통해 Gemini 유료 구독을 연결했다고 소개하는 게시물입니다. 외부 제공자 구독·CLI·인증·모델 접근 설정 경계를 포함하므로 식별·검토용으로만 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/bf0491718febdf605ffb3cc3d6fd3c60c5b2fe08ecf7fed0847fad2108e680d4.svg",
+        "alt": "MUSE with Gemini subscription through Antigravity CLI — configuration risk reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/ushangul/status/2107034668977848430"
+      },
+      "captured_at": "2026-10-06T00:53:01+09:00",
+      "category": "agent_technique",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261004-0009",
