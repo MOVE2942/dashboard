@@ -1,22 +1,22 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261006-040102-AUTO",
-  "source_manifest_sha256": "4452c19d143cbb38d9a93f263fd7dd86538a2b52a07c43dbfce4b562a66c592a",
-  "export_manifest_sha256": "2418790a87c3e194e746f293c9c824578210e2bd29dc1fb8d0b0e41356044a2e",
-  "generated_at": "2026-10-06T04:01:04+09:00",
+  "release_id": "LIA-20261007-040016-AUTO",
+  "source_manifest_sha256": "b7ff1d605a2f74d5b3e12d8a1e4869b798df658d35a30768ccd42ba42b9946cc",
+  "export_manifest_sha256": "6e26105bfd0c28226da1eaeecd9846eab211aa3d87529ee25a16c3ef09d74b91",
+  "generated_at": "2026-10-07T04:00:18+09:00",
   "facet_counts": {
-    "general": 163,
+    "general": 171,
     "prompts": 156,
-    "video_generation": 111
+    "video_generation": 112
   },
   "category_counts": {
-    "video_technique": 106,
-    "image_technique": 100,
-    "agent_technique": 20,
+    "video_technique": 107,
+    "image_technique": 101,
+    "agent_technique": 22,
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
-    "visual_reference": 107,
+    "visual_reference": 112,
     "ideas": 0,
     "ai_research": 9
   },
@@ -32,6 +32,352 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261007-0002",
+      "title": "베네수엘라 푸들 나방",
+      "types": [
+        "community_post",
+        "inspiration"
+      ],
+      "tags": [
+        "곤충",
+        "나방",
+        "생물",
+        "캐릭터디자인",
+        "푸들나방"
+      ],
+      "summary": "공개 게시물: 베네수엘라 푸들 나방 이미지와 유사 나방 인형이 있다는 짧은 설명.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/3085084a2e33d0495f426352705a061c6d27ac423f4f8ea2ea7a27c9fd3f8a61.jpg",
+        "alt": "베네수엘라 푸들 나방"
+      },
+      "source": {
+        "platform": "etoland",
+        "url": "https://etoland.co.kr/b/etohumor07/article/9479543"
+      },
+      "captured_at": "2026-10-07T02:01:12+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261007-0001",
+      "title": "아직도 인류가 알지 못하는 땅",
+      "types": [
+        "community_post",
+        "inspiration"
+      ],
+      "tags": [
+        "미개척지",
+        "세계관",
+        "와칸다",
+        "자연",
+        "지리"
+      ],
+      "summary": "공개 게시물: 인류가 아직 알지 못하는 땅을 주제로 한 시각 자료와 “와칸다가 저기였구나”라는 짧은 문구.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/3884275344c2eb0ec9cdafdf310f81fb27ebec931db4225081f1e31d34b4578f.webp",
+        "alt": "아직도 인류가 알지 못하는 땅"
+      },
+      "source": {
+        "platform": "etoland",
+        "url": "https://etoland.co.kr/b/etohumor07/article/9481059"
+      },
+      "captured_at": "2026-10-07T01:31:01+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261006-0009",
+      "title": "HyperFrames Studio agent-assisted shared-timeline video editing reference",
+      "types": [
+        "ai_video_editing",
+        "creative_workflow_reference"
+      ],
+      "tags": [
+        "ai-agent",
+        "frame-annotation",
+        "hyperframes",
+        "hyperframes-studio",
+        "shared-timeline",
+        "templates",
+        "video-editing"
+      ],
+      "summary": "자연어로 영상을 만들고 사람과 에이전트가 같은 타임라인에서 프레임 드로잉·코멘트로 함께 수정하는 HyperFrames Studio 사례입니다. 기능·템플릿·품질·편집 속도 향상 팁은 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/a1390e5dd098beaeeba673d35b3fa46f3d19672ea74d435d77e579bde219b5d4.svg",
+        "alt": "HyperFrames Studio agent-assisted shared-timeline video editing reference"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@aicoffeechat/post/DeIP9OQCovm"
+      },
+      "captured_at": "2026-10-06T23:01:13+09:00",
+      "category": "agent_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261006-0008",
+      "title": "Gemini local-agent directory, rules, skills, and hooks setup reference",
+      "types": [
+        "ai_workflow_reference",
+        "local_agent_configuration_risk"
+      ],
+      "tags": [
+        "agentic",
+        "filesystem",
+        "gemini",
+        "hooks",
+        "local-agent",
+        "provider-configuration",
+        "review-required",
+        "rules",
+        "skills"
+      ],
+      "summary": "로컬 환경의 Gemini/AI 에이전트 활용을 위해 `~/agentic` 아래에 rules·skills·hooks 등 구성 폴더를 두는 방법을 소개하는 게시물입니다. 로컬 머신 경로·스크립트/훅·제공자 설정 경계를 포함하므로 검토용으로만 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/51d3c0b00e233dc56ef07303545355300cf60d003748c60fcad63c1d4225e6fa.svg",
+        "alt": "Gemini local-agent directory, rules, skills, and hooks setup reference"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@vesperchant/post/Dc24gNDGubq"
+      },
+      "captured_at": "2026-10-06T22:57:52+09:00",
+      "category": "agent_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261006-0007",
+      "title": "Meta Muse AI-agent use-case catalogue reference",
+      "types": [
+        "ai_agent_use_case_catalogue",
+        "reference_collection"
+      ],
+      "tags": [
+        "ai-agents",
+        "case-studies",
+        "catalogue",
+        "meta-muse",
+        "social-collection",
+        "use-cases"
+      ],
+      "summary": "Meta Muse AI 에이전트 실사용 사례 페이지를 소개하는 게시물입니다. 사례 수 증가, 14개 카테고리, X 등 소셜 게시물 자동 수집 기반이라는 내용은 모두 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/a2eaf35ad9544c5ff926ae52c44b4c85ac1dc5d27b47a59379d4ba61e614ca34.svg",
+        "alt": "Meta Muse AI-agent use-case catalogue reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/DeepDive_KR/status/2107299145367310450"
+      },
+      "captured_at": "2026-10-06T18:56:20+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261006-0006",
+      "title": "Gemini video editing prompt-workflow reference — thread unavailable",
+      "types": [
+        "ai_video_editing",
+        "prompt_workflow_reference"
+      ],
+      "tags": [
+        "capcut",
+        "comments-unavailable",
+        "gemini",
+        "prompt-workflow",
+        "thread-unavailable",
+        "video-editing"
+      ],
+      "summary": "Gemini로 영상 편집·콘텐츠 생성을 할 수 있고 10개 프롬프트를 제공한다고 소개하는 게시물입니다. 공개 루트 메타데이터만 확보됐으며, 요청된 댓글·답글과 프롬프트 본문은 확인되지 않아 추정하지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/8cf839ff961c670380c092638ef5122b2ed58e618ae82678a5ae6c59c017eb9a.svg",
+        "alt": "Gemini video editing prompt-workflow reference — thread unavailable"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/AlexCodeRx/status/2107084752549232911"
+      },
+      "captured_at": "2026-10-06T09:40:33+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261006-0005",
+      "title": "QwenImage2.1 Anime LoRA image-to-anime reference",
+      "types": [
+        "image_generation_lora_reference",
+        "style_transfer_reference"
+      ],
+      "tags": [
+        "anime",
+        "image-to-anime",
+        "lora",
+        "qwenimage2.1",
+        "stable-diffusion",
+        "style-transfer"
+      ],
+      "summary": "QwenImage2.1 Anime LoRA로 이미지를 애니메이션 스타일로 변환한다고 소개하는 참고자료입니다. 모델 정체·호환성·결과는 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/34c05e4cd061cee120e15a1d7e46101fd8f0b7b9769c47eb7b7c25ef861d7fb4.svg",
+        "alt": "QwenImage2.1 Anime LoRA image-to-anime reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/SD_Tutorial/status/2107156557360480475"
+      },
+      "captured_at": "2026-10-06T09:38:21+09:00",
+      "category": "image_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261006-0004",
+      "title": "Videdown multi-platform downloader and cookie-import risk reference",
+      "types": [
+        "copyright_authentication_risk",
+        "software_distribution_risk"
+      ],
+      "tags": [
+        "browser-cookies",
+        "cookie-import",
+        "copyright",
+        "platform-terms",
+        "review-required",
+        "videdown",
+        "video-downloader",
+        "yt-dlp"
+      ],
+      "summary": "yt-dlp 기반이라고 소개된 다중 플랫폼 미디어 다운로더 참고자료입니다. 로그인 필요 콘텐츠를 위해 브라우저 쿠키를 가져올 수 있다는 언급이 있어 저작권·플랫폼 약관·인증정보 취급 위험 식별용으로만 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/8a810a0bd89bdd4b33924e6dfddefc055e6f49d5406d57a228d5edbfbf76d7bd.svg",
+        "alt": "Videdown multi-platform downloader and cookie-import risk reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/grgerwcwetwet/status/2107073075825274947"
+      },
+      "captured_at": "2026-10-06T08:18:20+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261006-0003",
+      "title": "Image upload plus prompt-based image/video generation workflow reference",
+      "types": [
+        "creative_image_video_workflow",
+        "prompt_reference"
+      ],
+      "tags": [
+        "gemini",
+        "gpt-image",
+        "grok",
+        "image-to-image",
+        "prompt-workflow",
+        "video-generation"
+      ],
+      "summary": "Gemini·Grok·GPT Image 2.0에서 이미지를 업로드하고 프롬프트를 붙여 이미지와 영상을 생성하는 흐름을 소개하는 게시물입니다. 원문은 프롬프트가 아래에 있다고 하지만, 확보한 공개 루트 메타데이터에는 프롬프트·댓글이 없어 추정하지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/7b38e2b93b400b9947bdae412419831200937df2da80f1cf8e24da32b819478c.svg",
+        "alt": "Image upload plus prompt-based image/video generation workflow reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Soaima_Ai/status/2106948865744327008"
+      },
+      "captured_at": "2026-10-06T08:15:29+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261006-0002",
