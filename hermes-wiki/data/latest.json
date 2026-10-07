@@ -1,22 +1,22 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261007-040016-AUTO",
-  "source_manifest_sha256": "b7ff1d605a2f74d5b3e12d8a1e4869b798df658d35a30768ccd42ba42b9946cc",
-  "export_manifest_sha256": "6e26105bfd0c28226da1eaeecd9846eab211aa3d87529ee25a16c3ef09d74b91",
-  "generated_at": "2026-10-07T04:00:18+09:00",
+  "release_id": "LIA-20261008-040105-AUTO",
+  "source_manifest_sha256": "aaa94856fed5623005f13673abaef6a3ded045e48bd0048a55ddf510da3f9314",
+  "export_manifest_sha256": "de37aef35e02f229349f8ed73c53c991790e9b7e72f0c7a4d7856583e99fb735",
+  "generated_at": "2026-10-08T04:01:07+09:00",
   "facet_counts": {
-    "general": 171,
+    "general": 173,
     "prompts": 156,
-    "video_generation": 112
+    "video_generation": 113
   },
   "category_counts": {
-    "video_technique": 107,
+    "video_technique": 108,
     "image_technique": 101,
-    "agent_technique": 22,
+    "agent_technique": 23,
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
-    "visual_reference": 112,
+    "visual_reference": 113,
     "ideas": 0,
     "ai_research": 9
   },
@@ -32,6 +32,122 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0001",
+      "title": "Hermes Agent installation, practical-use, and token-configuration video reference",
+      "types": [
+        "hermes_agent_configuration_risk",
+        "video_reference"
+      ],
+      "tags": [
+        "claude",
+        "gpt",
+        "hermes-agent",
+        "installation",
+        "provider-configuration",
+        "review-required",
+        "telegram",
+        "token-usage"
+      ],
+      "summary": "Hermes Agent에 Claude·GPT를 모델 백엔드로 연결하고 Telegram을 대화창으로 쓰는 설치·실사용·토큰 설정 영상을 소개합니다. 공개 메타데이터만 확보했고 자막은 제공되지 않아 상세 절차를 추정하지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/16b54aa2841428d94797df79a40c95461fa2bf473c8a8265f9bd1fbba528be4c.svg",
+        "alt": "Hermes Agent installation, practical-use, and token-configuration video reference"
+      },
+      "source": {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=NWoJHsKIT1A"
+      },
+      "captured_at": "2026-10-08T01:39:59+09:00",
+      "category": "agent_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261007-0004",
+      "title": "FastVideo FastH3 consumer-GPU video generation performance reference",
+      "types": [
+        "ai_video_generation",
+        "performance_optimization_reference"
+      ],
+      "tags": [
+        "consumer-gpu",
+        "fasth3",
+        "fasth3-trim",
+        "fasth3-v2",
+        "fastvideo",
+        "rtx-5090",
+        "video-generation",
+        "vram"
+      ],
+      "summary": "FastVideo FastH3/FastH3 V2/FastH3 Trim의 소비자 GPU 기반 로컬 영상 생성 성능을 소개하는 게시물입니다. RTX 5090에서 5초 480p 오디오 포함 클립을 15초에 생성하고 FastH3 Trim은 8GB VRAM에서 동작한다는 내용은 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/0a43b69a7f5799b65c06a6b0a960bef4574f140c14b6f380e23f696b404fc9e4.svg",
+        "alt": "FastVideo FastH3 consumer-GPU video generation performance reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/eternityspring/status/2107635413133447631"
+      },
+      "captured_at": "2026-10-07T21:52:58+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261007-0003",
+      "title": "Sensitive adult-content identifier catalogue promotion",
+      "types": [
+        "sensitive_content_risk_reference"
+      ],
+      "tags": [
+        "adult-content",
+        "content-risk",
+        "identifier-catalogue",
+        "review-required",
+        "sensitive"
+      ],
+      "summary": "민감 성인 콘텐츠 식별자·작품 목록을 홍보하는 것으로 보이는 게시물입니다. 식별·위험 검토용 메타데이터만 보존하며, 식별자·외부 출처·미디어에는 접근하지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/897d95ad973723fcca82014ebabc458e8685a9f7def6576bccd0d3632702e74a.svg",
+        "alt": "Sensitive adult-content identifier catalogue promotion"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/chuge857/status/2107459585040929049"
+      },
+      "captured_at": "2026-10-07T15:49:02+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261007-0002",
