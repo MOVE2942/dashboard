@@ -1,22 +1,22 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261008-040105-AUTO",
-  "source_manifest_sha256": "aaa94856fed5623005f13673abaef6a3ded045e48bd0048a55ddf510da3f9314",
-  "export_manifest_sha256": "de37aef35e02f229349f8ed73c53c991790e9b7e72f0c7a4d7856583e99fb735",
-  "generated_at": "2026-10-08T04:01:07+09:00",
+  "release_id": "LIA-20261009-040054-AUTO",
+  "source_manifest_sha256": "e37d356cf49438d56b0ae330b0eb1a0fb134d3b7651d627703106489e67be4e0",
+  "export_manifest_sha256": "32ee09e359cb1c57926a1c89a6c450fc81689f7cb09b3879940adfe46cc20dd2",
+  "generated_at": "2026-10-09T04:00:56+09:00",
   "facet_counts": {
-    "general": 173,
+    "general": 187,
     "prompts": 156,
-    "video_generation": 113
+    "video_generation": 118
   },
   "category_counts": {
-    "video_technique": 108,
+    "video_technique": 113,
     "image_technique": 101,
-    "agent_technique": 23,
+    "agent_technique": 24,
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
-    "visual_reference": 113,
+    "visual_reference": 126,
     "ideas": 0,
     "ai_research": 9
   },
@@ -32,6 +32,747 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261009-0004",
+      "title": "Claimed Sulphur-2 uncensored video-generation model reference",
+      "types": [
+        "ai_video_model_reference",
+        "uncensored_model_reference"
+      ],
+      "tags": [
+        "image-to-video",
+        "local-model",
+        "ltx-2.3",
+        "sulphur-2",
+        "text-to-video",
+        "uncensored",
+        "unfiltered",
+        "zero-refusal"
+      ],
+      "summary": "LTX 2.3 기반이라고 주장된 Sulphur-2 무검열 영상 생성 모델 참고자료입니다. zero refusal·텍스트/이미지→영상·완전 로컬·unfiltered 표기는 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/af0766c9590c24d4d5c72cc191799763a09f4afe3dbd1f261db03f33141fc726.svg",
+        "alt": "Claimed Sulphur-2 uncensored video-generation model reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/0x0SojalSec/status/2108026675917390190"
+      },
+      "captured_at": "2026-10-09T01:54:34+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261009-0003",
+      "title": "나무도 나이 따라 이산화탄소 감소 차이가 남",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "나무",
+        "산림",
+        "이산화탄소",
+        "탄소흡수",
+        "환경"
+      ],
+      "summary": "공개 게시물: 나무 수령과 구성에 따른 숲의 이산화탄소 측정 차이를 다룬 내용. 수치와 결론은 출처 주장으로만 보존.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/7fdefbbf570078e64d2b266a4c240f931164b5bdd52b3908fefd60bb59c78121.svg",
+        "alt": "나무도 나이 따라 이산화탄소 감소 차이가 남"
+      },
+      "source": {
+        "platform": "etoland",
+        "url": "https://etoland.co.kr/b/freebbs/article/9486434"
+      },
+      "captured_at": "2026-10-09T01:52:39+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261009-0002",
+      "title": "김제 축제서 김밥 먹은 280명 집단 구토·설사…식중독 의심",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "공중보건",
+        "김밥",
+        "김제",
+        "식중독",
+        "축제"
+      ],
+      "summary": "공개 재게시물: 김제 지평선축제 방문객의 김밥 섭취 뒤 식중독 의심 신고와 역학조사 진행을 보도. 수치·검사 결과는 출처 주장으로만 보존.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/dc1dab1237ced80104f64f5d5745abb4e4059032da5b4e027d43039ebda648be.jpg",
+        "alt": "김제 축제서 김밥 먹은 280명 집단 구토·설사…식중독 의심"
+      },
+      "source": {
+        "platform": "etoland",
+        "url": "https://etoland.co.kr/b/freebbs/article/9487015"
+      },
+      "captured_at": "2026-10-09T01:47:32+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261009-0001",
+      "title": "냉장고 안 넣으면 독소 생긴다… 의외의 음식 4가지",
+      "types": [
+        "community_post"
+      ],
+      "tags": [
+        "당근주스",
+        "보툴리눔증",
+        "식품보관",
+        "치즈소스",
+        "향미유"
+      ],
+      "summary": "공개 재게시물: 식품 보관과 보툴리눔증 관련 경고를 다룬 기사 요약. 의학·식품안전 주장은 출처의 주장으로만 보존.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/ee4e7b3beeb7cd08ddb094dad74ff702b18fd1bb8acd0683c3506fe10f8a3fc9.jpg",
+        "alt": "냉장고 안 넣으면 독소 생긴다… 의외의 음식 4가지"
+      },
+      "source": {
+        "platform": "etoland",
+        "url": "https://etoland.co.kr/b/freebbs/article/9487669"
+      },
+      "captured_at": "2026-10-09T01:43:27+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0016",
+      "title": "Short-video reference post with Chinese caption",
+      "types": [
+        "creative_reference",
+        "short_video_reference"
+      ],
+      "tags": [
+        "chinese-caption",
+        "short-video",
+        "video-reference",
+        "viral-video",
+        "visual-reference"
+      ],
+      "summary": "중국어 짧은 캡션과 영상 카드 미리보기만 공개된 짧은 영상 참고 게시물입니다. 영상 내용·맥락·인물·의미는 확보하지 않아 추정하거나 분석하지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/2d2cba27d9afe386f5d094fad943d51d438dda5be47a04e1811d90c6affc9aab.svg",
+        "alt": "Short-video reference post with Chinese caption"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/ShiHao0606/status/2106941811323506874"
+      },
+      "captured_at": "2026-10-08T17:48:33+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0015",
+      "title": "Claimed OpenMontage AI video-editing project reference",
+      "types": [
+        "ai_video_editing_project_reference",
+        "external_code_workflow_reference"
+      ],
+      "tags": [
+        "ai-video-editing",
+        "claude-code",
+        "cursor",
+        "media-automation",
+        "open-source-claim",
+        "openmontage",
+        "subtitles",
+        "voiceover"
+      ],
+      "summary": "Claude Code·Cursor 같은 AI 코딩 도구로 대화형 지시를 내리면 영상 편집 과정을 자동화한다고 주장된 OpenMontage 참고자료입니다. 65k+ GitHub stars, 저비용 생성 사례, 스크립트·소재·보이스오버·자막·합성 자동화는 미검증 작성자 주장입니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/4ddeef9e982c6c0c726c500d425b3be784a90868cd7cd080625cc73c5bb513a4.svg",
+        "alt": "Claimed OpenMontage AI video-editing project reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/0xGky/status/2108006966974972326"
+      },
+      "captured_at": "2026-10-08T17:42:02+09:00",
+      "category": "agent_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0014",
+      "title": "otr.viusallab prompt cheat-sheet reference",
+      "types": [
+        "creative_reference",
+        "prompt_reference"
+      ],
+      "tags": [
+        "creative-reference",
+        "otr.viusallab",
+        "prompt-cheat-sheet",
+        "prompting",
+        "short-link",
+        "web-app"
+      ],
+      "summary": "otr.viusallab 프롬프트 치트시트로 소개된 참고자료입니다. 작성자는 추후 웹앱 버전을 공개할 예정이라고 했으며, 치트시트 내용과 링크 대상은 접근하지 않아 미검증 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/307ed299618a144fa2cd8206f75b6c00a5689173cd428e68d7bdc26629494df4.svg",
+        "alt": "otr.viusallab prompt cheat-sheet reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/offtherecord26/status/2103135816931557432"
+      },
+      "captured_at": "2026-10-08T17:39:41+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0013",
+      "title": "Claimed Mocreak Windows and Office deployment tool reference",
+      "types": [
+        "high_risk_software_reference",
+        "system_deployment_software_reference"
+      ],
+      "tags": [
+        "installer",
+        "mocreak",
+        "office",
+        "office-installation",
+        "os",
+        "short-link",
+        "software-deployment",
+        "windows"
+      ],
+      "summary": "Windows와 Office를 자동 다운로드·설치·배포한다고 주장된 Mocreak 도구 참고자료입니다. Windows 10/11·Office 2016–2024·무광고·안전성·무료·설치 대상 관련 내용은 미검증 작성자 주장입니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/5047544baab7e838cbbfbd95398f2824baf0c7cd155807a2a7a22b6365939cf8.svg",
+        "alt": "Claimed Mocreak Windows and Office deployment tool reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/0xGky/status/2107974753860587884"
+      },
+      "captured_at": "2026-10-08T17:16:47+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0012",
+      "title": "AI-video free-credit site comparison/list reference",
+      "types": [
+        "ai_video_service_reference",
+        "comparison_reference"
+      ],
+      "tags": [
+        "ai-video",
+        "free-credits",
+        "pricing-policy",
+        "service-comparison",
+        "trial",
+        "video-generation"
+      ],
+      "summary": "AI 영상 제작 서비스를 직접 비교하기 위해 무료 크레딧 제공 사이트를 정리했다는 참고 게시물입니다. 서비스명·크레딧·가격·정책·품질·비교 결과는 확보한 공개 텍스트에 없어 이미지에서 추정·전사하지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/730c70ed5a913a6261f9db03e8e17be78fe68fdfa8a7181214ba8791e85a8dac.svg",
+        "alt": "AI-video free-credit site comparison/list reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Ty_Tuki0609/status/2107811380304998716"
+      },
+      "captured_at": "2026-10-08T16:46:32+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0011",
+      "title": "Claimed Meituan photo-plus-audio talking-video lip-sync model reference",
+      "types": [
+        "ai_video_model_reference",
+        "lipsync_workflow_reference"
+      ],
+      "tags": [
+        "ai-video",
+        "audio-driven",
+        "lip-sync",
+        "meituan",
+        "open-source-claim",
+        "photo-to-video",
+        "talking-video"
+      ],
+      "summary": "개인 사진과 오디오를 입력해 수 분 길이의 립싱크 말하는 영상을 만든다고 주장된 Meituan 팀 개발 모델 참고자료입니다. 오픈소스·무료·정확도·지속시간·기능은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/be9c1c4efa09615d4eb8cf0d357d10fd7ec0dc1d2687e0c68c60a6f7a1427169.svg",
+        "alt": "Claimed Meituan photo-plus-audio talking-video lip-sync model reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/EngMoElgaraihy/status/2107887887576424473"
+      },
+      "captured_at": "2026-10-08T15:04:50+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0010",
+      "title": "ChatGPT image-prompt reference post",
+      "types": [
+        "creative_reference",
+        "image_prompt_reference"
+      ],
+      "tags": [
+        "ai-image",
+        "chatgpt",
+        "creative-idea",
+        "image-prompt",
+        "prompt-reference"
+      ],
+      "summary": "ChatGPT 이미지 프롬프트 참고자료로 소개된 게시물입니다. 실제 프롬프트 전문은 확보한 공개 메타데이터에 포함되지 않아 이미지에서 추정·전사하지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/8708cb3af0c43f67f888e517590cfc0e020d94ff4e2792de4c58e4cc874a3875.svg",
+        "alt": "ChatGPT image-prompt reference post"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/ceolmh3/status/2107732735259529480"
+      },
+      "captured_at": "2026-10-08T15:00:35+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0009",
+      "title": "Claimed Seedance prompt-skill collection for Claude reference",
+      "types": [
+        "external_ai_skill_reference",
+        "prompt_workflow_reference"
+      ],
+      "tags": [
+        "ai-video",
+        "camera-movement",
+        "claude",
+        "kinetic-workflow",
+        "prompt-engineering",
+        "seedance",
+        "skill.md",
+        "video-prompt"
+      ],
+      "summary": "Claude를 Seedance 2.0 프롬프트 엔지니어로 만든다고 주장된 15개 프롬프트 스킬 참고자료입니다. 스타일별 영상 프롬프트 구성, 2초 훅, 15초 이내 타임라인, 카메라·조명·사운드·소재 참조 규칙 주장은 미검증 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/907fa7bb84d499bcf27bdf0ae72b38056dc3187a3a4cbaaeede1ef56667db37e.svg",
+        "alt": "Claimed Seedance prompt-skill collection for Claude reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/nicebabycat/status/2107726586175016978"
+      },
+      "captured_at": "2026-10-08T09:35:37+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0008",
+      "title": "bang-motion AI coding-agent browser motion-design skill reference",
+      "types": [
+        "ai_coding_agent_skill_reference",
+        "motion_design_workflow"
+      ],
+      "tags": [
+        "ai-coding-agent",
+        "bang-motion",
+        "browser-animation",
+        "index.html",
+        "kinetic-typography",
+        "motion-design",
+        "promo-video",
+        "youtube-opening"
+      ],
+      "summary": "AI 코딩 도구에 지시해 브라우저에서 영상처럼 움직이는 단일 index.html을 만드는 bang-motion 에이전트 스킬 참고자료입니다. 오프닝·홍보·제품 시연·키네틱 타이포그래피·해설 영상 스타일과 모션 디자인 규칙 내장 주장은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/331cf99e7bad7aa14a917738fbad4f8abddf67e22759001276b9055c11a2d51b.svg",
+        "alt": "bang-motion AI coding-agent browser motion-design skill reference"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@nangman_muk/post/DeMT1woE5c5"
+      },
+      "captured_at": "2026-10-08T08:38:33+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0007",
+      "title": "WebGPU composable website-effects components and visual editor reference",
+      "types": [
+        "shader_component_reference",
+        "web_visual_effects_reference"
+      ],
+      "tags": [
+        "blur",
+        "components",
+        "distortion",
+        "glass",
+        "metal",
+        "shaders",
+        "transitions",
+        "visual-editor",
+        "webgpu",
+        "website-effects"
+      ],
+      "summary": "그라데이션·노이즈·유리·금속·빛·왜곡·전환·블러·마우스 효과를 조합하는 WebGPU 기반 웹 시각효과 컴포넌트와 시각 편집기를 소개하는 게시물입니다. 효과 수·GitHub 스타·에디터 무료 여부·프레임워크 코드 내보내기는 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/f69f3a210bd4a22fd7b404ebb2a9a0a22f3bf3864359ed84e43d886ab39fb66e.svg",
+        "alt": "WebGPU composable website-effects components and visual editor reference"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@nangman_muk/post/DeNho17k9nE"
+      },
+      "captured_at": "2026-10-08T08:33:26+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0006",
+      "title": "ComfyUI multi-keyframe character-animation workflow reference",
+      "types": [
+        "ai_animation_workflow",
+        "character_animation_reference"
+      ],
+      "tags": [
+        "character-animation",
+        "comfyui",
+        "frame-interpolation",
+        "keyframes",
+        "motion-control",
+        "resolution",
+        "video-generation"
+      ],
+      "summary": "여러 장의 키프레임 이미지로 캐릭터 애니메이션을 만드는 ComfyUI 워크플로 참고자료입니다. 시작·중간·끝 동작 이미지 사이 프레임을 생성하고, 기본 5개 키프레임 및 구간별 해상도·길이·속도 조절을 지원한다는 내용은 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/dec04514321e30484e1b36ed89760ff35bfa7c7f7bd3edaeacbe65d05db8e028.svg",
+        "alt": "ComfyUI multi-keyframe character-animation workflow reference"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@choi.openai/post/DeM2H14gfj_"
+      },
+      "captured_at": "2026-10-08T08:30:31+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0005",
+      "title": "ArcReel automated AI short-drama pipeline deployment and API-key risk reference",
+      "types": [
+        "ai_video_workflow_reference",
+        "local_service_deployment_risk"
+      ],
+      "tags": [
+        "ai-short-drama",
+        "api-key",
+        "arcreel",
+        "capcut",
+        "character-consistency",
+        "docker",
+        "jianying",
+        "review-required",
+        "video-generation",
+        "voice-generation"
+      ],
+      "summary": "ArcReel이라는 AI 단편 드라마 자동화 파이프라인을 소개하는 게시물입니다. 캐릭터·소품 자산, 에피소드 대본 분해, 얼굴 고정 스토리보드, 영상 생성, Jianying/CapCut 초안 내보내기와 Docker 배포·텍스트/이미지/음성 API 키 설정을 언급해 검토용으로만 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/f8cb3be5442a704da9a3d6a6f48e6ffcf8555628b3828aa54d69de3f0ce4922b.svg",
+        "alt": "ArcReel automated AI short-drama pipeline deployment and API-key risk reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/boniusex/status/2107729424246538687"
+      },
+      "captured_at": "2026-10-08T08:28:52+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0004",
+      "title": "Muse serial short-drama generation workflow reference",
+      "types": [
+        "ai_video_generation",
+        "serial_storytelling_workflow"
+      ],
+      "tags": [
+        "character-consistency",
+        "jarvis",
+        "muse",
+        "serial-video",
+        "short-drama",
+        "shot-generation",
+        "storyboard",
+        "video-assembly"
+      ],
+      "summary": "짧은 생성 영상을 연재형 단편 드라마로 엮는 Muse 활용 워크플로를 소개하는 게시물입니다. 캐릭터 얼굴 일관성을 먼저 고정하고 대본·스토리보드·자산·샷별 생성·조합을 진행하는 내용과 작업량은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/19e2076af277a684ce133392ebb949df15f0405b97dac9f4ab98e0f7e73ef374.svg",
+        "alt": "Muse serial short-drama generation workflow reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/ChaoSpacecallum/status/2107668305687548002"
+      },
+      "captured_at": "2026-10-08T08:16:54+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0003",
+      "title": "Mirai S Qwen3.8-27B uncensored local-inference performance reference",
+      "types": [
+        "local_llm_inference_reference",
+        "uncensored_model_risk_reference"
+      ],
+      "tags": [
+        "llama.cpp",
+        "local-inference",
+        "mirai-s",
+        "quantization",
+        "qwen3.8-27b",
+        "review-required",
+        "rtx-3090",
+        "uncensored",
+        "vram"
+      ],
+      "summary": "Mirai S Qwen3.8-27B의 uncensored 표기 모델과 llama.cpp 기반 로컬 추론 성능을 소개하는 게시물입니다. 12GB VRAM·262K 컨텍스트·70 tok/s 및 RTX 3090 성능 수치는 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/6db452c6423e5a5621c396c3c59d422360e0a72e6cfc806db13b13d30df6c396.svg",
+        "alt": "Mirai S Qwen3.8-27B uncensored local-inference performance reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/superalesha/status/2107896192591945829"
+      },
+      "captured_at": "2026-10-08T08:14:15+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261008-0002",
+      "title": "Alleged Google prompt-based no-code game-creation tool reference",
+      "types": [
+        "ai_game_creation_reference",
+        "no_code_workflow_reference"
+      ],
+      "tags": [
+        "game-creation",
+        "google-playground",
+        "multiplayer",
+        "no-code",
+        "prompt-based",
+        "unity",
+        "unity-spark",
+        "web-game"
+      ],
+      "summary": "Google Playground이라는 프롬프트 기반 노코드 게임 제작 도구를 소개하는 게시물입니다. 물리·캐릭터·게임 규칙 생성, 웹/모바일 실행, 멀티플레이·랭킹, Unity Spark 연동은 모두 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/278261bb34da58828b77cfe1afebd7253f4bac4ea2cb3612375cfc389a058dba.svg",
+        "alt": "Alleged Google prompt-based no-code game-creation tool reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Dontgiveup_26/status/2107859686578131178"
+      },
+      "captured_at": "2026-10-08T08:13:00+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261008-0001",
