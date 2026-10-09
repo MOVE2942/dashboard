@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261009-040054-AUTO",
-  "card_count": 405,
+  "release_id": "LIA-20261010-040017-AUTO",
+  "card_count": 409,
   "facet_counts": {
-    "general": 187,
+    "general": 190,
     "prompts": 156,
-    "video_generation": 118
+    "video_generation": 119
   },
   "source_manifest": [
     {
@@ -1627,10 +1627,26 @@
     {
       "id": "CR-20261009-0004",
       "hash": "c42496484cb599ad42f23e0fc11ec78eb152f87499f93e6e406fb4a34847b32d"
+    },
+    {
+      "id": "CR-20261009-0005",
+      "hash": "945e804c9caa86e6d4f897a7e4952b453661aee1186081f72731eaaa57eac509"
+    },
+    {
+      "id": "CR-20261009-0006",
+      "hash": "cab34d0a14bdf62e974adadcd5e4ada1424e571790ec04a5e7bfc78c241d515b"
+    },
+    {
+      "id": "CR-20261009-0007",
+      "hash": "f1a52b36da2ff2f437a1cef44afac12d47e361d393e824143205d793e1bcd822"
+    },
+    {
+      "id": "CR-20261009-0008",
+      "hash": "65b762f4dcc0a12151072c383d0ddd5bc7cd2beca51361fcc6c139ed6c84d691"
     }
   ],
-  "source_manifest_sha256": "e37d356cf49438d56b0ae330b0eb1a0fb134d3b7651d627703106489e67be4e0",
-  "export_manifest_sha256": "32ee09e359cb1c57926a1c89a6c450fc81689f7cb09b3879940adfe46cc20dd2",
+  "source_manifest_sha256": "2b3b3f8e16a5035bb04f3d273dfa41f5f09cd3c946026d687db0d4bf4da95834",
+  "export_manifest_sha256": "a440a684f8be83e03b45b5ae5bf6d3fe9709144d39390b655518a24f3f896e3b",
   "files": [
     {
       "path": "assets/0069be87fd0f74b6c97c3179cfa25654d20950f962b2aafd6767cc28f851d88e.png",
@@ -1861,6 +1877,11 @@
       "path": "assets/24ed5d1b9dae71e90cea5773b5e43e6e23e81d82585b272214fdb173f3d7170d.jpg",
       "sha256": "24ed5d1b9dae71e90cea5773b5e43e6e23e81d82585b272214fdb173f3d7170d",
       "size": 24693
+    },
+    {
+      "path": "assets/250e7bd3e81edaba3f0e09a693ab450979c9f3896ffe236aa9464e37986733bc.svg",
+      "sha256": "250e7bd3e81edaba3f0e09a693ab450979c9f3896ffe236aa9464e37986733bc",
+      "size": 624
     },
     {
       "path": "assets/258d375afae807ff40424d3150a3f46a09824eafe2d5b38aa69300407da20b16.jpg",
@@ -2166,6 +2187,11 @@
       "path": "assets/4e45c3d82744610878e57e0105fe14fcd1829d1c8f6cfd8b65b9c197c002600d.svg",
       "sha256": "4e45c3d82744610878e57e0105fe14fcd1829d1c8f6cfd8b65b9c197c002600d",
       "size": 645
+    },
+    {
+      "path": "assets/4eee41c70542638bd512c82b42b0e4b90ce46572d26fa972aaf55553de77d9dc.svg",
+      "sha256": "4eee41c70542638bd512c82b42b0e4b90ce46572d26fa972aaf55553de77d9dc",
+      "size": 622
     },
     {
       "path": "assets/4fc3dde953a9db0c60dad97645c5da42631dad5536123a4b63861ce8dab9dadc.jpg",
@@ -2703,6 +2729,11 @@
       "size": 607
     },
     {
+      "path": "assets/98df6da3b2f1cf0b4bc0af8cd84222e88020517f08b77e7cb0262a5aef695cca.svg",
+      "sha256": "98df6da3b2f1cf0b4bc0af8cd84222e88020517f08b77e7cb0262a5aef695cca",
+      "size": 624
+    },
+    {
       "path": "assets/9dab88b811a633fd7e64b6753a987a192916253a55e40ddf5e8df828912b0b5a.jpg",
       "sha256": "9dab88b811a633fd7e64b6753a987a192916253a55e40ddf5e8df828912b0b5a",
       "size": 42016
@@ -2956,6 +2987,11 @@
       "path": "assets/bc8cbd681156ddd35d37428d3ecedb92904dfa3ccd5dd392349f9476503f622e.jpg",
       "sha256": "bc8cbd681156ddd35d37428d3ecedb92904dfa3ccd5dd392349f9476503f622e",
       "size": 204636
+    },
+    {
+      "path": "assets/bcc33ab05a0ed8d42ef3ce7d31c6620bf3dadf4a8acf67fa3ec7a7fd36c41fe9.svg",
+      "sha256": "bcc33ab05a0ed8d42ef3ce7d31c6620bf3dadf4a8acf67fa3ec7a7fd36c41fe9",
+      "size": 624
     },
     {
       "path": "assets/bd126cf8a4ee08c541704214c46ea8cb222b3c0605d5e6fc93a73d1d14058d05.jpg",
@@ -3599,8 +3635,8 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "0798e44e8b9153ad4639bc929ff01ed5885fbaba227c836598d9d67d1aee6972",
-      "size": 565038
+      "sha256": "8319e91dee35fe13e0a6468b5a0c9e6e2e46b8af5d2895c6309668f87a8436d1",
+      "size": 570697
     },
     {
       "path": "index.html",
@@ -3618,5 +3654,5 @@
       "size": 2765
     }
   ],
-  "bundle_sha256": "58eaa41efb17b98960124aec7c6d81097d4cb3fa1120d516ad216845b71770f9"
+  "bundle_sha256": "d01f013fbdcb133848bd17c40fcd88d98eee412b9e1217625135f39d443b4121"
 }

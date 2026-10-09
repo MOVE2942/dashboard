@@ -1,22 +1,22 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261009-040054-AUTO",
-  "source_manifest_sha256": "e37d356cf49438d56b0ae330b0eb1a0fb134d3b7651d627703106489e67be4e0",
-  "export_manifest_sha256": "32ee09e359cb1c57926a1c89a6c450fc81689f7cb09b3879940adfe46cc20dd2",
-  "generated_at": "2026-10-09T04:00:56+09:00",
+  "release_id": "LIA-20261010-040017-AUTO",
+  "source_manifest_sha256": "2b3b3f8e16a5035bb04f3d273dfa41f5f09cd3c946026d687db0d4bf4da95834",
+  "export_manifest_sha256": "a440a684f8be83e03b45b5ae5bf6d3fe9709144d39390b655518a24f3f896e3b",
+  "generated_at": "2026-10-10T04:00:18+09:00",
   "facet_counts": {
-    "general": 187,
+    "general": 190,
     "prompts": 156,
-    "video_generation": 118
+    "video_generation": 119
   },
   "category_counts": {
-    "video_technique": 113,
-    "image_technique": 101,
+    "video_technique": 114,
+    "image_technique": 102,
     "agent_technique": 24,
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
-    "visual_reference": 126,
+    "visual_reference": 128,
     "ideas": 0,
     "ai_research": 9
   },
@@ -32,6 +32,162 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261009-0008",
+      "title": "Noctaluna Noct-Q-Uncensored-Qwen-Image-2.1 Hugging Face model-page reference",
+      "types": [
+        "external_model_reference",
+        "uncensored_image_model_reference"
+      ],
+      "tags": [
+        "hugging-face",
+        "image-generation",
+        "model-weights",
+        "noct-q",
+        "noctaluna",
+        "qwen-image-2.1",
+        "uncensored"
+      ],
+      "summary": "Hugging Face의 Noctaluna/Noct-Q-Uncensored-Qwen-Image-2.1 모델 페이지 참고자료입니다. 공개 메타데이터에는 일반 플랫폼 설명만 있어 모델별 기능·파일·모델 카드·라이선스·사용법은 열람하거나 추정하지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/bcc33ab05a0ed8d42ef3ce7d31c6620bf3dadf4a8acf67fa3ec7a7fd36c41fe9.svg",
+        "alt": "Noctaluna Noct-Q-Uncensored-Qwen-Image-2.1 Hugging Face model-page reference"
+      },
+      "source": {
+        "platform": "huggingface",
+        "url": "https://huggingface.co/Noctaluna/Noct-Q-Uncensored-Qwen-Image-2.1"
+      },
+      "captured_at": "2026-10-09T22:12:21+09:00",
+      "category": "image_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261009-0007",
+      "title": "SulphurAI Sulphur-2-base Hugging Face model-page reference",
+      "types": [
+        "external_model_reference",
+        "uncensored_model_related_reference"
+      ],
+      "tags": [
+        "external-model",
+        "hugging-face",
+        "model-reference",
+        "model-weights",
+        "sulphur-2-base",
+        "sulphurai"
+      ],
+      "summary": "Hugging Face의 SulphurAI/Sulphur-2-base 모델 페이지 참고자료입니다. 공개 페이지 메타데이터에는 일반 플랫폼 설명만 노출되어, 모델별 기능·파일·모델 카드·라이선스·사용법은 열람하거나 추정하지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/98df6da3b2f1cf0b4bc0af8cd84222e88020517f08b77e7cb0262a5aef695cca.svg",
+        "alt": "SulphurAI Sulphur-2-base Hugging Face model-page reference"
+      },
+      "source": {
+        "platform": "huggingface",
+        "url": "https://huggingface.co/SulphurAI/Sulphur-2-base"
+      },
+      "captured_at": "2026-10-09T22:10:36+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261009-0006",
+      "title": "MiniMax-H3 Character Swap LoRA Hugging Face Space reference",
+      "types": [
+        "character_swap_space_reference",
+        "media_transformation_reference"
+      ],
+      "tags": [
+        "character-swap",
+        "hugging-face",
+        "lora",
+        "media-transformation",
+        "minimax-h3",
+        "reference-character",
+        "video-to-video"
+      ],
+      "summary": "클립 속 한 캐릭터를 레퍼런스 캐릭터로 교체한다고 소개된 Hugging Face Space 참고자료입니다. 서비스·모델·라이선스·품질·안전성은 공개 제목과 설명 외에 독립 검증되지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/250e7bd3e81edaba3f0e09a693ab450979c9f3896ffe236aa9464e37986733bc.svg",
+        "alt": "MiniMax-H3 Character Swap LoRA Hugging Face Space reference"
+      },
+      "source": {
+        "platform": "huggingface",
+        "url": "https://huggingface.co/spaces/hugging-apps/minimax-h3-character-swap-lora"
+      },
+      "captured_at": "2026-10-09T21:55:17+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261009-0005",
+      "title": "AI character-consistency character bible workflow reference",
+      "types": [
+        "ai_character_design_workflow",
+        "creative_reference"
+      ],
+      "tags": [
+        "character-bible",
+        "character-consistency",
+        "expressions",
+        "gpt-image-2.5",
+        "hex-palette",
+        "picsart-flow",
+        "pose-sheet",
+        "turnaround"
+      ],
+      "summary": "한 장의 이미지를 전신 턴어라운드·8가지 표정·포즈 시트·의상 클로즈업·HEX 팔레트로 구성된 캐릭터 바이블로 만든다고 소개된 참고 워크플로입니다. Picsart Flow와 GPT Image 2.5 활용, 프롬프트·품질·기능은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/4eee41c70542638bd512c82b42b0e4b90ce46572d26fa972aaf55553de77d9dc.svg",
+        "alt": "AI character-consistency character bible workflow reference"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/ai.withphil/p/DeG_XjJiALW/"
+      },
+      "captured_at": "2026-10-09T11:05:50+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261009-0004",
