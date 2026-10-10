@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "release_id": "MIB-20261009-AUTO",
-  "generated_at": "2026-10-09T19:00:12Z",
+  "release_id": "MIB-20261010-AUTO",
+  "generated_at": "2026-10-10T19:00:43Z",
   "collection": {
     "title": "MyIdeaBank",
     "description": "A public-facing, owner-curated idea archive.",
