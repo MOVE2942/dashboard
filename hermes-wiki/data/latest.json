@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261015-190945-AUTO",
-  "source_manifest_sha256": "e70c095152613835bc9a68e0dadba19efaac490e65982807b6f75e3ed4b2a1d1",
-  "export_manifest_sha256": "d85bad7493b4e68e4fc67b3075587613ab68696fadda7ebbac50870c1b51e74a",
-  "generated_at": "2026-10-15T19:09:45+09:00",
+  "release_id": "LIA-20261016-040050-AUTO",
+  "source_manifest_sha256": "5d27def5a7930bc752801bb992acfd8fc2a85b36cecdb7275c36bcc7aff750f8",
+  "export_manifest_sha256": "291905f75b0680493e1ec8b11a055f84486bbc01500cc56c29bc9b6ae3719d89",
+  "generated_at": "2026-10-16T04:00:51+09:00",
   "facet_counts": {
     "general": 201,
     "prompts": 156,
@@ -4388,7 +4388,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/5655bc87decb1bc2bafcbc5ed111e3a12863ab218a57d68283bf3ff934a90962.svg",
+        "src": "assets/609b73a2141bef2e66e2bdd80db7db5a16886583ab96c7bfacb4497138130ec9.png",
         "alt": "Threads Post: ddalkkakfactory (Dds6_g5gYOo)"
       },
       "source": {
@@ -7681,7 +7681,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/20f67086a3eef36b4d4125a49dfa3e723f0f1699b31145a6d9118468f2910cb2.svg",
+        "src": "assets/9eb63960101d8b221823b0b0c5b9972e4fa7074e03c5457ef95920051cba2418.png",
         "alt": "Camera Movement AI Prompts — AI 영상 카메라 무브먼트 프롬프트 라이브러리"
       },
       "source": {
@@ -8988,7 +8988,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/bc7758f155d7691f6337645bfb5655d5cc003e66f4069d171350e9e1af9f135f.svg",
+        "src": "assets/4c85d7a043301faad42d6d0aa84b56aab6b25188d86dcb4f8ae20f6c929e0dee.jpg",
         "alt": "CHOI — NovelAI Diffusion V5: 자연어·다언어·다인물·다중 패널 AI 만화 생성 업데이트"
       },
       "source": {
@@ -9478,7 +9478,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fc6b1c1ef5a6dd16e6003769b378a904ed4b66cbeb80d6de5f5956bfe57cef30.svg",
+        "src": "assets/ad74ebe5d7660cf9d220077702fb8735ff56476ed5abfc2bb96eaac53a55ed4e.jpg",
         "alt": "한장(Page One) — 해외 디자인·AI 스타트업·랜딩페이지용 폰트 5선"
       },
       "source": {
@@ -10222,7 +10222,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/e411456272f6b8e5985c3f91f16aa05e3210b99abe4abbf89776ea5cef0aecaf.svg",
+        "src": "assets/226cea46adeedef375d78a3f1aa50beab2924ee900c01146c7197bea6cae932b.png",
         "alt": "너드보드 — Sketch2Motion: 사진·스케치를 모션 비디오로 변환하는 GitHub 프로젝트"
       },
       "source": {
