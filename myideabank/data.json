@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "release_id": "MIB-20261014-AUTO",
-  "generated_at": "2026-10-14T19:00:54Z",
+  "release_id": "MIB-20261015-AUTO",
+  "generated_at": "2026-10-15T08:24:35Z",
   "collection": {
     "title": "MyIdeaBank",
     "description": "A public-facing, owner-curated idea archive.",
@@ -42,6 +42,11 @@
       "title": "현실 촬영 소재의 영상화 아이디어",
       "text": "영상 이미지를 만들겠다고 난리칠게 아니라 현실에서 찍은 사진을 영상화하거나 컨텐츠해도 소재만 좋으면 되잖아?\n\n박물관 전시 찍고 영상화\n화분 찍고 영상화\n그런거",
       "published_at": "2026-10-06T01:49:42+09:00"
+    },
+    {
+      "title": "실물 풍경의 디스토피아·유토피아 AI 변환 아이디어",
+      "text": "Distopia/Utopia\n\n실물 풍경 사진으로\nai로 디스토피아 버전,유토피아 버전 하나씩.",
+      "published_at": "2026-10-15T13:24:17+09:00"
     }
   ]
 }
