@@ -1,22 +1,22 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261011-040048-AUTO",
-  "source_manifest_sha256": "2b3b3f8e16a5035bb04f3d273dfa41f5f09cd3c946026d687db0d4bf4da95834",
-  "export_manifest_sha256": "a440a684f8be83e03b45b5ae5bf6d3fe9709144d39390b655518a24f3f896e3b",
-  "generated_at": "2026-10-11T04:00:49+09:00",
+  "release_id": "LIA-20261015-172228-AUTO",
+  "source_manifest_sha256": "9d7bc57cca868be960c5eecb2c95ddad29cb3205662b65a97e7773588c1bcf10",
+  "export_manifest_sha256": "66807de1371415c8d677f5f4e38b6071b91dcec278cecb67840f51d4c18d053a",
+  "generated_at": "2026-10-15T17:22:30+09:00",
   "facet_counts": {
-    "general": 190,
+    "general": 200,
     "prompts": 156,
-    "video_generation": 119
+    "video_generation": 123
   },
   "category_counts": {
-    "video_technique": 114,
-    "image_technique": 102,
-    "agent_technique": 24,
+    "video_technique": 118,
+    "image_technique": 103,
+    "agent_technique": 26,
     "prompt_reference": 31,
     "contest_info": 0,
     "platform_info": 1,
-    "visual_reference": 128,
+    "visual_reference": 135,
     "ideas": 0,
     "ai_research": 9
   },
@@ -32,6 +32,546 @@
     "ai_research": "AI 리서치/동향"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261015-0002",
+      "title": "Bathroom Girls Instagram profile reference",
+      "types": [
+        "creator_profile_reference"
+      ],
+      "tags": [
+        "bathroom-girls",
+        "creator-profile",
+        "instagram",
+        "visual-reference"
+      ],
+      "summary": "Instagram 프로필 레벨 참고자료입니다. 공개 표시 이름과 캡처 시점 표시값(팔로워 6,824, 팔로잉 1,823, 게시물 996) 및 OG 아바타 미리보기만 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/9fb54e2d5418d5011fd6882bc1c9a6640bbf47ba43c0ef1f83f4d9e53080f1f5.svg",
+        "alt": "Bathroom Girls Instagram profile reference"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/bathroom_jyoshi"
+      },
+      "captured_at": "2026-10-15T13:25:53+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261015-0001",
+      "title": "35.7kg Instagram profile reference",
+      "types": [
+        "creator_profile_reference"
+      ],
+      "tags": [
+        "creator-profile",
+        "instagram",
+        "visual-reference"
+      ],
+      "summary": "Instagram 프로필 레벨 참고자료입니다. 공개 표시 이름과 캡처 시점 표시값(팔로워 16K, 팔로잉 493, 게시물 189) 및 OG 아바타 미리보기만 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/362f8dcc1b9d3c244f4a2953fdc41554ea638ad20d702c426c1192228eabe37d.svg",
+        "alt": "35.7kg Instagram profile reference"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/35.7kg"
+      },
+      "captured_at": "2026-10-15T13:23:09+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261013-0002",
+      "title": "Claimed Veda Sparse Attention video acceleration reference",
+      "types": [
+        "performance_claim_reference",
+        "video_ai_technology_reference"
+      ],
+      "tags": [
+        "ai-video",
+        "comfyui",
+        "performance",
+        "veda-sparse-attention",
+        "video-character-change",
+        "video-to-video"
+      ],
+      "summary": "Veda Sparse Attention으로 영상 캐릭터 변경을 가속한다는 기술 주장 참고자료입니다. 기술 정체성·구현·호환성·품질·3배 속도·벤치마크·하드웨어·라이선스·안전성은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/14a04c853f94dc3166bfb8dde6cbf2749d3aedb418ec78d9ce305cac54d1c9af.svg",
+        "alt": "Claimed Veda Sparse Attention video acceleration reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/ai_hakase_/status/2109933293642866929"
+      },
+      "captured_at": "2026-10-13T21:12:55+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261013-0001",
+      "title": "Claimed MiniMax H3 martial-arts-action LoRA reference",
+      "types": [
+        "ai_video_workflow_reference",
+        "lora_model_reference"
+      ],
+      "tags": [
+        "ai-video",
+        "comfyui",
+        "gpu",
+        "local-inference",
+        "lora",
+        "martial-arts",
+        "minimax-h3",
+        "wushu-action"
+      ],
+      "summary": "MiniMax H3용 무술 액션 스타일 LoRA 및 ComfyUI 사용을 주장하는 참고자료입니다. 모델·학습 데이터·트리거·호환성·다운로드/순위·품질·라이선스·안전성은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/43b7876e40f3bc211fd34779b882e29e1397d5ebd07c3da8d769428260bb4b68.svg",
+        "alt": "Claimed MiniMax H3 martial-arts-action LoRA reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/PixelAigc/status/2109890277549002754"
+      },
+      "captured_at": "2026-10-13T20:22:48+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261012-0001",
+      "title": "Claimed de-censored Qwen-image2.1 local setup reference",
+      "types": [
+        "image_model_reference",
+        "local_ai_workflow_reference"
+      ],
+      "tags": [
+        "gpu",
+        "image-generation",
+        "local-inference",
+        "qwen-image2.1",
+        "rtx-5060",
+        "uncensored",
+        "vram",
+        "workflow"
+      ],
+      "summary": "“去审查版” Qwen-image2.1의 로컬 실행·워크플로 튜토리얼을 주장하는 참고자료입니다. 모델 동작, 설치 요건, GPU/VRAM 호환성, 테스트·성능·라이선스·안전성은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/db1f90e948910088406b2c4253c0d2117498af481f26a31589bb7dab6f11fa40.svg",
+        "alt": "Claimed de-censored Qwen-image2.1 local setup reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/hiwise_aigc/status/2109257210534768912"
+      },
+      "captured_at": "2026-10-12T14:24:04+09:00",
+      "category": "image_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261011-0009",
+      "title": "Claimed Reels/YouTube hook-analysis workflow with open-source tools",
+      "types": [
+        "media_analysis_workflow_reference",
+        "open_source_tooling_reference"
+      ],
+      "tags": [
+        "ai-marketing",
+        "claude",
+        "ffmpeg",
+        "hook-analysis",
+        "reels",
+        "transcription",
+        "whisper",
+        "youtube",
+        "yt-dlp"
+      ],
+      "summary": "yt-dlp·Whisper·FFmpeg·Claude를 결합해 릴스/YouTube 영상에서 훅·포맷·원고 구조를 분석하고 훅 라이브러리를 만든다는 워크플로 참고자료입니다. 도구 동작·설치 내용·분석 결과·권리/약관 준수는 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/29b20bb580a8c9617795999367a61c8b7cf11c425f990d140cc9cd63bc35bfd6.svg",
+        "alt": "Claimed Reels/YouTube hook-analysis workflow with open-source tools"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/diripda/reel/Dd-SBFCDcrE/"
+      },
+      "captured_at": "2026-10-11T17:49:03+09:00",
+      "category": "agent_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261011-0008",
+      "title": "Claimed avatar and voice-cloning Reels production workflow reference",
+      "types": [
+        "ai_video_automation_reference",
+        "avatar_voice_cloning_workflow_reference"
+      ],
+      "tags": [
+        "ai-video",
+        "avatar",
+        "claude-code",
+        "editing-automation",
+        "fish-audio",
+        "heygen",
+        "reels",
+        "voice-cloning"
+      ],
+      "summary": "HeyGen 개인 얼굴 아바타, Fish Audio 음성 복제, Claude Code 자동 편집을 결합한 카메라 없는 릴스 제작 워크플로 참고자료입니다. 제공자·복제 동작·동의 절차·품질·성장 성과·스킬팩은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/b2672eb4d4a82b6f48f9422418de76ba1212a592fb533768d23aff03479684dd.svg",
+        "alt": "Claimed avatar and voice-cloning Reels production workflow reference"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/glitter_ai_factory/reel/DeT7uJYJdoN/"
+      },
+      "captured_at": "2026-10-11T16:16:53+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261011-0007",
+      "title": "Mika Sora Instagram profile reference",
+      "types": [
+        "creative_reference",
+        "creator_profile_reference"
+      ],
+      "tags": [
+        "creator-profile",
+        "instagram",
+        "mika-sora",
+        "profile-reference",
+        "visual-reference"
+      ],
+      "summary": "Mika Sora(@itsmikasoraa) Instagram 프로필 참고자료입니다. 공개 프로필 메타데이터와 OG 아바타 미리보기만 보존했으며, 개별 게시물·릴·캡션·댓글·링크는 열람하거나 수집하지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/f5335e1b7509418635ade45d363ac070054c2d078caa83c6204243ebbd13192e.svg",
+        "alt": "Mika Sora Instagram profile reference"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/itsmikasoraa"
+      },
+      "captured_at": "2026-10-11T16:12:36+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261011-0006",
+      "title": "흔적레이더를 통해 오를 주식 종목을 잡는 법",
+      "types": [
+        "investment_video_reference",
+        "youtube_reference"
+      ],
+      "tags": [
+        "financial-content",
+        "investment-method",
+        "market-analysis",
+        "reference-video",
+        "stock-investing",
+        "youtube"
+      ],
+      "summary": "주식 종목을 찾는 방법을 다룬다고 제목에 표시된 YouTube 참고 영상입니다. 공개 oEmbed 제목·채널·썸네일만 보존했으며, 투자 방법·시장 전망·적합성·성과는 검증하거나 분석하지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/8db27945a6601f9a8cda35d2227905eeb5b48584afefb8688ee114fef288914e.svg",
+        "alt": "흔적레이더를 통해 오를 주식 종목을 잡는 법"
+      },
+      "source": {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/watch?v=jswOQG9wcwU"
+      },
+      "captured_at": "2026-10-11T16:11:22+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261011-0005",
+      "title": "OpenNana prompt-gallery reference",
+      "types": [
+        "creative_reference",
+        "prompt_gallery_reference"
+      ],
+      "tags": [
+        "ai-image",
+        "content-creation",
+        "creative-inspiration",
+        "opennana",
+        "prompt-gallery",
+        "prompt-writing",
+        "short-link"
+      ],
+      "summary": "OpenNana 프롬프트 갤러리로 소개된 참고자료입니다. 19,888개 프롬프트 수록, AI 이미지·콘텐츠 창작 참고, 프롬프트 예시·수정 활용은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/7b39291da436c874da15fba1bff239c948092444a6822d3ac37775be21d48a34.svg",
+        "alt": "OpenNana prompt-gallery reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/bkdgiffug/status/2108885756467089542"
+      },
+      "captured_at": "2026-10-11T15:00:05+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261011-0004",
+      "title": "Claimed Talorys Cloudflare and GLM-4.7-Flash workflow reference",
+      "types": [
+        "cloud_infrastructure_model_workflow_reference",
+        "external_project_reference"
+      ],
+      "tags": [
+        "ai-infrastructure",
+        "cloudflare",
+        "glm-4.7-flash",
+        "npx",
+        "open-source-claim",
+        "serverless",
+        "talorys",
+        "web-hosting"
+      ],
+      "summary": "Cloudflare 무료 인프라와 GLM-4.7-Flash를 결합해 비용을 낮춘다고 주장된 Talorys 오픈소스 프로젝트 참고자료입니다. 무료 쿼터·GPU 비용·호스팅·서버리스·기능·배포는 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/1185a0c29e80efcecea3d842e80d5fd9d2c6946cc3faf812f3c81d62e2f6cb61.svg",
+        "alt": "Claimed Talorys Cloudflare and GLM-4.7-Flash workflow reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Dontgiveup_26/status/2109083013569278299"
+      },
+      "captured_at": "2026-10-11T14:12:40+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261011-0003",
+      "title": "Claimed Claude plugin collection and bulk setup guide reference",
+      "types": [
+        "ai_tooling_workflow_reference",
+        "external_plugin_collection_reference"
+      ],
+      "tags": [
+        "agent-reach",
+        "agentbrowser",
+        "bulk-installation",
+        "claude",
+        "claude-code",
+        "external-tools",
+        "graphify",
+        "markitdown",
+        "plugins"
+      ],
+      "summary": "Claude용 플러그인·도구 10개와 일괄 설치·설정 프롬프트/가이드를 소개한 참고자료입니다. 플러그인 기능·순위·보안·크롤링·브라우저·토큰 절감·호환성·성능은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/6a0c1ea875cc3702c404f4679ee4e847f00f318be7af25ccddab981304779603.svg",
+        "alt": "Claimed Claude plugin collection and bulk setup guide reference"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/lazy_owen/reel/Dd8pSQUMy5e/"
+      },
+      "captured_at": "2026-10-11T07:51:25+09:00",
+      "category": "agent_technique",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261011-0002",
+      "title": "Cherry小樱桃 Instagram profile reference",
+      "types": [
+        "creative_reference",
+        "creator_profile_reference"
+      ],
+      "tags": [
+        "cherry",
+        "creator-profile",
+        "instagram",
+        "profile-reference",
+        "visual-reference"
+      ],
+      "summary": "Cherry小樱桃(@chrylvsu) Instagram 프로필 참고자료입니다. 공개 프로필 메타데이터와 OG 아바타 미리보기만 보존했으며, 개별 게시물·릴·캡션·댓글·링크는 열람하거나 수집하지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/938286d027f5e1eda69ea0cfa13015a5b4ab04cd6107be4d91e01e31904231e3.svg",
+        "alt": "Cherry小樱桃 Instagram profile reference"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/chrylvsu"
+      },
+      "captured_at": "2026-10-11T07:50:10+09:00",
+      "category": "visual_reference",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261011-0001",
+      "title": "iNodes Blender-to-MiniMax H3 Max compositor workflow reference",
+      "types": [
+        "ai_video_compositing_workflow_reference",
+        "creative_software_plugin_reference"
+      ],
+      "tags": [
+        "ai-video",
+        "blender",
+        "compositor",
+        "creative-plugin",
+        "inodes",
+        "minimax-h3-max",
+        "render-layers",
+        "vfx"
+      ],
+      "summary": "Blender Render Layers와 레퍼런스 이미지를 MiniMax H3 Max로 보내고, 생성된 샷을 컴포지터 노드로 되돌린다고 소개된 iNodes 플러그인 워크플로 참고자료입니다. 플러그인·베타·전송·기능·품질·정책은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/3a33d7f7dca709dcacf02d2ae5dfbd86181fa5dc9b35638822883f02551b58bf.svg",
+        "alt": "iNodes Blender-to-MiniMax H3 Max compositor workflow reference"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/inodes.ai/reel/DeOe7TAuzsS/"
+      },
+      "captured_at": "2026-10-11T07:47:13+09:00",
+      "category": "video_technique",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261009-0008",
