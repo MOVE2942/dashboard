@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261015-175309-AUTO",
-  "source_manifest_sha256": "df722062809c17f9979bf128656862386745c2cecc9256303f75625f81c38ae5",
-  "export_manifest_sha256": "8aaa2c0e4da6e75e201a2e87d6019daa0130a3ca879633782d1e16ea038d89c4",
-  "generated_at": "2026-10-15T17:53:11+09:00",
+  "release_id": "LIA-20261015-184349-AUTO",
+  "source_manifest_sha256": "c2cc50e00d6dcb161abe3b83b27192af0cf3c1d22d061ca35b0530557dde3452",
+  "export_manifest_sha256": "9689f52a6a0e78686c99b8b84b630489592e361d1c7ef995d523aee51abc2a6c",
+  "generated_at": "2026-10-15T18:43:50+09:00",
   "facet_counts": {
     "general": 200,
     "prompts": 156,
@@ -1256,7 +1256,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f69f3a210bd4a22fd7b404ebb2a9a0a22f3bf3864359ed84e43d886ab39fb66e.svg",
+        "src": "assets/d465118145a1c7731f25268e01ad1cb910cdb525d69a48681b2d5e55bbdc0dbd.png",
         "alt": "WebGPU composable website-effects components and visual editor reference"
       },
       "source": {
@@ -2783,7 +2783,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/82360386790260fd3f1d50eab5b9f27f93f613e1761ea233ffa3a91ebcf4d800.svg",
+        "src": "assets/f3c363d09f83f7d9e1edb060a28d1b1ae9568e8ac4aa25503aebe927f6d0597a.jpg",
         "alt": "Staged AI-video production workflow: previs to compositing"
       },
       "source": {
@@ -3055,7 +3055,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/20f816b7ec2671ac096f4eec4e1caf3668e2169d6d663c8798ea38409a580920.svg",
+        "src": "assets/c76daabaa041ef20cc2bd9656e6f22d553c574d6725e69b72a4ee3c961db2194.png",
         "alt": "schift-ocr-1-beta — Korean-document OCR model announcement"
       },
       "source": {
@@ -3682,8 +3682,8 @@
         "text": null
       },
       "visual": {
-        "kind": "placeholder",
-        "src": "assets/6704c1fc293fec2a280dfb79d9b2628977ac91150e331856b9724cb37da61f28.svg",
+        "kind": "thumbnail",
+        "src": "assets/78ded65755ccfff4507796602673ca3773182c1112bee4f75d5c371f26018f66.jpg",
         "alt": "Seedance 2.5 Prompt Sequencing and Optimization"
       },
       "source": {
@@ -3752,8 +3752,8 @@
         "text": null
       },
       "visual": {
-        "kind": "placeholder",
-        "src": "assets/b30fe6f2b291a8b7a240cde9312261d97cc98496c9f70369b3342f54e29997f8.svg",
+        "kind": "thumbnail",
+        "src": "assets/841b6339d1b60d0e0b3be0c1d834e331b6b7946a86c3877a16b2de67dc5c5461.webp",
         "alt": "Optimizing Seedance 2.5 Fighting Skill with Doubao"
       },
       "source": {
@@ -3789,8 +3789,8 @@
         "text": null
       },
       "visual": {
-        "kind": "placeholder",
-        "src": "assets/2f2e8b2783e4ffa736956d958a209d112dd6dd0079b171d480a6f8d6cee3d610.svg",
+        "kind": "thumbnail",
+        "src": "assets/7b2f710cc019e05dc30f8fa6dcecb8fb04af744efd72f385cad8db19657b5014.webp",
         "alt": "Maximizing Claude Code Value: Custom Agents & MCP"
       },
       "source": {
@@ -3825,8 +3825,8 @@
         "text": null
       },
       "visual": {
-        "kind": "placeholder",
-        "src": "assets/d635bc90ce5afc0e169b7763766fdb821000d23fdbfd234f25eedb004a79ca9f.svg",
+        "kind": "thumbnail",
+        "src": "assets/ff7ed4dac1655377a70983f9cf700b6b13811d05f4b2312110930ee972a75ced.webp",
         "alt": "Bypass Registration Limits for Muse using Gemini Spark"
       },
       "source": {
@@ -3861,8 +3861,8 @@
         "text": null
       },
       "visual": {
-        "kind": "placeholder",
-        "src": "assets/5a96d36058896df758f1aece0fbe10cd7de59df7295f844dc73ef5a5442ed2e7.svg",
+        "kind": "thumbnail",
+        "src": "assets/7f707accbb5e17943534889c4f4d4c19b41611e638383d34bfa152fc47311ea0.webp",
         "alt": "Local Deployment: Qwen-Image-2.1 & Anima on Mac"
       },
       "source": {
@@ -6092,7 +6092,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/113b5a7853d15a4be26e1426a5143fb33027244f448fcfb635ca414c35af9f7b.svg",
+        "src": "assets/447133704acd47dd38f245feb6215b1379e23c0e6a9322cee3ea7b4f9ed1d1e5.jpg",
         "alt": "Seedance Emotion Direction — 작성자 답글의 감정연기 프롬프트 사이트 링크"
       },
       "source": {
@@ -16430,8 +16430,8 @@
         "text": null
       },
       "visual": {
-        "kind": "placeholder",
-        "src": "assets/a94041416d516e8b9cdf95a30dcce2e1c0e619edfb0aba9c5df7923563d55de4.svg",
+        "kind": "thumbnail",
+        "src": "assets/61a04db4fe090d606db204d06469742daa7a96b68dcddac37d425d0af3cbca1a.png",
         "alt": "Etoland Humor Video Captures"
       },
       "source": {
@@ -16496,8 +16496,8 @@
         "text": "a girl bursts out of a subway pillar and takes a guy apart. Tiled walls, ad panels, a train pulling out behind her. She comes through the pillar with the debris still falling, squares up, knocks him back across the platform, then turns and"
       },
       "visual": {
-        "kind": "placeholder",
-        "src": "assets/61c7a235e871f8183e204ef5c4734048759b8ea846d7871ef1a92c51bb9d5fa5.svg",
+        "kind": "thumbnail",
+        "src": "assets/b7ca9f6b36ebaa2322ad7fd2fb7f835da3c5df2ea377c5206155d2e990bcce07.svg",
         "alt": "Seedance 2.0 Subway Pillar Action Prompt"
       },
       "source": {
