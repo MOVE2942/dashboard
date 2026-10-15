@@ -1,35 +1,33 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261015-190053-AUTO",
+  "release_id": "LIA-20261015-190945-AUTO",
   "source_manifest_sha256": "e70c095152613835bc9a68e0dadba19efaac490e65982807b6f75e3ed4b2a1d1",
-  "export_manifest_sha256": "16c21152b1ffe120a38611c304f3d5972032a987cf0ff042d6d8a69452ffa028",
-  "generated_at": "2026-10-15T19:00:53+09:00",
+  "export_manifest_sha256": "d85bad7493b4e68e4fc67b3075587613ab68696fadda7ebbac50870c1b51e74a",
+  "generated_at": "2026-10-15T19:09:45+09:00",
   "facet_counts": {
     "general": 201,
     "prompts": 156,
     "video_generation": 123
   },
   "category_counts": {
-    "video_technique": 115,
-    "image_technique": 117,
-    "agent_technique": 28,
-    "prompt_reference": 18,
-    "contest_info": 0,
-    "platform_info": 1,
-    "visual_reference": 133,
-    "ideas": 0,
-    "ai_research": 11
+    "production": 276,
+    "reference": 274,
+    "technology": 97,
+    "learning": 11,
+    "resource": 4,
+    "research": 2,
+    "culture": 12,
+    "utility": 49
   },
   "category_labels": {
-    "video_technique": "영상 제작 기법",
-    "image_technique": "이미지 제작 기법",
-    "agent_technique": "에이전트 활용 기법",
-    "prompt_reference": "프롬프트 레퍼런스",
-    "contest_info": "공모전/이벤트",
-    "platform_info": "플랫폼/서비스",
-    "visual_reference": "시각 레퍼런스",
-    "ideas": "아이디어/기획",
-    "ai_research": "AI 리서치/동향"
+    "production": "제작",
+    "reference": "창작 레퍼런스",
+    "technology": "기술·도구·모델",
+    "learning": "학습·기법·비교",
+    "resource": "자료·라이브러리",
+    "research": "리서치·동향",
+    "culture": "문화·스타일",
+    "utility": "유틸리티·서비스"
   },
   "cards": [
     {
@@ -70,7 +68,7 @@
         "url": "https://www.instagram.com/bathroom_jyoshi"
       },
       "captured_at": "2026-10-15T13:25:53+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -110,7 +108,7 @@
         "url": "https://www.instagram.com/35.7kg"
       },
       "captured_at": "2026-10-15T13:23:09+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -156,7 +154,7 @@
         "url": "https://x.com/ai_hakase_/status/2109933293642866929"
       },
       "captured_at": "2026-10-13T21:12:55+09:00",
-      "category": "video_technique",
+      "category": "learning",
       "published_at": null
     },
     {
@@ -205,7 +203,7 @@
         "url": "https://x.com/PixelAigc/status/2109890277549002754"
       },
       "captured_at": "2026-10-13T20:22:48+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -254,7 +252,7 @@
         "url": "https://x.com/hiwise_aigc/status/2109257210534768912"
       },
       "captured_at": "2026-10-12T14:24:04+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -303,7 +301,7 @@
         "url": "https://www.instagram.com/diripda/reel/Dd-SBFCDcrE/"
       },
       "captured_at": "2026-10-11T17:49:03+09:00",
-      "category": "agent_technique",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -352,7 +350,7 @@
         "url": "https://www.instagram.com/glitter_ai_factory/reel/DeT7uJYJdoN/"
       },
       "captured_at": "2026-10-11T16:16:53+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -398,7 +396,7 @@
         "url": "https://www.instagram.com/itsmikasoraa"
       },
       "captured_at": "2026-10-11T16:12:36+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -443,7 +441,7 @@
         "url": "https://www.youtube.com/watch?v=jswOQG9wcwU"
       },
       "captured_at": "2026-10-11T16:11:22+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -491,7 +489,7 @@
         "url": "https://x.com/bkdgiffug/status/2108885756467089542"
       },
       "captured_at": "2026-10-11T15:00:05+09:00",
-      "category": "image_technique",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -540,7 +538,7 @@
         "url": "https://x.com/Dontgiveup_26/status/2109083013569278299"
       },
       "captured_at": "2026-10-11T14:12:40+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -589,7 +587,7 @@
         "url": "https://www.instagram.com/lazy_owen/reel/Dd8pSQUMy5e/"
       },
       "captured_at": "2026-10-11T07:51:25+09:00",
-      "category": "agent_technique",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -633,7 +631,7 @@
         "url": "https://www.instagram.com/chrylvsu"
       },
       "captured_at": "2026-10-11T07:50:10+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -681,7 +679,7 @@
         "url": "https://www.instagram.com/inodes.ai/reel/DeOe7TAuzsS/"
       },
       "captured_at": "2026-10-11T07:47:13+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -729,7 +727,7 @@
         "url": "https://huggingface.co/Noctaluna/Noct-Q-Uncensored-Qwen-Image-2.1"
       },
       "captured_at": "2026-10-09T22:12:21+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -775,7 +773,7 @@
         "url": "https://huggingface.co/SulphurAI/Sulphur-2-base"
       },
       "captured_at": "2026-10-09T22:10:36+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -824,7 +822,7 @@
         "url": "https://huggingface.co/spaces/hugging-apps/minimax-h3-character-swap-lora"
       },
       "captured_at": "2026-10-09T21:55:17+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -872,7 +870,7 @@
         "url": "https://www.instagram.com/ai.withphil/p/DeG_XjJiALW/"
       },
       "captured_at": "2026-10-09T11:05:50+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -920,7 +918,7 @@
         "url": "https://x.com/0x0SojalSec/status/2108026675917390190"
       },
       "captured_at": "2026-10-09T01:54:34+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -963,7 +961,7 @@
         "url": "https://etoland.co.kr/b/freebbs/article/9486434"
       },
       "captured_at": "2026-10-09T01:52:39+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -1006,7 +1004,7 @@
         "url": "https://etoland.co.kr/b/freebbs/article/9487015"
       },
       "captured_at": "2026-10-09T01:47:32+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -1049,7 +1047,7 @@
         "url": "https://etoland.co.kr/b/freebbs/article/9487669"
       },
       "captured_at": "2026-10-09T01:43:27+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -1094,7 +1092,7 @@
         "url": "https://x.com/ShiHao0606/status/2106941811323506874"
       },
       "captured_at": "2026-10-08T17:48:33+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -1143,7 +1141,7 @@
         "url": "https://x.com/0xGky/status/2108006966974972326"
       },
       "captured_at": "2026-10-08T17:42:02+09:00",
-      "category": "agent_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -1188,7 +1186,7 @@
         "url": "https://x.com/offtherecord26/status/2103135816931557432"
       },
       "captured_at": "2026-10-08T17:39:41+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -1234,7 +1232,7 @@
         "url": "https://x.com/0xGky/status/2107974753860587884"
       },
       "captured_at": "2026-10-08T17:16:47+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -1282,7 +1280,7 @@
         "url": "https://x.com/Ty_Tuki0609/status/2107811380304998716"
       },
       "captured_at": "2026-10-08T16:46:32+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -1331,7 +1329,7 @@
         "url": "https://x.com/EngMoElgaraihy/status/2107887887576424473"
       },
       "captured_at": "2026-10-08T15:04:50+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -1378,7 +1376,7 @@
         "url": "https://x.com/ceolmh3/status/2107732735259529480"
       },
       "captured_at": "2026-10-08T15:00:35+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -1427,7 +1425,7 @@
         "url": "https://x.com/nicebabycat/status/2107726586175016978"
       },
       "captured_at": "2026-10-08T09:35:37+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -1476,7 +1474,7 @@
         "url": "https://www.threads.com/@nangman_muk/post/DeMT1woE5c5"
       },
       "captured_at": "2026-10-08T08:38:33+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -1522,7 +1520,7 @@
         "url": "https://www.threads.com/@nangman_muk/post/DeNho17k9nE"
       },
       "captured_at": "2026-10-08T08:33:26+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -1571,7 +1569,7 @@
         "url": "https://www.threads.com/@choi.openai/post/DeM2H14gfj_"
       },
       "captured_at": "2026-10-08T08:30:31+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -1620,7 +1618,7 @@
         "url": "https://x.com/boniusex/status/2107729424246538687"
       },
       "captured_at": "2026-10-08T08:28:52+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -1669,7 +1667,7 @@
         "url": "https://x.com/ChaoSpacecallum/status/2107668305687548002"
       },
       "captured_at": "2026-10-08T08:16:54+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -1718,7 +1716,7 @@
         "url": "https://x.com/superalesha/status/2107896192591945829"
       },
       "captured_at": "2026-10-08T08:14:15+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -1767,7 +1765,7 @@
         "url": "https://x.com/Dontgiveup_26/status/2107859686578131178"
       },
       "captured_at": "2026-10-08T08:13:00+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -1813,7 +1811,7 @@
         "url": "https://www.youtube.com/watch?v=NWoJHsKIT1A"
       },
       "captured_at": "2026-10-08T01:39:59+09:00",
-      "category": "agent_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -1862,7 +1860,7 @@
         "url": "https://x.com/eternityspring/status/2107635413133447631"
       },
       "captured_at": "2026-10-07T21:52:58+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -1904,7 +1902,7 @@
         "url": "https://x.com/chuge857/status/2107459585040929049"
       },
       "captured_at": "2026-10-07T15:49:02+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -1949,7 +1947,7 @@
         "url": "https://etoland.co.kr/b/etohumor07/article/9479543"
       },
       "captured_at": "2026-10-07T02:01:12+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -1994,7 +1992,7 @@
         "url": "https://etoland.co.kr/b/etohumor07/article/9481059"
       },
       "captured_at": "2026-10-07T01:31:01+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -2043,7 +2041,7 @@
         "url": "https://www.threads.com/@aicoffeechat/post/DeIP9OQCovm"
       },
       "captured_at": "2026-10-06T23:01:13+09:00",
-      "category": "agent_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -2092,7 +2090,7 @@
         "url": "https://www.threads.com/@vesperchant/post/Dc24gNDGubq"
       },
       "captured_at": "2026-10-06T22:57:52+09:00",
-      "category": "agent_technique",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -2140,7 +2138,7 @@
         "url": "https://x.com/DeepDive_KR/status/2107299145367310450"
       },
       "captured_at": "2026-10-06T18:56:20+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -2189,7 +2187,7 @@
         "url": "https://x.com/AlexCodeRx/status/2107084752549232911"
       },
       "captured_at": "2026-10-06T09:40:33+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -2238,7 +2236,7 @@
         "url": "https://x.com/SD_Tutorial/status/2107156557360480475"
       },
       "captured_at": "2026-10-06T09:38:21+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -2284,7 +2282,7 @@
         "url": "https://x.com/grgerwcwetwet/status/2107073075825274947"
       },
       "captured_at": "2026-10-06T08:18:20+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -2333,7 +2331,7 @@
         "url": "https://x.com/Soaima_Ai/status/2106948865744327008"
       },
       "captured_at": "2026-10-06T08:15:29+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -2382,7 +2380,7 @@
         "url": "https://x.com/MinLiBuilds/status/2106678128559222803"
       },
       "captured_at": "2026-10-06T01:27:24+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -2428,7 +2426,7 @@
         "url": "https://x.com/ushangul/status/2107034668977848430"
       },
       "captured_at": "2026-10-06T00:53:01+09:00",
-      "category": "agent_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -2477,7 +2475,7 @@
         "url": "https://x.com/sep_is_heim/status/2106531484836495544"
       },
       "captured_at": "2026-10-04T13:52:06+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -2523,7 +2521,7 @@
         "url": "https://x.com/fly3nn/status/2106246887364075749"
       },
       "captured_at": "2026-10-04T13:44:40+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -2572,7 +2570,7 @@
         "url": "https://x.com/Dontgiveup_26/status/2106524412715667782"
       },
       "captured_at": "2026-10-04T11:15:16+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -2619,7 +2617,7 @@
         "url": "https://x.com/wlzh/status/2106268274350870642"
       },
       "captured_at": "2026-10-04T08:50:08+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -2664,7 +2662,7 @@
         "url": "https://x.com/Fred834567/status/2106395901514469878"
       },
       "captured_at": "2026-10-04T08:34:34+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -2705,7 +2703,7 @@
         "url": "https://x.com/chuge857/status/2106345339070615736"
       },
       "captured_at": "2026-10-04T08:33:21+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -2752,7 +2750,7 @@
         "url": "https://x.com/Lonely__MH/status/2106200059704689061"
       },
       "captured_at": "2026-10-04T08:31:38+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -2798,7 +2796,7 @@
         "url": "https://x.com/aldostools/status/2106442569202745695"
       },
       "captured_at": "2026-10-04T08:30:18+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -2848,7 +2846,7 @@
         "url": "https://x.com/laowangbabababa/status/2106321081393176741"
       },
       "captured_at": "2026-10-04T01:11:22+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -2898,7 +2896,7 @@
         "url": "https://x.com/core_tan/status/2105961375902355866"
       },
       "captured_at": "2026-10-03T10:24:54+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -2948,7 +2946,7 @@
         "url": "https://x.com/ai_hakase_/status/2105992475282215408"
       },
       "captured_at": "2026-10-03T09:04:33+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -2998,7 +2996,7 @@
         "url": "https://x.com/Promptwhat/status/2106006916665372872"
       },
       "captured_at": "2026-10-03T09:03:43+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -3046,7 +3044,7 @@
         "url": "https://x.com/eternityspring/status/2106011333775032522"
       },
       "captured_at": "2026-10-03T00:27:53+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -3091,7 +3089,7 @@
         "url": "https://x.com/liambraus/status/2105650623974621300"
       },
       "captured_at": "2026-10-02T13:56:28+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -3139,7 +3137,7 @@
         "url": "https://x.com/denziideng/status/2105766936105964013"
       },
       "captured_at": "2026-10-02T13:52:04+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -3189,7 +3187,7 @@
         "url": "https://x.com/Tomw852/status/2105600477866185091"
       },
       "captured_at": "2026-10-02T01:45:29+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -3235,7 +3233,7 @@
         "url": "https://x.com/AcervoAPK/status/2105401044847218830"
       },
       "captured_at": "2026-10-01T19:38:23+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -3284,7 +3282,7 @@
         "url": "https://x.com/luojiuyue/status/2103421186063642822"
       },
       "captured_at": "2026-10-01T18:35:49+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -3331,7 +3329,7 @@
         "url": "https://x.com/wquguru/status/2102717889585586493"
       },
       "captured_at": "2026-10-01T18:34:53+09:00",
-      "category": "image_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -3379,7 +3377,7 @@
         "url": "https://www.threads.com/@woong.nya_ha/post/Dd3_lTHk2fC"
       },
       "captured_at": "2026-10-01T14:00:27+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -3428,7 +3426,7 @@
         "url": "https://x.com/aiaicreate/status/2105254640988180619"
       },
       "captured_at": "2026-10-01T08:47:34+09:00",
-      "category": "image_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -3478,7 +3476,7 @@
         "url": "https://x.com/SD_Tutorial/status/2105380193716285778"
       },
       "captured_at": "2026-10-01T08:15:53+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -3522,7 +3520,7 @@
         "url": "https://x.com/rexsooo/status/2105386147157516587"
       },
       "captured_at": "2026-10-01T08:08:12+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -3569,7 +3567,7 @@
         "url": "https://x.com/sereinworld/status/2105320262900355104"
       },
       "captured_at": "2026-10-01T08:06:40+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -3619,7 +3617,7 @@
         "url": "https://x.com/Lonely__MH/status/2105086472566997227"
       },
       "captured_at": "2026-10-01T08:06:39+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -3666,7 +3664,7 @@
         "url": "https://x.com/tangchuan_CN/status/2104925431678017775"
       },
       "captured_at": "2026-09-30T08:46:27+09:00",
-      "category": "agent_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -3715,7 +3713,7 @@
         "url": "https://www.threads.com/@catlovessubakba/post/Dd3of12EraE"
       },
       "captured_at": "2026-09-29T23:53:52+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -3765,7 +3763,7 @@
         "url": "https://x.com/SD_Tutorial/status/2104902418291155334"
       },
       "captured_at": "2026-09-29T21:56:35+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -3809,7 +3807,7 @@
         "url": "https://x.com/MissCat_AI/status/2104473940014117210"
       },
       "captured_at": "2026-09-29T21:09:37+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -3856,7 +3854,7 @@
         "url": "https://x.com/_guillecasaus/status/2104539593966063913"
       },
       "captured_at": "2026-09-29T10:13:02+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -3894,7 +3892,7 @@
         "url": "https://x.com/Fred834567/status/2103983958048514144"
       },
       "captured_at": "2026-09-29T08:53:36+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -3932,7 +3930,7 @@
         "url": "https://x.com/Fred834567/status/2104541639586787673"
       },
       "captured_at": "2026-09-29T08:52:39+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -3970,7 +3968,7 @@
         "url": "https://x.com/VibeEverything/status/2104539752016076956"
       },
       "captured_at": "2026-09-29T08:28:42+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -4008,7 +4006,7 @@
         "url": "https://x.com/huoshan007/status/2104452796980298135"
       },
       "captured_at": "2026-09-29T08:27:06+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -4047,7 +4045,7 @@
         "url": "https://www.instagram.com/reel/DdslmKIOQx5/?stkn=YXdnZ3M2d3ptejEy"
       },
       "captured_at": "2026-09-27T23:13:44+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -4094,7 +4092,7 @@
         "url": "https://www.instagram.com/reel/DdhqclwEpcy/?stkn=MTVpZjExam40Ymk3ag=="
       },
       "captured_at": "2026-09-27T23:10:47+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -4132,7 +4130,7 @@
         "url": "https://x.com/VibeEverything/status/2104160871589220365"
       },
       "captured_at": "2026-09-27T22:45:58+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -4170,7 +4168,7 @@
         "url": "https://x.com/imhealmachine/status/2103809780737540325"
       },
       "captured_at": "2026-09-27T17:38:59+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -4208,7 +4206,7 @@
         "url": "https://x.com/FiniYang/status/2103850232048132178"
       },
       "captured_at": "2026-09-27T17:38:52+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -4246,7 +4244,7 @@
         "url": "https://x.com/paperwiz0/status/2103695716078276848"
       },
       "captured_at": "2026-09-27T17:37:38+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -4284,7 +4282,7 @@
         "url": "https://x.com/mylifcc/status/2104060209882710051"
       },
       "captured_at": "2026-09-27T17:37:32+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -4322,7 +4320,7 @@
         "url": "https://x.com/Dontgiveup_26/status/2103972951121125505"
       },
       "captured_at": "2026-09-27T17:37:16+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -4360,7 +4358,7 @@
         "url": "https://x.com/Lonely__MH/status/2103874755816456634"
       },
       "captured_at": "2026-09-27T17:37:08+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -4398,7 +4396,7 @@
         "url": "https://www.threads.net/@ddalkkakfactory/post/Dds6_g5gYOo"
       },
       "captured_at": "2026-09-26T12:44:21+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -4443,7 +4441,7 @@
         "url": "https://x.com/HERANAM381471/status/2103469526088118739"
       },
       "captured_at": "2026-09-26T02:28:08+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -4482,7 +4480,7 @@
         "url": "https://www.instagram.com/reel/DdodrjRO4PO/?stkn=ZndlYzFhajVjMjV4"
       },
       "captured_at": "2026-09-24T22:39:56+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -4528,7 +4526,7 @@
         "url": "https://x.com/liyue_ai/status/2102600338297823520"
       },
       "captured_at": "2026-09-24T21:12:16+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -4572,7 +4570,7 @@
         "url": "https://x.com/dontgiveup_26/status/2102903338899550610"
       },
       "captured_at": "2026-09-24T13:37:29+09:00",
-      "category": "agent_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -4615,7 +4613,7 @@
         "url": "https://x.com/suoha_ai/status/2102780408458863076"
       },
       "captured_at": "2026-09-24T13:37:12+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -4657,7 +4655,7 @@
         "url": "https://x.com/wquguru/status/2102769448398782894"
       },
       "captured_at": "2026-09-24T13:36:03+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -4706,7 +4704,7 @@
         "url": "https://x.com/king1818888/status/2102588479364534312"
       },
       "captured_at": "2026-09-23T20:46:01+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -4756,7 +4754,7 @@
         "url": "https://x.com/FiniYang/status/2102589325502460405"
       },
       "captured_at": "2026-09-23T20:42:50+09:00",
-      "category": "agent_technique",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -4806,7 +4804,7 @@
         "url": "https://x.com/Dontgiveup_26/status/2102667639839510928"
       },
       "captured_at": "2026-09-23T20:30:20+09:00",
-      "category": "agent_technique",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -4854,7 +4852,7 @@
         "url": "https://x.com/3three_AI/status/2102673824546201722"
       },
       "captured_at": "2026-09-23T20:29:23+09:00",
-      "category": "image_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -4903,7 +4901,7 @@
         "url": "https://x.com/xiangxiang103/status/2101902711243542657"
       },
       "captured_at": "2026-09-22T07:15:44+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -4950,7 +4948,7 @@
         "url": "https://x.com/y_suou/status/2101207957216407823"
       },
       "captured_at": "2026-09-21T21:49:38+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -5000,7 +4998,7 @@
         "url": "https://x.com/interjc/status/2101918912837468215"
       },
       "captured_at": "2026-09-21T21:46:56+09:00",
-      "category": "agent_technique",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -5049,7 +5047,7 @@
         "url": "https://youtu.be/wLKg1t5UMxE"
       },
       "captured_at": "2026-09-21T20:43:39+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -5097,7 +5095,7 @@
         "url": "https://youtu.be/xRed28mz4-s"
       },
       "captured_at": "2026-09-21T18:57:47+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -5147,7 +5145,7 @@
         "url": "https://www.instagram.com/p/DdeTgRuE4yq/?img_index=4&stkn=MWtxeTVhNDY5OTNycA=="
       },
       "captured_at": "2026-09-21T01:40:58+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -5195,7 +5193,7 @@
         "url": "https://www.instagram.com/p/DdYRxiLDeW-/?img_index=6&stkn=MWtycGZ0Ym44ZGhmNw=="
       },
       "captured_at": "2026-09-21T01:34:09+09:00",
-      "category": "agent_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -5242,7 +5240,7 @@
         "url": "https://x.com/fdtreesky/status/2101692768674627733"
       },
       "captured_at": "2026-09-21T01:24:41+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -5288,7 +5286,7 @@
         "url": "https://x.com/EngMoElgaraihy/status/2101227158194540919"
       },
       "captured_at": "2026-09-21T01:20:52+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -5334,7 +5332,7 @@
         "url": "https://x.com/VibeEverything/status/2101687942288973967"
       },
       "captured_at": "2026-09-21T01:20:47+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -5381,7 +5379,7 @@
         "url": "https://x.com/MissAI_Show/status/2101310343498588631"
       },
       "captured_at": "2026-09-20T20:53:19+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -5429,7 +5427,7 @@
         "url": "https://x.com/mizorewww/status/2101473552956555427"
       },
       "captured_at": "2026-09-20T20:53:16+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -5476,7 +5474,7 @@
         "url": "https://x.com/NFT_Chen/status/2101268965167399143"
       },
       "captured_at": "2026-09-20T17:09:52+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -5520,7 +5518,7 @@
         "url": "https://x.com/komari_ai/status/2101062661253566571"
       },
       "captured_at": "2026-09-20T17:09:24+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -5566,7 +5564,7 @@
         "url": "https://x.com/TSLA2312/status/2101541838541000894"
       },
       "captured_at": "2026-09-20T17:04:22+09:00",
-      "category": "agent_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -5608,7 +5606,7 @@
         "url": "https://x.com/lksmlabc/status/2101371241751847060"
       },
       "captured_at": "2026-09-20T17:04:20+09:00",
-      "category": "visual_reference",
+      "category": "resource",
       "published_at": null
     },
     {
@@ -5657,7 +5655,7 @@
         "url": "https://x.com/ModengSir/status/2101486213769449927"
       },
       "captured_at": "2026-09-20T17:00:40+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -5704,7 +5702,7 @@
         "url": "https://x.com/EngMoElgaraihy/status/2101311129410539908"
       },
       "captured_at": "2026-09-20T17:00:25+09:00",
-      "category": "agent_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -5751,7 +5749,7 @@
         "url": "https://x.com/EngMoElgaraihy/status/2101311129410539908"
       },
       "captured_at": "2026-09-20T16:55:54+09:00",
-      "category": "agent_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -5797,7 +5795,7 @@
         "url": "https://x.com/zhouluobo/status/2101452286270792061"
       },
       "captured_at": "2026-09-20T16:53:37+09:00",
-      "category": "agent_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -5844,7 +5842,7 @@
         "url": "https://x.com/aisearchio/status/2101394114176806966"
       },
       "captured_at": "2026-09-20T08:17:31+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -5890,7 +5888,7 @@
         "url": "https://x.com/lucian__03/status/2101429122983714917"
       },
       "captured_at": "2026-09-20T08:17:15+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -5931,7 +5929,7 @@
         "url": "https://www.instagram.com/reel/DaTnv8LjZNC/"
       },
       "captured_at": "2026-09-19T17:41:03+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -5970,7 +5968,7 @@
         "url": "https://x.com/HuggingModels/status/2100935376827527463"
       },
       "captured_at": "2026-09-19T17:41:00+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -6014,7 +6012,7 @@
         "url": "https://github.com/ripienaar/free-for-dev"
       },
       "captured_at": "2026-09-17T10:02:00+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -6057,7 +6055,7 @@
         "url": "https://x.com/bkdgiffug/status/2100195494995939454"
       },
       "captured_at": "2026-09-17T09:26:20+09:00",
-      "category": "agent_technique",
+      "category": "technology",
       "published_at": "2026-09-16"
     },
     {
@@ -6107,7 +6105,7 @@
         "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-8-Step-V2"
       },
       "captured_at": "2026-09-16T18:37:05+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -6154,7 +6152,7 @@
         "url": "https://www.threads.com/@geumverse_ai/post/DdUH_S4k46Y"
       },
       "captured_at": "2026-09-16T16:50:53+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -6204,7 +6202,7 @@
         "url": "https://tenzen.studio/photon/"
       },
       "captured_at": "2026-09-16T15:07:48+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -6254,7 +6252,7 @@
         "url": "https://github.com/rustdesk/rustdesk"
       },
       "captured_at": "2026-09-16T15:06:44+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -6304,7 +6302,7 @@
         "url": "https://x.com/aehyok/status/2099849221293985878"
       },
       "captured_at": "2026-09-16T15:06:09+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-09-15"
     },
     {
@@ -6354,7 +6352,7 @@
         "url": "https://x.com/romainsimon/status/2099846444903805034"
       },
       "captured_at": "2026-09-16T15:05:24+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-09-15"
     },
     {
@@ -6403,7 +6401,7 @@
         "url": "https://github.com/jaywcjlove/awesome-mac"
       },
       "captured_at": "2026-09-16T15:02:55+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -6450,7 +6448,7 @@
         "url": "https://nv-pu-sa.pages.dev/"
       },
       "captured_at": "2026-09-16T13:39:43+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -6499,7 +6497,7 @@
         "url": "https://www.atlascloud.ai/prompts-hub/seedance-2-5-prompt"
       },
       "captured_at": "2026-09-16T13:39:19+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -6549,7 +6547,7 @@
         "url": "https://github.com/peetzweg/opendisplay"
       },
       "captured_at": "2026-09-16T13:36:36+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -6598,7 +6596,7 @@
         "url": "https://x.com/boniusex/status/2099798916707594654"
       },
       "captured_at": "2026-09-16T00:59:20+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-09-15"
     },
     {
@@ -6648,7 +6646,7 @@
         "url": "https://x.com/sat0oshi/status/2099452256311550100"
       },
       "captured_at": "2026-09-16T00:49:30+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": "2026-09-14"
     },
     {
@@ -6698,7 +6696,7 @@
         "url": "https://x.com/bkdgiffug/status/2099713067101655121"
       },
       "captured_at": "2026-09-16T00:46:23+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": "2026-09-15"
     },
     {
@@ -6749,7 +6747,7 @@
         "url": "https://x.com/AISuperDomain/status/2099688942844993834"
       },
       "captured_at": "2026-09-16T00:45:38+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-09-15"
     },
     {
@@ -6797,7 +6795,7 @@
         "url": "https://x.com/VibeEverything/status/2099848829306798514"
       },
       "captured_at": "2026-09-16T00:45:26+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-09-15"
     },
     {
@@ -6848,7 +6846,7 @@
         "url": "https://x.com/gkxspace/status/2099808769043841452"
       },
       "captured_at": "2026-09-15T22:10:33+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-09-15"
     },
     {
@@ -6898,7 +6896,7 @@
         "url": "https://x.com/BBBang9900/status/2099513501832331735"
       },
       "captured_at": "2026-09-15T14:02:48+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-09-14"
     },
     {
@@ -6948,7 +6946,7 @@
         "url": "https://github.com/Songssx/ComfyUI-MiniMaxH3-TimelineDirector"
       },
       "captured_at": "2026-09-14T01:16:27+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -6997,7 +6995,7 @@
         "url": "https://github.com/Vincentwei1021/anything2explainer"
       },
       "captured_at": "2026-09-13T13:02:31+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7044,7 +7042,7 @@
         "url": "https://www.threads.com/@0xnimdal/post/DdLt_l8FOvy"
       },
       "captured_at": "2026-09-13T13:01:25+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -7093,7 +7091,7 @@
         "url": "https://github.com/microsoft/markitdown"
       },
       "captured_at": "2026-09-12T21:42:49+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -7143,7 +7141,7 @@
         "url": "https://www.instagram.com/p/DdJDCr_FEzd/"
       },
       "captured_at": "2026-09-11T22:42:14+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7193,7 +7191,7 @@
         "url": "https://github.com/OpenDCAI/GameFactory-3A"
       },
       "captured_at": "2026-09-11T22:38:37+09:00",
-      "category": "agent_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7243,7 +7241,7 @@
         "url": "https://www.threads.com/@imhealingmachine/post/DdET8yBjxdg"
       },
       "captured_at": "2026-09-10T08:45:11+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7293,7 +7291,7 @@
         "url": "https://www.threads.com/@prompt_what/post/DdBaiWqihwW"
       },
       "captured_at": "2026-09-08T19:18:17+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7342,7 +7340,7 @@
         "url": "https://www.threads.com/@gomdanceo/post/Dc9KjkCn2Tv"
       },
       "captured_at": "2026-09-07T21:26:09+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7392,7 +7390,7 @@
         "url": "https://www.threads.com/@tab.was.here/post/Dc5Rixuj8Oh"
       },
       "captured_at": "2026-09-07T21:26:09+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7442,7 +7440,7 @@
         "url": "https://www.threads.com/@tab.was.here/post/Dc5Q9KTD_gk"
       },
       "captured_at": "2026-09-07T21:26:09+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7492,7 +7490,7 @@
         "url": "https://www.threads.com/@prompt_what/post/Dc0GPNBClQl"
       },
       "captured_at": "2026-09-03T16:39:21+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7542,7 +7540,7 @@
         "url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2"
       },
       "captured_at": "2026-09-03T08:19:16+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7592,7 +7590,7 @@
         "url": "https://github.com/EvoLinkAI/awesome-seedance-2.5-prompts"
       },
       "captured_at": "2026-09-03T08:16:54+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7641,7 +7639,7 @@
         "url": "https://www.threads.com/@prompt_what/post/Dcx-F-ykmjS"
       },
       "captured_at": "2026-09-03T08:09:10+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7691,7 +7689,7 @@
         "url": "https://aicameramovements.com/"
       },
       "captured_at": "2026-09-02T14:21:03+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7737,7 +7735,7 @@
         "url": "https://www.instagram.com/p/Dcu2eZNIHT0/"
       },
       "captured_at": "2026-09-02T01:00:07+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -7787,7 +7785,7 @@
         "url": "https://www.threads.com/@byulmiso/post/Dcr-AV_ETIp"
       },
       "captured_at": "2026-09-01T08:38:53+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7838,7 +7836,7 @@
         "url": "https://github.com/GUNMIN-KIM/AI-VIDEO-PRODUCTION-GUIDE-KO"
       },
       "captured_at": "2026-09-01T08:24:51+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7888,7 +7886,7 @@
         "url": "https://x.com/VibeEverything/status/2093922109076750701"
       },
       "captured_at": "2026-08-30T19:41:30+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-30"
     },
     {
@@ -7938,7 +7936,7 @@
         "url": "https://www.threads.com/@r2voltz/post/Dck5wm2Guc1"
       },
       "captured_at": "2026-08-29T10:52:32+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -7988,7 +7986,7 @@
         "url": "https://www.threads.com/@h2smusic/post/DcksZe5E4e-"
       },
       "captured_at": "2026-08-29T10:52:32+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -8038,7 +8036,7 @@
         "url": "https://motion-index-phi.vercel.app/"
       },
       "captured_at": "2026-08-29T10:52:05+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -8088,7 +8086,7 @@
         "url": "https://www.threads.com/@nangman_muk/post/DcivZs_GPud"
       },
       "captured_at": "2026-08-28T01:49:45+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -8137,7 +8135,7 @@
         "url": "https://x.com/CyberTotal2026/status/2092587111073624285"
       },
       "captured_at": "2026-08-27T09:32:13+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-26"
     },
     {
@@ -8187,7 +8185,7 @@
         "url": "https://www.threads.com/@prompt_what/post/DcdpqzgEmmW"
       },
       "captured_at": "2026-08-27T02:47:42+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -8237,7 +8235,7 @@
         "url": "https://www.threads.com/@gasket_love/post/Dcd7JosGoas"
       },
       "captured_at": "2026-08-26T21:09:18+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -8287,7 +8285,7 @@
         "url": "https://www.threads.com/@whitegun.suh/post/DcZKjFMkzr6"
       },
       "captured_at": "2026-08-25T09:05:25+09:00",
-      "category": "agent_technique",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -8336,7 +8334,7 @@
         "url": "https://www.threads.com/@ai_visual101/post/DcbMdHREw8M"
       },
       "captured_at": "2026-08-25T09:03:54+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -8386,7 +8384,7 @@
         "url": "https://x.com/EEJ_OOXO/status/2091726145142374549"
       },
       "captured_at": "2026-08-24T15:07:39+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-24"
     },
     {
@@ -8435,7 +8433,7 @@
         "url": "https://x.com/sdjn_wgc/status/2091325843276452271"
       },
       "captured_at": "2026-08-24T00:04:33+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-23"
     },
     {
@@ -8484,7 +8482,7 @@
         "url": "https://x.com/CyberTotal2026/status/2091122460259410113"
       },
       "captured_at": "2026-08-24T00:04:15+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-22"
     },
     {
@@ -8533,7 +8531,7 @@
         "url": "https://x.com/Kunda623270/status/2090992646693191968"
       },
       "captured_at": "2026-08-23T15:17:11+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-22"
     },
     {
@@ -8582,7 +8580,7 @@
         "url": "https://x.com/maplejohn01/status/2090997566863466599"
       },
       "captured_at": "2026-08-23T15:14:32+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-22"
     },
     {
@@ -8631,7 +8629,7 @@
         "url": "https://x.com/CyberTotal2026/status/2091286289731747857"
       },
       "captured_at": "2026-08-23T15:14:32+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-22"
     },
     {
@@ -8680,7 +8678,7 @@
         "url": "https://x.com/VIBEQUIRKLABS/status/2091035581304463636"
       },
       "captured_at": "2026-08-23T15:14:32+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-22"
     },
     {
@@ -8720,7 +8718,7 @@
         "url": "https://x.com/CyberTotal2026/status/2091093771219800388"
       },
       "captured_at": "2026-08-23T15:14:32+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -8770,7 +8768,7 @@
         "url": "https://x.com/huoshan007/status/2090962001514406325"
       },
       "captured_at": "2026-08-23T15:14:32+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-22"
     },
     {
@@ -8810,7 +8808,7 @@
         "url": "https://x.com/ToroJushiAi/status/2090740701441020244"
       },
       "captured_at": "2026-08-23T15:14:32+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -8859,7 +8857,7 @@
         "url": "https://x.com/CyberTotal2026/status/2090974736956141693"
       },
       "captured_at": "2026-08-23T15:14:32+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-22"
     },
     {
@@ -8908,7 +8906,7 @@
         "url": "https://x.com/CyberTotal2026/status/2091001412444668113"
       },
       "captured_at": "2026-08-23T15:14:32+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-22"
     },
     {
@@ -8948,7 +8946,7 @@
         "url": "https://x.com/MissAI_Show/status/2090828196698567033"
       },
       "captured_at": "2026-08-23T15:14:32+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -8998,7 +8996,7 @@
         "url": "https://www.threads.com/@choi.openai/post/DcTjm-QkeQl"
       },
       "captured_at": "2026-08-23T00:26:24+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -9048,7 +9046,7 @@
         "url": "https://www.threads.com/@jeong_do_ryeong/post/DcTYTrzgHu4"
       },
       "captured_at": "2026-08-23T00:18:04+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -9096,7 +9094,7 @@
         "url": "https://www.threads.com/share/_ueO987YZ/"
       },
       "captured_at": "2026-08-23T00:13:20+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -9144,7 +9142,7 @@
         "url": "https://www.instagram.com/p/DcKAmA1k1CU/"
       },
       "captured_at": "2026-08-22T17:58:26+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -9191,7 +9189,7 @@
         "url": "https://x.com/AnySearchAI/status/2063887525958283459"
       },
       "captured_at": "2026-08-22T11:40:58+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": "2026-06-08"
     },
     {
@@ -9241,7 +9239,7 @@
         "url": "https://www.threads.com/@ur.future.ai/post/DcTU4QtDFVU"
       },
       "captured_at": "2026-08-21T21:41:53+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -9291,7 +9289,7 @@
         "url": "https://www.threads.com/@toonkit_official/post/DcTO_-hCJT3"
       },
       "captured_at": "2026-08-21T21:23:04+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -9341,7 +9339,7 @@
         "url": "https://github.com/deepseek-ai/deepseek-harness"
       },
       "captured_at": "2026-08-21T02:08:49+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -9391,7 +9389,7 @@
         "url": "https://www.threads.com/@toonkit_official/post/DcQfyn_gaKd"
       },
       "captured_at": "2026-08-21T02:02:50+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -9440,7 +9438,7 @@
         "url": "https://www.threads.com/share/BANnFU-rhq/"
       },
       "captured_at": "2026-08-20T16:14:50+09:00",
-      "category": "agent_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -9488,7 +9486,7 @@
         "url": "https://www.threads.com/share/BAZbiyVGze/"
       },
       "captured_at": "2026-08-20T16:05:50+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -9538,7 +9536,7 @@
         "url": "https://github.com/HaD0Yun/CozyClay"
       },
       "captured_at": "2026-08-20T16:03:07+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -9588,7 +9586,7 @@
         "url": "https://snapr.pineple.com/"
       },
       "captured_at": "2026-08-20T09:47:59+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -9638,7 +9636,7 @@
         "url": "https://x.com/goan999999/status/2090076819815026918"
       },
       "captured_at": "2026-08-20T08:35:11+09:00",
-      "category": "agent_technique",
+      "category": "reference",
       "published_at": "2026-08-19"
     },
     {
@@ -9688,7 +9686,7 @@
         "url": "https://x.com/checheluna3/status/2089645931700662593"
       },
       "captured_at": "2026-08-19T08:17:48+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-18"
     },
     {
@@ -9736,7 +9734,7 @@
         "url": "https://github.com/tw93/pake"
       },
       "captured_at": "2026-08-19T08:17:14+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -9786,7 +9784,7 @@
         "url": "https://x.com/SDDFounder/status/2089637760629911743"
       },
       "captured_at": "2026-08-19T08:12:29+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-18"
     },
     {
@@ -9836,7 +9834,7 @@
         "url": "https://x.com/AIjee_tpe/status/2089564522105491473"
       },
       "captured_at": "2026-08-19T08:11:52+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-18"
     },
     {
@@ -9885,7 +9883,7 @@
         "url": "https://x.com/CyberTotal2026/status/2089611000857477529"
       },
       "captured_at": "2026-08-19T08:11:52+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-18"
     },
     {
@@ -9934,7 +9932,7 @@
         "url": "https://github.com/public-apis/public-apis"
       },
       "captured_at": "2026-08-18T08:09:31+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -9984,7 +9982,7 @@
         "url": "https://x.com/Aykutuces/status/2089404096868679841"
       },
       "captured_at": "2026-08-18T08:06:36+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-17"
     },
     {
@@ -10034,7 +10032,7 @@
         "url": "https://bestseedanceprompts.com/"
       },
       "captured_at": "2026-08-17T22:24:43+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -10084,7 +10082,7 @@
         "url": "https://github.com/freestylefly/awesome-gpt-image-2"
       },
       "captured_at": "2026-08-17T02:32:14+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -10133,7 +10131,7 @@
         "url": "https://www.threads.com/share/_rGoybuVX/"
       },
       "captured_at": "2026-08-16T17:50:41+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -10182,7 +10180,7 @@
         "url": "https://www.threads.com/share/BAvT38y32a/"
       },
       "captured_at": "2026-08-16T17:49:38+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -10232,7 +10230,7 @@
         "url": "https://www.threads.com/@nerdboard.official/post/DcDrwl4kcqY"
       },
       "captured_at": "2026-08-16T17:48:40+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -10281,7 +10279,7 @@
         "url": "https://www.threads.com/@won.wizard/post/DcFfBxBAXvr"
       },
       "captured_at": "2026-08-16T17:47:22+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -10330,7 +10328,7 @@
         "url": "https://x.com/CyberTotal2026/status/2088826582257295441"
       },
       "captured_at": "2026-08-16T17:40:59+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-16"
     },
     {
@@ -10379,7 +10377,7 @@
         "url": "https://x.com/sdjn_wgc/status/2088887840432148925"
       },
       "captured_at": "2026-08-16T17:39:43+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-16"
     },
     {
@@ -10424,7 +10422,7 @@
         "url": "https://x.com/ToroJushiAi/status/2088732464382681406"
       },
       "captured_at": "2026-08-16T12:30:52+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -10473,7 +10471,7 @@
         "url": "https://share.google/WbmZ6qOWVf9u5B2hi"
       },
       "captured_at": "2026-08-16T08:57:50+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -10522,7 +10520,7 @@
         "url": "https://x.com/sdjn_wgc/status/2088563753407135853"
       },
       "captured_at": "2026-08-15T23:58:27+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-15"
     },
     {
@@ -10567,7 +10565,7 @@
         "url": "https://x.com/ToroJushiAi/status/2088173788915515551"
       },
       "captured_at": "2026-08-15T21:16:33+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -10616,7 +10614,7 @@
         "url": "https://x.com/clairedit/status/2088200197495210477"
       },
       "captured_at": "2026-08-15T17:44:03+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-14"
     },
     {
@@ -10665,7 +10663,7 @@
         "url": "https://x.com/sdjn_wgc/status/2088504996002152681"
       },
       "captured_at": "2026-08-15T17:19:21+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-15"
     },
     {
@@ -10714,7 +10712,7 @@
         "url": "https://x.com/sdjn_wgc/status/2088469301153894406"
       },
       "captured_at": "2026-08-15T16:52:51+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-15"
     },
     {
@@ -10763,7 +10761,7 @@
         "url": "https://x.com/VibeEverything/status/2088495158006280682"
       },
       "captured_at": "2026-08-15T16:00:48+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-15"
     },
     {
@@ -10812,7 +10810,7 @@
         "url": "https://x.com/sdjn_wgc/status/2087929623673733436"
       },
       "captured_at": "2026-08-15T16:00:11+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": "2026-08-13"
     },
     {
@@ -10861,7 +10859,7 @@
         "url": "https://x.com/AI_money_club/status/2088216437496373330"
       },
       "captured_at": "2026-08-15T10:14:36+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-14"
     },
     {
@@ -10910,7 +10908,7 @@
         "url": "https://github.com/deepbeepmeep/Wan2GP"
       },
       "captured_at": "2026-08-15T10:14:06+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -10959,7 +10957,7 @@
         "url": "https://x.com/y_suou/status/2088245344626954244"
       },
       "captured_at": "2026-08-15T10:02:15+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-14"
     },
     {
@@ -11008,7 +11006,7 @@
         "url": "https://x.com/sdjn_wgc/status/2088417442452341133"
       },
       "captured_at": "2026-08-15T10:01:38+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-15"
     },
     {
@@ -11054,7 +11052,7 @@
         "url": "https://x.com/sdjn_wgc/status/2088031098106163477"
       },
       "captured_at": "2026-08-15T08:32:34+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-13"
     },
     {
@@ -11102,7 +11100,7 @@
         "url": "https://x.com/Krongggggg/status/2088044000410530301"
       },
       "captured_at": "2026-08-15T08:31:08+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": "2026-08-13"
     },
     {
@@ -11151,7 +11149,7 @@
         "url": "https://codewiki.google/"
       },
       "captured_at": "2026-08-15T08:29:57+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -11200,7 +11198,7 @@
         "url": "https://x.com/sdjn_wgc/status/2087781259804111210"
       },
       "captured_at": "2026-08-15T00:54:59+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-13"
     },
     {
@@ -11249,7 +11247,7 @@
         "url": "https://x.com/CyberTotal2026/status/2088223105801998478"
       },
       "captured_at": "2026-08-15T00:54:27+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-14"
     },
     {
@@ -11298,7 +11296,7 @@
         "url": "https://x.com/CyberTotal2026/status/2087878082879213831"
       },
       "captured_at": "2026-08-14T03:00:39+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-13"
     },
     {
@@ -11344,7 +11342,7 @@
         "url": "https://www.instagram.com/reel/DbJ_nnTMNxE/"
       },
       "captured_at": "2026-08-13T21:21:33+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -11392,7 +11390,7 @@
         "url": "https://www.instagram.com/reel/DY4xVHaIzx4/"
       },
       "captured_at": "2026-08-13T21:17:49+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -11441,7 +11439,7 @@
         "url": "https://x.com/kiyoshi_shin/status/2087652240152756252"
       },
       "captured_at": "2026-08-13T21:17:10+09:00",
-      "category": "ai_research",
+      "category": "production",
       "published_at": "2026-08-12"
     },
     {
@@ -11489,7 +11487,7 @@
         "url": "https://x.com/underwoodxie96/status/2087805636931395794"
       },
       "captured_at": "2026-08-13T21:14:48+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-13"
     },
     {
@@ -11534,7 +11532,7 @@
         "url": "https://x.com/sdjn_wgc/status/2087668729890873380"
       },
       "captured_at": "2026-08-13T15:43:43+09:00",
-      "category": "agent_technique",
+      "category": "utility",
       "published_at": "2026-08-12"
     },
     {
@@ -11581,7 +11579,7 @@
         "url": "https://x.com/VibeEverything/status/2087762351735078980"
       },
       "captured_at": "2026-08-13T15:41:15+09:00",
-      "category": "agent_technique",
+      "category": "technology",
       "published_at": "2026-08-13"
     },
     {
@@ -11630,7 +11628,7 @@
         "url": "https://x.com/ai_hakase_/status/2087678524148588820"
       },
       "captured_at": "2026-08-13T09:38:09+09:00",
-      "category": "ai_research",
+      "category": "production",
       "published_at": "2026-08-12"
     },
     {
@@ -11677,7 +11675,7 @@
         "url": "https://github.com/upscayl/upscayl"
       },
       "captured_at": "2026-08-13T09:29:16+09:00",
-      "category": "image_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -11724,7 +11722,7 @@
         "url": "https://x.com/franpradasAI/status/2087584435575435518"
       },
       "captured_at": "2026-08-13T09:28:43+09:00",
-      "category": "image_technique",
+      "category": "technology",
       "published_at": "2026-08-12"
     },
     {
@@ -11773,7 +11771,7 @@
         "url": "https://x.com/servasyy_ai/status/2087343267277160510"
       },
       "captured_at": "2026-08-13T09:28:05+09:00",
-      "category": "ai_research",
+      "category": "production",
       "published_at": "2026-08-12"
     },
     {
@@ -11822,7 +11820,7 @@
         "url": "https://x.com/servasyy_ai/status/2087562850781020535"
       },
       "captured_at": "2026-08-13T09:28:04+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-12"
     },
     {
@@ -11866,7 +11864,7 @@
         "url": "https://x.com/ToroJushiAi/status/2087505554922995745"
       },
       "captured_at": "2026-08-13T08:29:58+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -11915,7 +11913,7 @@
         "url": "https://x.com/CyberTotal2026/status/2087440196770165194"
       },
       "captured_at": "2026-08-13T08:24:11+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-12"
     },
     {
@@ -11964,7 +11962,7 @@
         "url": "https://x.com/IndieDevHailey/status/2087377274412941518"
       },
       "captured_at": "2026-08-13T08:23:38+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -12014,7 +12012,7 @@
         "url": "https://x.com/Eris_Create_Lab/status/2087380356131590445"
       },
       "captured_at": "2026-08-13T00:58:28+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": "2026-08-12"
     },
     {
@@ -12063,7 +12061,7 @@
         "url": "https://x.com/my189/status/2087320846348288139"
       },
       "captured_at": "2026-08-13T00:57:53+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": "2026-08-11"
     },
     {
@@ -12105,7 +12103,7 @@
         "url": "https://x.com/sdjn_wgc/status/2087556443360960800"
       },
       "captured_at": "2026-08-13T00:57:53+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": "2026-08-12"
     },
     {
@@ -12153,7 +12151,7 @@
         "url": "https://x.com/CyberTotal2026/status/2086981927299322295"
       },
       "captured_at": "2026-08-13T00:57:53+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-11"
     },
     {
@@ -12202,7 +12200,7 @@
         "url": "https://github.com/FareedKhan-dev/kimi-k3-in-c"
       },
       "captured_at": "2026-08-13T00:57:53+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -12251,7 +12249,7 @@
         "url": "https://x.com/josesilesdata/status/2087528345709731863"
       },
       "captured_at": "2026-08-13T00:55:05+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": "2026-08-12"
     },
     {
@@ -12297,7 +12295,7 @@
         "url": "https://x.com/omarii_c13/status/2086799914319904823"
       },
       "captured_at": "2026-08-12T20:52:00+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": "2026-08-10"
     },
     {
@@ -12346,7 +12344,7 @@
         "url": "https://x.com/jiwooteasing/status/2087159933926318534"
       },
       "captured_at": "2026-08-12T20:49:23+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-11"
     },
     {
@@ -12389,7 +12387,7 @@
         "url": "https://x.com/sdjn_wgc/status/2087402157775466936"
       },
       "captured_at": "2026-08-12T20:48:41+09:00",
-      "category": "platform_info",
+      "category": "technology",
       "published_at": "2026-08-12"
     },
     {
@@ -12437,7 +12435,7 @@
         "url": "https://x.com/CyberTotal2026/status/2087168657717645373"
       },
       "captured_at": "2026-08-12T20:34:51+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-11"
     },
     {
@@ -12485,7 +12483,7 @@
         "url": "https://x.com/SaburoNax2/status/2087363336879087806"
       },
       "captured_at": "2026-08-12T20:34:17+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -12534,7 +12532,7 @@
         "url": "https://x.com/CyberTotal2026/status/2087344566836113764"
       },
       "captured_at": "2026-08-12T20:30:55+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-12"
     },
     {
@@ -12582,7 +12580,7 @@
         "url": "https://x.com/GONZOO58710391/status/2087325347796914522"
       },
       "captured_at": "2026-08-12T20:25:24+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": "2026-08-11"
     },
     {
@@ -12631,7 +12629,7 @@
         "url": "https://x.com/VIBEQUIRKLABS/status/2087419836666348004"
       },
       "captured_at": "2026-08-12T20:18:28+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-12"
     },
     {
@@ -12680,7 +12678,7 @@
         "url": "https://x.com/CyberTotal2026/status/2087470899050029068"
       },
       "captured_at": "2026-08-12T20:17:52+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-12"
     },
     {
@@ -12726,7 +12724,7 @@
         "url": "https://www.instagram.com/reel/DZwxlymICPQ/"
       },
       "captured_at": "2026-08-12T19:40:57+09:00",
-      "category": "visual_reference",
+      "category": "culture",
       "published_at": null
     },
     {
@@ -12771,7 +12769,7 @@
         "url": "https://www.instagram.com/reel/DbSyA-tzuml/"
       },
       "captured_at": "2026-08-12T19:37:21+09:00",
-      "category": "visual_reference",
+      "category": "learning",
       "published_at": null
     },
     {
@@ -12816,7 +12814,7 @@
         "url": "https://www.instagram.com/reel/DXfsacsgmuN/"
       },
       "captured_at": "2026-08-12T19:04:10+09:00",
-      "category": "visual_reference",
+      "category": "culture",
       "published_at": null
     },
     {
@@ -12862,7 +12860,7 @@
         "url": "https://www.instagram.com/reel/Db4k0PYAtwM/"
       },
       "captured_at": "2026-08-12T18:57:24+09:00",
-      "category": "visual_reference",
+      "category": "culture",
       "published_at": null
     },
     {
@@ -12904,7 +12902,7 @@
         "url": "https://www.instagram.com/reel/Da-MbIExuQO/"
       },
       "captured_at": "2026-08-12T18:54:00+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -12949,7 +12947,7 @@
         "url": "https://www.instagram.com/reel/Dbr09_XvJo_/"
       },
       "captured_at": "2026-08-12T18:50:23+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -12994,7 +12992,7 @@
         "url": "https://www.instagram.com/reel/DZ-rXy_MvO4/"
       },
       "captured_at": "2026-08-12T18:49:01+09:00",
-      "category": "visual_reference",
+      "category": "culture",
       "published_at": null
     },
     {
@@ -13043,7 +13041,7 @@
         "url": "https://x.com/rurikawa_iroha/status/2087102462108770434"
       },
       "captured_at": "2026-08-12T18:12:59+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": "2026-08-11"
     },
     {
@@ -13092,7 +13090,7 @@
         "url": "https://x.com/sdjn_wgc/status/2087036800355217900"
       },
       "captured_at": "2026-08-12T17:52:46+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-11"
     },
     {
@@ -13141,7 +13139,7 @@
         "url": "https://x.com/doctorwasif/status/2087151667141828740"
       },
       "captured_at": "2026-08-12T17:13:32+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-11"
     },
     {
@@ -13190,7 +13188,7 @@
         "url": "https://x.com/BubbleBrain/status/2087105582142750938"
       },
       "captured_at": "2026-08-12T16:43:17+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-11"
     },
     {
@@ -13238,7 +13236,7 @@
         "url": "https://x.com/CyberTotal2026/status/2087375520703054073"
       },
       "captured_at": "2026-08-12T16:43:17+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-12"
     },
     {
@@ -13287,7 +13285,7 @@
         "url": "https://x.com/CyberTotal2026/status/2087103729720000700"
       },
       "captured_at": "2026-08-12T08:31:37+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-11"
     },
     {
@@ -13336,7 +13334,7 @@
         "url": "https://x.com/Kunda623270/status/2086768716013056249"
       },
       "captured_at": "2026-08-12T01:24:58+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-10"
     },
     {
@@ -13381,7 +13379,7 @@
         "url": "https://x.com/mertmetindev/status/2086871261112848683"
       },
       "captured_at": "2026-08-12T01:05:35+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": "2026-08-10"
     },
     {
@@ -13429,7 +13427,7 @@
         "url": "https://x.com/AdrianPunk115/status/2086758530644865377"
       },
       "captured_at": "2026-08-12T01:02:05+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-10"
     },
     {
@@ -13477,7 +13475,7 @@
         "url": "https://x.com/AI_GIRL_DESIGN/status/2086829533588754590"
       },
       "captured_at": "2026-08-12T01:01:17+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-10"
     },
     {
@@ -13524,7 +13522,7 @@
         "url": "https://x.com/aimikoda/status/2086877769858768936"
       },
       "captured_at": "2026-08-12T01:01:17+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-10"
     },
     {
@@ -13572,7 +13570,7 @@
         "url": "https://x.com/designer_hyosin/status/2064131975456374981"
       },
       "captured_at": "2026-08-10T23:08:20+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-06-08"
     },
     {
@@ -13620,7 +13618,7 @@
         "url": "https://x.com/designer_hyosin/status/1956790923729449455"
       },
       "captured_at": "2026-08-10T23:04:42+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2025-08-16"
     },
     {
@@ -13669,7 +13667,7 @@
         "url": "https://x.com/jipegalre/status/2036421483145175208"
       },
       "captured_at": "2026-08-10T23:04:10+09:00",
-      "category": "ai_research",
+      "category": "production",
       "published_at": "2026-03-24"
     },
     {
@@ -13717,7 +13715,7 @@
         "url": "https://x.com/kookoo_Nick/status/2084997880767787169"
       },
       "captured_at": "2026-08-10T23:03:36+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-05"
     },
     {
@@ -13766,7 +13764,7 @@
         "url": "https://x.com/kookoo_Nick/status/2079914353558761777"
       },
       "captured_at": "2026-08-10T23:03:36+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-07-22"
     },
     {
@@ -13809,7 +13807,7 @@
         "url": "https://x.com/offtherecord26/status/2047612209451483197"
       },
       "captured_at": "2026-08-10T22:59:19+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": "2026-04-24"
     },
     {
@@ -13857,7 +13855,7 @@
         "url": "https://x.com/VibeEverything/status/2068296635072033245"
       },
       "captured_at": "2026-08-10T22:59:19+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-06-20"
     },
     {
@@ -13900,7 +13898,7 @@
         "url": "https://x.com/offtherecord26/status/2037359371659932011"
       },
       "captured_at": "2026-08-10T22:58:32+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": "2026-03-27"
     },
     {
@@ -13950,7 +13948,7 @@
         "url": "https://promptsref.com/"
       },
       "captured_at": "2026-08-10T22:58:32+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -13999,7 +13997,7 @@
         "url": "https://x.com/CyberTotal2026/status/2086674299746767347"
       },
       "captured_at": "2026-08-10T22:53:31+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-10"
     },
     {
@@ -14048,7 +14046,7 @@
         "url": "https://x.com/CyberTotal2026/status/2084475663181074692"
       },
       "captured_at": "2026-08-10T22:52:04+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-04"
     },
     {
@@ -14097,7 +14095,7 @@
         "url": "https://x.com/SD_Tutorial/status/2086521366300512391"
       },
       "captured_at": "2026-08-10T22:48:11+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-09"
     },
     {
@@ -14146,7 +14144,7 @@
         "url": "https://x.com/toshi630222/status/2086651751235461361"
       },
       "captured_at": "2026-08-10T22:47:38+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-10"
     },
     {
@@ -14186,7 +14184,7 @@
         "url": "https://x.com/i/status/2086713442854220162"
       },
       "captured_at": "2026-08-10T22:46:59+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -14235,7 +14233,7 @@
         "url": "https://x.com/CyberTotal2026/status/2086652506852020493"
       },
       "captured_at": "2026-08-10T22:43:42+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-10"
     },
     {
@@ -14284,7 +14282,7 @@
         "url": "https://x.com/CyberTotal2026/status/2086790415848558703"
       },
       "captured_at": "2026-08-10T22:43:09+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-10"
     },
     {
@@ -14333,7 +14331,7 @@
         "url": "https://x.com/CyberTotal2026/status/2086714162785263683"
       },
       "captured_at": "2026-08-10T22:42:08+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-10"
     },
     {
@@ -14382,7 +14380,7 @@
         "url": "https://x.com/realrebelai/status/2086531287754448949"
       },
       "captured_at": "2026-08-10T22:42:08+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-09"
     },
     {
@@ -14431,7 +14429,7 @@
         "url": "https://x.com/aiaicreate/status/2086619616315691217"
       },
       "captured_at": "2026-08-10T14:41:20+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-10"
     },
     {
@@ -14480,7 +14478,7 @@
         "url": "https://x.com/tebasaki3D/status/2086262706148114618"
       },
       "captured_at": "2026-08-10T14:40:48+09:00",
-      "category": "ai_research",
+      "category": "production",
       "published_at": "2026-08-09"
     },
     {
@@ -14530,7 +14528,7 @@
         "url": "https://x.com/wildmindai/status/2086459354220298375"
       },
       "captured_at": "2026-08-10T14:39:36+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-09"
     },
     {
@@ -14580,7 +14578,7 @@
         "url": "https://x.com/yume_arasaki/status/2086566117892632620"
       },
       "captured_at": "2026-08-10T14:39:36+09:00",
-      "category": "ai_research",
+      "category": "production",
       "published_at": "2026-08-09"
     },
     {
@@ -14628,7 +14626,7 @@
         "url": "https://www.instagram.com/reel/DZT0TdQRIFA/"
       },
       "captured_at": "2026-08-10T01:06:13+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -14677,7 +14675,7 @@
         "url": "https://www.instagram.com/reel/DZu7e8TzInl/"
       },
       "captured_at": "2026-08-10T01:06:13+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -14726,7 +14724,7 @@
         "url": "https://x.com/CyberTotal2026/status/2086078726140276836"
       },
       "captured_at": "2026-08-10T00:47:44+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-08"
     },
     {
@@ -14775,7 +14773,7 @@
         "url": "https://x.com/Huahuazo/status/2086273005471109369"
       },
       "captured_at": "2026-08-10T00:47:14+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": "2026-08-09"
     },
     {
@@ -14821,7 +14819,7 @@
         "url": "https://x.com/sdjn_wgc/status/2086251770771034321"
       },
       "captured_at": "2026-08-10T00:46:32+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-08-09"
     },
     {
@@ -14871,7 +14869,7 @@
         "url": "https://x.com/aimikoda/status/2086412223061135392"
       },
       "captured_at": "2026-08-10T00:43:08+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-09"
     },
     {
@@ -14919,7 +14917,7 @@
         "url": "https://x.com/Live_life_style/status/2086347641378746801"
       },
       "captured_at": "2026-08-10T00:43:08+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-08-09"
     },
     {
@@ -14969,7 +14967,7 @@
         "url": "https://x.com/aiaicreate/status/2086255033033891847"
       },
       "captured_at": "2026-08-10T00:43:08+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-09"
     },
     {
@@ -15017,7 +15015,7 @@
         "url": "https://x.com/bennysproject/status/2086363701524009283"
       },
       "captured_at": "2026-08-10T00:43:08+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-09"
     },
     {
@@ -15067,7 +15065,7 @@
         "url": "https://x.com/bi_9527zx/status/2086414624170373447"
       },
       "captured_at": "2026-08-10T00:43:08+09:00",
-      "category": "image_technique",
+      "category": "reference",
       "published_at": "2026-08-09"
     },
     {
@@ -15115,7 +15113,7 @@
         "url": "https://huggingface.co/nguyenthilaitrieulong/OpenAi-GPT-oss-20b-abliterated-uncensored-NEO-Imatrix-gguf"
       },
       "captured_at": "2026-08-10T00:37:58+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -15162,7 +15160,7 @@
         "url": "https://x.com/CyberTotal2026/status/2084234070951899429"
       },
       "captured_at": "2026-08-10T00:37:58+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-03"
     },
     {
@@ -15210,7 +15208,7 @@
         "url": "https://x.com/CyberTotal2026/status/2086382225570873799"
       },
       "captured_at": "2026-08-10T00:37:58+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-09"
     },
     {
@@ -15259,7 +15257,7 @@
         "url": "https://x.com/sdjn_wgc/status/2086461931011866669"
       },
       "captured_at": "2026-08-10T00:37:58+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-09"
     },
     {
@@ -15308,7 +15306,7 @@
         "url": "https://x.com/saniaspeaks_/status/2086055156127592779"
       },
       "captured_at": "2026-08-10T00:37:58+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-08"
     },
     {
@@ -15358,7 +15356,7 @@
         "url": "https://github.com/alesha-pro/tools"
       },
       "captured_at": "2026-08-10T00:29:56+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -15407,7 +15405,7 @@
         "url": "https://x.com/superalesha/status/2086171185134686509"
       },
       "captured_at": "2026-08-10T00:29:54+09:00",
-      "category": "ai_research",
+      "category": "production",
       "published_at": "2026-08-08"
     },
     {
@@ -15456,7 +15454,7 @@
         "url": "https://www.threads.com/@afterskin_korea/post/Dbz6MAugEk3"
       },
       "captured_at": "2026-08-09T20:21:54+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -15505,7 +15503,7 @@
         "url": "https://www.threads.com/@darkest_alex/post/DbzzGKBjjDX"
       },
       "captured_at": "2026-08-09T20:17:32+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -15554,7 +15552,7 @@
         "url": "https://www.threads.com/@r2voltz_re/post/Dby8WpEE7v5"
       },
       "captured_at": "2026-08-09T20:13:58+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -15598,7 +15596,7 @@
         "url": "https://www.instagram.com/reel/DbkJFOXTBki/"
       },
       "captured_at": "2026-08-08T17:20:06+09:00",
-      "category": "visual_reference",
+      "category": "culture",
       "published_at": null
     },
     {
@@ -15642,7 +15640,7 @@
         "url": "https://www.instagram.com/reel/DZ4pYtlTHEO/"
       },
       "captured_at": "2026-08-08T17:13:54+09:00",
-      "category": "visual_reference",
+      "category": "learning",
       "published_at": null
     },
     {
@@ -15688,7 +15686,7 @@
         "url": "https://www.instagram.com/p/DbuDtE4D4hG/"
       },
       "captured_at": "2026-08-08T17:00:12+09:00",
-      "category": "agent_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -15737,7 +15735,7 @@
         "url": "https://www.threads.com/@luna.lookbook_/post/DbwkOvqgT_Z"
       },
       "captured_at": "2026-08-08T16:45:06+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -15785,7 +15783,7 @@
         "url": "https://x.com/doctorwasif/status/2085599659326935100"
       },
       "captured_at": "2026-08-08T16:30:26+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -15831,7 +15829,7 @@
         "url": "https://x.com/lucian__03/status/2085720389389602982"
       },
       "captured_at": "2026-08-08T16:29:44+09:00",
-      "category": "agent_technique",
+      "category": "technology",
       "published_at": "2026-08-07"
     },
     {
@@ -15879,7 +15877,7 @@
         "url": "https://best.xiaohu.ai/article/kitesurf/"
       },
       "captured_at": "2026-08-08T16:28:08+09:00",
-      "category": "agent_technique",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -15926,7 +15924,7 @@
         "url": "https://x.com/toshi630222/status/2085928988741103691"
       },
       "captured_at": "2026-08-08T16:25:31+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-08-08"
     },
     {
@@ -15975,7 +15973,7 @@
         "url": "https://x.com/PhotogenicWeekE/status/2085602882372747563"
       },
       "captured_at": "2026-08-08T16:25:07+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -16024,7 +16022,7 @@
         "url": "https://x.com/C_of_Creativity/status/2085619217299354061"
       },
       "captured_at": "2026-08-08T16:23:55+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -16073,7 +16071,7 @@
         "url": "https://x.com/C_of_Creativity/status/2085590899241955669"
       },
       "captured_at": "2026-08-08T16:23:35+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -16119,7 +16117,7 @@
         "url": "https://x.com/CyberTotal2026/status/2085535143813583072"
       },
       "captured_at": "2026-08-08T16:22:48+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -16169,7 +16167,7 @@
         "url": "https://github.com/nkxx188/ComfyUI-MiniMaxH3-Easy"
       },
       "captured_at": "2026-08-08T16:22:28+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -16217,7 +16215,7 @@
         "url": "https://x.com/saniaspeaks_/status/2085307691937767921"
       },
       "captured_at": "2026-08-08T16:21:36+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-06"
     },
     {
@@ -16264,7 +16262,7 @@
         "url": "https://x.com/jiwooteasing/status/2085338883101991131"
       },
       "captured_at": "2026-08-08T16:18:26+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-08-06"
     },
     {
@@ -16309,7 +16307,7 @@
         "url": "https://x.com/Machinedelusion/status/2085753030415392822"
       },
       "captured_at": "2026-08-08T16:07:47+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -16353,7 +16351,7 @@
         "url": "https://x.com/ToroJushiAi/status/2085757871447543939"
       },
       "captured_at": "2026-08-08T16:07:47+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -16401,7 +16399,7 @@
         "url": "https://x.com/sdjn_wgc/status/2085913474882760824"
       },
       "captured_at": "2026-08-08T16:07:30+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-08-08"
     },
     {
@@ -16449,7 +16447,7 @@
         "url": "https://x.com/sdjn_wgc/status/2085913474882760824"
       },
       "captured_at": "2026-08-08T16:07:22+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-08-08"
     },
     {
@@ -16498,7 +16496,7 @@
         "url": "https://x.com/oggii_0/status/2085640281941307648"
       },
       "captured_at": "2026-08-08T16:07:14+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -16547,7 +16545,7 @@
         "url": "https://gist.github.com/yume-arasaki/e24bf2614ee0419c86250cee6ad7ce01"
       },
       "captured_at": "2026-08-08T16:06:27+09:00",
-      "category": "ai_research",
+      "category": "production",
       "published_at": null
     },
     {
@@ -16596,7 +16594,7 @@
         "url": "https://x.com/yume_arasaki/status/2085802508526789060"
       },
       "captured_at": "2026-08-08T16:05:44+09:00",
-      "category": "ai_research",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -16644,7 +16642,7 @@
         "url": "https://x.com/XingchenAIArt/status/2085648869702906145"
       },
       "captured_at": "2026-08-08T16:04:07+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -16690,7 +16688,7 @@
         "url": "https://x.com/CyberTotal2026/status/2085864816502321560"
       },
       "captured_at": "2026-08-08T16:03:57+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -16736,7 +16734,7 @@
         "url": "https://x.com/CyberTotal2026/status/2085864816502321560"
       },
       "captured_at": "2026-08-08T16:03:49+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -16784,7 +16782,7 @@
         "url": "https://x.com/VibeEverything/status/2085934178663911796"
       },
       "captured_at": "2026-08-08T16:02:16+09:00",
-      "category": "video_technique",
+      "category": "reference",
       "published_at": "2026-08-08"
     },
     {
@@ -16832,7 +16830,7 @@
         "url": "https://x.com/_guillecasaus/status/2085328584638345519"
       },
       "captured_at": "2026-08-08T16:00:27+09:00",
-      "category": "visual_reference",
+      "category": "resource",
       "published_at": "2026-08-06"
     },
     {
@@ -16879,7 +16877,7 @@
         "url": "https://x.com/realrebelai/status/2085827835172634991"
       },
       "captured_at": "2026-08-08T15:58:29+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -16927,7 +16925,7 @@
         "url": "https://x.com/jiwooteasing/status/2085882820262756400"
       },
       "captured_at": "2026-08-08T15:57:41+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-08-08"
     },
     {
@@ -16975,7 +16973,7 @@
         "url": "https://x.com/aiaicreate/status/2085729844084748621"
       },
       "captured_at": "2026-08-08T15:57:05+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -17023,7 +17021,7 @@
         "url": "https://x.com/sdjn_wgc/status/2085869811788366280"
       },
       "captured_at": "2026-08-08T15:56:33+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -17071,7 +17069,7 @@
         "url": "https://x.com/liyue_ai/status/2085651434813772273"
       },
       "captured_at": "2026-08-08T15:56:25+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -17117,7 +17115,7 @@
         "url": "https://x.com/nett0eth/status/2085661117741711667"
       },
       "captured_at": "2026-08-08T15:55:59+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": "2026-08-07"
     },
     {
@@ -17166,7 +17164,7 @@
         "url": "https://x.com/hmmmmmm1458/status/2085406154344284255"
       },
       "captured_at": "2026-08-08T15:53:37+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-06"
     },
     {
@@ -17216,7 +17214,7 @@
         "url": "https://github.com/woyin2024/lengyi-seedance2.5-prompt"
       },
       "captured_at": "2026-08-08T11:37:11+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -17266,7 +17264,7 @@
         "url": "https://github.com/YouMind-OpenLab/awesome-seedance-2-prompts"
       },
       "captured_at": "2026-08-08T11:36:36+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -17315,7 +17313,7 @@
         "url": "https://github.com/TomClive/SeeDance2Stitcher"
       },
       "captured_at": "2026-08-08T11:35:28+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -17365,7 +17363,7 @@
         "url": "https://github.com/huangserva/ComfyUI_MiniMaxH3_Director"
       },
       "captured_at": "2026-08-08T11:31:42+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -17414,7 +17412,7 @@
         "url": "https://www.threads.com/@aiastra0/post/DbvKmOukwdL"
       },
       "captured_at": "2026-08-08T00:44:16+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -17464,7 +17462,7 @@
         "url": "https://www.threads.com/@prompt_what/post/DbuV3QHkVwC"
       },
       "captured_at": "2026-08-08T00:42:59+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -17514,7 +17512,7 @@
         "url": "https://www.threads.com/@junyeo.ai/post/DbvLJumGjlT"
       },
       "captured_at": "2026-08-07T23:29:23+09:00",
-      "category": "video_technique",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -17564,7 +17562,7 @@
         "url": "https://x.com/aisearchio/status/2085077313855901793"
       },
       "captured_at": "2026-08-07T23:23:55+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-05"
     },
     {
@@ -17611,7 +17609,7 @@
         "url": "https://x.com/sdjn_wgc/status/2085379385830334927"
       },
       "captured_at": "2026-08-07T23:23:55+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-08-06"
     },
     {
@@ -17661,7 +17659,7 @@
         "url": "https://x.com/Lonely__MH/status/2085302359971053826"
       },
       "captured_at": "2026-08-07T23:22:36+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-06"
     },
     {
@@ -17709,7 +17707,7 @@
         "url": "https://x.com/Albrechthhhh/status/2085583084788060631"
       },
       "captured_at": "2026-08-07T23:19:23+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -17756,7 +17754,7 @@
         "url": "https://x.com/jiwooteasing/status/2085589643081482685"
       },
       "captured_at": "2026-08-07T23:19:15+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -17801,7 +17799,7 @@
         "url": "https://x.com/ToroJushiAi/status/2085063285829697663"
       },
       "captured_at": "2026-08-07T23:19:13+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -17851,7 +17849,7 @@
         "url": "https://x.com/sunbaolong_2001/status/2085689404031672372"
       },
       "captured_at": "2026-08-07T23:19:12+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -17897,7 +17895,7 @@
         "url": "https://x.com/newfullegirl/status/2085130446946402473"
       },
       "captured_at": "2026-08-07T23:19:11+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": "2026-08-05"
     },
     {
@@ -17943,7 +17941,7 @@
         "url": "https://x.com/underwoodxie96/status/2085651026632405358"
       },
       "captured_at": "2026-08-07T23:18:31+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -17989,7 +17987,7 @@
         "url": "https://x.com/AIExplorerTim/status/2085251296135934269"
       },
       "captured_at": "2026-08-07T23:18:18+09:00",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": "2026-08-06"
     },
     {
@@ -18036,7 +18034,7 @@
         "url": "https://x.com/CyberTotal2026/status/2085202703601303948"
       },
       "captured_at": "2026-08-07T23:18:07+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-06"
     },
     {
@@ -18085,7 +18083,7 @@
         "url": "https://x.com/thucnghi07/status/2085521836675342619"
       },
       "captured_at": "2026-08-07T23:18:06+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -18133,7 +18131,7 @@
         "url": "https://x.com/nett0eth/status/2085432146324328877"
       },
       "captured_at": "2026-08-07T23:18:04+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-06"
     },
     {
@@ -18178,7 +18176,7 @@
         "url": "https://x.com/ToroJushiAi/status/2085637069049577839"
       },
       "captured_at": "2026-08-07T23:17:48+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -18224,7 +18222,7 @@
         "url": "https://x.com/sdjn_wgc/status/2085242316260847745"
       },
       "captured_at": "2026-08-07T23:17:47+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-08-06"
     },
     {
@@ -18271,7 +18269,7 @@
         "url": "https://x.com/CyberTotal2026/status/2085685384110072308"
       },
       "captured_at": "2026-08-07T23:17:45+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -18319,7 +18317,7 @@
         "url": "https://x.com/ai_hakase_/status/2085625496008536233"
       },
       "captured_at": "2026-08-07T23:15:32+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-07"
     },
     {
@@ -18369,7 +18367,7 @@
         "url": "https://huggingface.co/ethanfel/Qwen3-VL-32B-Ultra-Heretic-MiniMax-H3-ComfyUI-INT8-ConvRot"
       },
       "captured_at": "2026-08-04T08:35:08+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -18419,7 +18417,7 @@
         "url": "https://x.com/i/status/2084040042402435324"
       },
       "captured_at": "2026-08-04T08:32:53+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-02"
     },
     {
@@ -18469,7 +18467,7 @@
         "url": "https://x.com/i/status/2084129411306303565"
       },
       "captured_at": "2026-08-04T08:29:17+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-08-03"
     },
     {
@@ -18519,7 +18517,7 @@
         "url": "https://x.com/i/status/2084234070951899429"
       },
       "captured_at": "2026-08-04T08:26:28+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-03"
     },
     {
@@ -18569,7 +18567,7 @@
         "url": "https://x.com/i/status/2084178540065657251"
       },
       "captured_at": "2026-08-04T08:09:53+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-03"
     },
     {
@@ -18619,7 +18617,7 @@
         "url": "https://www.threads.com/@imhealingmachine/post/DblKDtSiq-c"
       },
       "captured_at": "2026-08-04T00:25:09+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -18669,7 +18667,7 @@
         "url": "https://x.com/i/status/2084114784916750550"
       },
       "captured_at": "2026-08-04T00:25:09+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-03"
     },
     {
@@ -18717,7 +18715,7 @@
         "url": "https://x.com/i/status/2083659648108990925"
       },
       "captured_at": "2026-08-03T21:12:51+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": "2026-08-01"
     },
     {
@@ -18762,7 +18760,7 @@
         "url": "https://x.com/i/status/2083752396854075697"
       },
       "captured_at": "2026-08-03T21:11:02+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-02"
     },
     {
@@ -18811,7 +18809,7 @@
         "url": "https://github.com/averygan/reclip"
       },
       "captured_at": "2026-08-03T16:04:28+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -18860,7 +18858,7 @@
         "url": "https://etoland.co.kr/b/star_asia/article/9219770"
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -18909,7 +18907,7 @@
         "url": "https://etoland.co.kr/b/star02/article/9232062"
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -18949,7 +18947,7 @@
         "url": "https://www.instagram.com/reel/DbTWBUji8Pz/?igsh=cnBybG00cnBmeWE4"
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -18989,7 +18987,7 @@
         "url": "https://www.instagram.com/xiaoyuestar.xo?igsh=dTlhbnYxaGY1ZHNv"
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -19038,7 +19036,7 @@
         "url": "https://www.instagram.com/reel/DbdVHaOgP_u/?igsh=Ym02YndkOTB2bnph"
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -19086,7 +19084,7 @@
         "url": "https://www.instagram.com/reel/DbVn0tVETKl/?igsh=MTRhNzR0NTVvc3EyNw=="
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -19135,7 +19133,7 @@
         "url": "https://www.instagram.com/p/DbdG4WwDKzd/?igsh=MXRyMGViZnp2MmpocQ=="
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -19175,7 +19173,7 @@
         "url": "https://www.instagram.com/takopatakopa?igsh=MTZzM2tnbHAwMWh4aA=="
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -19224,7 +19222,7 @@
         "url": "https://www.instagram.com/reel/DbfPgApgJH7/?igsh=MTQ5Y3o3czF5N21jNA=="
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -19267,7 +19265,7 @@
         "url": "https://www.instagram.com/p/DaooVQBgVHs/?igsh=MThzaXd5M29yNGMwaQ=="
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "visual_reference",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -19313,7 +19311,7 @@
         "url": "https://www.instagram.com/p/DbS2sDsEXIW/?img_index=3&igsh=MXdnYnR4YWZhZHhldw=="
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "ai_research",
+      "category": "technology",
       "published_at": null
     },
     {
@@ -19362,7 +19360,7 @@
         "url": "https://www.threads.com/share/BAba6WWJ_K/"
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -19410,7 +19408,7 @@
         "url": "https://www.threads.com/share/BAUNQUfibE/"
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -19459,7 +19457,7 @@
         "url": "https://bytedance.larkoffice.com/docx/A88jd0B47oAd8zxWp5ycZFMfnxh"
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -19505,7 +19503,7 @@
         "url": "https://www.threads.com/share/_v66zS3sf/"
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -19549,7 +19547,7 @@
         "url": "https://x.com/i/status/2083688475283353608"
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": "2026-08-01"
     },
     {
@@ -19592,7 +19590,7 @@
         "url": "https://x.com/i/status/2083856330494738841"
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-08-02"
     },
     {
@@ -19639,7 +19637,7 @@
         "url": "https://x.com/i/status/2083251673787773122"
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -19686,7 +19684,7 @@
         "url": "https://x.com/i/status/2083705774774100279"
       },
       "captured_at": "2026-08-03T02:25:21+09:00",
-      "category": "image_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -19734,7 +19732,7 @@
         "url": "https://civitai.com/images/138089200"
       },
       "captured_at": "2026-08-02T18:04:19+09:00",
-      "category": "ai_research",
+      "category": "production",
       "published_at": "2026-07-28"
     },
     {
@@ -19783,7 +19781,7 @@
         "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF"
       },
       "captured_at": "2026-08-02T18:04:17+09:00",
-      "category": "visual_reference",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -19832,7 +19830,7 @@
         "url": "https://github.com/NousResearch/hermes-agent"
       },
       "captured_at": "2026-08-02T18:04:17+09:00",
-      "category": "agent_technique",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -19878,7 +19876,7 @@
         "url": "https://www.threads.com/@example/post/creative-prompt"
       },
       "captured_at": "2026-08-01T23:09:44+09:00",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -19922,7 +19920,7 @@
         "url": "https://github.com/example/ai-video-workflow"
       },
       "captured_at": "2026-08-01T23:09:38+09:00",
-      "category": "video_technique",
+      "category": "reference",
       "published_at": null
     },
     {
@@ -19960,7 +19958,7 @@
         "url": "https://etoland.co.kr/b/etohumor07/article/9431721"
       },
       "captured_at": "",
-      "category": "visual_reference",
+      "category": "utility",
       "published_at": null
     },
     {
@@ -19999,7 +19997,7 @@
         "url": "https://www.instagram.com/reel/DdUWJ-yKIzD/?stkn=enJycmY1MjNnMGlm"
       },
       "captured_at": "",
-      "category": "visual_reference",
+      "category": "production",
       "published_at": null
     },
     {
@@ -20041,7 +20039,7 @@
         "url": "https://www.threads.com/share/BAZpMtL6yL/"
       },
       "captured_at": "",
-      "category": "video_technique",
+      "category": "production",
       "published_at": null
     },
     {
@@ -20084,7 +20082,7 @@
         "url": "https://x.com/xiaoying_eth/status/2100023616821957034"
       },
       "captured_at": "",
-      "category": "prompt_reference",
+      "category": "production",
       "published_at": "2026-09-16"
     }
   ]
