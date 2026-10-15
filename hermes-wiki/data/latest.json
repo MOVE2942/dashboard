@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261015-172228-AUTO",
-  "source_manifest_sha256": "9d7bc57cca868be960c5eecb2c95ddad29cb3205662b65a97e7773588c1bcf10",
-  "export_manifest_sha256": "66807de1371415c8d677f5f4e38b6071b91dcec278cecb67840f51d4c18d053a",
-  "generated_at": "2026-10-15T17:22:30+09:00",
+  "release_id": "LIA-20261015-175309-AUTO",
+  "source_manifest_sha256": "df722062809c17f9979bf128656862386745c2cecc9256303f75625f81c38ae5",
+  "export_manifest_sha256": "8aaa2c0e4da6e75e201a2e87d6019daa0130a3ca879633782d1e16ea038d89c4",
+  "generated_at": "2026-10-15T17:53:11+09:00",
   "facet_counts": {
     "general": 200,
     "prompts": 156,
@@ -56,7 +56,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/9fb54e2d5418d5011fd6882bc1c9a6640bbf47ba43c0ef1f83f4d9e53080f1f5.svg",
+        "src": "assets/bcc06a8b46a6fc46b6e28043d3c83d65054b93471ed9bd065e0c13d6e8fb29a0.png",
         "alt": "Bathroom Girls Instagram profile reference"
       },
       "source": {
@@ -90,7 +90,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/362f8dcc1b9d3c244f4a2953fdc41554ea638ad20d702c426c1192228eabe37d.svg",
+        "src": "assets/69005b3a7e0976b7a6364c4e2cd0451f63338f5e67a38f10f5b76f66262bce3b.jpg",
         "alt": "35.7kg Instagram profile reference"
       },
       "source": {
@@ -128,7 +128,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/14a04c853f94dc3166bfb8dde6cbf2749d3aedb418ec78d9ce305cac54d1c9af.svg",
+        "src": "assets/c054161c98fb88d282a9b536ade0245fec03d3946b12b3dff5b7eaf5779c7abc.webp",
         "alt": "Claimed Veda Sparse Attention video acceleration reference"
       },
       "source": {
@@ -168,7 +168,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/43b7876e40f3bc211fd34779b882e29e1397d5ebd07c3da8d769428260bb4b68.svg",
+        "src": "assets/79af92024875ff6928bf81c788cc13b84d8fbccee70034833fe75debc41117b2.webp",
         "alt": "Claimed MiniMax H3 martial-arts-action LoRA reference"
       },
       "source": {
@@ -208,7 +208,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/db1f90e948910088406b2c4253c0d2117498af481f26a31589bb7dab6f11fa40.svg",
+        "src": "assets/433cbd4de532ff777c4183675bd42689232948b3b021fe055ce665d726232f9d.webp",
         "alt": "Claimed de-censored Qwen-image2.1 local setup reference"
       },
       "source": {
@@ -249,7 +249,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/29b20bb580a8c9617795999367a61c8b7cf11c425f990d140cc9cd63bc35bfd6.svg",
+        "src": "assets/cc50d198de029101c153f8d254e962ee7cdf7b6fd792a4375472a163f4a32b7a.jpg",
         "alt": "Claimed Reels/YouTube hook-analysis workflow with open-source tools"
       },
       "source": {
@@ -289,7 +289,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b2672eb4d4a82b6f48f9422418de76ba1212a592fb533768d23aff03479684dd.svg",
+        "src": "assets/abf5c33ab52b70a3b60d08ab685f427d14e0d40521ee402a058fdc0a1274ee54.jpg",
         "alt": "Claimed avatar and voice-cloning Reels production workflow reference"
       },
       "source": {
@@ -326,7 +326,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f5335e1b7509418635ade45d363ac070054c2d078caa83c6204243ebbd13192e.svg",
+        "src": "assets/9f7d64611fdee7bd7312e093de5e8a94e89136ed21c77dd6e3bf8035fe2ca55d.jpg",
         "alt": "Mika Sora Instagram profile reference"
       },
       "source": {
@@ -364,7 +364,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/8db27945a6601f9a8cda35d2227905eeb5b48584afefb8688ee114fef288914e.svg",
+        "src": "assets/035388a45c2245fb07e6c230f04c23c0c52723dbfd2927749ab1de524ac9ae81.jpg",
         "alt": "흔적레이더를 통해 오를 주식 종목을 잡는 법"
       },
       "source": {
@@ -403,7 +403,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/7b39291da436c874da15fba1bff239c948092444a6822d3ac37775be21d48a34.svg",
+        "src": "assets/875b140e7c497c09b5685c2c19dc642a20160a7f50d47573707ddda412f5a38d.webp",
         "alt": "OpenNana prompt-gallery reference"
       },
       "source": {
@@ -443,7 +443,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/1185a0c29e80efcecea3d842e80d5fd9d2c6946cc3faf812f3c81d62e2f6cb61.svg",
+        "src": "assets/22f9485723857f6a873c2f7363d039f630860b12f19703a118cc21d157e18f42.webp",
         "alt": "Claimed Talorys Cloudflare and GLM-4.7-Flash workflow reference"
       },
       "source": {
@@ -484,7 +484,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/6a0c1ea875cc3702c404f4679ee4e847f00f318be7af25ccddab981304779603.svg",
+        "src": "assets/3c97bbe1f1faa7a2e0a7cf83c3032036f0e72063969ce167c3fba0974afa18cf.jpg",
         "alt": "Claimed Claude plugin collection and bulk setup guide reference"
       },
       "source": {
@@ -521,7 +521,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/938286d027f5e1eda69ea0cfa13015a5b4ab04cd6107be4d91e01e31904231e3.svg",
+        "src": "assets/d1fa8f520ebdae7afedaf7195a48227d08d99005fbbf89cd62c4b3c9101c08ca.jpg",
         "alt": "Cherry小樱桃 Instagram profile reference"
       },
       "source": {
@@ -561,7 +561,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/3a33d7f7dca709dcacf02d2ae5dfbd86181fa5dc9b35638822883f02551b58bf.svg",
+        "src": "assets/91d8677c1791fd4b948473f5faf645cb690c0c309725e6c1b460e99dc333bf94.jpg",
         "alt": "iNodes Blender-to-MiniMax H3 Max compositor workflow reference"
       },
       "source": {
@@ -600,7 +600,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/bcc33ab05a0ed8d42ef3ce7d31c6620bf3dadf4a8acf67fa3ec7a7fd36c41fe9.svg",
+        "src": "assets/67830a774eef682190c0ed0a249a98faf515097cfc3321a01bbaf7aa32c25ea1.png",
         "alt": "Noctaluna Noct-Q-Uncensored-Qwen-Image-2.1 Hugging Face model-page reference"
       },
       "source": {
@@ -638,7 +638,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/98df6da3b2f1cf0b4bc0af8cd84222e88020517f08b77e7cb0262a5aef695cca.svg",
+        "src": "assets/79f6d7e766757fc3cccf978ebc6856925d4c99c8141d9051fab35d229d3df72d.png",
         "alt": "SulphurAI Sulphur-2-base Hugging Face model-page reference"
       },
       "source": {
@@ -677,7 +677,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/250e7bd3e81edaba3f0e09a693ab450979c9f3896ffe236aa9464e37986733bc.svg",
+        "src": "assets/b7b81b5d13163786924626a13babb37ef37efa1a4023d66241202ea1f3ea21c6.png",
         "alt": "MiniMax-H3 Character Swap LoRA Hugging Face Space reference"
       },
       "source": {
@@ -717,7 +717,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/4eee41c70542638bd512c82b42b0e4b90ce46572d26fa972aaf55553de77d9dc.svg",
+        "src": "assets/8aadfd3ca808e889b80a6d7314448c8e2e72a6e1f28f26bd4eb501c9ed386e11.jpg",
         "alt": "AI character-consistency character bible workflow reference"
       },
       "source": {
@@ -757,7 +757,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/af0766c9590c24d4d5c72cc191799763a09f4afe3dbd1f261db03f33141fc726.svg",
+        "src": "assets/86d9f553103990a5b4b4c79158d23e99e3e4a27e5b9980b04905dde9534d669f.webp",
         "alt": "Claimed Sulphur-2 uncensored video-generation model reference"
       },
       "source": {
@@ -793,7 +793,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/7fdefbbf570078e64d2b266a4c240f931164b5bdd52b3908fefd60bb59c78121.svg",
+        "src": "assets/851a14a6cfbdf76679593c86eb6af9a7ae4a45b6e6d0bd110baa7a773306a9a2.png",
         "alt": "나무도 나이 따라 이산화탄소 감소 차이가 남"
       },
       "source": {
@@ -902,7 +902,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/2d2cba27d9afe386f5d094fad943d51d438dda5be47a04e1811d90c6affc9aab.svg",
+        "src": "assets/9cb358e44c6e676a43e6483e76fd1a228d43c0e35b2c1d6c15976874c5a5da7c.webp",
         "alt": "Short-video reference post with Chinese caption"
       },
       "source": {
@@ -942,7 +942,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/4ddeef9e982c6c0c726c500d425b3be784a90868cd7cd080625cc73c5bb513a4.svg",
+        "src": "assets/6b3b5fd7f0708829f9ac320bd1b0aa3b2a7e94f95bef4e8a1c4771670f369639.webp",
         "alt": "Claimed OpenMontage AI video-editing project reference"
       },
       "source": {
@@ -980,7 +980,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/307ed299618a144fa2cd8206f75b6c00a5689173cd428e68d7bdc26629494df4.svg",
+        "src": "assets/c11bba67a8ddef64627b10084ca578117290817b2307b5e622c47eec8c563f61.webp",
         "alt": "otr.viusallab prompt cheat-sheet reference"
       },
       "source": {
@@ -1020,7 +1020,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/5047544baab7e838cbbfbd95398f2824baf0c7cd155807a2a7a22b6365939cf8.svg",
+        "src": "assets/ec559257604b30cd07d8ec614942f31122cdf2c003b73c66add7221fe826dcb3.webp",
         "alt": "Claimed Mocreak Windows and Office deployment tool reference"
       },
       "source": {
@@ -1058,7 +1058,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/730c70ed5a913a6261f9db03e8e17be78fe68fdfa8a7181214ba8791e85a8dac.svg",
+        "src": "assets/bf9d6e3ca83a7d10ade6a963eca1b96bec2d31fac6714d88ddd456a224bce407.webp",
         "alt": "AI-video free-credit site comparison/list reference"
       },
       "source": {
@@ -1097,7 +1097,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/be9c1c4efa09615d4eb8cf0d357d10fd7ec0dc1d2687e0c68c60a6f7a1427169.svg",
+        "src": "assets/824ed475b5b460629342b2ce344edfc19015bea15b6ab4825b4f38f1acef7e41.webp",
         "alt": "Claimed Meituan photo-plus-audio talking-video lip-sync model reference"
       },
       "source": {
@@ -1134,7 +1134,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/8708cb3af0c43f67f888e517590cfc0e020d94ff4e2792de4c58e4cc874a3875.svg",
+        "src": "assets/445a735b1e112db54c189a6206e49bc79d674daca6528a611afea162254d8010.webp",
         "alt": "ChatGPT image-prompt reference post"
       },
       "source": {
@@ -1174,7 +1174,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/907fa7bb84d499bcf27bdf0ae72b38056dc3187a3a4cbaaeede1ef56667db37e.svg",
+        "src": "assets/d9ca366bcc85d3be5e9c326c1be37fa24167849b754fd601887488010e80814c.webp",
         "alt": "Claimed Seedance prompt-skill collection for Claude reference"
       },
       "source": {
@@ -1295,7 +1295,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/dec04514321e30484e1b36ed89760ff35bfa7c7f7bd3edaeacbe65d05db8e028.svg",
+        "src": "assets/cf0c3462a2d3f850e9701c7a17ab533cc773c008a58cdbc01f6a0b38b8df9d56.jpg",
         "alt": "ComfyUI multi-keyframe character-animation workflow reference"
       },
       "source": {
@@ -1337,7 +1337,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f8cb3be5442a704da9a3d6a6f48e6ffcf8555628b3828aa54d69de3f0ce4922b.svg",
+        "src": "assets/16bf892eb6af650abc9c78ba1d0e85148dcfe3d59520416144fd08ab4d8ad9e7.webp",
         "alt": "ArcReel automated AI short-drama pipeline deployment and API-key risk reference"
       },
       "source": {
@@ -1377,7 +1377,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/19e2076af277a684ce133392ebb949df15f0405b97dac9f4ab98e0f7e73ef374.svg",
+        "src": "assets/e48874fe441a2fe4261a9a5e6ead4ea3a3184d699bbefa4480165a40f07c5ee9.jpg",
         "alt": "Muse serial short-drama generation workflow reference"
       },
       "source": {
@@ -1418,7 +1418,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/6db452c6423e5a5621c396c3c59d422360e0a72e6cfc806db13b13d30df6c396.svg",
+        "src": "assets/992be4ac72a685b66dfdb33f7b4d776e7aa098a509582c33e9297b65b93542e1.webp",
         "alt": "Mirai S Qwen3.8-27B uncensored local-inference performance reference"
       },
       "source": {
@@ -1458,7 +1458,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/278261bb34da58828b77cfe1afebd7253f4bac4ea2cb3612375cfc389a058dba.svg",
+        "src": "assets/5459417c9936f54f63457fa800ea764c38caf00dc8a8951114912128efd65c91.webp",
         "alt": "Alleged Google prompt-based no-code game-creation tool reference"
       },
       "source": {
@@ -1498,7 +1498,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/16b54aa2841428d94797df79a40c95461fa2bf473c8a8265f9bd1fbba528be4c.svg",
+        "src": "assets/546badd964d5b2eb4ef2e602d58181d151f8220f2a6b3fd64128ab7c150d8e22.jpg",
         "alt": "Hermes Agent installation, practical-use, and token-configuration video reference"
       },
       "source": {
@@ -1538,7 +1538,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0a43b69a7f5799b65c06a6b0a960bef4574f140c14b6f380e23f696b404fc9e4.svg",
+        "src": "assets/06d4b59516e04eee9e69b13a2e54eff728b410ff3cf9e4dc831504f5fd235c28.webp",
         "alt": "FastVideo FastH3 consumer-GPU video generation performance reference"
       },
       "source": {
@@ -1574,7 +1574,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/897d95ad973723fcca82014ebabc458e8685a9f7def6576bccd0d3632702e74a.svg",
+        "src": "assets/5003f78c56afeff1cb83aec2ea516e95376ed7a216f5e4357cf809a6929a85c1.webp",
         "alt": "Sensitive adult-content identifier catalogue promotion"
       },
       "source": {
@@ -1687,7 +1687,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/a1390e5dd098beaeeba673d35b3fa46f3d19672ea74d435d77e579bde219b5d4.svg",
+        "src": "assets/5afaabcb2b45ce8afdf72ee21178208f3a3faa39ce67e9356ecea942b3228a92.jpg",
         "alt": "HyperFrames Studio agent-assisted shared-timeline video editing reference"
       },
       "source": {
@@ -1766,7 +1766,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/a2eaf35ad9544c5ff926ae52c44b4c85ac1dc5d27b47a59379d4ba61e614ca34.svg",
+        "src": "assets/928739d41a2d599e6c48114e5abe8ea493e766551eca6e2293939357e108c690.webp",
         "alt": "Meta Muse AI-agent use-case catalogue reference"
       },
       "source": {
@@ -1804,7 +1804,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/8cf839ff961c670380c092638ef5122b2ed58e618ae82678a5ae6c59c017eb9a.svg",
+        "src": "assets/c6d9d8bb2fdca295836e750a3251a64316076ac923dfe85f60244d7eda008e0d.webp",
         "alt": "Gemini video editing prompt-workflow reference — thread unavailable"
       },
       "source": {
@@ -1842,7 +1842,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/34c05e4cd061cee120e15a1d7e46101fd8f0b7b9769c47eb7b7c25ef861d7fb4.svg",
+        "src": "assets/becb185bdfad2123fb8b8b222230de63ef3a1c6abe8a51ca32d0ef628a6d025d.webp",
         "alt": "QwenImage2.1 Anime LoRA image-to-anime reference"
       },
       "source": {
@@ -1882,7 +1882,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/8a810a0bd89bdd4b33924e6dfddefc055e6f49d5406d57a228d5edbfbf76d7bd.svg",
+        "src": "assets/625c95743edef902b60116b1990d7479090ae37f0adbcfffb46ee07cca846421.webp",
         "alt": "Videdown multi-platform downloader and cookie-import risk reference"
       },
       "source": {
@@ -1920,7 +1920,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/7b38e2b93b400b9947bdae412419831200937df2da80f1cf8e24da32b819478c.svg",
+        "src": "assets/d1242413b5c94c3b1303e9ed1d006f3a7a350d092aad9230b49974d9da3939bf.webp",
         "alt": "Image upload plus prompt-based image/video generation workflow reference"
       },
       "source": {
@@ -1960,7 +1960,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/47a06dd80f37d98dd960cbf79fcf4a9afdf168bbeb971aef6139d841542e6ba9.svg",
+        "src": "assets/a4df5d0fa61a570192bda71d8755c7e5281ba62d4c519010c05076e4ae9216e8.webp",
         "alt": "Muse museum diorama-to-video historical education workflow reference"
       },
       "source": {
@@ -2001,7 +2001,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/bf0491718febdf605ffb3cc3d6fd3c60c5b2fe08ecf7fed0847fad2108e680d4.svg",
+        "src": "assets/d26c139096a2d8a2edf6484dcbeca783f06d99f09f11197c20c49d8806cf93e7.webp",
         "alt": "MUSE with Gemini subscription through Antigravity CLI — configuration risk reference"
       },
       "source": {
@@ -2041,7 +2041,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fbff0e84a1dba283e09f9fd7fe955a12870a95fb5b58e666d8fac4d6f6c443d2.svg",
+        "src": "assets/c11fe99bf70d0475f697602492ca6945fb4b9fc685bece82c7a31a87376088f6.webp",
         "alt": "MiniMax H3 RTX 4070 local video-generation optimization reference"
       },
       "source": {
@@ -2079,7 +2079,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fb8183677a19e43f11d88e0eb7cb8b59c3063274dc1616eb2bb23b357662700d.svg",
+        "src": "assets/2de864c764e0bcfff877dc5ebf1aa14725dc186cdac48bef5dc44bb5e29710e2.webp",
         "alt": "opendots open-source project reference"
       },
       "source": {
@@ -2118,7 +2118,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f57eb5938337c923ad48f0d0353ae4c2a2b2f0a2a1cf76867449afc759b01076.svg",
+        "src": "assets/ac80ec08cca7362366aeb685106a24ed17c879c77daab44726120b85e43569cd.webp",
         "alt": "LongCat-Video open video-generation model reference"
       },
       "source": {
@@ -2157,7 +2157,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/224ca419de5f100b50bde8a7aa76caa9ab14c6d1f4051cc2e969f82f9a3d17dd.svg",
+        "src": "assets/88f2ff14d32306b761cb706b108ffb3232d6113be9882f4cf926b111044eef7e.webp",
         "alt": "Browser session-cookie export and agent injection — auth risk reference"
       },
       "source": {
@@ -2230,7 +2230,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/bf58ffb5324b3d5c473864d87c327e3d234f310bcef1b0ed9d0f0017f69fb957.svg",
+        "src": "assets/0076a9af5ccc91a8cae93d5fafad9495fd99c185cdd5731faa188a5acffdfa31.webp",
         "alt": "Sensitive adult-content identifier listing"
       },
       "source": {
@@ -2272,7 +2272,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/8e8f020be3700609306872c59c623ffe2f1c5712233c39f1d377241052dc18ad.svg",
+        "src": "assets/5f3414634313fc5a5f29a52eea5ea3c18e2fa5b871398af5696f78cdb026e8ee.jpg",
         "alt": "Cloudflare + Gmail + Resend custom-domain email stack"
       },
       "source": {
@@ -2546,7 +2546,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/cdf5df1175601ad787fc3fbfddc3d958dd4262cba478557f3c382431e698e2eb.svg",
+        "src": "assets/a61ea76d5c96e6426096594f464744986b44578b3cac96127457cd8d60bf3643.webp",
         "alt": "Windows activation-script promotion — license-circumvention risk"
       },
       "source": {
@@ -2665,7 +2665,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/ab829add97af294b3c6fb34e3422f20aa2c47089bf080ee2d06a4f989315e254.svg",
+        "src": "assets/5366920f3c0d59a52d2066316a22fd1c42ba2cc5fc59e04fc809bba0413deec4.webp",
         "alt": "Nintendo 64 ROM and modified emulator APK distribution post"
       },
       "source": {
@@ -2744,7 +2744,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/dde94a04910cb42ef79e7692de9eff7e4bd7c3e0a24e4e7bf8978df7902d7deb.svg",
+        "src": "assets/14384beeb9652c61af0a0abb1020d6b1c17d6413c98aa57917303f8c5c413912.jpg",
         "alt": "WAI-Illustrious SDXL v17.0 — sensitive Mac Metal reference"
       },
       "source": {
@@ -2862,7 +2862,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b7dcbc733857404b2cc2008bc2bf585a175e6d71bcbf1d29c9e1ffbcb3946668.svg",
+        "src": "assets/c3197cb218d81e6727cf88e5d2a86ca01bd7ca735ba4323ff737638da16b6aa3.webp",
         "alt": "Minimax H3 4-step video-generation LoRA reference"
       },
       "source": {
@@ -2899,7 +2899,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/93e1886a972fa1740f216b24cf3a302c671fe200a6b93cb5dcc2dfaeef2d8b65.svg",
+        "src": "assets/948bddbfe92b7ed7113f0ffd01c18496680956ca0ccab67d790e654de76464ee.webp",
         "alt": "Adult image-generation options — sensitive reference"
       },
       "source": {
@@ -3131,7 +3131,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f86f62128017986325e93175e0343276cfee86ec5108e224dbe69a9225f2c9e3.svg",
+        "src": "assets/5ad7f75760899c2708a6df28120f7b7ecdc35903cd51f7db1e427cbb3f5ccf39.jpg",
         "alt": "X post by @MissCat_AI (translation source unavailable)"
       },
       "source": {
@@ -3204,7 +3204,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/e276fe547341c21a1c773aebf7054e5019d8dc4a48a4288aafca17e3463353b0.svg",
+        "src": "assets/29ec975bf134f00bfbb528732f54b7c3f9a47830158e19fea9ba7537d470c351.webp",
         "alt": "X post — Fred-New (@Fred834567)"
       },
       "source": {
@@ -3238,7 +3238,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/ae6ce1846adb074b27317bfd89f505aa17983c0d0442932c1c7cc080cb4211ea.svg",
+        "src": "assets/de5216aa77696f98eee5f7a6448474e0e00d32a50a384cd9b46ad5bfc509cf53.jpg",
         "alt": "X post — @Fred834567"
       },
       "source": {
@@ -3272,7 +3272,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/762c458a6eac36cde9f5af2798fec1391dff51fc15d9ec56c859f71c17b51674.svg",
+        "src": "assets/6618cf49b593b3f2464fbbee936884b7e2e7c09ee5eb963f40e17294313ac6e1.webp",
         "alt": "X post — @VibeEverything"
       },
       "source": {
@@ -3306,7 +3306,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/86201ef1b09d9a93a7f7baa9d553a3e0a4bd69b36d41f33d63f72fa360979869.svg",
+        "src": "assets/af63697700fb198424d51dc4677fff92c999a52bc9e0cccc61ce01f0024152dc.webp",
         "alt": "X post — @huoshan007"
       },
       "source": {
@@ -3411,7 +3411,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/3106541da1ebdf7dfc58fe3d80f689ca4f56d820db03cce26642a0183ba8169f.svg",
+        "src": "assets/8f624f667993acf78609bcc33b56372c2255295c786f8f8ddc16a6899e69e551.webp",
         "alt": "X post — @VibeEverything"
       },
       "source": {
@@ -3445,7 +3445,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/a3349e5dc6a1388c4d24c2e46ceca7c41d9399598eef61f13a9d2ad8d4837118.svg",
+        "src": "assets/91178a5e38a43350c2f1051d6cf5d2a4f09d2f5059207eaf48eb0b57af89945a.webp",
         "alt": "X post — @imhealmachine"
       },
       "source": {
@@ -3479,7 +3479,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/00dc4eb642051843bf2aedd3040a33ccd8b1df942f9dad7ca0fc9310cb75f78b.svg",
+        "src": "assets/4f1af3ee84745418c9cfcbcc31cb3eb249ced0b9196d3a346dbc58efe98d523a.webp",
         "alt": "X post — @FiniYang"
       },
       "source": {
@@ -3513,7 +3513,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/ff1331dfd2fa598afc041a0d826a01ff3f27e62f421490278684438caa1f3a18.svg",
+        "src": "assets/645f93864bac0f3c530b3b17c4a099e7e5ad8089436ef267a8e44a6336e81bd4.jpg",
         "alt": "X post — @paperwiz0"
       },
       "source": {
@@ -3547,7 +3547,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b41eabadb2b1278bfcaade55d8eb4106954c63ab23b968f3e28c57112470fe4c.svg",
+        "src": "assets/7e3d5aad1ae7c9b7e8b9f8575c3f4464be6c128bed28cf500e295ef002906c79.jpg",
         "alt": "X post — @mylifcc"
       },
       "source": {
@@ -3581,7 +3581,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/961d3331e645b1dd15074cd704d439d0f6aa2bb5f10a7b9363930bdb60770c50.svg",
+        "src": "assets/d3351c7ed8474550ba698c9e71b1e07855a326288babff3a9d5d92b84cb9f1d4.webp",
         "alt": "X post — @Dontgiveup_26"
       },
       "source": {
@@ -3717,7 +3717,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/ad7c8c65b8b7c0041089feff376785243ad241677c3522f4b09cbb23175e1109.svg",
+        "src": "assets/264241fd7dc104cd471a00b213ec25ad2608829cde0ffc5acc08fa6febf45a63.jpg",
         "alt": "Instagram Reel: DdodrjRO4PO"
       },
       "source": {
@@ -4174,7 +4174,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/460996b8a6a2593abe8e179297456e6715077785ff270e5dc6e71002c4704ea3.svg",
+        "src": "assets/fd52bcc39813a33c7a2a45e9c8899c16c79c02c11d898831900102c7ab6cf9f6.jpg",
         "alt": "해외에서 잘나가는 AI 역사 채널, 만드는 법 전부 공개 (구글 옴니 1.1)"
       },
       "source": {
@@ -4253,7 +4253,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/e4002761835f7260bbcfc76753276404409e52c79b25795718893a9c1fe1dd2a.svg",
+        "src": "assets/cf42d5d13ca8062862c8603167f6f2f9a86bf4079f29e392bc00ede81df64104.webp",
         "alt": "Google Antigravity 기반 AI 코딩 플러그인 4종 추천"
       },
       "source": {
@@ -4291,7 +4291,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/892bd5c8f25b268e510782c0570dfb6658ac67174c790a4e7d2ef8a1c244c5da.svg",
+        "src": "assets/9fd66a4aec53aa519b2a4ddfea65780d2c1962923d4edfaa0daa21d58b12846b.jpg",
         "alt": "엔비디아 제공 100여 개 무료 AI 모델(NVIDIA NIM) 활용 팁"
       },
       "source": {
@@ -4889,7 +4889,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/639c2aa6fcf3f40832f2c8f116d0363bdeacfe64ead8428911009595d625227f.svg",
+        "src": "assets/5e7f860ba073048bdaed2305ba4fce515c790026e185b7cf117adedf401b3bd3.jpg",
         "alt": "Instagram Reel (대사가 찰지다)"
       },
       "source": {
@@ -4921,7 +4921,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/592f0494a32ac87b5d691c546915264389667968d2f76496ea56f4ab2af11f06.svg",
+        "src": "assets/2b0667ce5c8960009d49ace07cc4640b942e044d94d2985379ea1d86b0e67e98.webp",
         "alt": "X Post - 2100935376827527463"
       },
       "source": {
@@ -6054,7 +6054,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f697d3a01f43992e7f8e9851edbd7e39e0fdecd9d5a904dc035299ebf6cdd337.svg",
+        "src": "assets/957c01fb236f8967004f94f2fdb70e8ca87c01e7c3ddab585f31404b3b15f738.jpg",
         "alt": "2D 이미지→실사 패션 에디토리얼 변환 범용 프롬프트"
       },
       "source": {
@@ -6135,7 +6135,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/2a7146a58385635a733459d2e1fdfb14d3da24eef3b9a4f1c708e5d6ba40016a.svg",
+        "src": "assets/447133704acd47dd38f245feb6215b1379e23c0e6a9322cee3ea7b4f9ed1d1e5.jpg",
         "alt": "Seedance Emotion Direction — 25개 감정 연기 프롬프트 라이브러리"
       },
       "source": {
@@ -7039,7 +7039,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0cd1d8d93d70d99fd4b84cdd4278254b02542bd2ac4e9c3918a4081ff6da0cc0.jpg",
+        "src": "assets/e19786cfe54baf0dc4b2ba25ce87857de18eb3ac9137c75b2b65a303a9d4b1db.jpg",
         "alt": "桃色ボールの振り向き — GPT Image2 prompt"
       },
       "source": {
@@ -7078,7 +7078,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/eae05e8081f0bd6ecf897f4dd45ba45de5e089844781053d3e31461bdc0f5849.svg",
+        "src": "assets/f47eaca2371b5076f65eb31a8093158fa15fd46402538b944c88854b2a249a99.webp",
         "alt": "AI Muse — 호텔 욕실 거울 셀피·세면용품 라이프스타일 프롬프트"
       },
       "source": {
@@ -7117,7 +7117,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b86e52d18fa58ee6096e693ee5017858d1418c98329e5a7f28f7673b491f6573.svg",
+        "src": "assets/78b7053c6524092f844ed266bd7135d6d3481105eca05eb16e7be14be0831e2b.webp",
         "alt": "MapleJ.AI — Grok Imagine 성인 NSFW 패션·소파 라이프스타일 프롬프트"
       },
       "source": {
@@ -7156,7 +7156,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/eee157ed08166b5715750c6c1644c1fe1d8402a196039a375cc0a2b96301345e.svg",
+        "src": "assets/21473f85a3076b9da7d3d5bee270f84d29be4baaff0f6a5e542b4009c0eacfdc.webp",
         "alt": "CyberTotal2026 — GPT Image2: 옥상 더블피스·여름 포트레이트"
       },
       "source": {
@@ -7194,7 +7194,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/3c8b3ca9eb491c4f706644330b46a7773c25e749a9286d1ad72935c59ccccd3b.svg",
+        "src": "assets/673834a76ce11a5f03b08812a3c2a5054f35184fadf6ee8b5d5c3bec6496c871.webp",
         "alt": "Nailai7981 — Imagine 2.0 프리미엄 패션 광고용 카우보이 샷 프롬프트"
       },
       "source": {
@@ -7270,7 +7270,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/5eef71b44cd7ee7da991c135d6482297a42c77d869f41b5511663603604881e6.svg",
+        "src": "assets/388109885888da9e1ef1957104f1f370553ec9ed442484eb75dd2403be005d4a.webp",
         "alt": "火山哥 — Jellyfish: 스크립트에서 세로형 AI 숏드라마까지 자동화하는 제작 파이프라인 소개"
       },
       "source": {
@@ -7305,7 +7305,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/6376bf9331493a07092254971f1a2adb2f348831a0577ce92bef9bfbea7e01b0.svg",
+        "src": "assets/a6c44be576f96230c2bccf6f2fc2e75d261385265189acbaeb39af3fa108db13.jpg",
         "alt": "ToroJushiAi X 게시물 2090740701441020244 — 공개 메타데이터 미확인"
       },
       "source": {
@@ -7344,7 +7344,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f6f7f429534cc7837d8099694c1d0d491286d0d80685c97ff8fb303090719260.svg",
+        "src": "assets/62b24b577b6ad33ed74a75db0ca0d629339553ffe14340f106d1ccc73164e6c2.webp",
         "alt": "CyberTotal2026 — GPT Image2: 배 위 데크의 흰 비키니·여름 수평선"
       },
       "source": {
@@ -7384,7 +7384,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/db2ff760356affc981cf3e0f694ac9666909deb36e780322b12f4ce5866b02fb.svg",
+        "src": "assets/4ad0759b23b3f7a851e8d0831155f351ddb37998aa5ee09da1451296ecd0acf2.webp",
         "alt": "CyberTotal2026 — GPT Image2: 바다 거품을 걷는 흰 드레스 판타지"
       },
       "source": {
@@ -7419,7 +7419,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b69e4a0e2cf9709b8397c1bd52655706ed0adc26c05707518864aec61a26d2f2.svg",
+        "src": "assets/a1ff8bd8b9e24760e6b99dfc710bf064c401011ae8c4001d5ef950d8bbde1ad5.jpg",
         "alt": "MissAI_Show X 게시물 2090828196698567033 — 공개 메타데이터 미확인"
       },
       "source": {
@@ -7503,7 +7503,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b06db8c5e40eac22c95c6130d117b0e3a62d8eac680b8b187cbd86f3a4f9d8f1.svg",
+        "src": "assets/aa731237e82a5a5687f251a50aa2af5afaedabfc59be8f3ce4cf122be6679b25.png",
         "alt": "jeong_do_ryeong — 심해 갈치 I2V: 생체역학·유체역학·카메라 동역학을 관찰 가능한 물리 언어로 번역한 프롬프트"
       },
       "source": {
@@ -7541,7 +7541,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/44db565b4069eff9d09093877b76340ad93f15e10e20edd7f8b6c8b2d27abde9.svg",
+        "src": "assets/e19786cfe54baf0dc4b2ba25ce87857de18eb3ac9137c75b2b65a303a9d4b1db.jpg",
         "alt": "인포썸 — awesome-gpt-image-2 이미지 프롬프트 엔진 저장 추천"
       },
       "source": {
@@ -7580,7 +7580,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/e1e71b9558c3a42fe22b0b834eb57b290bd8812d7aa272cbcf5779f35865460e.svg",
+        "src": "assets/04033cdd0f1c797f5bd63007b6e57b8ce3e05f7f157926150545519537a31c59.png",
         "alt": "セクギャル(seqgyaru) — 화요일 아침 AI 애니메이션 아트 캐러셀"
       },
       "source": {
@@ -7619,7 +7619,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/a272cb3e316da15f7b9f402174165740b993f378d0c5a188e6e5cf1244c34f82.svg",
+        "src": "assets/3db45ca8722fb204dbc84fe5ae10b2ea037a43ece6f49562e0a5c34024a03311.webp",
         "alt": "AnySearch — 여러 신뢰 가능한 출처의 실시간 데이터를 통합하는 AI 검색 주장"
       },
       "source": {
@@ -7660,7 +7660,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/68b246899163be9b4afd0e4814c3f3adbaf5372541e2bfc5107560c00d1cbb0a.svg",
+        "src": "assets/94271cb683e0957c1e1e60dbbedec84bd103318e05175a477d6b28e08e9f70aa.jpg",
         "alt": "유얼퓨쳐 — DeepSeek-V4-Flash-Vision-Exp 멀티모달 API·Files API 출시와 활용 사례"
       },
       "source": {
@@ -7702,7 +7702,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/65915f8c0e5207ab732d7a8da6f472a59d1d2c06721a29a222ec6488e6a9f73b.svg",
+        "src": "assets/14dac15bffae2b940be1b03389d082866a7d79952fcce06afdd288c410ab4e8c.jpg",
         "alt": "Toonkit — 15초 I2V 쇼츠 연속성: 1920×1088 규격·첫 프레임 보존·모델 편향 제어 분석"
       },
       "source": {
@@ -7743,7 +7743,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b4abf3c3777eb1a7817cfa0bae6b5c3be04be0c51dcea6072f8fbe41522788e6.svg",
+        "src": "assets/bc270773f6ff9cf7239851e68503ba80a131ca092a07481bce94cb20a8bd26cc.png",
         "alt": "DeepSeek Harness (dsh) — 모든 것을 플러그인으로 구성하는 오픈소스 에이전트 하니스"
       },
       "source": {
@@ -7786,7 +7786,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f06fdea305e0ea539d21347605eb7584845e7a7282352560d589461536f3d7b5.svg",
+        "src": "assets/48a440c025e9326867aa0ca0cd800bb27f282f0fb86b3090a29bef99a86fd174.jpg",
         "alt": "Toonkit — 중국 AI 숏드라마 대량 제작팀 프롬프트·일관성·후반공정 최소화 분석"
       },
       "source": {
@@ -7828,7 +7828,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/61c4d7d3539965c0b93c6641fbc635f666a434dc88549911a0e82ad7ab884c8f.svg",
+        "src": "assets/333ca875e4e93fb5024374afc8070d0aed4367d4090cfdc3ab07c0bf9924513b.jpg",
         "alt": "Jeanny — 회사 팀원에 비유한 AI 8종의 업무 성향: ChatGPT·Claude·Gemini·Grok·Perplexity·Genspark·Manus·Midjourney"
       },
       "source": {
@@ -7914,7 +7914,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/3916b4bf9f48aff88cdfed9c67f03b55fd9aabc38b4a861e798140baac65505e.svg",
+        "src": "assets/3feda61c86c56d5fa09ad3352b5c1e0343995a93604b3f50e2ef117984e3e9ce.png",
         "alt": "CozyClay — 브라우저 기반 3D 프리비주얼·카메라 연출·AI 영상 모션 스튜디오"
       },
       "source": {
@@ -7957,7 +7957,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/4e45c3d82744610878e57e0105fe14fcd1829d1c8f6cfd8b65b9c197c002600d.svg",
+        "src": "assets/aacfda47e7fc51913cdcd5226b79e9bd572510457ce8760714636e0f093e1d75.png",
         "alt": "Snapr — macOS·Windows 화면 캡처·녹화·주석·시네마틱 편집 도구"
       },
       "source": {
@@ -7998,7 +7998,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/304c76f938a0d357008fa15d2de0e8c10ee5781279497d072f68fa2944170ee7.svg",
+        "src": "assets/f48db8f6056fff28e125e64f0225f3963f78e2239db302d8cb7f6305c5155875.webp",
         "alt": "govin.eth — Codex 5.6 config.toml 고급 설정: 모델·Reasoning Effort·작업 모드·프로젝트 규칙·자동화"
       },
       "source": {
@@ -8400,7 +8400,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/1d425073933d7dc95f67601d42b9cebe6f3dc86d0bad5cc0f1047537b2faeae6.svg",
+        "src": "assets/7ac49da2f5bb8a6f28a00f0e727445a555bd339191f077991c0ad1f0216e8361.jpg",
         "alt": "현세(5hyeons) — Aside 브라우저 에이전트로 YouTube 49개 영상 온톨로지 추출·정리 사용기"
       },
       "source": {
@@ -8439,7 +8439,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/cca518f6e56bcdbd8e76b5327d1759637d846e19b8b1b4deceea8adc47f22e0d.svg",
+        "src": "assets/b790581f147063716e7a6787b01c5b5279210ebffd1c35b2998889467508d0c6.jpg",
         "alt": "gun_min_ — Wan Animate 2 레퍼런스 이미지·드라이빙 영상 모션 전이 워크플로우"
       },
       "source": {
@@ -8523,7 +8523,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/7d5adb4d0867bead8b56547a652549f090f4f259059e146e2cf752ab7fb1cde8.svg",
+        "src": "assets/d65bc571a688d0a595d9375a08c60d6e8da322fea5b01424b69c96f7e922d14e.jpg",
         "alt": "류내원(won.wizard) — ComfyUI ALL-in-ONE MiniMax H3 통합 비디오 파이프라인 노드"
       },
       "source": {
@@ -11719,7 +11719,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/787f0f64088a6cfb9a2dfbb0ca49ae03937491785c3d845b9e1c337fd5336656.svg",
+        "src": "assets/4204505bc19fe583c9edd89692aff4f72d1d23ad275fc4d4ec0c2176b28a6b36.jpg",
         "alt": "TweetTombstone — 삭제/비공개 게시물"
       },
       "source": {
@@ -12070,7 +12070,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/80a7d11fb280cd4f58a55958a0a569bc181aea07f72ac0e0283f5c57fd8e0136.svg",
+        "src": "assets/9e31b44b7f39bc8aa951713fbefbf112319b300a5680d74e1d70a8016fee74f6.jpg",
         "alt": "hina.milk — DarkFeminine·モード系·분위기여신·고급 무드 레퍼런스"
       },
       "source": {
@@ -12735,7 +12735,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/e39a38f0446d22847bb0b42a4a48188b87c084dc412a675f3fe57fbff1ca04a9.svg",
+        "src": "assets/aa731237e82a5a5687f251a50aa2af5afaedabfc59be8f3ce4cf122be6679b25.png",
         "alt": "Seedance 2.5 — 카페 앞 3인 한국어 대화·화자 고정 30초 영상 프롬프트"
       },
       "source": {
@@ -12773,7 +12773,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/da05609fe979f7d8f159bf38c8cf565fb0e60ec0db31e1d74be2cf7967ffc44a.svg",
+        "src": "assets/fcc19a472ab531657cb4becaa4ac48dbe2e5bb3ef5f16b284f08d67a21a584f1.jpg",
         "alt": "Grok 이미지 자동 세그먼팅 — 부위별 분해·재생성·수정"
       },
       "source": {
@@ -12813,7 +12813,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/41d8df2ff6434736e0787789ed6a0294677aac54f8530f6bac24f07fef9d675b.svg",
+        "src": "assets/25b1e90f4655f6c1d547c898ceee803923638b1ca2aac92bf0269f6eac5cb8bb.jpg",
         "alt": "Seedance 2.5 — 9인 K-pop 군무·원본 오디오 바인딩 스트레스 테스트"
       },
       "source": {
@@ -12968,7 +12968,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/847e2d275ced1b2d090631ae57ff141bfd32a8146fd18b162137f2ba9d1199ec.svg",
+        "src": "assets/aa67ecc3c1961797e40d2cc5c8606cb6e17efc9ec5ca1ea9cb78f43379c757ab.jpg",
         "alt": "도쿄 핫걸 프롬프트 — 아키하바라 거리 포토 (luna.lookbook_)"
       },
       "source": {
@@ -14322,7 +14322,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/e7707201f0c4d05d2e63b6900a8b4a2b8895344fd38b4d16bc6aade35a84c701.svg",
+        "src": "assets/c360c676765c488526cdf95304d0da53f78560d64388a0cb8386f452dbb915c6.jpg",
         "alt": "AI Astra - 시댄스 2.5에 70만원 태워본 후기 (Seedance 2.5 리뷰)"
       },
       "source": {
@@ -14365,7 +14365,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/39ed88f72cf61d753e2ca41eb419d3e3f27c6ec1ff5b3446028cbd92be006fcd.svg",
+        "src": "assets/b5c529d464b1f3a1322f39df84746a445298e3bc7ab04f85506a625b2d8fa358.jpg",
         "alt": "프롬왓 - 2026 최고로 리얼한 AI 영상 프롬프트 공식 + 풀 프롬프트 공개"
       },
       "source": {
@@ -15635,7 +15635,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/bd366c3c704fcd63c09f1522595b9f8ad9b85dfa4f81986fa8a8303fb5af963c.svg",
+        "src": "assets/091d9660dfd8fcc5d1eb891d9779632eefb8ec33484e2a84869cd1804214da5f.png",
         "alt": "xiaoyuestar.xo Instagram profile lead"
       },
       "source": {
@@ -15942,7 +15942,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/6d5ec73aec4e4d384d6ab26206746582c9e517fd96bc550064adc995e65aa3d0.svg",
+        "src": "assets/8d02ea319d64ed159435f9228a8c999737cfd8834ec194c5f9b9eed0b6ca256f.jpg",
         "alt": "Question-first RAG/wiki design thread by 샘호트만"
       },
       "source": {
@@ -15980,7 +15980,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/54769970214caac06c108fce888b95e2d82475a170d042b33e078a6b9df0842c.svg",
+        "src": "assets/846d272634462951dde99e7ccd35df8549923cb6465d7384d42f0698defbeb07.jpg",
         "alt": "Seedance 2.5 camera-control discussion by Олег Микушкин"
       },
       "source": {
@@ -16056,7 +16056,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/0e3d7dadf0b6dcc32c10aa5601c536a97322cb3451f24fe292f5d5768399926e.svg",
+        "src": "assets/8b980a1ed42ae0f2df08fa8e958f1d4ad15828be83dbc5e39e41cee2e33500f3.jpg",
         "alt": "Seedance 2.5 guide thread by 사징가 📷"
       },
       "source": {
@@ -16205,7 +16205,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b842711f522f7d70b56e65c1f3b723fb4445c4d09f7730c5fb87df7a45a4082d.svg",
+        "src": "assets/a6c44be576f96230c2bccf6f2fc2e75d261385265189acbaeb39af3fa108db13.jpg",
         "alt": "ToroJushiAi X post 2083705774774100279"
       },
       "source": {
