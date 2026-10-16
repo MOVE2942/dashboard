@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261016-040050-AUTO",
+  "release_id": "LIA-20261017-040034-AUTO",
   "card_count": 423,
   "facet_counts": {
     "general": 201,
@@ -1578,7 +1578,7 @@
     },
     {
       "id": "CR-20261008-0008",
-      "hash": "20637f6c13703ecdbb5004d23679a5f5701f275fa78c0efcba1a244684893829"
+      "hash": "3fca595295b4a21f418baecf5f4d9dc6f1ffd8cee76ca37844bb35f0e487bcc9"
     },
     {
       "id": "CR-20261008-0009",
@@ -1701,8 +1701,8 @@
       "hash": "a9a558ebad91d308de9512eb45779c8cf3966cc14f723ff0efc8c01257d148a7"
     }
   ],
-  "source_manifest_sha256": "5d27def5a7930bc752801bb992acfd8fc2a85b36cecdb7275c36bcc7aff750f8",
-  "export_manifest_sha256": "291905f75b0680493e1ec8b11a055f84486bbc01500cc56c29bc9b6ae3719d89",
+  "source_manifest_sha256": "64a0bb9488401f0ea1f2940695ff84a2af21ce0fccc47016dae863b0933a06c3",
+  "export_manifest_sha256": "af2293b475ab0fe3e3b6e9309bd1dd5039f95122f8cbec87a241eed6bb9f7e24",
   "files": [
     {
       "path": "assets/0069be87fd0f74b6c97c3179cfa25654d20950f962b2aafd6767cc28f851d88e.png",
@@ -2055,14 +2055,14 @@
       "size": 425276
     },
     {
-      "path": "assets/331cf99e7bad7aa14a917738fbad4f8abddf67e22759001276b9055c11a2d51b.svg",
-      "sha256": "331cf99e7bad7aa14a917738fbad4f8abddf67e22759001276b9055c11a2d51b",
-      "size": 620
-    },
-    {
       "path": "assets/333ca875e4e93fb5024374afc8070d0aed4367d4090cfdc3ab07c0bf9924513b.jpg",
       "sha256": "333ca875e4e93fb5024374afc8070d0aed4367d4090cfdc3ab07c0bf9924513b",
       "size": 397759
+    },
+    {
+      "path": "assets/3406918877aeb67657f56cfc54deefb02c05a455ce28a8cbdc0084b1f1e9763f.png",
+      "sha256": "3406918877aeb67657f56cfc54deefb02c05a455ce28a8cbdc0084b1f1e9763f",
+      "size": 101891
     },
     {
       "path": "assets/34c9d10a3c16dde92111f2a045169d6dfb803a7b8940468f343c34cd9adbcb03.jpg",
@@ -3741,7 +3741,7 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "20fc7f56912bd8aeadccd06b96cb5bd4e234a8a2fcb8c3133a6ac088b403b9ed",
+      "sha256": "2ff4f1c542078972b16566ba5b97aacb743ff58d7dfe046ba6d049753d4e7673",
       "size": 668601
     },
     {
@@ -3760,5 +3760,5 @@
       "size": 2765
     }
   ],
-  "bundle_sha256": "4ab5919a1fe156f636208e5d976d8de4dfd9f984579b1d0550e1067286eaa1e0"
+  "bundle_sha256": "49868ed6346f25682442ea6e6efb426235a33cd43b24a25b67ec5ab55a60fd09"
 }
