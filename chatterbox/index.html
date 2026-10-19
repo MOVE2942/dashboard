@@ -433,46 +433,55 @@
       <!-- Left Column: Voice Library & Engine Config -->
       <div>
         <div class="panel-box">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-            <h3 style="margin:0;">🎙️ 내 목소리 라이브러리</h3>
-            <span style="font-size:0.75rem; color:var(--accent); font-family:var(--mono);">영구 보관</span>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+            <h3 style="margin:0; font-size:1.05rem;">🎙️ 목소리 라이브러리</h3>
+            <span id="voiceCountBadge" style="font-size:0.75rem; background:rgba(184,255,92,0.15); color:var(--accent); padding:2px 8px; border-radius:12px; font-weight:700;">목록 로딩 중</span>
           </div>
 
-          <!-- Existing Voice Profile Dropdown -->
-          <div class="form-group">
-            <label>보관된 목소리 프로필 선택</label>
-            <select class="form-control" id="voiceLibrarySelect">
-              <option value="">[보관된 목소리 목록 로딩 중...]</option>
-            </select>
+          <!-- Section 1: Saved Voices List -->
+          <div style="font-size:0.83rem; font-weight:700; color:#c9d1d9; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">
+            <span>보관된 목소리 목록</span>
+            <span style="font-size:0.75rem; color:var(--muted); font-weight:normal;">클릭하여 선택</span>
+          </div>
+          
+          <div id="voiceCardsList" style="display:flex; flex-direction:column; gap:8px; max-height:220px; overflow-y:auto; margin-bottom:16px; padding-right:2px;">
+            <div style="font-size:0.8rem; color:var(--muted); text-align:center; padding:12px;">목소리 목록을 불러오는 중...</div>
           </div>
 
-          <!-- Voice Preview Box -->
-          <div class="voice-preview" id="voicePreviewBox" style="display:block; margin-bottom:14px;">
-            <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--accent); margin-bottom:4px;">
-              <span>선택된 음성:</span>
-              <span id="voiceFileName">선택 없음</span>
+          <!-- Section 2: Step-by-Step New Voice Registration -->
+          <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--line); border-radius: 10px; padding: 14px;">
+            <div style="font-weight: 700; font-size: 0.88rem; color: var(--accent); margin-bottom: 12px; display:flex; align-items:center; gap:6px;">
+              <span>➕ 새 목소리 프로필 추가 (3단계 등록)</span>
             </div>
-            <audio id="voiceAudioPlayer" controls style="width:100%; height:36px;"></audio>
-            <div id="voiceStatusMsg" style="font-size:0.78rem; color:var(--accent); margin-top:4px;"></div>
-          </div>
 
-          <!-- Add New Voice Area -->
-          <details style="border-top:1px dashed var(--line); padding-top:12px; margin-top:10px;">
-            <summary style="font-size:0.84rem; color:var(--sky); cursor:pointer; font-weight:700; outline:none;">
-              + 새 목소리 녹음본 추가하여 라이브러리에 저장
-            </summary>
-            <div style="margin-top:10px;">
-              <div class="form-group">
-                <input type="text" class="form-control" id="newVoiceNameInput" placeholder="새 프로필 이름 (예: 내목소리_기본, 깐족연기 등)" style="font-size:0.82rem; margin-bottom:8px;">
-              </div>
-              <div class="upload-area" id="dropArea" style="padding:14px;">
+            <!-- Step 1: Voice Name -->
+            <div class="form-group" style="margin-bottom:10px;">
+              <label style="font-size:0.78rem; color:#8b949e; margin-bottom:4px; display:block;">
+                1단계: 목소리 주인공 이름 (프로필명)
+              </label>
+              <input type="text" class="form-control" id="newVoiceNameInput" placeholder="예: 옥집사님, 내목소리_차분한톤" style="padding:8px 10px; font-size:0.84rem;">
+            </div>
+
+            <!-- Step 2: File Select -->
+            <div class="form-group" style="margin-bottom:12px;">
+              <label style="font-size:0.78rem; color:#8b949e; margin-bottom:4px; display:block;">
+                2단계: 참조 음성 파일 선택 (10초~30초)
+              </label>
+              <div class="upload-area" id="dropArea" style="padding:12px; border-style:dashed;">
                 <input type="file" id="voiceFileInput" accept="audio/*,video/*" style="display:none;">
-                <div class="upload-icon" style="font-size:1.6rem;">🎧</div>
-                <div style="font-weight:700; font-size:0.88rem;">10~30초 목소리 업로드 / 드래그</div>
-                <div class="upload-text" style="font-size:0.75rem;">업로드 즉시 라이브러리에 영구 보관됩니다</div>
+                <div id="dropText" style="font-size:0.8rem; color:var(--muted);">
+                  🎧 클릭하여 파일 선택 또는 드래그
+                </div>
               </div>
+              <div id="selectedFileNameLabel" style="font-size:0.75rem; color:var(--accent); margin-top:4px; display:none; word-break:break-all;"></div>
             </div>
-          </details>
+
+            <!-- Step 3: Save Button -->
+            <button type="button" class="btn-main" id="btnSaveVoiceProfile" style="width:100%; padding:10px; font-size:0.88rem; justify-content:center; box-shadow:none;">
+              💾 3단계: 라이브러리에 저장 & 즉시 활성화
+            </button>
+            <div id="voiceUploadStatus" style="font-size:0.78rem; text-align:center; margin-top:6px; min-height:16px;"></div>
+          </div>
         </div>
 
         <div class="panel-box">
@@ -624,8 +633,18 @@
     const btnDownloadZip = document.getElementById('btnDownloadZip');
     const btnClearAll = document.getElementById('btnClearAll');
 
-    const voiceLibrarySelect = document.getElementById('voiceLibrarySelect');
+    const voiceCardsList = document.getElementById('voiceCardsList');
+    const voiceCountBadge = document.getElementById('voiceCountBadge');
     const newVoiceNameInput = document.getElementById('newVoiceNameInput');
+    const dropArea = document.getElementById('dropArea');
+    const voiceFileInput = document.getElementById('voiceFileInput');
+    const dropText = document.getElementById('dropText');
+    const selectedFileNameLabel = document.getElementById('selectedFileNameLabel');
+    const btnSaveVoiceProfile = document.getElementById('btnSaveVoiceProfile');
+    const voiceUploadStatus = document.getElementById('voiceUploadStatus');
+
+    let pendingVoiceFile = null;
+    let currentActiveVoiceId = null;
 
     sliderExagg.addEventListener('input', () => valExagg.textContent = sliderExagg.value);
     sliderTemp.addEventListener('input', () => valTemp.textContent = sliderTemp.value);
@@ -656,28 +675,59 @@
     }
     initSystemInfo();
 
-    // Voice Library Loader
+    // Voice Library Card List Loader
     async function loadVoiceLibrary() {
       try {
         const res = await fetch('/api/voices');
         if (res.ok) {
           const data = await res.json();
-          voiceLibrarySelect.innerHTML = '';
-          if (!data.voices || data.voices.length === 0) {
-            voiceLibrarySelect.innerHTML = '<option value="">[보관된 목소리가 없습니다 - 아래에서 추가해 주세요]</option>';
+          const voices = data.voices || [];
+          voiceCountBadge.textContent = `${voices.length}개 보관됨`;
+          voiceCardsList.innerHTML = '';
+
+          if (voices.length === 0) {
+            voiceCardsList.innerHTML = '<div style="font-size:0.8rem; color:var(--muted); text-align:center; padding:16px; border:1px dashed var(--line); border-radius:8px;">보관된 목소리가 없습니다.<br>아래 [새 목소리 프로필 추가]에서 등록해 주세요.</div>';
             return;
           }
 
-          data.voices.forEach((v, idx) => {
-            const opt = document.createElement('option');
-            opt.value = v.id;
-            opt.textContent = `🎙️ ${v.name} (${v.mtime})`;
-            if (idx === 0) opt.selected = true;
-            voiceLibrarySelect.appendChild(opt);
+          let activeFound = false;
+          voices.forEach((v) => {
+            const card = document.createElement('div');
+            const isActive = v.is_active || (!currentActiveVoiceId && !activeFound);
+            if (isActive) {
+              activeFound = true;
+              currentActiveVoiceId = v.id;
+            }
+
+            card.style.cssText = `
+              background: ${isActive ? 'rgba(184, 255, 92, 0.08)' : 'var(--card-bg)'};
+              border: 1px solid ${isActive ? 'var(--accent)' : 'var(--line)'};
+              border-radius: 8px;
+              padding: 10px 12px;
+              transition: all 0.2s;
+            `;
+
+            card.innerHTML = `
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                <div style="font-weight:700; font-size:0.9rem; color:${isActive ? 'var(--accent)' : '#fff'}; display:flex; align-items:center; gap:6px;">
+                  <span>🎙️ ${escapeHtml(v.name)}</span>
+                  ${isActive ? '<span style="font-size:0.7rem; background:rgba(184,255,92,0.2); color:var(--accent); padding:1px 6px; border-radius:4px;">사용 중 ✅</span>' : ''}
+                </div>
+                <div style="display:flex; gap:6px; align-items:center;">
+                  ${!isActive ? `<button type="button" onclick="selectVoiceProfile('${v.id}')" style="background:#21262d; border:1px solid var(--border-lit); color:#f0f6fc; border-radius:4px; padding:3px 8px; font-size:0.75rem; cursor:pointer; font-weight:700;">선택</button>` : ''}
+                  <button type="button" onclick="deleteVoiceProfile('${v.id}', '${escapeHtml(v.name)}')" title="삭제" style="background:transparent; border:none; color:var(--muted); cursor:pointer; font-size:0.9rem; padding:2px 4px;">🗑️</button>
+                </div>
+              </div>
+              <div style="font-size:0.74rem; color:var(--muted); margin-bottom:6px;">
+                ${v.created_at || ''} · ${v.size_kb} KB
+              </div>
+              <audio controls src="${v.url}" style="width:100%; height:28px; border-radius:4px;"></audio>
+            `;
+
+            voiceCardsList.appendChild(card);
           });
 
-          // 첫 번째 목소리 자동 선택 및 로드
-          selectVoiceProfile(data.voices[0].id, data.voices[0].name);
+          selectedVoiceFile = (voices.length > 0);
         }
       } catch (err) {
         console.error("목소리 라이브러리 로드 실패:", err);
@@ -685,74 +735,111 @@
     }
     loadVoiceLibrary();
 
-    async function selectVoiceProfile(voiceId, voiceName) {
+    // Select Voice Profile
+    window.selectVoiceProfile = async function(voiceId) {
       if (!voiceId) return;
-      voiceFileName.textContent = voiceName || voiceId;
-      voiceAudioPlayer.src = `/api/voice_audio/${voiceId}`;
-      voicePreviewBox.style.display = "block";
-      voiceStatusMsg.textContent = "⚡ 보관된 프로필 로드 중...";
-      selectedVoiceFile = true; // 라이브러리 프로필 활성화 플래그
-
+      currentActiveVoiceId = voiceId;
       try {
         const fd = new FormData();
         fd.append('voice_id', voiceId);
         fd.append('exagg', sliderExagg.value);
-        const res = await fetch('/api/select_voice', { method: 'POST', body: fd });
+        const res = await fetch('/api/voices/select', { method: 'POST', body: fd });
         if (res.ok) {
-          voiceStatusMsg.textContent = "✅ 목소리 프로필 로드 완료 (즉시 생성 가능)";
+          loadVoiceLibrary();
+          initSystemInfo();
         }
       } catch (e) {
-        voiceStatusMsg.textContent = "✅ 프로필 선택됨";
+        console.error(e);
+      }
+    };
+
+    // Delete Voice Profile
+    window.deleteVoiceProfile = async function(voiceId, voiceName) {
+      if (!confirm(`[${voiceName}] 목소리 프로필을 라이브러리에서 영구 삭제하시겠습니까?`)) return;
+      try {
+        const fd = new FormData();
+        fd.append('voice_id', voiceId);
+        const res = await fetch('/api/voices/delete', { method: 'POST', body: fd });
+        if (res.ok) {
+          if (currentActiveVoiceId === voiceId) currentActiveVoiceId = null;
+          await loadVoiceLibrary();
+          initSystemInfo();
+        }
+      } catch (e) {
+        alert('삭제 중 오류가 발생했습니다.');
+      }
+    };
+
+    // File selection for new voice
+    dropArea.addEventListener('click', () => voiceFileInput.click());
+    dropArea.addEventListener('dragover', (e) => { e.preventDefault(); dropArea.style.borderColor = 'var(--accent)'; });
+    dropArea.addEventListener('dragleave', () => { dropArea.style.borderColor = 'var(--border-lit)'; });
+    dropArea.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropArea.style.borderColor = 'var(--border-lit)';
+      if (e.dataTransfer.files.length) handleSelectedFile(e.dataTransfer.files[0]);
+    });
+    voiceFileInput.addEventListener('change', (e) => {
+      if (e.target.files.length) handleSelectedFile(e.target.files[0]);
+    });
+
+    function handleSelectedFile(file) {
+      pendingVoiceFile = file;
+      dropText.textContent = `📁 ${file.name} (${Math.round(file.size/1024)} KB)`;
+      selectedFileNameLabel.textContent = `선택된 파일: ${file.name}`;
+      selectedFileNameLabel.style.display = 'block';
+      if (!newVoiceNameInput.value.trim()) {
+        newVoiceNameInput.value = file.name.replace(/\.[^/.]+$/, "");
       }
     }
 
-    voiceLibrarySelect.addEventListener('change', (e) => {
-      const selectedId = e.target.value;
-      const selectedText = e.target.options[e.target.selectedIndex].text.replace(/^🎙️\s*/, '');
-      selectVoiceProfile(selectedId, selectedText);
-    });
+    // Step 3 Save & Upload Button
+    btnSaveVoiceProfile.addEventListener('click', async () => {
+      const name = newVoiceNameInput.value.trim();
+      if (!name) {
+        alert('1단계: 목소리 주인공 이름(프로필명)을 입력해 주세요.');
+        newVoiceNameInput.focus();
+        return;
+      }
+      if (!pendingVoiceFile) {
+        alert('2단계: 참조 음성 파일을 선택해 주세요.');
+        dropArea.scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
 
-    // Voice Upload Handlers
-    dropArea.addEventListener('click', () => voiceFileInput.click());
-    dropArea.addEventListener('dragover', (e) => { e.preventDefault(); dropArea.classList.add('dragover'); });
-    dropArea.addEventListener('dragleave', () => dropArea.classList.remove('dragover'));
-    dropArea.addEventListener('drop', (e) => {
-      e.preventDefault();
-      dropArea.classList.remove('dragover');
-      if (e.dataTransfer.files.length) handleVoiceFile(e.dataTransfer.files[0]);
-    });
-    voiceFileInput.addEventListener('change', (e) => {
-      if (e.target.files.length) handleVoiceFile(e.target.files[0]);
-    });
-
-    async function handleVoiceFile(file) {
-      const profileName = newVoiceNameInput.value.trim();
-      voiceFileName.textContent = profileName || file.name;
-      voiceAudioPlayer.src = URL.createObjectURL(file);
-      voicePreviewBox.style.display = "block";
-      voiceStatusMsg.textContent = "⚡ 라이브러리에 저장 및 GPU 분석 중...";
+      btnSaveVoiceProfile.disabled = true;
+      voiceUploadStatus.style.color = 'var(--gold)';
+      voiceUploadStatus.textContent = '⚡ 음성 변환 및 화자 임베딩 분석 중... 잠시만 기다려주세요.';
 
       try {
         const fd = new FormData();
-        fd.append('voice_file', file);
-        if (profileName) fd.append('voice_name', profileName);
+        fd.append('name', name);
+        fd.append('voice_file', pendingVoiceFile);
         fd.append('exagg', sliderExagg.value);
 
-        const res = await fetch('/api/prepare_voice', { method: 'POST', body: fd });
+        const res = await fetch('/api/voices/upload', { method: 'POST', body: fd });
         if (res.ok) {
           const data = await res.json();
-          voiceStatusMsg.textContent = `✅ [${data.name}] 라이브러리에 영구 저장 완료!`;
+          voiceUploadStatus.style.color = 'var(--accent)';
+          voiceUploadStatus.textContent = `🎉 [${data.voice.name}] 프로필이 저장되고 활성화되었습니다!`;
           newVoiceNameInput.value = '';
-          selectedVoiceFile = true;
+          pendingVoiceFile = null;
+          dropText.textContent = '🎧 클릭하여 파일 선택 또는 드래그';
+          selectedFileNameLabel.style.display = 'none';
+          currentActiveVoiceId = data.voice.id;
           await loadVoiceLibrary();
           initSystemInfo();
         } else {
-          voiceStatusMsg.textContent = "⚠️ 저장 완료 (생성 시 자동 반영)";
+          const err = await res.json();
+          throw new Error(err.detail || '저장 실패');
         }
       } catch (err) {
-        voiceStatusMsg.textContent = "✅ 목소리 등록 완료";
+        voiceUploadStatus.style.color = 'var(--red)';
+        voiceUploadStatus.textContent = `오류: ${err.message}`;
+      } finally {
+        btnSaveVoiceProfile.disabled = false;
       }
-    }
+    });
 
     // Parse Bulk Text into Segments
     function parseBulkText() {
