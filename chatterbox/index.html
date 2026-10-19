@@ -452,20 +452,16 @@
   <main>
 
     <!-- Top Server Status & Connect Bar -->
-    <div class="server-bar">
+    <div class="server-bar" style="border: 2px solid var(--accent); background: rgba(184, 255, 92, 0.05);">
       <div class="server-status">
         <div class="status-dot online" id="statusDot"></div>
-        <span id="statusText">💻 로컬 PC GPU 스튜디오 모드</span>
+        <span id="statusText">💻 로컬 PC GPU 스튜디오 모드 (RTX 3080)</span>
       </div>
       <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
-        <a href="http://127.0.0.1:7860" target="_blank" class="btn-connect" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
-          🚀 로컬 웹앱 즉시 열기 (127.0.0.1:7860)
+        <a href="http://127.0.0.1:7860" target="_blank" class="btn-main" style="padding: 10px 20px; font-size: 0.95rem; text-decoration:none;">
+          🚀 로컬 웹앱 바로 열기 (127.0.0.1:7860)
         </a>
-        <span style="color:var(--muted); font-size:0.84rem;">(폴더의 <code>실행_로컬_스튜디오.bat</code> 실행)</span>
-      </div>
-      <div class="server-input-group" style="max-width:320px;">
-        <input type="text" id="serverUrl" placeholder="http://127.0.0.1:7860 (로컬 주소)">
-        <button type="button" class="btn-connect" id="btnConnect" style="background:#1f6feb;">창 열기</button>
+        <span style="color:var(--muted); font-size:0.84rem;">(바탕화면의 <code>AI_오디오_스튜디오_실행.bat</code> 더블클릭 후 열기)</span>
       </div>
     </div>
 
