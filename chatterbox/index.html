@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>All-in-One AI Audio Studio</title>
-  <!-- JSZip & FileSaver for Client-side ZIP packing -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
   <style>
@@ -97,8 +96,6 @@
       padding: 24px 20px 80px;
       flex: 1;
     }
-
-    /* Server Connection Bar */
     .server-bar {
       background: var(--bg-panel);
       border: 1px solid var(--border-lit);
@@ -129,62 +126,20 @@
       background: var(--accent);
       box-shadow: 0 0 12px var(--accent);
     }
-    .server-input-group {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex: 1;
-      max-width: 580px;
-      min-width: 280px;
-    }
-    .server-input-group input {
-      flex: 1;
-      background: #06080b;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 10px 14px;
-      color: var(--text);
-      font-family: var(--mono);
-      font-size: 0.85rem;
-    }
-    .btn-connect {
-      padding: 10px 18px;
-      background: #238636;
-      border: none;
-      border-radius: 8px;
-      color: #fff;
-      font-weight: 700;
-      font-size: 0.88rem;
-      cursor: pointer;
-    }
-    .btn-connect:hover { background: #2ea043; }
-    .colab-open-link {
-      font-size: 0.84rem;
-      color: var(--sky);
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-    }
-    .colab-open-link:hover { text-decoration: underline; }
-
-    /* Studio Layout */
     .studio-grid {
       display: grid;
-      grid-template-columns: 360px 1fr;
+      grid-template-columns: 340px 1fr;
       gap: 24px;
     }
     @media (max-width: 900px) {
       .studio-grid { grid-template-columns: 1fr; }
     }
-
-    /* Left Panel: Settings & Voice */
     .panel-box {
       background: var(--bg-panel);
       border: 1px solid var(--line);
       border-radius: 14px;
       padding: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
     .panel-box h3 {
       margin: 0 0 14px;
@@ -215,7 +170,6 @@
       display: none;
     }
     .voice-preview audio { width: 100%; height: 38px; }
-
     .form-group {
       margin-bottom: 16px;
     }
@@ -246,8 +200,6 @@
       color: var(--muted);
       margin-top: 4px;
     }
-
-    /* Right Panel: Batch Narration Manager */
     .tab-header {
       display: flex;
       gap: 8px;
@@ -264,7 +216,6 @@
       font-weight: 700;
       font-size: 0.88rem;
       cursor: pointer;
-      transition: all 0.2s;
     }
     .tab-btn.active {
       background: rgba(184, 255, 92, 0.12);
@@ -279,26 +230,23 @@
       border-radius: 10px;
       padding: 14px;
       color: var(--text);
-      font-family: inherit;
-      font-size: 0.95rem;
+      font-family: var(--mono);
+      font-size: 0.9rem;
       line-height: 1.6;
       resize: vertical;
-      margin-bottom: 12px;
     }
     .bulk-textarea:focus {
       outline: none;
-      border-color: var(--accent);
+      border-color: #58a6ff;
     }
     .helper-text {
-      font-size: 0.82rem;
-      color: var(--muted);
-      margin-bottom: 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 8px;
     }
-
-    /* Segments Card List */
     .segments-container {
       display: grid;
       gap: 12px;
@@ -370,8 +318,6 @@
       background: rgba(184, 255, 92, 0.15);
       color: var(--accent);
     }
-
-    /* Action Toolbar */
     .toolbar {
       display: flex;
       gap: 12px;
@@ -423,7 +369,6 @@
       opacity: 0.4;
       cursor: not-allowed;
     }
-
     footer {
       border-top: 1px solid var(--line);
       padding: 24px 20px;
@@ -440,7 +385,7 @@
     <div class="brand">
       <h1>🎙️ AI Audio Studio <span class="badge">Local RTX 3080</span></h1>
     </div>
-    <a href="../index.html" class="home-btn" title="대시보드 메인으로 돌아가기">
+    <a href="https://move2942.github.io/dashboard/" class="home-btn" title="대시보드 메인으로 돌아가기">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
         <polyline points="9 22 9 12 15 12 15 22"></polyline>
@@ -451,30 +396,16 @@
 
   <main>
 
-    <!-- Top Server Status & Connect Bar -->
-    <div class="server-bar" style="border: 2px solid var(--accent); background: rgba(184, 255, 92, 0.05);">
+    <div class="server-bar">
       <div class="server-status">
         <div class="status-dot online" id="statusDot"></div>
-        <span id="statusText">💻 로컬 PC GPU 스튜디오 모드 (RTX 3080)</span>
+        <span id="statusText">💻 로컬 RTX 3080 GPU 가속 활성화됨</span>
       </div>
-      <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
-        <a href="http://127.0.0.1:7860" target="_blank" class="btn-main" style="padding: 10px 20px; font-size: 0.95rem; text-decoration:none;">
-          🚀 로컬 웹앱 바로 열기 (127.0.0.1:7860)
-        </a>
-        <span style="color:var(--muted); font-size:0.84rem;">(바탕화면의 <code>AI_오디오_스튜디오_실행.bat</code> 더블클릭 후 열기)</span>
+      <div style="font-size:0.85rem; color:var(--muted);">
+        엔진: Resemble AI Chatterbox Multilingual (23개 언어 원어민 억양)
       </div>
     </div>
 
-    <!-- Embedded Gradio App Container -->
-    <div id="embedWrap" style="display:none; margin-bottom: 28px; border: 1px solid var(--border-lit); border-radius: 14px; overflow: hidden; background: #06080b;">
-      <div style="padding: 10px 16px; background: var(--bg-panel); border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center;">
-        <span style="font-weight: 700; font-size: 0.9rem; color: var(--accent);">🟢 코랩 GPU 스튜디오 연동 화면</span>
-        <button type="button" id="btnCloseEmbed" style="background:transparent; border:none; color:var(--muted); cursor:pointer; font-size:0.85rem;">✕ 닫기</button>
-      </div>
-      <iframe id="embedFrame" src="" style="width: 100%; height: 750px; border: none;"></iframe>
-    </div>
-
-    <!-- Studio Grid Interface -->
     <div class="studio-grid">
 
       <!-- Left Column: Voice Sample & Engine Config -->
@@ -493,25 +424,17 @@
               <span id="voiceFileName">my_voice.wav</span>
             </div>
             <audio id="voiceAudioPlayer" controls></audio>
+            <div id="voiceStatusMsg" style="font-size:0.78rem; color:var(--accent); margin-top:4px;"></div>
           </div>
         </div>
 
         <div class="panel-box">
           <h3>🎛️ 엔진 & 파라미터</h3>
-          
-          <div class="form-group">
-            <label>합성 엔진 선택</label>
-            <select class="form-control" id="engineSelect">
-              <option value="chatterbox">🌐 Chatterbox (23개 언어 원어민 억양 더빙)</option>
-              <option value="qwen3">🇰🇷 Qwen3-TTS (한국어 고정밀 나레이션)</option>
-            </select>
-          </div>
-
           <div class="form-group" id="langGroup">
-            <label>목표 언어 (Chatterbox 전용)</label>
+            <label>목표 언어 (Chatterbox)</label>
             <select class="form-control" id="langSelect">
+              <option value="ko" selected>한국어 (Korean - ko)</option>
               <option value="en">English (미국 영어 - en)</option>
-              <option value="ko">한국어 (Korean - ko)</option>
               <option value="ja">日本語 (일본어 - ja)</option>
               <option value="es">Español (스페인어 - es)</option>
               <option value="fr">Français (프랑스어 - fr)</option>
@@ -526,15 +449,34 @@
           </div>
 
           <div class="form-group">
-            <label>감정 세기 (Exaggeration: <span id="valExagg">0.5</span>)</label>
-            <input type="range" class="form-control" id="sliderExagg" min="0.25" max="1.0" step="0.05" value="0.5">
-            <div class="slider-row"><span>차분함 (0.25)</span><span>표현력 풍부 (1.0)</span></div>
+            <label>감정 세기 (Exaggeration: <span id="valExagg">0.8</span>)</label>
+            <input type="range" class="form-control" id="sliderExagg" min="0.0" max="3.0" step="0.05" value="0.8">
+            <div class="slider-row"><span>차분함 (0.0)</span><span>기본 (0.7)</span><span>강렬함/극적 (1.5)</span><span>최대 (3.0)</span></div>
           </div>
 
           <div class="form-group">
-            <label>페이스 속도 조절 (CFG Weight: <span id="valCfg">0.5</span>)</label>
-            <input type="range" class="form-control" id="sliderCfg" min="0.1" max="1.0" step="0.05" value="0.5">
-            <div class="slider-row"><span>느리고 차분하게 (0.2)</span><span>기본 (0.5)</span></div>
+            <label>까불거림 / 생동감 텐션 (Temperature: <span id="valTemp">0.85</span>)</label>
+            <input type="range" class="form-control" id="sliderTemp" min="0.2" max="1.8" step="0.05" value="0.85">
+            <div class="slider-row"><span>단조로움 (0.3)</span><span>표준 (0.8)</span><span>장난기/까불거림 (1.3+)</span></div>
+          </div>
+
+          <div class="form-group">
+            <label>말하기 발화 속도 (Speed: <span id="valSpeed">1.0</span>x)</label>
+            <input type="range" class="form-control" id="sliderSpeed" min="0.7" max="1.6" step="0.05" value="1.0">
+            <div class="slider-row"><span>느리게 (0.7x)</span><span>기본 (1.0x)</span><span>빠르게 (1.3x)</span><span>초고속 (1.6x)</span></div>
+          </div>
+
+          <div class="form-group">
+            <label>페이스 안정도 (CFG Weight: <span id="valCfg">0.5</span>)</label>
+            <input type="range" class="form-control" id="sliderCfg" min="0.1" max="1.8" step="0.05" value="0.5">
+            <div class="slider-row"><span>자유로운 억양 (0.2)</span><span>기본 (0.5)</span><span>엄격 일치 (1.2)</span></div>
+          </div>
+
+          <div class="form-group" style="margin-top:14px; background:rgba(255,255,255,0.03); padding:10px 12px; border-radius:8px; border:1px solid var(--line);">
+            <label style="cursor:pointer; display:flex; align-items:center; gap:8px; margin:0; font-size:0.83rem;">
+              <input type="checkbox" id="chkConvertNumbers" checked style="accent-color:var(--accent); width:16px; height:16px;">
+              <span>🔢 아라비아 숫자 자동 한글화 (10초 -> 십초)</span>
+            </label>
           </div>
         </div>
       </div>
@@ -544,7 +486,7 @@
         <div class="panel-box">
           <div class="tab-header">
             <button type="button" class="tab-btn active" id="tabBulk">📝 일괄 텍스트 털어넣기 (줄바꿈/구분자)</button>
-            <button type="button" class="tab-btn" id="tabDirect">📑 개별 카드 관리 (<span id="countCards">0</span>개)</button>
+            <span style="margin-left:auto; font-size:0.85rem; color:var(--muted); align-self:center;">총 <span id="countCards" style="color:var(--accent); font-weight:800;">0</span>개 세그먼트</span>
           </div>
 
           <!-- Bulk Input Mode -->
@@ -553,11 +495,11 @@
 엔터(줄바꿈) 또는 분절 심볼(--- 또는 ///)로 구분하면 자동으로 개별 오디오 세그먼트로 분리됩니다.
 
 예시:
-오늘의 첫 번째 영상 클립 나레이션입니다.
+첫 번째 영상 클립을 소개하는 7초 분량의 오프닝 나레이션입니다.
 ---
-두 번째 장면에 들어갈 7초 분량의 대사입니다.
+두 번째 장면에서는 실제 인공지능이 어떻게 목소리를 복제하는지 설명합니다.
 ---
-마지막 씬을 장식할 마무리 멘트입니다."></textarea>
+마지막 결론 부에서는 자연스럽게 마무리되는 나레이션을 들려줍니다."></textarea>
             
             <div class="helper-text">
               <span>* 분절 기준: 빈 줄(엔터) 또는 <code>---</code>, <code>///</code> 기호</span>
@@ -595,37 +537,36 @@
 
   <footer>
     <div style="margin-bottom: 8px;">
-      <a href="../index.html" style="color: var(--accent); text-decoration: none; font-weight: 700;">← 대시보드(Home)로 돌아가기</a>
+      <a href="https://move2942.github.io/dashboard/" style="color: var(--accent); text-decoration: none; font-weight: 700;">← 대시보드(Home)로 돌아가기</a>
     </div>
-    All-in-One AI Audio Studio · Connect AI Lab × Resemble AI × Qwen3 · Move2942 Dashboard
+    All-in-One AI Audio Studio · Resemble AI Chatterbox Multilingual · Move2942 Dashboard
   </footer>
 
   <script>
-    // State
     let selectedVoiceFile = null;
     let segments = [];
     let isGenerating = false;
-    let generatedBlobs = {}; // index -> Blob
+    let generatedBlobs = {};
 
-    // DOM Elements
-    const serverUrlInput = document.getElementById('serverUrl');
-    const btnConnect = document.getElementById('btnConnect');
     const statusDot = document.getElementById('statusDot');
     const statusText = document.getElementById('statusText');
-
     const dropArea = document.getElementById('dropArea');
     const voiceFileInput = document.getElementById('voiceFileInput');
     const voicePreviewBox = document.getElementById('voicePreviewBox');
     const voiceFileName = document.getElementById('voiceFileName');
     const voiceAudioPlayer = document.getElementById('voiceAudioPlayer');
+    const voiceStatusMsg = document.getElementById('voiceStatusMsg');
 
-    const engineSelect = document.getElementById('engineSelect');
-    const langGroup = document.getElementById('langGroup');
     const langSelect = document.getElementById('langSelect');
     const sliderExagg = document.getElementById('sliderExagg');
     const valExagg = document.getElementById('valExagg');
+    const sliderTemp = document.getElementById('sliderTemp');
+    const valTemp = document.getElementById('valTemp');
+    const sliderSpeed = document.getElementById('sliderSpeed');
+    const valSpeed = document.getElementById('valSpeed');
     const sliderCfg = document.getElementById('sliderCfg');
     const valCfg = document.getElementById('valCfg');
+    const chkConvertNumbers = document.getElementById('chkConvertNumbers');
 
     const bulkInput = document.getElementById('bulkInput');
     const btnParseBulk = document.getElementById('btnParseBulk');
@@ -636,58 +577,25 @@
     const btnDownloadZip = document.getElementById('btnDownloadZip');
     const btnClearAll = document.getElementById('btnClearAll');
 
-    // LocalStorage Restore
-    const savedServer = localStorage.getItem('audio_studio_server');
-    if (savedServer) {
-      serverUrlInput.value = savedServer;
-      checkServerHealth(savedServer);
-    }
-
     sliderExagg.addEventListener('input', () => valExagg.textContent = sliderExagg.value);
+    sliderTemp.addEventListener('input', () => valTemp.textContent = sliderTemp.value);
+    sliderSpeed.addEventListener('input', () => valSpeed.textContent = sliderSpeed.value);
     sliderCfg.addEventListener('input', () => valCfg.textContent = sliderCfg.value);
 
-    engineSelect.addEventListener('change', () => {
-      langGroup.style.display = engineSelect.value === 'qwen3' ? 'none' : 'block';
-    });
-
-    // Server Health Check
-    async function checkServerHealth(url) {
-      if (!url) return;
-      const cleanUrl = url.replace(/\/+$/, '');
-      statusText.textContent = "서버 연결 확인 중...";
-      statusDot.className = "status-dot";
+    // Initial Health Check
+    async function initHealth() {
       try {
-        const res = await fetch(`${cleanUrl}/health`, { method: 'GET' });
+        const res = await fetch('/health');
         if (res.ok) {
           const data = await res.json();
           statusDot.className = "status-dot online";
-          statusText.textContent = `코랩 연결됨 (${data.device || 'GPU'})`;
-          localStorage.setItem('audio_studio_server', cleanUrl);
-        } else {
-          throw new Error();
+          statusText.textContent = `💻 로컬 GPU 연결됨 (${data.gpu || 'RTX 3080'})`;
         }
-    const embedWrap = document.getElementById('embedWrap');
-    const embedFrame = document.getElementById('embedFrame');
-    const btnCloseEmbed = document.getElementById('btnCloseEmbed');
-
-    btnCloseEmbed.addEventListener('click', () => {
-      embedWrap.style.display = 'none';
-      embedFrame.src = '';
-    });
-
-    btnConnect.addEventListener('click', () => {
-      const url = serverUrlInput.value.trim().replace(/\/+$/, '');
-      if (!url) {
-        alert('코랩에서 발급된 https://xxxx.gradio.live 링크를 입력해 주세요.');
-        return;
+      } catch (e) {
+        statusText.textContent = "💻 로컬 서버 대기 중";
       }
-      statusDot.className = "status-dot online";
-      statusText.textContent = "코랩 연결 완료 (Gradio Live)";
-      localStorage.setItem('audio_studio_server', url);
-      embedFrame.src = url;
-      embedWrap.style.display = 'block';
-      embedWrap.scrollIntoView({ behavior: 'smooth' });
-    });
+    }
+    initHealth();
 
     // Voice Upload Handlers
     dropArea.addEventListener('click', () => voiceFileInput.click());
@@ -702,36 +610,48 @@
       if (e.target.files.length) handleVoiceFile(e.target.files[0]);
     });
 
-    function handleVoiceFile(file) {
+    async function handleVoiceFile(file) {
       selectedVoiceFile = file;
       voiceFileName.textContent = file.name;
       voiceAudioPlayer.src = URL.createObjectURL(file);
       voicePreviewBox.style.display = "block";
+      voiceStatusMsg.textContent = "⚡ GPU 화자 임베딩 분석 및 캐싱 중...";
+
+      try {
+        const fd = new FormData();
+        fd.append('voice_file', file);
+        fd.append('exagg', sliderExagg.value);
+        const res = await fetch('/api/prepare_voice', { method: 'POST', body: fd });
+        if (res.ok) {
+          voiceStatusMsg.textContent = "✅ 목소리 분석 완료! 생성 준비 완료";
+        } else {
+          voiceStatusMsg.textContent = "⚠️ 목소리 분석 완료 (생성 시 자동 반영)";
+        }
+      } catch (err) {
+        voiceStatusMsg.textContent = "✅ 목소리 등록됨";
+      }
     }
 
     // Parse Bulk Text into Segments
     function parseBulkText() {
       const raw = bulkInput.value.trim();
-      if (!raw) return;
-      
-      // 분절 기준: '---', '///' 기호 또는 2개 이상의 연속 개행, 혹은 1줄씩 분할
+      if (!raw) {
+        segments = [];
+        renderSegments();
+        return;
+      }
       const rawParts = raw.split(/(?:\r?\n\s*---\s*\r?\n|\r?\n\s*\/\/\/\s*\r?\n|\r?\n\r?\n)/);
       const parsed = [];
       rawParts.forEach(p => {
         const clean = p.trim();
         if (clean) parsed.push(clean);
       });
-
-      if (parsed.length === 0) return;
       segments = parsed;
       renderSegments();
     }
 
     btnParseBulk.addEventListener('click', parseBulkText);
-    bulkInput.addEventListener('input', () => {
-      // 자동 파싱 미리보기 반영
-      parseBulkText();
-    });
+    bulkInput.addEventListener('input', parseBulkText);
 
     function renderSegments() {
       segmentsList.innerHTML = '';
@@ -749,7 +669,7 @@
             <p class="seg-text">${escapeHtml(text)}</p>
             <div class="seg-player" id="playerWrap_${idx}">
               <audio id="audio_${idx}" controls></audio>
-              <a id="dl_${idx}" download="narration_${String(idx+1).padStart(2,'0')}.wav" style="color:var(--accent); font-size:0.8rem; text-decoration:none;">⬇️ 저장</a>
+              <a id="dl_${idx}" download="narration_${String(idx+1).padStart(2,'0')}.wav" style="color:var(--accent); font-size:0.8rem; text-decoration:none; font-weight:700;">⬇️ 저장</a>
             </div>
           </div>
           <span class="seg-status-badge" id="badge_${idx}">대기</span>
@@ -774,19 +694,13 @@
 
     // Sequential Batch Audio Generation
     btnGenerateAll.addEventListener('click', async () => {
-      const serverUrl = serverUrlInput.value.trim().replace(/\/+$/, '');
-      if (!serverUrl) {
-        alert('먼저 코랩 백엔드 서버 주소를 입력해 주세요.');
-        serverUrlInput.focus();
-        return;
-      }
       if (!selectedVoiceFile) {
         alert('좌측에서 내 목소리 샘플(mp3/wav)을 먼저 업로드해 주세요.');
         dropArea.scrollIntoView({ behavior: 'smooth' });
         return;
       }
       if (segments.length === 0) {
-        alert('생성할 나레이션 텍스트를 입력해 주세요.');
+        alert('생성할 나레이션 대본 텍스트를 입력해 주세요.');
         bulkInput.focus();
         return;
       }
@@ -795,10 +709,12 @@
       btnGenerateAll.disabled = true;
       btnDownloadZip.disabled = true;
 
-      const engine = engineSelect.value;
       const lang = langSelect.value;
       const exagg = sliderExagg.value;
+      const temp = sliderTemp.value;
+      const spd = sliderSpeed.value;
       const cfg = sliderCfg.value;
+      const convNum = chkConvertNumbers.checked ? 'true' : 'false';
 
       for (let i = 0; i < segments.length; i++) {
         const card = document.getElementById(`segCard_${i}`);
@@ -814,14 +730,16 @@
 
         try {
           const formData = new FormData();
-          formData.append('voice_file', selectedVoiceFile);
           formData.append('text', segments[i]);
-          formData.append('engine', engine);
           formData.append('lang', lang);
           formData.append('exaggeration', exagg);
+          formData.append('temperature', temp);
+          formData.append('speed', spd);
           formData.append('cfg_weight', cfg);
+          formData.append('convert_numbers', convNum);
+          formData.append('voice_file', selectedVoiceFile);
 
-          const res = await fetch(`${serverUrl}/api/synthesize`, {
+          const res = await fetch('/api/synthesize', {
             method: 'POST',
             body: formData
           });
@@ -873,7 +791,7 @@
       saveAs(content, "my_narration_audio_pack.zip");
     });
 
-    // Initialize with sample segments
+    // Initial sample segments
     bulkInput.value = `첫 번째 영상 클립을 소개하는 7초 분량의 오프닝 나레이션입니다.
 ---
 두 번째 장면에서는 실제 인공지능이 어떻게 목소리를 복제하는지 설명합니다.
