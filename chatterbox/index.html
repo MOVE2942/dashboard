@@ -406,26 +406,73 @@
       </div>
     </div>
 
+    <!-- Collapsible Model & System Environment Info (Default: Collapsed) -->
+    <details class="panel-box" id="systemDetailsBox" style="margin-bottom: 24px; padding: 14px 18px; cursor: pointer; border-color: var(--border-lit);">
+      <summary style="font-size: 0.9rem; font-weight: 700; color: #c9d1d9; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+        <span style="display:flex; align-items:center; gap:8px;">
+          <span class="status-dot online" style="width:10px; height:10px;"></span>
+          <span>💻 사용 모델 및 로컬 구동환경 스펙 정보</span>
+          <span style="font-size:0.75rem; color:var(--muted); font-family:var(--mono);">(RTX 3080 / CUDA 12.4 / 12GB VRAM)</span>
+        </span>
+        <span style="font-size: 0.8rem; color: var(--accent); font-weight: 600;">▼ 클릭하여 펼치기/접기</span>
+      </summary>
+      <div id="systemInfoGrid" style="margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; font-size: 0.82rem; font-family: var(--mono); color: var(--muted);">
+        <div>가속 장치: <span style="color:#fff;" id="specGpu">NVIDIA RTX 3080</span></div>
+        <div>VRAM 사용량: <span style="color:#fff;" id="specVram">확인 중...</span></div>
+        <div>CUDA / PyTorch: <span style="color:#fff;" id="specCuda">CUDA 12.4 / 2.6.0</span></div>
+        <div>탑재 모델: <span style="color:var(--accent);" id="specModel">Chatterbox Multilingual</span></div>
+        <div>지원 언어 수: <span style="color:#fff;" id="specLangs">23개 언어</span></div>
+        <div>샘플링 레이트: <span style="color:#fff;" id="specSr">24,000 Hz</span></div>
+        <div>보관된 음성 프로필: <span style="color:var(--accent);" id="specVoices">0개</span></div>
+        <div>서버 포트: <span style="color:#fff;" id="specPort">127.0.0.1:7860</span></div>
+      </div>
+    </details>
+
     <div class="studio-grid">
 
-      <!-- Left Column: Voice Sample & Engine Config -->
+      <!-- Left Column: Voice Library & Engine Config -->
       <div>
         <div class="panel-box">
-          <h3>🎙️ 내 목소리 샘플</h3>
-          <div class="upload-area" id="dropArea">
-            <input type="file" id="voiceFileInput" accept="audio/*,video/*" style="display:none;">
-            <div class="upload-icon">🎧</div>
-            <div style="font-weight:700; font-size:0.95rem; margin-bottom:4px;">10~30초 목소리 업로드</div>
-            <div class="upload-text">mp3, wav, m4a 클릭 또는 파일 드래그</div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <h3 style="margin:0;">🎙️ 내 목소리 라이브러리</h3>
+            <span style="font-size:0.75rem; color:var(--accent); font-family:var(--mono);">영구 보관</span>
           </div>
-          <div class="voice-preview" id="voicePreviewBox">
+
+          <!-- Existing Voice Profile Dropdown -->
+          <div class="form-group">
+            <label>보관된 목소리 프로필 선택</label>
+            <select class="form-control" id="voiceLibrarySelect">
+              <option value="">[보관된 목소리 목록 로딩 중...]</option>
+            </select>
+          </div>
+
+          <!-- Voice Preview Box -->
+          <div class="voice-preview" id="voicePreviewBox" style="display:block; margin-bottom:14px;">
             <div style="display:flex; justify-content:space-between; font-size:0.8rem; color:var(--accent); margin-bottom:4px;">
               <span>선택된 음성:</span>
-              <span id="voiceFileName">my_voice.wav</span>
+              <span id="voiceFileName">선택 없음</span>
             </div>
-            <audio id="voiceAudioPlayer" controls></audio>
+            <audio id="voiceAudioPlayer" controls style="width:100%; height:36px;"></audio>
             <div id="voiceStatusMsg" style="font-size:0.78rem; color:var(--accent); margin-top:4px;"></div>
           </div>
+
+          <!-- Add New Voice Area -->
+          <details style="border-top:1px dashed var(--line); padding-top:12px; margin-top:10px;">
+            <summary style="font-size:0.84rem; color:var(--sky); cursor:pointer; font-weight:700; outline:none;">
+              + 새 목소리 녹음본 추가하여 라이브러리에 저장
+            </summary>
+            <div style="margin-top:10px;">
+              <div class="form-group">
+                <input type="text" class="form-control" id="newVoiceNameInput" placeholder="새 프로필 이름 (예: 내목소리_기본, 깐족연기 등)" style="font-size:0.82rem; margin-bottom:8px;">
+              </div>
+              <div class="upload-area" id="dropArea" style="padding:14px;">
+                <input type="file" id="voiceFileInput" accept="audio/*,video/*" style="display:none;">
+                <div class="upload-icon" style="font-size:1.6rem;">🎧</div>
+                <div style="font-weight:700; font-size:0.88rem;">10~30초 목소리 업로드 / 드래그</div>
+                <div class="upload-text" style="font-size:0.75rem;">업로드 즉시 라이브러리에 영구 보관됩니다</div>
+              </div>
+            </div>
+          </details>
         </div>
 
         <div class="panel-box">
@@ -577,25 +624,93 @@
     const btnDownloadZip = document.getElementById('btnDownloadZip');
     const btnClearAll = document.getElementById('btnClearAll');
 
+    const voiceLibrarySelect = document.getElementById('voiceLibrarySelect');
+    const newVoiceNameInput = document.getElementById('newVoiceNameInput');
+
     sliderExagg.addEventListener('input', () => valExagg.textContent = sliderExagg.value);
     sliderTemp.addEventListener('input', () => valTemp.textContent = sliderTemp.value);
     sliderSpeed.addEventListener('input', () => valSpeed.textContent = sliderSpeed.value);
     sliderCfg.addEventListener('input', () => valCfg.textContent = sliderCfg.value);
 
-    // Initial Health Check
-    async function initHealth() {
+    // Initial Health Check & System Specs
+    async function initSystemInfo() {
       try {
-        const res = await fetch('/health');
+        const res = await fetch('/api/system_info');
         if (res.ok) {
           const data = await res.json();
           statusDot.className = "status-dot online";
-          statusText.textContent = `💻 로컬 GPU 연결됨 (${data.gpu || 'RTX 3080'})`;
+          statusText.textContent = `💻 로컬 GPU 가속 활성화됨 (${data.gpu_name})`;
+          
+          document.getElementById('specGpu').textContent = data.gpu_name;
+          document.getElementById('specVram').textContent = `${data.vram_used_gb} GB / ${data.vram_total_gb} GB (여유: ${data.vram_free_gb} GB)`;
+          document.getElementById('specCuda').textContent = `CUDA ${data.cuda_version} / PyTorch ${data.torch_version}`;
+          document.getElementById('specModel').textContent = data.model_id;
+          document.getElementById('specLangs').textContent = `${data.supported_languages}개 언어`;
+          document.getElementById('specSr').textContent = data.sample_rate;
+          document.getElementById('specVoices').textContent = `${data.voice_count}개 보관됨`;
+          document.getElementById('specPort').textContent = `127.0.0.1:${data.server_port}`;
         }
       } catch (e) {
-        statusText.textContent = "💻 로컬 서버 대기 중";
+        statusText.textContent = "💻 로컬 서버 연결 대기 중";
       }
     }
-    initHealth();
+    initSystemInfo();
+
+    // Voice Library Loader
+    async function loadVoiceLibrary() {
+      try {
+        const res = await fetch('/api/voices');
+        if (res.ok) {
+          const data = await res.json();
+          voiceLibrarySelect.innerHTML = '';
+          if (!data.voices || data.voices.length === 0) {
+            voiceLibrarySelect.innerHTML = '<option value="">[보관된 목소리가 없습니다 - 아래에서 추가해 주세요]</option>';
+            return;
+          }
+
+          data.voices.forEach((v, idx) => {
+            const opt = document.createElement('option');
+            opt.value = v.id;
+            opt.textContent = `🎙️ ${v.name} (${v.mtime})`;
+            if (idx === 0) opt.selected = true;
+            voiceLibrarySelect.appendChild(opt);
+          });
+
+          // 첫 번째 목소리 자동 선택 및 로드
+          selectVoiceProfile(data.voices[0].id, data.voices[0].name);
+        }
+      } catch (err) {
+        console.error("목소리 라이브러리 로드 실패:", err);
+      }
+    }
+    loadVoiceLibrary();
+
+    async function selectVoiceProfile(voiceId, voiceName) {
+      if (!voiceId) return;
+      voiceFileName.textContent = voiceName || voiceId;
+      voiceAudioPlayer.src = `/api/voice_audio/${voiceId}`;
+      voicePreviewBox.style.display = "block";
+      voiceStatusMsg.textContent = "⚡ 보관된 프로필 로드 중...";
+      selectedVoiceFile = true; // 라이브러리 프로필 활성화 플래그
+
+      try {
+        const fd = new FormData();
+        fd.append('voice_id', voiceId);
+        fd.append('exagg', sliderExagg.value);
+        const res = await fetch('/api/select_voice', { method: 'POST', body: fd });
+        if (res.ok) {
+          voiceStatusMsg.textContent = "✅ 목소리 프로필 로드 완료 (즉시 생성 가능)";
+        }
+      } catch (e) {
+        voiceStatusMsg.textContent = "✅ 프로필 선택됨";
+      }
+    }
+
+    voiceLibrarySelect.addEventListener('change', (e) => {
+      const selectedId = e.target.value;
+      const selectedText = e.target.options[e.target.selectedIndex].text.replace(/^🎙️\s*/, '');
+      selectVoiceProfile(selectedId, selectedText);
+    });
 
     // Voice Upload Handlers
     dropArea.addEventListener('click', () => voiceFileInput.click());
@@ -611,24 +726,31 @@
     });
 
     async function handleVoiceFile(file) {
-      selectedVoiceFile = file;
-      voiceFileName.textContent = file.name;
+      const profileName = newVoiceNameInput.value.trim();
+      voiceFileName.textContent = profileName || file.name;
       voiceAudioPlayer.src = URL.createObjectURL(file);
       voicePreviewBox.style.display = "block";
-      voiceStatusMsg.textContent = "⚡ GPU 화자 임베딩 분석 및 캐싱 중...";
+      voiceStatusMsg.textContent = "⚡ 라이브러리에 저장 및 GPU 분석 중...";
 
       try {
         const fd = new FormData();
         fd.append('voice_file', file);
+        if (profileName) fd.append('voice_name', profileName);
         fd.append('exagg', sliderExagg.value);
+
         const res = await fetch('/api/prepare_voice', { method: 'POST', body: fd });
         if (res.ok) {
-          voiceStatusMsg.textContent = "✅ 목소리 분석 완료! 생성 준비 완료";
+          const data = await res.json();
+          voiceStatusMsg.textContent = `✅ [${data.name}] 라이브러리에 영구 저장 완료!`;
+          newVoiceNameInput.value = '';
+          selectedVoiceFile = true;
+          await loadVoiceLibrary();
+          initSystemInfo();
         } else {
-          voiceStatusMsg.textContent = "⚠️ 목소리 분석 완료 (생성 시 자동 반영)";
+          voiceStatusMsg.textContent = "⚠️ 저장 완료 (생성 시 자동 반영)";
         }
       } catch (err) {
-        voiceStatusMsg.textContent = "✅ 목소리 등록됨";
+        voiceStatusMsg.textContent = "✅ 목소리 등록 완료";
       }
     }
 
