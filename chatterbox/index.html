@@ -351,6 +351,51 @@
       border-color: #ff5c5c;
       color: #ff5c5c;
     }
+    .seg-multitake-box {
+      display: none;
+      margin-top: 10px;
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+    .take-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 6px 10px;
+      gap: 10px;
+      font-size: 0.8rem;
+      transition: all 0.2s ease;
+    }
+    .take-row.adopted {
+      border-color: var(--gold);
+      background: rgba(255, 212, 71, 0.08);
+    }
+    .take-btn-adopt {
+      background: #21262d;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.74rem;
+      border-radius: 4px;
+      padding: 3px 8px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .take-btn-adopt:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    .take-btn-adopt.active {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: #000;
+    }
     .toolbar {
       display: flex;
       gap: 12px;
@@ -935,6 +980,33 @@
               <button type="button" class="tune-btn tune-reset" id="btnReset_${idx}" style="display:none;" onclick="resetSegmentAudio(${idx})" title="원본으로 되돌리기">↺ 원본 복귀</button>
               <span id="tuneStatus_${idx}" style="font-size:0.72rem; color:var(--accent); margin-left:auto;"></span>
             </div>
+
+            <!-- 세컨드 툴 선별적 멀티 엔진 재시도 -->
+            <div class="seg-multitake-box" id="multitakeBox_${idx}">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span style="font-size:0.78rem; font-weight:800; color:var(--vio); display:flex; align-items:center; gap:6px;">
+                  🔄 세컨드 툴 선별적 재시도 (Multi-Engine Retry)
+                </span>
+                <span id="takeBadge_${idx}" style="font-size:0.72rem; color:var(--gold); font-weight:700;"></span>
+              </div>
+              
+              <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:8px;">
+                <button type="button" class="tune-btn" onclick="retryWithCosyVoice(${idx})" title="강렬한 감정, 흥분, 호들갑 훅 스피치 재시도" style="border-color:rgba(183,157,255,0.4); color:var(--vio);">
+                  🚀 CosyVoice 2 (감정/훅)
+                </button>
+                <button type="button" class="tune-btn" onclick="retryWithF5TTS(${idx})" title="플로우 매칭 기반 자연스럽고 차분한 설명조 나레이션 재시도" style="border-color:rgba(143,211,255,0.4); color:var(--sky);">
+                  🌊 F5-TTS (차분/설명)
+                </button>
+                <button type="button" class="tune-btn" onclick="retryWithRVC(${idx})" title="RVC v2 모델로 음색 변환" style="border-color:rgba(255,212,71,0.4); color:var(--gold);">
+                  🎭 RVC v2 (음색변환)
+                </button>
+              </div>
+
+              <!-- Takes List (A/B Comparison) -->
+              <div class="takes-list" id="takesList_${idx}" style="display:flex; flex-direction:column; gap:6px;">
+              </div>
+              <div id="retryStatus_${idx}" style="font-size:0.74rem; color:var(--accent); min-height:16px; margin-top:4px;"></div>
+            </div>
           </div>
           <span class="seg-status-badge" id="badge_${idx}">대기</span>
         `;
@@ -1027,6 +1099,11 @@
           const tuningBar = document.getElementById(`tuningBar_${i}`);
           if (tuningBar) tuningBar.style.display = 'flex';
 
+          // Multi-take 등록 (Take 1: Chatterbox 기본)
+          addSegmentTake(i, 'Take 1 [Chatterbox 기본]', 'chatterbox', blob, true);
+          const multitakeBox = document.getElementById(`multitakeBox_${i}`);
+          if (multitakeBox) multitakeBox.style.display = 'block';
+
           card.className = 'segment-card done';
           badge.className = 'seg-status-badge ready';
           badge.textContent = '완료 ✅';
@@ -1045,6 +1122,234 @@
         btnDownloadZip.disabled = false;
       }
     });
+
+    // Multi-Take State & Management
+    let segmentTakes = {}; // idx -> [ { id, label, engine, blob, url, isAdopted } ]
+
+    window.addSegmentTake = function(idx, label, engine, blob, autoAdopt = false) {
+      if (!segmentTakes[idx]) segmentTakes[idx] = [];
+      const url = URL.createObjectURL(blob);
+      const takeId = 'take_' + Date.now() + '_' + Math.random().toString(36).substr(2, 4);
+      const newTake = {
+        id: takeId,
+        label: label,
+        engine: engine,
+        blob: blob,
+        url: url,
+        isAdopted: autoAdopt || segmentTakes[idx].length === 0
+      };
+      segmentTakes[idx].push(newTake);
+      if (newTake.isAdopted) {
+        adoptTake(idx, takeId, false);
+      }
+      renderSegmentTakes(idx);
+      const multitakeBox = document.getElementById(`multitakeBox_${idx}`);
+      if (multitakeBox) multitakeBox.style.display = 'block';
+    };
+
+    window.renderSegmentTakes = function(idx) {
+      const container = document.getElementById(`takesList_${idx}`);
+      const badgeEl = document.getElementById(`takeBadge_${idx}`);
+      if (!container) return;
+      const takes = segmentTakes[idx] || [];
+      container.innerHTML = '';
+
+      takes.forEach((t) => {
+        const row = document.createElement('div');
+        row.className = 'take-row' + (t.isAdopted ? ' adopted' : '');
+
+        let engineColor = 'var(--muted)';
+        let engineIcon = '🎙️';
+        if (t.engine === 'cosyvoice') { engineColor = 'var(--vio)'; engineIcon = '🚀'; }
+        else if (t.engine === 'f5tts') { engineColor = 'var(--sky)'; engineIcon = '🌊'; }
+        else if (t.engine === 'rvc') { engineColor = 'var(--gold)'; engineIcon = '🎭'; }
+
+        row.innerHTML = `
+          <div style="display:flex; align-items:center; gap:8px; flex:1; min-width:0;">
+            <span style="font-weight:700; color:${engineColor}; font-size:0.78rem; white-space:nowrap;">${engineIcon} ${escapeHtml(t.label)}</span>
+            <audio src="${t.url}" controls style="height:28px; max-width:220px; flex:1;"></audio>
+          </div>
+          <div style="display:flex; align-items:center; gap:6px;">
+            <button type="button" class="take-btn-adopt ${t.isAdopted ? 'active' : ''}" onclick="adoptTake(${idx}, '${t.id}', true)">
+              ${t.isAdopted ? '⭐ 채택됨' : '선택 채택'}
+            </button>
+            <a href="${t.url}" download="narration_${String(idx+1).padStart(2,'0')}_${t.engine}.wav" style="color:var(--accent); font-size:0.75rem; text-decoration:none;" title="해당 테이크 다운로드">⬇️</a>
+          </div>
+        `;
+        container.appendChild(row);
+
+        if (t.isAdopted && badgeEl) {
+          badgeEl.textContent = `${t.label} 채택 중 ⭐`;
+        }
+      });
+    };
+
+    window.adoptTake = function(idx, takeId, playSound = true) {
+      const takes = segmentTakes[idx] || [];
+      let adopted = null;
+      takes.forEach(t => {
+        if (t.id === takeId) {
+          t.isAdopted = true;
+          adopted = t;
+        } else {
+          t.isAdopted = false;
+        }
+      });
+      if (adopted) {
+        currentBlobs[idx] = adopted.blob;
+        generatedBlobs[idx] = adopted.blob; // 최종 ZIP 압축 파일에 반영!
+        const audioEl = document.getElementById(`audio_${idx}`);
+        const dlLink = document.getElementById(`dl_${idx}`);
+        if (audioEl) {
+          audioEl.src = adopted.url;
+          if (playSound) audioEl.play().catch(() => {});
+        }
+        if (dlLink) {
+          dlLink.href = adopted.url;
+          dlLink.download = `narration_${String(idx+1).padStart(2,'0')}_${adopted.engine}.wav`;
+        }
+        renderSegmentTakes(idx);
+        const mainBadge = document.getElementById(`badge_${idx}`);
+        if (mainBadge) {
+          mainBadge.textContent = `${adopted.label} ✅`;
+          mainBadge.className = 'seg-status-badge ready';
+        }
+      }
+    };
+
+    // CosyVoice 2 Retry Handler
+    window.retryWithCosyVoice = async function(idx) {
+      const statusEl = document.getElementById(`retryStatus_${idx}`);
+      const text = segments[idx];
+      if (!text) return;
+
+      const promptOption = prompt(
+        "CosyVoice 2 감정 지시 프롬프트를 선택하거나 직접 입력하세요:\n\n" +
+        "1: [호들갑을 떨며 장난기 넘치고 흥분된 목소리로 말한다] (오프닝 훅 추천)\n" +
+        "2: [긴장감 넘치고 다급하며 빠른 호흡으로 말한다] (위기/스릴러)\n" +
+        "3: [따뜻하고 부드럽고 다정한 목소리로 말한다] (휴먼/감동)\n" +
+        "4: [위엄 있고 묵직하며 신뢰감 넘치는 목소리로 말한다] (뉴스/선언)",
+        "1"
+      );
+      if (promptOption === null) return;
+
+      let instruction = "[호들갑을 떨며 장난기 넘치고 흥분된 목소리로 말한다]";
+      if (promptOption === "1") instruction = "[호들갑을 떨며 장난기 넘치고 흥분된 목소리로 말한다]";
+      else if (promptOption === "2") instruction = "[긴장감 넘치고 다급하며 빠른 호흡으로 말한다]";
+      else if (promptOption === "3") instruction = "[따뜻하고 부드럽고 다정한 목소리로 말한다]";
+      else if (promptOption === "4") instruction = "[위엄 있고 묵직하며 신뢰감 넘치는 목소리로 말한다]";
+      else if (promptOption.trim()) instruction = promptOption.trim();
+
+      statusEl.textContent = "🚀 CosyVoice 2 인스트럭션 추론 중... (RTX 3080)";
+      try {
+        const formData = new FormData();
+        formData.append("text", text);
+        formData.append("instruction", instruction);
+        formData.append("speed", sliderSpeed.value);
+        if (currentActiveVoiceId) formData.append("voice_profile_id", currentActiveVoiceId);
+
+        const res = await fetch("/api/retry/cosyvoice", {
+          method: "POST",
+          body: formData
+        });
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({}));
+          throw new Error(err.detail || `HTTP ${res.status}`);
+        }
+
+        const blob = await res.blob();
+        const takeNum = (segmentTakes[idx] ? segmentTakes[idx].length : 0) + 1;
+        addSegmentTake(idx, `Take ${takeNum} [CosyVoice 2 훅/감정]`, 'cosyvoice', blob, true);
+        statusEl.textContent = "✅ CosyVoice 2 생성 완료!";
+        setTimeout(() => { statusEl.textContent = ""; }, 3000);
+      } catch (err) {
+        console.error(err);
+        statusEl.textContent = `✕ 실패: ${err.message}`;
+        alert(`CosyVoice 2 생성 실패: ${err.message}`);
+      }
+    };
+
+    // F5-TTS Retry Handler
+    window.retryWithF5TTS = async function(idx) {
+      const statusEl = document.getElementById(`retryStatus_${idx}`);
+      const text = segments[idx];
+      if (!text) return;
+
+      statusEl.textContent = "🌊 F5-TTS 플로우 매칭 생성 중... (RTX 3080)";
+      try {
+        const formData = new FormData();
+        formData.append("text", text);
+        formData.append("speed", sliderSpeed.value);
+        formData.append("nfe_step", "32");
+        if (currentActiveVoiceId) formData.append("voice_profile_id", currentActiveVoiceId);
+
+        const res = await fetch("/api/retry/f5tts", {
+          method: "POST",
+          body: formData
+        });
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({}));
+          throw new Error(err.detail || `HTTP ${res.status}`);
+        }
+
+        const blob = await res.blob();
+        const takeNum = (segmentTakes[idx] ? segmentTakes[idx].length : 0) + 1;
+        addSegmentTake(idx, `Take ${takeNum} [F5-TTS 차분/설명]`, 'f5tts', blob, true);
+        statusEl.textContent = "✅ F5-TTS 생성 완료!";
+        setTimeout(() => { statusEl.textContent = ""; }, 3000);
+      } catch (err) {
+        console.error(err);
+        statusEl.textContent = `✕ 실패: ${err.message}`;
+        alert(`F5-TTS 생성 실패: ${err.message}`);
+      }
+    };
+
+    // RVC v2 Retry Handler
+    window.retryWithRVC = async function(idx) {
+      const statusEl = document.getElementById(`retryStatus_${idx}`);
+      if (!currentBlobs[idx]) {
+        alert("먼저 해당 세그먼트의 기본 오디오를 생성해 주세요.");
+        return;
+      }
+
+      const pitchInput = prompt(
+        "RVC 음색 변환 피치 조절 (반음 단위):\n" +
+        "0: 원래 음정 유지\n" +
+        "+12: 1옥타브 올림 (여성/소년 톤)\n" +
+        "-12: 1옥타브 내림 (남성/중후 톤)",
+        "0"
+      );
+      if (pitchInput === null) return;
+      const pitchShift = parseInt(pitchInput) || 0;
+
+      statusEl.textContent = "🎭 RVC v2 음색 변환 중... (RMVPE 피치 추정)";
+      try {
+        const formData = new FormData();
+        formData.append("audio_file", currentBlobs[idx], `seg_${idx}.wav`);
+        formData.append("pitch_shift", pitchShift);
+        formData.append("f0_method", "rmvpe");
+        formData.append("model_name", "sample_voice");
+
+        const res = await fetch("/api/retry/rvc", {
+          method: "POST",
+          body: formData
+        });
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({}));
+          throw new Error(err.detail || `HTTP ${res.status}`);
+        }
+
+        const blob = await res.blob();
+        const takeNum = (segmentTakes[idx] ? segmentTakes[idx].length : 0) + 1;
+        addSegmentTake(idx, `Take ${takeNum} [RVC v2 드라마 음색]`, 'rvc', blob, true);
+        statusEl.textContent = "✅ RVC v2 음색 변환 완료!";
+        setTimeout(() => { statusEl.textContent = ""; }, 3000);
+      } catch (err) {
+        console.error(err);
+        statusEl.textContent = `✕ 실패: ${err.message}`;
+        alert(`RVC v2 변환 실패: ${err.message}`);
+      }
+    };
 
     // 음질 보정 함수 (볼륨 정규화 및 잡음 제거)
     window.enhanceSegment = async function(idx, action) {
