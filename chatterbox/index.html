@@ -620,17 +620,6 @@
             </button>
           </div>
 
-          <!-- 2nd Stage Post-Tuning Pipeline Notice Banner -->
-          <div style="background:rgba(255, 212, 71, 0.05); border:1px solid rgba(255, 212, 71, 0.3); border-radius:10px; padding:12px 16px; margin-top:18px; margin-bottom:12px; font-size:0.82rem; color:var(--text); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
-            <div>
-              <span style="color:var(--gold); font-weight:800; margin-right:6px;">✨ 2차 세부 연출 파이프라인 연계 탑재:</span>
-              <span>1차 생성 완료 후, 카드별로 <b>[⚡ 훅&까불이]</b>, <b>[🎙️ 방송성우]</b>, <b>[🎬 드라마톤]</b> 원터치 연출 가공을 적용할 수 있습니다.</span>
-            </div>
-            <span style="font-family:var(--mono); font-size:0.75rem; color:var(--muted); background:rgba(0,0,0,0.3); padding:3px 8px; border-radius:6px; border:1px solid var(--line);">
-              📁 연동: E:\Agent\Voice_Tuning_Pipeline
-            </span>
-          </div>
-
           <!-- Segment Cards Result List -->
           <div class="segments-container" id="segmentsList">
             <!-- Dynamic Cards will be rendered here -->
@@ -938,14 +927,13 @@
               <audio id="audio_${idx}" controls></audio>
               <a id="dl_${idx}" download="narration_${String(idx+1).padStart(2,'0')}.wav" style="color:var(--accent); font-size:0.8rem; text-decoration:none; font-weight:700;">⬇️ 저장</a>
             </div>
-            <!-- 2차 세부 연출 튜닝 바 -->
+            <!-- 음질 보정 바 (볼륨 정규화 및 잡음 제거) -->
             <div class="seg-tuning-bar" id="tuningBar_${idx}">
-              <span style="font-size:0.75rem; color:var(--muted); font-weight:700;">✨ 2차 연출:</span>
-              <button type="button" class="tune-btn" onclick="tuneSegment(${idx}, 'hook_excited')" title="피치 +3반음, 1.15배속, 까불이/하이텐션 익사이터">⚡ 훅&까불이</button>
-              <button type="button" class="tune-btn" onclick="tuneSegment(${idx}, 'youtube_punch')" title="펀치 컴프레서, 명료도 방송 성우톤">🎙️ 방송성우</button>
-              <button type="button" class="tune-btn" onclick="tuneSegment(${idx}, 'dramatic_deep')" title="-2.5반음, 묵직한 드라마 웜톤">🎬 드라마톤</button>
-              <button type="button" class="tune-btn tune-reset" id="btnReset_${idx}" style="display:none;" onclick="resetSegmentAudio(${idx})" title="원본으로 되돌리기">↺ 원본</button>
-              <span id="tuneStatus_${idx}" style="font-size:0.72rem; color:var(--gold); margin-left:auto;"></span>
+              <span style="font-size:0.75rem; color:var(--muted); font-weight:700;">음질 보정:</span>
+              <button type="button" class="tune-btn" onclick="enhanceSegment(${idx}, 'normalize')" title="방송 표준 볼륨 정규화 (-1 dBFS)">🔊 볼륨 정규화</button>
+              <button type="button" class="tune-btn" onclick="enhanceSegment(${idx}, 'denoise')" title="마이크 험 노이즈 및 배경 잡음 제거">🧹 잡음 제거(Denoise)</button>
+              <button type="button" class="tune-btn tune-reset" id="btnReset_${idx}" style="display:none;" onclick="resetSegmentAudio(${idx})" title="원본으로 되돌리기">↺ 원본 복귀</button>
+              <span id="tuneStatus_${idx}" style="font-size:0.72rem; color:var(--accent); margin-left:auto;"></span>
             </div>
           </div>
           <span class="seg-status-badge" id="badge_${idx}">대기</span>
@@ -1058,8 +1046,8 @@
       }
     });
 
-    // 2차 세부 연출 튜닝 함수 (DSP 엔진 연동)
-    window.tuneSegment = async function(idx, preset) {
+    // 음질 보정 함수 (볼륨 정규화 및 잡음 제거)
+    window.enhanceSegment = async function(idx, action) {
       const statusEl = document.getElementById(`tuneStatus_${idx}`);
       const audioEl = document.getElementById(`audio_${idx}`);
       const dlLink = document.getElementById(`dl_${idx}`);
@@ -1067,48 +1055,43 @@
       const resetBtn = document.getElementById(`btnReset_${idx}`);
 
       if (!originalBlobs[idx]) {
-        alert('먼저 1차 오디오 생성을 완료해 주세요.');
+        alert('먼저 오디오 생성을 완료해 주세요.');
         return;
       }
 
-      statusEl.textContent = '⚡ 가공 중...';
+      statusEl.textContent = '처리 중...';
       try {
         const formData = new FormData();
-        formData.append('preset', preset);
+        formData.append('action', action);
         formData.append('audio_file', originalBlobs[idx], `segment_${idx}.wav`);
 
-        const res = await fetch('/api/tune_audio', {
+        const res = await fetch('/api/audio_enhance', {
           method: 'POST',
           body: formData
         });
 
-        if (!res.ok) throw new Error(`튜닝 실패 (${res.status})`);
+        if (!res.ok) throw new Error(`보정 실패 (${res.status})`);
 
-        const tunedBlob = await res.blob();
-        currentBlobs[idx] = tunedBlob;
-        generatedBlobs[idx] = tunedBlob; // ZIP 다운로드에도 가공본 자동 반영
+        const enhancedBlob = await res.blob();
+        currentBlobs[idx] = enhancedBlob;
+        generatedBlobs[idx] = enhancedBlob; // ZIP 다운로드에도 반영
 
-        const tunedUrl = URL.createObjectURL(tunedBlob);
-        audioEl.src = tunedUrl;
+        const enhUrl = URL.createObjectURL(enhancedBlob);
+        audioEl.src = enhUrl;
         audioEl.play().catch(() => {});
-        dlLink.href = tunedUrl;
-        dlLink.download = `narration_${String(idx + 1).padStart(2, '0')}_${preset}.wav`;
+        dlLink.href = enhUrl;
+        dlLink.download = `narration_${String(idx + 1).padStart(2, '0')}_${action}.wav`;
 
-        const labels = {
-          'hook_excited': '⚡ 훅/까불이',
-          'youtube_punch': '🎙️ 방송성우',
-          'dramatic_deep': '🎬 드라마톤'
-        };
-        badgeEl.textContent = labels[preset] || '가공완료';
-        badgeEl.style.borderColor = 'var(--gold)';
-        badgeEl.style.color = 'var(--gold)';
+        badgeEl.textContent = (action === 'normalize' ? '볼륨정규화' : '잡음제거') + ' ✅';
+        badgeEl.style.borderColor = 'var(--accent)';
+        badgeEl.style.color = 'var(--accent)';
         statusEl.textContent = '적용 완료!';
         resetBtn.style.display = 'inline-block';
-        setTimeout(() => { statusEl.textContent = ''; }, 2500);
+        setTimeout(() => { statusEl.textContent = ''; }, 2000);
       } catch (err) {
         console.error(err);
-        statusEl.textContent = '가공 실패';
-        alert('2차 연출 적용 중 오류가 발생했습니다: ' + err.message);
+        statusEl.textContent = '처리 실패';
+        alert('오디오 보정 중 오류가 발생했습니다: ' + err.message);
       }
     };
 
