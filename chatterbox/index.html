@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chatterbox TTS Hub</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #161b22;
+      --line: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --blue: #58a6ff;
+      --blue-hover: #1f6feb;
+      --card-bg: #1c2128;
+      --tag-bg: #21262d;
+      --accent: #a371f7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--line);
+      background: var(--panel);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .badge {
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: 20px;
+      background: rgba(163, 113, 247, 0.2);
+      color: var(--accent);
+      border: 1px solid rgba(163, 113, 247, 0.4);
+      font-weight: 600;
+    }
+    .home-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--text);
+      background: var(--card-bg);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .home-btn:hover {
+      background: var(--blue-hover);
+      border-color: var(--blue);
+      color: #fff;
+    }
+    main {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+      flex: 1;
+    }
+    .intro {
+      margin-bottom: 32px;
+    }
+    .intro p {
+      color: var(--muted);
+      margin: 8px 0 0;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .section-title {
+      font-size: 1.15rem;
+      margin: 28px 0 16px;
+      font-weight: 600;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 8px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: #58a6ff66;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 0;
+      color: #fff;
+    }
+    .card-tag {
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 6px;
+      background: var(--tag-bg);
+      color: var(--muted);
+      border: 1px solid var(--line);
+    }
+    .card-desc {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin: 0 0 16px;
+      flex-grow: 1;
+    }
+    .specs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .spec-chip {
+      font-size: 0.72rem;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: rgba(88, 166, 255, 0.1);
+      color: var(--blue);
+      border: 1px solid rgba(88, 166, 255, 0.2);
+    }
+    .btn-group {
+      display: flex;
+      gap: 10px;
+    }
+    .btn {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: background 0.15s ease;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: #238636;
+      border: 1px solid rgba(240, 246, 252, 0.1);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: #2ea043;
+    }
+    .btn-secondary {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      color: var(--text);
+    }
+    .btn-secondary:hover {
+      background: #30363d;
+    }
+    .quickstart {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 36px;
+    }
+    .quickstart h3 {
+      margin-top: 0;
+      font-size: 1rem;
+      color: #fff;
+    }
+    .code-box {
+      background: #0d1117;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      font-size: 0.85rem;
+      color: #e6edf3;
+      overflow-x: auto;
+      margin: 8px 0;
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 20px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.82rem;
+      background: var(--panel);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <h1>🗣️ Chatterbox TTS <span class="badge">Resemble AI</span></h1>
+    </div>
+    <a href="../index.html" class="home-btn" title="대시보드 메인으로 돌아가기">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+      </svg>
+      Home
+    </a>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h2 style="margin: 0; font-size: 1.6rem; color: #fff;">Chatterbox TTS 애플리케이션 진입 허브</h2>
+      <p>Resemble AI의 오픈소스 차세대 음성합성 모델군(Chatterbox)의 공식 웹 인터페이스 및 실행 앱 포털입니다.</p>
+    </div>
+
+    <div class="section-title">⚡ 핵심 모델 & 웹 데모 앱</div>
+    <div class="grid">
+
+      <!-- Multilingual V3 App -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <h3 class="card-title">🌐 Chatterbox Multilingual</h3>
+            <span class="card-tag">V3 / V2</span>
+          </div>
+          <p class="card-desc">한국어 포함 23개 언어를 지원하는 다국어 고품질 음성 합성 모델. 음성 복제(Voice Cloning) 및 언어간 전이 기능 제공.</p>
+          <div class="specs">
+            <span class="spec-chip">500M Params</span>
+            <span class="spec-chip">23+ Languages</span>
+            <span class="spec-chip">Cross-language VC</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a href="https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            🚀 온라인 앱 실행 (HF)
+          </a>
+          <a href="https://resemble-ai.github.io/chatterbox_demopage/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            🎧 샘플 청취
+          </a>
+        </div>
+      </div>
+
+      <!-- Turbo App -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <h3 class="card-title">⚡ Chatterbox Turbo</h3>
+            <span class="card-tag">Low Latency</span>
+          </div>
+          <p class="card-desc">초저지연 음성 에이전트를 위한 350M 경량 모델. 1스텝 디코더 및 감정/추임새 태그([laugh], [chuckle], [sigh] 등) 네이티브 지원.</p>
+          <div class="specs">
+            <span class="spec-chip">350M Params</span>
+            <span class="spec-chip">Paralinguistic Tags</span>
+            <span class="spec-chip">1-Step Decoder</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a href="https://huggingface.co/spaces/ResembleAI/chatterbox-turbo-demo" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            🚀 온라인 앱 실행 (HF)
+          </a>
+          <a href="https://resemble-ai.github.io/chatterbox_turbo_demopage/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            🎧 샘플 청취
+          </a>
+        </div>
+      </div>
+
+      <!-- Nano Model -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <h3 class="card-title">📱 Chatterbox Nano</h3>
+            <span class="card-tag">CPU / Edge</span>
+          </div>
+          <p class="card-desc">110M 초소형 패키지로 8코어 CPU에서 실시간 대비 3배 빠른 속도로 동작. 극도의 리소스 제약 환경에 최적화.</p>
+          <div class="specs">
+            <span class="spec-chip">110M Params</span>
+            <span class="spec-chip">CPU 3x Realtime</span>
+            <span class="spec-chip">On-device Ready</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a href="https://huggingface.co/ResembleAI/chatterbox-nano" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            🤗 모델 카드 (HF)
+          </a>
+          <a href="https://github.com/resemble-ai/chatterbox#chatterbox-nano" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            📖 문서 보기
+          </a>
+        </div>
+      </div>
+
+      <!-- Original Chatterbox -->
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <h3 class="card-title">🎙️ Chatterbox (Standard)</h3>
+            <span class="card-tag">English Zero-Shot</span>
+          </div>
+          <p class="card-desc">CFG 페이스 제어 및 Exaggeration 조절을 통해 다양한 감정과 억양을 자유롭게 튜닝할 수 있는 표준 제로샷 TTS 모델.</p>
+          <div class="specs">
+            <span class="spec-chip">500M Params</span>
+            <span class="spec-chip">CFG Tuning</span>
+            <span class="spec-chip">Creative Control</span>
+          </div>
+        </div>
+        <div class="btn-group">
+          <a href="https://huggingface.co/spaces/ResembleAI/Chatterbox" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            🚀 온라인 앱 실행 (HF)
+          </a>
+          <a href="https://resemble-ai.github.io/chatterbox_demopage/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            🎧 샘플 청취
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-title">🌍 Single Language Pack 전용 앱 (특화 파인튜닝)</div>
+    <div class="grid">
+
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <h3 class="card-title">🇨🇳 Chinese (zh-cmn)</h3>
+            <span class="card-tag">500M</span>
+          </div>
+          <p class="card-desc">중국어 보통화 전용 특화 파인튜닝 모델.</p>
+        </div>
+        <div class="btn-group">
+          <a href="https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS-zh-cmn" target="_blank" rel="noopener noreferrer" class="btn btn-primary">데모 앱 열기</a>
+          <a href="https://huggingface.co/ResembleAI/Chatterbox-Multilingual-zh-cmn" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">모델 카드</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <h3 class="card-title">🇲🇽 Latam Spanish (es-mx)</h3>
+            <span class="card-tag">500M</span>
+          </div>
+          <p class="card-desc">중남미 스페인어 발음 및 방언 특화 모델.</p>
+        </div>
+        <div class="btn-group">
+          <a href="https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS-es-mx-latam" target="_blank" rel="noopener noreferrer" class="btn btn-primary">데모 앱 열기</a>
+          <a href="https://huggingface.co/ResembleAI/Chatterbox-Multilingual-es-mx-latam" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">모델 카드</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <h3 class="card-title">🇧🇷 Brazilian Portuguese (pt-br)</h3>
+            <span class="card-tag">500M</span>
+          </div>
+          <p class="card-desc">브라질 포르투갈어 억양 및 자연스러운 대화 특화.</p>
+        </div>
+        <div class="btn-group">
+          <a href="https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS-pt-br" target="_blank" rel="noopener noreferrer" class="btn btn-primary">데모 앱 열기</a>
+          <a href="https://huggingface.co/ResembleAI/Chatterbox-Multilingual-pt-br" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">모델 카드</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <h3 class="card-title">🇪🇸 Spain Spanish (es-es)</h3>
+            <span class="card-tag">500M</span>
+          </div>
+          <p class="card-desc">스페인 본토 스페인어 발음 특화 모델.</p>
+        </div>
+        <div class="btn-group">
+          <a href="https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS-es-es" target="_blank" rel="noopener noreferrer" class="btn btn-primary">데모 앱 열기</a>
+          <a href="https://huggingface.co/ResembleAI/Chatterbox-Multilingual-es-es" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">모델 카드</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <h3 class="card-title">🇵🇹 Portugal Portuguese (pt-pt)</h3>
+            <span class="card-tag">500M</span>
+          </div>
+          <p class="card-desc">유럽 포르투갈어 특화 파인튜닝 모델.</p>
+        </div>
+        <div class="btn-group">
+          <a href="https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS-pt-pt" target="_blank" rel="noopener noreferrer" class="btn btn-primary">데모 앱 열기</a>
+          <a href="https://huggingface.co/ResembleAI/Chatterbox-Multilingual-pt-pt" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">모델 카드</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-header">
+            <h3 class="card-title">🇮🇳 Hindi (hi)</h3>
+            <span class="card-tag">500M</span>
+          </div>
+          <p class="card-desc">힌디어 발음 및 운율 특화 파인튜닝 모델.</p>
+        </div>
+        <div class="btn-group">
+          <a href="https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS-hi" target="_blank" rel="noopener noreferrer" class="btn btn-primary">데모 앱 열기</a>
+          <a href="https://huggingface.co/ResembleAI/Chatterbox-Multilingual-hi" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">모델 카드</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Local Gradio Apps Guide -->
+    <div class="quickstart">
+      <h3>💻 로컬 Gradio 웹 앱 실행 안내 (설치 위치: e:\Agent\ComfyUI\chatterbox)</h3>
+      <p style="color: var(--muted); font-size: 0.9rem; margin-top: 4px;">
+        로컬 머신에서 직접 Gradio UI를 띄워 실시간으로 음성을 합성할 수 있습니다.
+      </p>
+      
+      <div style="margin-top: 12px;">
+        <strong style="font-size: 0.88rem; color: #fff;">1. 다국어 TTS 웹앱 실행:</strong>
+        <div class="code-box">python multilingual_app.py</div>
+      </div>
+
+      <div style="margin-top: 12px;">
+        <strong style="font-size: 0.88rem; color: #fff;">2. Turbo TTS 웹앱 실행 (감정/추임새 태그 지원):</strong>
+        <div class="code-box">python gradio_tts_turbo_app.py</div>
+      </div>
+
+      <div style="margin-top: 12px;">
+        <strong style="font-size: 0.88rem; color: #fff;">3. 표준 TTS 웹앱 실행:</strong>
+        <div class="code-box">python gradio_tts_app.py</div>
+      </div>
+
+      <div style="margin-top: 12px;">
+        <strong style="font-size: 0.88rem; color: #fff;">4. Voice Conversion (음성 변환) 웹앱 실행:</strong>
+        <div class="code-box">python gradio_vc_app.py</div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div style="margin-bottom: 8px;">
+      <a href="../index.html" style="color: var(--blue); text-decoration: none; font-weight: 600;">← 대시보드(Home)로 돌아가기</a>
+    </div>
+    Chatterbox TTS Hub · Resemble AI Open Source Project · Move2942 Dashboard
+  </footer>
+
+</body>
+</html>
