@@ -497,16 +497,24 @@
 
             <!-- Step 2: File Select -->
             <div class="form-group" style="margin-bottom:12px;">
-              <label style="font-size:0.78rem; color:#8b949e; margin-bottom:4px; display:block;">
-                2단계: 참조 음성 파일 선택 (10초~30초)
-              </label>
-              <div class="upload-area" id="dropArea" style="padding:12px; border-style:dashed;">
-                <input type="file" id="voiceFileInput" accept="audio/*,video/*" style="display:none;">
-                <div id="dropText" style="font-size:0.8rem; color:var(--muted);">
-                  🎧 클릭하여 파일 선택 또는 드래그
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                <label style="font-size:0.78rem; color:#8b949e; margin:0;">
+                  2단계: 참조 음성 파일 선택 (10초~30초)
+                </label>
+                <button type="button" onclick="openVoiceFileChooser(event)" style="background:#21262d; border:1px solid var(--line); color:var(--accent); font-size:0.75rem; border-radius:4px; padding:2px 8px; cursor:pointer; font-weight:700;">
+                  📂 파일 찾아보기
+                </button>
+              </div>
+              <div class="upload-area" id="dropArea" onclick="openVoiceFileChooser(event)" style="padding:14px; border-style:dashed; cursor:pointer; text-align:center; transition:all 0.2s;">
+                <input type="file" id="voiceFileInput" accept="audio/*,video/*,.wav,.mp3,.m4a,.flac" style="display:none;" onchange="if(this.files.length) handleSelectedFile(this.files[0])">
+                <div id="dropText" style="font-size:0.84rem; color:#f0f6fc; font-weight:700; pointer-events:none;">
+                  📂 클릭하여 음성 파일 선택 (또는 파일 드래그)
+                </div>
+                <div style="font-size:0.75rem; color:var(--muted); margin-top:4px; pointer-events:none;">
+                  WAV, MP3, M4A 등 지원 (10초~30초 샘플 권장)
                 </div>
               </div>
-              <div id="selectedFileNameLabel" style="font-size:0.75rem; color:var(--accent); margin-top:4px; display:none; word-break:break-all;"></div>
+              <div id="selectedFileNameLabel" style="font-size:0.75rem; color:var(--accent); margin-top:6px; display:none; word-break:break-all; font-weight:600;"></div>
             </div>
 
             <!-- Step 3: Save Button -->
@@ -652,12 +660,6 @@
 
     const statusDot = document.getElementById('statusDot');
     const statusText = document.getElementById('statusText');
-    const dropArea = document.getElementById('dropArea');
-    const voiceFileInput = document.getElementById('voiceFileInput');
-    const voicePreviewBox = document.getElementById('voicePreviewBox');
-    const voiceFileName = document.getElementById('voiceFileName');
-    const voiceAudioPlayer = document.getElementById('voiceAudioPlayer');
-    const voiceStatusMsg = document.getElementById('voiceStatusMsg');
 
     const langSelect = document.getElementById('langSelect');
     const sliderExagg = document.getElementById('sliderExagg');
@@ -817,27 +819,37 @@
     };
 
     // File selection for new voice
-    dropArea.addEventListener('click', () => voiceFileInput.click());
+    window.openVoiceFileChooser = function(e) {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      const inp = document.getElementById('voiceFileInput');
+      if (inp) inp.click();
+    };
+
     dropArea.addEventListener('dragover', (e) => { e.preventDefault(); dropArea.style.borderColor = 'var(--accent)'; });
     dropArea.addEventListener('dragleave', () => { dropArea.style.borderColor = 'var(--border-lit)'; });
     dropArea.addEventListener('drop', (e) => {
       e.preventDefault();
       dropArea.style.borderColor = 'var(--border-lit)';
-      if (e.dataTransfer.files.length) handleSelectedFile(e.dataTransfer.files[0]);
+      if (e.dataTransfer && e.dataTransfer.files.length) handleSelectedFile(e.dataTransfer.files[0]);
     });
     voiceFileInput.addEventListener('change', (e) => {
-      if (e.target.files.length) handleSelectedFile(e.target.files[0]);
+      if (e.target.files && e.target.files.length) handleSelectedFile(e.target.files[0]);
     });
 
     function handleSelectedFile(file) {
+      if (!file) return;
       pendingVoiceFile = file;
-      dropText.textContent = `📁 ${file.name} (${Math.round(file.size/1024)} KB)`;
+      dropText.innerHTML = `📁 <span style="color:var(--accent); font-weight:800;">${escapeHtml(file.name)}</span> (${Math.round(file.size/1024)} KB)`;
       selectedFileNameLabel.textContent = `선택된 파일: ${file.name}`;
       selectedFileNameLabel.style.display = 'block';
       if (!newVoiceNameInput.value.trim()) {
         newVoiceNameInput.value = file.name.replace(/\.[^/.]+$/, "");
       }
     }
+    window.handleSelectedFile = handleSelectedFile;
 
     // Step 3 Save & Upload Button
     btnSaveVoiceProfile.addEventListener('click', async () => {
