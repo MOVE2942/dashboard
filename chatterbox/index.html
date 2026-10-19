@@ -454,16 +454,19 @@
     <!-- Top Server Status & Connect Bar -->
     <div class="server-bar">
       <div class="server-status">
-        <div class="status-dot" id="statusDot"></div>
-        <span id="statusText">코랩 스튜디오 서버 연결</span>
+        <div class="status-dot online" id="statusDot"></div>
+        <span id="statusText">💻 로컬 PC 스튜디오 모드</span>
       </div>
-      <div class="server-input-group">
-        <input type="text" id="serverUrl" placeholder="https://xxxx.gradio.live (코랩에서 출력된 Live 링크 붙여넣기)">
-        <button type="button" class="btn-connect" id="btnConnect">내장 창으로 열기</button>
+      <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+        <a href="http://127.0.0.1:7860" target="_blank" class="btn-connect" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
+          🚀 로컬 웹앱 즉시 열기 (127.0.0.1:7860)
+        </a>
+        <span style="color:var(--muted); font-size:0.84rem;">(바탕화면/폴더의 <code>실행_로컬_스튜디오.bat</code> 더블클릭)</span>
       </div>
-      <a class="colab-open-link" href="https://colab.research.google.com/github/move2942/dashboard/blob/main/chatterbox/All_in_One_Audio_Studio.ipynb" target="_blank" rel="noopener noreferrer">
-        ⚡ 1. 코랩 서버 열기 (Step 1, 2 실행)
-      </a>
+      <div class="server-input-group" style="max-width:320px;">
+        <input type="text" id="serverUrl" placeholder="https://xxxx.gradio.live (코랩 주소)">
+        <button type="button" class="btn-connect" id="btnConnect" style="background:#1f6feb;">창 열기</button>
+      </div>
     </div>
 
     <!-- Embedded Gradio App Container -->
