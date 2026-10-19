@@ -438,7 +438,7 @@
 
   <header>
     <div class="brand">
-      <h1>🎙️ AI Audio Studio <span class="badge">Colab Cloud Engine</span></h1>
+      <h1>🎙️ AI Audio Studio <span class="badge">Local RTX 3080</span></h1>
     </div>
     <a href="../index.html" class="home-btn" title="대시보드 메인으로 돌아가기">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -455,16 +455,16 @@
     <div class="server-bar">
       <div class="server-status">
         <div class="status-dot online" id="statusDot"></div>
-        <span id="statusText">💻 로컬 PC 스튜디오 모드</span>
+        <span id="statusText">💻 로컬 PC GPU 스튜디오 모드</span>
       </div>
       <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
         <a href="http://127.0.0.1:7860" target="_blank" class="btn-connect" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
           🚀 로컬 웹앱 즉시 열기 (127.0.0.1:7860)
         </a>
-        <span style="color:var(--muted); font-size:0.84rem;">(바탕화면/폴더의 <code>실행_로컬_스튜디오.bat</code> 더블클릭)</span>
+        <span style="color:var(--muted); font-size:0.84rem;">(폴더의 <code>실행_로컬_스튜디오.bat</code> 실행)</span>
       </div>
       <div class="server-input-group" style="max-width:320px;">
-        <input type="text" id="serverUrl" placeholder="https://xxxx.gradio.live (코랩 주소)">
+        <input type="text" id="serverUrl" placeholder="http://127.0.0.1:7860 (로컬 주소)">
         <button type="button" class="btn-connect" id="btnConnect" style="background:#1f6feb;">창 열기</button>
       </div>
     </div>
