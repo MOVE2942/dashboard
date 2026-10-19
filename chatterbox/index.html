@@ -35,7 +35,7 @@
       line-height: 1.6;
     }
     header {
-      padding: 16px 24px;
+      padding: 14px 24px;
       border-bottom: 1px solid var(--line);
       background: rgba(13, 17, 23, 0.85);
       backdrop-filter: blur(12px);
@@ -90,18 +90,20 @@
       color: #fff;
     }
     main {
-      max-width: 1140px;
+      max-width: 1200px;
       width: 100%;
       margin: 0 auto;
-      padding: 24px 20px 80px;
+      padding: 20px 20px 80px;
       flex: 1;
     }
+
+    /* Server Bar & Power Controls */
     .server-bar {
       background: var(--bg-panel);
       border: 1px solid var(--border-lit);
       border-radius: 14px;
-      padding: 16px 20px;
-      margin-bottom: 24px;
+      padding: 14px 20px;
+      margin-bottom: 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -126,20 +128,50 @@
       background: var(--accent);
       box-shadow: 0 0 12px var(--accent);
     }
+    .vram-ctrl-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .vram-meter {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #161b22;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 4px 10px;
+    }
+    .vram-progress-track {
+      width: 100px;
+      height: 8px;
+      background: #21262d;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .vram-progress-fill {
+      width: 38%;
+      height: 100%;
+      background: var(--accent);
+      transition: width 0.3s ease;
+    }
+
+    /* Grid Layout */
     .studio-grid {
       display: grid;
-      grid-template-columns: 340px 1fr;
-      gap: 24px;
+      grid-template-columns: 360px 1fr;
+      gap: 20px;
     }
-    @media (max-width: 900px) {
+    @media (max-width: 950px) {
       .studio-grid { grid-template-columns: 1fr; }
     }
     .panel-box {
       background: var(--bg-panel);
       border: 1px solid var(--line);
       border-radius: 14px;
-      padding: 20px;
-      margin-bottom: 24px;
+      padding: 18px;
+      margin-bottom: 20px;
     }
     .panel-box h3 {
       margin: 0 0 14px;
@@ -150,108 +182,185 @@
       align-items: center;
       gap: 8px;
     }
-    .upload-area {
-      border: 2px dashed var(--border-lit);
-      border-radius: 12px;
-      padding: 22px 14px;
-      text-align: center;
-      cursor: pointer;
-      background: #06080b;
-      transition: border-color 0.2s, background 0.2s;
-    }
-    .upload-area:hover, .upload-area.dragover {
-      border-color: var(--accent);
-      background: rgba(184, 255, 92, 0.04);
-    }
-    .upload-icon { font-size: 2rem; margin-bottom: 6px; }
-    .upload-text { font-size: 0.85rem; color: var(--muted); }
-    .voice-preview {
-      margin-top: 12px;
-      display: none;
-    }
-    .voice-preview audio { width: 100%; height: 38px; }
-    .form-group {
+
+    /* Engine Switcher Tabs */
+    .engine-tab-nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 4px;
+      background: #161b22;
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
       margin-bottom: 16px;
+    }
+    .eng-tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 8px 4px;
+      border-radius: 6px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .eng-tab-btn:hover {
+      color: #fff;
+    }
+    .eng-tab-btn.active {
+      background: var(--line);
+      color: var(--accent);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    .eng-pane {
+      display: none;
+      animation: fadeIn 0.2s ease;
+    }
+    .eng-pane.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Forms */
+    .form-group {
+      margin-bottom: 14px;
     }
     .form-group label {
       display: block;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 700;
+      color: var(--muted);
       margin-bottom: 6px;
-      color: #c9d1d9;
     }
     .form-control {
       width: 100%;
-      background: #06080b;
+      background: #161b22;
       border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 10px 12px;
       color: var(--text);
+      padding: 8px 12px;
+      border-radius: 8px;
       font-size: 0.88rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s;
     }
     .form-control:focus {
-      outline: none;
-      border-color: #58a6ff;
+      border-color: var(--accent);
     }
     .slider-row {
       display: flex;
       justify-content: space-between;
-      font-size: 0.78rem;
+      font-size: 0.72rem;
       color: var(--muted);
       margin-top: 4px;
     }
-    .tab-header {
+    .pill-group {
       display: flex;
-      gap: 8px;
-      border-bottom: 1px solid var(--line);
-      padding-bottom: 12px;
-      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
     }
-    .tab-btn {
-      padding: 8px 16px;
-      background: transparent;
+    .pill-btn {
+      background: #21262d;
       border: 1px solid var(--line);
-      border-radius: 8px;
-      color: var(--muted);
-      font-weight: 700;
-      font-size: 0.88rem;
+      color: #c9d1d9;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 12px;
       cursor: pointer;
+      transition: all 0.15s ease;
     }
-    .tab-btn.active {
-      background: rgba(184, 255, 92, 0.12);
+    .pill-btn:hover {
+      background: rgba(184, 255, 92, 0.15);
       border-color: var(--accent);
       color: var(--accent);
     }
+
+    /* Bulk Text & Toolbar */
     .bulk-textarea {
       width: 100%;
-      height: 220px;
-      background: #06080b;
+      height: 120px;
+      background: #161b22;
       border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 14px;
       color: var(--text);
-      font-family: var(--mono);
+      padding: 12px;
+      border-radius: 10px;
       font-size: 0.9rem;
-      line-height: 1.6;
+      font-family: inherit;
       resize: vertical;
-    }
-    .bulk-textarea:focus {
-      outline: none;
-      border-color: #58a6ff;
+      line-height: 1.5;
     }
     .helper-text {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 0.82rem;
+      margin-top: 6px;
+      font-size: 0.78rem;
       color: var(--muted);
-      margin-top: 8px;
     }
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      margin-top: 14px;
+      flex-wrap: wrap;
+    }
+    .btn-main {
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      background: var(--accent);
+      color: #06080b;
+      font-weight: 800;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 0 20px var(--accent-glow);
+      transition: transform 0.15s, background 0.15s;
+    }
+    .btn-main:hover {
+      transform: translateY(-2px);
+      background: #c9ff80;
+    }
+    .btn-main:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .btn-zip {
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--vio);
+      background: rgba(183, 157, 255, 0.1);
+      color: var(--vio);
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .btn-zip:hover:not(:disabled) {
+      background: var(--vio);
+      color: #000;
+    }
+    .btn-zip:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    /* Segment Cards */
     .segments-container {
       display: grid;
       gap: 12px;
-      margin-top: 20px;
-      max-height: 520px;
+      margin-top: 16px;
+      max-height: 560px;
       overflow-y: auto;
       padding-right: 4px;
     }
@@ -259,10 +368,10 @@
       background: var(--card-bg);
       border: 1px solid var(--line);
       border-radius: 10px;
-      padding: 14px 16px;
+      padding: 12px 14px;
       display: flex;
-      gap: 14px;
-      align-items: center;
+      gap: 12px;
+      align-items: flex-start;
       transition: border-color 0.2s;
     }
     .segment-card.generating {
@@ -273,14 +382,14 @@
       border-color: var(--accent);
     }
     .seg-num {
-      width: 32px;
-      height: 32px;
+      width: 28px;
+      height: 28px;
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.05);
       display: grid;
       place-items: center;
       font-family: var(--mono);
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: 800;
       color: var(--muted);
       flex-shrink: 0;
@@ -298,17 +407,18 @@
     .seg-player {
       display: none;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       margin-top: 6px;
     }
     .seg-player audio { height: 32px; flex: 1; }
     .seg-status-badge {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-family: var(--mono);
       padding: 2px 8px;
       border-radius: 4px;
       background: rgba(255, 255, 255, 0.06);
       color: var(--muted);
+      white-space: nowrap;
     }
     .seg-status-badge.working {
       background: rgba(255, 212, 71, 0.15);
@@ -318,10 +428,12 @@
       background: rgba(184, 255, 92, 0.15);
       color: var(--accent);
     }
+
+    /* Sound Enhancement Bar */
     .seg-tuning-bar {
       display: none;
-      margin-top: 8px;
-      padding-top: 8px;
+      margin-top: 6px;
+      padding-top: 6px;
       border-top: 1px dashed var(--line);
       align-items: center;
       gap: 6px;
@@ -351,9 +463,11 @@
       border-color: #ff5c5c;
       color: #ff5c5c;
     }
+
+    /* Multi-Take Box */
     .seg-multitake-box {
       display: none;
-      margin-top: 10px;
+      margin-top: 8px;
       background: rgba(0, 0, 0, 0.35);
       border: 1px solid var(--line);
       border-radius: 8px;
@@ -396,63 +510,13 @@
       border-color: var(--gold);
       color: #000;
     }
-    .toolbar {
-      display: flex;
-      gap: 12px;
-      margin-top: 20px;
-      flex-wrap: wrap;
-    }
-    .btn-main {
-      padding: 14px 28px;
-      border-radius: 10px;
-      border: none;
-      background: var(--accent);
-      color: #06080b;
-      font-weight: 800;
-      font-size: 1rem;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      box-shadow: 0 0 25px var(--accent-glow);
-      transition: transform 0.15s, background 0.15s;
-    }
-    .btn-main:hover {
-      transform: translateY(-2px);
-      background: #c9ff80;
-    }
-    .btn-main:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-      transform: none;
-      box-shadow: none;
-    }
-    .btn-zip {
-      padding: 14px 22px;
-      border-radius: 10px;
-      border: 1px solid var(--border-lit);
-      background: var(--card-bg);
-      color: var(--text);
-      font-weight: 700;
-      font-size: 0.95rem;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .btn-zip:hover {
-      border-color: #fff;
-    }
-    .btn-zip:disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
-    }
+
     footer {
       border-top: 1px solid var(--line);
-      padding: 24px 20px;
+      padding: 20px;
       text-align: center;
+      font-size: 0.8rem;
       color: var(--muted);
-      font-size: 0.85rem;
       background: var(--bg-panel);
     }
   </style>
@@ -461,179 +525,234 @@
 
   <header>
     <div class="brand">
-      <h1>🎙️ AI Audio Studio <span class="badge">Local RTX 3080</span></h1>
+      <h1>🎙️ All-in-One AI Audio Studio</h1>
+      <span class="badge">MULTI-ENGINE v2.5</span>
     </div>
-    <a href="https://move2942.github.io/dashboard/" class="home-btn" title="대시보드 메인으로 돌아가기">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-      </svg>
-      Home
+    <a href="https://move2942.github.io/dashboard/" class="home-btn" target="_blank" rel="noopener">
+      ← 통합 대시보드 Home
     </a>
   </header>
 
   <main>
-
+    <!-- Server Status & VRAM Power Bar -->
     <div class="server-bar">
       <div class="server-status">
-        <div class="status-dot online" id="statusDot"></div>
-        <span id="statusText">💻 로컬 RTX 3080 GPU 가속 활성화됨</span>
+        <div class="status-dot" id="statusDot"></div>
+        <span id="statusText">로컬 GPU 서버 확인 중...</span>
       </div>
-      <div style="font-size:0.85rem; color:var(--muted);">
-        엔진: Resemble AI Chatterbox Multilingual (23개 언어 원어민 억양)
+
+      <div class="vram-ctrl-box">
+        <div class="vram-meter">
+          <span style="font-size:0.75rem; color:var(--muted); font-weight:700;">RTX 3080 VRAM:</span>
+          <div class="vram-progress-track">
+            <div class="vram-progress-fill" id="vramBar"></div>
+          </div>
+          <span id="vramText" style="font-size:0.75rem; font-family:var(--mono); color:#f0f6fc;">4.5 / 12.0 GB</span>
+        </div>
+        <button type="button" class="tune-btn" onclick="clearVram()" title="VRAM 캐시 청소 및 메모리 최적화">🧹 VRAM 정리</button>
+        <button type="button" class="tune-btn tune-reset" onclick="shutdownServer()" title="로컬 서버 완전 종료 (VRAM 100% 반환)">⏹️ 서버 끄기</button>
       </div>
     </div>
 
-    <!-- Collapsible Model & System Environment Info (Default: Collapsed) -->
-    <details class="panel-box" id="systemDetailsBox" style="margin-bottom: 24px; padding: 14px 18px; cursor: pointer; border-color: var(--border-lit);">
-      <summary style="font-size: 0.9rem; font-weight: 700; color: #c9d1d9; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-        <span style="display:flex; align-items:center; gap:8px;">
-          <span class="status-dot online" style="width:10px; height:10px;"></span>
-          <span>💻 사용 모델 및 로컬 구동환경 스펙 정보</span>
-          <span style="font-size:0.75rem; color:var(--muted); font-family:var(--mono);">(RTX 3080 / CUDA 12.4 / 12GB VRAM)</span>
-        </span>
-        <span style="font-size: 0.8rem; color: var(--accent); font-weight: 600;">▼ 클릭하여 펼치기/접기</span>
+    <!-- Collapsible Hardware Spec Details -->
+    <details style="margin-bottom: 20px; background:var(--bg-panel); border:1px solid var(--line); border-radius:10px; padding:8px 14px;">
+      <summary style="cursor:pointer; font-size:0.84rem; font-weight:700; color:var(--muted);">
+        💻 로컬 구동 스펙 및 엔진 경로 상세 정보 (펼치기 / 접기)
       </summary>
-      <div id="systemInfoGrid" style="margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; font-size: 0.82rem; font-family: var(--mono); color: var(--muted);">
-        <div>가속 장치: <span style="color:#fff;" id="specGpu">NVIDIA RTX 3080</span></div>
-        <div>VRAM 사용량: <span style="color:#fff;" id="specVram">확인 중...</span></div>
-        <div>CUDA / PyTorch: <span style="color:#fff;" id="specCuda">CUDA 12.4 / 2.6.0</span></div>
-        <div>탑재 모델: <span style="color:var(--accent);" id="specModel">Chatterbox Multilingual</span></div>
-        <div>지원 언어 수: <span style="color:#fff;" id="specLangs">23개 언어</span></div>
-        <div>샘플링 레이트: <span style="color:#fff;" id="specSr">24,000 Hz</span></div>
-        <div>보관된 음성 프로필: <span style="color:var(--accent);" id="specVoices">0개</span></div>
-        <div>서버 포트: <span style="color:#fff;" id="specPort">127.0.0.1:7860</span></div>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:12px; margin-top:10px; font-size:0.8rem;">
+        <div><strong>GPU:</strong> <span id="specGpu">NVIDIA GeForce RTX 3080</span></div>
+        <div><strong>VRAM:</strong> <span id="specVram">4.5 GB / 12.0 GB</span></div>
+        <div><strong>가상환경 구조:</strong> <code>C:\Users\junni\.venvs\...</code> 일치화 완료</div>
+        <div><strong>서버 주소:</strong> <code>http://127.0.0.1:7860</code></div>
       </div>
     </details>
 
     <div class="studio-grid">
-
-      <!-- Left Column: Voice Library & Engine Config -->
+      <!-- Left Column: Voice Library + Multi-Engine Parameter Controller -->
       <div>
+        <!-- Voice Library Card Box -->
         <div class="panel-box">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
-            <h3 style="margin:0; font-size:1.05rem;">🎙️ 목소리 라이브러리</h3>
-            <span id="voiceCountBadge" style="font-size:0.75rem; background:rgba(184,255,92,0.15); color:var(--accent); padding:2px 8px; border-radius:12px; font-weight:700;">목록 로딩 중</span>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <h3 style="margin:0;">🎙️ 공통 참조 목소리 프로필</h3>
+            <span class="badge" id="voiceCountBadge">0개 보관됨</span>
           </div>
 
-          <!-- Section 1: Saved Voices List -->
-          <div style="font-size:0.83rem; font-weight:700; color:#c9d1d9; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">
-            <span>보관된 목소리 목록</span>
-            <span style="font-size:0.75rem; color:var(--muted); font-weight:normal;">클릭하여 선택</span>
-          </div>
-          
-          <div id="voiceCardsList" style="display:flex; flex-direction:column; gap:8px; max-height:220px; overflow-y:auto; margin-bottom:16px; padding-right:2px;">
-            <div style="font-size:0.8rem; color:var(--muted); text-align:center; padding:12px;">목소리 목록을 불러오는 중...</div>
+          <div id="voiceCardsList" style="display:grid; gap:8px; max-height:220px; overflow-y:auto; margin-bottom:12px;">
+            <!-- Dynamic Voice Profile Cards -->
           </div>
 
-          <!-- Section 2: Step-by-Step New Voice Registration -->
-          <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--line); border-radius: 10px; padding: 14px;">
-            <div style="font-weight: 700; font-size: 0.88rem; color: var(--accent); margin-bottom: 12px; display:flex; align-items:center; gap:6px;">
-              <span>➕ 새 목소리 프로필 추가 (3단계 등록)</span>
+          <div style="background:#161b22; border:1px solid var(--line); border-radius:8px; padding:12px;">
+            <label style="font-size:0.8rem; font-weight:700; color:var(--muted); display:block; margin-bottom:4px;">
+              ➕ 새 목소리 프로필 추가 (WAV/MP3)
+            </label>
+            <input type="text" class="form-control" id="newVoiceNameInput" placeholder="화자 이름 (예: 내 목소리 A)" style="margin-bottom:8px;">
+            <div class="upload-area" id="dropArea" onclick="openVoiceFileChooser(event)" style="padding:10px; border:1px dashed var(--line); border-radius:6px; cursor:pointer; text-align:center;">
+              <input type="file" id="voiceFileInput" accept="audio/*,.wav,.mp3,.m4a" style="display:none;" onchange="if(this.files.length) handleSelectedFile(this.files[0])">
+              <span id="dropText" style="font-size:0.8rem; color:var(--muted); font-weight:600;">📂 참조 음성 파일 선택 (10~30초)</span>
             </div>
-
-            <!-- Step 1: Voice Name -->
-            <div class="form-group" style="margin-bottom:10px;">
-              <label style="font-size:0.78rem; color:#8b949e; margin-bottom:4px; display:block;">
-                1단계: 목소리 주인공 이름 (프로필명)
-              </label>
-              <input type="text" class="form-control" id="newVoiceNameInput" placeholder="예: 옥집사님, 내목소리_차분한톤" style="padding:8px 10px; font-size:0.84rem;">
-            </div>
-
-            <!-- Step 2: File Select -->
-            <div class="form-group" style="margin-bottom:12px;">
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
-                <label style="font-size:0.78rem; color:#8b949e; margin:0;">
-                  2단계: 참조 음성 파일 선택 (10초~30초)
-                </label>
-                <button type="button" onclick="openVoiceFileChooser(event)" style="background:#21262d; border:1px solid var(--line); color:var(--accent); font-size:0.75rem; border-radius:4px; padding:2px 8px; cursor:pointer; font-weight:700;">
-                  📂 파일 찾아보기
-                </button>
-              </div>
-              <div class="upload-area" id="dropArea" onclick="openVoiceFileChooser(event)" style="padding:14px; border-style:dashed; cursor:pointer; text-align:center; transition:all 0.2s;">
-                <input type="file" id="voiceFileInput" accept="audio/*,video/*,.wav,.mp3,.m4a,.flac" style="display:none;" onchange="if(this.files.length) handleSelectedFile(this.files[0])">
-                <div id="dropText" style="font-size:0.84rem; color:#f0f6fc; font-weight:700; pointer-events:none;">
-                  📂 클릭하여 음성 파일 선택 (또는 파일 드래그)
-                </div>
-                <div style="font-size:0.75rem; color:var(--muted); margin-top:4px; pointer-events:none;">
-                  WAV, MP3, M4A 등 지원 (10초~30초 샘플 권장)
-                </div>
-              </div>
-              <div id="selectedFileNameLabel" style="font-size:0.75rem; color:var(--accent); margin-top:6px; display:none; word-break:break-all; font-weight:600;"></div>
-            </div>
-
-            <!-- Step 3: Save Button -->
-            <button type="button" class="btn-main" id="btnSaveVoiceProfile" style="width:100%; padding:10px; font-size:0.88rem; justify-content:center; box-shadow:none;">
-              💾 3단계: 라이브러리에 저장 & 즉시 활성화
+            <div id="selectedFileNameLabel" style="font-size:0.75rem; color:var(--accent); margin-top:4px; display:none; word-break:break-all;"></div>
+            <button type="button" class="btn-main" id="btnSaveVoiceProfile" style="width:100%; padding:8px; font-size:0.84rem; justify-content:center; margin-top:8px;">
+              💾 저장 & 즉시 활성화
             </button>
-            <div id="voiceUploadStatus" style="font-size:0.78rem; text-align:center; margin-top:6px; min-height:16px;"></div>
+            <div id="voiceUploadStatus" style="font-size:0.75rem; text-align:center; margin-top:4px; min-height:16px;"></div>
           </div>
         </div>
 
+        <!-- Smart Multi-Engine Dynamic Controller -->
         <div class="panel-box">
-          <h3>🎛️ 엔진 & 파라미터</h3>
-          <div class="form-group" id="langGroup">
-            <label>목표 언어 (Chatterbox)</label>
-            <select class="form-control" id="langSelect">
-              <option value="ko" selected>한국어 (Korean - ko)</option>
-              <option value="en">English (미국 영어 - en)</option>
-              <option value="ja">日本語 (일본어 - ja)</option>
-              <option value="es">Español (스페인어 - es)</option>
-              <option value="fr">Français (프랑스어 - fr)</option>
-              <option value="zh">中文 (중국어 - zh)</option>
-              <option value="de">Deutsch (독일어 - de)</option>
-              <option value="hi">हिन्दी (힌디어 - hi)</option>
-              <option value="it">Italiano (이탈리아어 - it)</option>
-              <option value="pt">Português (포르투갈어 - pt)</option>
-              <option value="ru">Русский (러시아어 - ru)</option>
-              <option value="ar">العربية (아랍어 - ar)</option>
-            </select>
+          <h3>🎛️ 엔진별 전용 파라미터 제어</h3>
+
+          <!-- Engine Switcher Tab Bar -->
+          <div class="engine-tab-nav">
+            <button type="button" class="eng-tab-btn active" id="tabBtn_chatterbox" onclick="switchEngineTab('chatterbox')">Chatterbox</button>
+            <button type="button" class="eng-tab-btn" id="tabBtn_cosyvoice" onclick="switchEngineTab('cosyvoice')">CosyVoice 2</button>
+            <button type="button" class="eng-tab-btn" id="tabBtn_f5tts" onclick="switchEngineTab('f5tts')">F5-TTS</button>
+            <button type="button" class="eng-tab-btn" id="tabBtn_rvc" onclick="switchEngineTab('rvc')">RVC v2</button>
           </div>
 
-          <div class="form-group">
-            <label>감정 세기 (Exaggeration: <span id="valExagg">0.8</span>)</label>
-            <input type="range" class="form-control" id="sliderExagg" min="0.0" max="3.0" step="0.05" value="0.8">
-            <div class="slider-row"><span>차분함 (0.0)</span><span>기본 (0.7)</span><span>강렬함/극적 (1.5)</span><span>최대 (3.0)</span></div>
+          <!-- Pane 1: Chatterbox -->
+          <div class="eng-pane active" id="pane_chatterbox">
+            <div class="form-group">
+              <label>목표 언어 (Target Language)</label>
+              <select class="form-control" id="langSelect">
+                <option value="ko" selected>한국어 (Korean - ko)</option>
+                <option value="en">English (미국 영어 - en)</option>
+                <option value="ja">日本語 (일본어 - ja)</option>
+                <option value="es">Español (스페인어 - es)</option>
+                <option value="fr">Français (프랑스어 - fr)</option>
+                <option value="zh">中文 (중국어 - zh)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>감정 세기 (Exaggeration: <span id="valExagg">0.8</span>)</label>
+              <input type="range" class="form-control" id="sliderExagg" min="0.0" max="3.0" step="0.05" value="0.8">
+              <div class="slider-row"><span>차분함 (0.0)</span><span>기본 (0.8)</span><span>극적 (3.0)</span></div>
+            </div>
+            <div class="form-group">
+              <label>생동감 텐션 (Temperature: <span id="valTemp">0.85</span>)</label>
+              <input type="range" class="form-control" id="sliderTemp" min="0.2" max="1.8" step="0.05" value="0.85">
+              <div class="slider-row"><span>단조로움 (0.2)</span><span>표준 (0.85)</span><span>장난기 (1.8)</span></div>
+            </div>
+            <div class="form-group">
+              <label>발화 속도 (Speed: <span id="valSpeed">1.0</span>x)</label>
+              <input type="range" class="form-control" id="sliderSpeed" min="0.7" max="1.6" step="0.05" value="1.0">
+              <div class="slider-row"><span>느리게 (0.7x)</span><span>기본 (1.0x)</span><span>빠르게 (1.6x)</span></div>
+            </div>
+            <div class="form-group">
+              <label>페이스 안정도 (CFG Weight: <span id="valCfg">0.5</span>)</label>
+              <input type="range" class="form-control" id="sliderCfg" min="0.1" max="1.8" step="0.05" value="0.5">
+              <div class="slider-row"><span>자유로운 억양 (0.1)</span><span>기본 (0.5)</span><span>엄격 일치 (1.8)</span></div>
+            </div>
+            <div class="form-group" style="background:#161b22; padding:8px 10px; border-radius:6px; border:1px solid var(--line);">
+              <label style="cursor:pointer; display:flex; align-items:center; gap:8px; margin:0; font-size:0.8rem;">
+                <input type="checkbox" id="chkConvertNumbers" checked style="accent-color:var(--accent);">
+                <span>🔢 숫자 자동 한글화 (10초 ➔ 십초)</span>
+              </label>
+            </div>
           </div>
 
-          <div class="form-group">
-            <label>까불거림 / 생동감 텐션 (Temperature: <span id="valTemp">0.85</span>)</label>
-            <input type="range" class="form-control" id="sliderTemp" min="0.2" max="1.8" step="0.05" value="0.85">
-            <div class="slider-row"><span>단조로움 (0.3)</span><span>표준 (0.8)</span><span>장난기/까불거림 (1.3+)</span></div>
+          <!-- Pane 2: CosyVoice 2 -->
+          <div class="eng-pane" id="pane_cosyvoice">
+            <div style="font-size:0.78rem; color:var(--vio); font-weight:700; margin-bottom:8px;">
+              🚀 CosyVoice 2 (0.5B Instruction LLM-TTS)
+            </div>
+            <div class="form-group">
+              <label>감정 지시어 프리셋 선택</label>
+              <div class="pill-group">
+                <button type="button" class="pill-btn" onclick="setCosyPrompt('[호들갑을 떨며 장난기 넘치고 흥분된 목소리로 말한다]')">💥 오프닝 훅</button>
+                <button type="button" class="pill-btn" onclick="setCosyPrompt('[긴장감 넘치고 다급하며 빠른 호흡으로 말한다]')">⚡ 위기/스릴러</button>
+                <button type="button" class="pill-btn" onclick="setCosyPrompt('[따뜻하고 부드럽고 다정한 미소를 띤 목소리로 말한다]')">💖 휴먼/감동</button>
+                <button type="button" class="pill-btn" onclick="setCosyPrompt('[위엄 있고 묵직하며 신뢰감 넘치는 목소리로 말한다]')">👑 뉴스/선언</button>
+                <button type="button" class="pill-btn" onclick="setCosyPrompt('[작은 소리로 은밀하게 속삭이듯 말한다]')">🤫 비밀/속삭임</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>감정 연출 지시문 (자유 직접 편집)</label>
+              <textarea class="form-control" id="cosyInstruction" style="height:70px; resize:none;">[호들갑을 떨며 장난기 넘치고 흥분된 목소리로 말한다]</textarea>
+            </div>
+            <div class="form-group">
+              <label>CosyVoice 발화 속도 (<span id="valCosySpeed">1.0</span>x)</label>
+              <input type="range" class="form-control" id="sliderCosySpeed" min="0.7" max="1.5" step="0.05" value="1.0">
+              <div class="slider-row"><span>0.7x</span><span>1.0x</span><span>1.5x</span></div>
+            </div>
           </div>
 
-          <div class="form-group">
-            <label>말하기 발화 속도 (Speed: <span id="valSpeed">1.0</span>x)</label>
-            <input type="range" class="form-control" id="sliderSpeed" min="0.7" max="1.6" step="0.05" value="1.0">
-            <div class="slider-row"><span>느리게 (0.7x)</span><span>기본 (1.0x)</span><span>빠르게 (1.3x)</span><span>초고속 (1.6x)</span></div>
+          <!-- Pane 3: F5-TTS -->
+          <div class="eng-pane" id="pane_f5tts">
+            <div style="font-size:0.78rem; color:var(--sky); font-weight:700; margin-bottom:8px;">
+              🌊 F5-TTS (Flow-Matching Non-autoregressive DiT)
+            </div>
+            <div class="form-group">
+              <label>디노이징 스텝 (NFE Steps: <span id="valF5Nfe">32</span>)</label>
+              <div class="pill-group" style="margin-bottom:6px;">
+                <button type="button" class="pill-btn" onclick="setF5Nfe(16)">16 스텝 (초고속 ~3초)</button>
+                <button type="button" class="pill-btn" onclick="setF5Nfe(32)">32 스텝 (균형 추천 ⭐)</button>
+                <button type="button" class="pill-btn" onclick="setF5Nfe(64)">64 스텝 (고음질 스튜디오)</button>
+              </div>
+              <input type="range" class="form-control" id="sliderF5Nfe" min="16" max="64" step="8" value="32">
+            </div>
+            <div class="form-group">
+              <label>가이던스 강도 (CFG: <span id="valF5Cfg">2.0</span>)</label>
+              <input type="range" class="form-control" id="sliderF5Cfg" min="1.0" max="3.0" step="0.1" value="2.0">
+              <div class="slider-row"><span>유연함 (1.0)</span><span>기본 (2.0)</span><span>엄격함 (3.0)</span></div>
+            </div>
+            <div class="form-group">
+              <label>F5-TTS 발화 속도 (<span id="valF5Speed">1.0</span>x)</label>
+              <input type="range" class="form-control" id="sliderF5Speed" min="0.7" max="1.5" step="0.05" value="1.0">
+              <div class="slider-row"><span>0.7x</span><span>1.0x</span><span>1.5x</span></div>
+            </div>
           </div>
 
-          <div class="form-group">
-            <label>페이스 안정도 (CFG Weight: <span id="valCfg">0.5</span>)</label>
-            <input type="range" class="form-control" id="sliderCfg" min="0.1" max="1.8" step="0.05" value="0.5">
-            <div class="slider-row"><span>자유로운 억양 (0.2)</span><span>기본 (0.5)</span><span>엄격 일치 (1.2)</span></div>
+          <!-- Pane 4: RVC v2 -->
+          <div class="eng-pane" id="pane_rvc">
+            <div style="font-size:0.78rem; color:var(--gold); font-weight:700; margin-bottom:8px;">
+              🎭 RVC v2 (음색 변환 / Audio-to-Audio)
+            </div>
+            <div class="form-group">
+              <label>타깃 음색 모델 (.pth & .index)</label>
+              <select class="form-control" id="rvcModelSelect">
+                <option value="sample_voice">Sample Voice (Tamamo v2)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>피치 변환 (Pitch Shift: <span id="valRvcPitch">0</span> 반음)</label>
+              <div class="pill-group" style="margin-bottom:6px;">
+                <button type="button" class="pill-btn" onclick="setRvcPitch(0)">0 (원본 음정)</button>
+                <button type="button" class="pill-btn" onclick="setRvcPitch(12)">+12 (여성/소년 톤)</button>
+                <button type="button" class="pill-btn" onclick="setRvcPitch(-12)">-12 (남성/중후 톤)</button>
+              </div>
+              <input type="range" class="form-control" id="sliderRvcPitch" min="-24" max="24" step="1" value="0">
+            </div>
+            <div class="form-group">
+              <label>피치 검출 알고리즘 (F0 Method)</label>
+              <select class="form-control" id="rvcF0Method">
+                <option value="rmvpe" selected>RMVPE (신경망 기반 권장 ⭐)</option>
+                <option value="harvest">Harvest (부드러운 음색)</option>
+                <option value="pm">PM (초고속)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>특징 검색 비율 (Index Rate: <span id="valRvcIndex">0.75</span>)</label>
+              <input type="range" class="form-control" id="sliderRvcIndex" min="0.0" max="1.0" step="0.05" value="0.75">
+            </div>
+            <div class="form-group">
+              <label>자음/호흡 보호도 (Protect: <span id="valRvcProtect">0.33</span>)</label>
+              <input type="range" class="form-control" id="sliderRvcProtect" min="0.0" max="0.5" step="0.01" value="0.33">
+            </div>
           </div>
 
-          <div class="form-group" style="margin-top:14px; background:rgba(255,255,255,0.03); padding:10px 12px; border-radius:8px; border:1px solid var(--line);">
-            <label style="cursor:pointer; display:flex; align-items:center; gap:8px; margin:0; font-size:0.83rem;">
-              <input type="checkbox" id="chkConvertNumbers" checked style="accent-color:var(--accent); width:16px; height:16px;">
-              <span>🔢 아라비아 숫자 자동 한글화 (10초 -> 십초)</span>
-            </label>
-          </div>
         </div>
       </div>
 
-      <!-- Right Column: Batch Narration Input & Output List -->
+      <!-- Right Column: Batch Narration Input & Multi-Take Results List -->
       <div>
         <div class="panel-box">
-          <div class="tab-header">
-            <button type="button" class="tab-btn active" id="tabBulk">📝 일괄 텍스트 털어넣기 (줄바꿈/구분자)</button>
-            <span style="margin-left:auto; font-size:0.85rem; color:var(--muted); align-self:center;">총 <span id="countCards" style="color:var(--accent); font-weight:800;">0</span>개 세그먼트</span>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+            <span style="font-weight:700; font-size:0.92rem;">📝 일괄 텍스트 털어넣기 (줄바꿈/구분자)</span>
+            <span style="font-size:0.85rem; color:var(--muted);">총 <span id="countCards" style="color:var(--accent); font-weight:800;">0</span>개 세그먼트</span>
           </div>
 
-          <!-- Bulk Input Mode -->
-          <div id="bulkView">
-            <textarea class="bulk-textarea" id="bulkInput" placeholder="여러 개의 나레이션 대본을 한 번에 털어넣으세요.
+          <textarea class="bulk-textarea" id="bulkInput" placeholder="여러 개의 나레이션 대본을 한 번에 털어넣으세요.
 엔터(줄바꿈) 또는 분절 심볼(--- 또는 ///)로 구분하면 자동으로 개별 오디오 세그먼트로 분리됩니다.
 
 예시:
@@ -641,14 +760,11 @@
 ---
 두 번째 장면에서는 실제 인공지능이 어떻게 목소리를 복제하는지 설명합니다.
 ---
-마지막 결론 부에서는 자연스럽게 마무리되는 나레이션을 들려줍니다."></textarea>
-            
-            <div class="helper-text">
-              <span>* 분절 기준: 빈 줄(엔터) 또는 <code>---</code>, <code>///</code> 기호</span>
-              <button type="button" id="btnParseBulk" style="background:#21262d; border:1px solid var(--line); color:var(--text); border-radius:6px; padding:4px 10px; cursor:pointer; font-size:0.8rem;">
-                ⬇️ 세그먼트 카드로 변환
-              </button>
-            </div>
+마지막 결론 부에서는 글로벌 23개 언어로 자연스럽게 확장되는 모습을 보여줍니다."></textarea>
+
+          <div class="helper-text">
+            <span>* 분절 기준: 빈 줄(엔터) 또는 <code>---</code>, <code>///</code> 기호</span>
+            <button type="button" id="btnParseBulk" class="tune-btn">⬇️ 세그먼트 카드로 변환</button>
           </div>
 
           <!-- Action Toolbar -->
@@ -658,30 +774,28 @@
               순차 일괄 생성 시작 (<span id="btnTotalCount">0</span>개)
             </button>
             <button type="button" class="btn-zip" id="btnDownloadZip" disabled>
-              📦 전체 오디오 ZIP 일괄 다운로드
+              📦 전체 채택본 ZIP 일괄 다운로드
             </button>
             <button type="button" id="btnClearAll" style="background:transparent; border:none; color:var(--muted); font-size:0.85rem; cursor:pointer; margin-left:auto;">
               전체 초기화
             </button>
           </div>
 
-          <!-- Segment Cards Result List -->
+          <!-- Segment Cards List -->
           <div class="segments-container" id="segmentsList">
-            <!-- Dynamic Cards will be rendered here -->
+            <!-- Dynamic Cards with Multi-Takes -->
           </div>
 
         </div>
       </div>
-
     </div>
-
   </main>
 
   <footer>
     <div style="margin-bottom: 8px;">
       <a href="https://move2942.github.io/dashboard/" style="color: var(--accent); text-decoration: none; font-weight: 700;">← 대시보드(Home)로 돌아가기</a>
     </div>
-    All-in-One AI Audio Studio · Resemble AI Chatterbox Multilingual · Move2942 Dashboard
+    All-in-One AI Audio Studio · Chatterbox · CosyVoice 2 · F5-TTS · RVC v2
   </footer>
 
   <script>
@@ -691,10 +805,15 @@
     let generatedBlobs = {};
     let originalBlobs = {};
     let currentBlobs = {};
+    let segmentTakes = {}; // idx -> [ { id, label, engine, blob, url, isAdopted } ]
+    let currentActiveVoiceId = null;
 
     const statusDot = document.getElementById('statusDot');
     const statusText = document.getElementById('statusText');
+    const vramBar = document.getElementById('vramBar');
+    const vramText = document.getElementById('vramText');
 
+    // Chatterbox Controls
     const langSelect = document.getElementById('langSelect');
     const sliderExagg = document.getElementById('sliderExagg');
     const valExagg = document.getElementById('valExagg');
@@ -706,15 +825,146 @@
     const valCfg = document.getElementById('valCfg');
     const chkConvertNumbers = document.getElementById('chkConvertNumbers');
 
-    const bulkInput = document.getElementById('bulkInput');
-    const btnParseBulk = document.getElementById('btnParseBulk');
-    const segmentsList = document.getElementById('segmentsList');
-    const countCards = document.getElementById('countCards');
-    const btnTotalCount = document.getElementById('btnTotalCount');
-    const btnGenerateAll = document.getElementById('btnGenerateAll');
-    const btnDownloadZip = document.getElementById('btnDownloadZip');
-    const btnClearAll = document.getElementById('btnClearAll');
+    // CosyVoice Controls
+    const cosyInstruction = document.getElementById('cosyInstruction');
+    const sliderCosySpeed = document.getElementById('sliderCosySpeed');
+    const valCosySpeed = document.getElementById('valCosySpeed');
 
+    // F5-TTS Controls
+    const sliderF5Nfe = document.getElementById('sliderF5Nfe');
+    const valF5Nfe = document.getElementById('valF5Nfe');
+    const sliderF5Cfg = document.getElementById('sliderF5Cfg');
+    const valF5Cfg = document.getElementById('valF5Cfg');
+    const sliderF5Speed = document.getElementById('sliderF5Speed');
+    const valF5Speed = document.getElementById('valF5Speed');
+
+    // RVC v2 Controls
+    const rvcModelSelect = document.getElementById('rvcModelSelect');
+    const sliderRvcPitch = document.getElementById('sliderRvcPitch');
+    const valRvcPitch = document.getElementById('valRvcPitch');
+    const rvcF0Method = document.getElementById('rvcF0Method');
+    const sliderRvcIndex = document.getElementById('sliderRvcIndex');
+    const valRvcIndex = document.getElementById('valRvcIndex');
+    const sliderRvcProtect = document.getElementById('sliderRvcProtect');
+    const valRvcProtect = document.getElementById('valRvcProtect');
+
+    // Sliders event listeners
+    sliderExagg.addEventListener('input', () => valExagg.textContent = sliderExagg.value);
+    sliderTemp.addEventListener('input', () => valTemp.textContent = sliderTemp.value);
+    sliderSpeed.addEventListener('input', () => valSpeed.textContent = sliderSpeed.value);
+    sliderCfg.addEventListener('input', () => valCfg.textContent = sliderCfg.value);
+    sliderCosySpeed.addEventListener('input', () => valCosySpeed.textContent = sliderCosySpeed.value);
+    sliderF5Nfe.addEventListener('input', () => valF5Nfe.textContent = sliderF5Nfe.value);
+    sliderF5Cfg.addEventListener('input', () => valF5Cfg.textContent = sliderF5Cfg.value);
+    sliderF5Speed.addEventListener('input', () => valF5Speed.textContent = sliderF5Speed.value);
+    sliderRvcPitch.addEventListener('input', () => valRvcPitch.textContent = sliderRvcPitch.value);
+    sliderRvcIndex.addEventListener('input', () => valRvcIndex.textContent = sliderRvcIndex.value);
+    sliderRvcProtect.addEventListener('input', () => valRvcProtect.textContent = sliderRvcProtect.value);
+
+    // Engine Switcher Tabs
+    window.switchEngineTab = function(name) {
+      document.querySelectorAll('.eng-tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.eng-pane').forEach(pane => pane.classList.remove('active'));
+
+      const activeBtn = document.getElementById(`tabBtn_${name}`);
+      const activePane = document.getElementById(`pane_${name}`);
+      if (activeBtn) activeBtn.classList.add('active');
+      if (activePane) activePane.classList.add('active');
+    };
+
+    window.setCosyPrompt = function(promptText) {
+      cosyInstruction.value = promptText;
+    };
+    window.setF5Nfe = function(nfe) {
+      sliderF5Nfe.value = nfe;
+      valF5Nfe.textContent = nfe;
+    };
+    window.setRvcPitch = function(pitch) {
+      sliderRvcPitch.value = pitch;
+      valRvcPitch.textContent = pitch;
+    };
+
+    // System Info & VRAM Poll
+    async function initSystemInfo() {
+      try {
+        const res = await fetch('/api/system_info');
+        if (res.ok) {
+          const data = await res.json();
+          statusDot.className = "status-dot online";
+          statusText.textContent = `💻 로컬 GPU 활성화됨 (${data.gpu_name})`;
+
+          const used = data.vram_used_gb || 4.5;
+          const total = data.vram_total_gb || 12.0;
+          const pct = Math.min(100, Math.round((used / total) * 100));
+          vramBar.style.width = `${pct}%`;
+          vramText.textContent = `${used} / ${total} GB (여유: ${data.vram_free_gb} GB)`;
+
+          document.getElementById('specGpu').textContent = data.gpu_name;
+          document.getElementById('specVram').textContent = `${used} GB / ${total} GB (여유: ${data.vram_free_gb} GB)`;
+        }
+      } catch (e) {
+        statusDot.className = "status-dot";
+        statusText.textContent = "💻 로컬 서버 연결 대기 중";
+      }
+    }
+    initSystemInfo();
+    setInterval(initSystemInfo, 10000);
+
+    // VRAM Clear
+    window.clearVram = async function() {
+      try {
+        const res = await fetch('/api/server/clear_vram', { method: 'POST' });
+        if (res.ok) {
+          const d = await res.json();
+          const used = d.vram_used_gb;
+          const total = d.vram_total_gb;
+          const pct = Math.min(100, Math.round((used / total) * 100));
+          vramBar.style.width = `${pct}%`;
+          vramText.textContent = `${used} / ${total} GB (여유: ${d.vram_free_gb} GB)`;
+          alert(`VRAM 클린업 완료!\n현재 여유 VRAM: ${d.vram_free_gb} GB`);
+        }
+      } catch (err) {
+        alert('VRAM 정리 실패: ' + err.message);
+      }
+    };
+
+    // Server Shutdown
+    window.shutdownServer = async function() {
+      if (!confirm("All-in-One Studio 서버를 완전히 종료하시겠습니까?\n모든 GPU VRAM이 100% 회수됩니다.\n(다시 켜려면 윈도우 시작메뉴의 바로가기를 클릭하세요)")) {
+        return;
+      }
+      try {
+        await fetch('/api/server/shutdown', { method: 'POST' });
+        statusDot.className = "status-dot";
+        statusText.textContent = "⏹️ 서버 종료됨 (VRAM 회수 완료)";
+        alert("로컬 서버가 정상 종료되었습니다.\nVRAM이 완전히 반환되었습니다.");
+      } catch (err) {
+        alert("종료 신호 전송 완료");
+      }
+    };
+
+    // RVC Models Loader
+    async function loadRvcModels() {
+      try {
+        const res = await fetch('/api/rvc_models');
+        if (res.ok) {
+          const data = await res.json();
+          const models = data.models || [];
+          if (models.length > 0) {
+            rvcModelSelect.innerHTML = '';
+            models.forEach(m => {
+              const opt = document.createElement('option');
+              opt.value = m.id;
+              opt.textContent = `${m.name} (${m.model_file})`;
+              rvcModelSelect.appendChild(opt);
+            });
+          }
+        }
+      } catch (e) {}
+    }
+    loadRvcModels();
+
+    // Voice Library
     const voiceCardsList = document.getElementById('voiceCardsList');
     const voiceCountBadge = document.getElementById('voiceCountBadge');
     const newVoiceNameInput = document.getElementById('newVoiceNameInput');
@@ -724,40 +974,8 @@
     const selectedFileNameLabel = document.getElementById('selectedFileNameLabel');
     const btnSaveVoiceProfile = document.getElementById('btnSaveVoiceProfile');
     const voiceUploadStatus = document.getElementById('voiceUploadStatus');
-
     let pendingVoiceFile = null;
-    let currentActiveVoiceId = null;
 
-    sliderExagg.addEventListener('input', () => valExagg.textContent = sliderExagg.value);
-    sliderTemp.addEventListener('input', () => valTemp.textContent = sliderTemp.value);
-    sliderSpeed.addEventListener('input', () => valSpeed.textContent = sliderSpeed.value);
-    sliderCfg.addEventListener('input', () => valCfg.textContent = sliderCfg.value);
-
-    // Initial Health Check & System Specs
-    async function initSystemInfo() {
-      try {
-        const res = await fetch('/api/system_info');
-        if (res.ok) {
-          const data = await res.json();
-          statusDot.className = "status-dot online";
-          statusText.textContent = `💻 로컬 GPU 가속 활성화됨 (${data.gpu_name})`;
-          
-          document.getElementById('specGpu').textContent = data.gpu_name;
-          document.getElementById('specVram').textContent = `${data.vram_used_gb} GB / ${data.vram_total_gb} GB (여유: ${data.vram_free_gb} GB)`;
-          document.getElementById('specCuda').textContent = `CUDA ${data.cuda_version} / PyTorch ${data.torch_version}`;
-          document.getElementById('specModel').textContent = data.model_id;
-          document.getElementById('specLangs').textContent = `${data.supported_languages}개 언어`;
-          document.getElementById('specSr').textContent = data.sample_rate;
-          document.getElementById('specVoices').textContent = `${data.voice_count}개 보관됨`;
-          document.getElementById('specPort').textContent = `127.0.0.1:${data.server_port}`;
-        }
-      } catch (e) {
-        statusText.textContent = "💻 로컬 서버 연결 대기 중";
-      }
-    }
-    initSystemInfo();
-
-    // Voice Library Card List Loader
     async function loadVoiceLibrary() {
       try {
         const res = await fetch('/api/voices');
@@ -768,7 +986,7 @@
           voiceCardsList.innerHTML = '';
 
           if (voices.length === 0) {
-            voiceCardsList.innerHTML = '<div style="font-size:0.8rem; color:var(--muted); text-align:center; padding:16px; border:1px dashed var(--line); border-radius:8px;">보관된 목소리가 없습니다.<br>아래 [새 목소리 프로필 추가]에서 등록해 주세요.</div>';
+            voiceCardsList.innerHTML = '<div style="font-size:0.75rem; color:var(--muted); text-align:center; padding:12px; border:1px dashed var(--line); border-radius:6px;">보관된 목소리가 없습니다.<br>아래에서 등록해 주세요.</div>';
             return;
           }
 
@@ -785,163 +1003,134 @@
               background: ${isActive ? 'rgba(184, 255, 92, 0.08)' : 'var(--card-bg)'};
               border: 1px solid ${isActive ? 'var(--accent)' : 'var(--line)'};
               border-radius: 8px;
-              padding: 10px 12px;
+              padding: 8px 10px;
               transition: all 0.2s;
             `;
 
             card.innerHTML = `
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-                <div style="font-weight:700; font-size:0.9rem; color:${isActive ? 'var(--accent)' : '#fff'}; display:flex; align-items:center; gap:6px;">
-                  <span>🎙️ ${escapeHtml(v.name)}</span>
-                  ${isActive ? '<span style="font-size:0.7rem; background:rgba(184,255,92,0.2); color:var(--accent); padding:1px 6px; border-radius:4px;">사용 중 ✅</span>' : ''}
+              <div style="display:flex; justify-content:space-between; align-items:center;">
+                <div style="font-weight:700; font-size:0.85rem; color:${isActive ? 'var(--accent)' : '#fff'};">
+                  🎙️ ${escapeHtml(v.name)}
                 </div>
-                <div style="display:flex; gap:6px; align-items:center;">
-                  ${!isActive ? `<button type="button" onclick="selectVoiceProfile('${v.id}')" style="background:#21262d; border:1px solid var(--border-lit); color:#f0f6fc; border-radius:4px; padding:3px 8px; font-size:0.75rem; cursor:pointer; font-weight:700;">선택</button>` : ''}
-                  <button type="button" onclick="deleteVoiceProfile('${v.id}', '${escapeHtml(v.name)}')" title="삭제" style="background:transparent; border:none; color:var(--muted); cursor:pointer; font-size:0.9rem; padding:2px 4px;">🗑️</button>
+                <div style="display:flex; align-items:center; gap:6px;">
+                  <button type="button" class="tune-btn" onclick="activateVoice('${v.id}')" style="${isActive ? 'background:var(--accent); color:#000; border-color:var(--accent);' : ''}">
+                    ${isActive ? '✅ 활성화됨' : '선택'}
+                  </button>
+                  <button type="button" class="tune-btn tune-reset" onclick="deleteVoice('${v.id}', '${escapeHtml(v.name)}')">✕</button>
                 </div>
               </div>
-              <div style="font-size:0.74rem; color:var(--muted); margin-bottom:6px;">
-                ${v.created_at || ''} · ${v.size_kb} KB
-              </div>
-              <audio controls src="${v.url}" style="width:100%; height:28px; border-radius:4px;"></audio>
             `;
-
             voiceCardsList.appendChild(card);
           });
-
-          selectedVoiceFile = (voices.length > 0);
         }
-      } catch (err) {
-        console.error("목소리 라이브러리 로드 실패:", err);
-      }
+      } catch (err) {}
     }
     loadVoiceLibrary();
 
-    // Select Voice Profile
-    window.selectVoiceProfile = async function(voiceId) {
-      if (!voiceId) return;
-      currentActiveVoiceId = voiceId;
-      try {
-        const fd = new FormData();
-        fd.append('voice_id', voiceId);
-        fd.append('exagg', sliderExagg.value);
-        const res = await fetch('/api/voices/select', { method: 'POST', body: fd });
-        if (res.ok) {
-          loadVoiceLibrary();
-          initSystemInfo();
-        }
-      } catch (e) {
-        console.error(e);
-      }
-    };
-
-    // Delete Voice Profile
-    window.deleteVoiceProfile = async function(voiceId, voiceName) {
-      if (!confirm(`[${voiceName}] 목소리 프로필을 라이브러리에서 영구 삭제하시겠습니까?`)) return;
-      try {
-        const fd = new FormData();
-        fd.append('voice_id', voiceId);
-        const res = await fetch('/api/voices/delete', { method: 'POST', body: fd });
-        if (res.ok) {
-          if (currentActiveVoiceId === voiceId) currentActiveVoiceId = null;
-          await loadVoiceLibrary();
-          initSystemInfo();
-        }
-      } catch (e) {
-        alert('삭제 중 오류가 발생했습니다.');
-      }
-    };
-
-    // File selection for new voice
     window.openVoiceFileChooser = function(e) {
-      if (e) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-      const inp = document.getElementById('voiceFileInput');
-      if (inp) inp.click();
+      if (e) e.stopPropagation();
+      voiceFileInput.click();
     };
 
-    dropArea.addEventListener('dragover', (e) => { e.preventDefault(); dropArea.style.borderColor = 'var(--accent)'; });
-    dropArea.addEventListener('dragleave', () => { dropArea.style.borderColor = 'var(--border-lit)'; });
-    dropArea.addEventListener('drop', (e) => {
-      e.preventDefault();
-      dropArea.style.borderColor = 'var(--border-lit)';
-      if (e.dataTransfer && e.dataTransfer.files.length) handleSelectedFile(e.dataTransfer.files[0]);
-    });
-    voiceFileInput.addEventListener('change', (e) => {
-      if (e.target.files && e.target.files.length) handleSelectedFile(e.target.files[0]);
-    });
-
-    function handleSelectedFile(file) {
+    window.handleSelectedFile = function(file) {
       if (!file) return;
       pendingVoiceFile = file;
-      dropText.innerHTML = `📁 <span style="color:var(--accent); font-weight:800;">${escapeHtml(file.name)}</span> (${Math.round(file.size/1024)} KB)`;
-      selectedFileNameLabel.textContent = `선택된 파일: ${file.name}`;
-      selectedFileNameLabel.style.display = 'block';
+      dropText.innerHTML = `✅ <strong>${escapeHtml(file.name)}</strong> (${(file.size / 1024 / 1024).toFixed(2)} MB)`;
+      dropArea.style.borderColor = "var(--accent)";
+      dropArea.style.background = "rgba(184, 255, 92, 0.08)";
       if (!newVoiceNameInput.value.trim()) {
-        newVoiceNameInput.value = file.name.replace(/\.[^/.]+$/, "");
+        const pureName = file.name.replace(/\.[^/.]+$/, "");
+        newVoiceNameInput.value = pureName;
       }
-    }
-    window.handleSelectedFile = handleSelectedFile;
+    };
 
-    // Step 3 Save & Upload Button
+    dropArea.addEventListener('dragover', (e) => { e.preventDefault(); dropArea.style.borderColor = "var(--accent)"; });
+    dropArea.addEventListener('dragleave', (e) => { e.preventDefault(); dropArea.style.borderColor = "var(--line)"; });
+    dropArea.addEventListener('drop', (e) => {
+      e.preventDefault();
+      if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+        handleSelectedFile(e.dataTransfer.files[0]);
+      }
+    });
+
     btnSaveVoiceProfile.addEventListener('click', async () => {
       const name = newVoiceNameInput.value.trim();
-      if (!name) {
-        alert('1단계: 목소리 주인공 이름(프로필명)을 입력해 주세요.');
-        newVoiceNameInput.focus();
-        return;
-      }
-      if (!pendingVoiceFile) {
-        alert('2단계: 참조 음성 파일을 선택해 주세요.');
-        dropArea.scrollIntoView({ behavior: 'smooth' });
-        return;
-      }
+      if (!name) { alert('화자 이름을 입력해 주세요.'); newVoiceNameInput.focus(); return; }
+      if (!pendingVoiceFile) { alert('참조 음성 파일을 선택해 주세요.'); return; }
 
       btnSaveVoiceProfile.disabled = true;
-      voiceUploadStatus.style.color = 'var(--gold)';
-      voiceUploadStatus.textContent = '⚡ 음성 변환 및 화자 임베딩 분석 중... 잠시만 기다려주세요.';
+      voiceUploadStatus.style.color = "var(--gold)";
+      voiceUploadStatus.textContent = "업로드 및 등록 중...";
 
       try {
-        const fd = new FormData();
-        fd.append('name', name);
-        fd.append('voice_file', pendingVoiceFile);
-        fd.append('exagg', sliderExagg.value);
+        const formData = new FormData();
+        formData.append("name", name);
+        formData.append("voice_file", pendingVoiceFile);
 
-        const res = await fetch('/api/voices/upload', { method: 'POST', body: fd });
-        if (res.ok) {
-          const data = await res.json();
-          voiceUploadStatus.style.color = 'var(--accent)';
-          voiceUploadStatus.textContent = `🎉 [${data.voice.name}] 프로필이 저장되고 활성화되었습니다!`;
-          newVoiceNameInput.value = '';
-          pendingVoiceFile = null;
-          dropText.textContent = '🎧 클릭하여 파일 선택 또는 드래그';
-          selectedFileNameLabel.style.display = 'none';
-          currentActiveVoiceId = data.voice.id;
-          await loadVoiceLibrary();
-          initSystemInfo();
-        } else {
-          const err = await res.json();
-          throw new Error(err.detail || '저장 실패');
-        }
+        const res = await fetch('/api/voices', { method: 'POST', body: formData });
+        if (!res.ok) throw new Error(`등록 실패 (${res.status})`);
+
+        const data = await res.json();
+        currentActiveVoiceId = data.voice.id;
+        selectedVoiceFile = pendingVoiceFile;
+
+        voiceUploadStatus.style.color = "var(--accent)";
+        voiceUploadStatus.textContent = "✅ 등록 및 활성화 완료!";
+        newVoiceNameInput.value = '';
+        pendingVoiceFile = null;
+        dropText.textContent = "📂 참조 음성 파일 선택 (10~30초)";
+        dropArea.style.borderColor = "var(--line)";
+        dropArea.style.background = "transparent";
+
+        await loadVoiceLibrary();
+        setTimeout(() => { voiceUploadStatus.textContent = ''; }, 2500);
       } catch (err) {
-        voiceUploadStatus.style.color = 'var(--red)';
-        voiceUploadStatus.textContent = `오류: ${err.message}`;
+        voiceUploadStatus.style.color = "var(--red)";
+        voiceUploadStatus.textContent = "✕ " + err.message;
       } finally {
         btnSaveVoiceProfile.disabled = false;
       }
     });
 
-    // Parse Bulk Text into Segments
+    window.activateVoice = async function(voiceId) {
+      try {
+        const res = await fetch(`/api/voices/${voiceId}/activate`, { method: 'POST' });
+        if (res.ok) {
+          currentActiveVoiceId = voiceId;
+          await loadVoiceLibrary();
+        }
+      } catch (err) {}
+    };
+
+    window.deleteVoice = async function(voiceId, name) {
+      if (!confirm(`'${name}' 목소리 프로필을 삭제하시겠습니까?`)) return;
+      try {
+        const res = await fetch(`/api/voices/${voiceId}`, { method: 'DELETE' });
+        if (res.ok) {
+          if (currentActiveVoiceId === voiceId) currentActiveVoiceId = null;
+          await loadVoiceLibrary();
+        }
+      } catch (err) {}
+    };
+
+    // Bulk Parser & Segment Rendering
+    const bulkInput = document.getElementById('bulkInput');
+    const btnParseBulk = document.getElementById('btnParseBulk');
+    const segmentsList = document.getElementById('segmentsList');
+    const countCards = document.getElementById('countCards');
+    const btnTotalCount = document.getElementById('btnTotalCount');
+    const btnGenerateAll = document.getElementById('btnGenerateAll');
+    const btnDownloadZip = document.getElementById('btnDownloadZip');
+    const btnClearAll = document.getElementById('btnClearAll');
+
     function parseBulkText() {
-      const raw = bulkInput.value.trim();
-      if (!raw) {
+      const text = bulkInput.value;
+      if (!text.trim()) {
         segments = [];
         renderSegments();
         return;
       }
-      const rawParts = raw.split(/(?:\r?\n\s*---\s*\r?\n|\r?\n\s*\/\/\/\s*\r?\n|\r?\n\r?\n)/);
+      const rawParts = text.split(/(?:\r?\n\s*---\s*\r?\n)|(?:\r?\n\s*\/\/\/\s*\r?\n)|(?:\r?\n\s*\r?\n)/);
       const parsed = [];
       rawParts.forEach(p => {
         const clean = p.trim();
@@ -966,45 +1155,43 @@
 
         card.innerHTML = `
           <div class="seg-num">${idx + 1}</div>
-          <div class="seg-content" style="flex:1;">
+          <div class="seg-content">
             <p class="seg-text">${escapeHtml(text)}</p>
             <div class="seg-player" id="playerWrap_${idx}">
               <audio id="audio_${idx}" controls></audio>
               <a id="dl_${idx}" download="narration_${String(idx+1).padStart(2,'0')}.wav" style="color:var(--accent); font-size:0.8rem; text-decoration:none; font-weight:700;">⬇️ 저장</a>
             </div>
-            <!-- 음질 보정 바 (볼륨 정규화 및 잡음 제거) -->
+            
+            <!-- Sound Enhancement Bar -->
             <div class="seg-tuning-bar" id="tuningBar_${idx}">
               <span style="font-size:0.75rem; color:var(--muted); font-weight:700;">음질 보정:</span>
-              <button type="button" class="tune-btn" onclick="enhanceSegment(${idx}, 'normalize')" title="방송 표준 볼륨 정규화 (-1 dBFS)">🔊 볼륨 정규화</button>
-              <button type="button" class="tune-btn" onclick="enhanceSegment(${idx}, 'denoise')" title="마이크 험 노이즈 및 배경 잡음 제거">🧹 잡음 제거(Denoise)</button>
-              <button type="button" class="tune-btn tune-reset" id="btnReset_${idx}" style="display:none;" onclick="resetSegmentAudio(${idx})" title="원본으로 되돌리기">↺ 원본 복귀</button>
+              <button type="button" class="tune-btn" onclick="enhanceSegment(${idx}, 'normalize')">🔊 볼륨 정규화</button>
+              <button type="button" class="tune-btn" onclick="enhanceSegment(${idx}, 'denoise')">🧹 잡음 제거</button>
+              <button type="button" class="tune-btn tune-reset" id="btnReset_${idx}" style="display:none;" onclick="resetSegmentAudio(${idx})">↺ 원본 복귀</button>
               <span id="tuneStatus_${idx}" style="font-size:0.72rem; color:var(--accent); margin-left:auto;"></span>
             </div>
 
-            <!-- 세컨드 툴 선별적 멀티 엔진 재시도 -->
+            <!-- Second Tool Multi-Engine Selective Retry -->
             <div class="seg-multitake-box" id="multitakeBox_${idx}">
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-                <span style="font-size:0.78rem; font-weight:800; color:var(--vio); display:flex; align-items:center; gap:6px;">
-                  🔄 세컨드 툴 선별적 재시도 (Multi-Engine Retry)
-                </span>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                <span style="font-size:0.76rem; font-weight:800; color:var(--vio);">🔄 세컨드 툴 선별적 재시도 (Multi-Take)</span>
                 <span id="takeBadge_${idx}" style="font-size:0.72rem; color:var(--gold); font-weight:700;"></span>
               </div>
               
               <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:8px;">
-                <button type="button" class="tune-btn" onclick="retryWithCosyVoice(${idx})" title="강렬한 감정, 흥분, 호들갑 훅 스피치 재시도" style="border-color:rgba(183,157,255,0.4); color:var(--vio);">
+                <button type="button" class="tune-btn" onclick="retryWithCosyVoice(${idx})" style="border-color:rgba(183,157,255,0.4); color:var(--vio);">
                   🚀 CosyVoice 2 (감정/훅)
                 </button>
-                <button type="button" class="tune-btn" onclick="retryWithF5TTS(${idx})" title="플로우 매칭 기반 자연스럽고 차분한 설명조 나레이션 재시도" style="border-color:rgba(143,211,255,0.4); color:var(--sky);">
+                <button type="button" class="tune-btn" onclick="retryWithF5TTS(${idx})" style="border-color:rgba(143,211,255,0.4); color:var(--sky);">
                   🌊 F5-TTS (차분/설명)
                 </button>
-                <button type="button" class="tune-btn" onclick="retryWithRVC(${idx})" title="RVC v2 모델로 음색 변환" style="border-color:rgba(255,212,71,0.4); color:var(--gold);">
+                <button type="button" class="tune-btn" onclick="retryWithRVC(${idx})" style="border-color:rgba(255,212,71,0.4); color:var(--gold);">
                   🎭 RVC v2 (음색변환)
                 </button>
               </div>
 
-              <!-- Takes List (A/B Comparison) -->
-              <div class="takes-list" id="takesList_${idx}" style="display:flex; flex-direction:column; gap:6px;">
-              </div>
+              <!-- Takes List (A/B/C/D Comparison) -->
+              <div class="takes-list" id="takesList_${idx}" style="display:flex; flex-direction:column; gap:6px;"></div>
               <div id="retryStatus_${idx}" style="font-size:0.74rem; color:var(--accent); min-height:16px; margin-top:4px;"></div>
             </div>
           </div>
@@ -1023,20 +1210,16 @@
         bulkInput.value = '';
         segments = [];
         generatedBlobs = {};
+        segmentTakes = {};
         renderSegments();
         btnDownloadZip.disabled = true;
       }
     });
 
-    // Sequential Batch Audio Generation
+    // Batch Generation (Chatterbox)
     btnGenerateAll.addEventListener('click', async () => {
-      if (!selectedVoiceFile) {
-        alert('좌측에서 내 목소리 샘플(mp3/wav)을 먼저 업로드해 주세요.');
-        dropArea.scrollIntoView({ behavior: 'smooth' });
-        return;
-      }
       if (segments.length === 0) {
-        alert('생성할 나레이션 대본 텍스트를 입력해 주세요.');
+        alert('대본 텍스트를 입력해 주세요.');
         bulkInput.focus();
         return;
       }
@@ -1044,13 +1227,6 @@
       isGenerating = true;
       btnGenerateAll.disabled = true;
       btnDownloadZip.disabled = true;
-
-      const lang = langSelect.value;
-      const exagg = sliderExagg.value;
-      const temp = sliderTemp.value;
-      const spd = sliderSpeed.value;
-      const cfg = sliderCfg.value;
-      const convNum = chkConvertNumbers.checked ? 'true' : 'false';
 
       for (let i = 0; i < segments.length; i++) {
         const card = document.getElementById(`segCard_${i}`);
@@ -1067,24 +1243,16 @@
         try {
           const formData = new FormData();
           formData.append('text', segments[i]);
-          formData.append('lang', lang);
-          formData.append('exaggeration', exagg);
-          formData.append('temperature', temp);
-          formData.append('speed', spd);
-          formData.append('cfg_weight', cfg);
-          formData.append('convert_numbers', convNum);
-          if (selectedVoiceFile instanceof File || selectedVoiceFile instanceof Blob) {
-            formData.append('voice_file', selectedVoiceFile);
-          }
+          formData.append('lang', langSelect.value);
+          formData.append('exaggeration', sliderExagg.value);
+          formData.append('temperature', sliderTemp.value);
+          formData.append('speed', sliderSpeed.value);
+          formData.append('cfg_weight', sliderCfg.value);
+          formData.append('convert_numbers', chkConvertNumbers.checked ? 'true' : 'false');
+          if (selectedVoiceFile) formData.append('voice_file', selectedVoiceFile);
 
-          const res = await fetch('/api/synthesize', {
-            method: 'POST',
-            body: formData
-          });
-
-          if (!res.ok) {
-            throw new Error(`HTTP Error: ${res.status}`);
-          }
+          const res = await fetch('/api/synthesize', { method: 'POST', body: formData });
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
           const blob = await res.blob();
           originalBlobs[i] = blob;
@@ -1099,7 +1267,7 @@
           const tuningBar = document.getElementById(`tuningBar_${i}`);
           if (tuningBar) tuningBar.style.display = 'flex';
 
-          // Multi-take 등록 (Take 1: Chatterbox 기본)
+          // Multi-take 등록 (Take 1: Chatterbox)
           addSegmentTake(i, 'Take 1 [Chatterbox 기본]', 'chatterbox', blob, true);
           const multitakeBox = document.getElementById(`multitakeBox_${i}`);
           if (multitakeBox) multitakeBox.style.display = 'block';
@@ -1108,7 +1276,6 @@
           badge.className = 'seg-status-badge ready';
           badge.textContent = '완료 ✅';
         } catch (err) {
-          console.error(err);
           card.className = 'segment-card';
           badge.className = 'seg-status-badge';
           badge.style.color = 'var(--red)';
@@ -1123,9 +1290,7 @@
       }
     });
 
-    // Multi-Take State & Management
-    let segmentTakes = {}; // idx -> [ { id, label, engine, blob, url, isAdopted } ]
-
+    // Multi-Take Management
     window.addSegmentTake = function(idx, label, engine, blob, autoAdopt = false) {
       if (!segmentTakes[idx]) segmentTakes[idx] = [];
       const url = URL.createObjectURL(blob);
@@ -1166,14 +1331,14 @@
 
         row.innerHTML = `
           <div style="display:flex; align-items:center; gap:8px; flex:1; min-width:0;">
-            <span style="font-weight:700; color:${engineColor}; font-size:0.78rem; white-space:nowrap;">${engineIcon} ${escapeHtml(t.label)}</span>
-            <audio src="${t.url}" controls style="height:28px; max-width:220px; flex:1;"></audio>
+            <span style="font-weight:700; color:${engineColor}; font-size:0.76rem; white-space:nowrap;">${engineIcon} ${escapeHtml(t.label)}</span>
+            <audio src="${t.url}" controls style="height:28px; max-width:200px; flex:1;"></audio>
           </div>
           <div style="display:flex; align-items:center; gap:6px;">
             <button type="button" class="take-btn-adopt ${t.isAdopted ? 'active' : ''}" onclick="adoptTake(${idx}, '${t.id}', true)">
               ${t.isAdopted ? '⭐ 채택됨' : '선택 채택'}
             </button>
-            <a href="${t.url}" download="narration_${String(idx+1).padStart(2,'0')}_${t.engine}.wav" style="color:var(--accent); font-size:0.75rem; text-decoration:none;" title="해당 테이크 다운로드">⬇️</a>
+            <a href="${t.url}" download="narration_${String(idx+1).padStart(2,'0')}_${t.engine}.wav" style="color:var(--accent); font-size:0.75rem; text-decoration:none;">⬇️</a>
           </div>
         `;
         container.appendChild(row);
@@ -1197,7 +1362,7 @@
       });
       if (adopted) {
         currentBlobs[idx] = adopted.blob;
-        generatedBlobs[idx] = adopted.blob; // 최종 ZIP 압축 파일에 반영!
+        generatedBlobs[idx] = adopted.blob; // 최종 ZIP 패키지에 반영!
         const audioEl = document.getElementById(`audio_${idx}`);
         const dlLink = document.getElementById(`dl_${idx}`);
         if (audioEl) {
@@ -1217,41 +1382,24 @@
       }
     };
 
-    // CosyVoice 2 Retry Handler
+    // Retry Handlers using Left Panel Parameters
     window.retryWithCosyVoice = async function(idx) {
+      switchEngineTab('cosyvoice');
       const statusEl = document.getElementById(`retryStatus_${idx}`);
       const text = segments[idx];
       if (!text) return;
 
-      const promptOption = prompt(
-        "CosyVoice 2 감정 지시 프롬프트를 선택하거나 직접 입력하세요:\n\n" +
-        "1: [호들갑을 떨며 장난기 넘치고 흥분된 목소리로 말한다] (오프닝 훅 추천)\n" +
-        "2: [긴장감 넘치고 다급하며 빠른 호흡으로 말한다] (위기/스릴러)\n" +
-        "3: [따뜻하고 부드럽고 다정한 목소리로 말한다] (휴먼/감동)\n" +
-        "4: [위엄 있고 묵직하며 신뢰감 넘치는 목소리로 말한다] (뉴스/선언)",
-        "1"
-      );
-      if (promptOption === null) return;
+      const instruction = cosyInstruction.value.trim() || "[호들갑을 떨며 장난기 넘치고 흥분된 목소리로 말한다]";
+      statusEl.textContent = "🚀 CosyVoice 2 생성 중... (RTX 3080)";
 
-      let instruction = "[호들갑을 떨며 장난기 넘치고 흥분된 목소리로 말한다]";
-      if (promptOption === "1") instruction = "[호들갑을 떨며 장난기 넘치고 흥분된 목소리로 말한다]";
-      else if (promptOption === "2") instruction = "[긴장감 넘치고 다급하며 빠른 호흡으로 말한다]";
-      else if (promptOption === "3") instruction = "[따뜻하고 부드럽고 다정한 목소리로 말한다]";
-      else if (promptOption === "4") instruction = "[위엄 있고 묵직하며 신뢰감 넘치는 목소리로 말한다]";
-      else if (promptOption.trim()) instruction = promptOption.trim();
-
-      statusEl.textContent = "🚀 CosyVoice 2 인스트럭션 추론 중... (RTX 3080)";
       try {
         const formData = new FormData();
         formData.append("text", text);
         formData.append("instruction", instruction);
-        formData.append("speed", sliderSpeed.value);
+        formData.append("speed", sliderCosySpeed.value);
         if (currentActiveVoiceId) formData.append("voice_profile_id", currentActiveVoiceId);
 
-        const res = await fetch("/api/retry/cosyvoice", {
-          method: "POST",
-          body: formData
-        });
+        const res = await fetch("/api/retry/cosyvoice", { method: "POST", body: formData });
         if (!res.ok) {
           const err = await res.json().catch(() => ({}));
           throw new Error(err.detail || `HTTP ${res.status}`);
@@ -1259,34 +1407,31 @@
 
         const blob = await res.blob();
         const takeNum = (segmentTakes[idx] ? segmentTakes[idx].length : 0) + 1;
-        addSegmentTake(idx, `Take ${takeNum} [CosyVoice 2 훅/감정]`, 'cosyvoice', blob, true);
+        addSegmentTake(idx, `Take ${takeNum} [CosyVoice 2]`, 'cosyvoice', blob, true);
         statusEl.textContent = "✅ CosyVoice 2 생성 완료!";
         setTimeout(() => { statusEl.textContent = ""; }, 3000);
       } catch (err) {
-        console.error(err);
         statusEl.textContent = `✕ 실패: ${err.message}`;
-        alert(`CosyVoice 2 생성 실패: ${err.message}`);
+        alert(`CosyVoice 2 실패: ${err.message}`);
       }
     };
 
-    // F5-TTS Retry Handler
     window.retryWithF5TTS = async function(idx) {
+      switchEngineTab('f5tts');
       const statusEl = document.getElementById(`retryStatus_${idx}`);
       const text = segments[idx];
       if (!text) return;
 
-      statusEl.textContent = "🌊 F5-TTS 플로우 매칭 생성 중... (RTX 3080)";
+      statusEl.textContent = "🌊 F5-TTS 플로우 매칭 생성 중...";
       try {
         const formData = new FormData();
         formData.append("text", text);
-        formData.append("speed", sliderSpeed.value);
-        formData.append("nfe_step", "32");
+        formData.append("speed", sliderF5Speed.value);
+        formData.append("nfe_step", sliderF5Nfe.value);
+        formData.append("cfg_strength", sliderF5Cfg.value);
         if (currentActiveVoiceId) formData.append("voice_profile_id", currentActiveVoiceId);
 
-        const res = await fetch("/api/retry/f5tts", {
-          method: "POST",
-          body: formData
-        });
+        const res = await fetch("/api/retry/f5tts", { method: "POST", body: formData });
         if (!res.ok) {
           const err = await res.json().catch(() => ({}));
           throw new Error(err.detail || `HTTP ${res.status}`);
@@ -1294,46 +1439,34 @@
 
         const blob = await res.blob();
         const takeNum = (segmentTakes[idx] ? segmentTakes[idx].length : 0) + 1;
-        addSegmentTake(idx, `Take ${takeNum} [F5-TTS 차분/설명]`, 'f5tts', blob, true);
+        addSegmentTake(idx, `Take ${takeNum} [F5-TTS]`, 'f5tts', blob, true);
         statusEl.textContent = "✅ F5-TTS 생성 완료!";
         setTimeout(() => { statusEl.textContent = ""; }, 3000);
       } catch (err) {
-        console.error(err);
         statusEl.textContent = `✕ 실패: ${err.message}`;
-        alert(`F5-TTS 생성 실패: ${err.message}`);
+        alert(`F5-TTS 실패: ${err.message}`);
       }
     };
 
-    // RVC v2 Retry Handler
     window.retryWithRVC = async function(idx) {
+      switchEngineTab('rvc');
       const statusEl = document.getElementById(`retryStatus_${idx}`);
       if (!currentBlobs[idx]) {
         alert("먼저 해당 세그먼트의 기본 오디오를 생성해 주세요.");
         return;
       }
 
-      const pitchInput = prompt(
-        "RVC 음색 변환 피치 조절 (반음 단위):\n" +
-        "0: 원래 음정 유지\n" +
-        "+12: 1옥타브 올림 (여성/소년 톤)\n" +
-        "-12: 1옥타브 내림 (남성/중후 톤)",
-        "0"
-      );
-      if (pitchInput === null) return;
-      const pitchShift = parseInt(pitchInput) || 0;
-
-      statusEl.textContent = "🎭 RVC v2 음색 변환 중... (RMVPE 피치 추정)";
+      statusEl.textContent = "🎭 RVC v2 음색 변환 중... (RMVPE)";
       try {
         const formData = new FormData();
         formData.append("audio_file", currentBlobs[idx], `seg_${idx}.wav`);
-        formData.append("pitch_shift", pitchShift);
-        formData.append("f0_method", "rmvpe");
-        formData.append("model_name", "sample_voice");
+        formData.append("pitch_shift", sliderRvcPitch.value);
+        formData.append("f0_method", rvcF0Method.value);
+        formData.append("model_name", rvcModelSelect.value);
+        formData.append("index_rate", sliderRvcIndex.value);
+        formData.append("protect", sliderRvcProtect.value);
 
-        const res = await fetch("/api/retry/rvc", {
-          method: "POST",
-          body: formData
-        });
+        const res = await fetch("/api/retry/rvc", { method: "POST", body: formData });
         if (!res.ok) {
           const err = await res.json().catch(() => ({}));
           throw new Error(err.detail || `HTTP ${res.status}`);
@@ -1341,17 +1474,16 @@
 
         const blob = await res.blob();
         const takeNum = (segmentTakes[idx] ? segmentTakes[idx].length : 0) + 1;
-        addSegmentTake(idx, `Take ${takeNum} [RVC v2 드라마 음색]`, 'rvc', blob, true);
+        addSegmentTake(idx, `Take ${takeNum} [RVC v2]`, 'rvc', blob, true);
         statusEl.textContent = "✅ RVC v2 음색 변환 완료!";
         setTimeout(() => { statusEl.textContent = ""; }, 3000);
       } catch (err) {
-        console.error(err);
         statusEl.textContent = `✕ 실패: ${err.message}`;
-        alert(`RVC v2 변환 실패: ${err.message}`);
+        alert(`RVC v2 실패: ${err.message}`);
       }
     };
 
-    // 음질 보정 함수 (볼륨 정규화 및 잡음 제거)
+    // Sound Enhancement (Volume Normalize & Denoise)
     window.enhanceSegment = async function(idx, action) {
       const statusEl = document.getElementById(`tuneStatus_${idx}`);
       const audioEl = document.getElementById(`audio_${idx}`);
@@ -1370,16 +1502,12 @@
         formData.append('action', action);
         formData.append('audio_file', originalBlobs[idx], `segment_${idx}.wav`);
 
-        const res = await fetch('/api/audio_enhance', {
-          method: 'POST',
-          body: formData
-        });
-
+        const res = await fetch('/api/audio_enhance', { method: 'POST', body: formData });
         if (!res.ok) throw new Error(`보정 실패 (${res.status})`);
 
         const enhancedBlob = await res.blob();
         currentBlobs[idx] = enhancedBlob;
-        generatedBlobs[idx] = enhancedBlob; // ZIP 다운로드에도 반영
+        generatedBlobs[idx] = enhancedBlob;
 
         const enhUrl = URL.createObjectURL(enhancedBlob);
         audioEl.src = enhUrl;
@@ -1388,19 +1516,15 @@
         dlLink.download = `narration_${String(idx + 1).padStart(2, '0')}_${action}.wav`;
 
         badgeEl.textContent = (action === 'normalize' ? '볼륨정규화' : '잡음제거') + ' ✅';
-        badgeEl.style.borderColor = 'var(--accent)';
-        badgeEl.style.color = 'var(--accent)';
         statusEl.textContent = '적용 완료!';
         resetBtn.style.display = 'inline-block';
         setTimeout(() => { statusEl.textContent = ''; }, 2000);
       } catch (err) {
-        console.error(err);
         statusEl.textContent = '처리 실패';
-        alert('오디오 보정 중 오류가 발생했습니다: ' + err.message);
+        alert('오디오 보정 오류: ' + err.message);
       }
     };
 
-    // 원본 음성으로 되돌리기
     window.resetSegmentAudio = function(idx) {
       if (!originalBlobs[idx]) return;
       const audioEl = document.getElementById(`audio_${idx}`);
@@ -1418,14 +1542,12 @@
       dlLink.href = origUrl;
       dlLink.download = `narration_${String(idx + 1).padStart(2, '0')}.wav`;
       badgeEl.textContent = '완료 ✅';
-      badgeEl.style.borderColor = 'var(--accent)';
-      badgeEl.style.color = 'var(--accent)';
       resetBtn.style.display = 'none';
       statusEl.textContent = '↺ 원본 복귀';
       setTimeout(() => { statusEl.textContent = ''; }, 1500);
     };
 
-    // ZIP Batch Downloader
+    // ZIP Batch Downloader (Adopts Winning Takes!)
     btnDownloadZip.addEventListener('click', async () => {
       const zip = new JSZip();
       const folder = zip.folder("narration_pack");
@@ -1441,7 +1563,7 @@
       saveAs(content, "my_narration_audio_pack.zip");
     });
 
-    // Initial sample segments
+    // Initial sample
     bulkInput.value = `첫 번째 영상 클립을 소개하는 7초 분량의 오프닝 나레이션입니다.
 ---
 두 번째 장면에서는 실제 인공지능이 어떻게 목소리를 복제하는지 설명합니다.
