@@ -318,6 +318,39 @@
       background: rgba(184, 255, 92, 0.15);
       color: var(--accent);
     }
+    .seg-tuning-bar {
+      display: none;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--line);
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .tune-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--line);
+      color: #c9d1d9;
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .tune-btn:hover {
+      background: rgba(255, 212, 71, 0.15);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    .tune-reset {
+      color: var(--muted);
+    }
+    .tune-reset:hover {
+      background: rgba(255, 92, 92, 0.15);
+      border-color: #ff5c5c;
+      color: #ff5c5c;
+    }
     .toolbar {
       display: flex;
       gap: 12px;
@@ -579,6 +612,17 @@
             </button>
           </div>
 
+          <!-- 2nd Stage Post-Tuning Pipeline Notice Banner -->
+          <div style="background:rgba(255, 212, 71, 0.05); border:1px solid rgba(255, 212, 71, 0.3); border-radius:10px; padding:12px 16px; margin-top:18px; margin-bottom:12px; font-size:0.82rem; color:var(--text); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+            <div>
+              <span style="color:var(--gold); font-weight:800; margin-right:6px;">✨ 2차 세부 연출 파이프라인 연계 탑재:</span>
+              <span>1차 생성 완료 후, 카드별로 <b>[⚡ 훅&까불이]</b>, <b>[🎙️ 방송성우]</b>, <b>[🎬 드라마톤]</b> 원터치 연출 가공을 적용할 수 있습니다.</span>
+            </div>
+            <span style="font-family:var(--mono); font-size:0.75rem; color:var(--muted); background:rgba(0,0,0,0.3); padding:3px 8px; border-radius:6px; border:1px solid var(--line);">
+              📁 연동: E:\Agent\Voice_Tuning_Pipeline
+            </span>
+          </div>
+
           <!-- Segment Cards Result List -->
           <div class="segments-container" id="segmentsList">
             <!-- Dynamic Cards will be rendered here -->
@@ -603,6 +647,8 @@
     let segments = [];
     let isGenerating = false;
     let generatedBlobs = {};
+    let originalBlobs = {};
+    let currentBlobs = {};
 
     const statusDot = document.getElementById('statusDot');
     const statusText = document.getElementById('statusText');
@@ -874,11 +920,20 @@
 
         card.innerHTML = `
           <div class="seg-num">${idx + 1}</div>
-          <div class="seg-content">
+          <div class="seg-content" style="flex:1;">
             <p class="seg-text">${escapeHtml(text)}</p>
             <div class="seg-player" id="playerWrap_${idx}">
               <audio id="audio_${idx}" controls></audio>
               <a id="dl_${idx}" download="narration_${String(idx+1).padStart(2,'0')}.wav" style="color:var(--accent); font-size:0.8rem; text-decoration:none; font-weight:700;">⬇️ 저장</a>
+            </div>
+            <!-- 2차 세부 연출 튜닝 바 -->
+            <div class="seg-tuning-bar" id="tuningBar_${idx}">
+              <span style="font-size:0.75rem; color:var(--muted); font-weight:700;">✨ 2차 연출:</span>
+              <button type="button" class="tune-btn" onclick="tuneSegment(${idx}, 'hook_excited')" title="피치 +3반음, 1.15배속, 까불이/하이텐션 익사이터">⚡ 훅&까불이</button>
+              <button type="button" class="tune-btn" onclick="tuneSegment(${idx}, 'youtube_punch')" title="펀치 컴프레서, 명료도 방송 성우톤">🎙️ 방송성우</button>
+              <button type="button" class="tune-btn" onclick="tuneSegment(${idx}, 'dramatic_deep')" title="-2.5반음, 묵직한 드라마 웜톤">🎬 드라마톤</button>
+              <button type="button" class="tune-btn tune-reset" id="btnReset_${idx}" style="display:none;" onclick="resetSegmentAudio(${idx})" title="원본으로 되돌리기">↺ 원본</button>
+              <span id="tuneStatus_${idx}" style="font-size:0.72rem; color:var(--gold); margin-left:auto;"></span>
             </div>
           </div>
           <span class="seg-status-badge" id="badge_${idx}">대기</span>
@@ -946,7 +1001,9 @@
           formData.append('speed', spd);
           formData.append('cfg_weight', cfg);
           formData.append('convert_numbers', convNum);
-          formData.append('voice_file', selectedVoiceFile);
+          if (selectedVoiceFile instanceof File || selectedVoiceFile instanceof Blob) {
+            formData.append('voice_file', selectedVoiceFile);
+          }
 
           const res = await fetch('/api/synthesize', {
             method: 'POST',
@@ -958,12 +1015,17 @@
           }
 
           const blob = await res.blob();
+          originalBlobs[i] = blob;
+          currentBlobs[i] = blob;
           generatedBlobs[i] = blob;
 
           const audioUrl = URL.createObjectURL(blob);
           audioEl.src = audioUrl;
           dlLink.href = audioUrl;
           playerWrap.style.display = 'flex';
+
+          const tuningBar = document.getElementById(`tuningBar_${i}`);
+          if (tuningBar) tuningBar.style.display = 'flex';
 
           card.className = 'segment-card done';
           badge.className = 'seg-status-badge ready';
@@ -983,6 +1045,85 @@
         btnDownloadZip.disabled = false;
       }
     });
+
+    // 2차 세부 연출 튜닝 함수 (DSP 엔진 연동)
+    window.tuneSegment = async function(idx, preset) {
+      const statusEl = document.getElementById(`tuneStatus_${idx}`);
+      const audioEl = document.getElementById(`audio_${idx}`);
+      const dlLink = document.getElementById(`dl_${idx}`);
+      const badgeEl = document.getElementById(`badge_${idx}`);
+      const resetBtn = document.getElementById(`btnReset_${idx}`);
+
+      if (!originalBlobs[idx]) {
+        alert('먼저 1차 오디오 생성을 완료해 주세요.');
+        return;
+      }
+
+      statusEl.textContent = '⚡ 가공 중...';
+      try {
+        const formData = new FormData();
+        formData.append('preset', preset);
+        formData.append('audio_file', originalBlobs[idx], `segment_${idx}.wav`);
+
+        const res = await fetch('/api/tune_audio', {
+          method: 'POST',
+          body: formData
+        });
+
+        if (!res.ok) throw new Error(`튜닝 실패 (${res.status})`);
+
+        const tunedBlob = await res.blob();
+        currentBlobs[idx] = tunedBlob;
+        generatedBlobs[idx] = tunedBlob; // ZIP 다운로드에도 가공본 자동 반영
+
+        const tunedUrl = URL.createObjectURL(tunedBlob);
+        audioEl.src = tunedUrl;
+        audioEl.play().catch(() => {});
+        dlLink.href = tunedUrl;
+        dlLink.download = `narration_${String(idx + 1).padStart(2, '0')}_${preset}.wav`;
+
+        const labels = {
+          'hook_excited': '⚡ 훅/까불이',
+          'youtube_punch': '🎙️ 방송성우',
+          'dramatic_deep': '🎬 드라마톤'
+        };
+        badgeEl.textContent = labels[preset] || '가공완료';
+        badgeEl.style.borderColor = 'var(--gold)';
+        badgeEl.style.color = 'var(--gold)';
+        statusEl.textContent = '적용 완료!';
+        resetBtn.style.display = 'inline-block';
+        setTimeout(() => { statusEl.textContent = ''; }, 2500);
+      } catch (err) {
+        console.error(err);
+        statusEl.textContent = '가공 실패';
+        alert('2차 연출 적용 중 오류가 발생했습니다: ' + err.message);
+      }
+    };
+
+    // 원본 음성으로 되돌리기
+    window.resetSegmentAudio = function(idx) {
+      if (!originalBlobs[idx]) return;
+      const audioEl = document.getElementById(`audio_${idx}`);
+      const dlLink = document.getElementById(`dl_${idx}`);
+      const badgeEl = document.getElementById(`badge_${idx}`);
+      const resetBtn = document.getElementById(`btnReset_${idx}`);
+      const statusEl = document.getElementById(`tuneStatus_${idx}`);
+
+      currentBlobs[idx] = originalBlobs[idx];
+      generatedBlobs[idx] = originalBlobs[idx];
+
+      const origUrl = URL.createObjectURL(originalBlobs[idx]);
+      audioEl.src = origUrl;
+      audioEl.play().catch(() => {});
+      dlLink.href = origUrl;
+      dlLink.download = `narration_${String(idx + 1).padStart(2, '0')}.wav`;
+      badgeEl.textContent = '완료 ✅';
+      badgeEl.style.borderColor = 'var(--accent)';
+      badgeEl.style.color = 'var(--accent)';
+      resetBtn.style.display = 'none';
+      statusEl.textContent = '↺ 원본 복귀';
+      setTimeout(() => { statusEl.textContent = ''; }, 1500);
+    };
 
     // ZIP Batch Downloader
     btnDownloadZip.addEventListener('click', async () => {
