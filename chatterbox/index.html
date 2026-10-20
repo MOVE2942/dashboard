@@ -401,6 +401,59 @@
       border-color: var(--accent);
       background: rgba(184, 255, 92, 0.05);
     }
+    .multi-part-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-lit);
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-top: 10px;
+    }
+    .multi-part-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+      margin-bottom: 6px;
+    }
+    .multi-part-text {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      background: #0d1117;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid #21262d;
+    }
+    .multi-part-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .btn-part-action {
+      flex: 1;
+      padding: 6px 10px;
+      background: #21262d;
+      border: 1px solid var(--border-lit);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-part-action:hover {
+      background: #30363d;
+      color: #fff;
+    }
+    .btn-part-action.rvc:hover {
+      border-color: var(--vio);
+      color: var(--vio);
+    }
     .rvc-file-badge {
       display: inline-flex;
       align-items: center;
@@ -986,12 +1039,9 @@
           <!-- Dynamic Engine Guide Box -->
           <div class="guide-box" id="engine-guide-box">
             <div id="guide-tip-text">💡 <strong>작성 팁:</strong> 쉼표(,)를 적극적으로 사용하면 0.2~0.3초의 자연스러운 숨고르기 호흡이 적용됩니다. (권장: 60~100자)</div>
-            <div style="margin-top: 4px; font-size: 0.76rem; color: var(--muted);" id="guide-multi-text">
-              💡 <strong>다중 대본 팁:</strong> 여러 장면이나 단락을 구분할 때는 문단 사이에 <code>___</code> (언더바 3개)를 입력하면 0.5초의 장면 전환 묵음이 자동 삽입됩니다.
-            </div>
           </div>
 
-          <textarea id="script-input" class="script-box" placeholder="이곳에 대본을 입력하세요. 쉼표(,)와 마침표(.)를 통해 자연스러운 호흡이 조절됩니다.&#10;&#10;💡 다중 대본 팁: 여러 씬이나 단락을 구분할 때는 문단 사이에 ___ (언더바 3개)를 입력하세요. (자동으로 0.5초의 숨고르기 묵음이 삽입됩니다)"></textarea>
+          <textarea id="script-input" class="script-box" placeholder="이곳에 대본을 입력하세요. 쉼표(,)와 마침표(.)를 통해 자연스러운 호흡이 조절됩니다.&#10;&#10;💡 다중 대본 팁: 여러 장면이나 단락을 구분할 때는 문단 사이에 ___ (언더바 3개)를 입력하면 구분되어 개별 파일로 저장됩니다."></textarea>
 
           <div class="script-tools">
             <div class="tool-actions">
@@ -1103,24 +1153,46 @@
 
         <!-- Output Result Player -->
         <div class="output-card" id="output-player-card" style="display: none;">
-          <div class="output-meta">
-            <div>
-              <strong id="out-engine-tag" style="color: var(--accent);">Chatterbox 마스터</strong>
-              <span id="out-timestamp" style="margin-left: 8px;">방금 전</span>
+          
+          <!-- Case A: Single File Result -->
+          <div id="output-single-container">
+            <div class="output-meta">
+              <div>
+                <strong id="out-engine-tag" style="color: var(--accent);">Chatterbox 마스터</strong>
+                <span id="out-timestamp" style="margin-left: 8px;">방금 전</span>
+              </div>
+              <div id="out-specs" style="font-family: var(--mono);">48kHz / WAV</div>
             </div>
-            <div id="out-specs" style="font-family: var(--mono);">48kHz / WAV</div>
+
+            <audio id="main-audio-player" controls></audio>
+
+            <div class="output-btns">
+              <a id="btn-download-wav" class="btn-dl" download="studio_native_audio.wav">
+                💾 무손실 WAV 다운로드
+              </a>
+              <button class="btn-dl" onclick="copyAudioToClipboard()" id="btn-copy-link">
+                📋 링크 복사
+              </button>
+            </div>
           </div>
 
-          <audio id="main-audio-player" controls></audio>
+          <!-- Case B: Multi-Part Independent Takes Result (Triggered by ___) -->
+          <div id="output-multi-container" style="display: none;">
+            <div class="output-meta">
+              <div>
+                <strong id="out-multi-engine-tag" style="color: var(--accent);">Chatterbox 다중 생성</strong>
+                <span id="out-multi-count" style="margin-left: 8px; font-weight: 700; color: var(--gold);">총 0개 개별 파일</span>
+              </div>
+              <button class="btn-sys" onclick="downloadAllPartsZip()" style="background: rgba(184, 255, 92, 0.15); border-color: var(--accent); color: var(--accent); font-size: 0.8rem; font-weight: 700;">
+                📦 전체 파일 ZIP 일괄 다운로드
+              </button>
+            </div>
 
-          <div class="output-btns">
-            <a id="btn-download-wav" class="btn-dl" download="studio_native_audio.wav">
-              💾 무손실 WAV 다운로드
-            </a>
-            <button class="btn-dl" onclick="copyAudioToClipboard()" id="btn-copy-link">
-              📋 링크 복사
-            </button>
+            <div id="multi-parts-list" style="display: flex; flex-direction: column; gap: 8px;">
+              <!-- Dynamic Part Cards Rendered Here -->
+            </div>
           </div>
+
         </div>
 
         <!-- Demoted Optional Post-Processing Accordion -->
@@ -1511,33 +1583,147 @@
       }
     });
 
-    // Native Generation Trigger (Supports both TTS Text & RVC STS Audio)
-    async function triggerNativeGenerate() {
-      const fd = new FormData();
-      let endpoint = `${API_BASE}/api/generate/chatterbox`;
+    // Multi-Part Generation State Storage
+    let generatedParts = []; // [{ partIndex, text, blob, url, filename }]
 
+    // Native Generation Trigger (Supports both TTS Single/Multi & RVC STS Audio)
+    async function triggerNativeGenerate() {
       if (activeEngine === "rvc") {
         // RVC STS: Requires Input Audio File
         if (!rvcSelectedFile) {
           alert("변환할 오디오 파일을 업로드하거나 [방금 생성된 오디오 가져오기]를 클릭해 주세요.");
           return;
         }
-        endpoint = `${API_BASE}/api/convert/rvc`;
-        fd.append("audio_file", rvcSelectedFile, "input.wav");
-        fd.append("model_name", document.getElementById("rvc-model-select").value);
-        fd.append("pitch_shift", document.getElementById("rvc-pitch").value);
-        fd.append("f0_method", document.getElementById("rvc-f0").value);
-        fd.append("index_rate", document.getElementById("rvc-index").value);
+        await executeRvcConversion();
       } else {
-        // TTS: Requires Script Text
-        const text = scriptInput.value.trim();
-        if (!text) {
+        // TTS: Check whether user input contains ___ for multi-part independent generation
+        const rawText = scriptInput.value.trim();
+        if (!rawText) {
           alert("대본을 입력해 주세요.");
           return;
         }
-        fd.append("text", text);
+
+        // Split by ___ (triple underscores)
+        const parts = rawText.split(/\n*___+\n*/).map(p => p.trim()).filter(p => p.length > 0);
+
+        if (parts.length > 1) {
+          // Case 1: Multi-part independent file generation
+          await executeMultiPartTts(parts);
+        } else {
+          // Case 2: Single file generation
+          await executeSingleTts(rawText);
+        }
+      }
+    }
+
+    // Helper: Execute Single TTS
+    async function executeSingleTts(text) {
+      genBtn.disabled = true;
+      const progressWrap = document.getElementById("gen-progress-wrap");
+      const statusText = document.getElementById("gen-status-text");
+      const progressFill = document.getElementById("gen-progress-fill");
+      progressWrap.style.display = "block";
+
+      let sec = 0;
+      const timerInterval = setInterval(() => {
+        sec += 0.1;
+        document.getElementById("gen-timer").textContent = `${sec.toFixed(1)}s`;
+        const pct = Math.min(95, Math.round(sec * 6));
+        progressFill.style.width = `${pct}%`;
+      }, 100);
+
+      const fd = new FormData();
+      fd.append("text", text);
+      if (selectedVoiceId) fd.append("voice_profile_id", selectedVoiceId);
+
+      let endpoint = `${API_BASE}/api/generate/chatterbox`;
+      if (activeEngine === "chatterbox") {
+        endpoint = `${API_BASE}/api/generate/chatterbox`;
+        fd.append("lang", document.getElementById("cb-lang").value);
+        fd.append("exaggeration", document.getElementById("cb-exagg").value);
+        fd.append("temperature", document.getElementById("cb-temp").value);
+      } else if (activeEngine === "cosyvoice") {
+        endpoint = `${API_BASE}/api/generate/cosyvoice`;
+        fd.append("instruction", document.getElementById("cosy-prompt").value);
+        fd.append("speed", document.getElementById("cosy-speed").value);
+      } else if (activeEngine === "f5tts") {
+        endpoint = `${API_BASE}/api/generate/f5tts`;
+        fd.append("nfe_step", document.getElementById("f5-nfe").value);
+        fd.append("cfg_strength", document.getElementById("f5-cfg").value);
+        fd.append("speed", document.getElementById("f5-speed").value);
+      }
+
+      try {
+        statusText.firstElementChild.textContent = `${activeEngine.toUpperCase()} 모델로 합성 중...`;
+        const res = await fetch(endpoint, { method: "POST", body: fd });
+        clearInterval(timerInterval);
+
+        if (res.ok) {
+          progressFill.style.width = "100%";
+          const blob = await res.blob();
+          currentAudioBlob = blob;
+          if (currentAudioUrl) URL.revokeObjectURL(currentAudioUrl);
+          currentAudioUrl = URL.createObjectURL(blob);
+
+          document.getElementById("output-single-container").style.display = "block";
+          document.getElementById("output-multi-container").style.display = "none";
+          document.getElementById("output-player-card").style.display = "block";
+
+          const player = document.getElementById("main-audio-player");
+          player.src = currentAudioUrl;
+          player.play();
+
+          document.getElementById("btn-download-wav").href = currentAudioUrl;
+          document.getElementById("btn-download-wav").download = `${activeEngine}_${Date.now()}.wav`;
+          document.getElementById("out-engine-tag").textContent = `${activeEngine.toUpperCase()} 네이티브 마스터`;
+          document.getElementById("out-timestamp").textContent = new Date().toLocaleTimeString();
+          document.getElementById("out-specs").textContent = `${(blob.size / 1024 / 1024).toFixed(2)} MB (WAV)`;
+
+          statusText.firstElementChild.textContent = "✅ 생성 완료!";
+          setTimeout(() => { progressWrap.style.display = "none"; }, 2000);
+        } else {
+          const err = await res.text();
+          alert(`생성 실패: ${err}`);
+          progressWrap.style.display = "none";
+        }
+      } catch (e) {
+        clearInterval(timerInterval);
+        alert(`네트워크 통신 오류: ${e.message}`);
+        progressWrap.style.display = "none";
+      } finally {
+        genBtn.disabled = false;
+        fetchSystemStatus();
+      }
+    }
+
+    // Helper: Execute Multi-Part Independent Generation (when ___ is detected)
+    async function executeMultiPartTts(parts) {
+      genBtn.disabled = true;
+      const progressWrap = document.getElementById("gen-progress-wrap");
+      const statusText = document.getElementById("gen-status-text");
+      const progressFill = document.getElementById("gen-progress-fill");
+      progressWrap.style.display = "block";
+
+      generatedParts = [];
+      const total = parts.length;
+      let totalSec = 0;
+      const timerInterval = setInterval(() => {
+        totalSec += 0.1;
+        document.getElementById("gen-timer").textContent = `${totalSec.toFixed(1)}s`;
+      }, 100);
+
+      const timestamp = Date.now();
+
+      for (let i = 0; i < total; i++) {
+        const partText = parts[i];
+        statusText.firstElementChild.textContent = `[${i + 1}/${total}] ${i + 1}번째 개별 파일 생성 중...`;
+        progressFill.style.width = `${Math.round(((i) / total) * 100)}%`;
+
+        const fd = new FormData();
+        fd.append("text", partText);
         if (selectedVoiceId) fd.append("voice_profile_id", selectedVoiceId);
 
+        let endpoint = `${API_BASE}/api/generate/chatterbox`;
         if (activeEngine === "chatterbox") {
           endpoint = `${API_BASE}/api/generate/chatterbox`;
           fd.append("lang", document.getElementById("cb-lang").value);
@@ -1553,8 +1739,113 @@
           fd.append("cfg_strength", document.getElementById("f5-cfg").value);
           fd.append("speed", document.getElementById("f5-speed").value);
         }
+
+        try {
+          const res = await fetch(endpoint, { method: "POST", body: fd });
+          if (res.ok) {
+            const blob = await res.blob();
+            const url = URL.createObjectURL(blob);
+            const filename = `take_${String(i + 1).padStart(2, "0")}_${activeEngine}.wav`;
+            generatedParts.push({
+              partIndex: i + 1,
+              text: partText,
+              blob: blob,
+              url: url,
+              filename: filename
+            });
+          } else {
+            console.error(`Part ${i + 1} failed`);
+          }
+        } catch (err) {
+          console.error(`Part ${i + 1} network error:`, err);
+        }
       }
 
+      clearInterval(timerInterval);
+      progressFill.style.width = "100%";
+      statusText.firstElementChild.textContent = `✅ 총 ${generatedParts.length}개 개별 파일 생성 완료!`;
+      setTimeout(() => { progressWrap.style.display = "none"; }, 2000);
+
+      // Render Multi-Part Result Cards
+      renderMultiPartsUI();
+      genBtn.disabled = false;
+      fetchSystemStatus();
+    }
+
+    function renderMultiPartsUI() {
+      document.getElementById("output-single-container").style.display = "none";
+      document.getElementById("output-multi-container").style.display = "block";
+      document.getElementById("output-player-card").style.display = "block";
+
+      document.getElementById("out-multi-engine-tag").textContent = `${activeEngine.toUpperCase()} 다중 독립 파일`;
+      document.getElementById("out-multi-count").textContent = `총 ${generatedParts.length}개 파일 분할 생성됨`;
+
+      const listEl = document.getElementById("multi-parts-list");
+      listEl.innerHTML = "";
+
+      // Store first part as latest audio blob for backward compatibility
+      if (generatedParts.length > 0) {
+        currentAudioBlob = generatedParts[0].blob;
+        currentAudioUrl = generatedParts[0].url;
+      }
+
+      generatedParts.forEach((part, idx) => {
+        const card = document.createElement("div");
+        card.className = "multi-part-card";
+        card.innerHTML = `
+          <div class="multi-part-header">
+            <span style="font-weight: 700; color: var(--accent);">📁 Take ${String(part.partIndex).padStart(2, "0")} (${(part.blob.size / 1024).toFixed(1)} KB)</span>
+            <span style="font-family: var(--mono); color: var(--muted);">${part.filename}</span>
+          </div>
+          <div class="multi-part-text" title="${part.text}">${part.text}</div>
+          <audio controls src="${part.url}" style="width: 100%; height: 38px;"></audio>
+          <div class="multi-part-actions">
+            <a href="${part.url}" download="${part.filename}" class="btn-part-action">
+              💾 개별 WAV 저장
+            </a>
+            <button class="btn-part-action rvc" onclick="sendSpecificPartToRvc(${idx})">
+              🔄 RVC 변환 소스로 지정
+            </button>
+          </div>
+        `;
+        listEl.appendChild(card);
+      });
+    }
+
+    // ZIP Batch Downloader for Multi-Part Generation
+    async function downloadAllPartsZip() {
+      if (!generatedParts.length) return;
+      if (typeof JSZip === "undefined") {
+        alert("ZIP 라이브러리를 로드하는 중입니다. 잠시 후 다시 시도해 주세요.");
+        return;
+      }
+
+      const zip = new JSZip();
+      const folderName = `narration_takes_${activeEngine}_${Date.now()}`;
+      const folder = zip.folder(folderName);
+
+      generatedParts.forEach(p => {
+        folder.file(p.filename, p.blob);
+      });
+
+      const zipContent = await zip.generateAsync({ type: "blob" });
+      saveAs(zipContent, `${folderName}.zip`);
+    }
+
+    function sendSpecificPartToRvc(index) {
+      if (!generatedParts[index]) return;
+      const target = generatedParts[index];
+      rvcSelectedFile = target.blob;
+      rvcFileName.textContent = `${target.filename} (${(target.blob.size / 1024).toFixed(1)} KB)`;
+      rvcFileBadge.style.display = "inline-flex";
+
+      // Switch to RVC tab smoothly
+      selectEngine("rvc");
+      alert(`${target.filename}이 RVC 변환 소스로 등록되었으며 RVC 탭으로 전환되었습니다!`);
+    }
+
+    // Helper: Execute RVC Conversion
+    async function executeRvcConversion() {
       genBtn.disabled = true;
       const progressWrap = document.getElementById("gen-progress-wrap");
       const statusText = document.getElementById("gen-status-text");
@@ -1565,13 +1856,20 @@
       const timerInterval = setInterval(() => {
         sec += 0.1;
         document.getElementById("gen-timer").textContent = `${sec.toFixed(1)}s`;
-        const pct = Math.min(95, Math.round(sec * 6));
+        const pct = Math.min(95, Math.round(sec * 7));
         progressFill.style.width = `${pct}%`;
       }, 100);
 
+      const fd = new FormData();
+      fd.append("audio_file", rvcSelectedFile, "input.wav");
+      fd.append("model_name", document.getElementById("rvc-model-select").value);
+      fd.append("pitch_shift", document.getElementById("rvc-pitch").value);
+      fd.append("f0_method", document.getElementById("rvc-f0").value);
+      fd.append("index_rate", document.getElementById("rvc-index").value);
+
       try {
-        statusText.firstElementChild.textContent = `${activeEngine.toUpperCase()} 모델로 합성 연산 중...`;
-        const res = await fetch(endpoint, { method: "POST", body: fd });
+        statusText.firstElementChild.textContent = "RVC 모델로 음색 변환 연산 중...";
+        const res = await fetch(`${API_BASE}/api/convert/rvc`, { method: "POST", body: fd });
         clearInterval(timerInterval);
 
         if (res.ok) {
@@ -1581,22 +1879,25 @@
           if (currentAudioUrl) URL.revokeObjectURL(currentAudioUrl);
           currentAudioUrl = URL.createObjectURL(blob);
 
+          document.getElementById("output-single-container").style.display = "block";
+          document.getElementById("output-multi-container").style.display = "none";
+          document.getElementById("output-player-card").style.display = "block";
+
           const player = document.getElementById("main-audio-player");
           player.src = currentAudioUrl;
           player.play();
 
-          document.getElementById("output-player-card").style.display = "block";
           document.getElementById("btn-download-wav").href = currentAudioUrl;
-          document.getElementById("btn-download-wav").download = `${activeEngine}_${Date.now()}.wav`;
-          document.getElementById("out-engine-tag").textContent = `${activeEngine.toUpperCase()} 네이티브 마스터`;
+          document.getElementById("btn-download-wav").download = `rvc_converted_${Date.now()}.wav`;
+          document.getElementById("out-engine-tag").textContent = "RVC v2 변환 마스터";
           document.getElementById("out-timestamp").textContent = new Date().toLocaleTimeString();
           document.getElementById("out-specs").textContent = `${(blob.size / 1024 / 1024).toFixed(2)} MB (WAV)`;
 
-          statusText.firstElementChild.textContent = "✅ 생성 완료!";
+          statusText.firstElementChild.textContent = "✅ RVC 변환 완료!";
           setTimeout(() => { progressWrap.style.display = "none"; }, 2000);
         } else {
           const err = await res.text();
-          alert(`생성 실패: ${err}`);
+          alert(`RVC 변환 실패: ${err}`);
           progressWrap.style.display = "none";
         }
       } catch (e) {
