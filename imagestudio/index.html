@@ -748,7 +748,7 @@
   </main>
 
   <script>
-    const API_BASE = "http://127.0.0.1:7880";
+    const API_BASE = (window.location.port === "7880") ? "" : "http://127.0.0.1:7880";
     let currentMode = "t2i";
     let selectedWidth = 1024;
     let selectedHeight = 1024;
