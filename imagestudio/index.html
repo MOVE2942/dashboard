@@ -147,6 +147,29 @@
       border-color: var(--purp);
       color: var(--purp);
     }
+    button.btn-action.btn-comfy-off {
+      border-color: rgba(255, 93, 93, 0.5);
+      color: #ff7b72;
+    }
+    button.btn-action.btn-comfy-off:hover {
+      background: rgba(255, 93, 93, 0.18);
+      border-color: var(--red);
+      color: var(--red);
+    }
+    button.btn-action.btn-comfy-on {
+      border-color: rgba(63, 185, 80, 0.5);
+      color: #56d364;
+    }
+    button.btn-action.btn-comfy-on:hover {
+      background: rgba(63, 185, 80, 0.18);
+      border-color: var(--green);
+      color: var(--green);
+    }
+    button.btn-action.btn-shutdown:hover {
+      background: rgba(255, 93, 93, 0.22);
+      border-color: var(--red);
+      color: var(--red);
+    }
 
     main {
       flex: 1;
@@ -530,7 +553,13 @@
         <span id="vramText">-- / 12 GB</span>
       </div>
       <button class="btn-action btn-purge" id="btnPurge" title="ComfyUI VRAM 메모리 즉시 완전 해제">
-        🧹 VRAM 퍼지
+        🧹 VRAM 비우기
+      </button>
+      <button class="btn-action btn-comfy-off" id="btnToggleComfy" title="ComfyUI 백엔드(포트 8188) 프로세스를 끄거나 켭니다">
+        🛑 ComfyUI 끄기
+      </button>
+      <button class="btn-action btn-shutdown" id="btnShutdown" title="Image Studio 및 ComfyUI를 완전히 종료하고 메모리를 100% 반환합니다">
+        ⏻ 전체 종료
       </button>
       <button class="btn-action btn-audio" id="btnSwitchAudio" title="오디오 스튜디오로 전환 (VRAM 자동 정리)">
         🗣️ 오디오 스튜디오 전환
@@ -547,15 +576,39 @@
       <!-- Model Engine Selection -->
       <div class="card">
         <div class="card-title">
-          <span>🧠 생성 엔진 / 디퓨전 모델</span>
-          <span style="font-size:0.75rem; color:var(--accent);">RTX 3080 최적화</span>
+          <span>🧠 모델 선택 / 아키텍처 제어</span>
+          <span style="font-size:0.75rem; color:var(--accent);" id="modelCountBadge">스캔 중...</span>
         </div>
-        <select id="unetSelect" style="width:100%; padding:9px 12px; background:var(--card-bg); color:var(--text); border:1px solid var(--border-lit); border-radius:8px; font-size:0.85rem; font-weight:600; cursor:pointer;">
-          <option value="qwen_image_2.1_int8_convrot.safetensors" selected>🔥 Qwen Image 2.1 (INT8 Convrot · 6.8GB 공식 기본)</option>
-          <option value="qwen-image-2.1-Q4_K_M.gguf">🌟 Qwen Image 2.1 (Q4_K_M GGUF · 4.4GB)</option>
-          <option value="z_image_turbo_nvfp4.safetensors">⚡ Z-Image Turbo (NVFP4 · 4.3GB · 초고속)</option>
-          <option value="z-image-turbo-fp8-e4m3fn.safetensors">✨ Z-Image Turbo (FP8 · 5.9GB · 고화질)</option>
-        </select>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div>
+            <div class="field-label" style="font-size:0.76rem; margin-bottom:4px;">
+              <span>Diffusion 모델</span>
+              <span class="desc" id="diffSizeBadge">INT8 Convrot 추천</span>
+            </div>
+            <select id="unetSelect" style="width:100%; padding:8px 10px; background:var(--card-bg); color:var(--text); border:1px solid var(--border-lit); border-radius:8px; font-size:0.82rem; font-weight:600; cursor:pointer;">
+              <option value="qwen_image_2.1_int8_convrot.safetensors" selected>👑 Qwen Image 2.1 (INT8 Convrot · 기본 추천)</option>
+            </select>
+          </div>
+
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px;">
+            <div>
+              <div class="field-label" style="font-size:0.74rem; margin-bottom:4px;">
+                <span>Text Encoder</span>
+              </div>
+              <select id="clipSelect" style="width:100%; padding:6px 8px; background:var(--card-bg); color:var(--text); border:1px solid var(--border-lit); border-radius:6px; font-size:0.75rem; font-weight:600; cursor:pointer;">
+                <option value="qwen3vl_8b_int8_convrot.safetensors" selected>qwen3vl_8b_int8_convrot</option>
+              </select>
+            </div>
+            <div>
+              <div class="field-label" style="font-size:0.74rem; margin-bottom:4px;">
+                <span>VAE 모델</span>
+              </div>
+              <select id="vaeSelect" style="width:100%; padding:6px 8px; background:var(--card-bg); color:var(--text); border:1px solid var(--border-lit); border-radius:6px; font-size:0.75rem; font-weight:600; cursor:pointer;">
+                <option value="qwen_image_2.1_vae_bf16.safetensors" selected>qwen_image_2.1_vae_bf16</option>
+              </select>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Mode Selection -->
@@ -795,6 +848,8 @@
       box.value = box.value ? box.value + ", " + text : text;
     }
 
+    let isComfyOnline = false;
+
     async function checkStatus() {
       try {
         const res = await fetch(`${API_BASE}/api/status`);
@@ -803,8 +858,23 @@
 
         const dot = document.getElementById('statusDot');
         const txt = document.getElementById('statusText');
-        dot.className = "dot online";
-        txt.innerText = "ComfyUI 온라인";
+        const toggleBtn = document.getElementById('btnToggleComfy');
+
+        isComfyOnline = !!data.comfy_online;
+
+        if (isComfyOnline) {
+          dot.className = "dot online";
+          txt.innerText = "ComfyUI 온라인";
+          toggleBtn.className = "btn-action btn-comfy-off";
+          toggleBtn.innerHTML = `🛑 ComfyUI 끄기${data.comfy_pid ? ' (PID:' + data.comfy_pid + ')' : ''}`;
+          toggleBtn.title = "ComfyUI 백엔드를 종료하여 시스템 RAM 및 VRAM을 즉시 100% 반환합니다";
+        } else {
+          dot.className = "dot offline";
+          txt.innerText = "ComfyUI 오프라인";
+          toggleBtn.className = "btn-action btn-comfy-on";
+          toggleBtn.innerHTML = "▶️ ComfyUI 켜기";
+          toggleBtn.title = "ComfyUI 백엔드 서버를 백그라운드 콘솔로 기동합니다";
+        }
 
         if (data.vram) {
           const used = data.vram.vram_used_gb || 0;
@@ -814,8 +884,72 @@
           document.getElementById('vramText').innerText = `${used} / ${total} GB`;
         }
       } catch (e) {
+        isComfyOnline = false;
         document.getElementById('statusDot').className = "dot offline";
-        document.getElementById('statusText').innerText = "엔진 오프라인";
+        document.getElementById('statusText').innerText = "스튜디오 서버 오프라인";
+        const toggleBtn = document.getElementById('btnToggleComfy');
+        if (toggleBtn) {
+          toggleBtn.className = "btn-action btn-comfy-on";
+          toggleBtn.innerHTML = "▶️ ComfyUI 켜기";
+        }
+      }
+    }
+
+    async function loadModels() {
+      try {
+        const res = await fetch(`${API_BASE}/api/models`);
+        if (!res.ok) return;
+        const data = await res.json();
+
+        // 1. Diffusion Models
+        const unetSel = document.getElementById('unetSelect');
+        if (data.diffusion_models && data.diffusion_models.length > 0) {
+          unetSel.innerHTML = "";
+          data.diffusion_models.forEach(m => {
+            const opt = document.createElement('option');
+            opt.value = m.name;
+            const isRec = m.name.toLowerCase().includes("int8_convrot");
+            opt.innerText = `${isRec ? '👑 ' : ''}${m.name} (${m.size_gb} GB)`;
+            if (m.name === (data.defaults?.diffusion || "qwen_image_2.1_int8_convrot.safetensors")) {
+              opt.selected = true;
+            }
+            unetSel.appendChild(opt);
+          });
+          const badge = document.getElementById('modelCountBadge');
+          if (badge) badge.innerText = `${data.diffusion_models.length}개 모델 검색됨`;
+        }
+
+        // 2. Text Encoders
+        const clipSel = document.getElementById('clipSelect');
+        if (data.text_encoders && data.text_encoders.length > 0) {
+          clipSel.innerHTML = "";
+          data.text_encoders.forEach(m => {
+            const opt = document.createElement('option');
+            opt.value = m.name;
+            opt.innerText = `${m.name} (${m.size_gb} GB)`;
+            if (m.name === (data.defaults?.text_encoder || "qwen3vl_8b_int8_convrot.safetensors")) {
+              opt.selected = true;
+            }
+            clipSel.appendChild(opt);
+          });
+        }
+
+        // 3. VAEs
+        const vaeSel = document.getElementById('vaeSelect');
+        if (data.vaes && data.vaes.length > 0) {
+          vaeSel.innerHTML = "";
+          data.vaes.forEach(m => {
+            const opt = document.createElement('option');
+            opt.value = m.name;
+            opt.innerText = `${m.name} (${m.size_gb} GB)`;
+            if (m.name === (data.defaults?.vae || "qwen_image_2.1_vae_bf16.safetensors")) {
+              opt.selected = true;
+            }
+            vaeSel.appendChild(opt);
+          });
+        }
+      } catch (e) {
+        console.error("Error loading models:", e);
       }
     }
 
@@ -953,7 +1087,9 @@
         image_1: uploadedBaseImg,
         ref_images: uploadedRefImg ? [uploadedRefImg] : [],
         mask: uploadedMaskImg,
-        unet_name: document.getElementById('unetSelect').value
+        unet_name: document.getElementById('unetSelect').value,
+        clip_name: document.getElementById('clipSelect').value,
+        vae_name: document.getElementById('vaeSelect').value
       };
 
       const btn = document.getElementById('btnGenerate');
@@ -1060,6 +1196,67 @@
       }
     };
 
+    document.getElementById('btnToggleComfy').onclick = async () => {
+      const btn = document.getElementById('btnToggleComfy');
+      if (isComfyOnline) {
+        if (confirm("ComfyUI 백엔드 프로세스를 종료하시겠습니까?\n점유 중인 시스템 RAM(~2.5GB)과 GPU VRAM(~10GB)이 즉시 100% 반환됩니다.")) {
+          btn.innerText = "⏳ 종료 처리 중...";
+          btn.disabled = true;
+          try {
+            const res = await fetch(`${API_BASE}/api/server/comfy/stop`, { method: "POST" });
+            const d = await res.json();
+            alert("✅ ComfyUI가 성공적으로 종료되었습니다.\n메모리와 VRAM이 깨끗하게 반환되었습니다.");
+          } catch (e) {
+            alert("종료 실패: " + e.message);
+          } finally {
+            btn.disabled = false;
+            checkStatus();
+          }
+        }
+      } else {
+        btn.innerText = "⏳ 서버 시작 중...";
+        btn.disabled = true;
+        try {
+          const res = await fetch(`${API_BASE}/api/server/comfy/start`, { method: "POST" });
+          const d = await res.json();
+          alert("🚀 ComfyUI 백엔드가 기동되었습니다.\n(모델 로딩에 약 3~5초 소요)");
+        } catch (e) {
+          alert("시작 실패: " + e.message);
+        } finally {
+          setTimeout(async () => {
+            await checkStatus();
+            btn.disabled = false;
+          }, 3000);
+        }
+      }
+    };
+
+    document.getElementById('btnShutdown').onclick = async () => {
+      if (confirm("⚠️ Image Studio 전체를 완전히 종료하시겠습니까?\n\n• ComfyUI 백엔드(Port 8188) 종료 및 VRAM/RAM 즉시 회수\n• 대시보드 API 서버(Port 7880) 프로세스 종료\n• 모든 백그라운드 리소스 100% 해제")) {
+        try {
+          await fetch(`${API_BASE}/api/server/shutdown`, { method: "POST" });
+        } catch (e) {
+          // Expected to disconnect
+        }
+        document.body.innerHTML = `
+          <div style="display:flex;height:100vh;align-items:center;justify-content:center;background:#0b0e14;color:#f0f6fc;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;text-align:center;padding:20px;">
+            <div style="background:#161b22;border:1px solid #30363d;border-radius:16px;padding:40px 50px;box-shadow:0 12px 40px rgba(0,0,0,0.6);max-width:500px;">
+              <div style="font-size:3rem;margin-bottom:16px;">🛑</div>
+              <h2 style="font-size:1.4rem;font-weight:700;margin-bottom:12px;color:#f85149;">Image Studio가 완전 종료되었습니다</h2>
+              <p style="color:#8b949e;font-size:0.9rem;line-height:1.6;margin-bottom:24px;">
+                ComfyUI 백엔드 및 대시보드 API 서버가 모두 종료되었으며,<br>
+                점유 중이던 VRAM과 RAM이 정상적으로 회수되었습니다.<br>
+                이 브라우저 창을 닫으셔도 안전합니다.
+              </p>
+              <div style="font-size:0.8rem;color:#58a6ff;background:rgba(88,166,255,0.1);padding:10px 14px;border-radius:8px;border:1px solid rgba(88,166,255,0.2);">
+                다시 실행하려면 바탕화면 또는 D:\\AI_이미지스튜디오_실행.bat 을 실행하세요.
+              </div>
+            </div>
+          </div>
+        `;
+      }
+    };
+
     document.getElementById('btnSwitchAudio').onclick = async () => {
       if (confirm("Image Studio의 VRAM을 정리하고 Audio Studio(Chatterbox)로 전환하시겠습니까?")) {
         try {
@@ -1073,6 +1270,7 @@
 
     // Init
     checkStatus();
+    loadModels();
     loadLoras();
     loadHistory();
     setInterval(checkStatus, 3000);
