@@ -369,6 +369,51 @@
       background: rgba(255, 93, 93, 0.15);
       border-color: rgba(255, 93, 93, 0.4);
     }
+    .engine-desc-text {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.55;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px dashed var(--line);
+    }
+    .guide-box {
+      background: rgba(184, 255, 92, 0.05);
+      border: 1px solid rgba(184, 255, 92, 0.2);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 0.8rem;
+      margin-bottom: 12px;
+      color: #d2f099;
+      line-height: 1.6;
+    }
+    .rvc-source-box {
+      border: 2px dashed #30363d;
+      border-radius: 12px;
+      padding: 24px 18px;
+      text-align: center;
+      background: rgba(22, 27, 34, 0.6);
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-bottom: 14px;
+    }
+    .rvc-source-box:hover {
+      border-color: var(--accent);
+      background: rgba(184, 255, 92, 0.05);
+    }
+    .rvc-file-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #21262d;
+      border: 1px solid var(--border-lit);
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-family: var(--mono);
+      margin-top: 10px;
+      color: var(--accent);
+    }
     .model-spec-badge {
       display: flex;
       align-items: center;
@@ -920,27 +965,77 @@
     <!-- RIGHT COLUMN: Script Studio & Native Generation Studio -->
     <div class="col-right">
 
-      <!-- 1. Script Studio (Top) -->
-      <div class="panel">
-        <div class="panel-header">
-          <div>
-            <h2 class="panel-title">📝 대본(Script) 입력 스튜디오</h2>
-            <div class="panel-sub">생성할 문장을 작성하면 선택된 엔진이 즉시 네이티브 오디오로 렌더링합니다</div>
+      <!-- 1. Dynamic Input Studio (Top): TTS Script vs RVC Audio -->
+      <div class="panel" id="panel-input-studio">
+
+        <!-- A. TTS Script Input Container (Chatterbox / CosyVoice / F5-TTS) -->
+        <div id="container-tts-input">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">📝 대본(Script) 입력 스튜디오 <span class="badge-ver">TTS</span></h2>
+              <div class="panel-sub" id="tts-sub-desc">작성한 대본을 선택한 TTS 엔진이 즉시 네이티브 음성으로 렌더링합니다</div>
+            </div>
+            <div style="display: flex; gap: 6px;">
+              <button class="btn-sys" onclick="loadEngineSampleScript()" id="btn-load-sample" style="font-size: 0.75rem; color: var(--accent); border-color: var(--accent);">
+                📋 최적 예시 대본 불러오기
+              </button>
+              <button class="btn-sys" onclick="clearScript()" style="font-size: 0.75rem;">지우기</button>
+            </div>
           </div>
-          <button class="btn-sys" onclick="loadSampleScript()" style="font-size: 0.75rem;">샘플 대본 불러오기</button>
+
+          <!-- Dynamic Engine Guide Box -->
+          <div class="guide-box" id="engine-guide-box">
+            <div id="guide-tip-text">💡 <strong>작성 팁:</strong> 쉼표(,)를 적극적으로 사용하면 0.2~0.3초의 자연스러운 숨고르기 호흡이 적용됩니다. (권장: 60~100자)</div>
+            <div style="margin-top: 4px; font-size: 0.76rem; color: var(--muted);" id="guide-multi-text">
+              💡 <strong>다중 대본 팁:</strong> 여러 장면이나 단락을 구분할 때는 문단 사이에 <code>___</code> (언더바 3개)를 입력하면 0.5초의 장면 전환 묵음이 자동 삽입됩니다.
+            </div>
+          </div>
+
+          <textarea id="script-input" class="script-box" placeholder="이곳에 대본을 입력하세요. 쉼표(,)와 마침표(.)를 통해 자연스러운 호흡이 조절됩니다.&#10;&#10;💡 다중 대본 팁: 여러 씬이나 단락을 구분할 때는 문단 사이에 ___ (언더바 3개)를 입력하세요. (자동으로 0.5초의 숨고르기 묵음이 삽입됩니다)"></textarea>
+
+          <div class="script-tools">
+            <div class="tool-actions">
+              <label class="checkbox-wrap">
+                <input type="checkbox" id="chk-normalize" checked>
+                <span>숫자/단위 한글 자동 변환 (1000원 ➔ 천 원)</span>
+              </label>
+            </div>
+            <div style="font-family: var(--mono);" id="char-counter">0자 (예상 0초)</div>
+          </div>
         </div>
 
-        <textarea id="script-input" class="script-box" placeholder="여기에 대본을 입력하세요. 문장 단위로 호흡을 맞추며 자연스럽게 렌더링됩니다."></textarea>
-
-        <div class="script-tools">
-          <div class="tool-actions">
-            <label class="checkbox-wrap">
-              <input type="checkbox" id="chk-normalize" checked>
-              <span>숫자/단위 한글 자동 변환 (1000원 ➔ 천 원)</span>
-            </label>
+        <!-- B. RVC Audio Input Container (RVC v2 STS) -->
+        <div id="container-rvc-input" style="display: none;">
+          <div class="panel-header">
+            <div>
+              <h2 class="panel-title">🎵 RVC v2 오디오 음색 변환 스튜디오 <span class="badge-ver" style="background: rgba(183, 157, 255, 0.15); color: var(--vio); border-color: rgba(183, 157, 255, 0.4);">STS</span></h2>
+              <div class="panel-sub">텍스트가 아닌 음성 파일을 입력받아 목표 캐릭터 목소리로 음색(Timbre)을 변환합니다</div>
+            </div>
+            <button class="btn-sys" onclick="useLatestAudioForRvc()" style="font-size: 0.75rem; color: var(--vio); border-color: var(--vio);">
+              📥 방금 생성된 오디오 가져오기
+            </button>
           </div>
-          <div style="font-family: var(--mono);" id="char-counter">0자 (예상 0초)</div>
+
+          <!-- RVC Audio Dropzone -->
+          <div class="rvc-source-box" id="rvc-dropzone" onclick="document.getElementById('rvc-audio-file-input').click()">
+            <div style="font-size: 1.6rem; margin-bottom: 6px;">🎙️ ➔ 🎭</div>
+            <div style="font-size: 0.92rem; font-weight: 700;">클릭 또는 변환할 음성 파일(WAV/MP3) 드래그</div>
+            <div style="font-size: 0.78rem; color: var(--muted); margin-top: 4px;">권장: BGM/잡음이 없는 깨끗한 단일 목소리 (Dry Vocal)</div>
+            <input type="file" id="rvc-audio-file-input" accept="audio/*" style="display: none;">
+            <div class="rvc-file-badge" id="rvc-file-badge" style="display: none;">
+              <span>📁 선택된 음원:</span> <span id="rvc-file-name">없음</span>
+            </div>
+          </div>
+
+          <!-- STS Guide Box -->
+          <div class="guide-box" style="background: rgba(183, 157, 255, 0.06); border-color: rgba(183, 157, 255, 0.25); color: #d7c4ff;">
+            <div>💡 <strong>최적 음원 조건:</strong> 목소리의 음정(Pitch)과 호흡을 분석하여 타깃 캐릭터 음색으로 모핑합니다. 사람이 직접 녹음한 음성이나 상단 TTS로 생성된 오디오가 가장 좋습니다.</div>
+            <div style="margin-top: 4px; font-size: 0.76rem; color: var(--muted);">
+              💡 <strong>키(Key) 조절 팁:</strong> 남성 음성 ➔ 여성 모델 변환 시 좌측 피치 <code>+12</code> / 여성 음성 ➔ 남성 모델 변환 시 좌측 피치 <code>-12</code>로 조절하세요.
+            </div>
+          </div>
         </div>
+
       </div>
 
       <!-- 2. 4 Native Engine Switcher Tabs & Pre-switch Notice (Middle) -->
@@ -957,25 +1052,25 @@
           <button class="tab-btn active" id="tab-chatterbox" onclick="selectEngine('chatterbox')">
             <span style="font-size: 1.25rem;">🎙️</span>
             <span>Chatterbox</span>
-            <span class="tab-badge">ResembleAI</span>
+            <span class="tab-badge">TTS</span>
           </button>
 
           <button class="tab-btn" id="tab-cosyvoice" onclick="selectEngine('cosyvoice')">
             <span style="font-size: 1.25rem;">🎭</span>
             <span>CosyVoice 2</span>
-            <span class="tab-badge">CosyVoice2-0.5B</span>
+            <span class="tab-badge">TTS</span>
           </button>
 
           <button class="tab-btn" id="tab-f5tts" onclick="selectEngine('f5tts')">
             <span style="font-size: 1.25rem;">⚡</span>
             <span>F5-TTS</span>
-            <span class="tab-badge">SWivid DiT</span>
+            <span class="tab-badge">TTS</span>
           </button>
 
           <button class="tab-btn" id="tab-rvc" onclick="selectEngine('rvc')">
             <span style="font-size: 1.25rem;">🔄</span>
             <span>RVC v2</span>
-            <span class="tab-badge">RVC v2 (RMVPE)</span>
+            <span class="tab-badge">STS</span>
           </button>
         </div>
       </div>
@@ -1108,9 +1203,46 @@
       charCounter.textContent = `${len}자 (예상 ${estSec}초)`;
     });
 
-    function loadSampleScript() {
-      scriptInput.value = "안녕하십니까. 올인원 인공지능 오디오 스튜디오 버전 2.0에 오신 것을 환영합니다. 4개의 독립 엔진 중 원하는 모델을 선택하여 대본으로부터 직접 고품질 음성을 생성해 보세요.";
+    const ENGINE_SAMPLES = {
+      chatterbox: "안녕하십니까, 올인원 인공지능 오디오 스튜디오입니다. 오늘은 날씨가 정말 화창한데요, 즐거운 하루 보내고 계신가요?\n___\n쉼표를 넣으면 자연스러운 호흡이 들어가며, 언더바 3개를 넣으면 이렇게 장면 전환 묵음이 삽입됩니다.",
+      cosyvoice: "[호들갑을 떨며 장난기 넘치고 흥분된 목소리로]\n와, 대박! 진짜로 이게 한 번에 생성된다고? 말도 안 돼, 완전 신기하잖아!\n___\n[차분하고 진지한 어조로]\n네, 감정 지시문과 다중 대본 구분자를 통해 생생한 연기 톤을 연출할 수 있습니다.",
+      f5tts: "인공지능 기반 음성 합성 기술은 나날이 발전하고 있습니다. F5-TTS 엔진은 빠른 생성 속도와 높은 음질을 보장합니다.\n___\nDiffusion Transformer 아키텍처를 기반으로 다국어 및 전문 내레이션을 군더더기 없이 정밀하게 렌더링합니다."
+    };
+
+    function loadEngineSampleScript() {
+      const sample = ENGINE_SAMPLES[activeEngine] || ENGINE_SAMPLES.chatterbox;
+      scriptInput.value = sample;
       scriptInput.dispatchEvent(new Event("input"));
+    }
+
+    function clearScript() {
+      scriptInput.value = "";
+      scriptInput.dispatchEvent(new Event("input"));
+    }
+
+    // RVC Input Audio Management
+    let rvcSelectedFile = null;
+    const rvcFileInput = document.getElementById("rvc-audio-file-input");
+    const rvcFileBadge = document.getElementById("rvc-file-badge");
+    const rvcFileName = document.getElementById("rvc-file-name");
+
+    rvcFileInput.addEventListener("change", () => {
+      if (rvcFileInput.files.length > 0) {
+        rvcSelectedFile = rvcFileInput.files[0];
+        rvcFileName.textContent = `${rvcSelectedFile.name} (${(rvcSelectedFile.size / 1024 / 1024).toFixed(2)} MB)`;
+        rvcFileBadge.style.display = "inline-flex";
+      }
+    });
+
+    function useLatestAudioForRvc() {
+      if (!currentAudioBlob) {
+        alert("아직 생성된 오디오가 없습니다. 먼저 상단 TTS 엔진으로 음성을 생성해 주세요.");
+        return;
+      }
+      rvcSelectedFile = currentAudioBlob;
+      rvcFileName.textContent = "방금 생성된 오디오 에셋 (마스터 WAV)";
+      rvcFileBadge.style.display = "inline-flex";
+      alert("방금 생성된 오디오가 RVC 변환 소스로 등록되었습니다!");
     }
 
     // Engine Selection Tabs & Pre-Switch Safety Flow
@@ -1136,10 +1268,32 @@
       document.getElementById(`params-${target}`).style.display = "block";
       document.getElementById("param-panel-title").textContent = names[target];
 
-      // 4. Update Generate Button Label
-      const icons = { chatterbox: "🎙️", cosyvoice: "🎭", f5tts: "⚡", rvc: "🔄" };
-      genBtnIcon.textContent = icons[target];
-      genBtnText.textContent = `${names[target]}로 네이티브 생성`;
+      // 4. Switch Right Top Studio: TTS Script Studio vs RVC Audio Studio
+      const ttsContainer = document.getElementById("container-tts-input");
+      const rvcContainer = document.getElementById("container-rvc-input");
+      const guideTipText = document.getElementById("guide-tip-text");
+
+      if (target === "rvc") {
+        ttsContainer.style.display = "none";
+        rvcContainer.style.display = "block";
+        genBtnIcon.textContent = "🔄";
+        genBtnText.textContent = "RVC v2로 음색 변환 시작 (STS)";
+      } else {
+        ttsContainer.style.display = "block";
+        rvcContainer.style.display = "none";
+        const icons = { chatterbox: "🎙️", cosyvoice: "🎭", f5tts: "⚡" };
+        genBtnIcon.textContent = icons[target];
+        genBtnText.textContent = `${names[target]}로 네이티브 생성 (TTS)`;
+
+        // Update Guide Box text dynamically per TTS engine
+        if (target === "chatterbox") {
+          guideTipText.innerHTML = "💡 <strong>작성 팁:</strong> 쉼표(,)를 적극적으로 사용하면 0.2~0.3초의 자연스러운 숨고르기 호흡이 적용됩니다. (권장: 60~100자)";
+        } else if (target === "cosyvoice") {
+          guideTipText.innerHTML = "💡 <strong>작성 팁:</strong> [대괄호 안 감정/상황 지시문]과 구어체/감탄사(아,, 정말요?), 말줄임표(...)를 조합하면 생생한 연기 톤이 완성됩니다.";
+        } else if (target === "f5tts") {
+          guideTipText.innerHTML = "💡 <strong>작성 팁:</strong> 띄어쓰기와 구두점(., ?)이 정돈된 2~3줄 단위 내레이션에 최적화되어 있습니다. 다국어 및 한글/영단어 혼용 텍스트도 매끄럽게 처리합니다.";
+        }
+      }
 
       // 5. Call Backend to Switch Engine (Purging Previous Model)
       try {
@@ -1357,12 +1511,48 @@
       }
     });
 
-    // Native Generation Trigger
+    // Native Generation Trigger (Supports both TTS Text & RVC STS Audio)
     async function triggerNativeGenerate() {
-      const text = scriptInput.value.trim();
-      if (!text) {
-        alert("대본을 입력해 주세요.");
-        return;
+      const fd = new FormData();
+      let endpoint = `${API_BASE}/api/generate/chatterbox`;
+
+      if (activeEngine === "rvc") {
+        // RVC STS: Requires Input Audio File
+        if (!rvcSelectedFile) {
+          alert("변환할 오디오 파일을 업로드하거나 [방금 생성된 오디오 가져오기]를 클릭해 주세요.");
+          return;
+        }
+        endpoint = `${API_BASE}/api/convert/rvc`;
+        fd.append("audio_file", rvcSelectedFile, "input.wav");
+        fd.append("model_name", document.getElementById("rvc-model-select").value);
+        fd.append("pitch_shift", document.getElementById("rvc-pitch").value);
+        fd.append("f0_method", document.getElementById("rvc-f0").value);
+        fd.append("index_rate", document.getElementById("rvc-index").value);
+      } else {
+        // TTS: Requires Script Text
+        const text = scriptInput.value.trim();
+        if (!text) {
+          alert("대본을 입력해 주세요.");
+          return;
+        }
+        fd.append("text", text);
+        if (selectedVoiceId) fd.append("voice_profile_id", selectedVoiceId);
+
+        if (activeEngine === "chatterbox") {
+          endpoint = `${API_BASE}/api/generate/chatterbox`;
+          fd.append("lang", document.getElementById("cb-lang").value);
+          fd.append("exaggeration", document.getElementById("cb-exagg").value);
+          fd.append("temperature", document.getElementById("cb-temp").value);
+        } else if (activeEngine === "cosyvoice") {
+          endpoint = `${API_BASE}/api/generate/cosyvoice`;
+          fd.append("instruction", document.getElementById("cosy-prompt").value);
+          fd.append("speed", document.getElementById("cosy-speed").value);
+        } else if (activeEngine === "f5tts") {
+          endpoint = `${API_BASE}/api/generate/f5tts`;
+          fd.append("nfe_step", document.getElementById("f5-nfe").value);
+          fd.append("cfg_strength", document.getElementById("f5-cfg").value);
+          fd.append("speed", document.getElementById("f5-speed").value);
+        }
       }
 
       genBtn.disabled = true;
@@ -1378,34 +1568,6 @@
         const pct = Math.min(95, Math.round(sec * 6));
         progressFill.style.width = `${pct}%`;
       }, 100);
-
-      const fd = new FormData();
-      fd.append("text", text);
-      if (selectedVoiceId) fd.append("voice_profile_id", selectedVoiceId);
-
-      let endpoint = `${API_BASE}/api/generate/chatterbox`;
-
-      if (activeEngine === "chatterbox") {
-        endpoint = `${API_BASE}/api/generate/chatterbox`;
-        fd.append("lang", document.getElementById("cb-lang").value);
-        fd.append("exaggeration", document.getElementById("cb-exagg").value);
-        fd.append("temperature", document.getElementById("cb-temp").value);
-      } else if (activeEngine === "cosyvoice") {
-        endpoint = `${API_BASE}/api/generate/cosyvoice`;
-        fd.append("instruction", document.getElementById("cosy-prompt").value);
-        fd.append("speed", document.getElementById("cosy-speed").value);
-      } else if (activeEngine === "f5tts") {
-        endpoint = `${API_BASE}/api/generate/f5tts`;
-        fd.append("nfe_step", document.getElementById("f5-nfe").value);
-        fd.append("cfg_strength", document.getElementById("f5-cfg").value);
-        fd.append("speed", document.getElementById("f5-speed").value);
-      } else if (activeEngine === "rvc") {
-        endpoint = `${API_BASE}/api/convert/rvc`;
-        fd.append("model_name", document.getElementById("rvc-model-select").value);
-        fd.append("pitch_shift", document.getElementById("rvc-pitch").value);
-        fd.append("f0_method", document.getElementById("rvc-f0").value);
-        fd.append("index_rate", document.getElementById("rvc-index").value);
-      }
 
       try {
         statusText.firstElementChild.textContent = `${activeEngine.toUpperCase()} 모델로 합성 연산 중...`;
