@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>All-in-One AI Image Studio · Qwen 2.1</title>
+  <title>AI Image Studio · Qwen 2.1 NSFW T2I</title>
   <style>
     :root {
       --bg: #07090e;
@@ -34,6 +34,8 @@
       flex-direction: column;
       line-height: 1.5;
     }
+
+    /* Header */
     header {
       padding: 12px 24px;
       border-bottom: 1px solid var(--line);
@@ -63,12 +65,12 @@
       -webkit-text-fill-color: transparent;
     }
     .badge-ver {
-      font-size: 0.7rem;
-      padding: 2px 8px;
+      font-size: 0.72rem;
+      padding: 2px 10px;
       border-radius: 12px;
-      background: rgba(0, 240, 255, 0.12);
-      color: var(--accent);
-      border: 1px solid rgba(0, 240, 255, 0.35);
+      background: rgba(183, 133, 255, 0.15);
+      color: var(--purp);
+      border: 1px solid rgba(183, 133, 255, 0.35);
       font-weight: 700;
       font-family: var(--mono);
       -webkit-text-fill-color: initial;
@@ -76,7 +78,7 @@
     .top-controls {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
     }
     .pill {
       display: flex;
@@ -97,8 +99,6 @@
     }
     .dot.online { background: var(--green); box-shadow: 0 0 8px var(--green); }
     .dot.offline { background: var(--red); box-shadow: 0 0 8px var(--red); }
-    .dot.loading { background: var(--gold); animation: pulse 1s infinite alternate; }
-    @keyframes pulse { 0% { opacity: 0.3; } 100% { opacity: 1; } }
 
     .vram-bar-container {
       display: flex;
@@ -171,6 +171,49 @@
       color: var(--red);
     }
 
+    /* Workflow Sub-Navigation Bar */
+    .workflow-subnav {
+      background: rgba(13, 17, 26, 0.6);
+      border-bottom: 1px solid var(--line);
+      padding: 8px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .subnav-label {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-right: 4px;
+    }
+    .workflow-pill {
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .workflow-pill.active {
+      background: rgba(0, 240, 255, 0.15);
+      color: var(--accent);
+      border: 1px solid rgba(0, 240, 255, 0.4);
+      box-shadow: 0 0 12px rgba(0, 240, 255, 0.15);
+    }
+    .workflow-pill.disabled {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--muted);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    /* Main Grid */
     main {
       flex: 1;
       display: grid;
@@ -198,7 +241,7 @@
       gap: 12px;
     }
     .card-title {
-      font-size: 0.88rem;
+      font-size: 0.84rem;
       font-weight: 700;
       color: var(--muted);
       text-transform: uppercase;
@@ -208,38 +251,85 @@
       align-items: center;
     }
 
-    /* Mode Tabs */
-    .mode-tabs {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 6px;
-      background: var(--card-bg);
-      padding: 4px;
-      border-radius: 10px;
-      border: 1px solid var(--line);
+    /* NSFW LoRA Card Specifics */
+    .lora-card {
+      border-color: rgba(183, 133, 255, 0.35);
+      background: linear-gradient(180deg, rgba(183, 133, 255, 0.06), rgba(13, 17, 26, 0.95));
     }
-    .tab-btn {
-      padding: 8px;
-      font-size: 0.84rem;
+    .lora-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .lora-toggle-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.92rem;
       font-weight: 700;
-      border: none;
-      background: transparent;
-      color: var(--muted);
-      border-radius: 8px;
       cursor: pointer;
-      transition: all 0.2s;
-      text-align: center;
+      color: var(--text);
     }
-    .tab-btn.active {
-      background: var(--border-lit);
-      color: #fff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    .lora-toggle-label input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: var(--purp);
+      cursor: pointer;
     }
-    .tab-btn.active.t2i { color: var(--accent); border-bottom: 2px solid var(--accent); }
-    .tab-btn.active.i2i { color: var(--gold); border-bottom: 2px solid var(--gold); }
-    .tab-btn.active.r2i { color: var(--purp); border-bottom: 2px solid var(--purp); }
+    .lora-badge {
+      font-size: 0.72rem;
+      padding: 2px 8px;
+      border-radius: 6px;
+      background: rgba(183, 133, 255, 0.15);
+      color: var(--purp);
+      border: 1px solid rgba(183, 133, 255, 0.3);
+      font-family: var(--mono);
+    }
+    .slider-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    input[type="range"] {
+      flex: 1;
+      accent-color: var(--purp);
+      cursor: pointer;
+    }
 
-    /* Input Groups */
+    /* Resolution Grid */
+    .res-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+    .res-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      padding: 8px;
+      border-radius: 8px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.15s;
+    }
+    .res-btn:hover {
+      background: var(--card-hover);
+      color: var(--text);
+      border-color: var(--border-lit);
+    }
+    .res-btn.active {
+      background: rgba(0, 240, 255, 0.15);
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 700;
+      box-shadow: 0 0 10px rgba(0, 240, 255, 0.15);
+    }
+
+    /* Prompts */
     .field-label {
       font-size: 0.82rem;
       font-weight: 600;
@@ -248,126 +338,81 @@
       justify-content: space-between;
       margin-bottom: 4px;
     }
-    .field-label span.desc {
-      font-size: 0.74rem;
+    .field-label .desc {
+      font-size: 0.72rem;
       color: var(--muted);
-      font-weight: 400;
-    }
-    textarea, input[type="text"], input[type="number"], select {
-      width: 100%;
-      background: var(--card-bg);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      color: var(--text);
-      padding: 10px 12px;
-      font-family: inherit;
-      font-size: 0.88rem;
-      outline: none;
-      transition: border 0.2s;
-    }
-    textarea:focus, input[type="text"]:focus, select:focus {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 2px var(--accent-glow);
+      font-weight: normal;
     }
     textarea.prompt-box {
+      width: 100%;
       min-height: 90px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-lit);
+      border-radius: 10px;
+      padding: 10px 12px;
+      color: var(--text);
+      font-size: 0.88rem;
+      font-family: inherit;
       resize: vertical;
+      line-height: 1.4;
+    }
+    textarea.prompt-box:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 12px var(--accent-glow);
     }
     textarea.neg-box {
-      min-height: 48px;
+      width: 100%;
+      min-height: 50px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-lit);
+      border-radius: 8px;
+      padding: 8px 10px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-family: inherit;
       resize: vertical;
     }
-
-    /* Preset Chips */
+    textarea.neg-box:focus {
+      outline: none;
+      border-color: var(--purp);
+      color: var(--text);
+    }
     .chip-row {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
     }
     .chip {
-      background: rgba(255,255,255,0.05);
+      font-size: 0.73rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--card-bg);
       border: 1px solid var(--line);
-      padding: 3px 8px;
-      border-radius: 6px;
-      font-size: 0.74rem;
-      cursor: pointer;
       color: var(--muted);
+      cursor: pointer;
       transition: all 0.15s;
     }
     .chip:hover {
-      background: rgba(0, 240, 255, 0.15);
+      border-color: var(--accent);
       color: var(--accent);
-      border-color: var(--accent);
+      background: var(--card-hover);
     }
 
-    /* Dropzones for Image Uploads */
-    .dropzone {
-      border: 2px dashed var(--line);
-      border-radius: 10px;
-      padding: 14px;
-      text-align: center;
-      background: rgba(255,255,255,0.015);
-      cursor: pointer;
-      transition: all 0.2s;
-      position: relative;
-    }
-    .dropzone:hover {
-      border-color: var(--accent);
-      background: rgba(0, 240, 255, 0.03);
-    }
-    .dropzone.has-file {
-      border-style: solid;
-      border-color: var(--green);
-      background: rgba(0, 230, 118, 0.04);
-    }
-    .dropzone input[type="file"] {
-      position: absolute;
-      top:0; left:0; width:100%; height:100%;
-      opacity: 0;
-      cursor: pointer;
-    }
-    .dropzone-preview {
-      max-height: 90px;
-      max-width: 100%;
-      border-radius: 6px;
-      margin-top: 8px;
-      display: none;
-      object-fit: contain;
-    }
-
-    /* LoRA Section */
-    .lora-item {
+    /* Selects & Inputs */
+    select, input[type="number"], input[type="text"] {
+      width: 100%;
       background: var(--card-bg);
-      border: 1px solid var(--line);
+      border: 1px solid var(--border-lit);
       border-radius: 8px;
-      padding: 10px 12px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-    .lora-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .lora-title {
+      padding: 7px 10px;
+      color: var(--text);
       font-size: 0.82rem;
       font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 8px;
     }
-    .slider-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 0.78rem;
-      color: var(--muted);
-    }
-    input[type="range"] {
-      flex: 1;
-      accent-color: var(--accent);
-      cursor: pointer;
+    select:focus, input:focus {
+      outline: none;
+      border-color: var(--accent);
     }
 
     /* Generate Button */
@@ -376,7 +421,7 @@
       color: #fff;
       border: none;
       border-radius: 12px;
-      padding: 14px;
+      padding: 15px;
       font-size: 1.05rem;
       font-weight: 800;
       cursor: pointer;
@@ -414,13 +459,13 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 540px;
+      min-height: 560px;
       position: relative;
       overflow: hidden;
     }
     .viewport-img {
       max-width: 100%;
-      max-height: 680px;
+      max-height: 700px;
       border-radius: 12px;
       box-shadow: 0 8px 32px rgba(0,0,0,0.6);
       object-fit: contain;
@@ -433,17 +478,18 @@
       justify-content: center;
       color: var(--muted);
       gap: 12px;
+      text-align: center;
     }
     .empty-icon {
       font-size: 3.5rem;
-      opacity: 0.4;
+      opacity: 0.35;
     }
 
     /* Loading Overlay */
     .loading-overlay {
       position: absolute;
       top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(13, 17, 26, 0.85);
+      background: rgba(13, 17, 26, 0.88);
       backdrop-filter: blur(8px);
       display: none;
       flex-direction: column;
@@ -453,8 +499,8 @@
       z-index: 10;
     }
     .spinner {
-      width: 48px;
-      height: 48px;
+      width: 50px;
+      height: 50px;
       border: 4px solid rgba(0, 240, 255, 0.15);
       border-top-color: var(--accent);
       border-radius: 50%;
@@ -462,9 +508,13 @@
     }
     @keyframes spin { to { transform: rotate(360deg); } }
     .loading-msg {
-      font-size: 0.92rem;
-      font-weight: 600;
+      font-size: 0.94rem;
+      font-weight: 700;
       color: var(--text);
+    }
+    .loading-sub {
+      font-size: 0.78rem;
+      color: var(--muted);
     }
 
     /* Result Toolbar */
@@ -490,61 +540,38 @@
       padding-bottom: 6px;
     }
     .history-item {
-      width: 80px;
-      height: 80px;
+      width: 82px;
+      height: 82px;
       border-radius: 8px;
       border: 1px solid var(--line);
       overflow: hidden;
       cursor: pointer;
       flex-shrink: 0;
       position: relative;
-      transition: transform 0.2s;
+      transition: all 0.15s;
     }
     .history-item:hover {
-      transform: scale(1.05);
       border-color: var(--accent);
+      transform: scale(1.04);
     }
     .history-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-
-    /* Grid layout for resolution options */
-    .res-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 6px;
-    }
-    .res-btn {
-      background: var(--card-bg);
-      border: 1px solid var(--line);
-      padding: 6px;
-      border-radius: 6px;
-      font-size: 0.74rem;
-      color: var(--muted);
-      cursor: pointer;
-      text-align: center;
-      transition: all 0.15s;
-    }
-    .res-btn.active {
-      background: rgba(0, 240, 255, 0.15);
-      border-color: var(--accent);
-      color: var(--accent);
-      font-weight: 700;
-    }
   </style>
 </head>
 <body>
 
+  <!-- Top Header -->
   <header>
     <div class="brand">
       <h1>🎨 AI Image Studio</h1>
-      <span class="badge-ver">Qwen 2.1 · RTX 3080 12GB</span>
+      <span class="badge-ver">Qwen 2.1 NSFW T2I · RTX 3080 12GB</span>
     </div>
     <div class="top-controls">
       <div class="pill">
-        <span class="dot online" id="statusDot"></span>
+        <span class="dot offline" id="statusDot"></span>
         <span id="statusText">확인 중...</span>
       </div>
       <div class="pill vram-bar-container">
@@ -570,69 +597,78 @@
     </div>
   </header>
 
+  <!-- Dedicated Workflow Navigation -->
+  <div class="workflow-subnav">
+    <span class="subnav-label">웍플로우 허브:</span>
+    <span class="workflow-pill active">
+      🎨 Qwen 2.1 NSFW T2I (운영 중)
+    </span>
+    <span class="workflow-pill disabled" title="i2i 전용 페이지는 다음 단계에서 구축될 예정입니다">
+      ✂️ I2I (마스크/편집) · 준비 중
+    </span>
+    <span class="workflow-pill disabled" title="r2i 전용 페이지는 다음 단계에서 구축될 예정입니다">
+      🧩 R2I (레퍼런스 합성) · 준비 중
+    </span>
+  </div>
+
   <main>
-    <!-- Left Column: Controls -->
+    <!-- Left Column: Focused T2I Controls -->
     <div class="control-col">
-      <!-- Model Engine Selection -->
-      <div class="card">
+      
+      <!-- 1. NSFW Detail LoRA Controller (Exclusive to this workflow) -->
+      <div class="card lora-card">
         <div class="card-title">
-          <span>🧠 모델 선택 / 아키텍처 제어</span>
-          <span style="font-size:0.75rem; color:var(--accent);" id="modelCountBadge">스캔 중...</span>
+          <span>🔥 전용 NSFW LoRA 튜닝 가중치</span>
+          <span class="lora-badge">TheseAlpacas v2.0</span>
         </div>
-        <div style="display:flex; flex-direction:column; gap:8px;">
-          <div>
-            <div class="field-label" style="font-size:0.76rem; margin-bottom:4px;">
-              <span>Diffusion 모델</span>
-              <span class="desc" id="diffSizeBadge">INT8 Convrot 추천</span>
-            </div>
-            <select id="unetSelect" style="width:100%; padding:8px 10px; background:var(--card-bg); color:var(--text); border:1px solid var(--border-lit); border-radius:8px; font-size:0.82rem; font-weight:600; cursor:pointer;">
-              <option value="qwen_image_2.1_int8_convrot.safetensors" selected>👑 Qwen Image 2.1 (INT8 Convrot · 기본 추천)</option>
-            </select>
-          </div>
+        
+        <div class="lora-row">
+          <label class="lora-toggle-label" for="nsfwLoraCheck">
+            <input type="checkbox" id="nsfwLoraCheck" checked onchange="toggleLoraUI(this.checked)">
+            <span>NSFW 디테일 LoRA 활성화</span>
+          </label>
+          <span id="loraStateBadge" style="font-size:0.75rem; color:var(--purp); font-weight:700;">ON (가동)</span>
+        </div>
 
-          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px;">
-            <div>
-              <div class="field-label" style="font-size:0.74rem; margin-bottom:4px;">
-                <span>Text Encoder</span>
-              </div>
-              <select id="clipSelect" style="width:100%; padding:6px 8px; background:var(--card-bg); color:var(--text); border:1px solid var(--border-lit); border-radius:6px; font-size:0.75rem; font-weight:600; cursor:pointer;">
-                <option value="qwen3vl_8b_int8_convrot.safetensors" selected>qwen3vl_8b_int8_convrot</option>
-              </select>
-            </div>
-            <div>
-              <div class="field-label" style="font-size:0.74rem; margin-bottom:4px;">
-                <span>VAE 모델</span>
-              </div>
-              <select id="vaeSelect" style="width:100%; padding:6px 8px; background:var(--card-bg); color:var(--text); border:1px solid var(--border-lit); border-radius:6px; font-size:0.75rem; font-weight:600; cursor:pointer;">
-                <option value="qwen_image_2.1_vae_bf16.safetensors" selected>qwen_image_2.1_vae_bf16</option>
-              </select>
-            </div>
+        <div id="loraSliderBox" style="display:flex; flex-direction:column; gap:6px; margin-top:4px;">
+          <div class="slider-row">
+            <span>가중치 (Strength)</span>
+            <input type="range" id="nsfwLoraSlider" min="0.1" max="1.5" step="0.05" value="0.8" oninput="document.getElementById('nsfwLoraVal').innerText = this.value">
+            <span id="nsfwLoraVal" style="min-width:32px; font-weight:700; color:var(--text); font-family:var(--mono);">0.80</span>
+          </div>
+          <div style="font-size:0.75rem; color:var(--muted);">
+            💡 Qwen 2.1의 인체 해부학적 정밀도와 텍스처를 강화합니다 (권장: 0.7 ~ 0.9).
           </div>
         </div>
       </div>
 
-      <!-- Mode Selection -->
+      <!-- 2. Aspect Ratio & Resolution Selector -->
       <div class="card">
         <div class="card-title">
-          <span>작업 모드 분기</span>
-          <span style="font-size:0.75rem; color:var(--accent);" id="activeModeName">Text to Image</span>
+          <span>📐 종횡비 및 렌더 해상도</span>
+          <span style="font-size:0.75rem; color:var(--accent);" id="activeResLabel">1024 × 1024 (1:1)</span>
         </div>
-        <div class="mode-tabs">
-          <button class="tab-btn active t2i" onclick="setMode('t2i')">🎨 t2i (생성)</button>
-          <button class="tab-btn i2i" onclick="setMode('i2i')">✂️ i2i (편집)</button>
-          <button class="tab-btn r2i" onclick="setMode('r2i')">🧩 r2i (레퍼런스)</button>
+
+        <div class="res-grid">
+          <div class="res-btn active" onclick="setRes(1024, 1024, '1024 × 1024 (1:1)', this)">1:1 (Square)</div>
+          <div class="res-btn" onclick="setRes(832, 1248, '832 × 1248 (2:3)', this)">2:3 (Portrait)</div>
+          <div class="res-btn" onclick="setRes(1248, 832, '1248 × 832 (3:2)', this)">3:2 (Landscape)</div>
+          <div class="res-btn" onclick="setRes(768, 1344, '768 × 1344 (9:16)', this)">9:16 (Story)</div>
+          <div class="res-btn" onclick="setRes(1344, 768, '1344 × 768 (16:9)', this)">16:9 (Cinema)</div>
+          <div class="res-btn" onclick="setRes(1536, 1536, '1536 × 1536 (2K)', this)">2K (1536²)</div>
         </div>
       </div>
 
-      <!-- Prompts Card -->
+      <!-- 3. Prompts Card -->
       <div class="card">
         <div>
           <div class="field-label">
             <span>프롬프트 (Positive Prompt)</span>
-            <span class="desc">한국어/영문 모두 지원</span>
+            <span class="desc">한국어 / 영문 모두 지원</span>
           </div>
-          <textarea id="promptInput" class="prompt-box" placeholder="Qwen Image 2.1에 생성할 장면을 묘사하세요..."></textarea>
-          <div class="chip-row" style="margin-top:6px;">
+          <textarea id="promptInput" class="prompt-box" placeholder="Qwen Image 2.1로 생성할 인물, 포즈, 배경, 조명을 자유롭게 묘사하세요..."></textarea>
+          
+          <div class="chip-row" style="margin-top:8px;">
             <span class="chip" onclick="addPrompt('hyperrealistic fashion editorial portrait, high contrast chiaroscuro studio lighting, masterpiece')">✨ 패션 화보</span>
             <span class="chip" onclick="addPrompt('cyberpunk futuristic street with neon reflections, rain, ultra detailed 8k')">🏙️ 사이버펑크</span>
             <span class="chip" onclick="addPrompt('anime aesthetic illustration, highly detailed lines, vibrant colors')">🌸 애니메이션</span>
@@ -640,89 +676,29 @@
           </div>
         </div>
 
-        <div>
+        <div style="margin-top:4px;">
           <div class="field-label">
             <span>네거티브 프롬프트 (선택)</span>
-            <span class="desc">CFG 1.0 초과 시 활성화</span>
+            <span class="desc">CFG &gt; 1.0 시 반영</span>
           </div>
-          <textarea id="negInput" class="neg-box" placeholder="bad quality, blurry, watermark, lowres, distorted..."></textarea>
+          <textarea id="negInput" class="neg-box" placeholder="bad anatomy, blurry, watermark, lowres, distorted faces, text, artifacts..."></textarea>
         </div>
       </div>
 
-      <!-- Inputs for i2i and r2i (Conditional) -->
-      <div class="card" id="imageInputsCard" style="display:none;">
-        <div class="card-title">
-          <span id="imageInputsTitle">입력 이미지 (포토샵 정밀 작업물 지원)</span>
-        </div>
-        
-        <div id="i2iBox">
-          <div class="field-label">
-            <span>베이스 원본 이미지 (Edit Target: &lt;image1&gt;)</span>
-          </div>
-          <div class="dropzone" id="baseDropzone">
-            <span>📷 클릭하거나 이미지를 드래그하여 업로드</span>
-            <input type="file" id="baseFile" accept="image/*" onchange="handleFileUpload(event, 'base')">
-            <img id="basePreview" class="dropzone-preview">
-          </div>
-
-          <div style="margin-top:10px;">
-            <div class="field-label">
-              <span>인페인트 마스크 (선택 - 포토샵 흑백 마스크 PNG)</span>
-            </div>
-            <div class="dropzone" id="maskDropzone">
-              <span>🎭 흑백 마스크 이미지 업로드 (수정할 영역: 흰색)</span>
-              <input type="file" id="maskFile" accept="image/*" onchange="handleFileUpload(event, 'mask')">
-              <img id="maskPreview" class="dropzone-preview">
-            </div>
-          </div>
-
-          <div style="margin-top:10px;">
-            <div class="field-label">
-              <span>Denoising Strength (변형 강도)</span>
-              <span id="denoiseVal">0.75</span>
-            </div>
-            <input type="range" id="denoiseSlider" min="0.1" max="1.0" step="0.05" value="0.75" oninput="document.getElementById('denoiseVal').innerText = this.value">
-          </div>
-        </div>
-
-        <div id="r2iBox" style="display:none;">
-          <div class="field-label">
-            <span>레퍼런스 이미지 추가 (&lt;image2&gt;, &lt;image3&gt;...)</span>
-            <span class="desc">의상/스타일/소품 결합용</span>
-          </div>
-          <div class="dropzone" id="refDropzone">
-            <span>📎 스타일/의상 레퍼런스 이미지 업로드</span>
-            <input type="file" id="refFile" accept="image/*" onchange="handleFileUpload(event, 'ref')">
-            <img id="refPreview" class="dropzone-preview">
-          </div>
-          <div style="font-size:0.75rem; color:var(--muted); margin-top:6px;">
-            💡 프롬프트에서 <code>&lt;image1&gt;</code>의 인물에게 <code>&lt;image2&gt;</code>의 의상을 입혀달라고 지시할 수 있습니다.
-          </div>
-        </div>
-      </div>
-
-      <!-- Settings & LoRA Accordion -->
+      <!-- 4. Sampling & Generation Parameters -->
       <div class="card">
         <div class="card-title">
-          <span>해상도 및 렌더 파라미터</span>
+          <span>⚙️ 샘플링 파라미터 (Qwen 최적값)</span>
+          <span style="font-size:0.75rem; color:var(--purp);">NSFW 프리셋 적용됨</span>
         </div>
 
-        <div class="res-grid">
-          <div class="res-btn active" onclick="setRes(1024, 1024, this)">1:1 (1024x1024)</div>
-          <div class="res-btn" onclick="setRes(832, 1248, this)">2:3 (832x1248)</div>
-          <div class="res-btn" onclick="setRes(1248, 832, this)">3:2 (1248x832)</div>
-          <div class="res-btn" onclick="setRes(768, 1344, this)">9:16 (768x1344)</div>
-          <div class="res-btn" onclick="setRes(1344, 768, this)">16:9 (1344x768)</div>
-          <div class="res-btn" onclick="setRes(1536, 1536, this)">2K (1536x1536)</div>
-        </div>
-
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:6px;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
           <div>
-            <div class="field-label"><span>Steps</span><span id="stepsVal">28</span></div>
+            <div class="field-label"><span>Steps</span><span id="stepsVal" style="font-weight:700;">28</span></div>
             <input type="range" id="stepsSlider" min="15" max="50" step="1" value="28" oninput="document.getElementById('stepsVal').innerText = this.value">
           </div>
           <div>
-            <div class="field-label"><span>CFG Scale</span><span id="cfgVal">3.5</span></div>
+            <div class="field-label"><span>CFG Scale</span><span id="cfgVal" style="font-weight:700;">3.5</span></div>
             <input type="range" id="cfgSlider" min="1.0" max="7.0" step="0.5" value="3.5" oninput="document.getElementById('cfgVal').innerText = this.value">
           </div>
         </div>
@@ -731,53 +707,57 @@
           <div>
             <div class="field-label"><span>Sampler</span></div>
             <select id="samplerSelect">
-              <option value="euler" selected>euler</option>
-              <option value="euler_sde">euler_sde (LoRA 추천)</option>
+              <option value="euler_sde" selected>euler_sde (LoRA 권장)</option>
+              <option value="euler">euler</option>
               <option value="dpmpp_2m">dpmpp_2m</option>
             </select>
           </div>
           <div>
             <div class="field-label"><span>Scheduler</span></div>
             <select id="schedulerSelect">
-              <option value="beta" selected>beta (LoRA 추천 기본)</option>
+              <option value="beta" selected>beta (Qwen 기본)</option>
               <option value="simple">simple</option>
               <option value="karras">karras</option>
             </select>
           </div>
         </div>
+
+        <div style="display:flex; align-items:center; gap:8px;">
+          <div style="flex:1;">
+            <div class="field-label"><span>Seed</span><span class="desc">-1은 매번 랜덤</span></div>
+            <input type="number" id="seedInput" value="-1" placeholder="-1 (Random)">
+          </div>
+          <button class="btn-action" style="margin-top:20px; height:34px;" onclick="randomizeSeed()" title="랜덤 시드로 초기화">
+            🎲 랜덤
+          </button>
+        </div>
       </div>
 
-      <!-- LoRA Selection -->
-      <div class="card">
-        <div class="card-title">
-          <span>LoRA 튜닝 가중치 연동</span>
-          <span style="font-size:0.75rem; color:var(--purp); cursor:pointer;" onclick="applyNsfwPreset()">⚡ NSFW LoRA 프리셋 적용</span>
-        </div>
-        <div id="loraContainer" style="display:flex; flex-direction:column; gap:8px;">
-          <div style="font-size:0.8rem; color:var(--muted);">LoRA 목록을 검색하는 중...</div>
-        </div>
-      </div>
-
-      <!-- Generate Trigger -->
+      <!-- 5. Render Trigger Button -->
       <button class="btn-generate" id="btnGenerate" onclick="startGeneration()">
-        🚀 고화질 이미지 생성
+        🚀 고화질 T2I 이미지 생성
       </button>
+
     </div>
 
-    <!-- Right Column: Viewport & Gallery -->
+    <!-- Right Column: Viewport & History Strip -->
     <div class="preview-col">
       <div class="viewport-card" id="viewportCard">
         <div class="empty-placeholder" id="emptyPlaceholder">
           <div class="empty-icon">🖼️</div>
-          <div style="font-size:1.1rem; font-weight:700;">렌더링 결과 대기 중</div>
-          <div style="font-size:0.84rem;">프롬프트를 입력하고 [이미지 생성]을 누르면 RTX 3080 가속 렌더링이 시작됩니다.</div>
+          <div style="font-size:1.15rem; font-weight:700; color:var(--text);">Qwen Image 2.1 렌더링 대기 중</div>
+          <div style="font-size:0.86rem; max-width:400px; line-height:1.6;">
+            프롬프트를 입력하고 <strong>[고화질 이미지 생성]</strong>을 클릭하면<br>
+            RTX 3080 12GB 환경에서 약 20~35초 내에 완성됩니다.
+          </div>
         </div>
 
         <img id="resultImage" class="viewport-img">
 
         <div class="loading-overlay" id="loadingOverlay">
           <div class="spinner"></div>
-          <div class="loading-msg" id="loadingMsg">신경망 연산 가속 중... (약 10~25초)</div>
+          <div class="loading-msg" id="loadingMsg">신경망 연산 가속 중...</div>
+          <div class="loading-sub">Qwen 2.1 INT8 + NSFW LoRA 텐서 연산 진행 중</div>
         </div>
       </div>
 
@@ -802,45 +782,18 @@
 
   <script>
     const API_BASE = (window.location.port === "7880") ? "" : "http://127.0.0.1:7880";
-    let currentMode = "t2i";
     let selectedWidth = 1024;
     let selectedHeight = 1024;
-    let uploadedBaseImg = null;
-    let uploadedMaskImg = null;
-    let uploadedRefImg = null;
     let activeResultUrl = null;
     let activePrompt = "";
+    let isComfyOnline = false;
 
-    function setMode(mode) {
-      currentMode = mode;
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.querySelector(`.tab-btn.${mode}`).classList.add('active');
-
-      const titleMap = { 't2i': 'Text to Image', 'i2i': 'Image to Image (Edit)', 'r2i': 'Reference to Image' };
-      document.getElementById('activeModeName').innerText = titleMap[mode];
-
-      const imgCard = document.getElementById('imageInputsCard');
-      const i2iBox = document.getElementById('i2iBox');
-      const r2iBox = document.getElementById('r2iBox');
-
-      if (mode === 't2i') {
-        imgCard.style.display = 'none';
-      } else if (mode === 'i2i') {
-        imgCard.style.display = 'flex';
-        i2iBox.style.display = 'block';
-        r2iBox.style.display = 'none';
-      } else if (mode === 'r2i') {
-        imgCard.style.display = 'flex';
-        i2iBox.style.display = 'block';
-        r2iBox.style.display = 'block';
-      }
-    }
-
-    function setRes(w, h, el) {
+    function setRes(w, h, label, el) {
       selectedWidth = w;
       selectedHeight = h;
       document.querySelectorAll('.res-btn').forEach(b => b.classList.remove('active'));
       el.classList.add('active');
+      document.getElementById('activeResLabel').innerText = label;
     }
 
     function addPrompt(text) {
@@ -848,7 +801,25 @@
       box.value = box.value ? box.value + ", " + text : text;
     }
 
-    let isComfyOnline = false;
+    function randomizeSeed() {
+      document.getElementById('seedInput').value = -1;
+    }
+
+    function toggleLoraUI(checked) {
+      const sliderBox = document.getElementById('loraSliderBox');
+      const badge = document.getElementById('loraStateBadge');
+      if (checked) {
+        sliderBox.style.opacity = "1";
+        sliderBox.style.pointerEvents = "auto";
+        badge.innerText = "ON (가동)";
+        badge.style.color = "var(--purp)";
+      } else {
+        sliderBox.style.opacity = "0.4";
+        sliderBox.style.pointerEvents = "none";
+        badge.innerText = "OFF (비활성)";
+        badge.style.color = "var(--muted)";
+      }
+    }
 
     async function checkStatus() {
       try {
@@ -895,159 +866,6 @@
       }
     }
 
-    async function loadModels() {
-      try {
-        const res = await fetch(`${API_BASE}/api/models`);
-        if (!res.ok) return;
-        const data = await res.json();
-
-        // 1. Diffusion Models
-        const unetSel = document.getElementById('unetSelect');
-        if (data.diffusion_models && data.diffusion_models.length > 0) {
-          unetSel.innerHTML = "";
-          data.diffusion_models.forEach(m => {
-            const opt = document.createElement('option');
-            opt.value = m.name;
-            const isRec = m.name.toLowerCase().includes("int8_convrot");
-            opt.innerText = `${isRec ? '👑 ' : ''}${m.name} (${m.size_gb} GB)`;
-            if (m.name === (data.defaults?.diffusion || "qwen_image_2.1_int8_convrot.safetensors")) {
-              opt.selected = true;
-            }
-            unetSel.appendChild(opt);
-          });
-          const badge = document.getElementById('modelCountBadge');
-          if (badge) badge.innerText = `${data.diffusion_models.length}개 모델 검색됨`;
-        }
-
-        // 2. Text Encoders
-        const clipSel = document.getElementById('clipSelect');
-        if (data.text_encoders && data.text_encoders.length > 0) {
-          clipSel.innerHTML = "";
-          data.text_encoders.forEach(m => {
-            const opt = document.createElement('option');
-            opt.value = m.name;
-            opt.innerText = `${m.name} (${m.size_gb} GB)`;
-            if (m.name === (data.defaults?.text_encoder || "qwen3vl_8b_int8_convrot.safetensors")) {
-              opt.selected = true;
-            }
-            clipSel.appendChild(opt);
-          });
-        }
-
-        // 3. VAEs
-        const vaeSel = document.getElementById('vaeSelect');
-        if (data.vaes && data.vaes.length > 0) {
-          vaeSel.innerHTML = "";
-          data.vaes.forEach(m => {
-            const opt = document.createElement('option');
-            opt.value = m.name;
-            opt.innerText = `${m.name} (${m.size_gb} GB)`;
-            if (m.name === (data.defaults?.vae || "qwen_image_2.1_vae_bf16.safetensors")) {
-              opt.selected = true;
-            }
-            vaeSel.appendChild(opt);
-          });
-        }
-      } catch (e) {
-        console.error("Error loading models:", e);
-      }
-    }
-
-    async function loadLoras() {
-      try {
-        const res = await fetch(`${API_BASE}/api/loras`);
-        const data = await res.json();
-        const container = document.getElementById('loraContainer');
-        container.innerHTML = "";
-
-        if (!data.loras || data.loras.length === 0) {
-          container.innerHTML = `<div style="font-size:0.8rem; color:var(--muted);">사용 가능한 LoRA가 없습니다.</div>`;
-          return;
-        }
-
-        data.loras.forEach((l, idx) => {
-          const isNsfw = l.name.toLowerCase().includes("nsfw") && l.name.toLowerCase().includes("qwen");
-          const defaultChecked = isNsfw ? "checked" : "";
-          const defaultVal = isNsfw ? 0.8 : l.recommended_strength;
-          const div = document.createElement('div');
-          div.className = "lora-item";
-          div.innerHTML = `
-            <div class="lora-header">
-              <label class="lora-title">
-                <input type="checkbox" id="lora_check_${idx}" data-name="${l.name}" ${defaultChecked}>
-                <span>${l.filename}</span>
-              </label>
-              <span style="font-size:0.74rem; color:var(--muted);">${l.size_mb} MB</span>
-            </div>
-            <div class="slider-row">
-              <span>강도</span>
-              <input type="range" id="lora_str_${idx}" min="0.1" max="1.5" step="0.05" value="${defaultVal}" oninput="document.getElementById('lora_val_${idx}').innerText = this.value">
-              <span id="lora_val_${idx}" style="min-width:28px;">${defaultVal}</span>
-            </div>
-          `;
-          container.appendChild(div);
-        });
-      } catch (e) {
-        console.error("Error loading LoRAs:", e);
-      }
-    }
-
-    function applyNsfwPreset() {
-      document.getElementById('stepsSlider').value = 28;
-      document.getElementById('stepsVal').innerText = "28";
-      document.getElementById('cfgSlider').value = 3.5;
-      document.getElementById('cfgVal').innerText = "3.5";
-      document.getElementById('samplerSelect').value = "euler_sde";
-      document.getElementById('schedulerSelect').value = "beta";
-
-      // Check NSFW LoRA if present
-      document.querySelectorAll('#loraContainer input[type="checkbox"]').forEach(chk => {
-        if (chk.dataset.name.toLowerCase().includes("nsfw")) {
-          chk.checked = true;
-        }
-      });
-      alert("✅ NSFW LoRA 최적화 프리셋이 적용되었습니다:\n- Steps: 28\n- CFG: 3.5\n- Sampler: euler_sde\n- Scheduler: beta");
-    }
-
-    async function handleFileUpload(event, type) {
-      const file = event.target.files[0];
-      if (!file) return;
-
-      const formData = new FormData();
-      formData.append("file", file);
-
-      try {
-        const res = await fetch(`${API_BASE}/api/upload`, {
-          method: "POST",
-          body: formData
-        });
-        const data = await res.json();
-        if (data.status === "ok") {
-          if (type === 'base') {
-            uploadedBaseImg = data.filename;
-            const p = document.getElementById('basePreview');
-            p.src = `${API_BASE}${data.local_url}`;
-            p.style.display = "block";
-            document.getElementById('baseDropzone').classList.add('has-file');
-          } else if (type === 'mask') {
-            uploadedMaskImg = data.filename;
-            const p = document.getElementById('maskPreview');
-            p.src = `${API_BASE}${data.local_url}`;
-            p.style.display = "block";
-            document.getElementById('maskDropzone').classList.add('has-file');
-          } else if (type === 'ref') {
-            uploadedRefImg = data.filename;
-            const p = document.getElementById('refPreview');
-            p.src = `${API_BASE}${data.local_url}`;
-            p.style.display = "block";
-            document.getElementById('refDropzone').classList.add('has-file');
-          }
-        }
-      } catch (e) {
-        alert("이미지 업로드 실패: " + e.message);
-      }
-    }
-
     async function startGeneration() {
       const prompt = document.getElementById('promptInput').value.trim();
       if (!prompt) {
@@ -1056,40 +874,32 @@
         return;
       }
 
-      if ((currentMode === 'i2i' || currentMode === 'r2i') && !uploadedBaseImg) {
-        alert("편집/레퍼런스를 위한 베이스 이미지를 먼저 업로드해주세요!");
-        return;
-      }
+      // Configure NSFW LoRA
+      const isLoraEnabled = document.getElementById('nsfwLoraCheck').checked;
+      const loraStrength = parseFloat(document.getElementById('nsfwLoraSlider').value);
+      const loras = isLoraEnabled ? [
+        { name: "NSFW Qwen by TheseAlpacas V2.safetensors", strength: loraStrength }
+      ] : [];
 
-      // Collect LoRAs
-      const loras = [];
-      document.querySelectorAll('#loraContainer .lora-item').forEach((item, idx) => {
-        const chk = item.querySelector('input[type="checkbox"]');
-        if (chk && chk.checked) {
-          const str = parseFloat(item.querySelector('input[type="range"]').value);
-          loras.push({ name: chk.dataset.name, strength: str });
-        }
-      });
+      const rawSeed = parseInt(document.getElementById('seedInput').value);
+      const seed = isNaN(rawSeed) ? -1 : rawSeed;
 
       const payload = {
-        mode: currentMode,
+        mode: "t2i",
         prompt: prompt,
         negative_prompt: document.getElementById('negInput').value.trim(),
         width: selectedWidth,
         height: selectedHeight,
         steps: parseInt(document.getElementById('stepsSlider').value),
         cfg: parseFloat(document.getElementById('cfgSlider').value),
-        seed: -1,
+        seed: seed,
         sampler_name: document.getElementById('samplerSelect').value,
         scheduler: document.getElementById('schedulerSelect').value,
-        denoise: parseFloat(document.getElementById('denoiseSlider').value),
+        denoise: 1.0,
         loras: loras,
-        image_1: uploadedBaseImg,
-        ref_images: uploadedRefImg ? [uploadedRefImg] : [],
-        mask: uploadedMaskImg,
-        unet_name: document.getElementById('unetSelect').value,
-        clip_name: document.getElementById('clipSelect').value,
-        vae_name: document.getElementById('vaeSelect').value
+        unet_name: "qwen_image_2.1_int8_convrot.safetensors",
+        clip_name: "qwen3vl_8b_int8_convrot.safetensors",
+        vae_name: "qwen_image_2.1_vae_bf16.safetensors"
       };
 
       const btn = document.getElementById('btnGenerate');
@@ -1124,7 +934,7 @@
         alert("생성 오류 발생:\n" + e.message);
       } finally {
         btn.disabled = false;
-        btn.innerText = "🚀 고화질 이미지 생성";
+        btn.innerText = "🚀 고화질 T2I 이미지 생성";
         document.getElementById('loadingOverlay').style.display = "none";
         checkStatus();
       }
@@ -1149,10 +959,10 @@
           div.onclick = () => {
             document.getElementById('promptInput').value = item.prompt;
             document.getElementById('negInput').value = item.negative_prompt || "";
-            document.getElementById('stepsSlider').value = item.steps || 25;
-            document.getElementById('stepsVal').innerText = item.steps || 25;
-            document.getElementById('cfgSlider').value = item.cfg || 1.0;
-            document.getElementById('cfgVal').innerText = item.cfg || 1.0;
+            document.getElementById('stepsSlider').value = item.steps || 28;
+            document.getElementById('stepsVal').innerText = item.steps || 28;
+            document.getElementById('cfgSlider').value = item.cfg || 3.5;
+            document.getElementById('cfgVal').innerText = item.cfg || 3.5;
             if (item.sampler) document.getElementById('samplerSelect').value = item.sampler;
             if (item.scheduler) document.getElementById('schedulerSelect').value = item.scheduler;
 
@@ -1178,7 +988,7 @@
       if (!activeResultUrl) return;
       const a = document.createElement('a');
       a.href = activeResultUrl;
-      a.download = `qwen_${Date.now()}.png`;
+      a.download = `qwen_nsfw_${Date.now()}.png`;
       a.click();
     }
     function openFullImage() {
@@ -1268,10 +1078,8 @@
       }
     };
 
-    // Init
+    // Initialize
     checkStatus();
-    loadModels();
-    loadLoras();
     loadHistory();
     setInterval(checkStatus, 3000);
   </script>
