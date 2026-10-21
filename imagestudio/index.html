@@ -707,9 +707,10 @@
           <div>
             <div class="field-label"><span>Sampler</span></div>
             <select id="samplerSelect">
-              <option value="euler_sde" selected>euler_sde (LoRA 권장)</option>
-              <option value="euler">euler</option>
-              <option value="dpmpp_2m">dpmpp_2m</option>
+              <option value="euler" selected>euler (기본 권장)</option>
+              <option value="er_sde">er_sde (SDE 가속)</option>
+              <option value="euler_ancestral">euler_ancestral</option>
+                            <option value="dpmpp_2m">dpmpp_2m</option>
             </select>
           </div>
           <div>
