@@ -1368,6 +1368,7 @@
     const API_BASE = "http://127.0.0.1:7860";
     let activeEngine = "chatterbox";
     let isEngineSwitching = false;
+    let isGenerating = false;
     let selectedVoiceId = null;
     let activeVoiceMeta = null;
     let currentAudioBlob = null;
@@ -1462,6 +1463,10 @@
     async function selectEngine(target) {
       if (activeEngine === target && !isEngineSwitching) return;
       if (isEngineSwitching) return;
+      if (isGenerating) {
+        showToast("⚠️ 현재 음성 합성/변환 작업이 진행 중입니다. 완료된 후 엔진을 전환해 주세요.");
+        return;
+      }
 
       const prev = activeEngine;
       const names = { chatterbox: "Chatterbox", cosyvoice: "CosyVoice 2", f5tts: "F5-TTS", rvc: "RVC v2" };
@@ -1648,6 +1653,10 @@
     }
 
     async function selectVoiceProfile(id) {
+      if (isGenerating) {
+        showToast("⚠️ 현재 음성 합성 작업 중에는 참조 목소리를 변경할 수 없습니다.");
+        return;
+      }
       try {
         const fd = new FormData();
         fd.append("voice_id", id);
@@ -1762,6 +1771,10 @@
     }
 
     async function deleteVoiceProfile(id) {
+      if (isGenerating) {
+        showToast("⚠️ 현재 음성 합성 작업 중에는 목소리를 삭제할 수 없습니다.");
+        return;
+      }
       if (!confirm("이 목소리 프로필을 삭제하시겠습니까?")) return;
       stopSample();
       const fd = new FormData();
@@ -1810,6 +1823,7 @@
     // Native Generation Trigger (Supports both TTS Single/Multi & RVC STS Audio)
     async function triggerNativeGenerate() {
       if (activeEngine === "rvc") {
+        stopSample();
         // RVC STS: Requires Input Audio File
         if (!rvcSelectedFile) {
           alert("변환할 오디오 파일을 업로드하거나 [방금 생성된 오디오 가져오기]를 클릭해 주세요.");
@@ -1819,10 +1833,11 @@
       } else {
         // TTS: Check whether user input contains ___ for multi-part independent generation
         const rawText = scriptInput.value.trim();
-        if (!rawText) {
-          alert("대본을 입력해 주세요.");
+        if (!rawText || !rawText.replace(/[\s_]/g, "").length) {
+          alert("실제 발화할 대본 내용을 입력해 주세요. (구분자 ___만으로는 음성을 생성할 수 없습니다)");
           return;
         }
+        stopSample();
 
         // Split by ___ (triple underscores)
         const parts = rawText.split(/\n*___+\n*/).map(p => p.trim()).filter(p => p.length > 0);
@@ -1839,6 +1854,7 @@
 
     // Helper: Execute Single TTS
     async function executeSingleTts(text) {
+      isGenerating = true;
       genBtn.disabled = true;
       const progressWrap = document.getElementById("gen-progress-wrap");
       const statusText = document.getElementById("gen-status-text");
@@ -1914,6 +1930,7 @@
         alert(`네트워크 통신 오류: ${e.message}`);
         progressWrap.style.display = "none";
       } finally {
+        isGenerating = false;
         genBtn.disabled = false;
         fetchSystemStatus();
       }
@@ -1921,6 +1938,7 @@
 
     // Helper: Execute Multi-Part Independent Generation (when ___ is detected)
     async function executeMultiPartTts(parts) {
+      isGenerating = true;
       genBtn.disabled = true;
       const progressWrap = document.getElementById("gen-progress-wrap");
       const statusText = document.getElementById("gen-status-text");
@@ -1991,6 +2009,7 @@
 
       // Render Multi-Part Result Cards
       renderMultiPartsUI();
+      isGenerating = false;
       genBtn.disabled = false;
       fetchSystemStatus();
     }
@@ -2071,6 +2090,7 @@
 
     // Helper: Execute RVC Conversion
     async function executeRvcConversion() {
+      isGenerating = true;
       genBtn.disabled = true;
       const progressWrap = document.getElementById("gen-progress-wrap");
       const statusText = document.getElementById("gen-status-text");
