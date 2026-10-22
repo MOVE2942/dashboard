@@ -369,6 +369,124 @@
       background: rgba(255, 93, 93, 0.15);
       border-color: rgba(255, 93, 93, 0.4);
     }
+
+    /* Active Voice Banner */
+    .active-voice-banner {
+      background: linear-gradient(135deg, rgba(184, 255, 92, 0.12), rgba(183, 157, 255, 0.08));
+      border: 1px solid rgba(184, 255, 92, 0.35);
+      border-radius: 10px;
+      padding: 10px 14px;
+      margin: 14px 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .avb-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow: hidden;
+    }
+    .avb-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: #06080b;
+      background: var(--accent);
+      padding: 2px 7px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .avb-name {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .avb-status {
+      font-size: 0.72rem;
+      font-family: var(--mono);
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    /* Use Voice Button in List */
+    .btn-use-voice {
+      padding: 4px 9px;
+      border-radius: 6px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: 1px solid rgba(184, 255, 92, 0.35);
+      background: rgba(184, 255, 92, 0.1);
+      color: var(--accent);
+      transition: all 0.2s;
+    }
+    .btn-use-voice:hover:not(:disabled) {
+      background: var(--accent);
+      color: #06080b;
+      transform: translateY(-1px);
+    }
+    .btn-use-voice.active {
+      background: rgba(184, 255, 92, 0.25);
+      border-color: var(--accent);
+      color: var(--accent);
+      cursor: default;
+    }
+
+    /* Injected Voice Status above Generate Button */
+    .injected-voice-status {
+      background: #0f141c;
+      border: 1px solid var(--border-lit);
+      border-radius: 10px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .iv-main {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow: hidden;
+    }
+    .iv-icon { font-size: 1.1rem; }
+    .iv-label { font-size: 0.8rem; color: var(--muted); }
+    .iv-name { font-size: 0.88rem; color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .iv-tag { font-size: 0.72rem; font-family: var(--mono); color: var(--vio); background: rgba(183, 157, 255, 0.12); padding: 2px 8px; border-radius: 6px; border: 1px solid rgba(183, 157, 255, 0.25); white-space: nowrap; }
+
+    /* Toast Notification */
+    .toast-container {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      pointer-events: none;
+    }
+    .toast {
+      background: #1c2128;
+      border: 1px solid var(--accent);
+      color: var(--text);
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      animation: toastIn 0.25s ease forwards;
+    }
+    @keyframes toastIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
     .engine-desc-text {
       font-size: 0.8rem;
       color: var(--muted);
@@ -866,6 +984,15 @@
           </button>
         </div>
 
+        <!-- Active Voice Banner -->
+        <div class="active-voice-banner" id="active-voice-banner">
+          <div class="avb-left">
+            <span class="avb-badge">🎯 현재 주입 참조 목소리</span>
+            <span class="avb-name" id="active-voice-banner-name">선택 대기 중</span>
+          </div>
+          <span class="avb-status" id="active-voice-banner-status">엔진 주입 완료</span>
+        </div>
+
         <div style="font-size: 0.78rem; color: var(--muted); margin: 14px 0 6px;">등록된 목소리 프로필 목록:</div>
         <div class="voice-list" id="voice-list-el">
           <div style="text-align: center; color: var(--muted); padding: 20px; font-size: 0.85rem;">목소리 불러오는 중...</div>
@@ -1135,6 +1262,16 @@
           </div>
         </div>
 
+        <!-- Injected Voice Indicator Above Generate Button -->
+        <div class="injected-voice-status" id="injected-voice-indicator">
+          <div class="iv-main">
+            <span class="iv-icon">🎙️</span>
+            <span class="iv-label">발화 목소리:</span>
+            <strong class="iv-name" id="iv-voice-name">선택 대기 중</strong>
+          </div>
+          <span class="iv-tag" id="iv-voice-tag">엔진 조건 벡터 동기화</span>
+        </div>
+
         <!-- Native Generate Button -->
         <button class="btn-generate" id="btn-generate-main" onclick="triggerNativeGenerate()">
           <span style="font-size: 1.2rem;" id="gen-btn-icon">🎙️</span>
@@ -1160,6 +1297,7 @@
             <div class="output-meta">
               <div>
                 <strong id="out-engine-tag" style="color: var(--accent);">Chatterbox 마스터</strong>
+                <span id="out-voice-tag" style="margin-left: 8px; color: var(--gold); font-size: 0.82rem; font-weight: 600;">🎙️ 참조 목소리</span>
                 <span id="out-timestamp" style="margin-left: 8px;">방금 전</span>
               </div>
               <div id="out-specs" style="font-family: var(--mono);">48kHz / WAV</div>
@@ -1182,6 +1320,7 @@
             <div class="output-meta">
               <div>
                 <strong id="out-multi-engine-tag" style="color: var(--accent);">Chatterbox 다중 생성</strong>
+                <span id="out-multi-voice-tag" style="margin-left: 8px; color: var(--gold); font-size: 0.82rem; font-weight: 600;">🎙️ 참조 목소리</span>
                 <span id="out-multi-count" style="margin-left: 8px; font-weight: 700; color: var(--gold);">총 0개 개별 파일</span>
               </div>
               <button class="btn-sys" onclick="downloadAllPartsZip()" style="background: rgba(184, 255, 92, 0.15); border-color: var(--accent); color: var(--accent); font-size: 0.8rem; font-weight: 700;">
@@ -1230,6 +1369,7 @@
     let activeEngine = "chatterbox";
     let isEngineSwitching = false;
     let selectedVoiceId = null;
+    let activeVoiceMeta = null;
     let currentAudioBlob = null;
     let currentAudioUrl = null;
 
@@ -1379,6 +1519,7 @@
           badgeEngine.textContent = names[target];
           updateVramDisplay(data);
           switchNoticeText.innerHTML = `<strong>[✅ 전환 완료]</strong> <strong>[${names[target]}]</strong> 단일 엔진이 RTX 3080에 독점 준비되었습니다. (VRAM 여유: ${data.vram_free_gb} GB)`;
+          updateActiveVoiceDisplays();
           setTimeout(() => { switchNotice.style.display = "none"; }, 3500);
         } else {
           switchNoticeText.innerHTML = `<span style="color:var(--red);">[오류] 엔진 전환에 실패했습니다.</span>`;
@@ -1397,6 +1538,48 @@
       if (btn) btn.classList.add("active");
     }
 
+    // Toast Notification System
+    function showToast(message) {
+      let container = document.getElementById("toast-container");
+      if (!container) {
+        container = document.createElement("div");
+        container.id = "toast-container";
+        container.className = "toast-container";
+        document.body.appendChild(container);
+      }
+      const toast = document.createElement("div");
+      toast.className = "toast";
+      toast.innerHTML = `<span>📢</span> <span>${message}</span>`;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = "0";
+        toast.style.transition = "opacity 0.4s";
+        setTimeout(() => toast.remove(), 400);
+      }, 2800);
+    }
+
+    function updateActiveVoiceDisplays() {
+      const name = activeVoiceMeta?.name || (voicesCache.find(v => v.id === selectedVoiceId)?.name) || "선택된 목소리 없음";
+      const bannerName = document.getElementById("active-voice-banner-name");
+      if (bannerName) bannerName.textContent = name;
+      const ivName = document.getElementById("iv-voice-name");
+      if (ivName) ivName.textContent = name;
+      const ivTag = document.getElementById("iv-voice-tag");
+      if (ivTag) {
+        if (activeEngine === "chatterbox") {
+          ivTag.textContent = "Chatterbox 조건 벡터 주입됨";
+        } else if (activeEngine === "cosyvoice") {
+          ivTag.textContent = "CosyVoice 참조 음성 주입됨";
+        } else if (activeEngine === "f5tts") {
+          ivTag.textContent = "F5-TTS 참조 음성 주입됨";
+        } else {
+          ivTag.textContent = "RVC 변환 대기";
+        }
+      }
+    }
+
+    let voicesCache = [];
+
     // Voice Library API
     async function loadVoices() {
       try {
@@ -1407,6 +1590,7 @@
         listEl.innerHTML = "";
 
         const voices = data.voices || [];
+        voicesCache = voices;
         document.getElementById("voice-count-badge").textContent = `${voices.length}개 등록`;
 
         if (voices.length === 0) {
@@ -1414,28 +1598,44 @@
           return;
         }
 
-        if (!selectedVoiceId && voices.length > 0) {
+        if (data.active_voice_id) {
+          selectedVoiceId = data.active_voice_id;
+        } else if (!selectedVoiceId && voices.length > 0) {
           selectedVoiceId = voices[0].id;
         }
 
+        if (data.active_voice_meta) {
+          activeVoiceMeta = data.active_voice_meta;
+        } else {
+          activeVoiceMeta = voices.find(v => v.id === selectedVoiceId) || voices[0];
+        }
+
+        updateActiveVoiceDisplays();
+
         voices.forEach(v => {
+          const isActive = (v.id === selectedVoiceId);
           const item = document.createElement("div");
-          item.className = `voice-item ${v.id === selectedVoiceId ? "active" : ""}`;
+          item.className = `voice-item ${isActive ? "active" : ""}`;
           item.setAttribute("data-file", v.file);
           item.setAttribute("data-id", v.id);
           item.innerHTML = `
             <div class="voice-info" onclick="selectVoiceProfile('${v.id}')">
-              <span>${v.id === selectedVoiceId ? "🟢" : "⚪"}</span>
-              <span class="voice-name-text" title="선택됨: ${v.name}">${v.name}</span>
+              <span>${isActive ? "🎯" : "⚪"}</span>
+              <span class="voice-name-text" title="클릭 시 엔진에 주입: ${v.name}">${v.name}</span>
               <span class="playing-wave"><span></span><span></span><span></span></span>
             </div>
             <div class="voice-actions">
+              ${isActive ? `
+                <button class="btn-use-voice active" disabled>✅ 주입됨</button>
+              ` : `
+                <button class="btn-use-voice" onclick="selectVoiceProfile('${v.id}')">🎯 사용 지정</button>
+              `}
               <div class="voice-ctrl-group">
                 <button class="btn-audio-ctrl btn-play" title="재생 (Play)" onclick="playSample('${v.file}')">▶</button>
                 <button class="btn-audio-ctrl btn-pause" title="일시정지 (Pause)" onclick="pauseSample('${v.file}')">⏸</button>
                 <button class="btn-audio-ctrl btn-stop" title="완전히 멈춤 (Stop)" onclick="stopSample('${v.file}')">⏹</button>
               </div>
-              <button class="btn-icon" title="이름 수정 (Rename)" onclick="renameVoiceProfile('${v.id}', '${v.name.replace(/'/g, "\\'")}')">✏️</button>
+              <button class="btn-icon" title="이름 수정 (Rename)" onclick="renameVoiceProfile('${v.id}', '${v.name.replace(/'/g, "\'")}')">✏️</button>
               <button class="btn-icon del" title="삭제" onclick="deleteVoiceProfile('${v.id}')">✕</button>
             </div>
           `;
@@ -1447,9 +1647,29 @@
       }
     }
 
-    function selectVoiceProfile(id) {
-      selectedVoiceId = id;
-      loadVoices();
+    async function selectVoiceProfile(id) {
+      try {
+        const fd = new FormData();
+        fd.append("voice_id", id);
+        if (activeEngine === "chatterbox") {
+          const exaggEl = document.getElementById("cb-exagg");
+          if (exaggEl) fd.append("exagg", exaggEl.value);
+        }
+        const res = await fetch(`${API_BASE}/api/voices/select`, { method: "POST", body: fd });
+        if (res.ok) {
+          const data = await res.json();
+          selectedVoiceId = id;
+          activeVoiceMeta = data.voice || data.active_voice_meta;
+          showToast(`🎯 참조 목소리 [${activeVoiceMeta?.name || id}] 엔진 주입 완료!`);
+          await loadVoices();
+          updateActiveVoiceDisplays();
+        } else {
+          const err = await res.text();
+          alert(`목소리 주입 실패: ${err}`);
+        }
+      } catch (e) {
+        console.error("Select voice failed:", e);
+      }
     }
 
     // 샘플 오디오 정밀 컨트롤 (재생, 일시정지, 완전 정지)
@@ -1677,6 +1897,8 @@
           document.getElementById("btn-download-wav").href = currentAudioUrl;
           document.getElementById("btn-download-wav").download = `${activeEngine}_${Date.now()}.wav`;
           document.getElementById("out-engine-tag").textContent = `${activeEngine.toUpperCase()} 네이티브 마스터`;
+          const outVoiceEl = document.getElementById("out-voice-tag");
+          if (outVoiceEl) outVoiceEl.textContent = `🎙️ 목소리: ${activeVoiceMeta?.name || '기본'}`;
           document.getElementById("out-timestamp").textContent = new Date().toLocaleTimeString();
           document.getElementById("out-specs").textContent = `${(blob.size / 1024 / 1024).toFixed(2)} MB (WAV)`;
 
@@ -1779,6 +2001,8 @@
       document.getElementById("output-player-card").style.display = "block";
 
       document.getElementById("out-multi-engine-tag").textContent = `${activeEngine.toUpperCase()} 다중 독립 파일`;
+      const outMultiVoiceEl = document.getElementById("out-multi-voice-tag");
+      if (outMultiVoiceEl) outMultiVoiceEl.textContent = `🎙️ 목소리: ${activeVoiceMeta?.name || '기본'}`;
       document.getElementById("out-multi-count").textContent = `총 ${generatedParts.length}개 파일 분할 생성됨`;
 
       const listEl = document.getElementById("multi-parts-list");
