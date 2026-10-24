@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261024-040054-AUTO",
-  "source_manifest_sha256": "64a0bb9488401f0ea1f2940695ff84a2af21ce0fccc47016dae863b0933a06c3",
-  "export_manifest_sha256": "af2293b475ab0fe3e3b6e9309bd1dd5039f95122f8cbec87a241eed6bb9f7e24",
-  "generated_at": "2026-10-24T04:00:55+09:00",
+  "release_id": "LIA-20261025-040041-AUTO",
+  "source_manifest_sha256": "0212167c55d971a30892272c4ebe407a3a8ccd9ebcaf269aff84a386992da438",
+  "export_manifest_sha256": "56890dd68ad6212ac2f7c9800789b2fceafe55e0d918d2cb3b88958a1f6c4d18",
+  "generated_at": "2026-10-25T04:00:42+09:00",
   "facet_counts": {
-    "general": 201,
+    "general": 210,
     "prompts": 156,
-    "video_generation": 123
+    "video_generation": 125
   },
   "category_counts": {
     "production": 276,
@@ -30,6 +30,465 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261024-0011",
+      "title": "Claimed image-generation workflow tool reference (ClaraMuz link)",
+      "types": [
+        "image_generation_tool_reference",
+        "workflow_automation_reference"
+      ],
+      "tags": [
+        "api",
+        "claramuz",
+        "creative-tool",
+        "github-link",
+        "gpt",
+        "image-generation",
+        "workflow"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "이미지 생성 과정에서 목록 작성의 번거로움과 API 비용 문제를 해결하려고 만들었다고 소개한 도구 참고자료입니다. 게시물에 보이는 ClaraMuz GitHub URL은 기록만 했고 열지 않았습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/3cf7f0bc6227124f4bb80a5cc9b3a28dddf22800f94e0b869e145236a0a21130.svg",
+        "alt": "Claimed image-generation workflow tool reference (ClaraMuz link)"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@shility_jun/post/De2yMHmE4UK"
+      },
+      "captured_at": "2026-10-24T23:18:13+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261024-0010",
+      "title": "Threads share link — public capture pending",
+      "types": [
+        "social-reference"
+      ],
+      "tags": [
+        "raw-intake",
+        "review-required",
+        "threads"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "User-curated Threads share link preserved. Public post content and canonical post URL were not available through the checked anonymous routes.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "placeholder",
+        "src": "assets/eae1f1566aa31cfe8708404b55154da705993b616b49c95a188724fc7f0f1adf.svg",
+        "alt": "Threads share link — public capture pending"
+      },
+      "source": {
+        "platform": "Threads",
+        "url": "https://www.threads.com/share/_vQwlVWf-/"
+      },
+      "captured_at": "2026-10-24T23:13:34+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261024-0009",
+      "title": "Claimed OpenFilm open-source AI video agent reference",
+      "types": [
+        "ai_video_agent_reference",
+        "open_source_creative_tool_reference"
+      ],
+      "tags": [
+        "ai-video-agent",
+        "browser-editor",
+        "captions",
+        "claude-code",
+        "codex",
+        "davinci",
+        "gif",
+        "mp4",
+        "openfilm",
+        "premiere",
+        "studio"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "OpenFilm을 오픈소스 AI 영상 에이전트로 소개한 참고자료입니다. Codex·Claude Code 연동, Studio 브라우저 편집기, MP4/GIF/자막/편집 타임라인 내보내기는 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/92810dbf13942c36245254f17d6562854548c99037ceef7b2579fbed9f5a1f37.svg",
+        "alt": "Claimed OpenFilm open-source AI video agent reference"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@maengle.lab/post/De3AicyCebj"
+      },
+      "captured_at": "2026-10-24T23:13:25+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261024-0008",
+      "title": "Stable Video Infinity — infinite-length video generation repository",
+      "types": [
+        "github_repository_reference",
+        "video_generation_research_reference"
+      ],
+      "tags": [
+        "error-recycling",
+        "iclr-2026",
+        "long-video-generation",
+        "mit",
+        "stable-video-infinity",
+        "video-ai",
+        "video-diffusion-transformers"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "Error Recycling 기반 무한 길이 영상 생성을 표방하는 Stable Video Infinity GitHub 저장소 참고자료입니다. 공개 GitHub 메타데이터상 Python·MIT·장기 영상 생성 관련 토픽을 확인했습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/4f3f06339d063fec8dbabb093b758228bb7b47be320752b8c260b0ed1c764023.svg",
+        "alt": "Stable Video Infinity — infinite-length video generation repository"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/vita-epfl/Stable-Video-Infinity"
+      },
+      "captured_at": "2026-10-24T08:41:38+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261024-0007",
+      "title": "axiomofmind/Moss-image-nsfw-uncensored-lora — public lookup blocked",
+      "types": [
+        "blocked_repository_reference",
+        "lora_model_reference"
+      ],
+      "tags": [
+        "blocked-public-lookup",
+        "github",
+        "lora",
+        "moss-image",
+        "nsfw",
+        "uncensored"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "사용자 제공 GitHub 식별자에 대한 공개 API 조회가 HTTP 404로 끝난 모델/LoRA 참고자료입니다. 원문 식별자와 조회 실패 근거만 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/3a941c5f27eb50d833e0023bfb975cbb8231402910f95624026a0fc435dd71cf.svg",
+        "alt": "axiomofmind/Moss-image-nsfw-uncensored-lora — public lookup blocked"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/axiomofmind/Moss-image-nsfw-uncensored-lora"
+      },
+      "captured_at": "2026-10-24T08:40:27+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261024-0006",
+      "title": "Claimed MiniMax H3 ComfyUI workflow optimization reference",
+      "types": [
+        "ai_video_workflow_reference",
+        "comfyui_workflow_reference"
+      ],
+      "tags": [
+        "ai-video",
+        "comfyui",
+        "minimax-h3",
+        "rendering",
+        "selflift-progressive",
+        "singularity-v2",
+        "workflow-optimization"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "MiniMax H3의 피부 질감·슬로모션·고해상도 렌더 속도 문제를 개선한다고 주장하는 ComfyUI 워크플로 참고자료입니다. 공개 메타데이터는 구성 설명 중간에서 잘려 전체 워크플로는 확보하지 못했습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/6e3e3bdd8b8874474b2eb7435bf76cc63cf1df9fac4455882eeddcd97e5561ff.svg",
+        "alt": "Claimed MiniMax H3 ComfyUI workflow optimization reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/sunbaolong_2001/status/2113506988747612277"
+      },
+      "captured_at": "2026-10-24T08:37:30+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261024-0005",
+      "title": "Claimed Doory open-source browser design editor reference",
+      "types": [
+        "browser_design_editor_reference",
+        "open_source_creative_tool_reference"
+      ],
+      "tags": [
+        "browser-based",
+        "canva-alternative",
+        "design-editor",
+        "doory",
+        "gif",
+        "jpg",
+        "mp4",
+        "open-source",
+        "pdf",
+        "png",
+        "svg",
+        "templates"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "Doory를 오픈소스 브라우저 디자인 편집기로 소개한 참고자료입니다. 템플릿·빈 캔버스 편집과 이미지·문서·영상 내보내기 등 기능은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/dc2309451cd6da880266c704e96e20901f2cb8f279ab66ce2f7a9d60c6f0deeb.svg",
+        "alt": "Claimed Doory open-source browser design editor reference"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@nangman_muk/post/De1gm1gE9sv"
+      },
+      "captured_at": "2026-10-24T08:35:28+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261024-0004",
+      "title": "Scenario creative-team production orchestration service reference",
+      "types": [
+        "ai_creative_workflow_reference",
+        "creative_operations_service_reference"
+      ],
+      "tags": [
+        "creative-operations",
+        "creative-team",
+        "production-orchestration",
+        "scaling",
+        "scenario",
+        "workflow"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "창작 팀이 제작물을 오케스트레이션하고 규모화하도록 돕는다고 소개한 Scenario 서비스 참고자료입니다. 서비스 기능·가용성·품질·가격·정책·성능은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/e426aa0f7233928486cb4170987fdfdd35756344ae1a29e09ecca80dcf2d27a8.svg",
+        "alt": "Scenario creative-team production orchestration service reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/Scenario_gg/status/2113636498889474475"
+      },
+      "captured_at": "2026-10-24T08:24:05+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261024-0003",
+      "title": "High-heeled Lolita Maid image-model comparison reference",
+      "types": [
+        "ai_image_prompt_reference",
+        "image_model_comparison_reference"
+      ],
+      "tags": [
+        "ai-image",
+        "flux",
+        "gpt2.5",
+        "grok-imagine-2",
+        "lora",
+        "model-comparison",
+        "reference-image",
+        "z-image"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "GPT2.5·Flux+LoRA·Z-Image+LoRA·Grok Imagine 2+참조 이미지를 비교한다고 소개한 AI 이미지 레퍼런스입니다. 모델 동작·프롬프트·품질 및 비교 결과는 미검증 작성자 표기/주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/f472f1282825423b008b4750b8709a62a3efb7297d8f159c074be2c1dde22efe.svg",
+        "alt": "High-heeled Lolita Maid image-model comparison reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/AIjee_tpe/status/2113273113874157651"
+      },
+      "captured_at": "2026-10-24T08:22:45+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261024-0002",
+      "title": "Awesome Short Drama Skills — AI short-drama skill collection",
+      "types": [
+        "ai_drama_skill_collection_reference",
+        "github_repository_reference"
+      ],
+      "tags": [
+        "agent-skills",
+        "ai-short-drama",
+        "claude-code",
+        "codex",
+        "kling",
+        "microdrama",
+        "minimax",
+        "screenwriting",
+        "seedance",
+        "storyboards",
+        "vertical-drama"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "AI 단편극·마이크로드라마·세로형 드라마·만주용 에이전트 스킬 컬렉션을 표방하는 GitHub 저장소 참고자료입니다. 공개 메타데이터상 극본·각색·콘티·영상 프롬프트 범위를 안내합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/fe91d0eff4b6416429994f83c16f0a9042d82df7ac16fdc53152ffbc213859ec.svg",
+        "alt": "Awesome Short Drama Skills — AI short-drama skill collection"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/UnderleveledBuilder/awesome-short-drama-skills"
+      },
+      "captured_at": "2026-10-24T08:20:47+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261024-0001",
+      "title": "Peach — local-first personal media system repository",
+      "types": [
+        "github_repository_reference",
+        "self_hosted_media_system_reference"
+      ],
+      "tags": [
+        "agpl-3.0",
+        "local-first",
+        "media-library",
+        "media-manager",
+        "peach",
+        "python",
+        "self-hosted",
+        "video-player"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "단일 사용자·로컬 우선 개인 미디어 시스템을 표방하는 GitHub 저장소 참고자료입니다. 공개 GitHub 메타데이터상 Python, AGPL-3.0, self-hosted/media-library 관련 토픽을 확인했습니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/b62acbb7b39d4065c279daf18f90d88e53aedea23e1452084630e619bf86dbeb.svg",
+        "alt": "Peach — local-first personal media system repository"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/peach-mitao/peach"
+      },
+      "captured_at": "2026-10-24T08:18:10+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261015-0002",
