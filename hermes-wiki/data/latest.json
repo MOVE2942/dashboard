@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261025-040041-AUTO",
-  "source_manifest_sha256": "0212167c55d971a30892272c4ebe407a3a8ccd9ebcaf269aff84a386992da438",
-  "export_manifest_sha256": "56890dd68ad6212ac2f7c9800789b2fceafe55e0d918d2cb3b88958a1f6c4d18",
-  "generated_at": "2026-10-25T04:00:42+09:00",
+  "release_id": "LIA-20261026-040029-AUTO",
+  "source_manifest_sha256": "ae7d0b4f7f5d59bd80da5a603fd83e602c826ea8a9e7199fa1fcb025dc81103c",
+  "export_manifest_sha256": "6a6ab17da21988ebe1ae83ba5e890d6d2f290df56404dc26494cf8991e7917eb",
+  "generated_at": "2026-10-26T04:00:29+09:00",
   "facet_counts": {
-    "general": 210,
+    "general": 212,
     "prompts": 156,
     "video_generation": 125
   },
@@ -30,6 +30,92 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261026-0002",
+      "title": "gpu-unlock-ada RTX tensor-unlock and local firmware reference",
+      "types": [
+        "github_repository_reference",
+        "gpu_firmware_modification_reference"
+      ],
+      "tags": [
+        "c",
+        "firmware",
+        "gpl-2.0",
+        "gpu",
+        "gpu-unlock-ada",
+        "nvidia",
+        "rtx-4070-ti-super",
+        "rtx-4090",
+        "tensor-unlock"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "RTX 4090 텐서 언락과 실험적 RTX 4070 Ti SUPER 지원, 로컬 펌웨어 생성을 표방하는 GitHub 저장소 참고자료입니다. 하드웨어·드라이버·펌웨어 호환성·안전성·보증 영향은 미검증 저장소 메타데이터/주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/8cc599e4cf7135ff6de9d1c77875d837237c588e271258de2e7dfb5dbc83d456.svg",
+        "alt": "gpu-unlock-ada RTX tensor-unlock and local firmware reference"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/JustAResearcher/gpu-unlock-ada"
+      },
+      "captured_at": "2026-10-26T00:01:53+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261026-0001",
+      "title": "Claimed GPU-Unlock NVIDIA RTX restriction-removal reference",
+      "types": [
+        "gpu_modification_reference",
+        "hardware_performance_claim_reference"
+      ],
+      "tags": [
+        "ai-compute",
+        "driver",
+        "firmware",
+        "gpu",
+        "gpu-unlock",
+        "hardware",
+        "nvidia",
+        "performance-claim",
+        "rtx"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "NVIDIA RTX의 AI 연산 제한을 해제한다고 주장하는 GPU-Unlock 오픈소스 프로젝트 참고자료입니다. 제한 동작·드라이버/펌웨어 호환성·성능·안전성·보증 영향은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/d5943fa9c0868bb8674f0ba9ae799ef776d425c5942fd79495a239298bed13f7.svg",
+        "alt": "Claimed GPU-Unlock NVIDIA RTX restriction-removal reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/lucian__03/status/2114301914108354708"
+      },
+      "captured_at": "2026-10-26T00:00:39+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261024-0011",
