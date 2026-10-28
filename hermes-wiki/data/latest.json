@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261028-040055-AUTO",
-  "source_manifest_sha256": "aec89745c3b2604eeafc0210f3495547aa59cc25473b5d858b6b42eb0f48ff5b",
-  "export_manifest_sha256": "b63a1fb6ed002786109f4798162b20e442f9454082c4a690b6fdb97dac4ff130",
-  "generated_at": "2026-10-28T04:00:55+09:00",
+  "release_id": "LIA-20261029-040039-AUTO",
+  "source_manifest_sha256": "231831e2e34a44ef5acfabfd5ffad5bd827207758621ada2b28c0950fe41ce63",
+  "export_manifest_sha256": "e0093a02401bd6f6422505061812a3f945d4cf0be2fa8b7cd4e02e96e57c22db",
+  "generated_at": "2026-10-29T04:00:41+09:00",
   "facet_counts": {
     "general": 212,
     "prompts": 156,
-    "video_generation": 126
+    "video_generation": 127
   },
   "category_counts": {
     "production": 276,
@@ -30,6 +30,48 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261028-0001",
+      "title": "Artificial Analysis Code2Video-AA evaluation reference",
+      "types": [
+        "ai_video_benchmark_reference",
+        "model_evaluation_reference"
+      ],
+      "tags": [
+        "ai-video",
+        "artificial-analysis",
+        "benchmark",
+        "brand-video",
+        "code2video-aa",
+        "model-evaluation",
+        "motion-graphics",
+        "product-marketing-video"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "코드 기반 제품·브랜드 마케팅 영상 생성 모델을 평가한다고 소개된 Artificial Analysis Code2Video-AA 참고자료입니다. 평가 방식·모델·점수·순위 등은 공개 메타데이터에서 확인하지 못해 미검증 상태로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/19dc7116a7246ef02801e665c09101f15cd1f547957429081f85a7b43c1fa5f8.svg",
+        "alt": "Artificial Analysis Code2Video-AA evaluation reference"
+      },
+      "source": {
+        "platform": "facebook",
+        "url": "https://www.facebook.com/won.wizard/posts/artificial-analysis-code2video-aa-evaluates-how-well-models-create-product-and-b/28734455252843835/"
+      },
+      "captured_at": "2026-10-28T09:42:22+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261027-0001",
@@ -61,7 +103,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/3ef1eb12720f290fd21cd6c29bfdda6598cb5cf3ed7def87919a055307a172a9.svg",
+        "src": "assets/41d758bb4ca8d4abae1415b325fc24115a2ce59ce22d6593157fa772058e1b70.webp",
         "alt": "Claimed seven-repository AI video and 3D list reference"
       },
       "source": {
@@ -104,7 +146,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/8cc599e4cf7135ff6de9d1c77875d837237c588e271258de2e7dfb5dbc83d456.svg",
+        "src": "assets/cf01c7f56bb9c16d7c4a944fb9819b0a24990e1c73da136a98065f2a94ddc31d.png",
         "alt": "gpu-unlock-ada RTX tensor-unlock and local firmware reference"
       },
       "source": {
@@ -147,7 +189,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/d5943fa9c0868bb8674f0ba9ae799ef776d425c5942fd79495a239298bed13f7.svg",
+        "src": "assets/d3304b0c668112c33a948db042b927016b80555404903a0ec30523a7d1cd96ae.webp",
         "alt": "Claimed GPU-Unlock NVIDIA RTX restriction-removal reference"
       },
       "source": {
@@ -188,7 +230,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/3cf7f0bc6227124f4bb80a5cc9b3a28dddf22800f94e0b869e145236a0a21130.svg",
+        "src": "assets/aa731237e82a5a5687f251a50aa2af5afaedabfc59be8f3ce4cf122be6679b25.png",
         "alt": "Claimed image-generation workflow tool reference (ClaraMuz link)"
       },
       "source": {
@@ -269,7 +311,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/92810dbf13942c36245254f17d6562854548c99037ceef7b2579fbed9f5a1f37.svg",
+        "src": "assets/bf68c7d48c9e44341045484364fc038cd11269877328353744afa68c66b8e8bb.png",
         "alt": "Claimed OpenFilm open-source AI video agent reference"
       },
       "source": {
@@ -310,7 +352,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/4f3f06339d063fec8dbabb093b758228bb7b47be320752b8c260b0ed1c764023.svg",
+        "src": "assets/cb1771eb29f5cf04912837464272f48221ccf458dc6f0a39d177cf2a49d53073.png",
         "alt": "Stable Video Infinity — infinite-length video generation repository"
       },
       "source": {
@@ -391,7 +433,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/6e3e3bdd8b8874474b2eb7435bf76cc63cf1df9fac4455882eeddcd97e5561ff.svg",
+        "src": "assets/e9cf72aaee9e6b5c972d7ed4284dbce93368ad6c6777e79498b0ca5a80ccd4eb.webp",
         "alt": "Claimed MiniMax H3 ComfyUI workflow optimization reference"
       },
       "source": {
@@ -477,7 +519,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/e426aa0f7233928486cb4170987fdfdd35756344ae1a29e09ecca80dcf2d27a8.svg",
+        "src": "assets/91bf7074ef56e45acdf605215fe07c7e1d7bd3fb48a720190b9b9e2f5ac9db11.webp",
         "alt": "Scenario creative-team production orchestration service reference"
       },
       "source": {
@@ -519,7 +561,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/f472f1282825423b008b4750b8709a62a3efb7297d8f159c074be2c1dde22efe.svg",
+        "src": "assets/74d03f4c6399b1afa831c050c7f992aff1c334cdd6f59cb36f762a0242cd0b32.webp",
         "alt": "High-heeled Lolita Maid image-model comparison reference"
       },
       "source": {
@@ -564,7 +606,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/fe91d0eff4b6416429994f83c16f0a9042d82df7ac16fdc53152ffbc213859ec.svg",
+        "src": "assets/5a5f510d2b7f027fe8f6f0fdd852808dbdc7c9407fc4f65059af51cd2ae561ff.png",
         "alt": "Awesome Short Drama Skills — AI short-drama skill collection"
       },
       "source": {
@@ -606,7 +648,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/b62acbb7b39d4065c279daf18f90d88e53aedea23e1452084630e619bf86dbeb.svg",
+        "src": "assets/463a4a699d3ca97d0f1b5e78b5f08b89e6c6f08a2fa24b2d01022ba7d5d0b270.webp",
         "alt": "Peach — local-first personal media system repository"
       },
       "source": {
@@ -6731,7 +6773,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/d25244f6674d486a07112e99c6f7357bec49845dc855d228d5eef7521176f99f.svg",
+        "src": "assets/fc888129c9236fac53232ac2622c3232dde8b695cfd8862e1c5e3459f1e66450.webp",
         "alt": "ChatGPT photo-editing prompts: 9 professional photography modes"
       },
       "source": {
