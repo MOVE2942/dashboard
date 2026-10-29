@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261029-040039-AUTO",
-  "source_manifest_sha256": "231831e2e34a44ef5acfabfd5ffad5bd827207758621ada2b28c0950fe41ce63",
-  "export_manifest_sha256": "e0093a02401bd6f6422505061812a3f945d4cf0be2fa8b7cd4e02e96e57c22db",
-  "generated_at": "2026-10-29T04:00:41+09:00",
+  "release_id": "LIA-20261030-040020-AUTO",
+  "source_manifest_sha256": "c985030f582ce1aefe22df44b6bd35a26f2d634c9116cd0172b2e48f7cac13c0",
+  "export_manifest_sha256": "0259c86d2f8351ad06161b2efc37113456397b1e609e85a930a0269d51184176",
+  "generated_at": "2026-10-30T04:00:21+09:00",
   "facet_counts": {
     "general": 212,
     "prompts": 156,
@@ -392,7 +392,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/3a941c5f27eb50d833e0023bfb975cbb8231402910f95624026a0fc435dd71cf.svg",
+        "src": "assets/74f3b5add54f7102230ed682fbf9d23b5b3a78e6229dbfd49719748e7b806988.png",
         "alt": "axiomofmind/Moss-image-nsfw-uncensored-lora — public lookup blocked"
       },
       "source": {
@@ -479,7 +479,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/dc2309451cd6da880266c704e96e20901f2cb8f279ab66ce2f7a9d60c6f0deeb.svg",
+        "src": "assets/2c0a596a214438f1ae7c8a54bccff3b625f8b148b01d70779e2172e55319a85a.png",
         "alt": "Claimed Doory open-source browser design editor reference"
       },
       "source": {
@@ -18133,7 +18133,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/c6a0721a2342ddc3dff543246082b4bf5e7e6b67e11d18556bdb3441445e3cf6.svg",
+        "src": "assets/aa731237e82a5a5687f251a50aa2af5afaedabfc59be8f3ce4cf122be6679b25.png",
         "alt": "AI 영화 제작 파이프라인 - 3팀이 공개한 제작 브리프 분석 (junyeo.ai)"
       },
       "source": {
