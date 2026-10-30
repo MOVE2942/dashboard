@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261030-040020-AUTO",
-  "source_manifest_sha256": "c985030f582ce1aefe22df44b6bd35a26f2d634c9116cd0172b2e48f7cac13c0",
-  "export_manifest_sha256": "0259c86d2f8351ad06161b2efc37113456397b1e609e85a930a0269d51184176",
-  "generated_at": "2026-10-30T04:00:21+09:00",
+  "release_id": "LIA-20261031-040004-AUTO",
+  "source_manifest_sha256": "3925566958d95b902e9028dc98f9e5678e88a9ec0ac1591e8cdd2c77e8e9394d",
+  "export_manifest_sha256": "7c4ede400fee7f575326571742e899ddc82bc8fb3d2a8ef902e3e134a999df11",
+  "generated_at": "2026-10-31T04:00:05+09:00",
   "facet_counts": {
     "general": 212,
     "prompts": 156,
-    "video_generation": 127
+    "video_generation": 128
   },
   "category_counts": {
     "production": 276,
@@ -30,6 +30,50 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261031-0001",
+      "title": "Pika H3 Flex MiniMax H3 distillation video-model reference",
+      "types": [
+        "model_distillation_reference",
+        "video_generation_model_reference"
+      ],
+      "tags": [
+        "4k",
+        "768p",
+        "ai-video",
+        "distillation",
+        "dpo",
+        "minimax-h3",
+        "multimodal-reference",
+        "pika-h3-flex",
+        "refl",
+        "stereo-audio"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "MiniMax H3 기반 후학습·증류 모델로 소개된 Pika H3 Flex 영상 생성 참고자료입니다. 50→6 샘플링, ReFL/DPO, 오디오·다중 참조·해상도·가중치 공개 등의 기능은 미검증 작성자 주장으로 보존합니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/22c554da3fd2570bbb9f2d345f60a348777075c8df40d26152bcf66290c3c071.webp",
+        "alt": "Pika H3 Flex MiniMax H3 distillation video-model reference"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/superfang119/status/2116000389082575304"
+      },
+      "captured_at": "2026-10-31T00:32:47+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261028-0001",

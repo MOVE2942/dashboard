@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261030-040020-AUTO",
-  "card_count": 438,
+  "release_id": "LIA-20261031-040004-AUTO",
+  "card_count": 439,
   "facet_counts": {
     "general": 212,
     "prompts": 156,
-    "video_generation": 127
+    "video_generation": 128
   },
   "source_manifest": [
     {
@@ -1759,10 +1759,14 @@
     {
       "id": "CR-20261028-0001",
       "hash": "6d64658b80390588c9d65c899060136776bb25faafa4dd04d530a7040159018e"
+    },
+    {
+      "id": "CR-20261031-0001",
+      "hash": "6040f91588d733c3873a72fa6b86ad1d034bb451b9301432c25fc2f6104bfb4b"
     }
   ],
-  "source_manifest_sha256": "c985030f582ce1aefe22df44b6bd35a26f2d634c9116cd0172b2e48f7cac13c0",
-  "export_manifest_sha256": "0259c86d2f8351ad06161b2efc37113456397b1e609e85a930a0269d51184176",
+  "source_manifest_sha256": "3925566958d95b902e9028dc98f9e5678e88a9ec0ac1591e8cdd2c77e8e9394d",
+  "export_manifest_sha256": "7c4ede400fee7f575326571742e899ddc82bc8fb3d2a8ef902e3e134a999df11",
   "files": [
     {
       "path": "assets/0069be87fd0f74b6c97c3179cfa25654d20950f962b2aafd6767cc28f851d88e.png",
@@ -1978,6 +1982,11 @@
       "path": "assets/226cea46adeedef375d78a3f1aa50beab2924ee900c01146c7197bea6cae932b.png",
       "sha256": "226cea46adeedef375d78a3f1aa50beab2924ee900c01146c7197bea6cae932b",
       "size": 68301
+    },
+    {
+      "path": "assets/22c554da3fd2570bbb9f2d345f60a348777075c8df40d26152bcf66290c3c071.webp",
+      "sha256": "22c554da3fd2570bbb9f2d345f60a348777075c8df40d26152bcf66290c3c071",
+      "size": 20510
     },
     {
       "path": "assets/22f9485723857f6a873c2f7363d039f630860b12f19703a118cc21d157e18f42.webp",
@@ -3861,8 +3870,8 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "2e8e9a34f81c041ad3960c9d6b477913c1e221a022891a4e551289ea8acb36cf",
-      "size": 689694
+      "sha256": "67c7df263ad0a25777774b079f2ea6cbbccd1e093367ac5bcfa2899f45fea97b",
+      "size": 691141
     },
     {
       "path": "index.html",
@@ -3880,5 +3889,5 @@
       "size": 2765
     }
   ],
-  "bundle_sha256": "c7cb056cda59a9ff328f2845f1b318196eab890c6864c06e40b4fd96641ba23a"
+  "bundle_sha256": "ab0eb4d984670c46a50a25418748c2c8ed87f1c4442259cdc53cf47518c2c41b"
 }
