@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261031-040004-AUTO",
-  "source_manifest_sha256": "3925566958d95b902e9028dc98f9e5678e88a9ec0ac1591e8cdd2c77e8e9394d",
-  "export_manifest_sha256": "7c4ede400fee7f575326571742e899ddc82bc8fb3d2a8ef902e3e134a999df11",
-  "generated_at": "2026-10-31T04:00:05+09:00",
+  "release_id": "LIA-20261101-040049-AUTO",
+  "source_manifest_sha256": "18c777dc243f3527c614453ce7028d3c0181e69f1a4426defeb9a26830c12e1f",
+  "export_manifest_sha256": "9f1444cc842eb12b1f6eeedacf4f3048d40e31ec5aaaadef5a22329d34ea062a",
+  "generated_at": "2026-11-01T04:00:50+09:00",
   "facet_counts": {
-    "general": 212,
+    "general": 213,
     "prompts": 156,
     "video_generation": 128
   },
@@ -30,6 +30,44 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261031-0002",
+      "title": "Gemini API 가격 및 무료 계층 관련 게시물",
+      "types": [
+        "ai-pricing-reference"
+      ],
+      "tags": [
+        "ai-studio",
+        "api",
+        "free-tier",
+        "gemini",
+        "pricing"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "작성자는 Gemini API 무료 계층, 데이터 이용 및 유료 요금 변경을 설명한다. 공개 미리보기 본문이 잘려 있으며 가격·모델명·데이터 사용 주장은 독립 검증하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/2c0aa48cc8ee02c01fa7a339459da55bdd78654a8bda22bbc55ac4de142d635a.webp",
+        "alt": "Gemini API 가격 및 무료 계층 관련 게시물"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/rchen1386/status/2116242327400493397"
+      },
+      "captured_at": "2026-10-31T22:21:25+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261031-0001",
