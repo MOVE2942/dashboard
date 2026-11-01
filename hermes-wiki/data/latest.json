@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261101-040049-AUTO",
-  "source_manifest_sha256": "18c777dc243f3527c614453ce7028d3c0181e69f1a4426defeb9a26830c12e1f",
-  "export_manifest_sha256": "9f1444cc842eb12b1f6eeedacf4f3048d40e31ec5aaaadef5a22329d34ea062a",
-  "generated_at": "2026-11-01T04:00:50+09:00",
+  "release_id": "LIA-20261102-040034-AUTO",
+  "source_manifest_sha256": "f459d99d30dccbc0ec0750c0a8959b9ab536a40143318bfdb88e778dd6185a0a",
+  "export_manifest_sha256": "a204c59a92eb46c6a161406c4e9ff04e2a9e468f27da40a5cdaacf7b80b1e7e4",
+  "generated_at": "2026-11-02T04:00:35+09:00",
   "facet_counts": {
     "general": 213,
     "prompts": 156,
@@ -2793,7 +2793,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/51d3c0b00e233dc56ef07303545355300cf60d003748c60fcad63c1d4225e6fa.svg",
+        "src": "assets/fdcb42200d74aab865bfd668bf7f039795b35d7ecb25f25c14af2f2e74aec8b0.jpg",
         "alt": "Gemini local-agent directory, rules, skills, and hooks setup reference"
       },
       "source": {
