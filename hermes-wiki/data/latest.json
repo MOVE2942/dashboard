@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261102-040034-AUTO",
-  "source_manifest_sha256": "f459d99d30dccbc0ec0750c0a8959b9ab536a40143318bfdb88e778dd6185a0a",
-  "export_manifest_sha256": "a204c59a92eb46c6a161406c4e9ff04e2a9e468f27da40a5cdaacf7b80b1e7e4",
-  "generated_at": "2026-11-02T04:00:35+09:00",
+  "release_id": "LIA-20261103-040020-AUTO",
+  "source_manifest_sha256": "558629243d59fd5463e2cdc7f694c7775bdeebddc12bc9291fbd655f3bd6fdf5",
+  "export_manifest_sha256": "dcbfd27a4f65cbc1202550fc8251462fe38e751573a8d2e1a503bc8abf321668",
+  "generated_at": "2026-11-03T04:00:22+09:00",
   "facet_counts": {
-    "general": 213,
+    "general": 214,
     "prompts": 156,
     "video_generation": 128
   },
@@ -30,6 +30,44 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261102-0001",
+      "title": "agent-desktop 컴퓨터 사용 에이전트 참고자료",
+      "types": [
+        "ai-agent-desktop-reference"
+      ],
+      "tags": [
+        "accessibility",
+        "agent-desktop",
+        "ai-agent",
+        "computer-use",
+        "desktop"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "작성자는 Vercel Labs의 agent-desktop이 접근성 트리 기반 데스크톱 제어, 백그라운드 실행과 다중 에이전트를 지원한다고 소개한다. 기능 및 플랫폼 지원은 독립 검증하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/e2a56c65de4a4cd986d6ed91c5299d792a44fd557f110b816b201f63a143295f.webp",
+        "alt": "agent-desktop 컴퓨터 사용 에이전트 참고자료"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/yyyole/status/2116729757446664326"
+      },
+      "captured_at": "2026-11-02T14:57:23+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261031-0002",
