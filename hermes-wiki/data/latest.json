@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261103-040020-AUTO",
-  "source_manifest_sha256": "558629243d59fd5463e2cdc7f694c7775bdeebddc12bc9291fbd655f3bd6fdf5",
-  "export_manifest_sha256": "dcbfd27a4f65cbc1202550fc8251462fe38e751573a8d2e1a503bc8abf321668",
-  "generated_at": "2026-11-03T04:00:22+09:00",
+  "release_id": "LIA-20261104-040004-AUTO",
+  "source_manifest_sha256": "35e101eb3ba1b7047f440ea1ca87d0f463478880c3c2b8000018aa4ef2490338",
+  "export_manifest_sha256": "05ae3704fee141e2be4f6d91c058b998bd8fd6119f980f1310a61e3088886953",
+  "generated_at": "2026-11-04T04:00:05+09:00",
   "facet_counts": {
-    "general": 214,
+    "general": 215,
     "prompts": 156,
     "video_generation": 128
   },
@@ -30,6 +30,45 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261103-0001",
+      "title": "kimi-k3-in-c CPU 추론 성능 주장 참고자료",
+      "types": [
+        "local-ai-inference-reference"
+      ],
+      "tags": [
+        "cpu",
+        "kimi",
+        "kimi-k3-in-c",
+        "local-inference",
+        "open-source",
+        "ram"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "작성자는 kimi-k3-in-c가 2.78조 매개변수 Kimi K3 모델을 GPU 없이 CPU와 8GB RAM에서 실행한다고 주장한다. 해당 성능·메모리·모델 주장은 독립 검증하지 않았고 공개 미리보기는 잘려 있다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/b43aa2fe05df45a6bc94a7819e6be594f76751c668f831bc63d38bb6e46a9866.webp",
+        "alt": "kimi-k3-in-c CPU 추론 성능 주장 참고자료"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/EngMoElgaraihy/status/2117383922812059876"
+      },
+      "captured_at": "2026-11-03T21:29:31+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261102-0001",
@@ -181,7 +220,7 @@
       },
       "visual": {
         "kind": "thumbnail",
-        "src": "assets/19dc7116a7246ef02801e665c09101f15cd1f547957429081f85a7b43c1fa5f8.svg",
+        "src": "assets/56ab68469e384a6c58b21542422f0ff2088cd854128ece06d6b74af13c8a285e.jpg",
         "alt": "Artificial Analysis Code2Video-AA evaluation reference"
       },
       "source": {
