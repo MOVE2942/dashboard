@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261108-040056-AUTO",
-  "source_manifest_sha256": "4e90f8cfb4320ab9d91ce3a09c9d1ed3590265ea2ae30f069b956eb52380668f",
-  "export_manifest_sha256": "9d27a729263bfc3a96c9ecdeefcb0795db8e98c5e58945e861e090860dcedaf8",
-  "generated_at": "2026-11-08T04:00:57+09:00",
+  "release_id": "LIA-20261109-040019-AUTO",
+  "source_manifest_sha256": "1bec54c31e13e9caeff6b8ba403a9cfc1f5b6c0a69281e6876963700ae4c5b5c",
+  "export_manifest_sha256": "e8a993928dda3c48a880318b0f4e727bfe813446557e9f2dbd4912dfe7740692",
+  "generated_at": "2026-11-09T04:00:20+09:00",
   "facet_counts": {
-    "general": 216,
+    "general": 218,
     "prompts": 156,
-    "video_generation": 128
+    "video_generation": 129
   },
   "category_counts": {
     "production": 276,
@@ -30,6 +30,123 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261108-0003",
+      "title": "Aside 백그라운드 Computer Use 및 영상 제작 참고자료",
+      "types": [
+        "computer-use-and-creative-workflow-reference"
+      ],
+      "tags": [
+        "agent",
+        "ai-video",
+        "aside",
+        "computer-use",
+        "macos",
+        "windows"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "작성자는 Aside의 백그라운드 Computer Use와 macOS·Windows 지원을 소개하며 속도 2.7배, 토큰 67% 절감 및 약 5달러 영상 제작을 주장한다. 수치와 기능은 독립 검증하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/aa689a787a115985094f227273540be258d8ba98ec2286daa7104d1236a6ae34.jpg",
+        "alt": "Aside 백그라운드 Computer Use 및 영상 제작 참고자료"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@hiddenest/post/DfaJalOG_8c"
+      },
+      "captured_at": "2026-11-08T19:40:32+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261108-0002",
+      "title": "Strata 로컬 추론 엔진 GitHub 릴리스 참고자료",
+      "types": [
+        "local-inference-reference"
+      ],
+      "tags": [
+        "ai",
+        "github",
+        "linux",
+        "local-inference",
+        "strata",
+        "windows"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "Threads 게시물이 Strata v0.2.12 GitHub 릴리스를 공유한다. GitHub 저장소는 소비자 하드웨어용 로컬 추론 엔진으로 소개하며 기능과 호환성은 독립 검증하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/7d2191b0452a0e69ef1b6799ef99e7528d7f020e6e7bca3c5544764a4395ad9e.png",
+        "alt": "Strata 로컬 추론 엔진 GitHub 릴리스 참고자료"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@choi.openai/post/DfeR0V5iRX6"
+      },
+      "captured_at": "2026-11-08T19:34:40+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261108-0001",
+      "title": "raea React 기반 영상 렌더 엔진 참고자료",
+      "types": [
+        "video-rendering-engine-reference"
+      ],
+      "tags": [
+        "ai-agent",
+        "apple-silicon",
+        "raea",
+        "react",
+        "typescript",
+        "영상렌더링"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "작성자는 raea를 AI 에이전트가 React와 TypeScript로 작성한 장면을 로컬 GPU로 렌더하는 초기 영상 엔진으로 소개한다. 애플 실리콘에서 90프레임 약 1초 렌더링은 게시물에 인용된 주장으로 검증하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/28ed18f367757aff601f880842eb03556e419ace4d9ca662c8d871324b992f3b.jpg",
+        "alt": "raea React 기반 영상 렌더 엔진 참고자료"
+      },
+      "source": {
+        "platform": "threads",
+        "url": "https://www.threads.com/@aicharim_kr/post/Dfefh1sAEKx"
+      },
+      "captured_at": "2026-11-08T19:33:17+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261107-0001",
