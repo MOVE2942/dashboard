@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261109-040019-AUTO",
-  "source_manifest_sha256": "1bec54c31e13e9caeff6b8ba403a9cfc1f5b6c0a69281e6876963700ae4c5b5c",
-  "export_manifest_sha256": "e8a993928dda3c48a880318b0f4e727bfe813446557e9f2dbd4912dfe7740692",
-  "generated_at": "2026-11-09T04:00:20+09:00",
+  "release_id": "LIA-20261110-040051-AUTO",
+  "source_manifest_sha256": "c684751f415ba6853d147d165614a471a07a99c534b6480f644834b5500566d7",
+  "export_manifest_sha256": "6df10870811c3cd3249c6364369e1639f7e25f7ba810ab0c2584a0a2bf96ea1d",
+  "generated_at": "2026-11-10T04:00:52+09:00",
   "facet_counts": {
-    "general": 218,
+    "general": 220,
     "prompts": 156,
     "video_generation": 129
   },
@@ -30,6 +30,84 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261110-0002",
+      "title": "Rust 자동화 브라우저 성능 주장 참고자료",
+      "types": [
+        "browser-automation-reference"
+      ],
+      "tags": [
+        "ai-agent",
+        "automation",
+        "browser",
+        "privacy",
+        "rust",
+        "web-scraping"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "작성자는 자동화·웹 수집·AI 에이전트용 Rust 브라우저를 소개하며 RAM 30MB, 페이지 로딩 85ms, 추적기 3,500여 개 차단을 주장한다. 제품명과 세부사항은 공개 설명이 잘려 확인되지 않았고 수치와 기능은 독립 검증하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/cea3d8ecdf51fb4a2cf6f8db96b0897fb8445f458b48be1beed7f585bf171566.webp",
+        "alt": "Rust 자동화 브라우저 성능 주장 참고자료"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/0xJokker/status/2119536114793124082"
+      },
+      "captured_at": "2026-11-10T00:13:51+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261110-0001",
+      "title": "LG K-EXAONE 2.5 API 공개 및 에이전트 성능 주장 참고자료",
+      "types": [
+        "ai-model-api-reference"
+      ],
+      "tags": [
+        "ai-agent",
+        "api",
+        "benchmark",
+        "exaone",
+        "k-exaone",
+        "lg"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "작성자는 LG AI 연구원이 K-EXAONE 2.5 API를 무료 공개하고 에이전트 벤치마크 결과를 발표했다고 주장한다. 모델명·무료 이용 조건·성능 수치는 독립 검증하지 않았으며 공개 설명은 중간에 잘려 있다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/84502935dfc3134d820a3e2315f3a09d04ceb73730f2bb68f008641ce8056e19.webp",
+        "alt": "LG K-EXAONE 2.5 API 공개 및 에이전트 성능 주장 참고자료"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/goan999999/status/2119639411558392059"
+      },
+      "captured_at": "2026-11-10T00:04:15+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261108-0003",
