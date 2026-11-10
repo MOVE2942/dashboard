@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261110-040051-AUTO",
-  "source_manifest_sha256": "c684751f415ba6853d147d165614a471a07a99c534b6480f644834b5500566d7",
-  "export_manifest_sha256": "6df10870811c3cd3249c6364369e1639f7e25f7ba810ab0c2584a0a2bf96ea1d",
-  "generated_at": "2026-11-10T04:00:52+09:00",
+  "release_id": "LIA-20261111-040028-AUTO",
+  "source_manifest_sha256": "8e0639313e516f1c61c06799e8064e8deb4f794820964721ccd8196fbda089ea",
+  "export_manifest_sha256": "551350da4cb00cce9d68f8027a4a392fbc500f54ce600a3bbd84b0c6f801d3e5",
+  "generated_at": "2026-11-11T04:00:29+09:00",
   "facet_counts": {
-    "general": 220,
+    "general": 221,
     "prompts": 156,
     "video_generation": 129
   },
@@ -30,6 +30,45 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261110-0003",
+      "title": "Google Colab CLI: 코딩 에이전트의 클라우드 GPU 활용",
+      "types": [
+        "ai_tool_model",
+        "workflow"
+      ],
+      "tags": [
+        "ai-agent",
+        "coding-agent",
+        "google-colab",
+        "gpu",
+        "qlora"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "작성자는 Google이 공개한 google-colab-cli를 통해 Claude Code, Codex, Antigravity 같은 코딩 에이전트가 터미널에서 Colab 컴퓨팅 자원을 사용해 모델 학습을 수행할 수 있다고 소개한다. 예시로 Gemma 3 QLoRA 파인튜닝, GPU 선택, 라이브러리 설치, 학습 모니터링, 모델 다운로드 및 GPU 해제를 제시한다. 무료 T4는 자원 할당과 사용량 제한이 있으며 L4·A100·H100은 계정 접근 권한에 따라 이용 가능하다고 설명한다. 구체적 기능과 제공 조건은 원문 작성자의 주장이다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/79b395fa7d29e5368541dc25afae0bfd01a7d0e1ddbee903e28008634cff9b9d.webp",
+        "alt": "Google Colab CLI: 코딩 에이전트의 클라우드 GPU 활용"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/trungkts29/status/2119676404518519102"
+      },
+      "captured_at": "2026-11-10T15:10:36+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261110-0002",

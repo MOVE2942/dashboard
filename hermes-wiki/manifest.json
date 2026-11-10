@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261110-040051-AUTO",
-  "card_count": 448,
+  "release_id": "LIA-20261111-040028-AUTO",
+  "card_count": 449,
   "facet_counts": {
-    "general": 220,
+    "general": 221,
     "prompts": 156,
     "video_generation": 129
   },
@@ -1799,10 +1799,14 @@
     {
       "id": "CR-20261110-0002",
       "hash": "8c5e75c168857f31b180825121d877ddd4946d17661e94c61e83fe2be385ae37"
+    },
+    {
+      "id": "CR-20261110-0003",
+      "hash": "df7a698936d0ab64abdad6fe21b341c75fce5e61dfab879bf94be11e3847debe"
     }
   ],
-  "source_manifest_sha256": "c684751f415ba6853d147d165614a471a07a99c534b6480f644834b5500566d7",
-  "export_manifest_sha256": "6df10870811c3cd3249c6364369e1639f7e25f7ba810ab0c2584a0a2bf96ea1d",
+  "source_manifest_sha256": "8e0639313e516f1c61c06799e8064e8deb4f794820964721ccd8196fbda089ea",
+  "export_manifest_sha256": "551350da4cb00cce9d68f8027a4a392fbc500f54ce600a3bbd84b0c6f801d3e5",
   "files": [
     {
       "path": "assets/0069be87fd0f74b6c97c3179cfa25654d20950f962b2aafd6767cc28f851d88e.png",
@@ -2713,6 +2717,11 @@
       "path": "assets/79af92024875ff6928bf81c788cc13b84d8fbccee70034833fe75debc41117b2.webp",
       "sha256": "79af92024875ff6928bf81c788cc13b84d8fbccee70034833fe75debc41117b2",
       "size": 29178
+    },
+    {
+      "path": "assets/79b395fa7d29e5368541dc25afae0bfd01a7d0e1ddbee903e28008634cff9b9d.webp",
+      "sha256": "79b395fa7d29e5368541dc25afae0bfd01a7d0e1ddbee903e28008634cff9b9d",
+      "size": 83464
     },
     {
       "path": "assets/79f6d7e766757fc3cccf978ebc6856925d4c99c8141d9051fab35d229d3df72d.png",
@@ -3951,8 +3960,8 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "8d94e4b81529487fcea0dfbf19505c7120b8ecd8bfd5bd28ef474de14f4c65ea",
-      "size": 702833
+      "sha256": "421acd1abbce47a602be0b236c00f905a31925a68e234048ccb4f4624ad5b7b5",
+      "size": 704483
     },
     {
       "path": "index.html",
@@ -3970,5 +3979,5 @@
       "size": 2765
     }
   ],
-  "bundle_sha256": "e669b2a7a984c3977ac30f583984e46e9f3cc0018265096ddb1c43aac1eeea11"
+  "bundle_sha256": "ce2a800fd8c99ae15c406346a5e4e4cdc53e222a5e21d5757a458e75d008f676"
 }
