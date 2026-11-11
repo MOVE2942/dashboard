@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261111-040028-AUTO",
+  "release_id": "LIA-20261112-040012-AUTO",
   "source_manifest_sha256": "8e0639313e516f1c61c06799e8064e8deb4f794820964721ccd8196fbda089ea",
   "export_manifest_sha256": "551350da4cb00cce9d68f8027a4a392fbc500f54ce600a3bbd84b0c6f801d3e5",
-  "generated_at": "2026-11-11T04:00:29+09:00",
+  "generated_at": "2026-11-12T04:00:13+09:00",
   "facet_counts": {
     "general": 221,
     "prompts": 156,
