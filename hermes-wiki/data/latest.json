@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261115-040013-AUTO",
-  "source_manifest_sha256": "e0da60e9ce1c99be1e3164d8aaf0cfef5c29d31893395657122711863a00974a",
-  "export_manifest_sha256": "4c3c30118a85f3514d19105499a2ee7fdc71731dfb73d8b4d11b8b6566ef3c24",
-  "generated_at": "2026-11-15T04:00:14+09:00",
+  "release_id": "LIA-20261116-040053-AUTO",
+  "source_manifest_sha256": "08ea9b1ae02622383765595f2c0f23a8c778d0d138edd697a1b7c1c26d09b1fe",
+  "export_manifest_sha256": "58a45c63be6cff2c8d683aeeec45b415fd090060761fa758d071d1e3fe400690",
+  "generated_at": "2026-11-16T04:00:54+09:00",
   "facet_counts": {
-    "general": 222,
+    "general": 224,
     "prompts": 156,
     "video_generation": 131
   },
@@ -30,6 +30,87 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261116-0001",
+      "title": "세포처럼 변형·분리·합체하는 입자 갑옷 액체 로봇 PB",
+      "types": [
+        "community_post",
+        "inspiration"
+      ],
+      "tags": [
+        "biomimicry",
+        "liquid-robot",
+        "particle-armored",
+        "science",
+        "soft-robotics"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "이토랜드 게시물은 영화 터미네이터 T-1000에 빗대 서울대·가천대 연구진의 입자 갑옷 액체 로봇 PB를 소개한다. 소수성 입자로 액체 방울을 감싸 형태 변형, 분리·합체, 좁은 틈 통과와 물질 포획을 실험했다. 서울대 공대 연구 발표에 따르면 초음파로 이동 속도를 제어했고 연구는 2025년 3월 21일 Science Advances에 발표됐다. 재난 탐사·체내 약물 전달은 향후 기대 응용이며 영화 속 인간형 액체금속 로봇이 완성됐다는 뜻은 아니다. 게시물은 별도로 상전이 자성 유체 인공근육도 언급한다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/3bf85e4b06fc7c7038c17d4de2274719f57bc622bfb66bdb0cc8669962db65b2.jpg",
+        "alt": "세포처럼 변형·분리·합체하는 입자 갑옷 액체 로봇 PB"
+      },
+      "source": {
+        "platform": "etoland",
+        "url": "https://etoland.co.kr/b/etohumor07/article/9582178"
+      },
+      "captured_at": "2026-11-16T00:55:38+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261115-0001",
+      "title": "Blender Skills — AI 에이전트를 위한 Blender 제작 스킬 94종",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "3d",
+        "agent-skills",
+        "blender",
+        "blender-mcp",
+        "claude-code",
+        "codex",
+        "modeling"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "Blender Skills는 Cursor, Claude Code, Kiro, Codex에서 사용하는 Blender 제작용 전문 스킬 94종을 제공하는 MIT 라이선스 프로젝트다. README에 따르면 blender-director가 작업을 분석해 모델링, UV, 재질, 리깅, 애니메이션, 조명, 렌더링, 최적화 및 Unity·Unreal·Godot 내보내기 등의 스킬로 연결한다. Blender MCP 애드온을 통해 실행 중인 Blender와 에이전트를 연결하며, 참고 이미지 분석과 카메라·형상·재질 조정 후 스크린샷을 비교하는 워크플로도 제시한다. 실제 기능과 호환성은 직접 실행하지 않았으며 MCP 애드온과 에이전트 설정이 필요하다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/0082b471d9b97b2a5b54a47580ef0c91ab2bd7686d13d5da7fa38f0ccfac87fa.png",
+        "alt": "Blender Skills — AI 에이전트를 위한 Blender 제작 스킬 94종"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/arjun988/blender-skills"
+      },
+      "captured_at": "2026-11-15T21:53:33+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261113-0003",
