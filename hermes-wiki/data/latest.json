@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261117-040032-AUTO",
-  "source_manifest_sha256": "08ea9b1ae02622383765595f2c0f23a8c778d0d138edd697a1b7c1c26d09b1fe",
-  "export_manifest_sha256": "58a45c63be6cff2c8d683aeeec45b415fd090060761fa758d071d1e3fe400690",
-  "generated_at": "2026-11-17T04:00:33+09:00",
+  "release_id": "LIA-20261118-040012-AUTO",
+  "source_manifest_sha256": "e9f16dc3f241b3058cea187d4fc36342ff6fbb4e184037c445eb0290e3b7f96a",
+  "export_manifest_sha256": "f8410919af95807f2b94d43fe3aba48cc32e2bffac814fc89e82b428557197b0",
+  "generated_at": "2026-11-18T04:00:13+09:00",
   "facet_counts": {
-    "general": 224,
+    "general": 226,
     "prompts": 156,
-    "video_generation": 131
+    "video_generation": 132
   },
   "category_counts": {
     "production": 276,
@@ -30,6 +30,129 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261117-0003",
+      "title": "ApkStart — Windows에서 안드로이드 APK를 독립 창으로 실행",
+      "types": [
+        "ai_tool_model",
+        "github_project"
+      ],
+      "tags": [
+        "android",
+        "apk",
+        "desktop",
+        "emulator",
+        "qemu",
+        "windows"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "ApkStart는 Windows 10/11 x64에서 안드로이드 APK를 설치하고 데스크톱 아이콘과 개별 앱 창으로 실행하도록 만든 MIT 라이선스 프로젝트다. Android Emulator 및 QEMU 기반 런타임을 사용하며 앱별 바로가기, 시작 메뉴 검색, Windows와 Android 간 폴더 양방향 동기화를 제공한다고 README가 설명한다. 경량 배포판은 런타임을 최초 실행 시 다운로드하며 전체 패키지도 소개된다. 초기 프로젝트로, 기본 동작에 앱 권한 자동 부여 및 충돌 시 필요에 따른 앱 데이터 초기화가 포함된다고 명시하므로 사용 전에 주의해야 한다. README 내 런타임 포함·배포 설명 일부가 서로 달라 실제 배포판별 구성은 별도 확인이 필요하다. Windows 전용이며 직접 설치하거나 실행하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/e201318430d2cf8c456eaad2518b9c94cea1a0d689c52776b3956689775e43a9.png",
+        "alt": "ApkStart — Windows에서 안드로이드 APK를 독립 창으로 실행"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/RoutineMiku/apkstart"
+      },
+      "captured_at": "2026-11-17T23:45:09+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261117-0002",
+      "title": "AI 영상 효과음 제작·검수: Openverse, MMAudio, Earshot",
+      "types": [
+        "community_post",
+        "resource_list",
+        "workflow"
+      ],
+      "tags": [
+        "ai-video",
+        "claude-code",
+        "earshot",
+        "mmaudio",
+        "openverse",
+        "sound-effects"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "심팀장님의 릴스는 AI 영상에 효과음을 넣고 점검하는 세 가지 도구를 소개한다. Openverse에서 효과음을 찾고 각 파일의 라이선스를 확인한다. MMAudio는 영상에 맞는 소리를 생성하며 게시물에 따르면 GPU가 필요하고 모델 가중치의 비영리 라이선스를 상업적 사용 전에 확인해야 한다. Earshot은 영상의 소리를 분석해 빈 구간이나 낮은 음량 등을 확인하며 작성자는 8초 샘플에서 시험했고 CPU에서도 동작한다고 설명한다. 영상 자체와 각 도구의 성능·라이선스를 독립 검증하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/4e95188a72c0a71f818ef33c7fffe616d567cfca3834edf28311507c71f32af9.jpg",
+        "alt": "AI 영상 효과음 제작·검수: Openverse, MMAudio, Earshot"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/shimteamjjang_ai/reel/Dfx5J-8hD-x/"
+      },
+      "captured_at": "2026-11-17T09:12:31+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261117-0001",
+      "title": "Meta Astryx — AI 에이전트 친화적 오픈소스 디자인 시스템",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "ai-agent",
+        "astryx",
+        "design-system",
+        "meta",
+        "open-source",
+        "react",
+        "ui"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "납작냥이의 릴스는 Meta의 오픈소스 디자인 시스템 Astryx를 소개하며 8년간 내부에서 발전했고 13,000개 이상 앱에 사용됐다고 설명한다. 버튼·메뉴 등 UI 부품과 브랜드 테마·다크 모드를 활용해 AI와 함께 화면을 제작하는 사례다. 공식 GitHub README는 React 19 이상 기반, 접근성을 고려한 컴포넌트 150개 이상, 테마, 템플릿 및 AI 에이전트와 함께 쓰는 CLI를 제공한다고 설명하며 현재 베타, MIT 라이선스라고 밝힌다. 릴스의 180개 이상이라는 숫자는 공식 README의 150개 이상과 차이가 있다. 공식 저장소 https://github.com/meta/astryx, 문서 https://astryx.atmeta.com/ . 영상 전체와 랭킹 주장은 독립 확인하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/501eb9a3b6321125914c2206b78f18a90ce8128f35efd3a9a763910356dfa596.jpg",
+        "alt": "Meta Astryx — AI 에이전트 친화적 오픈소스 디자인 시스템"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/napjakcat/reel/DfoaVDVMKCo/"
+      },
+      "captured_at": "2026-11-17T09:11:55+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261116-0001",
