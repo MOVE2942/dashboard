@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261119-040052-AUTO",
-  "source_manifest_sha256": "e9f16dc3f241b3058cea187d4fc36342ff6fbb4e184037c445eb0290e3b7f96a",
-  "export_manifest_sha256": "f8410919af95807f2b94d43fe3aba48cc32e2bffac814fc89e82b428557197b0",
-  "generated_at": "2026-11-19T04:00:54+09:00",
+  "release_id": "LIA-20261120-040033-AUTO",
+  "source_manifest_sha256": "a7ad20bc1701b44b2962021c8909ef7c0432a61baa9b745a5101b1b26988f19a",
+  "export_manifest_sha256": "ccf0181d2a8d0be92365db91f18feb98a0bdcb591b06ab7150802d7f86f96fa2",
+  "generated_at": "2026-11-20T04:00:35+09:00",
   "facet_counts": {
-    "general": 226,
+    "general": 234,
     "prompts": 156,
-    "video_generation": 132
+    "video_generation": 137
   },
   "category_counts": {
     "production": 276,
@@ -30,6 +30,545 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261119-0013",
+      "title": "Pine Drama Studio — AI 단편 드라마 제작 데스크톱 스튜디오",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "video_style",
+        "workflow"
+      ],
+      "tags": [
+        "agent",
+        "ai-video",
+        "code-oss",
+        "production",
+        "screenplay",
+        "short-drama",
+        "storyboard"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "Pine Drama Studio는 Code-OSS 기반 AI 단편 드라마 데스크톱 제작 환경이다. 사용자가 각본을 입력하면 Pine Computer의 에이전트와 대화하며 캐릭터·장소·소품, 키프레임, 스토리보드, 테이크와 편집본을 구성한다. 에피소드별 캔버스와 재사용 가능한 에셋을 제공하고 프로젝트 폴더는 로컬 Git 저장소로 이력을 관리한다. README는 macOS Apple Silicon·Intel용 설치본과 Pine 프로젝트 키 연결을 안내하며 각 유료 단계는 사용자가 승인한 후 시작한다고 설명한다. 앱 코드는 Apache-2.0, 기반 Code-OSS는 MIT다. Pine 서비스의 계정·인증·비용 조건은 별도 확인이 필요하고 설치·로그인·생성은 수행하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/96838ae3c722cb0f585fffc6a04536e5db49ba290f948051efafe3f6ccf2048c.jpg",
+        "alt": "Pine Drama Studio — AI 단편 드라마 제작 데스크톱 스튜디오 에피소드 제작 캔버스"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/PineComputer/pine-drama-studio"
+      },
+      "captured_at": "2026-11-19T06:48:38+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261119-0012",
+      "title": "last30days — 최근 30일 멀티소스 리서치 에이전트 스킬",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "agent-skills",
+        "ai-agent",
+        "github",
+        "polymarket",
+        "reddit",
+        "research",
+        "x",
+        "youtube"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "last30days는 지정한 주제의 최근 30일 자료를 Reddit, X, YouTube, Hacker News, GitHub, Polymarket 및 웹 등에서 모아 AI 에이전트가 요약하도록 설계된 MIT 라이선스 스킬이다. 게시물 반응·댓글·영상 자막·예측시장 수치와 채용공고·특허 등 다양한 신호를 주제에 따라 수집하며, 출처 가용성은 인증·설치 도구·유료 API·명시적 선택에 따라 달라진다. 제작자는 Reddit, HN, Polymarket, GitHub 등은 기본 설정 없이 가능하다고 설명한다. 일부 첫 실행 설정은 추가 CLI 설치, 일부 소스는 API 키나 브라우저 세션을 요구한다. 인기도와 시장 가격은 사실이나 신뢰성의 보증이 아니며 결과는 원문 검증이 필요하다. 설치·로그인·실행하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/fab17ea828a6702a5a6aed745b1df6b4d254c28fbf6a6d7abbc350d8d03e3dc7.png",
+        "alt": "last30days — 최근 30일 멀티소스 리서치 에이전트 스킬"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/mvanhorn/last30days-skill"
+      },
+      "captured_at": "2026-11-19T06:47:39+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261119-0011",
+      "title": "Image to 3D 2 — Blender 로컬 이미지·텍스트→3D 애드온",
+      "types": [
+        "ai_tool_model",
+        "workflow"
+      ],
+      "tags": [
+        "3d-modeling",
+        "blender",
+        "hunyuan",
+        "image-to-3d",
+        "local-ai",
+        "text-to-3d",
+        "trellis"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "Image to 3D 2는 이미지나 텍스트로 Blender 안에서 텍스처가 있는 3D 메시를 생성하는 유료 애드온이다. 판매 페이지에 따르면 TRELLIS·Pixal3D·Hunyuan 생성 엔진과 Hi3D 형상 보강, 텍스처 보강, 다중 시점 생성 및 노드 기반 Canvas를 제공한다. 초기 설정과 모델 다운로드 후 NVIDIA GPU에서 로컬 실행하며 Windows·Linux, 최소 8GB VRAM·16GB RAM을 요구한다. 모델은 선택적으로 별도 다운로드하며 TRELLIS 16.8GB, 전체는 중복 제외 약 132GB라고 설명한다. 각 모델 라이선스는 별도 확인 필요. 제품 페이지 메타데이터 표시 가격은 18달러이며 옵션과 시점에 따라 달라질 수 있다. Apple Silicon Mac 지원은 명시되지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/d91a1ee939bad44d63c198bf1a84f7fc98de25338a23f614b7237aca54bbf4a7.png",
+        "alt": "Image to 3D 2 — Blender 로컬 이미지·텍스트→3D 애드온"
+      },
+      "source": {
+        "platform": "other",
+        "url": "https://superhivemarket.com/products/imageto3d"
+      },
+      "captured_at": "2026-11-19T06:08:20+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261119-0010",
+      "title": "OpenMotion — AI 에이전트 기반 모션그래픽·영상 제작 스튜디오",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "video_style",
+        "workflow"
+      ],
+      "tags": [
+        "agent",
+        "ai-video",
+        "html",
+        "mcp",
+        "motion-graphics",
+        "openmotion",
+        "video-editing"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "OpenMotion은 참고 영상이나 템플릿을 기반으로 AI 에이전트가 브랜드 이미지·문구를 반영한 모션그래픽을 제작하도록 설계된 Apache-2.0 오픈소스 스튜디오다. HTML·CSS·JavaScript로 장면과 전환을 구성하고 Studio의 타임라인에서 편집·검토한 뒤 MP4로 출력한다고 README가 설명한다. Motion.md로 샷 순서와 타이밍, 전환을 기록하며 이미지·영상·음악·음성 모델 연동 및 Claude Code, Codex, Hermes 등 에이전트 연결을 소개한다. 외부 모델 사용에는 해당 서비스의 계정·API 키와 비용이 필요할 수 있으며 참고 영상과 에셋의 사용권은 별도 확인해야 한다. 실제 설치·연결·렌더링은 수행하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/517e6c9bbdef7332e6e0e849c43ebdffcc66e13d1768659110377e86f7a744c8.jpg",
+        "alt": "OpenMotion — AI 에이전트 기반 모션그래픽·영상 제작 스튜디오 편집기 샘플 화면"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/nexu-io/openmotion"
+      },
+      "captured_at": "2026-11-19T06:05:26+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261119-0009",
+      "title": "ChatR Labs Qwen-Image-2.1 Uncensored Omni 양자화 모델",
+      "types": [
+        "ai_tool_model",
+        "huggingface_model",
+        "image_style"
+      ],
+      "tags": [
+        "comfyui",
+        "diffusers",
+        "gguf",
+        "image-editing",
+        "quantization",
+        "qwen-image",
+        "uncensored"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "ChatR Labs가 Qwen-Image-2.1에 rank-128 Omni LoRA를 강도 1.0으로 병합한 후 양자화해 공개한 텍스트→이미지 생성·이미지 편집용 모델이다. GGUF Q4/Q5/Q6/Q8, ComfyUI용 FP8·INT8·NVFP4, Diffusers용 NF4·FP8 등의 변형을 제공한다. 이 저장소에는 트랜스포머만 들어 있어 텍스트 인코더·프로세서·VAE는 별도 기본 모델 구성요소가 필요하다. 모델 카드 권장 시작 설정은 35스텝, true CFG 5.0, 768×1152 또는 1024×1024다. 작성자의 RTX 5090 시험에서는 Q5_K_M 약 8GB, NVFP4 약 4GB 피크 VRAM을 표기하지만 전체 환경·참조 이미지 등에 따라 요구량은 달라진다. Qwen Research License로 별도 허가 없는 상업적 이용은 제한되며 비상업 연구·평가용이다. 커뮤니티 제작물로 Qwen 공식 팀 제품은 아니다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/14c3d6cb8b54d737331fd94e93df67fc785927be9cf2e627e6083699973089a5.png",
+        "alt": "ChatR Labs Qwen-Image-2.1 Uncensored Omni 양자화 모델"
+      },
+      "source": {
+        "platform": "huggingface",
+        "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized"
+      },
+      "captured_at": "2026-11-19T06:03:38+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261119-0008",
+      "title": "Antigravity와 영상 생성 도구를 결합한 제작 자동화 사례",
+      "types": [
+        "community_post",
+        "video_style",
+        "workflow"
+      ],
+      "tags": [
+        "ai-video",
+        "antigravity",
+        "gemini",
+        "google-flow",
+        "video-generation",
+        "workflow"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "작성자는 Antigravity가 참고 영상 분석, 캐릭터 이미지와 프롬프트 작성, 영상 생성 요청, 다운로드, 음원 결합과 프레임 비교를 연결하는 자동 영상 제작 흐름을 소개한다. 경로는 Gemini API, Google Flow 웹, 제3자 영상 CLI·MCP의 세 가지다. 작성자는 구독 크레딧과 Flow 포인트를 사용한 사례, 먼저 저해상도로 동작을 점검하고 각 요청 전 비용을 확인하는 방식, 오디오 처리 및 6프레임 비교를 설명한다. Pro 구독 제공량·API 모델명·가격·참고 영상 길이 등은 작성자의 개별 경험 및 주장이므로 계정과 시점에 따라 별도 확인이 필요하다. 게시물에는 비공식 인터페이스와 심사 회피를 위한 변환 사례도 포함되어 있으나 이 카드의 보존은 해당 방식의 실행이나 접근·정책 우회를 승인하지 않는다. 타인 영상·인물·음원 사용은 권리와 동의 확인이 필요하다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/3620c60a0e164e7c0052813a0d16e8c325507a91d30cd968e6abe10c08f97abe.webp",
+        "alt": "Antigravity와 영상 생성 도구를 결합한 제작 자동화 사례"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/leaf_sanren/status/2122673250778194327"
+      },
+      "captured_at": "2026-11-19T06:01:48+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261119-0007",
+      "title": "Crawl4AI — AI 에이전트를 위한 웹 크롤링·데이터 추출",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "ai-agent",
+        "crawl4ai",
+        "markdown",
+        "mcp",
+        "rag",
+        "scraping",
+        "web-crawling"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "Crawl4AI는 웹페이지를 LLM·RAG에 활용할 Markdown이나 구조화된 JSON으로 추출하는 Apache-2.0 기반 오픈소스 크롤러다. README는 JavaScript 동적 페이지, CSS·XPath 기반 추출, 여러 URL 비동기 처리, 스크린샷·PDF, Python 라이브러리와 Docker 자체 호스팅 및 MCP 연동을 소개한다. 별도 호스팅 Cloud는 검색·추출 API를 제공하며 작성자는 월 1,000 무료 크레딧을 안내한다. Cloud 이용에는 계정 및 API 키가 필요하고 최신 요금과 제공 조건은 서비스에서 확인해야 한다. 공개 접근 경계와 사이트 정책을 지켜야 하며 인증 우회 기능은 사용하지 않는다. 설치·API 등록·실행은 하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/382254f4f2b05f195cda495f58bb0fed67379709c5c2fd92ac4fa6d41f209891.png",
+        "alt": "Crawl4AI — AI 에이전트를 위한 웹 크롤링·데이터 추출"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/unclecode/crawl4ai"
+      },
+      "captured_at": "2026-11-19T05:59:58+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261119-0006",
+      "title": "UI·UX 디자이너를 위한 웹 디자인 레퍼런스 5곳",
+      "types": [
+        "community_post",
+        "inspiration",
+        "resource_list"
+      ],
+      "tags": [
+        "cta",
+        "footer",
+        "inspiration",
+        "scroll",
+        "shaders",
+        "ui",
+        "ux",
+        "web-design"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "Lucas가 UI·UX 디자인 참고 사이트 5곳을 소개한다. Scrolltide https://scrolltide.co — 3D·스크롤 웹용 프롬프트와 코드가 포함된 컴포넌트. Scrollshaders https://scrollshaders.com — 애니메이션 셰이더 모음. Footer Design https://footer.design — 웹사이트 푸터 디자인. CTA Gallery https://cta.gallery — 행동 유도 요소 아이디어. Refero Styles https://styles.refero.design — 실제 제품에서 가져온 스타일 참고. 게시물은 Scrolltide에 프롬프트 600개 이상과 컴포넌트 200개 이상, Scrollshaders에 11개 스타일·117개 셰이더가 있다고 설명하나 수치는 별도 검증하지 않았다. 영상 자체는 확인하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/44e738234ca5758f93da3871378d6a2a6153315590260488f590a346e8837308.webp",
+        "alt": "UI·UX 디자이너를 위한 웹 디자인 레퍼런스 5곳"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/lucass0x/status/2122800357965213986"
+      },
+      "captured_at": "2026-11-19T05:53:31+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261119-0005",
+      "title": "Apple FastFrames-L — 저지연 480p 텍스트 기반 영상 생성 모델",
+      "types": [
+        "ai_tool_model",
+        "huggingface_model"
+      ],
+      "tags": [
+        "ai-video",
+        "apple",
+        "diffusion",
+        "fastframes",
+        "text-to-video",
+        "video-generation",
+        "wan"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "Apple 연구진이 공개한 FastFrames-L은 Wan2.1-T2V-14B 기반 140억 매개변수의 자기회귀 2단계 영상 확산 모델로, 480p 영상을 낮은 지연으로 생성하도록 설계됐다. 같은 계열의 13억 매개변수 FastFrames-S도 제공되며, 공식 예제는 832×480, 16fps, 81프레임을 출력한다. README의 35.4ms 수치는 L이 아니라 S 모델 1 GPU·480p 조건의 구성요소 프로파일링 수치다. 공식 설치 조건은 Linux x86-64, NVIDIA GPU 및 CUDA 12.8 호환 드라이버이며 L의 벤치마크 예시는 GPU 8개를 사용한다. 모델 카드는 Apple AMLR 라이선스, 코드는 Apple Sample Code License를 표기하고 LingBot 구성요소에는 별도 비상업 라이선스가 적용된다. 배포 전 각 구성요소의 사용 조건을 확인해야 한다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/7d02600636e42f013c1d71842d602f4ce1c24daf02c0e9acee5f91a471cac8c7.gif",
+        "alt": "Apple FastFrames-L — 저지연 480p 텍스트 기반 영상 생성 모델"
+      },
+      "source": {
+        "platform": "huggingface",
+        "url": "https://huggingface.co/apple/FastFrames-L"
+      },
+      "captured_at": "2026-11-19T05:52:33+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261119-0004",
+      "title": "麦田 Maitian — 멀티플랫폼 콘텐츠 발행·성과 대시보드",
+      "types": [
+        "ai_tool_model",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "analytics",
+        "automation",
+        "content-publishing",
+        "creator-dashboard",
+        "multi-platform",
+        "youtube"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "麦田(Maitian)은 여러 플랫폼에 콘텐츠를 배포하고 조회·참여·팔로워 및 선택적으로 전환과 매출을 추적하는 MIT 라이선스 크리에이터 운영 도구다. 전용 Chrome 로그인 세션과 확장 프로그램을 활용하며 Claude Code·Codex 스킬로 플랫폼별 문안 및 발행 자료를 생성하고 일정표, 링크 수집, 성과 대시보드와 Feishu 알림을 제공한다. README에 따르면 YouTube·X·Instagram 등은 검증 후 자동 제출하고 Bilibili·Douyin·Xiaohongshu·WeChat 채널은 사용자가 최종 게시한다. macOS 중심이며 Windows 커뮤니티 지원은 자동 시작 미적용이라고 설명한다. 설치 마법사가 로그인, 스킬 연결 및 시작 에이전트 설정을 수행할 수 있으므로 별도 승인과 검토가 필요하다. 실제 설치·로그인·게시·실행하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/55efab81333d4bff33fff9e057d38232bc858489654905b5787e76b4940c1693.jpg",
+        "alt": "麦田 Maitian — 멀티플랫폼 콘텐츠 발행·성과 대시보드 프로젝트 제공 데모 데이터 대시보드"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/CzzzzzzJ/mdldm-maitian"
+      },
+      "captured_at": "2026-11-19T05:50:04+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261119-0003",
+      "title": "Diagram Design — HTML·SVG 기반 에이전트 다이어그램 스킬",
+      "types": [
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "ai-agent",
+        "diagram",
+        "diagram-design",
+        "svg",
+        "visualization",
+        "workflow"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "Diagram Design은 Claude Code, Codex, Cursor 등 에이전트에서 자연어 설명을 HTML+SVG 다이어그램으로 만드는 MIT 라이선스 스킬이다. 공식 README는 아키텍처, 순서도, 시퀀스, 타임라인 등 50가지 유형과 브랜드 색상·글꼴 적용, SVG·PNG 내보내기, Mermaid·draw.io 등의 기존 그림 재구성을 소개한다. 결과물은 드래그 가능한 원본 캔버스가 아니며 에이전트에게 재수정을 요청하거나 SVG를 직접 편집하는 방식이다. GitHub 저장소 설명에는 45종으로 기재돼 README와 숫자가 상충한다. 직접 설치·실행하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/fe1bd4eaecb3171a9400f2867e9869bb1c797a8deef33dd614b510e2e023cdf8.png",
+        "alt": "Diagram Design — HTML·SVG 기반 에이전트 다이어그램 스킬"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/cathrynlavery/diagram-design"
+      },
+      "captured_at": "2026-11-19T05:48:24+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261119-0002",
+      "title": "diagram-design: 긴 글과 복잡한 흐름을 시각화하는 에이전트 스킬",
+      "types": [
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "ai-agent",
+        "diagram",
+        "diagram-design",
+        "visualization",
+        "workflow"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "X 게시물은 diagram-design 에이전트 스킬을 이용해 긴 글과 업무 흐름, 개념 간 관계를 시각화하고 프레젠테이션·교육 카드·보고용 그림을 만들 수 있다고 소개한다. 사용자가 제공한 관련 저장소 https://github.com/cathrynlavery/diagram-design 의 README는 HTML과 SVG 기반의 50가지 다이어그램, 브랜드 스타일 적용 및 PNG·SVG 내보내기를 설명한다. 결과물은 드래그 편집 캔버스가 아니며 에이전트에 수정을 요청하거나 SVG를 직접 편집해야 한다. 게시물의 단축 링크 목적지는 직접 확인되지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/865b397b76ca1d4ea3da05e5e8f9565eb85eb9911884ea4d921085f0522d138a.webp",
+        "alt": "diagram-design: 긴 글과 복잡한 흐름을 시각화하는 에이전트 스킬"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/HeLi8866/status/2122697807597539775"
+      },
+      "captured_at": "2026-11-19T05:48:24+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261119-0001",
+      "title": "Flutter Games — 캐주얼 게임 템플릿과 제작 샘플",
+      "types": [
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "casual-games",
+        "dart",
+        "flutter",
+        "game-development",
+        "multiplayer",
+        "templates"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "Flutter 팀의 공식 저장소로 Flutter Casual Games Toolkit과 게임 제작 템플릿·샘플을 제공한다. README는 기본 게임, 카드 게임, 엔드리스 러너 같은 시작 템플릿과 광고·멀티플레이 등 기능 예제를 소개한다. Flutter SDK를 설치한 뒤 sample_downloader 또는 저장소 복제로 필요한 프로젝트를 가져올 수 있다. Flutter 및 Dart로 캐주얼 게임 구조와 관련 기능 구현을 참고할 수 있으며 각 템플릿과 에셋의 라이선스는 개별 확인이 필요하다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/28ee7573871e3a489ae4f980036c5e9bfea5734aaf651cbb5ce9c39834122f9b.png",
+        "alt": "Flutter Games — 캐주얼 게임 템플릿과 제작 샘플"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/flutter/games"
+      },
+      "captured_at": "2026-11-19T05:46:29+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261117-0003",
