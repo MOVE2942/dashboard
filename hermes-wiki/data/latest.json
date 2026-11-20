@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261120-040033-AUTO",
-  "source_manifest_sha256": "a7ad20bc1701b44b2962021c8909ef7c0432a61baa9b745a5101b1b26988f19a",
-  "export_manifest_sha256": "ccf0181d2a8d0be92365db91f18feb98a0bdcb591b06ab7150802d7f86f96fa2",
-  "generated_at": "2026-11-20T04:00:35+09:00",
+  "release_id": "LIA-20261121-040005-AUTO",
+  "source_manifest_sha256": "6f9ec7e003b8d64f9a832184f74a0fe2ac933df70ff0e81f5bbb4a1cadd0ea25",
+  "export_manifest_sha256": "8ee1cdd615b4c24575da1fb5d857a2960036dd313e7dd7a4fe37a8c1e0496c11",
+  "generated_at": "2026-11-21T04:00:06+09:00",
   "facet_counts": {
     "general": 234,
-    "prompts": 156,
-    "video_generation": 137
+    "prompts": 157,
+    "video_generation": 138
   },
   "category_counts": {
     "production": 276,
@@ -30,6 +30,47 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261120-0001",
+      "title": "h3-fight — MiniMax H3 액션 장면 프롬프트 라이브러리",
+      "types": [
+        "github_project",
+        "video_prompt",
+        "workflow"
+      ],
+      "tags": [
+        "action",
+        "ai-video",
+        "comfyui",
+        "fight-scenes",
+        "minimax-h3",
+        "video-prompt"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "h3-fight는 MiniMax H3용 액션·격투 장면을 작성하기 위한 프롬프트 스킬과 라이브러리, 검사 도구다. README는 438개 샷 블록, 동작·표현 조합, 오류 사례 및 제출 전 검사를 소개하며 프롬프트 작성만 할 때는 GPU가 필요 없다고 설명한다. 선택적으로 ComfyUI와 H3를 연결해 장면을 생성하고 마지막 프레임을 다음 장면에 이어 붙이거나 후반 작업을 할 수 있다. 제작자 실측은 개조 RTX 4090 48GB·RAM 123GB 환경에서 약 10초 영상당 6~8분이며 일반 24GB GPU는 검증하지 않았다고 한다. 코드 라이선스는 MIT지만 프롬프트 라이브러리와 데모 GIF는 CC BY-NC 4.0으로 비상업용이며 H3 및 별도 LoRA의 권리도 따로 확인해야 한다. 직접 설치하거나 생성하지 않았다.",
+      "facets": {
+        "prompt": true,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "unavailable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/4a349685673843c2b34b60df38a72f4009c4df91bf87351115830fd326715936.gif",
+        "alt": "h3-fight — MiniMax H3 액션 장면 프롬프트 라이브러리 제작자 데모 GIF"
+      },
+      "source": {
+        "platform": "github",
+        "url": "https://github.com/huangserva/h3-fight"
+      },
+      "captured_at": "2026-11-20T17:37:20+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261119-0013",

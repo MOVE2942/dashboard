@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261120-040033-AUTO",
-  "card_count": 470,
+  "release_id": "LIA-20261121-040005-AUTO",
+  "card_count": 471,
   "facet_counts": {
     "general": 234,
-    "prompts": 156,
-    "video_generation": 137
+    "prompts": 157,
+    "video_generation": 138
   },
   "source_manifest": [
     {
@@ -1887,10 +1887,14 @@
     {
       "id": "CR-20261119-0013",
       "hash": "d7487aab08bb48f87147177491818eff3c8d50ea70bace7b22addff22bf0fa88"
+    },
+    {
+      "id": "CR-20261120-0001",
+      "hash": "7ce4ca0435a7f3567a209d959ef333ee11abec6fcbfc7a26e2cb9fdc0423bd22"
     }
   ],
-  "source_manifest_sha256": "a7ad20bc1701b44b2962021c8909ef7c0432a61baa9b745a5101b1b26988f19a",
-  "export_manifest_sha256": "ccf0181d2a8d0be92365db91f18feb98a0bdcb591b06ab7150802d7f86f96fa2",
+  "source_manifest_sha256": "6f9ec7e003b8d64f9a832184f74a0fe2ac933df70ff0e81f5bbb4a1cadd0ea25",
+  "export_manifest_sha256": "8ee1cdd615b4c24575da1fb5d857a2960036dd313e7dd7a4fe37a8c1e0496c11",
   "files": [
     {
       "path": "assets/0069be87fd0f74b6c97c3179cfa25654d20950f962b2aafd6767cc28f851d88e.png",
@@ -2486,6 +2490,11 @@
       "path": "assets/494f13f78b47d0091ca33593419d1b13615a644bf010498e3c37e72ee20b1b6d.jpg",
       "sha256": "494f13f78b47d0091ca33593419d1b13615a644bf010498e3c37e72ee20b1b6d",
       "size": 30681
+    },
+    {
+      "path": "assets/4a349685673843c2b34b60df38a72f4009c4df91bf87351115830fd326715936.gif",
+      "sha256": "4a349685673843c2b34b60df38a72f4009c4df91bf87351115830fd326715936",
+      "size": 3048142
     },
     {
       "path": "assets/4ad0759b23b3f7a851e8d0831155f351ddb37998aa5ee09da1451296ecd0acf2.webp",
@@ -4149,8 +4158,8 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "342173228c6fcac7ab919f52eed36f24633b8377e525e2eca329bcce86e41f83",
-      "size": 743962
+      "sha256": "09fe20c83a9663a3c90b79efeba434b23f4df2981ed57b8d8b442e768a8daa35",
+      "size": 745921
     },
     {
       "path": "index.html",
@@ -4168,5 +4177,5 @@
       "size": 2765
     }
   ],
-  "bundle_sha256": "a4f0994f00b1074eba0d5eb3576aa5888b59e1838655f450e1a2a41932ca2ac6"
+  "bundle_sha256": "5a1490852e1c1307eae96b9e5b8432d01f354e51d0cf9debd5f10fc09d9498b6"
 }
