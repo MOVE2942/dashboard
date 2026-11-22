@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261122-040044-AUTO",
-  "source_manifest_sha256": "6f9ec7e003b8d64f9a832184f74a0fe2ac933df70ff0e81f5bbb4a1cadd0ea25",
-  "export_manifest_sha256": "8ee1cdd615b4c24575da1fb5d857a2960036dd313e7dd7a4fe37a8c1e0496c11",
-  "generated_at": "2026-11-22T04:00:46+09:00",
+  "release_id": "LIA-20261123-040038-AUTO",
+  "source_manifest_sha256": "a91420087cce253f2e79e26000d271816771fe12251a59b1088ae54a79bcaf41",
+  "export_manifest_sha256": "aef17a04f37594253da280be909a201cfecd5bd769c0587858af5eb25c2fd82f",
+  "generated_at": "2026-11-23T04:00:40+09:00",
   "facet_counts": {
     "general": 234,
     "prompts": 157,
-    "video_generation": 138
+    "video_generation": 139
   },
   "category_counts": {
     "production": 276,
@@ -30,6 +30,46 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261123-0001",
+      "title": "HMNSFW AIO — MiniMax H3 성인 영상용 LoRA 소개",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "video_style"
+      ],
+      "tags": [
+        "adult-content",
+        "ai-video",
+        "lora",
+        "minimax-h3",
+        "realism"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "X 게시물은 MiniMax H3 기반의 성인 영상 생성용 LoRA인 HMNSFW AIO를 소개하며 약 1,000개 영상으로 학습했고 가중치 크기가 약 0.62GB라고 주장한다. 게시물이 연결한 공개 모델 문서는 HearmemanAI의 HMNSFW AIO Sex LoRA V3, 기반 MiniMax H3, 트리거 단어 없음과 사실적인 움직임을 목표로 한다고 설명한다. 모델 문서는 결과가 항상 일정하지 않아 프롬프트 및 다른 LoRA 조합 실험이 필요하다고 밝힌다. X 게시물의 크기, 무료 배포와 성능 주장은 직접 검증하지 않았고 모델 페이지 라이선스는 other로만 표기돼 구체적 사용권 확인이 필요하다. 문서 https://huggingface.co/Sentinel7/h3/blob/main/2834417/3446189/README.md",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/50eb1958626408743632bc2cdf3806add03ba9f2d7eccc62e307215839268cb6.webp",
+        "alt": "HMNSFW AIO — MiniMax H3 성인 영상용 LoRA 소개"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/zz42508586/status/2123949080242188303"
+      },
+      "captured_at": "2026-11-23T00:18:36+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261120-0001",
