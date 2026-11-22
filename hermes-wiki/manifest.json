@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261122-040044-AUTO",
-  "card_count": 471,
+  "release_id": "LIA-20261123-040038-AUTO",
+  "card_count": 472,
   "facet_counts": {
     "general": 234,
     "prompts": 157,
-    "video_generation": 138
+    "video_generation": 139
   },
   "source_manifest": [
     {
@@ -1891,10 +1891,14 @@
     {
       "id": "CR-20261120-0001",
       "hash": "7ce4ca0435a7f3567a209d959ef333ee11abec6fcbfc7a26e2cb9fdc0423bd22"
+    },
+    {
+      "id": "CR-20261123-0001",
+      "hash": "8228d26e40abd66734721139fd68746acbfe096522a640b9d1effaf6448099de"
     }
   ],
-  "source_manifest_sha256": "6f9ec7e003b8d64f9a832184f74a0fe2ac933df70ff0e81f5bbb4a1cadd0ea25",
-  "export_manifest_sha256": "8ee1cdd615b4c24575da1fb5d857a2960036dd313e7dd7a4fe37a8c1e0496c11",
+  "source_manifest_sha256": "a91420087cce253f2e79e26000d271816771fe12251a59b1088ae54a79bcaf41",
+  "export_manifest_sha256": "aef17a04f37594253da280be909a201cfecd5bd769c0587858af5eb25c2fd82f",
   "files": [
     {
       "path": "assets/0069be87fd0f74b6c97c3179cfa25654d20950f962b2aafd6767cc28f851d88e.png",
@@ -2550,6 +2554,11 @@
       "path": "assets/50c31d24d61cbba721e4486388410c81602f6ba7968d336ca8f0fcd851b42b7c.png",
       "sha256": "50c31d24d61cbba721e4486388410c81602f6ba7968d336ca8f0fcd851b42b7c",
       "size": 58685
+    },
+    {
+      "path": "assets/50eb1958626408743632bc2cdf3806add03ba9f2d7eccc62e307215839268cb6.webp",
+      "sha256": "50eb1958626408743632bc2cdf3806add03ba9f2d7eccc62e307215839268cb6",
+      "size": 15954
     },
     {
       "path": "assets/517e6c9bbdef7332e6e0e849c43ebdffcc66e13d1768659110377e86f7a744c8.jpg",
@@ -4158,8 +4167,8 @@
     },
     {
       "path": "data/latest.json",
-      "sha256": "13b1c3325d899a5c7b9dba682165af51c21c6f33d3560d3a1a2a61aeba1db1a8",
-      "size": 745921
+      "sha256": "c1610bfde9373375fdc30912da7c28e05985b387a2eb105e0150aca272fd61bf",
+      "size": 747757
     },
     {
       "path": "index.html",
@@ -4177,5 +4186,5 @@
       "size": 2765
     }
   ],
-  "bundle_sha256": "f6020d7d726d6e76fcbf428a5201eb0a82903ef5b7b7954b971e9bcaebddaa38"
+  "bundle_sha256": "875efdbb8073e32f80476ced1cfe9048b44a94969da02530cff6bb7e3d783196"
 }
