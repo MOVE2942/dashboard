@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261123-040038-AUTO",
-  "source_manifest_sha256": "a91420087cce253f2e79e26000d271816771fe12251a59b1088ae54a79bcaf41",
-  "export_manifest_sha256": "aef17a04f37594253da280be909a201cfecd5bd769c0587858af5eb25c2fd82f",
-  "generated_at": "2026-11-23T04:00:40+09:00",
+  "release_id": "LIA-20261124-040040-AUTO",
+  "source_manifest_sha256": "2ecdbb3dc4e19fda61ade90feaefcba7ea0c032ea174981c43029952389fb2e0",
+  "export_manifest_sha256": "c1c143d5a80d4c2ac53331d4a32dc5c249368394b1ff009647fd31c90f0361ff",
+  "generated_at": "2026-11-24T04:00:42+09:00",
   "facet_counts": {
-    "general": 234,
+    "general": 240,
     "prompts": 157,
     "video_generation": 139
   },
@@ -30,6 +30,250 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261124-0006",
+      "title": "유튜브 채널 운영을 돕는 클로드 스킬 11개 소개",
+      "types": [
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "agent-skills",
+        "claude",
+        "marketing",
+        "video-production",
+        "viral-analysis",
+        "youtube"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "우주보스는 유튜브 운영을 돕는 클로드 스킬 11개를 소개한다. 공개 캡션에 따르면 후킹 공식 21개를 활용한 대본, 제목·썸네일 조합 점검, 편집 구간과 댓글 답글 초안 작성, 채널의 평소 조회수 대비 성과가 높은 영상 분석을 제공한다. 게시자는 가입·API 키·비용이 없다고 주장하며 상세 가이드를 별도 안내한다. 공개 캡션에는 저장소 주소와 개별 11개 스킬 명칭이 없어 특정 프로젝트와의 동일성, 실제 비용 및 기능을 확인하지 못했다. 영상 전체와 가이드는 확인하지 않았고 설치·댓글·게시를 수행하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/8d33d54bc4eb7b22d4b89c19c48c9718f99f8c29bd142de46351c142f4e9da19.jpg",
+        "alt": "유튜브 채널 운영을 돕는 클로드 스킬 11개 소개"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/woojooboss_/reel/DfZQeK_Soh4/"
+      },
+      "captured_at": "2026-11-24T00:43:02+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261124-0005",
+      "title": "ffmpeg-skill: 자연어 기반 로컬 영상 편집 도구 소개",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "agent-skills",
+        "ffmpeg",
+        "local-video",
+        "shortform",
+        "subtitles",
+        "video-editing"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "ANSWER는 AI 에이전트에 자연어로 무음 구간 제거, 세로 영상 변환, 음량 조절을 요청하는 ffmpeg-skill과 설치·초기 편집 가이드를 소개한다. 작성자는 42개 영상 편집 도구를 모은 무료 스킬이라고 설명한다. 공개 검색에서 같은 이름과 42개 기능의 프로젝트 kajisho5/ffmpeg-skill을 발견했으나 캡션에 저장소 링크가 없어 게시물이 정확히 그 프로젝트를 가리키는지는 확인하지 못했다. 공개 메타데이터만 확인했고 릴스는 연령 제한 로그인 화면으로 영상 전체 접근이 불가능했다. 설치·실행하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/5743a235a0acb99773203a7aaf6174218ef1a9fa2f17fb15398966b24402f91d.jpg",
+        "alt": "ffmpeg-skill: 자연어 기반 로컬 영상 편집 도구 소개"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/answer_kr/reel/Df67Vb1zARU/"
+      },
+      "captured_at": "2026-11-24T00:37:54+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261124-0004",
+      "title": "클로드 인스타그램 마케팅 자동화 가이드 소개",
+      "types": [
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "agent-skills",
+        "automation",
+        "claude",
+        "instagram",
+        "marketing",
+        "shortform"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "이현은 클로드를 인스타그램 마케터로 활용해 기획, 대본, 소통, 계정 분석을 자동화하는 가이드를 소개한다. 공개 캡션에는 자동화 방법, 13가지 스킬 활용법, 복사해 쓰는 프롬프트가 포함된다고 설명하며 자료 요청을 위한 댓글을 안내한다. 개별 스킬의 이름과 가이드 본문, 구체적인 연동 방법은 공개 캡션에서 확인되지 않았다. 영상 전체와 성능을 검증하지 않았고 댓글·설치·계정 연결을 수행하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/15de1468300715aa491df634ca358b49de917657d6b0fc685e11cf4c2f768154.jpg",
+        "alt": "클로드 인스타그램 마케팅 자동화 가이드 소개"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/reelbuilder_/reel/DfOXiNqztFp/"
+      },
+      "captured_at": "2026-11-24T00:33:23+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261124-0003",
+      "title": "Uplika: 클로드용 유튜브 제작·운영 스킬",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "workflow"
+      ],
+      "tags": [
+        "agent-skills",
+        "claude",
+        "content-production",
+        "mcp",
+        "uplika",
+        "youtube"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "바이브트렌드는 Uplika 플러그인의 유튜브 스킬 13개가 대본·제목·썸네일·편집점·댓글·업로드 계획을 지원하며 바이럴 스킬이 채널 크기 대비 성과를 분석한다고 소개한다. 작성자는 한국어 후킹 점수가 아직 보정되지 않았고 유튜브 발행에는 가입 및 채널 연결이 필요하다고 밝힌다. GitHub uplika/uplika-plugin README는 MIT 라이선스, OAuth 기반 Uplika MCP, 사용자 승인 후 게시·답글 및 서버로 전송되는 게시물·미디어 정보를 설명한다. 일부 스킬은 공개 YouTube 자료나 로컬 입력을 활용한다. 게시물의 13개 수, 베타 무료 및 한국어 점수는 별도 검증하지 않았으며 영상 전체를 확인하지 않았다. 설치·인증·발행하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/e94bfd6e2477d06e5c246baeee7cafa97f45262566efe440f161db118f0febb9.jpg",
+        "alt": "Uplika: 클로드용 유튜브 제작·운영 스킬"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/vibe.trender/reel/DfrIa82CUmO/"
+      },
+      "captured_at": "2026-11-24T00:27:33+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261124-0002",
+      "title": "게으른 빌더: 클로드 스킬·플러그인 10개 소개",
+      "types": [
+        "community_post",
+        "resource_list"
+      ],
+      "tags": [
+        "agent-skills",
+        "claude",
+        "claude-code",
+        "plugin",
+        "prompts"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "게으른 빌더는 3달 만에 10만을 달성하는 데 도움이 된 클로드 스킬과 플러그인 10개를 소개하고 70개 이상의 프롬프트와 가이드 문서를 안내한다. 공개 캡션에는 스킬 이름이나 가이드 직접 링크가 없으며 10만의 구체적인 기준도 명시되지 않았다. 영상 전체와 가이드 내용은 확인하지 못했다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/b3a5eb17d5791217fded219632ff7cc2fb9563e28b942f048e783925a0d39e16.jpg",
+        "alt": "게으른 빌더: 클로드 스킬·플러그인 10개 소개"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/lazy_owen/reel/De_qY6Tz_KN/"
+      },
+      "captured_at": "2026-11-24T00:22:57+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261124-0001",
+      "title": "츄즈잇: GitHub에서 급상승한 클로드 스킬·도구 10선",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "resource_list"
+      ],
+      "tags": [
+        "agent-skills",
+        "animation",
+        "browser",
+        "claude-code",
+        "github",
+        "security",
+        "seo",
+        "video"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "츄즈잇이 2026년 11월 기준 GitHub에서 급상승한 클로드 스킬·도구 10개를 소개한다. 10 line-art-animation: 선화 기반 인터랙티브 애니메이션. 9 claude-animated-shorts: 코드 기반 숏폼 애니메이션. 8 instagram-agent-skill: 인스타그램 릴스 도입부 평가 등 13개 스킬. 7 ffmpeg-skill: 자연어로 로컬 영상 편집·자막. 6 agent-browser: AI의 웹페이지 읽기·버튼 조작. 5 Claude-BugHunter: 공개 취약점 보고서 기반 보안 점검(허가 대상). 4 claude-seo: 검색 노출 및 AI 인용 관련 점검. 3 hyperframes: 코드 기반 영상 제작 및 MP4 출력. 2 t3code: 컴퓨터에서 시작한 코딩 작업의 모바일 연속 승인. 1 security-audit-skill: Cloudflare 보안 감사 스킬로 주장되는 도구. 순위와 월간 별 15만 합계, 각 기능은 작성자 설명이며 독립 검증하지 않았다. 본문에 각 저장소 주소는 없고 영상 전체는 확인하지 않았다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/5a3bcf8708a95c453282135280d22a14b875c66a1fd618fde2a4d5dffb0b8ced.jpg",
+        "alt": "츄즈잇: GitHub에서 급상승한 클로드 스킬·도구 10선"
+      },
+      "source": {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/_choosit/reel/DgD9Z5gCSo1/"
+      },
+      "captured_at": "2026-11-24T00:19:54+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261123-0001",
