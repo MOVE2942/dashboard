@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "release_id": "LIA-20261126-040025-AUTO",
-  "source_manifest_sha256": "2ecdbb3dc4e19fda61ade90feaefcba7ea0c032ea174981c43029952389fb2e0",
-  "export_manifest_sha256": "c1c143d5a80d4c2ac53331d4a32dc5c249368394b1ff009647fd31c90f0361ff",
-  "generated_at": "2026-11-26T04:00:27+09:00",
+  "release_id": "LIA-20261127-040013-AUTO",
+  "source_manifest_sha256": "69ca1efe5e3c8c7650ce93569b4341f54039b2ca1dc78b5b22838eef9fdee538",
+  "export_manifest_sha256": "3b9b45aa0a2548a34d5c5a5ad42dee5f4c9b1b2c80a45e6fd4dffb04a86fa81a",
+  "generated_at": "2026-11-27T04:00:15+09:00",
   "facet_counts": {
-    "general": 240,
+    "general": 241,
     "prompts": 157,
-    "video_generation": 139
+    "video_generation": 140
   },
   "category_counts": {
     "production": 276,
@@ -30,6 +30,89 @@
     "utility": "유틸리티·서비스"
   },
   "cards": [
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261126-0002",
+      "title": "나에게 모질기만 했던 어머니의 속마음",
+      "types": [
+        "storytelling",
+        "video_style"
+      ],
+      "tags": [
+        "shorts",
+        "가족",
+        "감동",
+        "눈이부시게",
+        "숏드라마",
+        "어머니"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "레전드띵작 채널의 쇼츠로 제목은 나에게 모질기만 했던 어머니의 속마음이다. 공개 설명에 드라마·감동 및 눈이 부시게 해시태그가 붙어 있다. 영상 재생은 YouTube의 로그인 확인으로 제한되어 장면, 대사와 실제 줄거리는 확인하지 못했다. 제목과 공개 메타데이터만으로 영상 내용을 추정하지 않는다.",
+      "facets": {
+        "prompt": false,
+        "video_generation": true
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/3ae6ac2544c2e0716c184ab93f672b264656d70a6823b1101d6a0e2ff6604705.jpg",
+        "alt": "나에게 모질기만 했던 어머니의 속마음"
+      },
+      "source": {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/shorts/2IWHQobFmz4"
+      },
+      "captured_at": "2026-11-26T22:00:27+09:00",
+      "category": "utility",
+      "published_at": null
+    },
+    {
+      "schema_version": 2,
+      "public_id": "CR-20261126-0001",
+      "title": "OpenMausBot — 채팅형 멀티 에이전트 데스크톱",
+      "types": [
+        "ai_tool_model",
+        "community_post",
+        "github_project",
+        "workflow"
+      ],
+      "tags": [
+        "computer-use",
+        "desktop",
+        "local-first",
+        "mcp",
+        "multi-agent",
+        "oauth",
+        "open-source"
+      ],
+      "macro_tags": [],
+      "category_tags": [],
+      "summary": "X 게시물은 Grok Bot을 대체할 수 있다고 주장하는 OpenMausBot을 소개한다. GitHub 공식 README는 xAI의 Grok Bot을 공개한 것이 아닌 독립적인 오픈소스 대안이라고 명시한다. 각 봇에 로컬 Claude·Codex·Grok CLI, 모델과 역할을 연결하고 채팅방별 컨텍스트, 로컬 VM 또는 클라우드 컴퓨터, 승인 카드, OAuth 앱 연동, 팀 설정 Markdown 가져오기와 음성 응답을 제공한다고 설명한다. 코드 라이선스는 Apache-2.0. X의 1700개 이상 앱 주장과 달리 README는 Composio 500개 이상이라고 설명한다. 오픈소스 앱 사용과 별도로 모델·클라우드·연결 서비스 요금이나 계정이 필요할 수 있다. 승인 동작과 보안은 실행 검증하지 않았다. 저장소 https://github.com/milind-soni/OpenMausBot",
+      "facets": {
+        "prompt": false,
+        "video_generation": false
+      },
+      "prompt": {
+        "status": "not_applicable",
+        "text": null
+      },
+      "visual": {
+        "kind": "thumbnail",
+        "src": "assets/77131b840a372ee77a2d270012317f4441bef7fe65077212ccf35c07a7b2102d.webp",
+        "alt": "OpenMausBot — 채팅형 멀티 에이전트 데스크톱"
+      },
+      "source": {
+        "platform": "x",
+        "url": "https://x.com/yxl44/status/2118351064990937272"
+      },
+      "captured_at": "2026-11-26T15:33:04+09:00",
+      "category": "utility",
+      "published_at": null
+    },
     {
       "schema_version": 2,
       "public_id": "CR-20261124-0006",
